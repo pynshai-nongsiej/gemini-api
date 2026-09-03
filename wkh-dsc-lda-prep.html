@@ -1,0 +1,1548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DSC West Khasi Hills — LDA Mission Log & Exam Engine</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F3EEE1;
+    --paper-deep:#EAE2CC;
+    --card:#FBF8F0;
+    --line:#DCD1AE;
+    --ink:#221E18;
+    --ink-mute:#6E6754;
+    --pen:#2C4870;
+    --pen-deep:#1D3350;
+    --stamp:#9C2B2B;
+    --gold:#A9812E;
+    --plum:#6E4A7E;
+    --teal:#2E6B66;
+    --olive:#6B7A3E;
+    --rust:#9C4A2B;
+    --ok:#2D7A41;
+    --warn:#C07000;
+    --font-display:'Lora',serif;
+    --font-body:'Inter',sans-serif;
+    --font-mono:'IBM Plex Mono',monospace;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    background-image:
+      linear-gradient(var(--paper-deep) 1px, transparent 1px);
+    background-size: 100% 34px;
+    color:var(--ink);
+    font-family:var(--font-body);
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;}
+  button{font-family:inherit;cursor:pointer;}
+  ::selection{background:var(--pen);color:var(--paper);}
+  :focus-visible{outline:2px solid var(--pen);outline-offset:2px;}
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation:none !important; transition:none !important;}
+  }
+
+  .app{max-width:1100px;margin:0 auto;padding:0 20px 90px;}
+
+  /* ---------- Top Status Ribbon ---------- */
+  .top-ribbon{
+    display:flex;align-items:center;justify-content:space-between;gap:12px;
+    padding:8px 12px;margin:12px 0 6px;
+    background:rgba(234, 226, 204, 0.75);
+    backdrop-filter:blur(6px);
+    border:1px solid var(--line);
+    border-radius:6px;
+    font-family:var(--font-mono);font-size:11.5px;
+  }
+  .status-pill{
+    display:inline-flex;align-items:center;gap:7px;
+    padding:4px 10px;border-radius:20px;
+    background:#fff;border:1px solid var(--line);
+    font-weight:600;
+  }
+  .status-dot{
+    width:8px;height:8px;border-radius:50%;
+    background:#aaa;transition:background 0.3s ease;
+  }
+  .status-dot.online{background:#28a745;box-shadow:0 0 8px rgba(40,167,69,0.5);}
+  .status-dot.checking{background:#ffc107;}
+  .status-dot.offline{background:#dc3545;}
+  .ribbon-actions{display:flex;align-items:center;gap:8px;}
+
+  /* ---------- Letterhead ---------- */
+  .letterhead{
+    padding:20px 4px 18px;
+    display:flex;align-items:flex-start;justify-content:space-between;gap:16px;
+    border-bottom:2px solid var(--ink);
+    margin-bottom:20px;
+  }
+  .letterhead h1{
+    font-family:var(--font-display);
+    font-weight:700;
+    font-size:clamp(22px,3.4vw,34px);
+    margin:0 0 4px;
+    letter-spacing:0.2px;
+  }
+  .letterhead .sub{
+    font-family:var(--font-mono);
+    font-size:11.5px;
+    letter-spacing:1.4px;
+    text-transform:uppercase;
+    color:var(--pen-deep);
+  }
+  .letterhead .file-no{
+    font-family:var(--font-mono);
+    font-size:11px;
+    color:var(--ink-mute);
+    text-align:right;
+    line-height:1.6;
+    white-space:nowrap;
+  }
+
+  /* ---------- Nav tabs ---------- */
+  .tabs{
+    display:flex;gap:4px;flex-wrap:wrap;
+    margin-bottom:24px;
+    border-bottom:1px solid var(--line);
+  }
+  .tab{
+    background:transparent;border:1px solid transparent;border-bottom:none;
+    padding:9px 16px;
+    font-size:13.5px;font-weight:600;
+    color:var(--ink-mute);
+    border-radius:5px 5px 0 0;
+    transform:translateY(1px);
+    transition:all 0.15s ease;
+  }
+  .tab:hover{color:var(--ink);background:rgba(255,255,255,0.4);}
+  .tab.active{
+    color:var(--ink);
+    background:var(--card);
+    border-color:var(--line);
+    border-bottom:1px solid var(--card);
+  }
+
+  /* ---------- Stamp ---------- */
+  .stamp{
+    width:118px;height:118px;border-radius:50%;
+    border:3px double var(--stamp);
+    color:var(--stamp);
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    transform:rotate(-6deg);
+    font-family:var(--font-mono);
+    text-transform:uppercase;
+    letter-spacing:0.5px;
+    flex:none;
+    background:radial-gradient(circle at 50% 40%, rgba(156,43,43,0.06), transparent 70%);
+  }
+  .stamp .big{font-size:24px;font-weight:700;line-height:1;font-family:var(--font-display);}
+  .stamp .small{font-size:8.5px;margin-top:4px;letter-spacing:1.2px;text-align:center;padding:0 8px;}
+  .stamp.gold{border-color:var(--gold);color:var(--gold);background:radial-gradient(circle at 50% 40%, rgba(169,129,46,0.08), transparent 70%);}
+  .stamp.gold .big{font-size:16px;}
+
+  /* ---------- Cards ---------- */
+  .card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-left:4px solid var(--pen);
+    border-radius:4px;
+    padding:20px 22px;
+    margin-bottom:16px;
+    box-shadow:0 1px 3px rgba(0,0,0,0.02);
+  }
+  .card.red{border-left-color:var(--stamp);}
+  .card.gold{border-left-color:var(--gold);}
+  .card.teal{border-left-color:var(--teal);}
+  .eyebrow{
+    font-family:var(--font-mono);
+    font-size:10.5px;letter-spacing:1.6px;text-transform:uppercase;
+    color:var(--ink-mute);margin-bottom:6px;display:block;
+  }
+  .card h2, .card h3{font-family:var(--font-display);margin:0 0 8px;}
+  .card h2{font-size:21px;}
+  .card h3{font-size:16.5px;}
+  .card p{margin:0 0 10px;line-height:1.55;color:var(--ink);font-size:14px;}
+  .muted{color:var(--ink-mute);}
+
+  .grid{display:grid;gap:16px;}
+  .grid.two{grid-template-columns:1.1fr 1.6fr;}
+  .grid.three{grid-template-columns:repeat(3,1fr);}
+  .grid.four{grid-template-columns:repeat(4,1fr);}
+  @media(max-width:860px){
+    .grid.two, .grid.three, .grid.four{grid-template-columns:1fr 1fr;}
+  }
+  @media(max-width:580px){
+    .grid.two, .grid.three, .grid.four{grid-template-columns:1fr;}
+    .letterhead{flex-direction:column;}
+    .top-ribbon{flex-direction:column;align-items:flex-start;}
+  }
+
+  .stat{
+    background:var(--card);border:1px solid var(--line);border-radius:4px;
+    padding:14px 16px;
+  }
+  .stat .num{font-family:var(--font-mono);font-size:26px;font-weight:600;color:var(--pen-deep);}
+  .stat .label{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:var(--ink-mute);margin-top:2px;}
+
+  .badge{
+    display:inline-flex;align-items:center;gap:5px;
+    font-family:var(--font-mono);font-size:10.5px;letter-spacing:0.6px;text-transform:uppercase;
+    padding:3px 9px;border-radius:20px;border:1px solid currentColor;
+  }
+  .badge.gk{color:var(--pen);} .badge.english{color:var(--plum);} .badge.math{color:var(--gold);}
+  .badge.computer{color:var(--teal);} .badge.science{color:var(--olive);} .badge.reasoning{color:var(--rust);}
+  .badge.mixed{color:var(--stamp);}
+
+  .btn{
+    border-radius:4px;padding:9px 16px;font-size:13.5px;font-weight:600;
+    border:1.5px solid var(--pen);background:var(--pen);color:var(--paper);
+    display:inline-flex;align-items:center;gap:8px;
+    transition:all 0.15s ease;
+  }
+  .btn:hover{background:var(--pen-deep);border-color:var(--pen-deep);transform:translateY(-1px);}
+  .btn.ghost{background:transparent;color:var(--pen);border-color:var(--pen);}
+  .btn.ghost:hover{background:rgba(44,72,112,0.08);}
+  .btn.red{background:var(--stamp);border-color:var(--stamp);color:#fff;}
+  .btn.red:hover{background:#7f2222;border-color:#7f2222;}
+  .btn.sm{padding:5px 10px;font-size:12px;}
+  .btn:disabled{opacity:0.45;cursor:not-allowed;transform:none;}
+  .btn-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px;}
+
+  .topic-list{display:flex;flex-direction:column;gap:0;}
+  .topic-row{
+    display:flex;align-items:center;justify-content:space-between;gap:12px;
+    padding:12px 4px;border-bottom:1px dashed var(--line);
+  }
+  .topic-row:last-child{border-bottom:none;}
+  .topic-row .t-name{font-size:14px;}
+  .topic-row .t-actions{display:flex;gap:8px;flex:none;}
+  .link-btn{
+    background:none;border:none;color:var(--pen);font-size:12.5px;font-weight:600;
+    text-decoration:underline;text-underline-offset:3px;padding:4px;cursor:pointer;
+  }
+
+  /* prompt box */
+  .prompt-box{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:4px;
+    padding:16px 18px;
+    font-family:var(--font-mono);
+    font-size:12px;
+    line-height:1.7;
+    white-space:pre-wrap;
+    color:var(--ink);
+    max-height:240px;
+    overflow-y:auto;
+    margin-bottom:4px;
+  }
+
+  /* calendar */
+  .cal-grid{
+    display:grid;grid-template-columns:repeat(6,1fr);gap:8px;
+  }
+  @media(max-width:640px){.cal-grid{grid-template-columns:repeat(5,1fr);}}
+  .cal-cell{
+    aspect-ratio:1/1;
+    border:1px solid var(--line);border-radius:4px;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    background:var(--card);
+    font-family:var(--font-mono);
+    position:relative;
+    transition:transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .cal-cell .d{font-size:15px;font-weight:600;}
+  .cal-cell .tag{font-size:7.5px;letter-spacing:0.5px;text-transform:uppercase;color:var(--ink-mute);margin-top:2px;}
+  .cal-cell.done{background:#F6EFD9;border-color:var(--gold);}
+  .cal-cell.done .d{color:var(--gold);}
+  .cal-cell.mock{border-style:dashed;border-color:var(--stamp);}
+  .cal-cell.mock .d{color:var(--stamp);}
+  .cal-cell.current{outline:2px solid var(--pen);outline-offset:2px;}
+  .cal-cell:hover{transform:translateY(-2px);box-shadow:0 3px 8px rgba(0,0,0,0.06);}
+
+  /* question navigation palette */
+  .q-nav-palette{
+    display:flex;flex-wrap:wrap;gap:6px;
+    padding:12px;background:#fff;border:1px solid var(--line);border-radius:4px;
+    margin-bottom:16px;
+  }
+  .q-nav-btn{
+    width:32px;height:32px;border-radius:3px;border:1px solid var(--line);
+    background:var(--card);font-family:var(--font-mono);font-size:12px;font-weight:600;
+    display:flex;align-items:center;justify-content:center;color:var(--ink);
+    transition:all 0.1s;position:relative;
+  }
+  .q-nav-btn.answered{background:var(--pen);color:#fff;border-color:var(--pen);}
+  .q-nav-btn.flagged::after{
+    content:'★';position:absolute;top:-4px;right:-3px;font-size:10px;color:var(--warn);
+  }
+  .q-nav-btn:hover{border-color:var(--pen);}
+
+  /* quiz */
+  .qcard{
+    background:var(--card);border:1px solid var(--line);border-radius:4px;
+    padding:18px 20px;margin-bottom:14px;transition:border-color 0.15s ease;
+    scroll-margin-top:70px;
+  }
+  .qcard.flagged{border-left:4px solid var(--warn);}
+  .qhead{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:14px;}
+  .qhead-left{display:flex;gap:12px;align-items:flex-start;flex:1;}
+  .qnum{
+    font-family:var(--font-mono);font-weight:700;color:var(--pen);
+    background:var(--paper-deep);border-radius:50%;
+    width:28px;height:28px;display:flex;align-items:center;justify-content:center;
+    font-size:12.5px;flex:none;
+  }
+  .qtext{font-size:15px;line-height:1.5;margin:0;padding-top:3px;font-weight:500;}
+  .flag-btn{
+    background:none;border:none;color:var(--ink-mute);cursor:pointer;
+    font-size:16px;padding:2px 6px;border-radius:3px;
+  }
+  .flag-btn.active{color:var(--warn);}
+  .opts{display:flex;flex-direction:column;gap:9px;margin-left:40px;}
+  @media(max-width:580px){.opts{margin-left:0;}}
+  .opt{
+    text-align:left;background:#fff;border:1px solid var(--line);border-radius:4px;
+    padding:10px 14px;font-size:14px;display:flex;gap:12px;align-items:flex-start;
+    color:var(--ink);transition:all 0.1s ease;
+  }
+  .opt:hover:not(:disabled){border-color:var(--pen);background:#F9FBFD;}
+  .opt.selected{border-color:var(--pen);background:#EFF3F8;box-shadow:inset 0 0 0 1px var(--pen);}
+  .opt.correct{border-color:var(--ok);background:#EBF5EC;box-shadow:inset 0 0 0 1px var(--ok);}
+  .opt.wrong{border-color:var(--stamp);background:#F9EBEB;box-shadow:inset 0 0 0 1px var(--stamp);}
+  .optlet{font-family:var(--font-mono);font-weight:700;color:var(--ink-mute);text-transform:uppercase;flex:none;}
+  .tip{margin:12px 0 0 40px;font-size:13px;color:var(--ink);display:flex;gap:10px;align-items:center;flex-wrap:wrap;background:rgba(255,255,255,0.7);padding:8px 12px;border-radius:3px;border-left:3px solid var(--line);}
+  @media(max-width:580px){.tip{margin-left:0;}}
+  .tag-correct{color:var(--ok);font-weight:700;font-family:var(--font-mono);font-size:11.5px;}
+  .tag-wrong{color:var(--stamp);font-weight:700;font-family:var(--font-mono);font-size:11.5px;}
+
+  /* sticky action footer strip */
+  .progress-strip{
+    position:sticky;bottom:14px;
+    background:var(--ink);color:var(--paper);
+    border-radius:6px;padding:12px 20px;
+    display:flex;align-items:center;justify-content:space-between;gap:16px;
+    font-family:var(--font-mono);font-size:13px;
+    box-shadow:0 8px 24px rgba(0,0,0,0.3);
+    margin-top:20px;z-index:100;
+  }
+  .progress-strip .btn{padding:8px 16px;font-size:13px;}
+  .timer-pill{
+    display:inline-flex;align-items:center;gap:6px;
+    background:rgba(255,255,255,0.15);padding:4px 10px;border-radius:3px;
+    font-family:var(--font-mono);font-size:13px;letter-spacing:1px;
+  }
+  .timer-pill.urgent{background:var(--stamp);animation:pulse 1s infinite;}
+  @keyframes pulse{0%,100%{opacity:1;}50%{opacity:0.75;}}
+
+  .loading{
+    display:flex;align-items:center;gap:12px;font-family:var(--font-mono);font-size:13px;color:var(--pen-deep);
+    padding:16px 0;
+  }
+  .spinner{
+    width:18px;height:18px;border-radius:50%;
+    border:2.5px solid var(--paper-deep);border-top-color:var(--pen);
+    animation:spin 0.8s linear infinite;
+  }
+  @keyframes spin{to{transform:rotate(360deg);}}
+
+  .empty{
+    border:1px dashed var(--line);border-radius:4px;padding:30px 22px;text-align:center;
+    color:var(--ink-mute);font-size:14px;
+  }
+
+  table.mix-table{width:100%;border-collapse:collapse;margin:10px 0;font-size:13.5px;}
+  table.mix-table td{padding:8px 4px;border-bottom:1px dashed var(--line);}
+  table.mix-table td:last-child{text-align:right;font-family:var(--font-mono);font-weight:600;}
+
+  /* Modal */
+  .modal-backdrop{
+    position:fixed;top:0;left:0;right:0;bottom:0;
+    background:rgba(20,18,15,0.6);backdrop-filter:blur(3px);
+    display:flex;align-items:center;justify-content:center;
+    z-index:200;padding:20px;
+  }
+  .modal-box{
+    background:var(--paper);border:2px solid var(--ink);border-radius:6px;
+    width:100%;max-width:540px;max-height:90vh;overflow-y:auto;
+    padding:24px;box-shadow:0 12px 36px rgba(0,0,0,0.35);
+  }
+  .modal-box h2{font-family:var(--font-display);margin-top:0;margin-bottom:12px;}
+  .form-group{margin-bottom:14px;}
+  .form-group label{display:block;font-family:var(--font-mono);font-size:11.5px;text-transform:uppercase;letter-spacing:1px;color:var(--ink-mute);margin-bottom:5px;}
+  .form-group input, .form-group select{
+    width:100%;padding:9px 12px;font-family:var(--font-mono);font-size:13px;
+    border:1px solid var(--line);background:#fff;border-radius:3px;color:var(--ink);
+  }
+  .form-group input:focus, .form-group select:focus{outline:2px solid var(--pen);}
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+  @media(max-width:480px){.form-row{grid-template-columns:1fr;}}
+
+  .footer-note{
+    text-align:center;color:var(--ink-mute);font-size:11.5px;margin-top:40px;
+    font-family:var(--font-mono);
+  }
+
+  /* Print Styles */
+  @media print{
+    body{background:#fff;color:#000;background-image:none;}
+    .top-ribbon, .tabs, .progress-strip, .btn-row, .flag-btn, .modal-backdrop{display:none !important;}
+    .card, .qcard{box-shadow:none;border-color:#aaa;page-break-inside:avoid;}
+    .qhead{margin-bottom:6px;}
+    .opt{border-color:#ccc;background:transparent !important;}
+  }
+</style>
+</head>
+<body>
+<div class="app" id="app"></div>
+
+<!-- Settings & API Modal Container -->
+<div id="modal-container"></div>
+
+<script>
+/* ============================= CONFIG & DEFAULTS ============================= */
+
+const DEFAULT_SETTINGS = {
+  mode: 'arch',                               // 'arch' or 'direct'
+  archServerUrl: window.location.origin,      // Defaults to current host
+  geminiBaseUrl: 'http://127.0.0.1:8081/v1',
+  apiKey: 'sk-gemini',
+  model: 'gemini-3.5-flash-thinking',
+  batchSize: 10,
+  enableTimer: true,
+  timerMinutes: 120                           // 2 hours for full LDA mock
+};
+
+let settings = Object.assign({}, DEFAULT_SETTINGS);
+
+/* ============================= SYLLABUS DATA ============================= */
+
+const SUBJECTS = {
+  gk:{ name:'General Knowledge', short:'GK', weightExam:35, color:'gk',
+    topics:[
+      'Meghalaya Geography, Districts & Rivers',
+      'West Khasi Hills Local Knowledge (Nongstoin, Mawkyrwat)',
+      'Meghalaya History, Culture & Festivals (Shad Suk Mynsiem, Nongkrem)',
+      'Northeast India States & Culture',
+      'Indian Polity & Constitution',
+      'Indian History & National Movement',
+      'Indian Geography & Environment',
+      'World Geography & International Organizations',
+      'Sports, Awards & Famous Personalities',
+      'Current Affairs (2025–2026)'
+    ]},
+  english:{ name:'General English', short:'ENG', weightExam:35, color:'english',
+    topics:[
+      'Grammar — Tenses, Voice & Narration',
+      'Grammar — Parts of Speech & Sentence Structure',
+      'Vocabulary — Synonyms & Antonyms',
+      'Vocabulary — One-word Substitution & Word Pairs',
+      'Idioms, Phrases & Spellings',
+      'Comprehension Passages & Error Detection',
+      'Prepositions, Articles & Sentence Correction',
+      'Sentence Rearrangement & Jumbled Paragraphs'
+    ]},
+  math:{ name:'Elementary Mathematics', short:'MATH', weightExam:15, color:'math',
+    topics:[
+      'Percentage, Profit & Loss',
+      'Simple & Compound Interest',
+      'Ratio, Proportion & Average',
+      'Time, Speed & Distance (incl. Boats & Streams)',
+      'Time & Work',
+      'Algebra & Linear Equations',
+      'Mensuration (Area, Perimeter & Volume)',
+      'Number System, HCF-LCM & Simplification',
+      'Ages & Mixture Problems'
+    ]},
+  computer:{ name:'Computer Knowledge', short:'COMP', weightExam:15, color:'computer',
+    topics:[
+      'MS Word & Excel Essentials for Office Work',
+      'Computer Hardware & Software Basics',
+      'Windows OS, Security & File Management',
+      'Internet, Email Protocols, Networking & Abbreviations',
+      'Computer History & General IT Terminology'
+    ]},
+  science:{ name:'General Science', short:'SCI', weightExam:0, color:'science',
+    topics:[
+      'Physics — Mechanics, Light & Electricity',
+      'Chemistry — Reactions, Elements & Everyday Chemistry',
+      'Biology — Human Body, Health, Nutrition & Ecology'
+    ]},
+  reasoning:{ name:'Reasoning & Aptitude', short:'REA', weightExam:0, color:'reasoning',
+    topics:[
+      'Coding-Decoding',
+      'Number & Letter Series',
+      'Analogies & Classification (Odd One Out)',
+      'Blood Relations & Direction Sense',
+      'Logical Sequencing & Syllogisms'
+    ]}
+};
+
+// Real DSC LDA exam breakdown: GK 35 / Eng 35 / Math 15 / Comp 15
+const MIX_BREAKDOWN = [
+  {key:'gk', count:16},
+  {key:'english', count:16},
+  {key:'math', count:7},
+  {key:'computer', count:7},
+  {key:'science', count:2},
+  {key:'reasoning', count:2}
+];
+
+// 30-day rotation. Days 7, 14, 21, 28 = checkpoint mocks, Day 30 = final full mock.
+const ROTATION = [
+  {day:1, subject:'gk', topic:0},
+  {day:2, subject:'english', topic:0},
+  {day:3, subject:'math', topic:0},
+  {day:4, subject:'science', topic:0},
+  {day:5, subject:'gk', topic:1},
+  {day:6, subject:'english', topic:2},
+  {day:7, mixed:true, checkpoint:true},
+  {day:8, subject:'gk', topic:4},
+  {day:9, subject:'math', topic:1},
+  {day:10, subject:'computer', topic:0},
+  {day:11, subject:'english', topic:4},
+  {day:12, subject:'reasoning', topic:0},
+  {day:13, subject:'gk', topic:3},
+  {day:14, mixed:true, checkpoint:true},
+  {day:15, subject:'math', topic:3},
+  {day:16, subject:'gk', topic:5},
+  {day:17, subject:'english', topic:1},
+  {day:18, subject:'science', topic:1},
+  {day:19, subject:'computer', topic:1},
+  {day:20, subject:'gk', topic:7},
+  {day:21, mixed:true, checkpoint:true},
+  {day:22, subject:'math', topic:4},
+  {day:23, subject:'gk', topic:9},
+  {day:24, subject:'english', topic:5},
+  {day:25, subject:'reasoning', topic:1},
+  {day:26, subject:'gk', topic:8},
+  {day:27, subject:'computer', topic:3},
+  {day:28, mixed:true, checkpoint:true},
+  {day:29, subject:'math', topic:6},
+  {day:30, mixed:true, final:true}
+];
+
+/* ============================= STATE ============================= */
+
+const STORAGE_KEY = 'wkh_lda_progress_v2';
+const SETTINGS_KEY = 'wkh_lda_settings_v2';
+const CACHE_PREFIX = 'wkh_lda_cache_v2_';
+
+let progress = {
+  currentDay: 1,
+  streak: 0,
+  lastCompletedTs: null,
+  completed: {},
+  lifetime: { answered: 0, correct: 0 },
+  bySubject: { gk:{a:0,c:0}, english:{a:0,c:0}, math:{a:0,c:0}, computer:{a:0,c:0}, science:{a:0,c:0}, reasoning:{a:0,c:0} }
+};
+
+let view = 'dashboard';
+let activeGen = null;         // {id, title, subtitle, kind, questions, answers, flagged:{}, submitted, subjectKey, dayNum, startedAt}
+let genLoading = null;        // {done, total, statusText}
+let serverStatus = { state: 'checking', latencyMs: null, archHost: null, geminiBackend: null };
+let timerInterval = null;
+let timeRemaining = null;     // seconds
+
+/* ============================= STORAGE (Robust Local + Server Sync) ============================= */
+
+function loadSettings(){
+  try{
+    const s = localStorage.getItem(SETTINGS_KEY);
+    if(s) settings = Object.assign(settings, JSON.parse(s));
+  }catch(e){}
+}
+
+function saveSettings(){
+  try{ localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings)); }catch(e){}
+}
+
+async function loadProgress(){
+  // 1. Try local storage
+  try{
+    const local = localStorage.getItem(STORAGE_KEY);
+    if(local) progress = Object.assign(progress, JSON.parse(local));
+  }catch(e){}
+
+  // 2. If connected to Arch Server, try pulling server-side backup
+  try{
+    const r = await fetch(settings.archServerUrl.replace(/\/+$/, '') + '/api/progress');
+    if(r.ok){
+      const serverData = await r.json();
+      if(serverData && serverData.lifetime && serverData.lifetime.answered > (progress.lifetime.answered || 0)){
+        progress = Object.assign(progress, serverData);
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
+      }
+    }
+  }catch(e){}
+}
+
+async function saveProgress(){
+  try{ localStorage.setItem(STORAGE_KEY, JSON.stringify(progress)); }catch(e){}
+
+  // Async sync to Arch Server if available
+  try{
+    fetch(settings.archServerUrl.replace(/\/+$/, '') + '/api/progress', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(progress)
+    }).catch(()=>{});
+  }catch(e){}
+}
+
+async function loadCache(id){
+  try{
+    const local = localStorage.getItem(CACHE_PREFIX + id);
+    if(local) return JSON.parse(local);
+  }catch(e){}
+
+  try{
+    const r = await fetch(settings.archServerUrl.replace(/\/+$/, '') + '/api/cache?id=' + encodeURIComponent(id));
+    if(r.ok){
+      const res = await r.json();
+      if(res.cached && res.data){
+        localStorage.setItem(CACHE_PREFIX + id, JSON.stringify(res.data));
+        return res.data;
+      }
+    }
+  }catch(e){}
+  return null;
+}
+
+async function saveCache(id, data){
+  try{ localStorage.setItem(CACHE_PREFIX + id, JSON.stringify(data)); }catch(e){}
+  try{
+    fetch(settings.archServerUrl.replace(/\/+$/, '') + '/api/cache', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({id, data})
+    }).catch(()=>{});
+  }catch(e){}
+}
+
+/* ============================= API BRIDGE & CONNECTIVITY ============================= */
+
+async function checkBackendStatus(){
+  serverStatus.state = 'checking';
+  renderTopRibbon();
+
+  const startT = performance.now();
+  try{
+    const r = await fetch(settings.archServerUrl.replace(/\/+$/, '') + '/api/status', {
+      signal: AbortSignal.timeout(5000)
+    });
+    if(r.ok){
+      const data = await r.json();
+      serverStatus.state = 'online';
+      serverStatus.latencyMs = Math.round(performance.now() - startT);
+      serverStatus.archHost = data.host || 'Arch Linux';
+      serverStatus.geminiBackend = data.gemini_backend || null;
+      renderTopRibbon();
+      return true;
+    }
+  }catch(e){}
+
+  // Fallback: check direct gemini-web2api
+  try{
+    const r2 = await fetch(settings.geminiBaseUrl.replace(/\/+$/, '') + '/models', {
+      headers: {'Authorization': 'Bearer ' + settings.apiKey},
+      signal: AbortSignal.timeout(4000)
+    });
+    if(r2.ok){
+      serverStatus.state = 'online';
+      serverStatus.latencyMs = Math.round(performance.now() - startT);
+      serverStatus.archHost = 'Direct Gemini Web2API';
+      renderTopRibbon();
+      return true;
+    }
+  }catch(e){}
+
+  serverStatus.state = 'offline';
+  serverStatus.latencyMs = null;
+  renderTopRibbon();
+  return false;
+}
+
+/* ============================= GENERATION ENGINE ============================= */
+
+function cleanQuestionsJson(text){
+  let clean = text.trim();
+  clean = clean.replace(/<thought>[\s\S]*?<\/thought>/gi, '').trim();
+  clean = clean.replace(/```json/gi, '').replace(/```/g, '').trim();
+  const start = clean.indexOf('{');
+  const end = clean.lastIndexOf('}');
+  if(start !== -1 && end !== -1 && end > start){
+    const parsed = JSON.parse(clean.substring(start, end + 1));
+    if(parsed.questions && Array.isArray(parsed.questions)) return parsed.questions;
+  }
+  const startArr = clean.indexOf('[');
+  const endArr = clean.lastIndexOf(']');
+  if(startArr !== -1 && endArr !== -1 && endArr > startArr){
+    const arr = JSON.parse(clean.substring(startArr, endArr + 1));
+    if(Array.isArray(arr)) return arr;
+  }
+  throw new Error('Unable to extract valid questions JSON');
+}
+
+async function fetchQuestionsFromBackend(subjectName, topicName, count){
+  const targetCount = Math.min(count, 15);
+
+  // Method 1: Arch Server endpoint
+  if(settings.mode === 'arch'){
+    const url = settings.archServerUrl.replace(/\/+$/, '') + '/api/generate';
+    const res = await fetch(url, {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        subjectName,
+        topicName,
+        count: targetCount,
+        model: settings.model
+      })
+    });
+    if(!res.ok){
+      const err = await res.json().catch(()=>({error:'Server error'}));
+      throw new Error(err.error || 'Server error ' + res.status);
+    }
+    const data = await res.json();
+    if(!data.questions || !Array.isArray(data.questions)) throw new Error('Invalid questions list received');
+    return data.questions.filter(q => q && q.q && q.a && q.b && q.c && q.d && q.correct);
+  }
+
+  // Method 2: Direct OpenAI / Gemini Web2API endpoint fallback
+  const directUrl = settings.geminiBaseUrl.replace(/\/+$/, '') + '/chat/completions';
+  const systemPrompt = "You are an expert exam question setter for DSC West Khasi Hills, Meghalaya LDA exam. Respond ONLY with valid JSON.";
+  const userPrompt = `Generate exactly ${targetCount} original MCQs.
+Subject: ${subjectName}
+Topic: ${topicName}
+Weight Meghalaya, West Khasi Hills district (Nongstoin, Mawkyrwat), and Northeast India context.
+Output JSON only:
+{"questions":[{"q":"...","a":"...","b":"...","c":"...","d":"...","correct":"a","tip":"..."}]}`;
+
+  const res = await fetch(directUrl, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + settings.apiKey
+    },
+    body: JSON.stringify({
+      model: settings.model,
+      temperature: 0.3,
+      messages: [
+        {role: 'system', content: systemPrompt},
+        {role: 'user', content: userPrompt}
+      ]
+    })
+  });
+
+  const data = await res.json();
+  const rawText = data.choices && data.choices[0] ? data.choices[0].message.content : '';
+  const qs = cleanQuestionsJson(rawText);
+  return qs.filter(q => q && q.q && q.a && q.b && q.c && q.d && q.correct);
+}
+
+async function generateSet(meta){
+  genLoading = {done:0, total:50, statusText:'Connecting to Arch Linux Gemini API...'};
+  activeGen = null;
+  renderApp();
+
+  let jobs = [];
+  if(meta.kind === 'mixed'){
+    MIX_BREAKDOWN.forEach(b => {
+      chunk(b.count, settings.batchSize).forEach(n => {
+        jobs.push({subjectName: SUBJECTS[b.key].name, topicName: 'Mixed practice for ' + SUBJECTS[b.key].name, count: n});
+      });
+    });
+  } else {
+    chunk(50, settings.batchSize).forEach(n => {
+      jobs.push({subjectName: meta.subjectName, topicName: meta.topicName, count: n});
+    });
+  }
+
+  const results = [];
+  for(let i=0; i<jobs.length; i++){
+    const job = jobs[i];
+    genLoading.statusText = `Batch ${i+1}/${jobs.length}: Generating ${job.count} questions on ${job.topicName}...`;
+    renderApp();
+
+    try{
+      const qs = await fetchQuestionsFromBackend(job.subjectName, job.topicName, job.count);
+      results.push(...qs);
+    }catch(e){
+      console.warn('Batch failed, retrying once...', e);
+      try{
+        const qs = await fetchQuestionsFromBackend(job.subjectName, job.topicName, job.count);
+        results.push(...qs);
+      }catch(e2){
+        console.error('Batch retry also failed:', e2);
+      }
+    }
+    genLoading.done = Math.min(genLoading.done + job.count, 50);
+    renderApp();
+  }
+
+  genLoading = null;
+  activeGen = {
+    id: meta.id,
+    title: meta.title,
+    subtitle: meta.subtitle,
+    kind: meta.kind,
+    subjectKey: meta.subjectKey || null,
+    dayNum: meta.dayNum || null,
+    questions: results,
+    answers: {},
+    flagged: {},
+    submitted: false,
+    startedAt: Date.now()
+  };
+
+  if(settings.enableTimer && results.length > 0){
+    startExamTimer(results.length >= 50 ? settings.timerMinutes * 60 : results.length * 90);
+  }
+
+  await saveCache(meta.id, {
+    questions: results, title: meta.title, subtitle: meta.subtitle,
+    kind: meta.kind, subjectKey: meta.subjectKey || null, dayNum: meta.dayNum || null
+  });
+  renderApp();
+}
+
+async function openGenerator(meta){
+  const cached = await loadCache(meta.id);
+  if(cached && cached.questions && cached.questions.length){
+    activeGen = {
+      id: meta.id, title: cached.title, subtitle: cached.subtitle, kind: cached.kind,
+      subjectKey: cached.subjectKey, dayNum: cached.dayNum,
+      questions: cached.questions, answers:{}, flagged:{}, submitted:false, startedAt: Date.now()
+    };
+    if(settings.enableTimer){
+      startExamTimer(cached.questions.length >= 50 ? settings.timerMinutes * 60 : cached.questions.length * 90);
+    }
+  } else {
+    activeGen = null;
+  }
+  view = 'generator';
+  window.__pendingMeta = meta;
+  renderApp();
+}
+
+function selectAnswer(idx, letter){
+  if(!activeGen || activeGen.submitted) return;
+  activeGen.answers[idx] = letter;
+  renderApp();
+}
+
+function toggleFlag(idx){
+  if(!activeGen || activeGen.submitted) return;
+  activeGen.flagged[idx] = !activeGen.flagged[idx];
+  renderApp();
+}
+
+function startExamTimer(seconds){
+  clearInterval(timerInterval);
+  timeRemaining = seconds;
+  timerInterval = setInterval(()=>{
+    if(timeRemaining > 0){
+      timeRemaining--;
+      renderTimerPill();
+    } else {
+      clearInterval(timerInterval);
+      alert("⏱️ Time is up! Submitting your examination answers.");
+      submitQuiz();
+    }
+  }, 1000);
+}
+
+function formatTimer(sec){
+  if(sec == null) return '--:--';
+  const m = Math.floor(sec / 60);
+  const s = sec % 60;
+  return `${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+}
+
+async function submitQuiz(){
+  if(!activeGen || activeGen.submitted) return;
+  clearInterval(timerInterval);
+  activeGen.submitted = true;
+
+  let score = 0;
+  activeGen.questions.forEach((q, idx)=>{
+    const sel = activeGen.answers[idx];
+    if(sel && sel === q.correct) score++;
+  });
+  const total = activeGen.questions.length;
+
+  progress.lifetime.answered += total;
+  progress.lifetime.correct += score;
+
+  if(activeGen.kind === 'mixed'){
+    MIX_BREAKDOWN.forEach(b=>{
+      if(!progress.bySubject[b.key]) progress.bySubject[b.key] = {a:0, c:0};
+    });
+  } else if(activeGen.subjectKey){
+    if(!progress.bySubject[activeGen.subjectKey]) progress.bySubject[activeGen.subjectKey] = {a:0, c:0};
+    progress.bySubject[activeGen.subjectKey].a += total;
+    progress.bySubject[activeGen.subjectKey].c += score;
+  }
+
+  if(activeGen.dayNum){
+    progress.completed[activeGen.dayNum] = {score, total, ts: Date.now(), label: activeGen.title};
+    const now = Date.now();
+    const oneDay = 1000 * 60 * 60 * 24;
+    if(progress.lastCompletedTs && (now - progress.lastCompletedTs) < oneDay * 2.2){
+      progress.streak += 1;
+    } else {
+      progress.streak = 1;
+    }
+    progress.lastCompletedTs = now;
+  }
+
+  await saveProgress();
+  renderApp();
+}
+
+function advanceDay(){
+  const cur = progress.currentDay;
+  progress.currentDay = cur >= 30 ? 1 : cur + 1;
+  saveProgress();
+  view = 'dashboard';
+  renderApp();
+}
+
+/* ============================= HELPERS ============================= */
+
+function escapeHtml(s){
+  return String(s == null ? '' : s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+}
+function rotationForDay(d){ return ROTATION.find(r => r.day === d) || ROTATION[0]; }
+function topicMeta(subjectKey, topicIdx){
+  const s = SUBJECTS[subjectKey];
+  return {subjectKey, subjectName: s.name, topicIdx, topicName: s.topics[topicIdx]};
+}
+function dayLabel(dayNum){
+  const r = rotationForDay(dayNum);
+  if(r.mixed) return r.final ? 'Final Full-Syllabus Mock (100 Marks)' : 'Full-Syllabus Checkpoint Mock (100 Marks)';
+  const t = topicMeta(r.subject, r.topic);
+  return t.topicName + ' (' + SUBJECTS[r.subject].name + ')';
+}
+function chunk(total, max){
+  const out = []; let left = total;
+  while(left > 0){ const n = Math.min(max, left); out.push(n); left -= n; }
+  return out;
+}
+function accuracy(a, c){ return a > 0 ? Math.round((c / a) * 100) : 0; }
+
+function buildPromptText(meta){
+  if(meta.kind === 'mixed'){
+    const rows = MIX_BREAKDOWN.map(b => `  • ${SUBJECTS[b.key].name}: ${b.count} questions`).join('\n');
+    return `District Selection Committee (DSC), West Khasi Hills — LDA Recruitment Mock
+Section Balance:
+${rows}
+Focus on Meghalaya, Nongstoin, West Khasi Hills context, practical math, and everyday computer literacy.`;
+  }
+  return `District Selection Committee (DSC), West Khasi Hills — LDA Recruitment Exam
+Subject: ${meta.subjectName || ''}
+Topic: ${meta.topicName || ''}
+Generate 50 original MCQs with options a-d, answer key, and short explanations.`;
+}
+
+/* ============================= RENDERING ============================= */
+
+function setView(v){
+  view = v;
+  renderApp();
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
+
+function renderApp(){
+  const el = document.getElementById('app');
+  el.innerHTML = `
+    <div id="top-ribbon-anchor"></div>
+    ${renderLetterhead()}
+    ${renderTabs()}
+    ${renderView()}
+    <div class="footer-note">
+      DISTRICT SELECTION COMMITTEE · WEST KHASI HILLS · NONGSTOIN<br>
+      Connected via Arch Linux Daemon · Gemini-Web2API Bridge
+    </div>
+  `;
+  renderTopRibbon();
+}
+
+function renderTopRibbon(){
+  const anchor = document.getElementById('top-ribbon-anchor');
+  if(!anchor) return;
+
+  const st = serverStatus.state;
+  const statusLabel = st === 'online' 
+    ? `Arch Listener Online (${serverStatus.latencyMs}ms)`
+    : (st === 'checking' ? 'Connecting to Arch Linux...' : 'Backend Offline');
+
+  anchor.innerHTML = `
+  <div class="top-ribbon">
+    <div style="display:flex;align-items:center;gap:10px;">
+      <div class="status-pill" title="Arch Linux API Bridge Status">
+        <span class="status-dot ${st}"></span>
+        <span>${statusLabel}</span>
+      </div>
+      <span style="color:var(--ink-mute);font-size:11px;">Model: <b>${escapeHtml(settings.model)}</b></span>
+    </div>
+    <div class="ribbon-actions">
+      <button class="btn ghost sm" onclick="checkBackendStatus()">Ping API</button>
+      <button class="btn sm" onclick="openSettingsModal()">⚙️ Settings & Arch Host</button>
+    </div>
+  </div>`;
+}
+
+function renderTimerPill(){
+  const el = document.getElementById('timer-pill-display');
+  if(el){
+    el.textContent = '⏱️ ' + formatTimer(timeRemaining);
+    if(timeRemaining <= 300) el.classList.add('urgent');
+  }
+}
+
+function renderLetterhead(){
+  return `
+  <div class="letterhead">
+    <div>
+      <h1>DSC West Khasi Hills — LDA Mission Log</h1>
+      <div class="sub">District Selection Committee · Nongstoin, Meghalaya · Recruitment Drill Engine</div>
+    </div>
+    <div class="file-no">
+      FILE NO. WKH/DSC/LDA-${String(progress.currentDay).padStart(2,'0')}<br>
+      CYCLE: 30-DAY ROTATION · 100 MARKS
+    </div>
+  </div>`;
+}
+
+function renderTabs(){
+  const tabs = [
+    ['dashboard','Dashboard'],
+    ['generator','Daily Drill / Exam'],
+    ['subjects','Subjects (6)'],
+    ['topics','Topics Master'],
+    ['calendar','30-Day Calendar'],
+    ['progress','Mission Record']
+  ];
+  return `<div class="tabs">${tabs.map(([k,label]) =>
+    `<button class="tab ${view === k ? 'active' : ''}" onclick="setView('${k}')">${label}</button>`
+  ).join('')}</div>`;
+}
+
+function renderView(){
+  if(view === 'dashboard') return renderDashboard();
+  if(view === 'subjects') return renderSubjects();
+  if(view === 'topics') return renderTopics();
+  if(view === 'calendar') return renderCalendar();
+  if(view === 'progress') return renderProgress();
+  if(view === 'generator') return renderGeneratorView();
+  return '';
+}
+
+function renderDashboard(){
+  const r = rotationForDay(progress.currentDay);
+  const label = dayLabel(progress.currentDay);
+  const isMock = !!r.mixed;
+  const acc = accuracy(progress.lifetime.answered, progress.lifetime.correct);
+  const doneCount = Object.keys(progress.completed).length;
+
+  return `
+  <div class="grid two">
+    <div class="stamp ${progress.completed[progress.currentDay] ? 'gold':''}">
+      <div class="big">DAY ${progress.currentDay}</div>
+      <div class="small">${isMock ? (r.final?'FINAL MOCK':'CHECKPOINT') : 'OF 30 · MONTHLY'}</div>
+    </div>
+    <div class="card ${isMock ? 'red' : ''}">
+      <span class="eyebrow">Today's Assignment</span>
+      <h2>${escapeHtml(label)}</h2>
+      <p class="muted">${isMock 
+        ? 'Full-syllabus 50-question mock, structured strictly to DSC LDA weightage: GK 35% · English 35% · Math 15% · Computer 15%, plus Science & Reasoning.' 
+        : 'Focused 50-question drill targeting this syllabus unit, crafted to Meghalaya State Government Grade-IV / LDA standards.'}</p>
+      <div class="btn-row">
+        <button class="btn" onclick="startDay(${progress.currentDay})">Start Today's Drill →</button>
+        <button class="btn ghost" onclick="setView('calendar')">View 30-Day Rotation</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid four" style="margin-top:4px;">
+    <div class="stat"><div class="num">${progress.streak} 🔥</div><div class="label">Day Streak</div></div>
+    <div class="stat"><div class="num">${doneCount}/30</div><div class="label">Days Cleared</div></div>
+    <div class="stat"><div class="num">${progress.lifetime.answered}</div><div class="label">Questions Drilled</div></div>
+    <div class="stat"><div class="num">${acc}%</div><div class="label">Lifetime Accuracy</div></div>
+  </div>
+
+  <div class="grid two" style="margin-top:16px;">
+    <div class="card">
+      <span class="eyebrow">Official Exam Pattern</span>
+      <h3>DSC West Khasi Hills — LDA Scheme</h3>
+      <table class="mix-table">
+        <tr><td>A. General Knowledge (incl. Meghalaya & WKH)</td><td>35 marks</td></tr>
+        <tr><td>B. General English (Grammar & Vocabulary)</td><td>35 marks</td></tr>
+        <tr><td>C. Elementary Mathematics</td><td>15 marks</td></tr>
+        <tr><td>D. Computer Knowledge</td><td>15 marks</td></tr>
+        <tr><td>Total Time: 2 Hours</td><td>100 marks</td></tr>
+      </table>
+    </div>
+    <div class="card teal">
+      <span class="eyebrow">Host & Engine Setup</span>
+      <h3>Arch Linux API Listener</h3>
+      <p class="muted">Connected to the local Arch Linux Python daemon. AI questions are synthesized using Gemini Web2API with zero cloud subscription fees.</p>
+      <div class="btn-row">
+        <button class="btn sm ghost" onclick="openSettingsModal()">Configure API & Host</button>
+        <button class="btn sm" onclick="window.print()">🖨️ Print Exam Paper</button>
+      </div>
+    </div>
+  </div>`;
+}
+
+function startDay(dayNum){
+  const r = rotationForDay(dayNum);
+  let meta;
+  if(r.mixed){
+    meta = {
+      id: 'day-' + dayNum, kind: 'mixed', title: dayLabel(dayNum),
+      subtitle: 'Full-syllabus mock — Day ' + dayNum, dayNum: dayNum
+    };
+  } else {
+    const t = topicMeta(r.subject, r.topic);
+    meta = {
+      id: 'day-' + dayNum, kind: 'topic', title: t.topicName, subtitle: SUBJECTS[r.subject].name + ' — Day ' + dayNum,
+      subjectKey: r.subject, subjectName: t.subjectName, topicName: t.topicName, dayNum: dayNum
+    };
+  }
+  openGenerator(meta);
+}
+
+function renderSubjects(){
+  const cards = Object.keys(SUBJECTS).map(key => {
+    const s = SUBJECTS[key];
+    const bs = progress.bySubject[key] || {a:0, c:0};
+    const acc = accuracy(bs.a, bs.c);
+    return `
+    <div class="card">
+      <span class="badge ${s.color}">${s.short}${s.weightExam ? ' · ' + s.weightExam + '%' : ' · supplementary'}</span>
+      <h3 style="margin-top:8px;">${escapeHtml(s.name)}</h3>
+      <p class="muted">${s.topics.length} topics on file · ${acc}% accuracy so far</p>
+      <div class="btn-row">
+        <button class="btn ghost sm" onclick="startSubject('${key}')">Generate 50-Q Subject Test →</button>
+      </div>
+    </div>`;
+  }).join('');
+  return `<div class="grid three">${cards}</div>`;
+}
+
+function startSubject(key){
+  const s = SUBJECTS[key];
+  const meta = {
+    id: 'subject-' + key, kind: 'subject', title: s.name + ' — Full Subject Drill',
+    subtitle: '50 questions spanning every topic in this subject', subjectKey: key
+  };
+  openSubjectGenerator(meta, key);
+}
+
+async function openSubjectGenerator(meta, key){
+  window.__subjectAllTopics = key;
+  activeGen = null;
+  view = 'generator';
+  window.__pendingMeta = meta;
+  renderApp();
+}
+
+function renderTopics(){
+  const sections = Object.keys(SUBJECTS).map(key => {
+    const s = SUBJECTS[key];
+    const rows = s.topics.map((t, idx) => `
+      <div class="topic-row">
+        <div class="t-name"><span class="badge ${s.color}" style="margin-right:8px;">${s.short}</span>${escapeHtml(t)}</div>
+        <div class="t-actions">
+          <button class="btn ghost sm" onclick="startTopic('${key}',${idx})">Drill 50 →</button>
+        </div>
+      </div>`).join('');
+    return `<div class="card"><h3>${escapeHtml(s.name)}</h3><div class="topic-list">${rows}</div></div>`;
+  }).join('');
+  return sections;
+}
+
+function startTopic(key, idx){
+  const t = topicMeta(key, idx);
+  const meta = {
+    id: 'topic-' + key + '-' + idx, kind: 'topic', title: t.topicName, subtitle: t.subjectName,
+    subjectKey: key, subjectName: t.subjectName, topicName: t.topicName
+  };
+  openGenerator(meta);
+}
+
+function renderCalendar(){
+  const cells = ROTATION.map(r => {
+    const done = progress.completed[r.day];
+    const cur = r.day === progress.currentDay;
+    const cls = ['cal-cell'];
+    if(done) cls.push('done');
+    if(r.mixed) cls.push('mock');
+    if(cur) cls.push('current');
+    const tag = r.mixed ? (r.final ? 'FINAL' : 'MOCK') : SUBJECTS[r.subject].short;
+    return `<button class="${cls.join(' ')}" onclick="startDay(${r.day})" title="${escapeHtml(dayLabel(r.day))}">
+      <div class="d">${r.day}</div>
+      <div class="tag">${tag}</div>
+    </button>`;
+  }).join('');
+  return `
+  <div class="card">
+    <span class="eyebrow">30-Day Rotation · Repeats Monthly</span>
+    <h2>Mission Calendar</h2>
+    <p class="muted">Gold = cleared. Dashed red border = full-syllabus checkpoint mock. Click any day to open its drill.</p>
+    <div class="cal-grid" style="margin-top:12px;">${cells}</div>
+  </div>`;
+}
+
+function renderProgress(){
+  const rows = Object.keys(SUBJECTS).map(key => {
+    const bs = progress.bySubject[key] || {a:0, c:0};
+    const acc = accuracy(bs.a, bs.c);
+    return `<tr><td>${SUBJECTS[key].name}</td><td>${bs.a}</td><td>${bs.c}</td><td>${acc}%</td></tr>`;
+  }).join('');
+  const history = Object.keys(progress.completed).sort((a,b) => a - b).map(d => {
+    const c = progress.completed[d];
+    return `<tr><td>Day ${d}</td><td>${escapeHtml(c.label || '')}</td><td>${c.score}/${c.total}</td><td>${new Date(c.ts).toLocaleDateString()}</td></tr>`;
+  }).join('') || `<tr><td colspan="4" class="muted">No days completed yet — start with Day 1 from the Dashboard.</td></tr>`;
+
+  return `
+  <div class="grid two">
+    <div class="card">
+      <span class="eyebrow">Subject Accuracy</span>
+      <h3>Performance Breakdown</h3>
+      <table class="mix-table">
+        <tr><td><b>Subject</b></td><td><b>Answered</b></td><td><b>Correct</b></td><td><b>Acc.</b></td></tr>
+        ${rows}
+      </table>
+    </div>
+    <div class="card gold">
+      <span class="eyebrow">Lifetime Mission Stats</span>
+      <div class="grid two" style="grid-template-columns:1fr 1fr;">
+        <div class="stat"><div class="num">${progress.lifetime.answered}</div><div class="label">Total Answered</div></div>
+        <div class="stat"><div class="num">${accuracy(progress.lifetime.answered, progress.lifetime.correct)}%</div><div class="label">Accuracy</div></div>
+      </div>
+      <p class="muted" style="margin-top:12px;">Streak resets if skipped for >2 days. Maintain daily consistency for the Nongstoin LDA posting.</p>
+    </div>
+  </div>
+  <div class="card" style="margin-top:16px;">
+    <span class="eyebrow">Official Record Log</span>
+    <h3>Day-by-day Completion Log</h3>
+    <table class="mix-table">
+      <tr><td><b>Day</b></td><td><b>Assignment</b></td><td><b>Score</b></td><td><b>Date Cleared</b></td></tr>
+      ${history}
+    </table>
+  </div>`;
+}
+
+function renderGeneratorView(){
+  const meta = window.__pendingMeta;
+  if(!meta && !activeGen){
+    return `<div class="empty">Pick a day, subject, or topic first — from the Dashboard, Subjects or Topics tab.</div>`;
+  }
+  const m = activeGen || meta;
+
+  let head = `
+  <div class="card">
+    <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;">
+      <div>
+        <span class="eyebrow">${escapeHtml(m.subtitle || '')}</span>
+        <h2>${escapeHtml(m.title)}</h2>
+      </div>
+      <div style="display:flex;gap:8px;">
+        <button class="btn sm ghost" onclick="window.print()">🖨️ Print Paper</button>
+      </div>
+    </div>
+    <details style="margin-top:10px;">
+      <summary class="link-btn" style="cursor:pointer;">View prompt & curriculum requirements</summary>
+      <div class="prompt-box" style="margin-top:10px;">${escapeHtml(buildPromptText(meta))}</div>
+      <button class="btn ghost sm" style="margin-top:8px;" onclick="copyPrompt()">Copy Prompt Text</button>
+    </details>
+  </div>`;
+
+  if(genLoading){
+    const pct = Math.round((genLoading.done / genLoading.total) * 100);
+    head += `
+    <div class="card">
+      <div class="loading">
+        <div class="spinner"></div>
+        <div>
+          <b>Synthesizing Questions via Arch Linux Gemini API</b> (${genLoading.done}/${genLoading.total} · ${pct}%)<br>
+          <span style="font-size:11.5px;color:var(--ink-mute);">${escapeHtml(genLoading.statusText || '')}</span>
+        </div>
+      </div>
+    </div>`;
+    return head;
+  }
+
+  if(!activeGen || !activeGen.questions || !activeGen.questions.length){
+    head += `
+    <div class="empty">
+      This drill is ready to be generated from the Arch Linux Gemini engine.
+      <div class="btn-row" style="justify-content:center;">
+        <button class="btn" onclick="triggerGenerate()">⚡ Generate 50 Original Questions</button>
+      </div>
+    </div>`;
+    return head;
+  }
+
+  const answeredCount = Object.keys(activeGen.answers).length;
+  const total = activeGen.questions.length;
+  const score = activeGen.submitted ? activeGen.questions.filter((q,i) => activeGen.answers[i] === q.correct).length : null;
+
+  // Question navigation palette
+  const paletteBtns = activeGen.questions.map((_, idx) => {
+    const ans = !!activeGen.answers[idx];
+    const flg = !!activeGen.flagged[idx];
+    let cls = 'q-nav-btn';
+    if(ans) cls += ' answered';
+    if(flg) cls += ' flagged';
+    return `<button class="${cls}" onclick="jumpToQ(${idx})">${idx + 1}</button>`;
+  }).join('');
+
+  const navPalette = `
+  <div class="card" style="padding:12px 16px;">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+      <span class="eyebrow" style="margin:0;">Question Sheet Navigator (${answeredCount}/${total} answered)</span>
+      <span style="font-size:11px;font-family:var(--font-mono);color:var(--ink-mute);">★ = Flagged for review</span>
+    </div>
+    <div class="q-nav-palette">${paletteBtns}</div>
+  </div>`;
+
+  const qs = activeGen.questions.map((q, idx) => renderQuizQuestion(q, idx, activeGen.submitted)).join('');
+
+  let footer;
+  if(activeGen.submitted){
+    footer = `
+    <div class="progress-strip">
+      <span>Scored ${score}/${total} (${accuracy(total, score)}%)</span>
+      <div class="btn-row" style="margin:0;">
+        <button class="btn ghost" onclick="triggerGenerate()">Regenerate Drill</button>
+        ${activeGen.dayNum 
+          ? `<button class="btn" onclick="advanceDay()">Mark Cleared & Advance Day →</button>` 
+          : `<button class="btn" onclick="setView('dashboard')">Return to Dashboard</button>`}
+      </div>
+    </div>`;
+  } else {
+    footer = `
+    <div class="progress-strip">
+      <div style="display:flex;align-items:center;gap:14px;">
+        <span>${answeredCount}/${total} answered</span>
+        <span class="timer-pill" id="timer-pill-display">⏱️ ${formatTimer(timeRemaining)}</span>
+      </div>
+      <div style="display:flex;gap:10px;">
+        <button class="btn red" onclick="if(confirm('Submit this test and calculate score?')) submitQuiz()">Submit Examination Paper</button>
+      </div>
+    </div>`;
+  }
+
+  return head + navPalette + qs + footer;
+}
+
+function jumpToQ(idx){
+  const el = document.getElementById('q-card-' + idx);
+  if(el) el.scrollIntoView({behavior: 'smooth'});
+}
+
+function renderQuizQuestion(item, idx, submitted){
+  const selected = activeGen.answers[idx];
+  const isFlagged = !!activeGen.flagged[idx];
+  const opts = ['a','b','c','d'];
+
+  const optsHtml = opts.map(o => {
+    let cls = 'opt';
+    if(submitted){
+      if(o === item.correct) cls += ' correct';
+      else if(o === selected && selected !== item.correct) cls += ' wrong';
+    } else if(o === selected) cls += ' selected';
+    return `<button class="${cls}" ${submitted ? 'disabled' : ''} onclick="selectAnswer(${idx},'${o}')">
+      <span class="optlet">${o}</span><span>${escapeHtml(item[o])}</span>
+    </button>`;
+  }).join('');
+
+  const tip = submitted ? `
+  <div class="tip">
+    ${item.tip ? '💡 ' + escapeHtml(item.tip) : ''}
+    ${selected === item.correct ? '<span class="tag-correct">✓ Correct</span>' : '<span class="tag-wrong">✗ Answer: ' + item.correct.toUpperCase() + '</span>'}
+  </div>` : '';
+
+  return `
+  <div class="qcard ${isFlagged ? 'flagged' : ''}" id="q-card-${idx}">
+    <div class="qhead">
+      <div class="qhead-left">
+        <span class="qnum">${idx + 1}</span>
+        <p class="qtext">${escapeHtml(item.q)}</p>
+      </div>
+      ${!submitted ? `<button class="flag-btn ${isFlagged ? 'active' : ''}" onclick="toggleFlag(${idx})" title="Flag question for review">★</button>` : ''}
+    </div>
+    <div class="opts">${optsHtml}</div>
+    ${tip}
+  </div>`;
+}
+
+function triggerGenerate(){
+  const meta = window.__pendingMeta;
+  if(!meta) return;
+  generateSet(meta);
+}
+
+function copyPrompt(){
+  const meta = window.__pendingMeta || {};
+  navigator.clipboard.writeText(buildPromptText(meta)).catch(()=>{});
+  alert("Prompt copied to clipboard!");
+}
+
+/* ============================= SETTINGS MODAL ============================= */
+
+function openSettingsModal(){
+  const container = document.getElementById('modal-container');
+  container.innerHTML = `
+  <div class="modal-backdrop" onclick="if(event.target===this) closeSettingsModal()">
+    <div class="modal-box">
+      <h2>Arch Linux Host & API Configuration</h2>
+      <p class="muted" style="margin-bottom:16px;">Configure your connection to the Arch Linux backend server and Gemini-Web2API.</p>
+
+      <div class="form-group">
+        <label>Integration Mode</label>
+        <select id="cfg-mode" onchange="toggleModeFields()">
+          <option value="arch" ${settings.mode==='arch'?'selected':''}>Arch Server Bridge (/api - Recommended)</option>
+          <option value="direct" ${settings.mode==='direct'?'selected':''}>Direct Gemini-Web2API (/v1)</option>
+        </select>
+      </div>
+
+      <div class="form-group" id="group-arch-url">
+        <label>Arch Server URL</label>
+        <input type="text" id="cfg-arch-url" value="${escapeHtml(settings.archServerUrl)}" placeholder="http://192.168.1.100:8080 or http://localhost:8080">
+      </div>
+
+      <div class="form-group" id="group-gemini-url">
+        <label>Gemini Web2API Base URL</label>
+        <input type="text" id="cfg-gemini-url" value="${escapeHtml(settings.geminiBaseUrl)}" placeholder="http://127.0.0.1:8081/v1">
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Model Name</label>
+          <select id="cfg-model">
+            <option value="gemini-3.5-flash-thinking" ${settings.model==='gemini-3.5-flash-thinking'?'selected':''}>gemini-3.5-flash-thinking (Fast reasoning)</option>
+            <option value="gemini-3.6-flash" ${settings.model==='gemini-3.6-flash'?'selected':''}>gemini-3.6-flash (Latest Flash)</option>
+            <option value="gemini-3.7-flash" ${settings.model==='gemini-3.7-flash'?'selected':''}>gemini-3.7-flash (Next-gen)</option>
+            <option value="gemini-3.1-pro" ${settings.model==='gemini-3.1-pro'?'selected':''}>gemini-3.1-pro (Pro Quality)</option>
+            <option value="gemini-flash-lite" ${settings.model==='gemini-flash-lite'?'selected':''}>gemini-flash-lite (Ultra-fast)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>API Key (Bearer)</label>
+          <input type="text" id="cfg-api-key" value="${escapeHtml(settings.apiKey)}">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Batch Size (Questions per request)</label>
+          <select id="cfg-batch-size">
+            <option value="5" ${settings.batchSize===5?'selected':''}>5 questions</option>
+            <option value="10" ${settings.batchSize===10?'selected':''}>10 questions (Recommended)</option>
+            <option value="15" ${settings.batchSize===15?'selected':''}>15 questions</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Exam Timer (Minutes)</label>
+          <input type="number" id="cfg-timer-min" value="${settings.timerMinutes}">
+        </div>
+      </div>
+
+      <div id="test-feedback" style="margin:10px 0;font-family:var(--font-mono);font-size:12px;"></div>
+
+      <div class="btn-row" style="justify-content:space-between;margin-top:20px;">
+        <button class="btn ghost" onclick="testConnectionFromModal()">Test Connection</button>
+        <div style="display:flex;gap:8px;">
+          <button class="btn ghost" onclick="closeSettingsModal()">Cancel</button>
+          <button class="btn" onclick="saveSettingsFromModal()">Save & Apply</button>
+        </div>
+      </div>
+    </div>
+  </div>`;
+}
+
+function closeSettingsModal(){
+  const container = document.getElementById('modal-container');
+  if(container) container.innerHTML = '';
+}
+
+function toggleModeFields(){
+  const mode = document.getElementById('cfg-mode').value;
+  const archGroup = document.getElementById('group-arch-url');
+  if(archGroup) archGroup.style.display = mode === 'arch' ? 'block' : 'none';
+}
+
+async function testConnectionFromModal(){
+  const fb = document.getElementById('test-feedback');
+  fb.innerHTML = '<span style="color:var(--pen);">Testing connectivity to backend...</span>';
+
+  const mode = document.getElementById('cfg-mode').value;
+  const archUrl = document.getElementById('cfg-arch-url').value.trim();
+  const geminiUrl = document.getElementById('cfg-gemini-url').value.trim();
+  const apiKey = document.getElementById('cfg-api-key').value.trim();
+
+  try{
+    if(mode === 'arch'){
+      const r = await fetch(archUrl.replace(/\/+$/, '') + '/api/status');
+      if(r.ok){
+        const d = await r.json();
+        const gemStatus = d.gemini_backend ? d.gemini_backend.status : 'unknown';
+        fb.innerHTML = `<span style="color:var(--ok);">✓ Arch Server is ONLINE! Gemini backend: ${gemStatus} (${d.gemini_backend?.latency_ms || 0}ms)</span>`;
+        return;
+      }
+    } else {
+      const r = await fetch(geminiUrl.replace(/\/+$/, '') + '/models', {
+        headers: {'Authorization': 'Bearer ' + apiKey}
+      });
+      if(r.ok){
+        fb.innerHTML = `<span style="color:var(--ok);">✓ Direct Gemini-Web2API connection SUCCESSFUL!</span>`;
+        return;
+      }
+    }
+    throw new Error('Non-200 response');
+  }catch(e){
+    fb.innerHTML = `<span style="color:var(--stamp);">✗ Connection failed: ${escapeHtml(e.message)}. Ensure the Arch Linux script is running!</span>`;
+  }
+}
+
+function saveSettingsFromModal(){
+  settings.mode = document.getElementById('cfg-mode').value;
+  settings.archServerUrl = document.getElementById('cfg-arch-url').value.trim();
+  settings.geminiBaseUrl = document.getElementById('cfg-gemini-url').value.trim();
+  settings.model = document.getElementById('cfg-model').value;
+  settings.apiKey = document.getElementById('cfg-api-key').value.trim();
+  settings.batchSize = parseInt(document.getElementById('cfg-batch-size').value) || 10;
+  settings.timerMinutes = parseInt(document.getElementById('cfg-timer-min').value) || 120;
+
+  saveSettings();
+  closeSettingsModal();
+  checkBackendStatus();
+  renderApp();
+}
+
+/* ============================= INITIALIZATION ============================= */
+
+async function init(){
+  loadSettings();
+  await loadProgress();
+  renderApp();
+  checkBackendStatus();
+}
+
+init();
+</script>
+</body>
+</html>

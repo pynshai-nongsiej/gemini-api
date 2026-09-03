@@ -1,0 +1,16 @@
+[Unit]
+Description=DSC West Khasi Hills LDA Mission Log & Gemini API Bridge
+After=network.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=%I
+WorkingDirectory=/opt/gemini-web2api
+ExecStart=/usr/bin/python3 /opt/gemini-web2api/arch_server.py --host 0.0.0.0 --port 8080 --gemini-url http://127.0.0.1:8081/v1
+Restart=on-failure
+RestartSec=5s
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
