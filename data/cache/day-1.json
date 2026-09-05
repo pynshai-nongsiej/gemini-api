@@ -1,0 +1,459 @@
+{
+  "questions": [
+    {
+      "q": "Which major river flows through the West Khasi Hills district before entering Bangladesh as the Someshwari?",
+      "a": "Kynshi River",
+      "b": "Simsang River",
+      "c": "Umiam River",
+      "d": "Myntdu River",
+      "correct": "b",
+      "tip": "The Simsang River is known as Someshwari upon entering Bangladesh."
+    },
+    {
+      "q": "Which district was carved out of West Khasi Hills in the year 2012?",
+      "a": "Eastern West Khasi Hills",
+      "b": "South West Khasi Hills",
+      "c": "Ri-Bhoi",
+      "d": "North Garo Hills",
+      "correct": "b",
+      "tip": "Mawkyrwat became the headquarters of South West Khasi Hills in 2012."
+    },
+    {
+      "q": "Nongstoin, the headquarters of West Khasi Hills district, is situated on the banks of which river?",
+      "a": "Kynshi River",
+      "b": "Wahblei River",
+      "c": "Nondei River",
+      "d": "Umngot River",
+      "correct": "a",
+      "tip": "Nongstoin lies along the banks of the Kynshi River."
+    },
+    {
+      "q": "In November 2021, Mairang was bifurcated from West Khasi Hills to form which new district?",
+      "a": "Eastern West Khasi Hills",
+      "b": "Central Khasi Hills",
+      "c": "South West Khasi Hills",
+      "d": "West Jaintia Hills",
+      "correct": "a",
+      "tip": "Mairang became the headquarters of Eastern West Khasi Hills in 2021."
+    },
+    {
+      "q": "Which famous waterfall is located near Nongstoin in the West Khasi Hills district?",
+      "a": "Elephant Falls",
+      "b": "Nohkalikai Falls",
+      "c": "Langshiang Falls",
+      "d": "Krang Suri Falls",
+      "correct": "c",
+      "tip": "Langshiang Falls is formed by the Kynshi River near Nongstoin."
+    },
+    {
+      "q": "Which of the following is the highest peak in the Khasi Hills region of Meghalaya?",
+      "a": "Nokrek Peak",
+      "b": "Shillong Peak",
+      "c": "Mawsynram Peak",
+      "d": "Kyllang Rock",
+      "correct": "b",
+      "tip": "Shillong Peak at 1,965 metres is the highest in Khasi Hills."
+    },
+    {
+      "q": "Kyllang Rock, a massive single granite boulder landmark, is located in which region of Meghalaya?",
+      "a": "West Khasi Hills / Eastern West Khasi Hills",
+      "b": "East Garo Hills",
+      "c": "South Garo Hills",
+      "d": "West Jaintia Hills",
+      "correct": "a",
+      "tip": "Kyllang Rock is a famous dome-shaped granite rock near Mairang."
+    },
+    {
+      "q": "Which river forms the natural boundary between Meghalaya and Assam in parts of West Khasi Hills?",
+      "a": "Kynshi River",
+      "b": "Kulsi (Khri) River",
+      "c": "Myntdu River",
+      "d": "Ganol River",
+      "correct": "b",
+      "tip": "The Khri (Kulsi) river flows north towards Assam from the region."
+    },
+    {
+      "q": "How many total districts are currently present in the state of Meghalaya?",
+      "a": "11",
+      "b": "12",
+      "c": "10",
+      "d": "13",
+      "correct": "b",
+      "tip": "Meghalaya currently consists of 12 administrative districts."
+    },
+    {
+      "q": "Nongkhnum Island, the second largest river island in Asia, is formed by the bifurcation of which river?",
+      "a": "Simsang and Umngot",
+      "b": "Kynshi and Phanliang",
+      "c": "Umiam and Umtrew",
+      "d": "Myntdu and Lukha",
+      "correct": "b",
+      "tip": "Nongkhnum Island is located near Nongstoin, formed by Kynshi and Namliang/Phanliang rivers."
+    },
+    {
+      "q": "Which district was created in 2012 by bifurcating West Khasi Hills district?",
+      "a": "Eastern West Khasi Hills",
+      "b": "South West Khasi Hills",
+      "c": "Ri-Bhoi",
+      "d": "North Garo Hills",
+      "correct": "b",
+      "tip": "Mawkyrwat became the headquarters of South West Khasi Hills in 2012."
+    },
+    {
+      "q": "What is the district headquarters of West Khasi Hills district?",
+      "a": "Mawkyrwat",
+      "b": "Mairang",
+      "c": "Nongstoin",
+      "d": "Shillong",
+      "correct": "c",
+      "tip": "Nongstoin is the administrative headquarters of West Khasi Hills district."
+    },
+    {
+      "q": "Which major river flowing through West Khasi Hills is famous for Langshiang Falls?",
+      "a": "Kynshi River",
+      "b": "Umiam River",
+      "c": "Myntdu River",
+      "d": "Simsang River",
+      "correct": "a",
+      "tip": "The Kynshi River flows through West Khasi Hills, forming Langshiang Falls."
+    },
+    {
+      "q": "Eastern West Khasi Hills district was carved out of West Khasi Hills in which year?",
+      "a": "2012",
+      "b": "2018",
+      "c": "2021",
+      "d": "2023",
+      "correct": "c",
+      "tip": "Mairang civil sub-division was upgraded to 12th district in 2021."
+    },
+    {
+      "q": "Which prominent river forms the famous river island of Nongkhnum in Meghalaya?",
+      "a": "Umngot River",
+      "b": "Kynshi River",
+      "c": "Simsang River",
+      "d": "Myntang River",
+      "correct": "b",
+      "tip": "Nongkhnum Island is formed by the bifurcation of the Kynshi River."
+    },
+    {
+      "q": "In which river basin is the Ranikor region of South-West/West Khasi Hills situated?",
+      "a": "Brahmaputra Basin",
+      "b": "Meghna/Surma Basin",
+      "c": "Ayeyarwady Basin",
+      "d": "Godavari Basin",
+      "correct": "b",
+      "tip": "Rivers in southern Meghalaya drain southwards into the Surma/Meghna basin."
+    },
+    {
+      "q": "Which is the largest river in the Garo Hills region of Meghalaya?",
+      "a": "Simsang River",
+      "b": "Kynshi River",
+      "c": "Umiam River",
+      "d": "Khri River",
+      "correct": "a",
+      "tip": "Simsang (Somi) is the longest and major river of Garo Hills."
+    },
+    {
+      "q": "Which district lies directly to the west of West Khasi Hills district?",
+      "a": "East Khasi Hills",
+      "b": "Ri-Bhoi",
+      "c": "East Garo Hills",
+      "d": "West Jaintia Hills",
+      "correct": "c",
+      "tip": "West Khasi Hills borders East Garo Hills to its western side."
+    },
+    {
+      "q": "Which famous waterfall located near Nongstoin is formed on the Kynshi River?",
+      "a": "Elephant Falls",
+      "b": "Nohkalikai Falls",
+      "c": "Langshiang Falls",
+      "d": "Tyrshi Falls",
+      "correct": "c",
+      "tip": "Langshiang Falls is located near Sangriang village in West Khasi Hills."
+    },
+    {
+      "q": "Which State borders Meghalaya along its northern and eastern boundaries?",
+      "a": "Tripura",
+      "b": "Assam",
+      "c": "Mizoram",
+      "d": "Nagaland",
+      "correct": "b",
+      "tip": "Meghalaya is bounded by Assam on the north, east, and west."
+    },
+    {
+      "q": "Which district was created in 2012 by bifurcating West Khasi Hills District?",
+      "a": "Eastern West Khasi Hills",
+      "b": "South West Khasi Hills",
+      "c": "Ri-Bhoi",
+      "d": "South West Garo Hills",
+      "correct": "b",
+      "tip": "Mawkyrwat became headquarters of South West Khasi Hills in 2012."
+    },
+    {
+      "q": "Which river flows through Nongstoin and forms the famous Langshiang Falls?",
+      "a": "Kynshi River",
+      "b": "Umiam River",
+      "c": "Simsang River",
+      "d": "Myntdu River",
+      "correct": "a",
+      "tip": "Kynshi River powers Langshiang Falls in West Khasi Hills."
+    },
+    {
+      "q": "What is the headquarters town of West Khasi Hills district?",
+      "a": "Mairang",
+      "b": "Mawkyrwat",
+      "c": "Nongstoin",
+      "d": "Resubelpara",
+      "correct": "c",
+      "tip": "Nongstoin has been the district headquarters since 1976."
+    },
+    {
+      "q": "Which peak is the second highest peak in Meghalaya, located in West Khasi Hills?",
+      "a": "Shillong Peak",
+      "b": "Kyllang Rock",
+      "c": "Nokrek Peak",
+      "d": "Kynshi Peak",
+      "correct": "b",
+      "tip": "Kyllang Rock is a massive granite dome near Mairang."
+    },
+    {
+      "q": "In which year was West Khasi Hills District officially carved out of Khasi Hills?",
+      "a": "1972",
+      "b": "1976",
+      "c": "1980",
+      "d": "1992",
+      "correct": "b",
+      "tip": "West Khasi Hills was created on October 28, 1976."
+    },
+    {
+      "q": "The Kynshi River is formed by the confluence of which two major rivers?",
+      "a": "Umiam and Umtrew",
+      "b": "Phanbliang and Rwiang",
+      "c": "Umngot and Myntdu",
+      "d": "Simsang and Bugi",
+      "correct": "b",
+      "tip": "Phanbliang and Rwiang rivers join to form the Kynshi."
+    },
+    {
+      "q": "Which major river flowing through South Garo Hills originates near West Khasi Hills?",
+      "a": "Simsang (Someshwari)",
+      "b": "Myntdu",
+      "c": "Jinjiram",
+      "d": "Umiam",
+      "correct": "a",
+      "tip": "Simsang originates in the Nokrek range bordering West Khasi Hills."
+    },
+    {
+      "q": "Mairang was bifurcated from West Khasi Hills in 2021 to form which district?",
+      "a": "North Khasi Hills",
+      "b": "Eastern West Khasi Hills",
+      "c": "Central Khasi Hills",
+      "d": "South East Khasi Hills",
+      "correct": "b",
+      "tip": "Eastern West Khasi Hills was created in 2021 with Mairang headquarters."
+    },
+    {
+      "q": "Which unique natural geological formation is a major tourist site in Nongstoin?",
+      "a": "Nohkalikai Falls",
+      "b": "Nongkhnum River Island",
+      "c": "Siju Cave",
+      "d": "Dawki River Bed",
+      "correct": "b",
+      "tip": "Nongkhnum is the largest river island in Meghalaya."
+    },
+    {
+      "q": "The Wahblei River in West Khasi Hills eventually drains into which major river system?",
+      "a": "Brahmaputra",
+      "b": "Surma-Meghna",
+      "c": "Barak",
+      "d": "Chittagong port",
+      "correct": "b",
+      "tip": "Southern rivers of Meghalaya flow into the Surma-Meghna system."
+    },
+    {
+      "q": "Which district was carved out of West Khasi Hills in the year 2012?",
+      "a": "Eastern West Khasi Hills",
+      "b": "South West Khasi Hills",
+      "c": "Ri-Bhoi",
+      "d": "South Garo Hills",
+      "correct": "b",
+      "tip": "Mawkyrwat became headquarters of South West Khasi Hills in 2012."
+    },
+    {
+      "q": "What is the district headquarters of West Khasi Hills?",
+      "a": "Mawkyrwat",
+      "b": "Mairang",
+      "c": "Nongstoin",
+      "d": "Shillong",
+      "correct": "c",
+      "tip": "Nongstoin was declared the headquarters when West Khasi Hills formed in 1976."
+    },
+    {
+      "q": "Which major river originates near Nongstoin in West Khasi Hills?",
+      "a": "Umiam River",
+      "b": "Kynshi River",
+      "c": "Myntdu River",
+      "d": "Simsang River",
+      "correct": "b",
+      "tip": "The Kynshi River is one of the principal rivers flowing through West Khasi Hills."
+    },
+    {
+      "q": "Laitlum Canyons and Langshiang Falls are located in which Indian state?",
+      "a": "Assam",
+      "b": "Nagaland",
+      "c": "Meghalaya",
+      "d": "Mizoram",
+      "correct": "c",
+      "tip": "Langshiang Falls is located near Nongkhnum Island in West Khasi Hills, Meghalaya."
+    },
+    {
+      "q": "Nongkhnum Island, the second largest river island in Asia, is formed by which river split?",
+      "a": "Kynshi and Rwiang",
+      "b": "Umiam and Umtrew",
+      "c": "Myntdu and Simsang",
+      "d": "Kopili and Dhansiri",
+      "correct": "a",
+      "tip": "Kynshi River bifurcates into Kynshi and Phanliang (Rwiang) forming Nongkhnum Island."
+    },
+    {
+      "q": "Which newly created district was bifurcated from West Khasi Hills in November 2021?",
+      "a": "South West Khasi Hills",
+      "b": "Eastern West Khasi Hills",
+      "c": "North Garo Hills",
+      "d": "East Jaintia Hills",
+      "correct": "b",
+      "tip": "Mairang civil sub-division was upgraded to Eastern West Khasi Hills district in 2021."
+    },
+    {
+      "q": "Which river in Meghalaya is famously known as the Simsang River in Garo Hills?",
+      "a": "Kynshi River",
+      "b": "Someshwari River",
+      "c": "Myntdu River",
+      "d": "Umiam River",
+      "correct": "b",
+      "tip": "Simsang River originates in Garo Hills and is called Someshwari in Bangladesh."
+    },
+    {
+      "q": "How many total districts are currently there in the state of Meghalaya?",
+      "a": "10",
+      "b": "11",
+      "c": "12",
+      "d": "14",
+      "correct": "c",
+      "tip": "Eastern West Khasi Hills became the 12th district of Meghalaya in 2021."
+    },
+    {
+      "q": "Which is the highest peak in the Khasi Hills range of Meghalaya?",
+      "a": "Nokrek Peak",
+      "b": "Shillong Peak",
+      "c": "Mawkdok Peak",
+      "d": "Tura Peak",
+      "correct": "b",
+      "tip": "Shillong Peak at 1,965 metres is the highest point in Meghalaya."
+    },
+    {
+      "q": "West Khasi Hills district shares its northern international/state border with which region?",
+      "a": "Bangladesh",
+      "b": "Assam state",
+      "c": "Tripura",
+      "d": "Manipur",
+      "correct": "b",
+      "tip": "West Khasi Hills is bounded by Kamrup/Goalpara districts of Assam to the north."
+    },
+    {
+      "q": "Which district was created by bifurcating West Khasi Hills District in 2012?",
+      "a": "Eastern West Khasi Hills",
+      "b": "South West Khasi Hills",
+      "c": "Ri-Bhoi",
+      "d": "North Garo Hills",
+      "correct": "b",
+      "tip": "Mawkyrwat became the headquarters of South West Khasi Hills in 2012."
+    },
+    {
+      "q": "Which major river flows through West Khasi Hills and is known as Kynshi?",
+      "a": "Umngot River",
+      "b": "Rini River",
+      "c": "Kynshi River",
+      "d": "Myntdu River",
+      "correct": "c",
+      "tip": "The Kynshi River is one of the most prominent rivers in West Khasi Hills."
+    },
+    {
+      "q": "What is the district headquarters of West Khasi Hills district?",
+      "a": "Mawkyrwat",
+      "b": "Nongstoin",
+      "c": "Mairang",
+      "d": "Ranikor",
+      "correct": "b",
+      "tip": "Nongstoin serves as the administrative headquarters of West Khasi Hills."
+    },
+    {
+      "q": "Langshiang Falls, one of the highest waterfalls in India, is located in which district?",
+      "a": "East Khasi Hills",
+      "b": "West Jaintia Hills",
+      "c": "West Khasi Hills",
+      "d": "Ri-Bhoi",
+      "correct": "c",
+      "tip": "Langshiang Falls is formed by the Kynshi River in West Khasi Hills."
+    },
+    {
+      "q": "Which peak is considered the highest point in Meghalaya?",
+      "a": "Nongkhlaw Peak",
+      "b": "Shillong Peak",
+      "c": "Tura Peak",
+      "d": "Kynshi Peak",
+      "correct": "b",
+      "tip": "Shillong Peak is the highest peak in Meghalaya at 1,965 meters."
+    },
+    {
+      "q": "Eastern West Khasi Hills district was carved out of West Khasi Hills in which year?",
+      "a": "2012",
+      "b": "2019",
+      "c": "2021",
+      "d": "2022",
+      "correct": "c",
+      "tip": "Mairang sub-division was upgraded to Eastern West Khasi Hills district in 2021."
+    },
+    {
+      "q": "Which river forms the natural boundary between Meghalaya and Assam in western parts?",
+      "a": "Simsang River",
+      "b": "Damring River",
+      "c": "Brahmaputra River",
+      "d": "Kalu River",
+      "correct": "a",
+      "tip": "Simsang River is known as Someshwari as it flows into Bangladesh."
+    },
+    {
+      "q": "U Tirot Sing Syiem, a famous Khasi freedom fighter, belonged to which chiefdom/state?",
+      "a": "Nongstoin",
+      "b": "Nongkhlaw",
+      "c": "Mylliem",
+      "d": "Sohra",
+      "correct": "b",
+      "tip": "U Tirot Sing led the Anglo-Khasi war from the Nongkhlaw state."
+    },
+    {
+      "q": "Which of the following lakes is located near Nongstoin in West Khasi Hills?",
+      "a": "Umiam Lake",
+      "b": "Ward's Lake",
+      "c": "Phan Nonglait Park Lake",
+      "d": "Nongkhnum River Island Waters",
+      "correct": "d",
+      "tip": "Nongkhnum Island, formed by Kynshi and Phanliang rivers, is near Nongstoin."
+    },
+    {
+      "q": "How many total districts were present in Meghalaya as of late 2021?",
+      "a": "10",
+      "b": "11",
+      "c": "12",
+      "d": "13",
+      "correct": "c",
+      "tip": "Creation of Eastern West Khasi Hills in 2021 brought the total to 12."
+    }
+  ],
+  "title": "Meghalaya Geography, Districts & Rivers",
+  "subtitle": "General Knowledge — Day 1",
+  "kind": "topic",
+  "subjectKey": "gk",
+  "dayNum": 1
+}

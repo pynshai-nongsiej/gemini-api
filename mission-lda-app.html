@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mission LDA — Daily Practice Registry</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700;9..144,900&family=JetBrains+Mono:wght@400;500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#141C17;
+    --bg-panel:#1B261F;
+    --paper:#EFE7D2;
+    --paper-dim:#E3D9BE;
+    --brass:#C79A46;
+    --brass-bright:#E4BC70;
+    --seal:#A23E33;
+    --ink:#20291D;
+    --ink-soft:#3B4B3A;
+    --text:#ECE6D4;
+    --text-muted:#8FA294;
+    --border:rgba(199,154,70,0.22);
+    --border-soft:rgba(236,230,212,0.08);
+    --shadow: 0 18px 40px -18px rgba(0,0,0,0.65);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:
+      radial-gradient(1100px 500px at 15% -10%, #1F2E24 0%, transparent 60%),
+      radial-gradient(900px 500px at 100% 0%, #223225 0%, transparent 55%),
+      var(--bg);
+    color:var(--text);
+    font-family:'Work Sans', sans-serif;
+    -webkit-font-smoothing:antialiased;
+    min-height:100vh;
+  }
+  #app{ max-width:1180px; margin:0 auto; padding:38px 24px 80px; }
+
+  .masthead{ text-align:center; padding:8px 0 30px; border-bottom:1px solid var(--border-soft); margin-bottom:22px; }
+  .masthead-inner{ display:flex; flex-direction:column; align-items:center; gap:10px; }
+  .badge-stamp{width:104px;height:104px;flex-shrink:0;}
+  .badge-stamp .ring-outer{fill:none;stroke:var(--brass);stroke-width:1.1;opacity:0.85;}
+  .badge-stamp .ring-inner{fill:none;stroke:var(--brass);stroke-width:1.1;opacity:0.55;}
+  .badge-stamp .curve-text{ font-family:'JetBrains Mono', monospace; font-size:6.6px; letter-spacing:2.2px; fill:var(--brass-bright); }
+  .badge-stamp .center-text{ font-family:'Fraunces', serif; font-weight:700; fill:var(--paper); font-size:13px; }
+  h1.title{ font-family:'Fraunces', serif; font-weight:700; font-size:clamp(34px,5.4vw,54px); letter-spacing:-0.01em; margin:2px 0 0; color:var(--paper); }
+  .subtitle{ font-size:15px; color:var(--text-muted); margin:0; letter-spacing:0.01em; max-width:480px; line-height:1.5; }
+  .window-line{ font-family:'JetBrains Mono', monospace; font-size:12.5px; letter-spacing:0.06em; color:var(--brass-bright); margin:2px 0 4px; text-transform:uppercase; }
+
+  /* ---------- Track switcher ---------- */
+  .track-switch-wrap{ text-align:center; margin-bottom:24px; }
+  .track-switch-label{ font-family:'JetBrains Mono', monospace; font-size:10.5px; text-transform:uppercase; letter-spacing:0.08em; color:var(--text-muted); margin-bottom:9px; }
+  .track-switch{ display:flex; justify-content:center; gap:8px; flex-wrap:wrap; }
+  .track-btn{
+    font-family:'Fraunces', serif; font-weight:600; font-size:14.5px; color:var(--text-muted);
+    background:var(--bg-panel); border:1px solid var(--border); border-radius:8px; padding:10px 18px;
+    cursor:pointer; transition:all 0.18s ease; text-align:left; line-height:1.3;
+  }
+  .track-btn .tb-sub{ display:block; font-family:'JetBrains Mono', monospace; font-size:9.5px; font-weight:400; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.04em; margin-top:2px; }
+  .track-btn:hover{ border-color:var(--brass); color:var(--paper); }
+  .track-btn.active{ background:var(--brass); color:#1B1405; border-color:var(--brass); }
+  .track-btn.active .tb-sub{ color:#4A3410; }
+
+  /* ---------- Tabs ---------- */
+  .tabs{ display:flex; justify-content:center; flex-wrap:wrap; gap:6px; margin-bottom:30px; }
+  .tab{ font-family:'JetBrains Mono', monospace; font-size:12.5px; letter-spacing:0.08em; text-transform:uppercase; background:transparent; color:var(--text-muted); border:1px solid var(--border); padding:9px 20px; border-radius:100px; cursor:pointer; transition:all 0.2s ease; }
+  .tab:hover{color:var(--paper);border-color:var(--brass);}
+  .tab.active{ background:var(--brass); color:#1B1405; border-color:var(--brass); font-weight:600; }
+
+  .view{display:none;}
+  .view.active{display:block; animation:fadeIn 0.25s ease;}
+  @keyframes fadeIn{from{opacity:0; transform:translateY(4px);} to{opacity:1; transform:translateY(0);}}
+
+  .section-hint{ text-align:center; color:var(--text-muted); font-size:13.5px; max-width:520px; margin:0 auto 22px; line-height:1.5; }
+
+  /* ---------- Calendar (By Day) ---------- */
+  .cal-nav{ display:flex; align-items:center; justify-content:center; gap:18px; margin-bottom:20px; }
+  .cal-nav-btn{ background:var(--bg-panel); border:1px solid var(--border); color:var(--brass-bright); width:34px; height:34px; border-radius:50%; cursor:pointer; font-size:16px; display:flex; align-items:center; justify-content:center; transition:all 0.15s ease; }
+  .cal-nav-btn:hover{ border-color:var(--brass); background:rgba(199,154,70,0.1); }
+  .cal-month-label{ font-family:'Fraunces', serif; font-weight:600; font-size:22px; color:var(--paper); min-width:200px; text-align:center; }
+  .cal-today-btn{ font-family:'JetBrains Mono', monospace; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; color:var(--brass-bright); background:transparent; border:1px solid var(--border); border-radius:100px; padding:5px 14px; cursor:pointer; margin-left:6px; }
+  .cal-today-btn:hover{ border-color:var(--brass); }
+  .cal-month-progress{ display:flex; align-items:center; justify-content:center; gap:12px; margin-bottom:24px; }
+  .progress-track{ width:200px; height:6px; background:rgba(236,230,212,0.12); border-radius:3px; overflow:hidden; }
+  .progress-fill{ height:100%; background:linear-gradient(90deg, var(--brass), var(--brass-bright)); width:0%; transition:width 0.4s ease; border-radius:3px; }
+  .progress-label{ font-family:'JetBrains Mono', monospace; font-size:11.5px; color:var(--text-muted); white-space:nowrap; }
+
+  .cal-weekdays{ display:grid; grid-template-columns:repeat(7, 1fr); gap:8px; margin-bottom:8px; }
+  .cal-weekdays span{ text-align:center; font-family:'JetBrains Mono', monospace; font-size:10.5px; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.05em; }
+  .cal-grid{ display:grid; grid-template-columns:repeat(7, 1fr); gap:8px; }
+  .cal-cell{
+    position:relative; background:var(--paper); color:var(--ink); border-radius:5px; padding:8px 6px 7px;
+    min-height:78px; cursor:pointer; border:1px solid rgba(32,41,29,0.08); box-shadow:0 4px 10px -6px rgba(0,0,0,0.4);
+    transition:transform 0.14s ease, box-shadow 0.14s ease;
+  }
+  .cal-cell:hover{ transform:translateY(-2px); box-shadow:0 10px 18px -10px rgba(0,0,0,0.55); }
+  .cal-cell.empty{ background:transparent; box-shadow:none; border:none; cursor:default; }
+  .cal-cell.empty:hover{ transform:none; }
+  .cal-cell.today{ outline:2px solid var(--seal); outline-offset:2px; }
+  .cal-date-num{ font-family:'Fraunces', serif; font-weight:700; font-size:15px; line-height:1; margin-bottom:6px; }
+  .cal-dots{ display:flex; flex-wrap:wrap; gap:3px; }
+  .cal-dot{ width:7px; height:7px; border-radius:50%; flex-shrink:0; }
+  .cal-review-mark{ position:absolute; top:7px; right:7px; width:6px; height:6px; border-radius:50%; background:var(--seal); }
+  .cal-done{ position:absolute; bottom:6px; right:6px; width:15px; height:15px; }
+  .cal-done svg{ width:100%; height:100%; }
+  .cal-done circle{ fill:none; stroke:var(--brass); stroke-width:7; }
+  .cal-done path{ fill:none; stroke:var(--brass); stroke-width:7; stroke-linecap:round; stroke-linejoin:round; }
+
+  @media (max-width:640px){
+    .cal-cell{ min-height:60px; padding:6px 4px 5px; }
+    .cal-date-num{ font-size:12px; }
+  }
+
+  .day-grid{ display:grid; grid-template-columns:repeat(auto-fill, minmax(168px, 1fr)); gap:14px; }
+  .day-card{
+    position:relative; background:var(--paper); color:var(--ink); border-radius:3px;
+    padding:14px 14px 12px; cursor:pointer; border:1px solid rgba(32,41,29,0.08);
+    box-shadow:0 8px 18px -10px rgba(0,0,0,0.5); transition:transform 0.16s ease, box-shadow 0.16s ease; overflow:hidden;
+  }
+  .day-card::before{
+    content:""; position:absolute; top:0; left:0; right:0; height:8px;
+    background-image: radial-gradient(circle at 6px 0px, var(--bg) 3.2px, transparent 3.3px);
+    background-size:12px 8px; background-repeat:repeat-x;
+  }
+  .day-card:hover{transform:translateY(-3px); box-shadow:0 14px 26px -12px rgba(0,0,0,0.6);}
+  .day-card .card-top{ display:flex; align-items:center; gap:10px; margin-top:6px; }
+  .mini-stamp{width:40px;height:40px;flex-shrink:0;}
+  .mini-stamp .ring-outer{fill:none;stroke:var(--ink-soft);stroke-width:1.3;}
+  .mini-stamp .day-num{ font-family:'Fraunces', serif; font-weight:700; font-size:14px; fill:var(--ink); }
+  .card-date{ font-family:'JetBrains Mono', monospace; font-size:10.5px; color:var(--ink-soft); letter-spacing:0.02em; line-height:1.3; }
+  .card-topics{ margin-top:10px; display:flex; flex-direction:column; gap:4px; }
+  .topic-row{ display:flex; align-items:baseline; gap:6px; font-size:10.5px; line-height:1.35; }
+  .topic-dot{ width:6px;height:6px;border-radius:50%; flex-shrink:0; margin-top:3px; }
+  .topic-row span.label{ font-family:'JetBrains Mono', monospace; font-size:9px; text-transform:uppercase; color:var(--ink-soft); letter-spacing:0.03em; flex-shrink:0; width:24px; }
+  .topic-row span.topic-text{ flex:1; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .review-pill{
+    font-family:'JetBrains Mono', monospace; font-size:8.5px; font-weight:600; color:var(--seal);
+    background:rgba(162,62,51,0.1); border:1px solid rgba(162,62,51,0.3); border-radius:3px;
+    padding:1px 4px; flex-shrink:0; margin-left:4px; cursor:help;
+  }
+  .complete-ribbon{ position:absolute; bottom:8px; right:8px; width:26px; height:26px; }
+  .complete-ribbon svg{width:100%;height:100%;}
+  .complete-ribbon circle{fill:none; stroke:var(--brass); stroke-width:6;}
+  .complete-ribbon path{fill:none; stroke:var(--brass); stroke-width:6; stroke-linecap:round; stroke-linejoin:round;}
+
+  .subject-list{ display:flex; flex-direction:column; gap:10px; max-width:820px; margin:0 auto; }
+  .subject-row{ background:var(--bg-panel); border:1px solid var(--border-soft); border-radius:6px; overflow:hidden; }
+  .subject-head{ display:flex; align-items:center; justify-content:space-between; padding:16px 20px; cursor:pointer; user-select:none; }
+  .subject-head-left{ display:flex; align-items:center; gap:12px; }
+  .subject-dot{width:10px;height:10px;border-radius:50%;}
+  .subject-name{ font-family:'Fraunces', serif; font-weight:600; font-size:19px; color:var(--paper); }
+  .subject-count{ font-family:'JetBrains Mono', monospace; font-size:11px; color:var(--text-muted); border:1px solid var(--border); border-radius:100px; padding:3px 10px; }
+  .subject-chevron{ font-family:'JetBrains Mono', monospace; color:var(--brass); transition:transform 0.2s ease; font-size:13px; }
+  .subject-row.open .subject-chevron{transform:rotate(90deg);}
+  .topic-chips{ display:none; flex-wrap:wrap; gap:8px; padding:0 20px 18px; }
+  .subject-row.open .topic-chips{display:flex;}
+  .topic-chip{
+    font-family:'Work Sans', sans-serif; font-size:12.5px; color:var(--text); background:rgba(236,230,212,0.06);
+    border:1px solid var(--border-soft); border-radius:100px; padding:7px 13px; cursor:pointer;
+    transition:all 0.15s ease; display:flex; align-items:center; gap:7px;
+  }
+  .topic-chip:hover{border-color:var(--brass); color:var(--paper);}
+  .topic-chip.active{background:var(--brass); color:#1B1405; border-color:var(--brass); font-weight:600;}
+  .topic-chip.chip-done{ border-color:var(--brass); color:var(--brass-bright); }
+  .chip-check{ color:var(--brass); font-weight:700; }
+
+  .topic-results{ max-width:1000px; margin:26px auto 0; }
+  .topic-results-head{ font-family:'JetBrains Mono', monospace; font-size:12.5px; color:var(--brass-bright); text-transform:uppercase; letter-spacing:0.06em; margin-bottom:14px; text-align:center; }
+  .topic-results .day-grid{ grid-template-columns:repeat(auto-fill, minmax(168px, 1fr)); }
+  .empty-hint{ text-align:center; color:var(--text-muted); font-size:13.5px; padding:30px 0; }
+
+  .subject-prompt-grid{ display:grid; grid-template-columns:repeat(auto-fill, minmax(230px, 1fr)); gap:16px; max-width:1000px; margin:0 auto; }
+  .subject-prompt-card{
+    position:relative; background:var(--bg-panel); border:1px solid var(--border-soft);
+    border-left:4px solid var(--card-accent, var(--brass)); border-radius:6px; padding:20px 20px 18px;
+    cursor:pointer; transition:transform 0.16s ease, border-color 0.16s ease;
+  }
+  .subject-prompt-card:hover{transform:translateY(-3px); border-color:var(--border);}
+  .subject-prompt-card .sp-name{ font-family:'Fraunces', serif; font-weight:600; font-size:20px; color:var(--paper); margin:0 0 6px; }
+  .subject-prompt-card .sp-meta{ font-family:'JetBrains Mono', monospace; font-size:11px; color:var(--text-muted); margin:0 0 12px; }
+  .subject-prompt-card .sp-topics{ font-size:12px; color:var(--text-muted); line-height:1.5; }
+  .subject-prompt-card .sp-done{ position:absolute; top:14px; right:14px; width:22px; height:22px; }
+  .subject-prompt-card .sp-done svg{width:100%;height:100%;}
+  .subject-prompt-card .sp-done circle{fill:none; stroke:var(--brass); stroke-width:6;}
+  .subject-prompt-card .sp-done path{fill:none; stroke:var(--brass); stroke-width:6; stroke-linecap:round; stroke-linejoin:round;}
+
+  .overlay{ position:fixed; inset:0; background:rgba(10,14,11,0.72); backdrop-filter:blur(3px); display:none; align-items:flex-start; justify-content:center; padding:40px 20px; overflow-y:auto; z-index:50; }
+  .overlay.active{display:flex;}
+  .detail-card{ background:var(--paper); color:var(--ink); max-width:680px; width:100%; border-radius:8px; padding:30px 30px 26px; position:relative; box-shadow:var(--shadow); animation:riseIn 0.22s ease; }
+  @keyframes riseIn{from{opacity:0; transform:translateY(14px) scale(0.98);} to{opacity:1; transform:translateY(0) scale(1);}}
+  .close-btn{ position:absolute; top:16px; right:16px; background:transparent; border:none; font-size:22px; color:var(--ink-soft); cursor:pointer; line-height:1; padding:4px 8px; }
+  .close-btn:hover{color:var(--seal);}
+  .detail-head{ display:flex; align-items:center; gap:16px; padding-bottom:16px; border-bottom:1px solid rgba(32,41,29,0.14); margin-bottom:16px; }
+  .detail-stamp{width:64px;height:64px;flex-shrink:0;}
+  .detail-stamp .ring-outer{fill:none;stroke:var(--ink-soft);stroke-width:1.2;}
+  .detail-stamp .day-num{font-family:'Fraunces', serif; font-weight:700; font-size:22px; fill:var(--ink);}
+  h2#detailTitle{ font-family:'Fraunces', serif; font-weight:700; font-size:23px; margin:0 0 3px; }
+  #detailDate{ font-family:'JetBrains Mono', monospace; font-size:12px; color:var(--ink-soft); margin:0; }
+  .subject-breakdown{ display:flex; flex-direction:column; gap:8px; margin-bottom:20px; }
+  .sb-row{ display:flex; gap:10px; font-size:13px; line-height:1.45; align-items:baseline; }
+  .sb-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:4px;}
+  .sb-subj{ font-family:'JetBrains Mono', monospace; font-weight:600; font-size:11px; text-transform:uppercase; letter-spacing:0.03em; color:var(--ink-soft); width:118px; flex-shrink:0; }
+  .sb-group{margin-bottom:2px;}
+  .sb-review-line{ display:flex; gap:10px; font-size:12px; line-height:1.4; align-items:baseline; margin-top:3px; padding-left:128px; }
+  .sb-review-line .rev-tag{ font-family:'JetBrains Mono', monospace; font-size:9.5px; font-weight:600; text-transform:uppercase; color:var(--seal); flex-shrink:0; }
+  .review-note{ font-size:12px; color:var(--ink-soft); font-style:italic; margin:-10px 0 16px; }
+  .prompt-block-wrap{ background:var(--ink); border-radius:6px; overflow:hidden; margin-bottom:18px; }
+  .prompt-toolbar{ display:flex; align-items:center; justify-content:space-between; padding:10px 14px; background:rgba(255,255,255,0.03); border-bottom:1px solid rgba(255,255,255,0.06); }
+  .prompt-toolbar span{ font-family:'JetBrains Mono', monospace; font-size:11px; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.06em; }
+  #copyBtn{ font-family:'JetBrains Mono', monospace; font-size:11.5px; background:var(--brass); color:#1B1405; border:none; border-radius:100px; padding:6px 14px; cursor:pointer; font-weight:600; transition:background 0.15s ease; }
+  #copyBtn:hover{background:var(--brass-bright);}
+  #copyBtn.copied{background:#7FA57E;}
+  .prompt-block{ margin:0; padding:16px; font-family:'JetBrains Mono', monospace; font-size:11.8px; line-height:1.6; color:var(--paper-dim); white-space:pre-wrap; word-break:break-word; max-height:320px; overflow-y:auto; }
+  .complete-toggle{ display:flex; align-items:center; gap:9px; font-size:14px; cursor:pointer; color:var(--ink); user-select:none; }
+  .complete-toggle input{ width:17px;height:17px; accent-color:var(--brass); cursor:pointer; }
+
+  @media (max-width:640px){
+    #app{padding:26px 14px 60px;}
+    .detail-card{padding:24px 18px 20px;}
+    .sb-subj{width:98px;}
+    .sb-review-line{padding-left:108px;}
+  }
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:0.01ms !important; transition-duration:0.01ms !important;}
+  }
+</style>
+</head>
+<body>
+<div id="app">
+
+  <header class="masthead">
+    <div class="masthead-inner">
+      <svg class="badge-stamp" viewBox="0 0 100 100">
+        <defs><path id="headPath" d="M 50,50 m -40,0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0"/></defs>
+        <circle class="ring-outer" cx="50" cy="50" r="46"/>
+        <circle class="ring-inner" cx="50" cy="50" r="35"/>
+        <text class="curve-text" id="badgeCurveText"><textPath href="#headPath" startOffset="2%">MEGHALAYA · LOWER DIVISION ASSISTANT ·</textPath></text>
+        <text class="center-text" x="50" y="56" text-anchor="middle" id="badgeCenterText">LDA</text>
+      </svg>
+      <h1 class="title">Mission LDA</h1>
+      <p class="subtitle" id="trackSubtitle"></p>
+      <p class="window-line" id="todayLine"></p>
+    </div>
+  </header>
+
+  <div class="track-switch-wrap">
+    <div class="track-switch-label">Choose exam</div>
+    <div class="track-switch" id="trackSwitch"></div>
+  </div>
+
+  <nav class="tabs">
+    <button class="tab active" data-view="day">By Day</button>
+    <button class="tab" data-view="subject">Browse Topics</button>
+    <button class="tab" data-view="topicPrompt">Topic Prompts</button>
+    <button class="tab" data-view="subjectPrompt">Subject Prompts</button>
+  </nav>
+
+  <main>
+    <section id="dayView" class="view active">
+      <div class="cal-nav">
+        <button class="cal-nav-btn" id="prevMonth">&#8249;</button>
+        <div class="cal-month-label" id="monthLabel"></div>
+        <button class="cal-nav-btn" id="nextMonth">&#8250;</button>
+        <button class="cal-today-btn" id="jumpToday">Today</button>
+      </div>
+      <div class="cal-month-progress">
+        <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+        <span class="progress-label" id="progressLabel">0 / 0 this month</span>
+      </div>
+      <div class="cal-weekdays">
+        <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+      </div>
+      <div class="cal-grid" id="calGrid"></div>
+    </section>
+
+    <section id="subjectView" class="view">
+      <p class="section-hint">Pick a topic to see its next few upcoming dates in your daily rotation.</p>
+      <div class="subject-list" id="subjectList"></div>
+      <div class="topic-results" id="topicResults"></div>
+    </section>
+
+    <section id="topicPromptView" class="view">
+      <p class="section-hint">Pick a single topic for a focused, single-topic MCQ set — not mixed with anything else.</p>
+      <div class="subject-list" id="topicPromptList"></div>
+    </section>
+
+    <section id="subjectPromptView" class="view">
+      <p class="section-hint">Pick a whole subject for a full-subject MCQ set covering every topic in it.</p>
+      <div class="subject-prompt-grid" id="subjectPromptGrid"></div>
+    </section>
+  </main>
+
+</div>
+
+<div class="overlay" id="detailOverlay">
+  <div class="detail-card">
+    <button class="close-btn" id="closeDetail">&times;</button>
+    <div class="detail-head">
+      <svg class="detail-stamp" viewBox="0 0 100 100">
+        <circle class="ring-outer" cx="50" cy="50" r="46"/>
+        <text class="day-num" x="50" y="59" text-anchor="middle" id="detailStampNum"></text>
+      </svg>
+      <div>
+        <h2 id="detailTitle"></h2>
+        <p id="detailDate"></p>
+      </div>
+    </div>
+    <div class="subject-breakdown" id="detailSubjects"></div>
+    <div class="prompt-block-wrap">
+      <div class="prompt-toolbar">
+        <span>Prompt to paste into Claude</span>
+        <button id="copyBtn">Copy prompt</button>
+      </div>
+      <pre class="prompt-block" id="detailPrompt"></pre>
+    </div>
+    <label class="complete-toggle">
+      <input type="checkbox" id="completeCheck"> <span id="completeLabel">Mark this day's set as attempted</span>
+    </label>
+  </div>
+</div>
+
+<script>
+(function(){
+  // ================= shared Meghalaya note =================
+  const MEGHALAYA_NOTE = " (use real, verifiable Meghalaya facts - districts, Khasi/Garo/Jaintia culture, festivals, geography, state government)";
+
+  // ================= MPSC LDA (state-level) track =================
+  const MPSC_ENGLISH = [
+    "Error Detection / Error Spotting",
+    "Synonyms & Antonyms",
+    "One-Word Substitution",
+    "Idioms & Phrasal Verbs",
+    "Fill in the Blanks (Cloze)",
+    "Sentence Improvement",
+    "Active-Passive Voice",
+    "Direct-Indirect Narration",
+    "Reading Comprehension (short passage)",
+    "Sentence Arrangement (Para Jumbles)",
+  ];
+  const MPSC_GK = [
+    "Indian Polity & Constitution",
+    "Meghalaya GK (History, Culture, Geography & Polity)",
+    "Indian History (Modern History focus)",
+    "Geography (Indian & World)",
+    "General Science",
+    "Indian Economy",
+    "Current Affairs",
+  ];
+  const MPSC_COMPUTER = [
+    "Introduction to Computers (basics, characteristics, generations)",
+    "Computer Hardware (CPU, Input & Output Devices)",
+    "Computer Software (System vs Application Software)",
+    "Memory & Storage Devices",
+    "Operating Systems (basics)",
+    "MS Word",
+    "MS Excel",
+    "MS PowerPoint",
+    "Internet Basics & Email",
+    "Computer Abbreviations & Keyboard Shortcuts",
+  ];
+  const MPSC_REASONING = [
+    "Number / Alphabet / Alphanumeric Series",
+    "Coding-Decoding",
+    "Blood Relations",
+    "Direction Sense Test",
+    "Clock & Calendar Problems",
+    "Analogy",
+    "Syllogism",
+    "Classification (Odd One Out)",
+  ];
+  const MPSC_APTITUDE = [
+    "Percentage",
+    "Profit & Loss",
+    "Simple & Compound Interest",
+    "Ratio & Proportion",
+    "Average",
+    "Problems on Ages",
+    "Time & Work",
+    "Time, Speed & Distance",
+    "HCF & LCM",
+    "Simplification",
+  ];
+  const MPSC_COMPUTER_SCOPE_RULE = "- For the Computer section, stay at basic office-computer level - the kind of knowledge a Lower Division Assistant needs for day-to-day office work. Do NOT include programming, coding, or networking/advanced computer-science questions.";
+  // calibrated against the actual July 2025 MPSC LDA paper (Q1-150): English vocab ran
+  // noticeably above clerical level, GK had an occasional technical outlier, and Reasoning
+  // included genuinely harder puzzle types (circular seating, algebraic age problems).
+  const MPSC_DIFFICULTY_NOTE = "- Difficulty calibration based on the actual July 2025 MPSC LDA paper: General English vocabulary should include some genuinely advanced or less common words sometimes, not only everyday clerical vocabulary; Reasoning should include at least one higher-difficulty item sometimes (a multi-constraint seating arrangement, a multi-step family-relation riddle, or an algebraic word problem) rather than only simple ones; General Knowledge should stay mostly standard but may occasionally include a more technical or specific question - matching the real paper's mix rather than a uniformly easy set.";
+
+  // ================= DSC West Khasi Hills (district-level) track =================
+  // District Selection Committee (DSC), West Khasi Hills District, Nongstoin - recruits for
+  // LDA-cum-Typist. Lower academic bar than MPSC (SSLC/Class 10 pass + 30 WPM typing, vs
+  // MPSC's HSSLC/Class 12), so difficulty is calibrated more basic throughout. No dedicated
+  // Computer section is evidenced for DSC (unlike MPSC) - computer knowledge is only a
+  // "preferred, not mandatory" qualification, not a tested written-exam subject.
+  const DSC_ENGLISH = [
+    "Synonyms & Antonyms",
+    "Basic Grammar (Tenses, Articles, Prepositions)",
+    "Spelling Correction",
+    "One-Word Substitution",
+    "Sentence Correction",
+    "Fill in the Blanks",
+    "Idioms & Phrases (common)",
+    "Reading Comprehension (short & simple)",
+  ];
+  const DSC_GK = [
+    "Meghalaya GK (History, Culture, Geography & Government)",
+    "Indian History (freedom movement basics)",
+    "Indian Geography (basic)",
+    "Indian Polity (basic Constitution facts)",
+    "General Science (everyday science)",
+    "Current Affairs",
+    "Sports & Awards",
+    "Important Days & Abbreviations",
+  ];
+  const DSC_MATHS = [
+    "Number System & Simplification",
+    "Percentage",
+    "Profit & Loss",
+    "Simple Interest",
+    "Ratio & Proportion",
+    "Average",
+    "Time & Work",
+    "Basic Mensuration (area & perimeter)",
+  ];
+  const DSC_REASONING = [
+    "Number & Alphabet Series",
+    "Analogy",
+    "Classification (Odd One Out)",
+    "Coding-Decoding (basic)",
+    "Blood Relations (basic)",
+    "Direction Sense (basic)",
+  ];
+  const DSC_DIFFICULTY_NOTE = "- Keep this at SSLC/Class 10 foundational level throughout - simpler and more basic than a graduate-level state PSC exam. Avoid advanced vocabulary, multi-step algebra, or complex multi-constraint reasoning puzzles.";
+
+  // ================= track definitions =================
+  const TRACKS = {
+    mpsc: {
+      key: 'mpsc',
+      label: 'MPSC LDA',
+      subLabel: 'State · July 2025 cycle',
+      badgeCurve: 'MEGHALAYA PSC · LOWER DIVISION ASSISTANT ·',
+      badgeCenter: 'LDA',
+      subtitle: "State-level MPSC LDA practice — calibrated to the actual July 2025 paper's difficulty",
+      promptHeader: "Act as a question-setter for the Meghalaya Public Service Commission (MPSC) Lower Division Assistant (LDA) recruitment exam. This is a clerical-cadre state PSC exam - moderate difficulty (class 10-12 to graduate entry level), matching the real MPSC LDA previous papers. Do not write UPSC-level or obscure trivia questions.",
+      meghalayaTopic: "Meghalaya GK (History, Culture, Geography & Polity)",
+      dailyTotal: 30,
+      topicPromptCount: 15,
+      subjectPromptTotals: {"General English":50, "General Knowledge":40, "Computer":25, "Reasoning":20, "Aptitude":15},
+      subjectPromptPerTopicDefault: 3,
+      subjectCfg: [
+        {name:"General English", pool:MPSC_ENGLISH, isPair:true, base:10, newWithReview:8, reviewCount:2},
+        {name:"General Knowledge", pool:MPSC_GK, isPair:true, base:8, newWithReview:6, reviewCount:2},
+        {name:"Computer", pool:MPSC_COMPUTER, isPair:false, base:5, newWithReview:4, reviewCount:1},
+        {name:"Reasoning", pool:MPSC_REASONING, isPair:false, base:4, newWithReview:3, reviewCount:1},
+        {name:"Aptitude", pool:MPSC_APTITUDE, isPair:false, base:3, newWithReview:2, reviewCount:1},
+      ],
+      subjectColors: {"General English":"#C79A46","General Knowledge":"#7FA57E","Computer":"#6E9BC7","Reasoning":"#A23E33","Aptitude":"#B587C9"},
+      subjectLabels: {"General English":"ENG","General Knowledge":"GK","Computer":"CMP","Reasoning":"RSN","Aptitude":"APT"},
+      subjectOrder: ["General English","General Knowledge","Computer","Reasoning","Aptitude"],
+      extraRules: [MPSC_COMPUTER_SCOPE_RULE, MPSC_DIFFICULTY_NOTE],
+      subjectSpecificRule: (subj) => subj === 'Computer' ? MPSC_COMPUTER_SCOPE_RULE : null,
+    },
+    dsc: {
+      key: 'dsc',
+      label: 'DSC West Khasi Hills',
+      subLabel: 'District · LDA-cum-Typist',
+      badgeCurve: 'DSC WEST KHASI HILLS · LDA-CUM-TYPIST ·',
+      badgeCenter: 'DSC',
+      subtitle: "District-level DSC West Khasi Hills LDA-cum-Typist practice — basic SSLC-level difficulty",
+      promptHeader: "Act as a question-setter for the District Selection Committee (DSC), West Khasi Hills District, Nongstoin, Meghalaya - the recruiting body for Lower Division Assistant-cum-Typist posts. This is a district-level clerical-cum-typist exam with a lower academic bar than the state MPSC LDA exam (SSLC/Class 10 pass is the minimum qualification, plus a typing test) - keep the difficulty basic and foundational, simpler than a graduate-level competitive exam. Do not write MPSC/UPSC-level or advanced questions.",
+      meghalayaTopic: "Meghalaya GK (History, Culture, Geography & Government)",
+      dailyTotal: 60,
+      topicPromptCount: 10,
+      subjectPromptTotals: {},
+      subjectPromptPerTopicDefault: 4,
+      subjectCfg: [
+        {name:"General English", pool:DSC_ENGLISH, isPair:true, base:15, newWithReview:12, reviewCount:3},
+        {name:"General Knowledge", pool:DSC_GK, isPair:true, base:20, newWithReview:16, reviewCount:4},
+        {name:"General Mathematics", pool:DSC_MATHS, isPair:false, base:15, newWithReview:12, reviewCount:3},
+        {name:"Reasoning", pool:DSC_REASONING, isPair:false, base:10, newWithReview:8, reviewCount:2},
+      ],
+      subjectColors: {"General English":"#C79A46","General Knowledge":"#7FA57E","General Mathematics":"#6E9BC7","Reasoning":"#A23E33"},
+      subjectLabels: {"General English":"ENG","General Knowledge":"GK","General Mathematics":"MTH","Reasoning":"RSN"},
+      subjectOrder: ["General English","General Knowledge","General Mathematics","Reasoning"],
+      extraRules: [DSC_DIFFICULTY_NOTE],
+      subjectSpecificRule: () => null,
+    },
+  };
+
+  let currentTrack = 'mpsc';
+  function T(){ return TRACKS[currentTrack]; }
+
+  // ================= day-index engine (open-ended, calendar-based) =================
+  const EPOCH = new Date(2026, 6, 18); // 18 Jul 2026 = day index 1 (kept for continuity)
+  EPOCH.setHours(0,0,0,0);
+
+  function dayIndexForDate(date){
+    const d = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+    return Math.round((d - EPOCH) / 86400000) + 1;
+  }
+  function dateForDayIndex(idx){ return new Date(EPOCH.getTime() + (idx - 1) * 86400000); }
+  function mod(n, m){ return ((n % m) + m) % m; }
+  function pairAt(pool, dayIdx){ const n = pool.length; return [pool[mod(dayIdx-1,n)], pool[mod(dayIdx,n)]]; }
+  function singleAt(pool, dayIdx){ const n = pool.length; return pool[mod(dayIdx-1,n)]; }
+  const INTERVALS_POOL = [1, 3, 7, 14];
+  function reviewIntervalFor(dayIdx){
+    const candidates = INTERVALS_POOL.filter(i => dayIdx - i >= 1);
+    if(candidates.length === 0) return null;
+    return candidates[mod(dayIdx - 2, candidates.length)];
+  }
+  function pickReviewTopic(cfg, reviewFromDay, newTopics){
+    if(cfg.isPair){
+      const [r1, r2] = pairAt(cfg.pool, reviewFromDay);
+      if(!newTopics.includes(r1)) return r1;
+      if(!newTopics.includes(r2)) return r2;
+      return null;
+    }
+    const r = singleAt(cfg.pool, reviewFromDay);
+    return newTopics.includes(r) ? null : r;
+  }
+
+  function isoDate(d){ return d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0'); }
+  const WEEKDAY_NAMES = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+  const MONTH_NAMES = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  const MONTH_NAMES_FULL = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  function formatDate(d){ return WEEKDAY_NAMES[d.getDay()] + ', ' + d.getDate() + ' ' + MONTH_NAMES[d.getMonth()] + ' ' + d.getFullYear(); }
+  function shortDate(d){ return WEEKDAY_NAMES[d.getDay()] + ' ' + d.getDate() + ' ' + MONTH_NAMES[d.getMonth()]; }
+  function truncate(str, n){ return str.length > n ? str.slice(0, n-1) + '…' : str; }
+  function escapeAttr(str){ return str.replace(/"/g, '&quot;'); }
+
+  function buildDay(date, track){
+    const dayIdx = dayIndexForDate(date);
+    const interval = reviewIntervalFor(dayIdx);
+    const reviewFromDay = interval ? dayIdx - interval : null;
+
+    const subjects = track.subjectCfg.map(cfg => {
+      const newTopics = cfg.isPair ? pairAt(cfg.pool, dayIdx) : [singleAt(cfg.pool, dayIdx)];
+      let reviewTopic = null, newCount = cfg.base, reviewCount = 0;
+      if(interval){
+        reviewTopic = pickReviewTopic(cfg, reviewFromDay, newTopics);
+        if(reviewTopic){ newCount = cfg.newWithReview; reviewCount = cfg.reviewCount; }
+      }
+      return { subject: cfg.name, count: cfg.base, newCount, newTopics, reviewCount, reviewTopic, reviewFromDay: reviewTopic ? reviewFromDay : null };
+    });
+
+    const anyReview = subjects.some(s => s.reviewTopic);
+    const total = track.dailyTotal;
+    let intro;
+    if(anyReview){
+      const reviewDate = dateForDayIndex(reviewFromDay);
+      intro = `Build me today's practice set: ${total} MCQs total, in this exact composition. This set includes a light spaced-repetition layer: a few questions revisit topics from ${shortDate(reviewDate)} (${interval} day${interval!==1?'s':''} ago) to reinforce retention at increasing intervals, alongside today's new topics.`;
+    } else {
+      intro = `Build me today's practice set: ${total} MCQs total, in this exact composition. There's no prior material yet at this point in the cycle, so every question is on a new topic.`;
+    }
+
+    const lines = subjects.map((s, i) => {
+      const topicsStr = s.newTopics.join('; ');
+      const megNew = s.newTopics.includes(track.meghalayaTopic) ? MEGHALAYA_NOTE : '';
+      const subjRule = track.subjectSpecificRule(s.subject);
+      if(s.reviewTopic){
+        const megRev = (s.reviewTopic === track.meghalayaTopic && !megNew) ? MEGHALAYA_NOTE : '';
+        const unit = s.reviewCount !== 1 ? 'MCQs' : 'MCQ';
+        return `${i+1}. ${s.subject} - ${s.count} MCQs total: ${s.newCount} new MCQs on: ${topicsStr}${megNew} — plus ${s.reviewCount} spaced-review ${unit} on: ${s.reviewTopic}${megRev} (from ${shortDate(dateForDayIndex(s.reviewFromDay))})`;
+      }
+      return `${i+1}. ${s.subject} - ${s.count} MCQs on: ${topicsStr}${megNew}`;
+    });
+
+    const ruleLines = [
+      "- Each question needs exactly 4 options (a-d) and exactly one unambiguous correct answer.",
+      anyReview
+        ? `- Number questions 1-${total} continuously, grouped under a heading for each subject; within each subject, put the new-topic questions first, then the spaced-review questions, and tag each review question's number with "(Review)".`
+        : `- Number questions 1-${total} continuously, grouped under a heading for each subject.`,
+      ...track.extraRules,
+      "- Do NOT show the correct answer next to any question.",
+      `- After all ${total} questions, add a heading 'ANSWER KEY' listing the correct option and a one-line explanation for each question number.`,
+      "- Match the real exam's style and difficulty - straightforward and answerable, not trick questions (there is no negative marking).",
+    ];
+    const prompt = track.promptHeader + "\n\n" + intro + "\n\n" + lines.join("\n") + "\n\nRules:\n" + ruleLines.join("\n");
+
+    return { date, dayIdx, subjects, prompt, reviewInterval: anyReview ? interval : null, reviewFromDay: anyReview ? reviewFromDay : null };
+  }
+
+  function buildTopicPrompt(track, subject, topic){
+    const meg = topic === track.meghalayaTopic ? MEGHALAYA_NOTE : '';
+    const subjRule = track.subjectSpecificRule(subject);
+    const n = track.topicPromptCount;
+    const ruleLines = [
+      "- Each question needs exactly 4 options (a-d) and exactly one unambiguous correct answer.",
+      `- Number questions 1-${n}.`,
+      ...(subjRule ? [subjRule] : []),
+      "- Do NOT show the correct answer next to any question.",
+      "- Vary the question style (definition-based, usage-based, application-based, calculation-based, etc.) so the set doesn't feel repetitive.",
+      `- After all ${n} questions, add a heading 'ANSWER KEY' listing the correct option and a one-line explanation for each question number.`,
+      "- Match the real exam's style and difficulty - straightforward and answerable, not trick questions (there is no negative marking).",
+    ];
+    return `${track.promptHeader}
+
+Build me a focused practice set of ${n} MCQs, all on a single topic: ${subject} — ${topic}${meg}.
+
+Rules:
+${ruleLines.join("\n")}`;
+  }
+
+  function topicSplit(track, subject, topics){
+    const total = track.subjectPromptTotals[subject] || topics.length * track.subjectPromptPerTopicDefault;
+    const n = topics.length;
+    const base = Math.floor(total / n);
+    const remainder = total % n;
+    return { total, split: topics.map((t, i) => ({ topic: t, count: base + (i < remainder ? 1 : 0) })) };
+  }
+  function buildSubjectPrompt(track, subject, topics){
+    const { total, split } = topicSplit(track, subject, topics);
+    const lines = split.map(({topic, count}) => `- ${topic}: ${count} MCQ${count===1?'':'s'}${topic === track.meghalayaTopic ? MEGHALAYA_NOTE : ''}`).join('\n');
+    const subjRule = track.subjectSpecificRule(subject);
+    const ruleLines = [
+      "- Each question needs exactly 4 options (a-d) and exactly one unambiguous correct answer.",
+      `- Number questions 1-${total} continuously, grouped under a clear heading for each topic.`,
+      ...(subjRule ? [subjRule] : []),
+      "- Do NOT show the correct answer next to any question.",
+      `- After all ${total} questions, add a heading 'ANSWER KEY' listing the correct option and a one-line explanation for each question number.`,
+      "- Match the real exam's style and difficulty - straightforward and answerable, not trick questions (there is no negative marking).",
+    ];
+    return `${track.promptHeader}
+
+Build me a full-subject practice set for ${subject} only: ${total} MCQs total, covering every topic below in this split:
+${lines}
+
+Rules:
+${ruleLines.join("\n")}`;
+  }
+
+  // ================= state =================
+  const today = new Date(); today.setHours(0,0,0,0);
+  let currentMonth = new Date(today.getFullYear(), today.getMonth(), 1);
+  let completed = {};          // track -> Set of ISO date strings
+  let completedTopics = {};    // track -> Set of "Subject||Topic"
+  let completedSubjects = {};  // track -> Set of "Subject"
+  Object.keys(TRACKS).forEach(k => { completed[k] = new Set(); completedTopics[k] = new Set(); completedSubjects[k] = new Set(); });
+  let currentView = 'day';
+  let openSubject = null;
+  let activeTopicFilter = null;
+  let currentDetail = null;
+
+  document.getElementById('todayLine').textContent = 'Today: ' + formatDate(today);
+
+  // ---------- storage ----------
+  async function loadProgress(){
+    try{
+      const keys = Object.keys(TRACKS);
+      const results = await Promise.all(keys.flatMap(k => [
+        window.storage.get(`completed-days-${k}`, false).catch(() => null),
+        window.storage.get(`completed-topics-${k}`, false).catch(() => null),
+        window.storage.get(`completed-subjects-${k}`, false).catch(() => null),
+      ]));
+      keys.forEach((k, i) => {
+        const [d, t, s] = results.slice(i*3, i*3+3);
+        if(d && d.value) completed[k] = new Set(JSON.parse(d.value));
+        if(t && t.value) completedTopics[k] = new Set(JSON.parse(t.value));
+        if(s && s.value) completedSubjects[k] = new Set(JSON.parse(s.value));
+      });
+    }catch(e){ /* silent, defaults stay empty */ }
+  }
+  async function saveCompleted(){ try{ await window.storage.set(`completed-days-${currentTrack}`, JSON.stringify(Array.from(completed[currentTrack])), false); }catch(e){} }
+  async function saveCompletedTopics(){ try{ await window.storage.set(`completed-topics-${currentTrack}`, JSON.stringify(Array.from(completedTopics[currentTrack])), false); }catch(e){} }
+  async function saveCompletedSubjects(){ try{ await window.storage.set(`completed-subjects-${currentTrack}`, JSON.stringify(Array.from(completedSubjects[currentTrack])), false); }catch(e){} }
+
+  function renderMonthProgress(){
+    const y = currentMonth.getFullYear(), m = currentMonth.getMonth();
+    const daysInMonth = new Date(y, m+1, 0).getDate();
+    let done = 0;
+    for(let d=1; d<=daysInMonth; d++){ if(completed[currentTrack].has(isoDate(new Date(y, m, d)))) done++; }
+    document.getElementById('progressFill').style.width = Math.round((done/daysInMonth)*100) + '%';
+    document.getElementById('progressLabel').textContent = done + ' / ' + daysInMonth + ' this month';
+  }
+
+  // ================= track switcher =================
+  function renderTrackSwitch(){
+    const container = document.getElementById('trackSwitch');
+    container.innerHTML = Object.values(TRACKS).map(t => `
+      <button class="track-btn${t.key===currentTrack?' active':''}" data-track="${t.key}">
+        ${t.label}<span class="tb-sub">${t.subLabel}</span>
+      </button>
+    `).join('');
+    container.querySelectorAll('.track-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        if(btn.dataset.track === currentTrack) return;
+        currentTrack = btn.dataset.track;
+        openSubject = null; activeTopicFilter = null;
+        renderAll();
+      });
+    });
+    document.getElementById('badgeCurveText').querySelector('textPath').textContent = T().badgeCurve;
+    document.getElementById('badgeCenterText').textContent = T().badgeCenter;
+    document.getElementById('trackSubtitle').textContent = T().subtitle;
+  }
+
+  function renderAll(){
+    renderTrackSwitch();
+    renderCalendar();
+    renderSubjectList();
+    renderTopicPromptList();
+    renderSubjectPromptGrid();
+  }
+
+  // ================= calendar (By Day) =================
+  function renderMonthLabel(){ document.getElementById('monthLabel').textContent = MONTH_NAMES_FULL[currentMonth.getMonth()] + ' ' + currentMonth.getFullYear(); }
+
+  function renderCalendar(){
+    renderMonthLabel();
+    const grid = document.getElementById('calGrid');
+    const track = T();
+    const y = currentMonth.getFullYear(), m = currentMonth.getMonth();
+    const firstWeekday = new Date(y, m, 1).getDay();
+    const daysInMonth = new Date(y, m+1, 0).getDate();
+
+    let html = '';
+    for(let i=0; i<firstWeekday; i++) html += '<div class="cal-cell empty"></div>';
+
+    for(let d=1; d<=daysInMonth; d++){
+      const date = new Date(y, m, d);
+      const dayObj = buildDay(date, track);
+      const iso = isoDate(date);
+      const isToday = date.getTime() === today.getTime();
+      const isDone = completed[currentTrack].has(iso);
+      const dots = dayObj.subjects.map(s => {
+        const color = track.subjectColors[s.subject] || '#999';
+        const title = s.subject + ': ' + s.newTopics.join(', ') + (s.reviewTopic ? ` (+ review: ${s.reviewTopic})` : '');
+        return `<span class="cal-dot" style="background:${color}" title="${escapeAttr(title)}"></span>`;
+      }).join('');
+      const hasReview = dayObj.subjects.some(s => s.reviewTopic);
+      html += `<div class="cal-cell${isToday?' today':''}" data-iso="${iso}">
+        ${hasReview ? '<span class="cal-review-mark" title="Includes spaced review"></span>' : ''}
+        <div class="cal-date-num">${d}</div>
+        <div class="cal-dots">${dots}</div>
+        ${isDone ? `<div class="cal-done"><svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="14"/><path d="M11 18.5 L15.5 23 L25 12.5"/></svg></div>` : ''}
+      </div>`;
+    }
+    grid.innerHTML = html;
+    grid.querySelectorAll('.cal-cell:not(.empty)').forEach(cell => {
+      cell.addEventListener('click', () => {
+        const [yy,mm,dd] = cell.dataset.iso.split('-').map(Number);
+        openDayDetail(new Date(yy, mm-1, dd));
+      });
+    });
+    renderMonthProgress();
+  }
+
+  document.getElementById('prevMonth').addEventListener('click', () => { currentMonth = new Date(currentMonth.getFullYear(), currentMonth.getMonth()-1, 1); renderCalendar(); });
+  document.getElementById('nextMonth').addEventListener('click', () => { currentMonth = new Date(currentMonth.getFullYear(), currentMonth.getMonth()+1, 1); renderCalendar(); });
+  document.getElementById('jumpToday').addEventListener('click', () => { currentMonth = new Date(today.getFullYear(), today.getMonth(), 1); renderCalendar(); });
+
+  function ticketCardHTML(date){
+    const track = T();
+    const dayObj = buildDay(date, track);
+    const iso = isoDate(date);
+    const isToday = date.getTime() === today.getTime();
+    const isDone = completed[currentTrack].has(iso);
+    const topicsHTML = dayObj.subjects.map(s => {
+      const color = track.subjectColors[s.subject] || '#999';
+      const label = track.subjectLabels[s.subject] || s.subject.slice(0,3).toUpperCase();
+      const topicText = s.newTopics.join(', ');
+      const reviewPill = s.reviewTopic ? `<span class="review-pill" title="Spaced review: ${escapeAttr(s.reviewTopic)}">&#8635;</span>` : '';
+      return `<div class="topic-row">
+        <span class="topic-dot" style="background:${color}"></span>
+        <span class="label">${label}</span>
+        <span class="topic-text" title="${escapeAttr(topicText)}">${truncate(topicText, 28)}</span>
+        ${reviewPill}
+      </div>`;
+    }).join('');
+    return `<div class="day-card" data-iso="${iso}">
+      <div class="card-top">
+        <svg class="mini-stamp" viewBox="0 0 100 100"><circle class="ring-outer" cx="50" cy="50" r="46"/><text class="day-num" x="50" y="58" text-anchor="middle">${date.getDate()}</text></svg>
+        <div class="card-date">${isToday?'TODAY · ':''}${shortDate(date)}</div>
+      </div>
+      <div class="card-topics">${topicsHTML}</div>
+      ${isDone ? `<div class="complete-ribbon"><svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="14"/><path d="M11 18.5 L15.5 23 L25 12.5"/></svg></div>` : ''}
+    </div>`;
+  }
+
+  function subjectTopics(subject){
+    const cfg = T().subjectCfg.find(c => c.name === subject);
+    return cfg.pool.slice();
+  }
+
+  function nextOccurrences(subject, topic, count){
+    const track = T();
+    const cfg = track.subjectCfg.find(c => c.name === subject);
+    const results = [];
+    let d = new Date(today);
+    const maxIter = cfg.pool.length * 20;
+    for(let i=0; i<maxIter && results.length < count; i++){
+      const dayObj = buildDay(d, track);
+      const s = dayObj.subjects.find(x => x.subject === subject);
+      if(s.newTopics.includes(topic) || s.reviewTopic === topic) results.push(new Date(d));
+      d = new Date(d.getFullYear(), d.getMonth(), d.getDate()+1);
+    }
+    return results;
+  }
+
+  // ---------- Browse Topics tab ----------
+  function renderSubjectList(){
+    const track = T();
+    const container = document.getElementById('subjectList');
+    container.innerHTML = track.subjectOrder.map(subj => {
+      const color = track.subjectColors[subj];
+      const topics = subjectTopics(subj);
+      const isOpen = openSubject === subj;
+      const cfg = track.subjectCfg.find(c => c.name === subj);
+      const chips = topics.map(t => {
+        const active = activeTopicFilter && activeTopicFilter.subject === subj && activeTopicFilter.topic === t;
+        return `<button class="topic-chip${active?' active':''}" data-subj="${escapeAttr(subj)}" data-topic="${escapeAttr(t)}">${t}</button>`;
+      }).join('');
+      return `<div class="subject-row${isOpen?' open':''}" data-subj="${escapeAttr(subj)}">
+        <div class="subject-head">
+          <div class="subject-head-left">
+            <span class="subject-dot" style="background:${color}"></span>
+            <span class="subject-name">${subj}</span>
+            <span class="subject-count">${cfg.base}Q / day · ${topics.length} topics</span>
+          </div>
+          <span class="subject-chevron">&#9656;</span>
+        </div>
+        <div class="topic-chips">${chips}</div>
+      </div>`;
+    }).join('');
+
+    container.querySelectorAll('.subject-head').forEach(head => {
+      head.addEventListener('click', () => {
+        const row = head.closest('.subject-row');
+        openSubject = (openSubject === row.dataset.subj) ? null : row.dataset.subj;
+        renderSubjectList();
+      });
+    });
+    container.querySelectorAll('.topic-chip').forEach(chip => {
+      chip.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const subj = chip.dataset.subj, topic = chip.dataset.topic;
+        if(activeTopicFilter && activeTopicFilter.subject === subj && activeTopicFilter.topic === topic) activeTopicFilter = null;
+        else activeTopicFilter = {subject: subj, topic: topic};
+        renderSubjectList();
+        renderTopicResults();
+      });
+    });
+  }
+
+  function renderTopicResults(){
+    const container = document.getElementById('topicResults');
+    if(!activeTopicFilter){ container.innerHTML = ''; return; }
+    const dates = nextOccurrences(activeTopicFilter.subject, activeTopicFilter.topic, 4);
+    container.innerHTML = `<div class="topic-results-head">Next up for "${activeTopicFilter.topic}"</div><div class="day-grid" id="topicDayGrid"></div>`;
+    const grid = document.getElementById('topicDayGrid');
+    grid.innerHTML = dates.map(ticketCardHTML).join('');
+    grid.querySelectorAll('.day-card').forEach(card => {
+      const [yy,mm,dd] = card.dataset.iso.split('-').map(Number);
+      card.addEventListener('click', () => openDayDetail(new Date(yy, mm-1, dd)));
+    });
+  }
+
+  // ---------- Topic Prompts tab ----------
+  function renderTopicPromptList(){
+    const track = T();
+    const container = document.getElementById('topicPromptList');
+    container.innerHTML = track.subjectOrder.map(subj => {
+      const color = track.subjectColors[subj];
+      const topics = subjectTopics(subj);
+      const isOpen = openSubject === subj;
+      const chips = topics.map(t => {
+        const key = subj + '||' + t;
+        const done = completedTopics[currentTrack].has(key);
+        return `<button class="topic-chip${done?' chip-done':''}" data-subj="${escapeAttr(subj)}" data-topic="${escapeAttr(t)}">
+          ${done ? '<span class="chip-check">&#10003;</span>' : ''}${t}
+        </button>`;
+      }).join('');
+      return `<div class="subject-row${isOpen?' open':''}" data-subj="${escapeAttr(subj)}">
+        <div class="subject-head">
+          <div class="subject-head-left">
+            <span class="subject-dot" style="background:${color}"></span>
+            <span class="subject-name">${subj}</span>
+            <span class="subject-count">${topics.length} topics · ${track.topicPromptCount}Q each</span>
+          </div>
+          <span class="subject-chevron">&#9656;</span>
+        </div>
+        <div class="topic-chips">${chips}</div>
+      </div>`;
+    }).join('');
+
+    container.querySelectorAll('.subject-head').forEach(head => {
+      head.addEventListener('click', () => {
+        const row = head.closest('.subject-row');
+        openSubject = (openSubject === row.dataset.subj) ? null : row.dataset.subj;
+        renderTopicPromptList();
+      });
+    });
+    container.querySelectorAll('.topic-chip').forEach(chip => {
+      chip.addEventListener('click', (e) => { e.stopPropagation(); openTopicDetail(chip.dataset.subj, chip.dataset.topic); });
+    });
+  }
+
+  // ---------- Subject Prompts tab ----------
+  function renderSubjectPromptGrid(){
+    const track = T();
+    const container = document.getElementById('subjectPromptGrid');
+    container.innerHTML = track.subjectOrder.map(subj => {
+      const color = track.subjectColors[subj];
+      const topics = subjectTopics(subj);
+      const { total } = topicSplit(track, subj, topics);
+      const done = completedSubjects[currentTrack].has(subj);
+      return `<div class="subject-prompt-card" style="--card-accent:${color}" data-subj="${escapeAttr(subj)}">
+        ${done ? `<div class="sp-done"><svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="14"/><path d="M11 18.5 L15.5 23 L25 12.5"/></svg></div>` : ''}
+        <p class="sp-name">${subj}</p>
+        <p class="sp-meta">${topics.length} topics · ${total} MCQs total</p>
+        <p class="sp-topics">${topics.join(' · ')}</p>
+      </div>`;
+    }).join('');
+    container.querySelectorAll('.subject-prompt-card').forEach(card => { card.addEventListener('click', () => openSubjectDetail(card.dataset.subj)); });
+  }
+
+  // ================= detail overlay =================
+  function showOverlay({stampText, title, subtitleHTML, breakdownHTML, promptText, checkboxLabel, checked}){
+    const stampEl = document.getElementById('detailStampNum');
+    stampEl.textContent = stampText;
+    stampEl.style.fontSize = String(stampText).length > 2 ? '15px' : '22px';
+    document.getElementById('detailTitle').textContent = title;
+    document.getElementById('detailDate').innerHTML = subtitleHTML;
+    document.getElementById('detailSubjects').innerHTML = breakdownHTML;
+    document.getElementById('detailPrompt').textContent = promptText;
+    document.getElementById('completeLabel').textContent = checkboxLabel;
+    document.getElementById('completeCheck').checked = checked;
+    const copyBtn = document.getElementById('copyBtn');
+    copyBtn.textContent = 'Copy prompt';
+    copyBtn.classList.remove('copied');
+    document.getElementById('detailOverlay').classList.add('active');
+  }
+
+  function openDayDetail(date){
+    const track = T();
+    const dayObj = buildDay(date, track);
+    const iso = isoDate(date);
+    currentDetail = {kind:'day', id: iso};
+    const reviewNote = dayObj.reviewInterval
+      ? `<p class="review-note">&#8635; Includes a spaced-review layer from ${shortDate(dateForDayIndex(dayObj.reviewFromDay))} (${dayObj.reviewInterval} day${dayObj.reviewInterval!==1?'s':''} ago).</p>`
+      : `<p class="review-note">No prior material yet at this point in the cycle — all new topics.</p>`;
+    const breakdownHTML = reviewNote + dayObj.subjects.map(s => {
+      const color = track.subjectColors[s.subject] || '#999';
+      const reviewLine = s.reviewTopic
+        ? `<div class="sb-review-line"><span class="rev-tag">&#8635; review</span><span>${s.reviewTopic} (from ${shortDate(dateForDayIndex(s.reviewFromDay))}) — ${s.reviewCount}Q</span></div>`
+        : '';
+      return `<div class="sb-group">
+        <div class="sb-row">
+          <span class="sb-dot" style="background:${color}; margin-top:5px;"></span>
+          <span class="sb-subj">${s.subject} · ${s.count}Q</span>
+          <span>${s.newTopics.join('; ')}${s.reviewTopic ? ` — ${s.newCount}Q new` : ''}</span>
+        </div>
+        ${reviewLine}
+      </div>`;
+    }).join('');
+    showOverlay({
+      stampText: date.getDate(),
+      title: formatDate(date),
+      subtitleHTML: (date.getTime() === today.getTime() ? "Today's set · " : '') + track.label,
+      breakdownHTML,
+      promptText: dayObj.prompt,
+      checkboxLabel: "Mark this day's set as attempted",
+      checked: completed[currentTrack].has(iso)
+    });
+  }
+
+  function openTopicDetail(subject, topic){
+    const track = T();
+    currentDetail = {kind:'topic', id: subject + '||' + topic};
+    const color = track.subjectColors[subject] || '#999';
+    const next = nextOccurrences(subject, topic, 1)[0];
+    const breakdownHTML = `<div class="sb-group"><div class="sb-row">
+      <span class="sb-dot" style="background:${color}; margin-top:5px;"></span>
+      <span class="sb-subj">${track.subjectLabels[subject] || subject}</span>
+      <span>Single-topic drill · ${track.topicPromptCount} MCQs${next ? ` · next comes up in the daily plan on ${shortDate(next)}` : ''}</span>
+    </div></div>`;
+    showOverlay({
+      stampText: track.subjectLabels[subject] || subject.slice(0,3).toUpperCase(),
+      title: topic,
+      subtitleHTML: subject + ' · ' + track.label,
+      breakdownHTML,
+      promptText: buildTopicPrompt(track, subject, topic),
+      checkboxLabel: "Mark this topic as drilled",
+      checked: completedTopics[currentTrack].has(subject + '||' + topic)
+    });
+  }
+
+  function openSubjectDetail(subject){
+    const track = T();
+    currentDetail = {kind:'subject', id: subject};
+    const color = track.subjectColors[subject] || '#999';
+    const topics = subjectTopics(subject);
+    const { total } = topicSplit(track, subject, topics);
+    const breakdownHTML = `<div class="sb-group"><div class="sb-row">
+      <span class="sb-dot" style="background:${color}; margin-top:5px;"></span>
+      <span class="sb-subj">${subject}</span>
+      <span>Full-subject set · ${total} MCQs split across ${topics.length} topics</span>
+    </div></div>`;
+    showOverlay({
+      stampText: track.subjectLabels[subject] || subject.slice(0,3).toUpperCase(),
+      title: subject,
+      subtitleHTML: `${total} MCQs · full subject · ${track.label}`,
+      breakdownHTML,
+      promptText: buildSubjectPrompt(track, subject, topics),
+      checkboxLabel: "Mark this subject set as completed",
+      checked: completedSubjects[currentTrack].has(subject)
+    });
+  }
+
+  function closeDetail(){ document.getElementById('detailOverlay').classList.remove('active'); currentDetail = null; }
+  document.getElementById('closeDetail').addEventListener('click', closeDetail);
+  document.getElementById('detailOverlay').addEventListener('click', (e) => { if(e.target.id === 'detailOverlay') closeDetail(); });
+  document.addEventListener('keydown', (e) => { if(e.key === 'Escape') closeDetail(); });
+
+  document.getElementById('copyBtn').addEventListener('click', async () => {
+    const text = document.getElementById('detailPrompt').textContent;
+    const btn = document.getElementById('copyBtn');
+    try{
+      await navigator.clipboard.writeText(text);
+      btn.textContent = 'Copied ✓'; btn.classList.add('copied');
+      setTimeout(() => { btn.textContent = 'Copy prompt'; btn.classList.remove('copied'); }, 1800);
+    }catch(e){ btn.textContent = 'Select & copy manually'; }
+  });
+
+  document.getElementById('completeCheck').addEventListener('change', (e) => {
+    if(!currentDetail) return;
+    const {kind, id} = currentDetail;
+    if(kind === 'day'){
+      if(e.target.checked) completed[currentTrack].add(id); else completed[currentTrack].delete(id);
+      saveCompleted(); renderCalendar(); if(activeTopicFilter) renderTopicResults();
+    } else if(kind === 'topic'){
+      if(e.target.checked) completedTopics[currentTrack].add(id); else completedTopics[currentTrack].delete(id);
+      saveCompletedTopics(); renderTopicPromptList();
+    } else if(kind === 'subject'){
+      if(e.target.checked) completedSubjects[currentTrack].add(id); else completedSubjects[currentTrack].delete(id);
+      saveCompletedSubjects(); renderSubjectPromptGrid();
+    }
+  });
+
+  // ================= tabs =================
+  const VIEW_SECTION_IDS = { day: 'dayView', subject: 'subjectView', topicPrompt: 'topicPromptView', subjectPrompt: 'subjectPromptView' };
+  document.querySelectorAll('.tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      currentView = tab.dataset.view;
+      document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+      document.getElementById(VIEW_SECTION_IDS[currentView]).classList.add('active');
+    });
+  });
+
+  // ================= init =================
+  loadProgress().then(() => { renderAll(); });
+})();
+</script>
+</body>
+</html>

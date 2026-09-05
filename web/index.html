@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>MPSC LDA — Meghalaya State & District Cadre Exam Platform</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+    <!-- KaTeX for LaTeX Math Rendering -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+
+    <!-- Tailwind CSS with Forms & Container Plugins -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "secondary": "#006492",
+                        "on-background": "#1a1b21",
+                        "inverse-surface": "#2f3036",
+                        "surface-bright": "#fbf8ff",
+                        "tertiary-container": "#d0a600",
+                        "tertiary": "#745b00",
+                        "on-surface-variant": "#464554",
+                        "surface-container-high": "#e9e7ef",
+                        "secondary-container": "#58bcfd",
+                        "on-primary-container": "#e7e4ff",
+                        "surface-tint": "#4f4ccd",
+                        "inverse-on-surface": "#f2f0f8",
+                        "on-primary": "#ffffff",
+                        "inverse-primary": "#c2c1ff",
+                        "surface": "#fbf8ff",
+                        "on-primary-fixed-variant": "#3631b4",
+                        "error-container": "#ffdad6",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-container": "#004a6d",
+                        "primary-fixed": "#e2dfff",
+                        "primary": "#3f3bbd",
+                        "surface-container-highest": "#e3e1e9",
+                        "on-error-container": "#93000a",
+                        "primary-fixed-dim": "#c2c1ff",
+                        "surface-container": "#efedf5",
+                        "on-tertiary-fixed-variant": "#584400",
+                        "primary-container": "#5856d6",
+                        "on-tertiary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "surface-dim": "#dbd9e1",
+                        "on-secondary-fixed": "#001e2f",
+                        "background": "#fbf8ff",
+                        "surface-container-low": "#f4f2fa",
+                        "tertiary-fixed-dim": "#f1c100",
+                        "surface-variant": "#e3e1e9",
+                        "outline": "#777585",
+                        "error": "#ba1a1a",
+                        "on-secondary": "#ffffff",
+                        "on-surface": "#1a1b21",
+                        "tertiary-fixed": "#ffe08b",
+                        "on-secondary-fixed-variant": "#004b6f",
+                        "secondary-fixed-dim": "#8ccdff",
+                        "outline-variant": "#c7c4d6",
+                        "on-primary-fixed": "#0c006a",
+                        "on-tertiary-container": "#4f3d00",
+                        "on-tertiary-fixed": "#241a00",
+                        "secondary-fixed": "#cae6ff"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    spacing: {
+                        "sm": "12px",
+                        "xl": "64px",
+                        "base": "8px",
+                        "lg": "40px",
+                        "md": "24px",
+                        "xs": "4px",
+                        "gutter": "16px",
+                        "border-width": "3px",
+                        "container-margin": "24px"
+                    },
+                    fontFamily: {
+                        "body-lg": ["Space Grotesk"],
+                        "headline-md": ["Space Grotesk"],
+                        "display-lg": ["Space Grotesk"],
+                        "headline-lg": ["Space Grotesk"],
+                        "body-md": ["Space Grotesk"],
+                        "label-sm": ["Space Grotesk"],
+                        "display-lg-mobile": ["Space Grotesk"],
+                        "label-lg": ["Space Grotesk"]
+                    },
+                    fontSize: {
+                        "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "500"}],
+                        "headline-md": ["24px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "700"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "1", "letterSpacing": "0.02em", "fontWeight": "600"}],
+                        "display-lg-mobile": ["36px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "700"}],
+                        "label-lg": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "700"}]
+                    }
+                }
+            }
+        };
+    </script>
+
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-filled {
+            font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+        }
+        .neo-shadow {
+            box-shadow: 8px 8px 0px 0px rgba(0,0,0,1);
+        }
+        .neo-shadow-sm {
+            box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
+        }
+        .neo-shadow-hover:hover {
+            box-shadow: 12px 12px 0px 0px rgba(0,0,0,1);
+            transform: translate(-4px, -4px);
+        }
+        .neo-shadow-active:active {
+            box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);
+            transform: translate(8px, 8px);
+        }
+        .neo-border {
+            border: 3px solid #1a1b21;
+        }
+        .neo-button {
+            transition: transform 0.15s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.15s ease-in-out;
+        }
+        .neo-button:active {
+            transform: translate(6px, 6px) !important;
+            box-shadow: 2px 2px 0px 0px rgba(0,0,0,1) !important;
+        }
+        .glass-panel {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            background: rgba(251, 248, 255, 0.4);
+        }
+        .inner-shimmer {
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+        }
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background-color: #fbf8ff;
+            color: #1a1b21;
+            overflow-x: hidden;
+        }
+
+        /* Animations */
+        .animate-fade-up {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        .animate-enter {
+            animation: slideUpFade 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        @keyframes fadeUp {
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideUpFade {
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 200ms; }
+        .delay-300 { animation-delay: 300ms; }
+        .delay-400 { animation-delay: 400ms; }
+
+        /* Hover Effects */
+        .hover-lift {
+            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-8px);
+            box-shadow: 12px 12px 0px 0px rgba(0,0,0,1);
+        }
+        .hover-float {
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+        .hover-float:hover {
+            transform: translateY(-4px) rotate(1deg);
+            border-color: #3f3bbd;
+        }
+
+        /* Shimmer Effect */
+        .shimmer-effect {
+            position: relative;
+            overflow: hidden;
+        }
+        .shimmer-effect::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -150%;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 100%);
+            transform: skewX(-20deg);
+            animation: shimmer 4s infinite ease-in-out;
+        }
+        @keyframes shimmer {
+            0% { left: -150%; }
+            50% { left: 200%; }
+            100% { left: 200%; }
+        }
+
+        /* Progress Bar */
+        .progress-bar-fill {
+            width: 0%;
+            transition: width 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        /* Pulsing Fire Icon */
+        @keyframes pulseFire {
+            0% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.1); opacity: 0.8; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        .pulse-icon {
+            display: inline-block;
+            animation: pulseFire 2s infinite ease-in-out;
+        }
+
+        /* Active Recall Flip Cards */
+        .card-scene { perspective: 1200px; }
+        .card-flip {
+            position: relative; width: 100%; height: 100%;
+            transform-style: preserve-3d;
+            transition: transform 0.55s cubic-bezier(0.45,0,0.55,1);
+        }
+        .card-flip.is-flipped { transform: rotateY(180deg); }
+        .card-face {
+            position: absolute; inset: 0;
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            border-radius: 1.5rem;
+        }
+        .card-back { transform: rotateY(180deg); }
+
+        kbd {
+            display: inline-block; padding: 2px 7px;
+            border: 2px solid #c7c4d6; border-radius: 6px;
+            font-size: 11px; font-family: monospace;
+            background: #fbf8ff; color: #464554;
+        }
+    </style>
+</head>
+<body class="relative min-h-screen flex flex-col selection:bg-primary-container selection:text-on-primary-container">
+
+<!-- WebGL Shader Background Canvas -->
+<div class="fixed inset-0 z-[-1] pointer-events-none">
+    <div class="absolute inset-0 w-full h-full opacity-30" style="display:block;">
+        <canvas id="shader-canvas-bg" style="display:block;width:100%;height:100%"></canvas>
+    </div>
+</div>
+
+<!-- Top Sticky Neobrutalist Navigation Bar (Hidden during quiz) -->
+<nav id="app-top-nav" class="sticky top-4 z-50 flex justify-between items-center px-md py-sm max-w-7xl mx-auto w-[95%] mt-4 rounded-xl border-[3px] border-on-background bg-surface/40 backdrop-blur-xl shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] inner-shimmer">
+    <div class="flex items-center gap-4">
+        <a href="javascript:void(0)" onclick="app.navigate('home')" class="font-headline-lg text-headline-lg font-black tracking-tighter text-on-background no-underline flex items-center gap-2">
+            <span>MPSC LDA</span>
+        </a>
+    </div>
+    <div class="hidden md:flex gap-lg">
+        <a id="nav-home" class="nav-link font-headline-md text-headline-md text-primary border-b-[3px] border-primary pb-1 cursor-pointer" onclick="app.navigate('home')">Dashboard</a>
+        <a id="nav-leaderboard" class="nav-link font-headline-md text-headline-md text-on-surface-variant hover:scale-105 transition-transform duration-200 cursor-pointer" onclick="app.navigate('leaderboard')">Leaderboard</a>
+        <a id="nav-analytics" class="nav-link font-headline-md text-headline-md text-on-surface-variant hover:scale-105 transition-transform duration-200 cursor-pointer" onclick="app.navigate('analytics')">Analysis</a>
+        <a id="nav-recall" class="nav-link font-headline-md text-headline-md text-on-surface-variant hover:scale-105 transition-transform duration-200 cursor-pointer" onclick="app.navigate('recall')">Active Recall</a>
+    </div>
+    <div class="flex items-center gap-md">
+        <button onclick="app.showNotification('Gemini prompted questions active for all exam categories!')" class="p-2 hover:scale-105 transition-transform duration-200 active:translate-x-1 active:translate-y-1 text-primary" title="Notifications">
+            <span class="material-symbols-outlined text-primary">notifications</span>
+        </button>
+        <button onclick="app.navigate('leaderboard')" class="p-2 hover:scale-105 transition-transform duration-200 active:translate-x-1 active:translate-y-1 text-primary" title="Achievements">
+            <span class="material-symbols-outlined text-primary">workspace_premium</span>
+        </button>
+        
+        <!-- Candidate Auth Controls (Sign In / Register / Logged In User) -->
+        <div id="nav-guest-container" class="flex items-center gap-2">
+            <button onclick="app.openAuthModal('login')" class="px-4 py-1.5 rounded-full border-2 border-on-background font-label-sm font-bold bg-primary text-on-primary neo-shadow-sm hover:scale-105 transition-all cursor-pointer flex items-center gap-1">
+                <span class="material-symbols-outlined text-[16px]">login</span>
+                <span>Sign In</span>
+            </button>
+            <button onclick="app.openAuthModal('register')" class="hidden sm:flex px-4 py-1.5 rounded-full border-2 border-on-background font-label-sm font-bold bg-surface text-on-surface neo-shadow-sm hover:bg-surface-variant cursor-pointer items-center gap-1">
+                <span>Register</span>
+            </button>
+        </div>
+
+        <div id="nav-user-container" class="relative group hidden">
+            <button id="header-avatar-btn" onclick="app.openAuthModal('profile')" class="flex items-center gap-2 px-3 py-1 rounded-full border-2 border-on-background bg-surface cursor-pointer hover:bg-surface-variant">
+                <div class="w-7 h-7 rounded-full border border-on-background overflow-hidden bg-secondary-container flex items-center justify-center font-bold text-xs" id="header-avatar-container">
+                    U
+                </div>
+                <span id="header-username-display" class="font-label-sm font-bold text-on-background max-w-[120px] truncate">User</span>
+                <span class="material-symbols-outlined text-[18px]">expand_more</span>
+            </button>
+            <div id="header-user-dropdown" class="absolute right-0 mt-2 w-52 bg-surface border-[3px] border-on-background rounded-xl shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] py-2 hidden group-hover:block z-50">
+                <p id="dropdown-username" class="px-4 py-1 text-label-sm text-outline border-b-2 border-on-background/10 font-bold truncate">Candidate</p>
+                <a href="javascript:void(0)" onclick="app.navigate('analytics')" class="block px-4 py-2 font-body-md text-on-background hover:bg-surface-container-high no-underline flex items-center gap-2">
+                    <span class="material-symbols-outlined text-[18px]">analytics</span> Real Analytics
+                </a>
+                <a href="javascript:void(0)" onclick="app.logout()" class="block px-4 py-2 font-body-md text-error hover:bg-error-container/20 no-underline flex items-center gap-2">
+                    <span class="material-symbols-outlined text-[18px]">logout</span> Sign Out
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Main Container with Sidebar and Content (Hidden during quiz) -->
+<div id="app-main-layout" class="flex-grow max-w-7xl mx-auto w-full px-md py-xl flex flex-col lg:flex-row gap-lg relative z-10">
+
+    <!-- Desktop Sticky Sidebar (Hidden during quiz) -->
+    <aside id="app-sidebar" class="hidden lg:flex flex-col w-72 h-[calc(100vh-140px)] sticky top-[100px] p-md rounded-xl border-[3px] border-on-background shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] bg-surface/40 backdrop-blur-xl inner-shimmer shrink-0">
+        <div class="flex items-center gap-4 mb-lg pb-sm border-b-2 border-on-background/20">
+            <div id="sidebar-avatar" class="w-12 h-12 rounded-full border-2 border-on-background overflow-hidden bg-secondary-container flex items-center justify-center cursor-pointer" onclick="app.openAuthModal()">
+                <!-- SVG Avatar will be rendered here -->
+            </div>
+            <div>
+                <h2 id="sidebar-user-name" class="font-headline-md text-headline-md text-primary leading-tight">Study Pulse</h2>
+                <p class="font-body-md text-body-md text-on-surface-variant">
+                    <span id="sidebar-streak-days">12</span> Day Streak <span class="pulse-icon">🔥</span>
+                </p>
+            </div>
+        </div>
+        <nav class="flex flex-col gap-sm flex-grow">
+            <a id="side-home" class="sidebar-link flex items-center gap-sm p-sm bg-secondary-container text-on-secondary-container rounded-lg border-2 border-on-background font-body-lg text-body-lg no-underline cursor-pointer" onclick="app.navigate('home')">
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+                Home
+            </a>
+            <a id="side-leaderboard" class="sidebar-link flex items-center gap-sm p-sm text-on-surface-variant hover:bg-surface-container-high transition-colors rounded-lg active:scale-95 font-body-lg text-body-lg no-underline cursor-pointer" onclick="app.navigate('leaderboard')">
+                <span class="material-symbols-outlined">emoji_events</span>
+                Leaderboard
+            </a>
+            <a id="side-analytics" class="sidebar-link flex items-center gap-sm p-sm text-on-surface-variant hover:bg-surface-container-high transition-colors rounded-lg active:scale-95 font-body-lg text-body-lg no-underline cursor-pointer" onclick="app.navigate('analytics')">
+                <span class="material-symbols-outlined">insights</span>
+                Analysis
+            </a>
+            <a id="side-recall" class="sidebar-link flex items-center gap-sm p-sm text-on-surface-variant hover:bg-surface-container-high transition-colors rounded-lg active:scale-95 font-body-lg text-body-lg no-underline cursor-pointer" onclick="app.navigate('recall')">
+                <span class="material-symbols-outlined">psychology</span>
+                Active Recall
+            </a>
+            <a id="side-profile" class="sidebar-link flex items-center gap-sm p-sm text-on-surface-variant hover:bg-surface-container-high transition-colors rounded-lg active:scale-95 font-body-lg text-body-lg no-underline cursor-pointer mt-auto" onclick="app.openAuthModal()">
+                <span class="material-symbols-outlined">person</span>
+                Profile
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Content Canvas for Non-Quiz Views -->
+    <div id="app-canvas" class="flex-grow flex flex-col gap-xl w-full">
+
+        <!-- ==================== VIEW 1: HOME / DASHBOARD ==================== -->
+        <div id="view-home" class="app-view flex flex-col gap-xl w-full">
+            <!-- Hero Section -->
+            <section class="relative animate-enter">
+                <h1 class="font-display-lg md:text-[72px] text-display-lg-mobile text-on-background font-black leading-tight tracking-tighter max-w-4xl">
+                    Master Your <span class="text-primary bg-primary-fixed px-2 border-2 border-on-background inline-block -rotate-2">MPSC Exams</span> With Precision.
+                </h1>
+                <p class="mt-md font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                    The premium preparation platform for ambitious candidates. High-yield questions generated dynamically by Gemini AI, real-time analytics, and structured learning paths.
+                </p>
+                <div class="mt-lg flex flex-wrap gap-md items-center">
+                    <button onclick="app.startQuiz('mock', 20)" class="py-md px-xl bg-tertiary-container text-on-tertiary-container border-[3px] border-on-background rounded-full font-headline-md text-headline-md uppercase tracking-wider neo-shadow neo-shadow-hover neo-shadow-active transition-all group no-underline inline-flex items-center cursor-pointer">
+                        START MOCK TEST
+                        <span class="material-symbols-outlined ml-2 align-middle group-hover:translate-x-2 transition-transform">arrow_forward</span>
+                    </button>
+                    <!-- Floating Streak Widget -->
+                    <div class="glass-panel border-[3px] border-on-background rounded-xl p-sm flex items-center gap-sm neo-shadow rotate-2 hover:rotate-0 transition-transform">
+                        <div class="w-10 h-10 bg-error-container rounded-full flex items-center justify-center border-2 border-on-background">
+                            <span class="text-xl">🔥</span>
+                        </div>
+                        <div>
+                            <p class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold">Current Streak</p>
+                            <p id="hero-streak-text" class="font-headline-md text-headline-md text-on-background">12 Days</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Floating Widgets 2 & 3 -->
+                <div class="hidden md:flex absolute top-0 right-10 glass-panel border-[3px] border-on-background rounded-xl p-sm items-center gap-sm neo-shadow -rotate-3 hover:rotate-0 transition-transform hover:scale-105 z-10">
+                    <span class="material-symbols-outlined text-secondary" style="font-size: 32px; font-variation-settings: 'FILL' 1;">check_circle</span>
+                    <div>
+                        <p class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold">Recent Score</p>
+                        <p id="hero-recent-score" class="font-headline-md text-headline-md text-on-background">85%</p>
+                    </div>
+                </div>
+                <div class="hidden lg:flex absolute bottom-0 right-20 glass-panel border-[3px] border-on-background rounded-xl p-sm items-center gap-sm neo-shadow rotate-6 hover:rotate-0 transition-transform hover:scale-105 z-10 bg-surface-container-high/60">
+                    <span class="text-2xl">⚡</span>
+                    <div>
+                        <p class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold">AI Engine</p>
+                        <p class="font-body-md text-body-md font-bold text-on-background">Gemini Powered</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- English Categories Bento Grid -->
+            <section id="categories-english" class="animate-enter delay-100">
+                <div class="flex items-center gap-md mb-md">
+                    <div class="flex items-center gap-sm">
+                        <div class="w-10 h-10 bg-[#e2dfff] rounded-xl border-2 border-on-background flex items-center justify-center neo-shadow">
+                            <span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">menu_book</span>
+                        </div>
+                        <h2 class="font-headline-lg text-headline-lg text-on-background font-black tracking-tight">General English & Verbal</h2>
+                    </div>
+                    <div class="flex-grow h-[3px] bg-on-background rounded-full"></div>
+                    <span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-bold">Live AI Generated</span>
+                </div>
+                <div id="english-bento-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-md">
+                    <!-- Loaded dynamically via app.renderCategories() -->
+                </div>
+            </section>
+
+            <!-- General Knowledge Bento Grid -->
+            <section id="categories-gk" class="animate-enter delay-200">
+                <div class="flex items-center gap-md mb-md">
+                    <div class="flex items-center gap-sm">
+                        <div class="w-10 h-10 bg-[#d0f4de] rounded-xl border-2 border-on-background flex items-center justify-center neo-shadow">
+                            <span class="material-symbols-outlined text-[#1b6a3b] text-xl" style="font-variation-settings: 'FILL' 1;">public</span>
+                        </div>
+                        <h2 class="font-headline-lg text-headline-lg text-on-background font-black tracking-tight">General Knowledge & Meghalaya</h2>
+                    </div>
+                    <div class="flex-grow h-[3px] bg-on-background rounded-full"></div>
+                    <span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-bold">Live AI Generated</span>
+                </div>
+                <div id="gk-bento-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-md">
+                    <!-- Loaded dynamically via app.renderCategories() -->
+                </div>
+            </section>
+        </div>
+
+        <!-- ==================== VIEW 3: QUIZ RESULTS ==================== -->
+        <div id="view-results" class="app-view hidden flex flex-col items-center justify-center w-full max-w-4xl mx-auto py-md">
+            <!-- Header Section -->
+            <div class="text-center mb-lg w-full animate-fade-up">
+                <h1 class="font-display-lg text-display-lg md:font-display-lg md:text-display-lg text-on-background mb-sm font-black">Quiz Complete!</h1>
+                <p class="font-headline-md text-headline-md text-on-surface-variant" id="results-category-title">Synonyms</p>
+            </div>
+
+            <!-- Score Hero Card -->
+            <div class="glass-panel neo-border rounded-xl p-lg neo-shadow mb-xl w-full max-w-2xl text-center relative group animate-fade-up delay-100 shimmer-effect hover-lift">
+                <div class="absolute -right-10 -top-10 w-32 h-32 bg-primary-container rounded-full mix-blend-multiply opacity-50 blur-2xl"></div>
+                <p class="font-label-lg text-label-lg text-on-surface-variant mb-base uppercase tracking-widest relative z-10 font-bold">Final Score</p>
+                <div class="flex items-baseline justify-center gap-xs relative z-10">
+                    <span class="font-display-lg text-[100px] md:text-[120px] font-black leading-none text-primary tracking-tighter" id="results-score-counter">0</span>
+                    <span class="font-headline-lg text-headline-lg text-on-surface-variant font-bold">/100</span>
+                </div>
+                <div class="mt-md inline-block bg-tertiary-container neo-border rounded-full px-md py-sm relative z-10 hover:scale-105 transition-transform">
+                    <span class="font-body-lg text-body-lg text-on-tertiary-container font-bold flex items-center gap-base">
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+                        Top <span id="results-percentile">5</span>% Performance
+                    </span>
+                </div>
+            </div>
+
+            <!-- Achievements & Badges Bento -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-md mb-xl w-full animate-fade-up delay-200">
+                <div class="glass-panel neo-border rounded-xl p-md neo-shadow-sm flex flex-col items-center justify-center text-center hover-lift">
+                    <div class="w-16 h-16 rounded-full neo-border bg-secondary-container text-on-secondary-container flex items-center justify-center mb-sm">
+                        <span class="material-symbols-outlined text-[32px]">timer</span>
+                    </div>
+                    <h3 class="font-headline-md text-headline-md text-on-background font-bold">Speedster</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant mt-xs" id="results-time-taken">Completed in 01:45</p>
+                </div>
+
+                <div class="glass-panel neo-border rounded-xl p-md neo-shadow-sm flex flex-col items-center justify-center text-center hover-lift">
+                    <div class="w-16 h-16 rounded-full neo-border bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center mb-sm">
+                        <span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+                    </div>
+                    <h3 class="font-headline-md text-headline-md text-on-background font-bold" id="results-accuracy-label">85% Accuracy</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant mt-xs" id="results-accuracy-sub">Highly precise</p>
+                </div>
+            </div>
+
+            <!-- Analytics Score Breakdown Card -->
+            <div class="glass-panel neo-border rounded-xl p-lg neo-shadow w-full mb-xl animate-fade-up delay-300 hover-lift">
+                <h2 class="font-headline-lg text-headline-lg text-on-background mb-lg flex items-center gap-sm font-bold">
+                    <span class="material-symbols-outlined">donut_large</span>
+                    Score Breakdown
+                </h2>
+                <div class="space-y-md">
+                    <div>
+                        <div class="flex justify-between mb-xs">
+                            <span class="font-body-lg text-body-lg font-bold text-on-background">Correct Answers</span>
+                            <span class="font-body-lg text-body-lg text-on-surface-variant font-bold" id="results-correct-stat">17/20</span>
+                        </div>
+                        <div class="w-full h-[14px] bg-surface-container-high neo-border rounded-full overflow-hidden flex">
+                            <div class="h-full bg-primary progress-bar-fill" id="results-bar-correct" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-xs">
+                            <span class="font-body-lg text-body-lg font-bold text-on-background">Wrong Answers</span>
+                            <span class="font-body-lg text-body-lg text-on-surface-variant font-bold" id="results-wrong-stat">2/20</span>
+                        </div>
+                        <div class="w-full h-[14px] bg-surface-container-high neo-border rounded-full overflow-hidden flex">
+                            <div class="h-full bg-error progress-bar-fill" id="results-bar-wrong" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-xs">
+                            <span class="font-body-lg text-body-lg font-bold text-on-background">Skipped</span>
+                            <span class="font-body-lg text-body-lg text-on-surface-variant font-bold" id="results-skipped-stat">1/20</span>
+                        </div>
+                        <div class="w-full h-[14px] bg-surface-container-high neo-border rounded-full overflow-hidden flex">
+                            <div class="h-full bg-outline progress-bar-fill" id="results-bar-skipped" style="width: 0%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Primary Action Buttons -->
+            <div class="flex flex-col sm:flex-row gap-md w-full justify-center animate-fade-up delay-400">
+                <button onclick="app.navigate('review')" class="bg-primary text-on-primary neo-border rounded-[24px] px-lg py-sm font-label-lg text-label-lg uppercase tracking-widest neo-shadow neo-button hover:-translate-y-1 hover:shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] flex items-center justify-center gap-sm font-bold cursor-pointer">
+                    <span class="material-symbols-outlined">plagiarism</span>
+                    Review Answers
+                </button>
+                <button onclick="app.navigate('home')" class="bg-surface text-on-surface neo-border rounded-[24px] px-lg py-sm font-label-lg text-label-lg uppercase tracking-widest neo-shadow neo-button hover:-translate-y-1 hover:shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] flex items-center justify-center gap-sm font-bold cursor-pointer">
+                    <span class="material-symbols-outlined">dashboard</span>
+                    Back to Dashboard
+                </button>
+            </div>
+        </div>
+
+        <!-- ==================== VIEW 4: REVIEW ANSWERS ==================== -->
+        <div id="view-review" class="app-view hidden flex flex-col w-full max-w-4xl mx-auto gap-lg">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-md mb-sm">
+                <div>
+                    <h2 class="font-headline-lg text-headline-lg font-black text-on-background">Question Review</h2>
+                    <p class="font-body-md text-on-surface-variant">Review all answers, candidate selections, and educational explanations.</p>
+                </div>
+                <div class="flex gap-2">
+                    <button onclick="app.navigate('results')" class="px-5 py-2 rounded-full border-[3px] border-on-background bg-surface font-label-lg uppercase font-bold neo-shadow-sm hover:bg-surface-variant cursor-pointer">
+                        Results
+                    </button>
+                    <button onclick="app.navigate('home')" class="px-6 py-2 rounded-full border-[3px] border-on-background bg-primary text-on-primary font-label-lg uppercase font-bold neo-shadow-sm hover:bg-primary-container cursor-pointer">
+                        Done
+                    </button>
+                </div>
+            </div>
+
+            <!-- Review Filter Pills -->
+            <div class="flex flex-wrap items-center gap-2 mb-sm p-2 bg-surface/80 rounded-xl neo-border">
+                <button onclick="app.filterReview('all')" id="filter-rev-all" class="px-4 py-1.5 rounded-full border-2 border-on-background font-label-sm font-bold bg-primary text-on-primary neo-shadow-sm cursor-pointer">
+                    All (<span id="rev-count-all">0</span>)
+                </button>
+                <button onclick="app.filterReview('incorrect')" id="filter-rev-incorrect" class="px-4 py-1.5 rounded-full border-2 border-on-background font-label-sm font-bold bg-surface text-on-surface hover:bg-surface-variant cursor-pointer">
+                    Incorrect (<span id="rev-count-incorrect">0</span>)
+                </button>
+                <button onclick="app.filterReview('correct')" id="filter-rev-correct" class="px-4 py-1.5 rounded-full border-2 border-on-background font-label-sm font-bold bg-surface text-on-surface hover:bg-surface-variant cursor-pointer">
+                    Correct (<span id="rev-count-correct">0</span>)
+                </button>
+                <button onclick="app.filterReview('skipped')" id="filter-rev-skipped" class="px-4 py-1.5 rounded-full border-2 border-on-background font-label-sm font-bold bg-surface text-on-surface hover:bg-surface-variant cursor-pointer">
+                    Skipped (<span id="rev-count-skipped">0</span>)
+                </button>
+            </div>
+
+            <div id="review-cards-list" class="flex flex-col gap-md pb-12">
+                <!-- Rendered dynamically via app.renderReview() -->
+            </div>
+        </div>
+
+        <!-- ==================== VIEW 5: ANALYTICS ==================== -->
+        <div id="view-analytics" class="app-view hidden flex flex-col w-full gap-xl">
+            <header class="mb-md">
+                <h2 class="font-display-lg text-display-lg font-black tracking-tight text-on-background">Performance Analysis</h2>
+                <p class="font-body-lg text-on-surface-variant">Real-time telemetry, syllabus mastery, and score projection.</p>
+            </header>
+
+            <!-- 4 Metrics Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-md">
+                <div class="glass-panel neo-border rounded-xl p-md neo-shadow hover-lift">
+                    <p class="font-label-sm uppercase text-on-surface-variant font-bold">Total Solved</p>
+                    <p id="stat-total-solved" class="font-display-lg text-[40px] font-black text-primary mt-1">1,420</p>
+                    <p class="font-label-sm text-secondary font-bold mt-1">Questions completed</p>
+                </div>
+                <div class="glass-panel neo-border rounded-xl p-md neo-shadow hover-lift">
+                    <p class="font-label-sm uppercase text-on-surface-variant font-bold">Overall Accuracy</p>
+                    <p id="stat-overall-accuracy" class="font-display-lg text-[40px] font-black text-[#1b6a3b] mt-1">86.4%</p>
+                    <p class="font-label-sm text-[#1b6a3b] font-bold mt-1">High-yield benchmark</p>
+                </div>
+                <div class="glass-panel neo-border rounded-xl p-md neo-shadow hover-lift">
+                    <p class="font-label-sm uppercase text-on-surface-variant font-bold">Study Time</p>
+                    <p id="stat-study-time" class="font-display-lg text-[40px] font-black text-tertiary mt-1">18 hrs</p>
+                    <p class="font-label-sm text-tertiary font-bold mt-1">Practice session hours</p>
+                </div>
+                <div class="glass-panel neo-border rounded-xl p-md neo-shadow hover-lift">
+                    <p class="font-label-sm uppercase text-on-surface-variant font-bold">Weekly Trend</p>
+                    <p id="stat-weekly-trend" class="font-display-lg text-[40px] font-black text-primary mt-1">+14%</p>
+                    <p class="font-label-sm text-primary font-bold mt-1">Vs prior week drills</p>
+                </div>
+            </div>
+
+            <!-- 7-Day Rolling Activity Chart -->
+            <div class="glass-panel neo-border rounded-xl p-lg neo-shadow">
+                <h3 class="font-headline-md text-headline-md font-bold mb-md flex items-center gap-2">
+                    <span class="material-symbols-outlined">bar_chart</span>
+                    7-Day Drill Intensity & Score
+                </h3>
+                <div class="flex items-end justify-between h-48 pt-6 px-4 border-b-2 border-on-background/20" id="analytics-chart-container">
+                    <!-- Dynamic chart bars generated by JS -->
+                </div>
+            </div>
+
+            <!-- Category Performance Table -->
+            <div class="glass-panel neo-border rounded-xl p-lg neo-shadow">
+                <h3 class="font-headline-md text-headline-md font-bold mb-md flex items-center gap-2">
+                    <span class="material-symbols-outlined">category</span>
+                    Syllabus Domain Mastery
+                </h3>
+                <div id="analytics-category-bars" class="space-y-4">
+                    <!-- Rendered by JS -->
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== VIEW 6: LEADERBOARD ==================== -->
+        <div id="view-leaderboard" class="app-view hidden flex flex-col w-full gap-xl">
+            <header class="mb-md">
+                <h2 class="font-display-lg text-display-lg font-black tracking-tight text-on-background">Leaderboard</h2>
+                <p class="font-body-lg text-on-surface-variant">Top performing candidates this week. Do you have what it takes?</p>
+            </header>
+
+            <!-- Top 3 Podium (2nd, 1st, 3rd) -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-md items-end mb-xl" id="leaderboard-podium">
+                <!-- Rendered dynamically via app.renderLeaderboard() -->
+            </div>
+
+            <!-- Full Ranking Table -->
+            <div class="glass-panel neo-border rounded-xl p-md md:p-lg neo-shadow overflow-hidden">
+                <h3 class="font-headline-md font-bold mb-md">Candidate Rankings</h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="border-b-2 border-on-background text-label-sm uppercase font-bold text-on-surface-variant">
+                                <th class="py-3 px-4">Rank</th>
+                                <th class="py-3 px-4">Candidate</th>
+                                <th class="py-3 px-4">Streak</th>
+                                <th class="py-3 px-4">Accuracy</th>
+                                <th class="py-3 px-4 text-right">Points</th>
+                            </tr>
+                        </thead>
+                        <tbody id="leaderboard-table-body">
+                            <!-- Rendered by JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== VIEW 7: ACTIVE RECALL FLASHCARDS ==================== -->
+        <div id="view-recall" class="app-view hidden flex flex-col w-full max-w-4xl mx-auto gap-md">
+            <header class="flex flex-col md:flex-row justify-between items-start md:items-center gap-2">
+                <div>
+                    <h2 class="font-display-lg text-display-lg font-black tracking-tight text-on-background flex items-center gap-2">
+                        Active Recall
+                        <span class="px-3 py-0.5 bg-primary-fixed text-primary text-xs font-bold rounded-full border-2 border-on-background">Spaced Repetition</span>
+                    </h2>
+                    <p class="font-body-lg text-on-surface-variant">High-yield revision flashcards backed by SQLite question banks & Gemini AI.</p>
+                </div>
+                <div class="flex items-center gap-2">
+                    <button onclick="app.shuffleRecallDeck()" class="px-3 py-1.5 bg-surface neo-border rounded-xl font-label-sm font-bold neo-shadow-sm hover:scale-105 active:translate-y-1 transition-transform cursor-pointer flex items-center gap-1.5" title="Shuffle Deck">
+                        <span class="material-symbols-outlined text-[18px]">shuffle</span>
+                        <span>Shuffle</span>
+                    </button>
+                    <button onclick="app.restartRecallDeck()" class="px-3 py-1.5 bg-surface neo-border rounded-xl font-label-sm font-bold neo-shadow-sm hover:scale-105 active:translate-y-1 transition-transform cursor-pointer flex items-center gap-1.5" title="Restart Deck">
+                        <span class="material-symbols-outlined text-[18px]">restart_alt</span>
+                        <span>Restart</span>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Category Selector Pills -->
+            <div class="flex gap-2 overflow-x-auto pb-2 scrollbar-none" id="recall-category-pills">
+                <!-- Rendered by JS -->
+            </div>
+
+            <!-- Deck Progress Bar -->
+            <div class="glass-panel neo-border rounded-xl p-3 neo-shadow-sm bg-surface flex flex-col gap-2">
+                <div class="flex justify-between items-center font-label-sm font-bold">
+                    <div class="flex items-center gap-2">
+                        <span class="w-3 h-3 rounded-full bg-primary animate-pulse"></span>
+                        <span id="recall-deck-title" class="text-primary uppercase tracking-wider">Vocabulary - Synonyms</span>
+                    </div>
+                    <span id="recall-card-num" class="text-on-surface-variant font-mono">Card 1 / 20</span>
+                </div>
+                <div class="h-2.5 w-full bg-surface-container border-2 border-on-background rounded-full overflow-hidden">
+                    <div id="recall-progress-fill" class="h-full bg-primary transition-all duration-300" style="width: 5%"></div>
+                </div>
+            </div>
+
+            <!-- Loading Skeleton State -->
+            <div id="recall-loading-skeleton" class="hidden glass-panel neo-border rounded-2xl p-xl neo-shadow text-center bg-surface h-[380px] flex flex-col items-center justify-center gap-4">
+                <div class="w-14 h-14 border-[4px] border-primary border-t-transparent rounded-full animate-spin"></div>
+                <h3 class="font-headline-md font-bold text-on-background">Loading Recall Deck...</h3>
+                <p class="font-body-md text-on-surface-variant">Retrieving question bank from SQLite & Gemini engine.</p>
+            </div>
+
+            <!-- 3D Card Scene -->
+            <div id="recall-card-scene" class="card-scene w-full h-[360px] md:h-[400px] cursor-pointer my-1" onclick="app.flipRecallCard()">
+                <div class="card-flip" id="recall-card-flip">
+                    <!-- Card Front (Question) -->
+                    <div class="card-face glass-panel neo-border p-lg flex flex-col justify-between shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] bg-surface/95 select-none">
+                        <div class="flex justify-between items-center">
+                            <span class="px-3 py-1 bg-primary-fixed border-2 border-on-background rounded-full font-label-sm font-bold text-primary" id="recall-card-topic">Question</span>
+                            <span class="font-label-sm text-outline font-bold flex items-center gap-1">
+                                <span class="material-symbols-outlined text-[16px]">visibility</span> Front
+                            </span>
+                        </div>
+                        <div class="my-auto text-center px-4 md:px-8">
+                            <h3 class="font-headline-lg md:text-[30px] font-bold text-on-background leading-relaxed" id="recall-card-question">
+                                Tap card to reveal answer
+                            </h3>
+                        </div>
+                        <div class="text-center font-label-sm text-outline uppercase font-bold flex items-center justify-center gap-2">
+                            <span class="material-symbols-outlined text-[18px]">flip</span> Tap card or press <kbd>Space</kbd> to flip
+                        </div>
+                    </div>
+
+                    <!-- Card Back (Answer & Explanation) -->
+                    <div class="card-face card-back glass-panel neo-border p-lg flex flex-col justify-between shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] bg-[#d0f4de]/95 select-none">
+                        <div class="flex justify-between items-center">
+                            <span class="px-3 py-1 bg-surface border-2 border-on-background rounded-full font-label-sm font-bold text-[#1b6a3b] flex items-center gap-1">
+                                <span class="material-symbols-outlined text-[16px]" style="font-variation-settings:'FILL' 1;">check_circle</span> Correct Answer
+                            </span>
+                            <span class="font-label-sm text-outline font-bold flex items-center gap-1">
+                                <span class="material-symbols-outlined text-[16px]">verified</span> Key
+                            </span>
+                        </div>
+                        <div class="my-auto text-center px-4 md:px-8">
+                            <h3 class="font-display-lg-mobile md:font-headline-lg font-black text-[#1b6a3b] mb-3 leading-snug" id="recall-card-answer">
+                                Answer
+                            </h3>
+                            <div class="p-3 bg-surface/80 rounded-xl border-2 border-on-background/40 max-w-xl mx-auto text-left">
+                                <p class="font-label-sm text-primary font-bold mb-0.5">High-Yield Explanation:</p>
+                                <p class="font-body-md text-on-surface" id="recall-card-explanation">
+                                    Explanation
+                                </p>
+                            </div>
+                        </div>
+                        <div class="text-center font-label-sm text-outline uppercase font-bold flex items-center justify-center gap-1">
+                            Rate recall difficulty below to advance
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deck Completion Card (Shown when set finishes) -->
+            <div id="recall-complete-box" class="hidden glass-panel neo-border rounded-2xl p-xl neo-shadow text-center bg-surface flex flex-col items-center justify-center gap-md">
+                <div class="w-16 h-16 rounded-full border-2 border-on-background bg-[#d0f4de] flex items-center justify-center">
+                    <span class="material-symbols-outlined text-3xl text-[#1b6a3b]" style="font-variation-settings:'FILL' 1;">workspace_premium</span>
+                </div>
+                <div>
+                    <h3 class="font-headline-lg font-black text-on-background">Recall Deck Completed! 🎉</h3>
+                    <p class="font-body-md text-on-surface-variant max-w-md mx-auto mt-1">Great job reinforcing your active memory. Regular recall strengthens neural retention for the exam.</p>
+                </div>
+                <div class="flex gap-3 mt-2">
+                    <button onclick="app.restartRecallDeck()" class="px-6 py-2.5 bg-primary text-on-primary neo-border rounded-xl font-label-lg uppercase font-bold neo-shadow neo-button hover:-translate-y-0.5 cursor-pointer">
+                        Review Again
+                    </button>
+                    <button onclick="app.nextRecallCategory()" class="px-6 py-2.5 bg-secondary-container text-on-secondary-container neo-border rounded-xl font-label-lg uppercase font-bold neo-shadow neo-button hover:-translate-y-0.5 cursor-pointer">
+                        Next Category →
+                    </button>
+                </div>
+            </div>
+
+            <!-- Navigation & Rating Controls Bar -->
+            <div id="recall-controls-container" class="flex flex-col gap-3 mt-1">
+                <!-- 4 Spaced Repetition Rating Buttons -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                    <button onclick="event.stopPropagation(); app.rateRecall(1)" class="p-3 bg-error-container text-error neo-border rounded-xl font-label-lg uppercase font-bold neo-shadow-sm hover:scale-105 active:translate-y-1 transition-transform cursor-pointer flex flex-col items-center gap-0.5" title="Press 1">
+                        <span>Again <kbd class="ml-1">1</kbd></span>
+                        <span class="text-[10px] font-normal lowercase opacity-80">&lt; 1 min</span>
+                    </button>
+                    <button onclick="event.stopPropagation(); app.rateRecall(2)" class="p-3 bg-tertiary-fixed text-on-tertiary-fixed neo-border rounded-xl font-label-lg uppercase font-bold neo-shadow-sm hover:scale-105 active:translate-y-1 transition-transform cursor-pointer flex flex-col items-center gap-0.5" title="Press 2">
+                        <span>Hard <kbd class="ml-1">2</kbd></span>
+                        <span class="text-[10px] font-normal lowercase opacity-80">10 mins</span>
+                    </button>
+                    <button onclick="event.stopPropagation(); app.rateRecall(3)" class="p-3 bg-secondary-fixed text-on-secondary-container neo-border rounded-xl font-label-lg uppercase font-bold neo-shadow-sm hover:scale-105 active:translate-y-1 transition-transform cursor-pointer flex flex-col items-center gap-0.5" title="Press 3">
+                        <span>Good <kbd class="ml-1">3</kbd></span>
+                        <span class="text-[10px] font-normal lowercase opacity-80">1 day</span>
+                    </button>
+                    <button onclick="event.stopPropagation(); app.rateRecall(4)" class="p-3 bg-[#d0f4de] text-[#1b6a3b] neo-border rounded-xl font-label-lg uppercase font-bold neo-shadow-sm hover:scale-105 active:translate-y-1 transition-transform cursor-pointer flex flex-col items-center gap-0.5" title="Press 4">
+                        <span>Mastered <kbd class="ml-1">4</kbd></span>
+                        <span class="text-[10px] font-normal lowercase opacity-80">4 days</span>
+                    </button>
+                </div>
+
+                <!-- Card Nav Arrows (Prev, Flip, Next) -->
+                <div class="flex items-center justify-between pt-1">
+                    <button onclick="app.prevRecallCard()" class="px-4 py-2 bg-surface neo-border rounded-xl font-label-sm font-bold neo-shadow-sm hover:bg-surface-variant flex items-center gap-1 cursor-pointer">
+                        <span class="material-symbols-outlined text-[18px]">arrow_back</span>
+                        <span>Previous</span>
+                    </button>
+                    <button onclick="app.flipRecallCard()" class="px-5 py-2 bg-surface neo-border rounded-xl font-label-sm font-bold neo-shadow-sm hover:bg-surface-variant flex items-center gap-1 cursor-pointer">
+                        <span class="material-symbols-outlined text-[18px]">swap_horiz</span>
+                        <span>Flip Answer</span>
+                    </button>
+                    <button onclick="app.nextRecallCard()" class="px-4 py-2 bg-surface neo-border rounded-xl font-label-sm font-bold neo-shadow-sm hover:bg-surface-variant flex items-center gap-1 cursor-pointer">
+                        <span>Next</span>
+                        <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ==================== VIEW 2: QUIZ ARENA (FULL-SCREEN DEDICATED OVERLAY - NO NAV/NO SIDEBAR) ==================== -->
+<div id="view-quiz" class="app-view hidden fixed inset-0 z-[100] bg-background text-on-background h-screen overflow-hidden flex flex-col relative font-body-md selection:bg-primary-container selection:text-on-primary-container pt-1">
+    <!-- Absolute Top Progress Bar -->
+    <div class="fixed top-0 left-0 w-full h-[4px] bg-surface-container-high z-[110]">
+        <div class="h-full bg-[#2D9CDB] transition-all duration-300" id="quiz-progress-bar" style="width: 0%"></div>
+    </div>
+
+    <!-- Pinned Question Panel at Top -->
+    <section class="glass-panel rounded-b-3xl p-md md:p-xl mb-md neo-shadow w-full max-w-5xl mx-auto bg-surface/95 border-[3px] border-on-background border-t-0 flex flex-col shrink-0 relative z-20">
+        <!-- Header Info & Timer -->
+        <header class="flex justify-between items-center gap-2 mb-md">
+            <div class="glass-panel rounded-full px-4 py-2 neo-shadow-sm flex items-center gap-2 bg-surface border-[3px] border-on-background">
+                <span class="font-label-sm text-label-sm text-on-background uppercase tracking-widest hidden sm:inline font-bold">Question</span>
+                <span class="font-headline-md text-[20px] md:text-headline-md text-primary leading-none font-bold" id="quiz-q-num">1</span>
+                <span class="font-body-md text-[14px] md:text-body-lg text-outline leading-none" id="quiz-total-q">/ 5</span>
+            </div>
+            <!-- Timer Pill -->
+            <div class="glass-panel rounded-full px-4 py-2 neo-shadow-sm flex items-center gap-2 bg-error-container border-[3px] border-error">
+                <span class="material-symbols-outlined text-error text-[20px]" style="font-variation-settings: 'FILL' 1;">timer</span>
+                <span class="font-headline-md text-[18px] md:text-headline-md text-error tracking-wider leading-none font-bold" id="quiz-countdown">03:45</span>
+            </div>
+        </header>
+
+        <div>
+            <div class="flex items-center gap-xs mb-sm">
+                <span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">help</span>
+                <span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-bold" id="quiz-category-badge">VOCABULARY</span>
+            </div>
+            <div id="quiz-question-wrapper">
+                <h1 class="font-display-lg-mobile md:font-headline-lg text-[22px] md:text-[34px] text-on-background leading-tight font-black" id="quiz-question-text">
+                    Loading question...
+                </h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4 Neobrutalist Options Center Container (Scrollable) -->
+    <div class="grid grid-cols-1 gap-3 px-md md:px-xl pb-28 w-full max-w-4xl mx-auto overflow-y-auto flex-grow justify-center content-center z-10" id="quiz-options-container">
+        <!-- Options rendered dynamically -->
+    </div>
+
+    <!-- Fixed Bottom Glass Navigation Dock -->
+    <div class="fixed bottom-0 left-0 right-0 z-[120] p-3 bg-surface/90 backdrop-blur-xl border-t-[3px] border-on-background shadow-[0_-8px_20px_rgba(0,0,0,0.1)] pb-6 md:pb-4">
+        <div class="max-w-4xl mx-auto flex items-center justify-between gap-2 w-full">
+            <div class="flex items-center gap-2">
+                <button onclick="app.prevQuestion()" class="h-12 w-12 md:w-auto md:px-6 rounded-full border-[3px] border-on-background bg-surface font-label-lg text-label-lg uppercase flex items-center justify-center gap-2 hover:bg-surface-variant transition-colors active:translate-y-1 active:translate-x-1 active:shadow-none shadow-[4px_4px_0px_0px_rgba(26,27,33,1)] font-bold cursor-pointer" title="Previous Question">
+                    <span class="material-symbols-outlined">arrow_back</span>
+                    <span class="hidden md:inline">Previous</span>
+                </button>
+                <button onclick="app.toggleBookmark()" id="btn-bookmark" class="h-12 w-12 rounded-full border-[3px] border-on-background bg-surface font-label-lg text-label-lg uppercase flex items-center justify-center gap-2 hover:bg-secondary-container hover:border-secondary transition-colors active:translate-y-1 active:translate-x-1 active:shadow-none shadow-[4px_4px_0px_0px_rgba(26,27,33,1)] group cursor-pointer" title="Bookmark Question">
+                    <span class="material-symbols-outlined group-hover:text-on-secondary-container" id="icon-bookmark">bookmark</span>
+                </button>
+            </div>
+            <button onclick="app.quitQuiz()" class="h-12 px-6 rounded-full border-[3px] border-on-background bg-error-container text-error font-label-lg text-label-lg uppercase flex items-center gap-2 hover:bg-error hover:text-on-error transition-colors active:translate-y-1 active:translate-x-1 active:shadow-none shadow-[4px_4px_0px_0px_rgba(26,27,33,1)] font-bold cursor-pointer mx-auto">
+                Quit
+            </button>
+            <div class="flex items-center gap-2">
+                <button onclick="app.skipQuestion()" class="h-12 px-4 md:px-6 rounded-full border-[3px] border-on-background bg-surface font-label-lg text-label-lg uppercase flex items-center justify-center gap-2 hover:bg-surface-variant transition-colors active:translate-y-1 active:translate-x-1 active:shadow-none shadow-[4px_4px_0px_0px_rgba(26,27,33,1)] font-bold cursor-pointer">
+                    Skip
+                </button>
+                <button onclick="app.nextQuestion()" id="btn-quiz-next" class="h-12 px-6 md:px-8 rounded-full border-[3px] border-on-background bg-primary text-on-primary font-label-lg text-label-lg uppercase flex items-center justify-center gap-2 hover:bg-primary-container transition-colors active:translate-y-1 active:translate-x-1 active:shadow-none shadow-[4px_4px_0px_0px_rgba(26,27,33,1)] font-bold cursor-pointer">
+                    <span>Next</span>
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Neobrutalist Footer (Hidden during quiz) -->
+<footer id="app-footer" class="mt-auto w-full border-t-[3px] border-on-background bg-surface/40 backdrop-blur-xl flex flex-col md:flex-row justify-between items-center py-md px-xl relative z-20 inner-shimmer">
+    <div class="font-label-lg text-label-lg text-on-background font-bold tracking-wider">
+        © 2024 MPSC LDA Quiz Platform. All Rights Reserved.
+    </div>
+    <div class="flex gap-md mt-sm md:mt-0">
+        <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100 font-bold no-underline cursor-pointer" onclick="app.showNotification('MPSC LDA candidate terms and examination regulations active.')">Terms</a>
+        <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100 font-bold no-underline cursor-pointer" onclick="app.showNotification('Candidate telemetry is stored natively in SQLite.')">Privacy</a>
+        <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100 font-bold no-underline cursor-pointer" onclick="app.showNotification('Mission LDA offline exam support active.')">Support</a>
+    </div>
+</footer>
+
+<!-- Gemini AI Generation Modal / Overlay -->
+<div id="modal-gemini-loading" class="fixed inset-0 z-[200] bg-on-background/70 backdrop-blur-md hidden flex items-center justify-center p-4">
+    <div class="glass-panel neo-border rounded-2xl p-xl neo-shadow bg-surface max-w-md w-full text-center animate-enter flex flex-col items-center">
+        <div class="w-20 h-20 rounded-full border-[3px] border-on-background bg-tertiary-fixed flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] mb-md">
+            <span class="text-4xl animate-bounce">⚡</span>
+        </div>
+        <h3 class="font-headline-lg font-black text-on-background mb-2">Generating Questions...</h3>
+        <p class="font-body-md text-on-surface-variant mb-lg">
+            Prompting Gemini AI to compose authentic exam questions for <span id="loading-category-name" class="font-bold text-primary">Vocabulary</span>...
+        </p>
+        <div class="w-full h-4 bg-surface-container-high neo-border rounded-full overflow-hidden">
+            <div class="h-full bg-primary shimmer-effect" style="width: 100%"></div>
+        </div>
+        <p class="font-label-sm text-outline mt-3 font-bold uppercase tracking-widest">Chief Examination Master Protocol</p>
+    </div>
+</div>
+
+<!-- Real User Account Auth Modal (SQLite Login & Register - Username and Password Only) -->
+<div id="modal-auth" class="fixed inset-0 z-[150] bg-on-background/60 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="glass-panel neo-border rounded-2xl p-lg neo-shadow bg-surface max-w-md w-full relative animate-enter">
+        <button onclick="app.closeAuthModal()" class="absolute top-4 right-4 w-8 h-8 rounded-full border-2 border-on-background flex items-center justify-center font-bold hover:bg-error-container hover:text-error cursor-pointer">✕</button>
+        
+        <!-- Auth Tabs: Sign In / Register -->
+        <div id="auth-unauthed-view">
+            <div class="flex border-b-2 border-on-background mb-md gap-4">
+                <button type="button" id="tab-auth-login" onclick="app.switchAuthTab('login')" class="pb-2 font-headline-md font-bold text-primary border-b-[3px] border-primary cursor-pointer">
+                    Sign In
+                </button>
+                <button type="button" id="tab-auth-register" onclick="app.switchAuthTab('register')" class="pb-2 font-headline-md font-bold text-on-surface-variant hover:text-on-background cursor-pointer">
+                    Create Account
+                </button>
+            </div>
+
+            <p id="auth-subtitle" class="font-body-md text-on-surface-variant mb-md">
+                Enter your username and password to access real SQLite-stored exam analytics and tracking.
+            </p>
+
+            <!-- Error/Success Alert -->
+            <div id="auth-alert-msg" class="hidden p-3 rounded-xl border-2 mb-md font-label-sm font-bold"></div>
+
+            <form onsubmit="app.handleAuthSubmit(event)" class="space-y-4">
+                <div>
+                    <label class="block font-label-sm uppercase font-bold text-on-surface-variant mb-1">Username</label>
+                    <input type="text" id="auth-input-username" required minlength="3" class="w-full px-4 py-2 border-2 border-on-background rounded-lg font-body-md font-bold focus:outline-none focus:ring-2 focus:ring-primary bg-surface" placeholder="e.g. pynshai" autocomplete="username" />
+                </div>
+                <div>
+                    <label class="block font-label-sm uppercase font-bold text-on-surface-variant mb-1">Password</label>
+                    <input type="password" id="auth-input-password" required minlength="4" class="w-full px-4 py-2 border-2 border-on-background rounded-lg font-body-md font-bold focus:outline-none focus:ring-2 focus:ring-primary bg-surface" placeholder="••••••••" autocomplete="current-password" />
+                </div>
+
+                <div class="pt-2">
+                    <button type="submit" id="auth-submit-btn" class="w-full py-3 bg-primary text-on-primary neo-border rounded-xl font-label-lg uppercase font-bold neo-shadow neo-button hover:-translate-y-0.5 active:translate-y-1 transition-transform cursor-pointer">
+                        Sign In to MPSC LDA
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Logged In Account Overview Screen -->
+        <div id="auth-authed-view" class="hidden">
+            <div class="flex items-center gap-4 mb-md p-4 bg-surface-container neo-border rounded-xl">
+                <div class="w-14 h-14 rounded-full border-2 border-on-background bg-secondary-container flex items-center justify-center font-bold text-xl" id="auth-avatar-preview">
+                    U
+                </div>
+                <div>
+                    <h3 id="auth-authed-username" class="font-headline-md font-black text-on-background">Candidate</h3>
+                    <p class="font-label-sm text-outline">Target Cadre: MPSC LDA Candidate</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3 mb-lg">
+                <div class="p-3 border-2 border-on-background rounded-xl bg-surface">
+                    <p class="font-label-sm text-outline uppercase font-bold">Total Attempts</p>
+                    <p id="auth-total-tests-stat" class="font-headline-lg font-black text-primary">0</p>
+                </div>
+                <div class="p-3 border-2 border-on-background rounded-xl bg-surface">
+                    <p class="font-label-sm text-outline uppercase font-bold">Current Streak</p>
+                    <p id="auth-streak-stat" class="font-headline-lg font-black text-secondary">0 Days</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-2">
+                <button onclick="app.closeAuthModal(); app.navigate('analytics');" class="w-full py-2.5 bg-primary text-on-primary neo-border rounded-xl font-label-lg uppercase font-bold neo-shadow-sm hover:scale-[1.01] cursor-pointer">
+                    View Real Analytics
+                </button>
+                <button onclick="app.logout()" class="w-full py-2.5 bg-error-container text-error neo-border rounded-xl font-label-lg uppercase font-bold neo-shadow-sm hover:bg-error hover:text-white transition-colors cursor-pointer">
+                    Sign Out
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- WebGL Organic Shader Background Script -->
+<script>
+(function() {
+  const canvas = document.getElementById('shader-canvas-bg');
+  if (!canvas) return;
+
+  function syncSize() {
+    const w = canvas.clientWidth  || window.innerWidth || 1280;
+    const h = canvas.clientHeight || window.innerHeight || 720;
+    if (canvas.width !== w || canvas.height !== h) {
+      canvas.width  = w;
+      canvas.height = h;
+    }
+  }
+  if (typeof ResizeObserver !== 'undefined') {
+    new ResizeObserver(syncSize).observe(canvas);
+  }
+  syncSize();
+
+  const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+  if (!gl) return;
+  const vs = `attribute vec2 a_position;
+varying vec2 v_texCoord;
+void main() {
+  v_texCoord = a_position * 0.5 + 0.5;
+  gl_Position = vec4(a_position, 0.0, 1.0);
+}`;
+  const fs = `precision highp float;
+uniform float u_time;
+uniform vec2 u_resolution;
+varying vec2 v_texCoord;
+void main() {
+    vec2 uv = v_texCoord;
+    vec3 color1 = vec3(0.345, 0.337, 0.839);
+    vec3 color2 = vec3(0.176, 0.612, 0.859);
+    vec3 color3 = vec3(1.0, 0.353, 0.373);
+    vec3 color4 = vec3(1.0, 0.8, 0.0);
+    float t = u_time * 0.15;
+    vec2 p1 = vec2(0.5 + 0.3 * sin(t), 0.5 + 0.2 * cos(t * 1.2));
+    float d1 = 1.0 - smoothstep(0.0, 0.8, distance(uv, p1));
+    vec2 p2 = vec2(0.2 + 0.2 * cos(t * 0.8), 0.8 + 0.1 * sin(t * 1.1));
+    float d2 = 1.0 - smoothstep(0.0, 0.7, distance(uv, p2));
+    vec2 p3 = vec2(0.8 + 0.1 * sin(t * 1.5), 0.2 + 0.3 * cos(t * 0.9));
+    float d3 = 1.0 - smoothstep(0.0, 0.9, distance(uv, p3));
+    vec2 p4 = vec2(0.3 + 0.2 * sin(t * 0.7), 0.3 + 0.2 * cos(t * 1.3));
+    float d4 = 1.0 - smoothstep(0.0, 0.6, distance(uv, p4));
+    vec3 finalColor = color1 * d1 + color2 * d2 + color3 * d3 + color4 * d4;
+    float grain = fract(sin(dot(uv, vec2(12.9898, 78.233))) * 43758.5453);
+    finalColor += (grain - 0.5) * 0.04;
+    vec3 bg = vec3(0.941, 0.933, 0.965);
+    finalColor = mix(bg, finalColor, 0.25);
+    gl_FragColor = vec4(finalColor, 1.0);
+}`;
+  function cs(type, src) {
+    const s = gl.createShader(type);
+    gl.shaderSource(s, src);
+    gl.compileShader(s);
+    return s;
+  }
+  const prog = gl.createProgram();
+  gl.attachShader(prog, cs(gl.VERTEX_SHADER, vs));
+  gl.attachShader(prog, cs(gl.FRAGMENT_SHADER, fs));
+  gl.linkProgram(prog);
+  gl.useProgram(prog);
+  const buf = gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, 1,1]), gl.STATIC_DRAW);
+  const pos = gl.getAttribLocation(prog, 'a_position');
+  gl.enableVertexAttribArray(pos);
+  gl.vertexAttribPointer(pos, 2, gl.FLOAT, false, 0, 0);
+  const uTime = gl.getUniformLocation(prog, 'u_time');
+  const uRes = gl.getUniformLocation(prog, 'u_resolution');
+  function render(t) {
+    if (typeof ResizeObserver === 'undefined') syncSize();
+    gl.viewport(0, 0, canvas.width, canvas.height);
+    if (uTime) gl.uniform1f(uTime, t * 0.001);
+    if (uRes) gl.uniform2f(uRes, canvas.width, canvas.height);
+    gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+    requestAnimationFrame(render);
+  }
+  render(0);
+})();
+</script>
+
+<!-- KaTeX Auto Render Helper -->
+<script>
+window._mathQueue = window._mathQueue || [];
+window._mathReady = false;
+
+function renderMath(el) {
+    if (!el) return;
+    if (window._mathReady && window.renderMathInElement) {
+        _doRender(el);
+    } else {
+        window._mathQueue.push(el);
+    }
+}
+
+function _doRender(el) {
+    try {
+        renderMathInElement(el, {
+            delimiters: [
+                { left: '$$', right: '$$', display: true  },
+                { left: '$',  right: '$',  display: false },
+            ],
+            throwOnError: false,
+            strict: false,
+        });
+    } catch(e) { }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    var t = setInterval(function() {
+        if (typeof renderMathInElement === 'function') {
+            clearInterval(t);
+            window._mathReady = true;
+            window._mathQueue.forEach(function(el) { _doRender(el); });
+            window._mathQueue = [];
+            _doRender(document.body);
+        }
+    }, 50);
+});
+</script>
+
+<!-- App Core Script -->
+<script src="/app.js"></script>
+</body>
+</html>

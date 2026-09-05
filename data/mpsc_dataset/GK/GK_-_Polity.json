@@ -1,0 +1,526 @@
+{
+    "category": "GK - Polity",
+    "total_questions": 52,
+    "questions": [
+        {
+            "question": "Who was the first governor general of India?",
+            "options": [
+                "(A) Lord William Bentinck",
+                "(B) Lord Canning",
+                "(C) Warren Hastings",
+                "(D) Lord Mountbatten"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Who is the supreme commander of Indian Armed Forces?",
+            "options": [
+                "(A) Chief of Defence Staff",
+                "(B) Chief Justice",
+                "(C) Prime Minister",
+                "(D) President"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Who was the first female governor of India?",
+            "options": [
+                "(A) Annie Besant",
+                "(B) Sarojini Naidu",
+                "(C) Indira Gandhi",
+                "(D) Sucheta Kripalani"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which Article is associated with 'Lok Sabha'?",
+            "options": [
+                "(A) Article 82",
+                "(B) Article 80",
+                "(C) Article 79",
+                "(D) Article 81"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Which article is associated with Prime Minister?",
+            "options": [
+                "(A) Article 324",
+                "(B) Article 280",
+                "(C) Article 74",
+                "(D) Article 52"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "There are how many High Courts in India?",
+            "options": [
+                "(A) 24",
+                "(B) 21",
+                "(C) 28",
+                "(D) 25"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Which Constitutional amendment is known as 'Mini Constitution'?",
+            "options": [
+                "(A) 86th",
+                "(B) 73rd",
+                "(C) 42nd",
+                "(D) 44th"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Who was the first president of INC?",
+            "options": [
+                "(A) Dadabhai Naoroji",
+                "(B) Badruddin Tyabji",
+                "(C) A.O. Hume",
+                "(D) W.C. Banerjee"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Which article is known as soul of constitution?",
+            "options": [
+                "(A) Article 14",
+                "(B) Article 21",
+                "(C) Article 32",
+                "(D) Article 19"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "There are how many schedules in Indian constitution?",
+            "options": [
+                "(A) 12",
+                "(B) 22",
+                "(C) 10",
+                "(D) 8"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "There are how many judges in supreme court?",
+            "options": [
+                "(A) 35",
+                "(B) 30",
+                "(C) 34",
+                "(D) 31"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which article belongs to 'Impeachment of President'?",
+            "options": [
+                "(A) Article 356",
+                "(B) Article 61",
+                "(C) Article 52",
+                "(D) Article 72"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The Constitution of India was adopted on:",
+            "options": [
+                "(A) 26th January 1950",
+                "(B) 26th November 1949",
+                "(C) 15th August 1947",
+                "(D) 26th January 1949"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Who is the custodian of the fundamental rights in India?",
+            "options": [
+                "(A) Parliament",
+                "(B) President",
+                "(C) Supreme Court",
+                "(D) Prime Minister"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Minimum age to become the President of India is:",
+            "options": [
+                "(A) 25 years",
+                "(B) 30 years",
+                "(C) 35 years",
+                "(D) 40 years"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which article of the Constitution deals with the 'Right to Equality'?",
+            "options": [
+                "(A) Article 14-18",
+                "(B) Article 19-22",
+                "(C) Article 23-24",
+                "(D) Article 25-28"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The Rajya Sabha is a permanent house and cannot be dissolved. Its members retire every:",
+            "options": [
+                "(A) 2 years",
+                "(B) 3 years",
+                "(C) 5 years",
+                "(D) 6 years"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The Preamble of the Indian Constitution is based on:",
+            "options": [
+                "(A) Objective resolution",
+                "(B) Nehru Report",
+                "(C) Government of India Act 1935",
+                "(D) Mountbatten Plan"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which schedule of the Constitution deals with the languages?",
+            "options": [
+                "(A) 7th schedule",
+                "(B) 8th schedule",
+                "(C) 9th schedule",
+                "(D) 10th schedule"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Who was the first Governor-General of Bengal?",
+            "options": [
+                "(A) Lord Clive",
+                "(B) Warren Hastings",
+                "(C) Lord William Bentinck",
+                "(D) Lord Canning"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Who is the current President of India?",
+            "options": [
+                "(A) Ram Nath Kovind",
+                "(B) Pranab Mukherjee",
+                "(C) Droupadi Murmu",
+                "(D) Jagdeep Dhankhar"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "The right to constitutional remedies is provided under Article:",
+            "options": [
+                "(A) Article 14",
+                "(B) Article 19",
+                "(C) Article 21",
+                "(D) Article 32"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "How many fundamental duties are there in the Indian Constitution?",
+            "options": [
+                "(A) 10",
+                "(B) 11",
+                "(C) 12",
+                "(D) 9"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The Lok sabha can have a maximum of how many members?",
+            "options": [
+                "(A) 545",
+                "(B) 550",
+                "(C) 552",
+                "(D) 250"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Who has the power to remove the President from office?",
+            "options": [
+                "(A) Parliament",
+                "(B) Supreme Court",
+                "(C) Prime Minister",
+                "(D) Election Commission"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The quorum to constitute a meeting of Lok Sabha is:",
+            "options": [
+                "(A) 1/5th of total members",
+                "(B) 1/10th of total members",
+                "(C) 1/8th of total members",
+                "(D) 1/4th of total members"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which article abolishes untouchability?",
+            "options": [
+                "(A) Article 14",
+                "(B) Article 15",
+                "(C) Article 16",
+                "(D) Article 17"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Money Bill can be introduced only in:",
+            "options": [
+                "(A) Rajya Sabha",
+                "(B) Lok Sabha",
+                "(C) Joint Session",
+                "(D) President's Office"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The maximum number of nominated members in Rajya Sabha is:",
+            "options": [
+                "(A) 2",
+                "(B) 10",
+                "(C) 12",
+                "(D) 15"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Right to Education is provided under Article:",
+            "options": [
+                "(A) Article 19",
+                "(B) Article 21",
+                "(C) Article 21A",
+                "(D) Article 45"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Who acts as the chairman of the Rajya Sabha?",
+            "options": [
+                "(A) President",
+                "(B) Vice President",
+                "(C) Prime Minister",
+                "(D) Speaker"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Anti-Defection Law is contained in which schedule?",
+            "options": [
+                "(A) 8th schedule",
+                "(B) 9th schedule",
+                "(C) 10th schedule",
+                "(D) 11th schedule"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "How many times can the President address the Parliament in a year?",
+            "options": [
+                "(A) Once",
+                "(B) Twice",
+                "(C) Thrice",
+                "(D) Any number of times"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "The right to property is now a:",
+            "options": [
+                "(A) Fundamental right",
+                "(B) Legal right",
+                "(C) Moral right",
+                "(D) Natural right"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The maximum age to contest for President is:",
+            "options": [
+                "(A) 65 years",
+                "(B) 70 years",
+                "(C) 75 years",
+                "(D) No upper age limit"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Who administers the oath of office to the Governor?",
+            "options": [
+                "(A) President",
+                "(B) Chief Justice of High Court",
+                "(C) Chief Justice of India",
+                "(D) Chief Minister"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which Amendment Act is known as the mini Constitution?",
+            "options": [
+                "(A) 42nd Amendment",
+                "(B) 44th Amendment",
+                "(C) 86th Amendment",
+                "(D) 73rd Amendment"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The Emergency provisions are borrowed from:",
+            "options": [
+                "(A) USA",
+                "(B) Germany",
+                "(C) USSR",
+                "(D) Australia"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Akbar's court had nine jewels called:",
+            "options": [
+                "(A) Navaratnas",
+                "(B) Ashtapradhan",
+                "(C) Ashtadiggajas",
+                "(D) Nine Gems"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Tansen was a musician in the court of:",
+            "options": [
+                "(A) Akbar",
+                "(B) Babur",
+                "(C) Shah Jahan",
+                "(D) Humayun"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Newton's First Law is also called:",
+            "options": [
+                "(A) Law of Gravity",
+                "(B) Law of Inertia",
+                "(C) Law of Action-Reaction",
+                "(D) Law of Momentum"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The concept of Fundamental Rights is borrowed from:",
+            "options": [
+                "(A) UK",
+                "(B) USA",
+                "(C) USSR",
+                "(D) Ireland"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The concept of parliamentary system is borrowed from:",
+            "options": [
+                "(A) USA",
+                "(B) UK",
+                "(C) Canada",
+                "(D) Australia"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Father of Indian Constitution:",
+            "options": [
+                "(A) B.R. Ambedkar",
+                "(B) Mahatma Gandhi",
+                "(C) Jawaharlal Nehru",
+                "(D) Rajendra Prasad"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Constitution of India came into effect on:",
+            "options": [
+                "(A) 1947",
+                "(B) 1950",
+                "(C) 1952",
+                "(D) 1949"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Hornbill festival is celebrated in:",
+            "options": [
+                "(A) Assam",
+                "(B) Nagaland",
+                "(C) Manipur",
+                "(D) Mizoram"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Who is Governor of RBI?",
+            "options": [
+                "(A) Shaktikanta Das",
+                "(B) Sanjay Malhotra",
+                "(C) Urjit Patel",
+                "(D) Raghuram Rajan"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Article 244(2) of Constitution is related to:",
+            "options": [
+                "(A) Special provisions for Jammu & Kashmir",
+                "(B) Administration of Tribal areas",
+                "(C) Finance Commission",
+                "(D) Official Languages"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "How many articles were in original Constitution?",
+            "options": [
+                "(A) 395",
+                "(B) 448",
+                "(C) 370",
+                "(D) 385"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Preamble was amended by which Amendment?",
+            "options": [
+                "(A) 42nd",
+                "(B) 44th",
+                "(C) 86th",
+                "(D) 73rd"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Right to Education Act was passed in:",
+            "options": [
+                "(A) 2005",
+                "(B) 2009",
+                "(C) 2010",
+                "(D) 2012"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Constitution Day of India:",
+            "options": [
+                "(A) 15 August",
+                "(B) 26 Nov",
+                "(C) 26 Jan",
+                "(D) 2 Oct"
+            ],
+            "answer": "B"
+        }
+    ]
+}

@@ -1,0 +1,2416 @@
+{
+  "category": "English - Direct and Indirect Speech",
+  "total_questions": 200,
+  "questions": [
+    {
+      "question": "He said, \"I write a letter.\"",
+      "options": [
+        "(A) He said that he writes a letter.",
+        "(B) He said that he wrote a letter.",
+        "(C) He said that he had written a letter.",
+        "(D) He told that he writes a letter."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "She said, \"I like apples.\"",
+      "options": [
+        "(A) She said that she likes apples.",
+        "(B) She said that I liked apples.",
+        "(C) She said that she liked apples.",
+        "(D) She told that she liked apples."
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Rahul said, \"I play cricket every morning.\"",
+      "options": [
+        "(A) Rahul said that he plays cricket every morning.",
+        "(B) Rahul said that he played cricket every morning.",
+        "(C) Rahul said that he had played cricket every morning.",
+        "(D) Rahul said he play cricket every morning."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The boy said, \"I do not know the answer.\"",
+      "options": [
+        "(A) The boy said that he did not know the answer.",
+        "(B) The boy said that he does not know the answer.",
+        "(C) The boy said that he had not known the answer.",
+        "(D) The boy said that I did not know the answer."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "They said, \"We love our country.\"",
+      "options": [
+        "(A) They said that they loved their country.",
+        "(B) They said that they love their country.",
+        "(C) They said that we loved our country.",
+        "(D) They said that they had loved their country."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "My father said, \"Honesty is the best policy.\"",
+      "options": [
+        "(A) My father said that honesty was the best policy.",
+        "(B) My father said that honesty is the best policy.",
+        "(C) My father said that honesty has been the best policy.",
+        "(D) My father told that honesty is the best policy."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The teacher said, \"The earth revolves around the sun.\"",
+      "options": [
+        "(A) The teacher said that the earth revolved around the sun.",
+        "(B) The teacher said that the earth revolves around the sun.",
+        "(C) The teacher said that the earth is revolving around the sun.",
+        "(D) The teacher told that the earth revolves around the sun."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "He said, \"I am reading a book.\"",
+      "options": [
+        "(A) He said that he was reading a book.",
+        "(B) He said that he is reading a book.",
+        "(C) He said that I was reading a book.",
+        "(D) He said that he had been reading a book."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"I am cooking dinner.\"",
+      "options": [
+        "(A) She said that she is cooking dinner.",
+        "(B) She said that she had cooked dinner.",
+        "(C) She said that she was cooking dinner.",
+        "(D) She said that I was cooking dinner."
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "John said, \"They are waiting for the bus.\"",
+      "options": [
+        "(A) John said that they were waiting for the bus.",
+        "(B) John said that they are waiting for the bus.",
+        "(C) John said that they had been waiting for the bus.",
+        "(D) John said that we were waiting for the bus."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"It is raining heavily.\"",
+      "options": [
+        "(A) He said that it is raining heavily.",
+        "(B) He said that it was raining heavily.",
+        "(C) He said that it had been raining heavily.",
+        "(D) He told that it was raining heavily."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "She said, \"I have finished my homework.\"",
+      "options": [
+        "(A) She said that she had finished her homework.",
+        "(B) She said that she has finished her homework.",
+        "(C) She said that she finished her homework.",
+        "(D) She said that I had finished my homework."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"I have bought a new car.\"",
+      "options": [
+        "(A) He said that he has bought a new car.",
+        "(B) He said that he bought a new car.",
+        "(C) He said that he had bought a new car.",
+        "(D) He told that he had bought a new car."
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "They said, \"We have won the match.\"",
+      "options": [
+        "(A) They said that they have won the match.",
+        "(B) They said that they had won the match.",
+        "(C) They said that we had won the match.",
+        "(D) They told that they had won the match."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The manager said, \"The guests have arrived.\"",
+      "options": [
+        "(A) The manager said that the guests have arrived.",
+        "(B) The manager said that the guests had arrived.",
+        "(C) The manager said that the guests arrived.",
+        "(D) The manager said the guests have arrived."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "She said, \"I have been working since morning.\"",
+      "options": [
+        "(A) She said that she had been working since morning.",
+        "(B) She said that she has been working since morning.",
+        "(C) She said that she was working since morning.",
+        "(D) She said that she worked since morning."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"I wrote a letter yesterday.\"",
+      "options": [
+        "(A) He said that he wrote a letter the previous day.",
+        "(B) He said that he had written a letter the previous day.",
+        "(C) He said that he had written a letter yesterday.",
+        "(D) He said that he writes a letter yesterday."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "She said, \"I met him last week.\"",
+      "options": [
+        "(A) She said that she met him last week.",
+        "(B) She said that she had met him the previous week.",
+        "(C) She said that she had met him last week.",
+        "(D) She said that I had met him the previous week."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Ravi said, \"I saw the movie on Sunday.\"",
+      "options": [
+        "(A) Ravi said that he saw the movie on Sunday.",
+        "(B) Ravi said that he had seen the movie on Sunday.",
+        "(C) Ravi said that he had saw the movie on Sunday.",
+        "(D) Ravi told that he had seen the movie on Sunday."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "He said, \"I was sleeping when the bell rang.\"",
+      "options": [
+        "(A) He said that he had been sleeping when the bell rang.",
+        "(B) He said that he was sleeping when the bell had rung.",
+        "(C) He said that he had been sleeping when the bell had rung.",
+        "(D) He said that he was sleeping when the bell rang."
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "She said, \"They were playing chess.\"",
+      "options": [
+        "(A) She said that they were playing chess.",
+        "(B) She said that they had been playing chess.",
+        "(C) She said that they are playing chess.",
+        "(D) She said that they played chess."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "He said, \"I had finished the work before he came.\"",
+      "options": [
+        "(A) He said that he finished the work before he came.",
+        "(B) He said that he had finished the work before he had come.",
+        "(C) He said that he had finished the work before he came.",
+        "(D) He said that he has finished the work before he came."
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "They said, \"We will attend the meeting.\"",
+      "options": [
+        "(A) They said that they will attend the meeting.",
+        "(B) They said that they would attend the meeting.",
+        "(C) They said that we would attend the meeting.",
+        "(D) They said that they shall attend the meeting."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "She said, \"I shall go to Delhi tomorrow.\"",
+      "options": [
+        "(A) She said that she should go to Delhi tomorrow.",
+        "(B) She said that she would go to Delhi the next day.",
+        "(C) She said that she will go to Delhi the next day.",
+        "(D) She said that she would go to Delhi tomorrow."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "He said, \"I can solve this puzzle.\"",
+      "options": [
+        "(A) He said that he can solve that puzzle.",
+        "(B) He said that he could solve this puzzle.",
+        "(C) He said that he could solve that puzzle.",
+        "(D) He said that I could solve that puzzle."
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "The boy said, \"I may come slightly late.\"",
+      "options": [
+        "(A) The boy said that he may come slightly late.",
+        "(B) The boy said that he might come slightly late.",
+        "(C) The boy said that he might go slightly late.",
+        "(D) The boy said that I might come slightly late."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "She said, \"I must leave immediately.\"",
+      "options": [
+        "(A) She said that she must leave immediately.",
+        "(B) She said that she had to leave immediately.",
+        "(C) She said that she has to leave immediately.",
+        "(D) She said that she ought to leave immediately."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "He said to me, \"You are my best friend.\"",
+      "options": [
+        "(A) He said to me that I was his best friend.",
+        "(B) He told me that I am his best friend.",
+        "(C) He told me that I was his best friend.",
+        "(D) He told me that you were his best friend."
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "She said to him, \"I do not trust you.\"",
+      "options": [
+        "(A) She told him that she did not trust him.",
+        "(B) She told him that she does not trust him.",
+        "(C) She said to him that she did not trust him.",
+        "(D) She told him she did not trust you."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "I said to him, \"You are very lazy.\"",
+      "options": [
+        "(A) I told him that he is very lazy.",
+        "(B) I told him that he was very lazy.",
+        "(C) I said him that he was very lazy.",
+        "(D) I told him that you were very lazy."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "He said, \"I will buy this book today.\"",
+      "options": [
+        "(A) He said that he would buy this book today.",
+        "(B) He said that he would buy that book that day.",
+        "(C) He said that he will buy that book that day.",
+        "(D) He said that he would buy that book today."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "She said, \"I saw him here yesterday.\"",
+      "options": [
+        "(A) She said that she had seen him there the previous day.",
+        "(B) She said that she saw him there the previous day.",
+        "(C) She said that she had seen him here yesterday.",
+        "(D) She said that she had seen him there yesterday."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "They said, \"We shall meet you tomorrow.\"",
+      "options": [
+        "(A) They said that they should meet me tomorrow.",
+        "(B) They said that they would meet me the next day.",
+        "(C) They said that they would meet you the next day.",
+        "(D) They said that they shall meet me the next day."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "He asked, \"Are you coming with us?\"",
+      "options": [
+        "(A) He asked if I was coming with them.",
+        "(B) He asked if I am coming with them.",
+        "(C) He asked that if I was coming with them.",
+        "(D) He asked whether I was coming with us."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said to me, \"Do you know my sister?\"",
+      "options": [
+        "(A) She asked me if I know her sister.",
+        "(B) She asked me if I knew her sister.",
+        "(C) She asked me that if I knew her sister.",
+        "(D) She told me if I knew her sister."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "He said to her, \"Have you finished the report?\"",
+      "options": [
+        "(A) He asked her whether she has finished the report.",
+        "(B) He asked her if she had finished the report.",
+        "(C) He asked her had she finished the report.",
+        "(D) He asked her if you had finished the report."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "I said to him, \"Will you help me?\"",
+      "options": [
+        "(A) I asked him if he would help me.",
+        "(B) I asked him if he will help me.",
+        "(C) I asked him whether he would help him.",
+        "(D) I told him if he would help me."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She asked the boy, \"Can you solve this problem?\"",
+      "options": [
+        "(A) She asked the boy if he can solve that problem.",
+        "(B) She asked the boy if he could solve this problem.",
+        "(C) She asked the boy if he could solve that problem.",
+        "(D) She asked the boy could he solve that problem."
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "He said to me, \"What are you doing?\"",
+      "options": [
+        "(A) He asked me what I was doing.",
+        "(B) He asked me what was I doing.",
+        "(C) He asked me what am I doing.",
+        "(D) He asked me that what I was doing."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said to him, \"Where do you live?\"",
+      "options": [
+        "(A) She asked him where he lived.",
+        "(B) She asked him where did he live.",
+        "(C) She asked him where he lives.",
+        "(D) She asked him where does he live."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "I said to the stranger, \"Who are you?\"",
+      "options": [
+        "(A) I asked the stranger who he was.",
+        "(B) I asked the stranger who was he.",
+        "(C) I asked the stranger who are you.",
+        "(D) I asked the stranger who is he."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He asked me, \"Why are you late?\"",
+      "options": [
+        "(A) He asked me why was I late.",
+        "(B) He asked me why I was late.",
+        "(C) He asked me why am I late.",
+        "(D) He asked me why I am late."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "She said to the mechanic, \"When will you repair my car?\"",
+      "options": [
+        "(A) She asked the mechanic when he would repair her car.",
+        "(B) She asked the mechanic when would he repair her car.",
+        "(C) She asked the mechanic when he will repair her car.",
+        "(D) She asked the mechanic when will he repair her car."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "The officer said to the peon, \"Bring me a glass of water.\"",
+      "options": [
+        "(A) The officer ordered the peon to bring him a glass of water.",
+        "(B) The officer requested the peon to bring him a glass of water.",
+        "(C) The officer asked the peon that bring him a glass of water.",
+        "(D) The officer ordered the peon bring him a glass of water."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "The doctor said to the patient, \"Take your medicines regularly.\"",
+      "options": [
+        "(A) The doctor ordered the patient to take his medicines regularly.",
+        "(B) The doctor advised the patient to take his medicines regularly.",
+        "(C) The doctor advised the patient that he should take his medicines regularly.",
+        "(D) The doctor suggested the patient taking his medicines regularly."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "She said to her brother, \"Please help me with my homework.\"",
+      "options": [
+        "(A) She asked her brother to please help her with her homework.",
+        "(B) She requested her brother to help her with her homework.",
+        "(C) She requested her brother that he help her with her homework.",
+        "(D) She ordered her brother to help her with her homework."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The teacher said to the students, \"Do not make a noise.\"",
+      "options": [
+        "(A) The teacher ordered the students not to make a noise.",
+        "(B) The teacher forbade the students not to make a noise.",
+        "(C) The teacher ordered the students to not make a noise.",
+        "(D) The teacher advised the students do not make a noise."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said to his servant, \"Leave the room at once.\"",
+      "options": [
+        "(A) He requested his servant to leave the room at once.",
+        "(B) He ordered his servant to leave the room at once.",
+        "(C) He ordered his servant that he should leave the room at once.",
+        "(D) He ordered his servant leaving the room at once."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The captain said to the soldiers, \"Fire!\"",
+      "options": [
+        "(A) The captain ordered the soldiers to fire.",
+        "(B) The captain requested the soldiers to fire.",
+        "(C) The captain told the soldiers that they should fire.",
+        "(D) The captain advised the soldiers to fire."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said to him, \"Do not smoke here.\"",
+      "options": [
+        "(A) She advised him not to smoke there.",
+        "(B) She advised him to not smoke there.",
+        "(C) She advised him not to smoke here.",
+        "(D) She forbade him to not smoke there."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"Let us go for a walk.\"",
+      "options": [
+        "(A) He suggested that we should go for a walk.",
+        "(B) He proposed that we go for a walk.",
+        "(C) He suggested going for a walk.",
+        "(D) He suggested that they should go for a walk."
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "She said, \"Let me complete my work first.\"",
+      "options": [
+        "(A) She asked to let her complete her work first.",
+        "(B) She requested that she might be allowed to complete her work first.",
+        "(C) She ordered to let her complete her work first.",
+        "(D) She suggested that she should complete her work first."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "He said, \"Alas! I am ruined.\"",
+      "options": [
+        "(A) He exclaimed with sorrow that he was ruined.",
+        "(B) He exclaimed with joy that he was ruined.",
+        "(C) He exclaimed that alas he was ruined.",
+        "(D) He exclaimed sorrowfully that I was ruined."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "The boy said, \"Hurrah! We have won the cup.\"",
+      "options": [
+        "(A) The boy exclaimed with joy that they had won the cup.",
+        "(B) The boy exclaimed with joy that we had won the cup.",
+        "(C) The boy exclaimed that hurrah they had won the cup.",
+        "(D) The boy exclaimed with joy that they have won the cup."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"What a beautiful garden it is!\"",
+      "options": [
+        "(A) She exclaimed that what a beautiful garden it was.",
+        "(B) She exclaimed that it was a very beautiful garden.",
+        "(C) She exclaimed with surprise that it is a beautiful garden.",
+        "(D) She exclaimed that it is a very beautiful garden."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "He said, \"How foolish I have been!\"",
+      "options": [
+        "(A) He confessed with regret that he had been very foolish.",
+        "(B) He exclaimed that he was very foolish.",
+        "(C) He exclaimed that how foolish he had been.",
+        "(D) He confessed that he has been very foolish."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "They said, \"May God bless you!\"",
+      "options": [
+        "(A) They prayed that God might bless me.",
+        "(B) They prayed that God may bless me.",
+        "(C) They wished that God might bless you.",
+        "(D) They prayed that God bless you."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"Good morning, sir.\"",
+      "options": [
+        "(A) He bade good morning to his sir.",
+        "(B) He respectfully wished his teacher good morning.",
+        "(C) He wished his sir good morning.",
+        "(D) He respectfully wished the person good morning."
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "She said, \"Farewell, my friends.\"",
+      "options": [
+        "(A) She bade farewell to her friends.",
+        "(B) She said farewell to her friends.",
+        "(C) She wished her friends farewell.",
+        "(D) She told her friends farewell."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"Would that I were a king!\"",
+      "options": [
+        "(A) He wished that he was a king.",
+        "(B) He wished that he had been a king.",
+        "(C) He wished that he were a king.",
+        "(D) He desired that he were a king."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The beggar said, \"If only I had some food!\"",
+      "options": [
+        "(A) The beggar wished that he had some food.",
+        "(B) The beggar wished if only he had some food.",
+        "(C) The beggar exclaimed that he had some food.",
+        "(D) The beggar prayed that he has some food."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "The saint said, \"Virtue is its own reward.\"",
+      "options": [
+        "(A) The saint said that virtue was its own reward.",
+        "(B) The saint said that virtue is its own reward.",
+        "(C) The saint told that virtue is its own reward.",
+        "(D) The saint advised that virtue is its own reward."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "My mother said to me, \"Two and two make four.\"",
+      "options": [
+        "(A) My mother told me that two and two made four.",
+        "(B) My mother told me that two and two make four.",
+        "(C) My mother said to me that two and two made four.",
+        "(D) My mother advised me that two and two make four."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "He said, \"I used to swim in this river.\"",
+      "options": [
+        "(A) He said that he used to swim in that river.",
+        "(B) He said that he had used to swim in that river.",
+        "(C) He said that he uses to swim in that river.",
+        "(D) He said that he used to swim in this river."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "The teacher said, \"India became independent in 1947.\"",
+      "options": [
+        "(A) The teacher said that India had become independent in 1947.",
+        "(B) The teacher said that India became independent in 1947.",
+        "(C) The teacher said that India becomes independent in 1947.",
+        "(D) The teacher told that India had become independent in 1947."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "She said, \"When I was a child, I played here.\"",
+      "options": [
+        "(A) She said that when she was a child, she had played there.",
+        "(B) She said that when she had been a child, she played there.",
+        "(C) She said that when she was a child, she played there.",
+        "(D) She said that when she was a child, she played here."
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "He said, \"I had better go now.\"",
+      "options": [
+        "(A) He said that he had better go then.",
+        "(B) He said that he had better gone then.",
+        "(C) He said that he had better go now.",
+        "(D) He said that he would better go then."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"It is time we left.\"",
+      "options": [
+        "(A) She said that it was time they left.",
+        "(B) She said that it was time they had left.",
+        "(C) She said that it is time they left.",
+        "(D) She said that it was time we left."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "He said, \"If I were a bird, I would fly.\"",
+      "options": [
+        "(A) He said that if he were a bird, he would fly.",
+        "(B) He said that if he had been a bird, he would have flown.",
+        "(C) He said that if he was a bird, he would fly.",
+        "(D) He said if I were a bird I would fly."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"Unless you work hard, you will fail.\"",
+      "options": [
+        "(A) She said that unless he worked hard, he would fail.",
+        "(B) She told that unless he works hard, he will fail.",
+        "(C) She said that unless he had worked hard, he would fail.",
+        "(D) She said that unless he worked hard, he will fail."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "The principal said, \"All students must attend the assembly.\"",
+      "options": [
+        "(A) The principal ordered that all students had to attend the assembly.",
+        "(B) The principal said that all students must attend the assembly.",
+        "(C) The principal said that all students must have attended the assembly.",
+        "(D) The principal told that all students must attend the assembly."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "He said, \"Who has broken this window?\"",
+      "options": [
+        "(A) He asked who had broken that window.",
+        "(B) He asked who broke that window.",
+        "(C) He asked who has broken that window.",
+        "(D) He asked that who had broken that window."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said to him, \"Whom do you want to meet?\"",
+      "options": [
+        "(A) She asked him whom he wants to meet.",
+        "(B) She asked him whom he wanted to meet.",
+        "(C) She asked him whom did he want to meet.",
+        "(D) She asked him who he wanted to meet."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "They said, \"Which pen is yours?\"",
+      "options": [
+        "(A) They asked which pen was mine.",
+        "(B) They asked which pen is mine.",
+        "(C) They asked that which pen was mine.",
+        "(D) They asked which pen was yours."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said to her, \"Whose book are you reading?\"",
+      "options": [
+        "(A) He asked her whose book she was reading.",
+        "(B) He asked her whose book was she reading.",
+        "(C) He asked her whose book she is reading.",
+        "(D) He asked her whose book is she reading."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"How much money do you need?\"",
+      "options": [
+        "(A) She asked how much money I needed.",
+        "(B) She asked how much money I need.",
+        "(C) She asked how much money did I need.",
+        "(D) She asked how much money do you need."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He asked, \"How many pages have you read?\"",
+      "options": [
+        "(A) He asked how many pages I had read.",
+        "(B) He asked how many pages I read.",
+        "(C) He asked how many pages have I read.",
+        "(D) He asked how many pages had I read."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "The mother said to her son, \"Do not play in the sun.\"",
+      "options": [
+        "(A) The mother forbade her son to play in the sun.",
+        "(B) The mother ordered her son not to play in the sun.",
+        "(C) The mother advised her son not to play in the sun.",
+        "(D) Both (A) and (C) are correct."
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "The general said to the troops, \"March forward!\"",
+      "options": [
+        "(A) The general commanded the troops to march forward.",
+        "(B) The general ordered the troops march forward.",
+        "(C) The general requested the troops to march forward.",
+        "(D) The general asked the troops that march forward."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "The girl said to the fairy, \"Please grant me a wish.\"",
+      "options": [
+        "(A) The girl requested the fairy to grant her a wish.",
+        "(B) The girl begged the fairy to grant her a wish.",
+        "(C) The girl requested the fairy that grant her a wish.",
+        "(D) Both (A) and (B) are acceptable."
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "He said, \"Let the door be opened.\"",
+      "options": [
+        "(A) He suggested that the door should be opened.",
+        "(B) He ordered that the door should be opened.",
+        "(C) He ordered to let the door be opened.",
+        "(D) He asked the door to be opened."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "She said to me, \"Let him do what he likes.\"",
+      "options": [
+        "(A) She told me to let him do what he liked.",
+        "(B) She told me that he should do what he liked.",
+        "(C) She ordered me let him do what he liked.",
+        "(D) She requested me to let him do what he likes."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"Bravo! You have done well.\"",
+      "options": [
+        "(A) He applauded him, saying that he had done well.",
+        "(B) He exclaimed with joy that he had done well.",
+        "(C) He applauded him that he had done well.",
+        "(D) He said bravo that he had done well."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "The old man said, \"Ah! My only son is dead.\"",
+      "options": [
+        "(A) The old man exclaimed with sorrow that his only son was dead.",
+        "(B) The old man cried that his only son was dead.",
+        "(C) The old man exclaimed with grief that his only son is dead.",
+        "(D) The old man exclaimed sorrowfully that my only son was dead."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"O for a glass of water!\"",
+      "options": [
+        "(A) She strongly desired a glass of water.",
+        "(B) She wished for a glass of water.",
+        "(C) She prayed for a glass of water.",
+        "(D) Both (A) and (B) are correct."
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "He said, \"By God! I have not stolen the watch.\"",
+      "options": [
+        "(A) He swore by God that he had not stolen the watch.",
+        "(B) He exclaimed by God that he had not stolen the watch.",
+        "(C) He said by God that he had not stolen the watch.",
+        "(D) He told by God that he had not stolen the watch."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"Curse it! Who could have done this?\"",
+      "options": [
+        "(A) She swore and asked who could have done that.",
+        "(B) She cursed it and asked who could have done that.",
+        "(C) She exclaimed with anger and asked who could have done that.",
+        "(D) She cursed and asked who could have done this."
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "He said, \"Peace hath her victories no less renowned than war.\"",
+      "options": [
+        "(A) He said that peace had her victories no less renowned than war.",
+        "(B) He said that peace has her victories no less renowned than war.",
+        "(C) He told that peace has her victories no less renowned than war.",
+        "(D) He stated that peace hath her victories no less renowned than war."
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "The boy said, \"My teacher is highly qualified.\"",
+      "options": [
+        "(A) The boy said that his teacher was highly qualified.",
+        "(B) The boy said that his teacher is highly qualified.",
+        "(C) The boy told that his teacher was highly qualified.",
+        "(D) The boy said his teacher has been highly qualified."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"The train leaves at 6 PM.\"",
+      "options": [
+        "(A) She said that the train left at 6 PM.",
+        "(B) She said that the train leaves at 6 PM.",
+        "(C) She said that the train had left at 6 PM.",
+        "(D) Both (A) and (B) can be correct depending on the context."
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "He said, \"I was writing a letter while she was reading a book.\"",
+      "options": [
+        "(A) He said that he had been writing a letter while she had been reading a book.",
+        "(B) He said that he was writing a letter while she was reading a book.",
+        "(C) He said that he wrote a letter while she read a book.",
+        "(D) He said that he had written a letter while she read a book."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "They said, \"We lived here for ten years.\"",
+      "options": [
+        "(A) They said that they had lived there for ten years.",
+        "(B) They said that they lived there for ten years.",
+        "(C) They said that they have lived there for ten years.",
+        "(D) They said that they lived here for ten years."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"I did not go to school yesterday.\"",
+      "options": [
+        "(A) She said that she did not go to school the previous day.",
+        "(B) She said that she had not gone to school the previous day.",
+        "(C) She said that she has not gone to school the previous day.",
+        "(D) She said that she had not gone to school yesterday."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "He said, \"I will be waiting for you.\"",
+      "options": [
+        "(A) He said that he would be waiting for me.",
+        "(B) He said that he will be waiting for me.",
+        "(C) He said that he would wait for me.",
+        "(D) He said that he shall be waiting for me."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"I shall have completed the task by tomorrow.\"",
+      "options": [
+        "(A) She said that she would have completed the task by the next day.",
+        "(B) She said that she should have completed the task by the next day.",
+        "(C) She said that she will have completed the task by tomorrow.",
+        "(D) She said that she would complete the task by the next day."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said to me, \"You must work hard.\"",
+      "options": [
+        "(A) He advised me that I must work hard.",
+        "(B) He told me that I had to work hard.",
+        "(C) He said to me that I must work hard.",
+        "(D) Both (A) and (B) are acceptable."
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "She said, \"You need not worry about me.\"",
+      "options": [
+        "(A) She said that I need not worry about her.",
+        "(B) She said that I did not need to worry about her.",
+        "(C) She said that I do not need to worry about her.",
+        "(D) Both (A) and (B) are correct."
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "He said, \"I dare not go there in the dark.\"",
+      "options": [
+        "(A) He said that he dared not go there in the dark.",
+        "(B) He said that he dare not go there in the dark.",
+        "(C) He said that he does not dare to go there in the dark.",
+        "(D) He said that he did not dare go there in the dark."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "The boy said, \"Sir, please excuse me this time.\"",
+      "options": [
+        "(A) The boy requested the sir to excuse him that time.",
+        "(B) The boy respectfully requested to excuse him that time.",
+        "(C) The boy begged his teacher to excuse him that time.",
+        "(D) The boy respectfully requested that he might be excused that time."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "She said, \"Yes, I have broken the cup.\"",
+      "options": [
+        "(A) She admitted that she had broken the cup.",
+        "(B) She replied in the affirmative and said that she had broken the cup.",
+        "(C) She agreed that she had broken the cup.",
+        "(D) All of the above are correct ways to report."
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "He said, \"No, I did not steal the money.\"",
+      "options": [
+        "(A) He denied that he had stolen the money.",
+        "(B) He replied in the negative and said that he had not stolen the money.",
+        "(C) He said no he had not stolen the money.",
+        "(D) Both (A) and (B) are correct."
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "The teacher said to the students, \"Why were you absent yesterday?\"",
+      "options": [
+        "(A) The teacher asked the students why they had been absent the previous day.",
+        "(B) The teacher asked the students why were they absent the previous day.",
+        "(C) The teacher asked the students why they were absent the previous day.",
+        "(D) The teacher asked the students why they had been absent yesterday."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said to me, \"Did you see the match on TV last night?\"",
+      "options": [
+        "(A) He asked me if I had seen the match on TV the previous night.",
+        "(B) He asked me if I saw the match on TV the previous night.",
+        "(C) He asked me whether I had seen the match on TV last night.",
+        "(D) He asked me did I see the match on TV the previous night."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said to her friend, \"Can you lend me your umbrella?\"",
+      "options": [
+        "(A) She requested her friend to lend her umbrella.",
+        "(B) She asked her friend if she could lend her her umbrella.",
+        "(C) She asked her friend to lend her her umbrella.",
+        "(D) Both (A) and (B) are acceptable."
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "He said to his son, \"Do not associate with bad boys.\"",
+      "options": [
+        "(A) He advised his son not to associate with bad boys.",
+        "(B) He forbade his son to associate with bad boys.",
+        "(C) He warned his son against associating with bad boys.",
+        "(D) All of the above are correct."
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "The master said to the servant, \"Fetch me a glass of water.\"",
+      "options": [
+        "(A) The master ordered the servant to fetch him a glass of water.",
+        "(B) The master asked the servant to fetch him a glass of water.",
+        "(C) The master commanded the servant fetching him a glass of water.",
+        "(D) Both (A) and (B) are correct."
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "She said, \"Let us wait for the award.\"",
+      "options": [
+        "(A) She proposed that they should wait for the award.",
+        "(B) She suggested waiting for the award.",
+        "(C) She suggested that they wait for the award.",
+        "(D) All of the above are correct."
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "He said, \"May you live long!\"",
+      "options": [
+        "(A) He prayed that I might live long.",
+        "(B) He wished that I might live long.",
+        "(C) He blessed me that I might live long.",
+        "(D) All of the above are correct."
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "She said, \"What a terrible storm it is!\"",
+      "options": [
+        "(A) She exclaimed that it was a very terrible storm.",
+        "(B) She exclaimed with fear that it was a terrible storm.",
+        "(C) She exclaimed what a terrible storm it was.",
+        "(D) She exclaimed that it is a very terrible storm."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"How sad! He is dead.\"",
+      "options": [
+        "(A) He exclaimed with sorrow that he was dead.",
+        "(B) He exclaimed sadly that he was dead.",
+        "(C) He mourned that he was dead.",
+        "(D) All of the above are correct."
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "The boy said, \"Good heavens! I have dropped my purse.\"",
+      "options": [
+        "(A) The boy exclaimed with dismay that he had dropped his purse.",
+        "(B) The boy exclaimed with surprise that he had dropped his purse.",
+        "(C) The boy cried out that he had dropped his purse.",
+        "(D) Both (A) and (B) are acceptable depending on the emotion."
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "She said to him, \"Thank you for your help.\"",
+      "options": [
+        "(A) She thanked him for his help.",
+        "(B) She said thank you for his help.",
+        "(C) She thanked him for your help.",
+        "(D) She expressed her thanks to him for his help."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said to me, \"Congratulations on your success.\"",
+      "options": [
+        "(A) He congratulated me on my success.",
+        "(B) He wished me congratulations on my success.",
+        "(C) He said congratulations to me on my success.",
+        "(D) He told me congratulations on my success."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"Happy birthday to you!\"",
+      "options": [
+        "(A) She wished me a happy birthday.",
+        "(B) She wished a happy birthday to me.",
+        "(C) She said happy birthday to me.",
+        "(D) Both (A) and (B) are correct."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"Welcome to our house.\"",
+      "options": [
+        "(A) He welcomed me to their house.",
+        "(B) He bade me welcome to their house.",
+        "(C) He said welcome to their house.",
+        "(D) He welcomed me to our house."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"Liar!\"",
+      "options": [
+        "(A) She called him a liar.",
+        "(B) She exclaimed that he was a liar.",
+        "(C) She said that he is a liar.",
+        "(D) She accused him of being a liar."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"Fool!\"",
+      "options": [
+        "(A) He called me a fool.",
+        "(B) He exclaimed that I was a fool.",
+        "(C) He said that I am a fool.",
+        "(D) He abused me as a fool."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"By Jove! It is a wonderful painting.\"",
+      "options": [
+        "(A) She exclaimed by Jove that it was a wonderful painting.",
+        "(B) She swore by Jove that it was a wonderful painting.",
+        "(C) She exclaimed with admiration that it was a wonderful painting.",
+        "(D) All of the above."
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "He said, \"Man is mortal.\"",
+      "options": [
+        "(A) He said that man was mortal.",
+        "(B) He said that man is mortal.",
+        "(C) He told that man is mortal.",
+        "(D) He said that man has been mortal."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "She said, \"God is great.\"",
+      "options": [
+        "(A) She said that God was great.",
+        "(B) She said that God is great.",
+        "(C) She told that God is great.",
+        "(D) She proclaimed that God is great."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "He said, \"The sun rises in the east.\"",
+      "options": [
+        "(A) He said that the sun rose in the east.",
+        "(B) He said that the sun rises in the east.",
+        "(C) He said that the sun is rising in the east.",
+        "(D) He told that the sun rises in the east."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "She said, \"Water boils at 100 degrees Celsius.\"",
+      "options": [
+        "(A) She said that water boiled at 100 degrees Celsius.",
+        "(B) She said that water boils at 100 degrees Celsius.",
+        "(C) She said that water has boiled at 100 degrees Celsius.",
+        "(D) She told that water boils at 100 degrees Celsius."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "He says, \"I am very busy.\"",
+      "options": [
+        "(A) He says that he was very busy.",
+        "(B) He says that he is very busy.",
+        "(C) He said that he was very busy.",
+        "(D) He said that he is very busy."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "She will say, \"I cannot come to the party.\"",
+      "options": [
+        "(A) She will say that she cannot come to the party.",
+        "(B) She will say that she could not come to the party.",
+        "(C) She says that she cannot come to the party.",
+        "(D) She will say that I cannot come to the party."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He has said, \"I have done my duty.\"",
+      "options": [
+        "(A) He has said that he had done his duty.",
+        "(B) He has said that he has done his duty.",
+        "(C) He said that he had done his duty.",
+        "(D) He says that he has done his duty."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The boy said, \"I was studying when the lights went out.\"",
+      "options": [
+        "(A) The boy said that he had been studying when the lights went out.",
+        "(B) The boy said that he was studying when the lights went out.",
+        "(C) The boy said that he had been studying when the lights had gone out.",
+        "(D) Both (A) and (B) are acceptable in modern usage."
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "She said, \"I bought this dress yesterday.\"",
+      "options": [
+        "(A) She said that she bought that dress the previous day.",
+        "(B) She said that she had bought that dress the previous day.",
+        "(C) She said that she had bought this dress yesterday.",
+        "(D) She said she had bought that dress yesterday."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "He said, \"I will be going to London next week.\"",
+      "options": [
+        "(A) He said that he would be going to London the following week.",
+        "(B) He said that he will be going to London the following week.",
+        "(C) He said that he would go to London next week.",
+        "(D) He said that he should be going to London the following week."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"I can speak French fluently.\"",
+      "options": [
+        "(A) She said that she could speak French fluently.",
+        "(B) She said that she can speak French fluently.",
+        "(C) She said that she could have spoken French fluently.",
+        "(D) Both (A) and (B) can be correct if she still speaks it fluently."
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "He said, \"I might arrive late.\"",
+      "options": [
+        "(A) He said that he may arrive late.",
+        "(B) He said that he might arrive late.",
+        "(C) He said that he might have arrived late.",
+        "(D) He told that he might arrive late."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "She said, \"I ought to respect my elders.\"",
+      "options": [
+        "(A) She said that she ought to respect her elders.",
+        "(B) She said that she should respect her elders.",
+        "(C) She said that she ought to have respected her elders.",
+        "(D) Both (A) and (B) carry a similar meaning in reporting."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"I used to play tennis when I was young.\"",
+      "options": [
+        "(A) He said that he used to play tennis when he was young.",
+        "(B) He said that he had used to play tennis when he had been young.",
+        "(C) He said that he used to play tennis when he had been young.",
+        "(D) He said that he played tennis when he was young."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"It is high time we started working.\"",
+      "options": [
+        "(A) She said that it was high time they started working.",
+        "(B) She said that it was high time they had started working.",
+        "(C) She said that it is high time they started working.",
+        "(D) She said that it was high time we started working."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"I wish I were rich.\"",
+      "options": [
+        "(A) He wished that he were rich.",
+        "(B) He wished that he was rich.",
+        "(C) He wished that he had been rich.",
+        "(D) Both (A) and (C) can be used depending on context."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"Would you mind opening the window?\"",
+      "options": [
+        "(A) She asked if I would mind opening the window.",
+        "(B) She requested me to open the window.",
+        "(C) She politely asked me to open the window.",
+        "(D) All of the above are correct interpretations."
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "He said, \"Why don't you consult a doctor?\"",
+      "options": [
+        "(A) He asked why I didn't consult a doctor.",
+        "(B) He advised me to consult a doctor.",
+        "(C) He suggested consulting a doctor.",
+        "(D) All of the above are correct interpretations."
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "She said, \"You had better consult a doctor.\"",
+      "options": [
+        "(A) She advised me to consult a doctor.",
+        "(B) She said that I had better consult a doctor.",
+        "(C) She warned me to consult a doctor.",
+        "(D) Both (A) and (B) are acceptable."
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "He said, \"Let it rain, I will go.\"",
+      "options": [
+        "(A) He said that even if it rained, he would go.",
+        "(B) He said that let it rain, he would go.",
+        "(C) He declared that he would go whatever the weather.",
+        "(D) Both (A) and (C) capture the meaning."
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "She said, \"Let him try his best, he will not succeed.\"",
+      "options": [
+        "(A) She said that however hard he might try, he would not succeed.",
+        "(B) She said that let him try his best, he would not succeed.",
+        "(C) She said that even if he tried his best, he would not succeed.",
+        "(D) Both (A) and (C) are excellent ways to report this."
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "The manager said, \"Call the first applicant.\"",
+      "options": [
+        "(A) The manager ordered to call the first applicant.",
+        "(B) The manager commanded them to call the first applicant.",
+        "(C) The manager requested to call the first applicant.",
+        "(D) Both (A) and (B) are correct."
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "The passenger said to the driver, \"Stop the bus.\"",
+      "options": [
+        "(A) The passenger asked the driver to stop the bus.",
+        "(B) The passenger ordered the driver to stop the bus.",
+        "(C) The passenger requested the driver to stop the bus.",
+        "(D) Depending on tone, any of the above could be correct."
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "He said, \"Alas! My dog is dead.\"",
+      "options": [
+        "(A) He exclaimed with sorrow that his dog was dead.",
+        "(B) He exclaimed sadly that his dog was dead.",
+        "(C) He cried out in sorrow that his dog was dead.",
+        "(D) All of the above are correct."
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "She said, \"What a pity you did not come!\"",
+      "options": [
+        "(A) She exclaimed that it was a great pity I had not come.",
+        "(B) She exclaimed with regret that I had not come.",
+        "(C) She felt sorry that I had not come.",
+        "(D) All of the above capture the essence."
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "He said, \"Oh, for a cup of tea!\"",
+      "options": [
+        "(A) He strongly wished for a cup of tea.",
+        "(B) He exclaimed that he wanted a cup of tea.",
+        "(C) He desired a cup of tea.",
+        "(D) Both (A) and (C) are appropriate."
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "They said, \"Long live the King!\"",
+      "options": [
+        "(A) They prayed that the King might live long.",
+        "(B) They wished that the King might live long.",
+        "(C) They wished for the long life of the King.",
+        "(D) All of the above are correct."
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "She said, \"May God pardon my sins!\"",
+      "options": [
+        "(A) She prayed that God might pardon her sins.",
+        "(B) She wished that God might pardon her sins.",
+        "(C) She prayed for God's pardon.",
+        "(D) Both (A) and (C) are good translations."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said to me, \"May you succeed in your enterprise!\"",
+      "options": [
+        "(A) He wished that I might succeed in my enterprise.",
+        "(B) He prayed that I might succeed in my enterprise.",
+        "(C) He wished me success in my enterprise.",
+        "(D) All of the above."
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "The boy said, \"Sir, may I come in?\"",
+      "options": [
+        "(A) The boy respectfully asked if he might come in.",
+        "(B) The boy requested his teacher to let him come in.",
+        "(C) The boy asked his sir if he could come in.",
+        "(D) Both (A) and (B) are acceptable."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"Madam, I have done my homework.\"",
+      "options": [
+        "(A) She respectfully told the madam that she had done her homework.",
+        "(B) She told her madam respectfully that she had done her homework.",
+        "(C) She respectfully stated that she had done her homework.",
+        "(D) All of the above."
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "He said, \"Are you going to the cinema today?\"",
+      "options": [
+        "(A) He asked if I was going to the cinema that day.",
+        "(B) He asked if I am going to the cinema today.",
+        "(C) He asked whether I was going to the cinema today.",
+        "(D) He asked whether I am going to the cinema that day."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"When will the train arrive?\"",
+      "options": [
+        "(A) She asked when the train would arrive.",
+        "(B) She asked when will the train arrive.",
+        "(C) She asked when would the train arrive.",
+        "(D) She asked when the train will arrive."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said to her, \"Why are you crying?\"",
+      "options": [
+        "(A) He asked her why she was crying.",
+        "(B) He asked her why was she crying.",
+        "(C) He asked her why is she crying.",
+        "(D) He asked her why she is crying."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "They said, \"Where is the post office?\"",
+      "options": [
+        "(A) They asked where the post office was.",
+        "(B) They asked where was the post office.",
+        "(C) They asked where the post office is.",
+        "(D) They asked where is the post office."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"Who is the man standing there?\"",
+      "options": [
+        "(A) She asked who the man standing there was.",
+        "(B) She asked who was the man standing there.",
+        "(C) She asked who the man standing there is.",
+        "(D) She asked who is the man standing there."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"Which is your pen?\"",
+      "options": [
+        "(A) He asked which my pen was.",
+        "(B) He asked which was my pen.",
+        "(C) He asked which my pen is.",
+        "(D) He asked which is my pen."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"Whose book is this?\"",
+      "options": [
+        "(A) She asked whose book that was.",
+        "(B) She asked whose book was that.",
+        "(C) She asked whose book this was.",
+        "(D) She asked whose book was this."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"How old are you?\"",
+      "options": [
+        "(A) He asked how old I was.",
+        "(B) He asked how old was I.",
+        "(C) He asked how old I am.",
+        "(D) He asked how old am I."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"How long have you lived here?\"",
+      "options": [
+        "(A) She asked how long I had lived there.",
+        "(B) She asked how long had I lived there.",
+        "(C) She asked how long I have lived here.",
+        "(D) She asked how long have I lived here."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"How far is the station from here?\"",
+      "options": [
+        "(A) He asked how far the station was from there.",
+        "(B) He asked how far was the station from there.",
+        "(C) He asked how far the station is from here.",
+        "(D) He asked how far is the station from here."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"How many brothers do you have?\"",
+      "options": [
+        "(A) She asked how many brothers I had.",
+        "(B) She asked how many brothers did I have.",
+        "(C) She asked how many brothers I have.",
+        "(D) She asked how many brothers do I have."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"How much did this car cost?\"",
+      "options": [
+        "(A) He asked how much that car had cost.",
+        "(B) He asked how much had that car cost.",
+        "(C) He asked how much that car cost.",
+        "(D) He asked how much did that car cost."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"What kind of music do you like?\"",
+      "options": [
+        "(A) She asked what kind of music I liked.",
+        "(B) She asked what kind of music did I like.",
+        "(C) She asked what kind of music I like.",
+        "(D) She asked what kind of music do I like."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"What time does the film start?\"",
+      "options": [
+        "(A) He asked what time the film started.",
+        "(B) He asked what time did the film start.",
+        "(C) He asked what time the film starts.",
+        "(D) He asked what time does the film start."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"What happened to your leg?\"",
+      "options": [
+        "(A) She asked what had happened to my leg.",
+        "(B) She asked what happened to my leg.",
+        "(C) She asked what has happened to my leg.",
+        "(D) She asked what happens to my leg."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"Who told you this story?\"",
+      "options": [
+        "(A) He asked who had told me that story.",
+        "(B) He asked who told me that story.",
+        "(C) He asked who has told me that story.",
+        "(D) He asked who tells me that story."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"Which way did he go?\"",
+      "options": [
+        "(A) She asked which way he had gone.",
+        "(B) She asked which way he went.",
+        "(C) She asked which way did he go.",
+        "(D) She asked which way has he gone."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"Whose advice should I seek?\"",
+      "options": [
+        "(A) He asked whose advice he should seek.",
+        "(B) He asked whose advice should he seek.",
+        "(C) He asked whose advice he shall seek.",
+        "(D) He asked whose advice shall he seek."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"How is your mother now?\"",
+      "options": [
+        "(A) She asked how my mother was then.",
+        "(B) She asked how was my mother then.",
+        "(C) She asked how my mother is now.",
+        "(D) She asked how is my mother now."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"Where have you been all this time?\"",
+      "options": [
+        "(A) He asked where I had been all that time.",
+        "(B) He asked where had I been all that time.",
+        "(C) He asked where I have been all this time.",
+        "(D) He asked where have I been all this time."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"Why did you not come yesterday?\"",
+      "options": [
+        "(A) She asked why I had not come the previous day.",
+        "(B) She asked why I did not come the previous day.",
+        "(C) She asked why had I not come the previous day.",
+        "(D) She asked why did I not come yesterday."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"When will you return my book?\"",
+      "options": [
+        "(A) He asked when I would return his book.",
+        "(B) He asked when would I return his book.",
+        "(C) He asked when I will return his book.",
+        "(D) He asked when will I return his book."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"Who is knocking at the door?\"",
+      "options": [
+        "(A) She asked who was knocking at the door.",
+        "(B) She asked who is knocking at the door.",
+        "(C) She asked who has been knocking at the door.",
+        "(D) She asked who had been knocking at the door."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"What are you looking for?\"",
+      "options": [
+        "(A) He asked what I was looking for.",
+        "(B) He asked what was I looking for.",
+        "(C) He asked what I am looking for.",
+        "(D) He asked what am I looking for."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"Where did you buy this dress?\"",
+      "options": [
+        "(A) She asked where I had bought that dress.",
+        "(B) She asked where I bought that dress.",
+        "(C) She asked where had I bought that dress.",
+        "(D) She asked where did I buy that dress."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"Why is the baby crying?\"",
+      "options": [
+        "(A) He asked why the baby was crying.",
+        "(B) He asked why was the baby crying.",
+        "(C) He asked why the baby is crying.",
+        "(D) He asked why is the baby crying."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"How do you do?\"",
+      "options": [
+        "(A) She asked how I did.",
+        "(B) She asked how I was.",
+        "(C) She greeted me and asked how I did.",
+        "(D) She asked me how I am."
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "He said, \"What do you want?\"",
+      "options": [
+        "(A) He asked what I wanted.",
+        "(B) He asked what did I want.",
+        "(C) He asked what I want.",
+        "(D) He asked what do I want."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"When did you see him last?\"",
+      "options": [
+        "(A) She asked when I had seen him last.",
+        "(B) She asked when I saw him last.",
+        "(C) She asked when had I seen him last.",
+        "(D) She asked when did I see him last."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"Where do you come from?\"",
+      "options": [
+        "(A) He asked where I came from.",
+        "(B) He asked where did I come from.",
+        "(C) He asked where I come from.",
+        "(D) He asked where do I come from."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"Who is your favourite teacher?\"",
+      "options": [
+        "(A) She asked who my favourite teacher was.",
+        "(B) She asked who was my favourite teacher.",
+        "(C) She asked who my favourite teacher is.",
+        "(D) She asked who is my favourite teacher."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"Which subject do you like most?\"",
+      "options": [
+        "(A) He asked which subject I liked most.",
+        "(B) He asked which subject did I like most.",
+        "(C) He asked which subject I like most.",
+        "(D) He asked which subject do I like most."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"Whose pencil is this?\"",
+      "options": [
+        "(A) She asked whose pencil that was.",
+        "(B) She asked whose pencil was that.",
+        "(C) She asked whose pencil this was.",
+        "(D) She asked whose pencil was this."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"How did you manage to do it?\"",
+      "options": [
+        "(A) He asked how I had managed to do it.",
+        "(B) He asked how I managed to do it.",
+        "(C) He asked how had I managed to do it.",
+        "(D) He asked how did I manage to do it."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"Why have you not finished your work yet?\"",
+      "options": [
+        "(A) She asked why I had not finished my work yet.",
+        "(B) She asked why I have not finished my work yet.",
+        "(C) She asked why had I not finished my work yet.",
+        "(D) She asked why have I not finished my work yet."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"When is your birthday?\"",
+      "options": [
+        "(A) He asked when my birthday was.",
+        "(B) He asked when was my birthday.",
+        "(C) He asked when my birthday is.",
+        "(D) He asked when is my birthday."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"Where will you stay in London?\"",
+      "options": [
+        "(A) She asked where I would stay in London.",
+        "(B) She asked where would I stay in London.",
+        "(C) She asked where I will stay in London.",
+        "(D) She asked where will I stay in London."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"Who has eaten my chocolates?\"",
+      "options": [
+        "(A) He asked who had eaten his chocolates.",
+        "(B) He asked who has eaten his chocolates.",
+        "(C) He asked who ate his chocolates.",
+        "(D) He asked who had ate his chocolates."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"What are you talking about?\"",
+      "options": [
+        "(A) She asked what I was talking about.",
+        "(B) She asked what was I talking about.",
+        "(C) She asked what I am talking about.",
+        "(D) She asked what am I talking about."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"How long does it take to get there?\"",
+      "options": [
+        "(A) He asked how long it took to get there.",
+        "(B) He asked how long did it take to get there.",
+        "(C) He asked how long it takes to get there.",
+        "(D) He asked how long does it take to get there."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"Why do you ask?\"",
+      "options": [
+        "(A) She asked why I asked.",
+        "(B) She asked why did I ask.",
+        "(C) She asked why I ask.",
+        "(D) She asked why do I ask."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"When did it happen?\"",
+      "options": [
+        "(A) He asked when it had happened.",
+        "(B) He asked when it happened.",
+        "(C) He asked when had it happened.",
+        "(D) He asked when did it happen."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"Where can I find a good restaurant?\"",
+      "options": [
+        "(A) She asked where she could find a good restaurant.",
+        "(B) She asked where could she find a good restaurant.",
+        "(C) She asked where she can find a good restaurant.",
+        "(D) She asked where can she find a good restaurant."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"Who will help you?\"",
+      "options": [
+        "(A) He asked who would help me.",
+        "(B) He asked who will help me.",
+        "(C) He asked who should help me.",
+        "(D) He asked who shall help me."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"Which of these books is yours?\"",
+      "options": [
+        "(A) She asked which of those books was mine.",
+        "(B) She asked which of those books is mine.",
+        "(C) She asked which of these books was mine.",
+        "(D) She asked which of these books is mine."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"Whose car are you driving?\"",
+      "options": [
+        "(A) He asked whose car I was driving.",
+        "(B) He asked whose car was I driving.",
+        "(C) He asked whose car I am driving.",
+        "(D) He asked whose car am I driving."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"How much sugar do you want in your tea?\"",
+      "options": [
+        "(A) She asked how much sugar I wanted in my tea.",
+        "(B) She asked how much sugar did I want in my tea.",
+        "(C) She asked how much sugar I want in my tea.",
+        "(D) She asked how much sugar do I want in my tea."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"Why are you so sad?\"",
+      "options": [
+        "(A) He asked why I was so sad.",
+        "(B) He asked why was I so sad.",
+        "(C) He asked why I am so sad.",
+        "(D) He asked why am I so sad."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"When will you be ready?\"",
+      "options": [
+        "(A) She asked when I would be ready.",
+        "(B) She asked when would I be ready.",
+        "(C) She asked when I will be ready.",
+        "(D) She asked when will I be ready."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"Where have you put my keys?\"",
+      "options": [
+        "(A) He asked where I had put his keys.",
+        "(B) He asked where I put his keys.",
+        "(C) He asked where had I put his keys.",
+        "(D) He asked where did I put his keys."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"Who broke the glass?\"",
+      "options": [
+        "(A) She asked who had broken the glass.",
+        "(B) She asked who broke the glass.",
+        "(C) She asked who has broken the glass.",
+        "(D) She asked who breaks the glass."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"What are you thinking about?\"",
+      "options": [
+        "(A) He asked what I was thinking about.",
+        "(B) He asked what was I thinking about.",
+        "(C) He asked what I am thinking about.",
+        "(D) He asked what am I thinking about."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"How did you get here?\"",
+      "options": [
+        "(A) She asked how I had got there.",
+        "(B) She asked how I got there.",
+        "(C) She asked how had I got there.",
+        "(D) She asked how did I get there."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"Why do you want to learn English?\"",
+      "options": [
+        "(A) He asked why I wanted to learn English.",
+        "(B) He asked why did I want to learn English.",
+        "(C) He asked why I want to learn English.",
+        "(D) He asked why do I want to learn English."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"When are you leaving?\"",
+      "options": [
+        "(A) She asked when I was leaving.",
+        "(B) She asked when was I leaving.",
+        "(C) She asked when I am leaving.",
+        "(D) She asked when am I leaving."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"Where is the nearest bank?\"",
+      "options": [
+        "(A) He asked where the nearest bank was.",
+        "(B) He asked where was the nearest bank.",
+        "(C) He asked where the nearest bank is.",
+        "(D) He asked where is the nearest bank."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"Who do you think will win the match?\"",
+      "options": [
+        "(A) She asked who I thought would win the match.",
+        "(B) She asked who I thought will win the match.",
+        "(C) She asked who did I think would win the match.",
+        "(D) She asked who do I think will win the match."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"Which of these pens do you prefer?\"",
+      "options": [
+        "(A) He asked which of those pens I preferred.",
+        "(B) He asked which of those pens did I prefer.",
+        "(C) He asked which of these pens I prefer.",
+        "(D) He asked which of these pens do I prefer."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"Whose bag is this?\"",
+      "options": [
+        "(A) She asked whose bag that was.",
+        "(B) She asked whose bag was that.",
+        "(C) She asked whose bag this was.",
+        "(D) She asked whose bag was this."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"How much does it cost to repair the watch?\"",
+      "options": [
+        "(A) He asked how much it cost to repair the watch.",
+        "(B) He asked how much did it cost to repair the watch.",
+        "(C) He asked how much it costs to repair the watch.",
+        "(D) He asked how much does it cost to repair the watch."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"What time is it?\"",
+      "options": [
+        "(A) She asked what time it was.",
+        "(B) She asked what time was it.",
+        "(C) She asked what time it is.",
+        "(D) She asked what time is it."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"Why are you laughing?\"",
+      "options": [
+        "(A) He asked why I was laughing.",
+        "(B) He asked why was I laughing.",
+        "(C) He asked why I am laughing.",
+        "(D) He asked why am I laughing."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"When will you come back?\"",
+      "options": [
+        "(A) She asked when I would come back.",
+        "(B) She asked when would I come back.",
+        "(C) She asked when I will come back.",
+        "(D) She asked when will I come back."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"Where have you been?\"",
+      "options": [
+        "(A) He asked where I had been.",
+        "(B) He asked where had I been.",
+        "(C) He asked where I have been.",
+        "(D) He asked where have I been."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"Who is the girl sitting next to you?\"",
+      "options": [
+        "(A) She asked who the girl sitting next to me was.",
+        "(B) She asked who was the girl sitting next to me.",
+        "(C) She asked who the girl sitting next to me is.",
+        "(D) She asked who is the girl sitting next to me."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"What are you doing this weekend?\"",
+      "options": [
+        "(A) He asked what I was doing that weekend.",
+        "(B) He asked what was I doing that weekend.",
+        "(C) He asked what I am doing this weekend.",
+        "(D) He asked what am I doing this weekend."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"How did you find out the truth?\"",
+      "options": [
+        "(A) She asked how I had found out the truth.",
+        "(B) She asked how I found out the truth.",
+        "(C) She asked how had I found out the truth.",
+        "(D) She asked how did I find out the truth."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"Why have you brought this book?\"",
+      "options": [
+        "(A) He asked why I had brought that book.",
+        "(B) He asked why I brought that book.",
+        "(C) He asked why had I brought that book.",
+        "(D) He asked why did I bring that book."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"When is the next train to London?\"",
+      "options": [
+        "(A) She asked when the next train to London was.",
+        "(B) She asked when was the next train to London.",
+        "(C) She asked when the next train to London is.",
+        "(D) She asked when is the next train to London."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"Where do you usually go for your holidays?\"",
+      "options": [
+        "(A) He asked where I usually went for my holidays.",
+        "(B) He asked where did I usually go for my holidays.",
+        "(C) He asked where I usually go for my holidays.",
+        "(D) He asked where do I usually go for my holidays."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"Who has stolen my purse?\"",
+      "options": [
+        "(A) She asked who had stolen her purse.",
+        "(B) She asked who stole her purse.",
+        "(C) She asked who has stolen her purse.",
+        "(D) She asked who had stole her purse."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"What is the matter with you?\"",
+      "options": [
+        "(A) He asked what the matter was with me.",
+        "(B) He asked what was the matter with me.",
+        "(C) He asked what the matter is with me.",
+        "(D) He asked what is the matter with me."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"How long have you been studying English?\"",
+      "options": [
+        "(A) She asked how long I had been studying English.",
+        "(B) She asked how long had I been studying English.",
+        "(C) She asked how long I have been studying English.",
+        "(D) She asked how long have I been studying English."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"Why do you not listen to my advice?\"",
+      "options": [
+        "(A) He asked why I did not listen to his advice.",
+        "(B) He asked why did I not listen to his advice.",
+        "(C) He asked why I do not listen to his advice.",
+        "(D) He asked why do I not listen to his advice."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"When did you arrive in Delhi?\"",
+      "options": [
+        "(A) She asked when I had arrived in Delhi.",
+        "(B) She asked when I arrived in Delhi.",
+        "(C) She asked when had I arrived in Delhi.",
+        "(D) She asked when did I arrive in Delhi."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"Where is the nearest hospital?\"",
+      "options": [
+        "(A) He asked where the nearest hospital was.",
+        "(B) He asked where was the nearest hospital.",
+        "(C) He asked where the nearest hospital is.",
+        "(D) He asked where is the nearest hospital."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"Who is your best friend?\"",
+      "options": [
+        "(A) She asked who my best friend was.",
+        "(B) She asked who was my best friend.",
+        "(C) She asked who my best friend is.",
+        "(D) She asked who is my best friend."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"What time does the shop open?\"",
+      "options": [
+        "(A) He asked what time the shop opened.",
+        "(B) He asked what time did the shop open.",
+        "(C) He asked what time the shop opens.",
+        "(D) He asked what time does the shop open."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"How far is your house from the station?\"",
+      "options": [
+        "(A) She asked how far my house was from the station.",
+        "(B) She asked how far was my house from the station.",
+        "(C) She asked how far my house is from the station.",
+        "(D) She asked how far is my house from the station."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"Why are you looking at me like that?\"",
+      "options": [
+        "(A) He asked why I was looking at him like that.",
+        "(B) He asked why was I looking at him like that.",
+        "(C) He asked why I am looking at him like that.",
+        "(D) He asked why am I looking at him like that."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"When will the postman come?\"",
+      "options": [
+        "(A) She asked when the postman would come.",
+        "(B) She asked when would the postman come.",
+        "(C) She asked when the postman will come.",
+        "(D) She asked when will the postman come."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"Where have you hidden the money?\"",
+      "options": [
+        "(A) He asked where I had hidden the money.",
+        "(B) He asked where I hidden the money.",
+        "(C) He asked where had I hidden the money.",
+        "(D) He asked where did I hide the money."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"Who is responsible for this mess?\"",
+      "options": [
+        "(A) She asked who was responsible for that mess.",
+        "(B) She asked who was responsible for this mess.",
+        "(C) She asked who is responsible for that mess.",
+        "(D) She asked who is responsible for this mess."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"What are you reading?\"",
+      "options": [
+        "(A) He asked what I was reading.",
+        "(B) He asked what was I reading.",
+        "(C) He asked what I am reading.",
+        "(D) He asked what am I reading."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"How did you solve this problem?\"",
+      "options": [
+        "(A) She asked how I had solved that problem.",
+        "(B) She asked how I solved that problem.",
+        "(C) She asked how had I solved that problem.",
+        "(D) She asked how did I solve that problem."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"Why do you not go home?\"",
+      "options": [
+        "(A) He asked why I did not go home.",
+        "(B) He asked why did I not go home.",
+        "(C) He asked why I do not go home.",
+        "(D) He asked why do I not go home."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"When did you buy this house?\"",
+      "options": [
+        "(A) She asked when I had bought that house.",
+        "(B) She asked when I bought that house.",
+        "(C) She asked when had I bought that house.",
+        "(D) She asked when did I buy that house."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"Where is the key?\"",
+      "options": [
+        "(A) He asked where the key was.",
+        "(B) He asked where was the key.",
+        "(C) He asked where the key is.",
+        "(D) He asked where is the key."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"Who is your favourite actor?\"",
+      "options": [
+        "(A) She asked who my favourite actor was.",
+        "(B) She asked who was my favourite actor.",
+        "(C) She asked who my favourite actor is.",
+        "(D) She asked who is my favourite actor."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"What time does the train leave?\"",
+      "options": [
+        "(A) He asked what time the train left.",
+        "(B) He asked what time did the train leave.",
+        "(C) He asked what time the train leaves.",
+        "(D) He asked what time does the train leave."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She said, \"How far is the airport?\"",
+      "options": [
+        "(A) She asked how far the airport was.",
+        "(B) She asked how far was the airport.",
+        "(C) She asked how far the airport is.",
+        "(D) She asked how far is the airport."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He said, \"Why are you standing here?\"",
+      "options": [
+        "(A) He asked why I was standing there.",
+        "(B) He asked why was I standing there.",
+        "(C) He asked why I am standing here.",
+        "(D) He asked why am I standing here."
+      ],
+      "answer": "A"
+    }
+  ]
+}

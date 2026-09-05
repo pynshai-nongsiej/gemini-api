@@ -1,0 +1,196 @@
+{
+    "category": "GK - Sports",
+    "total_questions": 19,
+    "questions": [
+        {
+            "question": "India has won eight times Gold in which olympics game?",
+            "options": [
+                "(A) Hockey",
+                "(B) Football",
+                "(C) Cricket",
+                "(D) Kabaddi"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Where is the hq of 'International Olympics'?",
+            "options": [
+                "(A) Paris",
+                "(B) Zurich",
+                "(C) Geneva",
+                "(D) Lausanne"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "When do we observe 'Sports Day'?",
+            "options": [
+                "(A) 29th August",
+                "(B) 29th July",
+                "(C) 21st June",
+                "(D) 15th August"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Hopman cup is associated with which sports?",
+            "options": [
+                "(A) Tennis",
+                "(B) Table Tennis",
+                "(C) Squash",
+                "(D) Badminton"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "There are how many players in gymnastics?",
+            "options": [
+                "(A) 8",
+                "(B) 9",
+                "(C) 7",
+                "(D) 6"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Radha-Mohan Cup is related to which sport?",
+            "options": [
+                "(A) Polo",
+                "(B) Tennis",
+                "(C) Hockey",
+                "(D) Golf"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What is the national game of New Zealand?",
+            "options": [
+                "(A) Football",
+                "(B) Netball",
+                "(C) Rugby",
+                "(D) Cricket"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "'Lona' is related to which game?",
+            "options": [
+                "(A) Kho Kho",
+                "(B) Hockey",
+                "(C) Kabaddi",
+                "(D) Wrestling"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Thomas Cup is related with:",
+            "options": [
+                "(A) Squash",
+                "(B) Badminton",
+                "(C) Tennis",
+                "(D) Table Tennis"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "What is the length of Cricket pitch?",
+            "options": [
+                "(A) 60 feet",
+                "(B) 66 feet (22 yards)",
+                "(C) 75 feet",
+                "(D) 70 feet"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Wimbledon Trophy is related to which sport?",
+            "options": [
+                "(A) Lawn Tennis",
+                "(B) Table Tennis",
+                "(C) Squash",
+                "(D) Badminton"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Ryder cup is related to which sport?",
+            "options": [
+                "(A) Tennis",
+                "(B) Golf",
+                "(C) Cricket",
+                "(D) Polo"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Deodhar Trophy is related to which sport?",
+            "options": [
+                "(A) Cricket",
+                "(B) Tennis",
+                "(C) Football",
+                "(D) Hockey"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The Olympic games are held every:",
+            "options": [
+                "(A) 2 years",
+                "(B) 3 years",
+                "(C) 4 years",
+                "(D) 5 years"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Cricket world cup is held every:",
+            "options": [
+                "(A) 2 years",
+                "(B) 4 years",
+                "(C) 5 years",
+                "(D) 3 years"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "How many players in a cricket team?",
+            "options": [
+                "(A) 9",
+                "(B) 10",
+                "(C) 11",
+                "(D) 12"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Davis Cup is related to:",
+            "options": [
+                "(A) Football",
+                "(B) Tennis",
+                "(C) Cricket",
+                "(D) Hockey"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Thomas cup is related to:",
+            "options": [
+                "(A) Tennis",
+                "(B) Badminton",
+                "(C) Table Tennis",
+                "(D) Golf"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Who was the first Indian to win Nobel Prize?",
+            "options": [
+                "(A) C.V. Raman",
+                "(B) Rabindranath Tagore",
+                "(C) Mother Teresa",
+                "(D) Har Gobind Khorana"
+            ],
+            "answer": "B"
+        }
+    ]
+}

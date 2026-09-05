@@ -763,8 +763,12 @@ class GeminiHandler(BaseHTTPRequestHandler):
         return model_name, cfg["mode"], (think_override if think_override is not None else cfg["think"]), None
 
     def _call_gemini(self, prompt, model_id, think_mode, tools, file_refs=None):
-        raw = gemini_stream_generate(prompt, model_id, think_mode, file_refs)
-        text = extract_response_text(raw)
+        if HAS_HTTPX:
+            deltas = list(gemini_stream_generate_iter(prompt, model_id, think_mode, file_refs))
+            text = "".join(deltas)
+        else:
+            raw = gemini_stream_generate(prompt, model_id, think_mode, file_refs)
+            text = extract_response_text(raw)
         tool_calls = None
         if tools and text:
             text, tool_calls = parse_tool_calls(text)

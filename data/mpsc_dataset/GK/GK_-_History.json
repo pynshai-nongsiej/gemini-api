@@ -1,0 +1,716 @@
+{
+    "category": "GK - History",
+    "total_questions": 71,
+    "questions": [
+        {
+            "question": "In which country 'Paper' was invented?",
+            "options": [
+                "(A) China",
+                "(B) Egypt",
+                "(C) India",
+                "(D) Greece"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Who invented 'Television'?",
+            "options": [
+                "(A) Alexander Graham Bell",
+                "(B) J.L. Baird",
+                "(C) Thomas Edison",
+                "(D) Guglielmo Marconi"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Who was the first female ruler of India?",
+            "options": [
+                "(A) Razia Sultana",
+                "(B) Mumtaz Mahal",
+                "(C) Rani Lakshmibai",
+                "(D) Nur Jahan"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "In which date 'Jallianwala Bagh Tragedy' happened?",
+            "options": [
+                "(A) 13 April 1919",
+                "(B) 15 August 1919",
+                "(C) 26 January 1919",
+                "(D) 10 May 1919"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "After he left Congress, Subhas Chandra Bose founded which group?",
+            "options": [
+                "(A) Ghadar Party",
+                "(B) Indian National Army",
+                "(C) Swaraj Party",
+                "(D) All India Forward Bloc"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Who sacrificed his life firstly in 1857 revolt?",
+            "options": [
+                "(A) Tantia Tope",
+                "(B) Nana Sahib",
+                "(C) Bahadur Shah Zafar",
+                "(D) Mangal Pandey"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Who founded 'Brahma Samaj'?",
+            "options": [
+                "(A) Swami Dayanand",
+                "(B) Raja Rammohan Rai",
+                "(C) Keshab Chandra Sen",
+                "(D) Debendranath Tagore"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "In which year 'Indian Railway' was established?",
+            "options": [
+                "(A) 1905 AD",
+                "(B) 1885 AD",
+                "(C) 1853 AD",
+                "(D) 1947 AD"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Who invented 'Rocket' in India?",
+            "options": [
+                "(A) Tipu Sultan",
+                "(B) Akbar",
+                "(C) Shivaji",
+                "(D) Haider Ali"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "In which year, 'Amazon' was established?",
+            "options": [
+                "(A) 2000 AD",
+                "(B) 1994 AD",
+                "(C) 1990 AD",
+                "(D) 1998 AD"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "In which year Microsoft was established?",
+            "options": [
+                "(A) 1985 AD",
+                "(B) 1975 AD",
+                "(C) 1970 AD",
+                "(D) 1995 AD"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which Mughal Emperor was illiterate?",
+            "options": [
+                "(A) Shah Jahan",
+                "(B) Humayun",
+                "(C) Babur",
+                "(D) Akbar"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Who established City 'Amritsar'?",
+            "options": [
+                "(A) Guru Nanak",
+                "(B) Guru Arjun Dev",
+                "(C) Guru Ramdas",
+                "(D) Guru Tegh Bahadur"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Who established 'Charminar' in Hyderabad?",
+            "options": [
+                "(A) Hayat Bakshi Begum",
+                "(B) Quli Qutub Shah",
+                "(C) Ibrahim Qutb Shah",
+                "(D) Muhammad Qutb Shah"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Who established 'Banaras Hindu University'?",
+            "options": [
+                "(A) Madan Mohan Malviya",
+                "(B) Mahatma Gandhi",
+                "(C) Swami Vivekananda",
+                "(D) Raja Rammohan Roy"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "In which year FIFA was established?",
+            "options": [
+                "(A) 1910",
+                "(B) 1920",
+                "(C) 1896",
+                "(D) 1904"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "In which year 'Youtube' was established?",
+            "options": [
+                "(A) 2006",
+                "(B) 2004",
+                "(C) 2008",
+                "(D) 2005"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "When was 'charminar' established in Hyderabad?",
+            "options": [
+                "(A) 1605 AD",
+                "(B) 1556 AD",
+                "(C) 1591 AD",
+                "(D) 1600 AD"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "In which year ISRO was established?",
+            "options": [
+                "(A) 1972",
+                "(B) 1969",
+                "(C) 1962",
+                "(D) 1958"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "'G-7 Nations' was established in which year?",
+            "options": [
+                "(A) 1995",
+                "(B) 1965",
+                "(C) 1975",
+                "(D) 1985"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Who was the founder of Lodi Dynasty?",
+            "options": [
+                "(A) Khizr Khan",
+                "(B) Sikandar Lodi",
+                "(C) Bahlol Lodi",
+                "(D) Ibrahim Lodi"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "In which year RBI was established?",
+            "options": [
+                "(A) 1947",
+                "(B) 1949",
+                "(C) 1935",
+                "(D) 1921"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Who is the last emperor of Delhi sultanate?",
+            "options": [
+                "(A) Ibrahim Lodhi (Ibrahim Lodi)",
+                "(B) Daulat Khan Lodi",
+                "(C) Bahlol Lodi",
+                "(D) Sikandar Lodi"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "When was Indian National Airways established?",
+            "options": [
+                "(A) 1933",
+                "(B) 1953",
+                "(C) 1923",
+                "(D) 1943"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Who is known as the king of justice?",
+            "options": [
+                "(A) Shah Jahan",
+                "(B) Aurangzeb",
+                "(C) Akbar",
+                "(D) Jahanger (Jahangir)"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "In which year Mumbai High Court was established?",
+            "options": [
+                "(A) 1862",
+                "(B) 1857",
+                "(C) 1882",
+                "(D) 1872"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Who established 'Nalanda University'?",
+            "options": [
+                "(A) Chandragupta II",
+                "(B) Skandagupta",
+                "(C) Kumar Gupta (Kumaragupta I)",
+                "(D) Samudragupta"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Who invented x-rays?",
+            "options": [
+                "(A) Alexander Fleming",
+                "(B) Conrad Rontgen (Wilhelm Conrad Röntgen)",
+                "(C) Thomas Edison",
+                "(D) Marie Curie"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Who invented \"Telegraph\"?",
+            "options": [
+                "(A) Samuel Morse",
+                "(B) Guglielmo Marconi",
+                "(C) Thomas Edison",
+                "(D) Alexander Graham Bell"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Who is the founder of Chola Dynasty?",
+            "options": [
+                "(A) Vijayalaya",
+                "(B) Rajendra I",
+                "(C) Aditya I",
+                "(D) Rajaraja I"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The battle of Plassey was fought in the year:",
+            "options": [
+                "(A) 1757",
+                "(B) 1764",
+                "(C) 1526",
+                "(D) 1857"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The slogan \"swaraj is my birthright and I shall have it\" was given by:",
+            "options": [
+                "(A) Mahatma Gandhi",
+                "(B) Bal Gangadhar Tilak",
+                "(C) Subhash Chandra Bose",
+                "(D) Lala Lajpat Rai"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The Quit India Movement started in:",
+            "options": [
+                "(A) 1920",
+                "(B) 1930",
+                "(C) 1942",
+                "(D) 1947"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "The Sepoy Mutiny (First war of Independence) took place in:",
+            "options": [
+                "(A) 1857",
+                "(B) 1757",
+                "(C) 1942",
+                "(D) 1885"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Jallianwala Bagh massacre took place in:",
+            "options": [
+                "(A) Lahore",
+                "(B) Amritsar",
+                "(C) Jalandhar",
+                "(D) Delhi"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The Reserve Bank of India was established in:",
+            "options": [
+                "(A) 1935",
+                "(B) 1947",
+                "(C) 1950",
+                "(D) 1969"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which gas is mainly responsible for global warming?",
+            "options": [
+                "(A) Oxygen",
+                "(B) Nitrogen",
+                "(C) Carbon Dioxide",
+                "(D) Argon"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Who founded the Mauryan Empire?",
+            "options": [
+                "(A) Ashoka",
+                "(B) Chandragupta Maurya",
+                "(C) Bindusara",
+                "(D) Harsha"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The ancient university of Nalanda was located in:",
+            "options": [
+                "(A) Bengal",
+                "(B) Bihar",
+                "(C) Uttar Pradesh",
+                "(D) Odisha"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The Battle of Panipat (First) was fought in:",
+            "options": [
+                "(A) 1526",
+                "(B) 1556",
+                "(C) 1761",
+                "(D) 1757"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The Non-cooperation Movement was launched in:",
+            "options": [
+                "(A) 1915",
+                "(B) 1920",
+                "(C) 1930",
+                "(D) 1942"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Who was the last Mughal Emperor?",
+            "options": [
+                "(A) Bahadur Shah Zafar",
+                "(B) Aurangzeb",
+                "(C) Shah Alam II",
+                "(D) Bahadur Shah I"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Bengal was partitioned in:",
+            "options": [
+                "(A) 1905",
+                "(B) 1911",
+                "(C) 1919",
+                "(D) 1935"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Who founded the Indian National Congress?",
+            "options": [
+                "(A) A.O. Hume",
+                "(B) W.C. Bonnerjee",
+                "(C) Dadabhai Naoroji",
+                "(D) Bal Gangadhar Tilak"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Who was the Viceroy of India during the Quit India Movement?",
+            "options": [
+                "(A) Lord Linlithgow",
+                "(B) Lord Mountbatten",
+                "(C) Lord Wavell",
+                "(D) Lord Irwin"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Buddhism was founded in:",
+            "options": [
+                "(A) 5th Century BC",
+                "(B) 6th Century BC",
+                "(C) 4th Century BC",
+                "(D) 3rd Century BC"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Ashoka belonged to which dynasty:",
+            "options": [
+                "(A) Gupta",
+                "(B) Maurya",
+                "(C) Kushan",
+                "(D) Nanda"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The battle between Alexander and Porus was fought at:",
+            "options": [
+                "(A) Hydaspes (Jhelum)",
+                "(B) Tarain",
+                "(C) Panipat",
+                "(D) Kalinga"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The Chola dynasty ruled over:",
+            "options": [
+                "(A) North India",
+                "(B) South India",
+                "(C) East India",
+                "(D) West India"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Who built the Brihadeswarar Temple?",
+            "options": [
+                "(A) Raja Raja Chola",
+                "(B) Rajendra Chola",
+                "(C) Parantaka I",
+                "(D) Gandaraditya"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The Kushan Empire was founded by:",
+            "options": [
+                "(A) Kanishka",
+                "(B) Kujula Kadphises",
+                "(C) Vima Kadphises",
+                "(D) Vasudeva I"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The Delhi Sultanate was established in:",
+            "options": [
+                "(A) 1206",
+                "(B) 1192",
+                "(C) 1526",
+                "(D) 1290"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The Bhakti movement emphasized:",
+            "options": [
+                "(A) Devotion to God",
+                "(B) Rituals and sacrifices",
+                "(C) Idol worship",
+                "(D) Asceticism"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Guru Nanak founded:",
+            "options": [
+                "(A) Sikhism",
+                "(B) Buddhism",
+                "(C) Jainism",
+                "(D) Kabir Panth"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Shivaji established the:",
+            "options": [
+                "(A) Maratha Empire",
+                "(B) Mughal Empire",
+                "(C) Rajput Empire",
+                "(D) Vijayanagara Empire"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The Mughal emperor known for justice was:",
+            "options": [
+                "(A) Akbar",
+                "(B) Jahangir",
+                "(C) Shah Jahan",
+                "(D) Aurangzeb"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The last Mughal Emperor was:",
+            "options": [
+                "(A) Bahadur Shah Zafar",
+                "(B) Shah Alam II",
+                "(C) Bahadur Shah I",
+                "(D) Farrukhsiyar"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The East India Company was established in:",
+            "options": [
+                "(A) 1600",
+                "(B) 1602",
+                "(C) 1612",
+                "(D) 1664"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The Indian National Congress was founded in:",
+            "options": [
+                "(A) 1885",
+                "(B) 1857",
+                "(C) 1905",
+                "(D) 1915"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The Nobel Prize is awarded in how many categories:",
+            "options": [
+                "(A) 4",
+                "(B) 5",
+                "(C) 6",
+                "(D) 7"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "The highest civilian award in India is:",
+            "options": [
+                "(A) Padma Vibhushan",
+                "(B) Bharat Ratna",
+                "(C) Param Vir Chakra",
+                "(D) National Award"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The Param Vir Chakra is awarded for:",
+            "options": [
+                "(A) Sports Excellence",
+                "(B) Civil Service",
+                "(C) Military Bravery",
+                "(D) Scientific Achievement"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "The Arjuna awards is for excellence in:",
+            "options": [
+                "(A) Literature",
+                "(B) Sports",
+                "(C) Science",
+                "(D) Social Work"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The United Nations was founded in:",
+            "options": [
+                "(A) 1945",
+                "(B) 1919",
+                "(C) 1950",
+                "(D) 1947"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Chipko Movement was related to:",
+            "options": [
+                "(A) Water conservation",
+                "(B) Forest Conservation",
+                "(C) Soil preservation",
+                "(D) Wildlife Protection"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Who invented the telephone?",
+            "options": [
+                "(A) Thomas Edison",
+                "(B) Alexander Graham Bell",
+                "(C) Nikola Tesla",
+                "(D) Guglielmo Marconi"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "King of Jungle is:",
+            "options": [
+                "(A) Tiger",
+                "(B) Lion",
+                "(C) Elephant",
+                "(D) Cheetah"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Jallianwala Bagh massacre year:",
+            "options": [
+                "(A) 1915",
+                "(B) 1919",
+                "(C) 1921",
+                "(D) 1928"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "NEHU was established in:",
+            "options": [
+                "(A) 1970",
+                "(B) 1973",
+                "(C) 1975",
+                "(D) 1980"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Who invented Radio?",
+            "options": [
+                "(A) Nikola Tesla",
+                "(B) Thomas Edison",
+                "(C) Alexander Graham Bell",
+                "(D) Guglielmo Marconi"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Who invented Television?",
+            "options": [
+                "(A) J.L. Baird",
+                "(B) Philo Farnsworth",
+                "(C) Guglielmo Marconi",
+                "(D) Thomas Edison"
+            ],
+            "answer": "A"
+        }
+    ]
+}

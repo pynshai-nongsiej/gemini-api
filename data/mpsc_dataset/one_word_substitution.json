@@ -1,0 +1,2006 @@
+{
+    "category": "Vocabulary - One Word Substitution & Meanings",
+    "total_questions": 200,
+    "questions": [
+        {
+            "question": "One who looks at the bright side of things",
+            "options": [
+                "(A) Pessimist",
+                "(B) Optimist",
+                "(C) Atheist",
+                "(D) Altruist"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "One who looks at the dark side of things",
+            "options": [
+                "(A) Skeptic",
+                "(B) Cynic",
+                "(C) Pessimist",
+                "(D) Optimist"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "A person who does not believe in the existence of God",
+            "options": [
+                "(A) Atheist",
+                "(B) Agnostic",
+                "(C) Theist",
+                "(D) Devotee"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A person who is doubtful about the existence of God",
+            "options": [
+                "(A) Atheist",
+                "(B) Spiritualist",
+                "(C) Skeptic",
+                "(D) Agnostic"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "A person who loves mankind and works for their welfare",
+            "options": [
+                "(A) Misanthrope",
+                "(B) Altruist",
+                "(C) Egoist",
+                "(D) Cynic"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "A person who hates mankind",
+            "options": [
+                "(A) Altruist",
+                "(B) Misogynist",
+                "(C) Misanthrope",
+                "(D) Misogamist"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "A person who hates women",
+            "options": [
+                "(A) Misogamist",
+                "(B) Misogynist",
+                "(C) Misanthrope",
+                "(D) Feminist"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "A person who hates the institution of marriage",
+            "options": [
+                "(A) Misogamist",
+                "(B) Misogynist",
+                "(C) Polygamist",
+                "(D) Celibate"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "One who can speak many languages",
+            "options": [
+                "(A) Linguist",
+                "(B) Polyglot",
+                "(C) Bilingual",
+                "(D) Translator"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "One who can use both hands with equal ease",
+            "options": [
+                "(A) Ambidextrous",
+                "(B) Ambivalent",
+                "(C) Dexterous",
+                "(D) Sinister"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A state of disorder due to the absence of government or authority",
+            "options": [
+                "(A) Oligarchy",
+                "(B) Monarchy",
+                "(C) Autocracy",
+                "(D) Anarchy"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Government by a small group of powerful and wealthy people",
+            "options": [
+                "(A) Plutocracy",
+                "(B) Oligarchy",
+                "(C) Democracy",
+                "(D) Aristocracy"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "A system of government run by the wealthy class of society",
+            "options": [
+                "(A) Bureaucracy",
+                "(B) Aristocracy",
+                "(C) Plutocracy",
+                "(D) Autocracy"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Government by state officials rather than by elected representatives",
+            "options": [
+                "(A) Bureauacy",
+                "(B) Democracy",
+                "(C) Oligarchy",
+                "(D) Meritocracy"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Government by a single ruler with absolute power",
+            "options": [
+                "(A) Monarchy",
+                "(B) Autocracy",
+                "(C) Theocracy",
+                "(D) Diarchy"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Government by divine guidance or religious authorities",
+            "options": [
+                "(A) Oligarchy",
+                "(B) Monarchy",
+                "(C) Plutocracy",
+                "(D) Theocracy"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "A remedy or solution for all kinds of diseases or problems",
+            "options": [
+                "(A) Panacea",
+                "(B) Antidote",
+                "(C) Elixir",
+                "(D) Vaccine"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A place where historical documents and records are kept",
+            "options": [
+                "(A) Library",
+                "(B) Museum",
+                "(C) Archives",
+                "(D) Repertory"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "A large cage, building, or enclosure for keeping birds",
+            "options": [
+                "(A) Aviary",
+                "(B) Apiary",
+                "(C) Aquarium",
+                "(D) Kennel"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A place where bees are kept, especially for commercial honey production",
+            "options": [
+                "(A) Aviary",
+                "(B) Apiary",
+                "(C) Hatchery",
+                "(D) Sanctuary"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "A resting place of a wild animal, especially a hidden or underground one",
+            "options": [
+                "(A) Stable",
+                "(B) Kennel",
+                "(C) Lair",
+                "(D) Burrow"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "A place where dead bodies are kept before burial or cremation",
+            "options": [
+                "(A) Cemetery",
+                "(B) Crematorium",
+                "(C) Mortuary",
+                "(D) Graveyard"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "An office or post with high salary but no work or responsibility",
+            "options": [
+                "(A) Honorary",
+                "(B) Sinecure",
+                "(C) Voluntary",
+                "(D) Tenure"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "A soldier or person who fights primarily for financial gain",
+            "options": [
+                "(A) Volunteer",
+                "(B) Veteran",
+                "(C) Mercenary",
+                "(D) Patriot"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "A story, poem, or picture that can be interpreted to reveal a hidden moral meaning",
+            "options": [
+                "(A) Parable",
+                "(B) Allegory",
+                "(C) Fable",
+                "(D) Anecdote"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The scientific study of human societies, cultures, and their development",
+            "options": [
+                "(A) Anthropology",
+                "(B) Archaeology",
+                "(C) Sociology",
+                "(D) Psychology"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The scientific study of birds",
+            "options": [
+                "(A) Entomology",
+                "(B) Zoology",
+                "(C) Ornithology",
+                "(D) Herpetology"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "The scientific study of insects",
+            "options": [
+                "(A) Entomology",
+                "(B) Etymology",
+                "(C) Ecology",
+                "(D) Biology"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The study of human history and prehistory through the excavation of sites",
+            "options": [
+                "(A) Anthropology",
+                "(B) Palaeontology",
+                "(C) Archaeology",
+                "(D) Geology"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "The science or art of drawing or making maps",
+            "options": [
+                "(A) Calligraphy",
+                "(B) Cartography",
+                "(C) Geography",
+                "(D) Photography"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "An expert judge in matters of taste, fine arts, or literature",
+            "options": [
+                "(A) Connoisseur",
+                "(B) Novice",
+                "(C) Dilettante",
+                "(D) Amateur"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A person who is recovering health and strength after an illness",
+            "options": [
+                "(A) Convalescent",
+                "(B) Invalid",
+                "(C) Patient",
+                "(D) Athlete"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A person who leaves their own country to settle permanently in another",
+            "options": [
+                "(A) Immigrant",
+                "(B) Emigrant",
+                "(C) Refugee",
+                "(D) Nomad"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "A person who comes to live permanently in a foreign country",
+            "options": [
+                "(A) Emigrant",
+                "(B) Immigrant",
+                "(C) Tourist",
+                "(D) Alien"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Something that is certain to happen and cannot be avoided",
+            "options": [
+                "(A) Inevitable",
+                "(B) Irresistible",
+                "(C) Imminent",
+                "(D) Indelible"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A person or behaviour that is bad beyond reform or correction",
+            "options": [
+                "(A) Incorrigible",
+                "(B) Infallible",
+                "(C) Irreparable",
+                "(D) Invincible"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Handwriting that is difficult or impossible to read",
+            "options": [
+                "(A) Illegible",
+                "(B) Inaudible",
+                "(C) Eligible",
+                "(D) Illiterate"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A sound or voice that is quiet or faint enough not to be heard",
+            "options": [
+                "(A) Inaudible",
+                "(B) Silent",
+                "(C) Whispered",
+                "(D) Imperceptible"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Too powerful to be defeated, overcome, or conquered",
+            "options": [
+                "(A) Invincible",
+                "(B) Vulnerable",
+                "(C) Infallible",
+                "(D) Impassable"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A person who is incapable of making mistakes or being wrong",
+            "options": [
+                "(A) Infallible",
+                "(B) Perfect",
+                "(C) Flawless",
+                "(D) Omniscient"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Something that is impossible to explain or understand",
+            "options": [
+                "(A) Inexplicable",
+                "(B) Mysterious",
+                "(C) Cryptic",
+                "(D) Incomprehensible"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Marks or memories that cannot be removed, erased, or forgotten",
+            "options": [
+                "(A) Indelible",
+                "(B) Permanent",
+                "(C) Ineffable",
+                "(D) Indestructible"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "An object that is easily broken, damaged, or shattered",
+            "options": [
+                "(A) Fragile",
+                "(B) Tough",
+                "(C) Elastic",
+                "(D) Flexible"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Something that is suitable or safe to be eaten",
+            "options": [
+                "(A) Edible",
+                "(B) Potable",
+                "(C) Delectable",
+                "(D) Palatable"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Water or liquid that is safe and suitable for drinking",
+            "options": [
+                "(A) Edible",
+                "(B) Potable",
+                "(C) Purified",
+                "(D) Mineral"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Something that lasts for a very short time; transient",
+            "options": [
+                "(A) Ephemeral",
+                "(B) Eternal",
+                "(C) Perpetual",
+                "(D) Temporal"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "An inscription written on a tomb in memory of a person who has died",
+            "options": [
+                "(A) Epitaph",
+                "(B) Epilogue",
+                "(C) Obituary",
+                "(D) Elegy"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A speech or performance given without any prior preparation or practice",
+            "options": [
+                "(A) Extempore",
+                "(B) Soliloquy",
+                "(C) Monologue",
+                "(D) Address"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "An extreme or irrational fear of confined or small spaces",
+            "options": [
+                "(A) Claustrophobia",
+                "(B) Acrophobia",
+                "(C) Agoraphobia",
+                "(D) Hydrophobia"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "An extreme or irrational fear of high places",
+            "options": [
+                "(A) Acrophobia",
+                "(B) Xenophobia",
+                "(C) Claustrophobia",
+                "(D) Nyctophobia"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "An extreme or irrational fear of water",
+            "options": [
+                "(A) Hydrophobia",
+                "(B) Claustrophobia",
+                "(C) Pyrophobia",
+                "(D) Cynophobia"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "An extreme or irrational fear of foreign people, cultures, or strangers",
+            "options": [
+                "(A) Xenophobia",
+                "(B) Homophobia",
+                "(C) Agoraphobia",
+                "(D) Bibliophobia"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A person who has the habit of walking while asleep",
+            "options": [
+                "(A) Somnambulist",
+                "(B) Somniloquist",
+                "(C) Insomniac",
+                "(D) Philanthropist"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A person who has the habit of talking while asleep",
+            "options": [
+                "(A) Somniloquist",
+                "(B) Somnambulist",
+                "(C) Ventriloquist",
+                "(D) Soliloquist"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A person who is physically or mentally dependent on a habit or substance",
+            "options": [
+                "(A) Addict",
+                "(B) Devotee",
+                "(C) Gladiator",
+                "(D) Ascetic"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "An outbreak of a disease that spreads across multiple countries or worldwide",
+            "options": [
+                "(A) Epidemic",
+                "(B) Pandemic",
+                "(C) Endemic",
+                "(D) Outbreak"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "A disease that is constantly found and restricted to a particular area or population",
+            "options": [
+                "(A) Pandemic",
+                "(B) Epidemic",
+                "(C) Endemic",
+                "(D) Infectious"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "A short speech or section addressed to the audience at the end of a play",
+            "options": [
+                "(A) Epilogue",
+                "(B) Prologue",
+                "(C) Monologue",
+                "(D) Soliloquy"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A short introductory speech or poem at the beginning of a literary work or play",
+            "options": [
+                "(A) Prologue",
+                "(B) Epilogue",
+                "(C) Preface",
+                "(D) Foreword"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A person who spends money in an extravagant, wasteful, and careless way",
+            "options": [
+                "(A) Spendthrift",
+                "(B) Miser",
+                "(C) Philanthropist",
+                "(D) Economist"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A person who practices severe self-discipline and abstains from all forms of indulgence",
+            "options": [
+                "(A) Ascetic",
+                "(B) Hedonist",
+                "(C) Epicure",
+                "(D) Stoic"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The customary code of polite behaviour and rules of conduct in a society",
+            "options": [
+                "(A) Etiquette",
+                "(B) Protocol",
+                "(C) Tradition",
+                "(D) Morality"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "An exact copy or reproduction of a document, picture, or piece of writing",
+            "options": [
+                "(A) Facsimile",
+                "(B) Original",
+                "(C) Draft",
+                "(D) Portrait"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "An animal that feeds exclusively on plants and vegetation",
+            "options": [
+                "(A) Carnivore",
+                "(B) Herbivore",
+                "(C) Omnivore",
+                "(D) Predator"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "An animal that feeds exclusively on the flesh of other animals",
+            "options": [
+                "(A) Herbivore",
+                "(B) Omnivore",
+                "(C) Carnivore",
+                "(D) Scavenger"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "An animal or person that eats food of both plant and animal origin",
+            "options": [
+                "(A) Carnivore",
+                "(B) Herbivore",
+                "(C) Omnivore",
+                "(D) Cannibal"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "A person who is easily persuaded, deceived, or tricked",
+            "options": [
+                "(A) Gullible",
+                "(B) Skeptical",
+                "(C) Credible",
+                "(D) Astute"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A person who can endure pain or hardship without showing their feelings or complaining",
+            "options": [
+                "(A) Stoic",
+                "(B) Hedonist",
+                "(C) Cynic",
+                "(D) Ascetic"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A person who believes that the pursuit of pleasure is the primary goal of human life",
+            "options": [
+                "(A) Hedonist",
+                "(B) Stoic",
+                "(C) Puritans",
+                "(D) Altruist"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "An official pardon granted by a government to individuals convicted of political offences",
+            "options": [
+                "(A) Amnesty",
+                "(B) Reprieve",
+                "(C) Parole",
+                "(D) Acquittal"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The deliberate action of killing a king",
+            "options": [
+                "(A) Regicide",
+                "(B) Patricide",
+                "(C) Homicide",
+                "(D) Genocide"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The action of killing one's own father",
+            "options": [
+                "(A) Patricide",
+                "(B) Matricide",
+                "(C) Fratricide",
+                "(D) Sororicide"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The action of killing one's own mother",
+            "options": [
+                "(A) Matricide",
+                "(B) Patricide",
+                "(C) Fratricide",
+                "(D) Infanticide"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The deliberate killing of a large group of people, especially those of a particular nation or ethnic group",
+            "options": [
+                "(A) Genocide",
+                "(B) Homicide",
+                "(C) Regicide",
+                "(D) Massacre"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The practice or act of killing an infant or newborn child",
+            "options": [
+                "(A) Infanticide",
+                "(B) Foeticide",
+                "(C) Matricide",
+                "(D) Patricide"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A child whose parents are deceased",
+            "options": [
+                "(A) Orphan",
+                "(B) Foundling",
+                "(C) Ward",
+                "(D) Minor"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A person who collects, studies, or is interested in coins and medals",
+            "options": [
+                "(A) Numismatist",
+                "(B) Philatelist",
+                "(C) Archaeologist",
+                "(D) Geologist"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A person who collects or studies postage stamps",
+            "options": [
+                "(A) Philatelist",
+                "(B) Numismatist",
+                "(C) Cartographer",
+                "(D) Calligrapher"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A prominent, eloquent, and highly skilled public speaker",
+            "options": [
+                "(A) Orator",
+                "(B) Narrator",
+                "(C) Lecturer",
+                "(D) Spokesman"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Being or existing everywhere at the same time",
+            "options": [
+                "(A) Omnipresent",
+                "(B) Omnipotent",
+                "(C) Omniscient",
+                "(D) Eternal"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Having unlimited or infinite power",
+            "options": [
+                "(A) Omnipotent",
+                "(B) Omniscient",
+                "(C) Omnipresent",
+                "(D) Invincible"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Having infinite or complete knowledge; knowing everything",
+            "options": [
+                "(A) Omniscient",
+                "(B) Omnipotent",
+                "(C) Omnipresent",
+                "(D) Academic"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A statement or word that is open to more than one interpretation or lacks clarity",
+            "options": [
+                "(A) Ambiguous",
+                "(B) Explicit",
+                "(C) Precise",
+                "(D) Obvious"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A large group of musicians playing string, woodwind, brass, and percussion instruments together",
+            "options": [
+                "(A) Orchestra",
+                "(B) Choir",
+                "(C) Band",
+                "(D) Ensemble"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "An attractively arranged bunch of flowers, especially one presented as a gift",
+            "options": [
+                "(A) Bouquet",
+                "(B) Wreath",
+                "(C) Garland",
+                "(D) Bunch"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A socially unconventional person, especially one involved in the arts",
+            "options": [
+                "(A) Bohemian",
+                "(B) Cosmopolitan",
+                "(C) Philistine",
+                "(D) Cynic"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The state of voluntarily abstaining from marriage and sexual relations, typically for religious reasons",
+            "options": [
+                "(A) Celibacy",
+                "(B) Monogamy",
+                "(C) Polygamy",
+                "(D) Asceticism"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The study of the origin and historical development of words and their meanings",
+            "options": [
+                "(A) Etymology",
+                "(B) Entomology",
+                "(C) Ecology",
+                "(D) Philology"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A severe, overwhelming flood or sudden rush of water",
+            "options": [
+                "(A) Deluge",
+                "(B) Drought",
+                "(C) Avalanche",
+                "(D) Tempest"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The use of many words where fewer would do, especially in an attempt to be vague or evasive",
+            "options": [
+                "(A) Circumlocution",
+                "(B) Soliloquy",
+                "(C) Eloquence",
+                "(D) Brevity"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A wide street or road, typically lined with trees on both sides",
+            "options": [
+                "(A) Boulevard",
+                "(B) Alley",
+                "(C) Highway",
+                "(D) Lane"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A person who journeys to a sacred place or shrine for religious reasons",
+            "options": [
+                "(A) Pilgrim",
+                "(B) Traveler",
+                "(C) Nomad",
+                "(D) Tourist"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A person who is excessively concerned with minor details, rules, or displaying academic learning",
+            "options": [
+                "(A) Pedant",
+                "(B) Scholar",
+                "(C) Intellectual",
+                "(D) Amateur"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Living, occurring, or existing at the same time as another",
+            "options": [
+                "(A) Contemporary",
+                "(B) Ancient",
+                "(C) Modern",
+                "(D) Primitive"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A person who has had long experience in a particular activity, profession, or military service",
+            "options": [
+                "(A) Veteran",
+                "(B) Novice",
+                "(C) Amateur",
+                "(D) Professional"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A medical doctor who specializes in the diagnosis and treatment of skin disorders",
+            "options": [
+                "(A) Dermatologist",
+                "(B) Cardiologist",
+                "(C) Neurologist",
+                "(D) Pediatrician"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A medical doctor who specializes in the study, diagnosis, and treatment of heart conditions",
+            "options": [
+                "(A) Cardiologist",
+                "(B) Dermatologist",
+                "(C) Oncologist",
+                "(D) Gynecologist"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A medical doctor specializing in the diagnosis, prevention, and treatment of mental illnesses",
+            "options": [
+                "(A) Psychiatrist",
+                "(B) Psychologist",
+                "(C) Neurologist",
+                "(D) Pathologist"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A medical doctor who specializes in the care and treatment of infants and children",
+            "options": [
+                "(A) Pediatrician",
+                "(B) Podiatrist",
+                "(C) Geriatrician",
+                "(D) Obstetrician"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A professional who is skilled in the science or art of drawing and making maps",
+            "options": [
+                "(A) Cartographer",
+                "(B) Geographer",
+                "(C) Calligrapher",
+                "(D) Biographer"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "An arrangement of flowers, leaves, or stems fastened in a ring and used for decoration or on a grave",
+            "options": [
+                "(A) Wreath",
+                "(B) Bouquet",
+                "(C) Garland",
+                "(D) Festoon"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A formally concluded and ratified agreement between sovereign states or nations",
+            "options": [
+                "(A) Treaty",
+                "(B) Alliance",
+                "(C) Contract",
+                "(D) Covenant"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A large public exhibition of art, industrial goods, or promotional materials",
+            "options": [
+                "(A) Exposition",
+                "(B) Workshop",
+                "(C) Carnival",
+                "(D) Seminar"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A list of items, topics, or tasks to be discussed or resolved at a formal meeting",
+            "options": [
+                "(A) Agenda",
+                "(B) Minutes",
+                "(C) Roster",
+                "(D) Catalogue"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A list of books, articles, and other sources used in scholarly work or on a specific subject",
+            "options": [
+                "(A) Bibliography",
+                "(B) Biography",
+                "(C) Index",
+                "(D) Lexicon"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A published collection of poems, short stories, or other literary pieces",
+            "options": [
+                "(A) Anthology",
+                "(B) Almanac",
+                "(C) Encyclopedia",
+                "(D) Compendium"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A bound book containing maps or geographical charts",
+            "options": [
+                "(A) Atlas",
+                "(B) Directory",
+                "(C) Ledger",
+                "(D) Journal"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "An event causing great and often sudden damage, suffering, or destruction; a disaster",
+            "options": [
+                "(A) Catastrophe",
+                "(B) Accident",
+                "(C) Obstacle",
+                "(D) Crisis"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Extreme tiredness or exhaustion resulting from physical or mental exertion",
+            "options": [
+                "(A) Fatigue",
+                "(B) Lethargy",
+                "(C) Insomnia",
+                "(D) Boredom"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A state of deep and prolonged unconsciousness, typically caused by trauma or disease",
+            "options": [
+                "(A) Coma",
+                "(B) Trance",
+                "(C) Slumber",
+                "(D) Syncope"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Extreme physical, mental, or emotional suffering",
+            "options": [
+                "(A) Agony",
+                "(B) Anxiety",
+                "(C) Despair",
+                "(D) Sorrow"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A large building or shed, especially for housing and maintaining aircraft",
+            "options": [
+                "(A) Hangar",
+                "(B) Garage",
+                "(C) Depot",
+                "(D) Dock"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A collection of weapons and military equipment, or the building where they are stored",
+            "options": [
+                "(A) Arsenal",
+                "(B) Armoury",
+                "(C) Barracks",
+                "(D) Fortress"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A natural or artificial lake used as a source of water supply",
+            "options": [
+                "(A) Reservoir",
+                "(B) Aqueduct",
+                "(C) Canal",
+                "(D) Cistern"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A small, simple shelter or house constructed for a dog",
+            "options": [
+                "(A) Kennel",
+                "(B) Stable",
+                "(C) Sty",
+                "(D) Coop"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A wooden box or cage, typically with a wire mesh front, for keeping small animals like rabbits",
+            "options": [
+                "(A) Hutch",
+                "(B) Kennel",
+                "(C) Barn",
+                "(D) Shed"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A piece of land planted with fruit trees, typically for commercial production",
+            "options": [
+                "(A) Orchard",
+                "(B) Vineyard",
+                "(C) Nursery",
+                "(D) Garden"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A workshop or workplace where animal hides are processed and tanned into leather",
+            "options": [
+                "(A) Tannery",
+                "(B) Distillery",
+                "(C) Brewery",
+                "(D) Refinery"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A system of millions or billions of stars, together with gas and dust, held together by gravitational attraction",
+            "options": [
+                "(A) Galaxy",
+                "(B) Constellation",
+                "(C) Cosmos",
+                "(D) Nebula"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A number of birds, sheep, or goats moving or feeding together",
+            "options": [
+                "(A) Flock",
+                "(B) Herd",
+                "(C) Pack",
+                "(D) Swarm"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A group of lions living, hunting, and feeding together",
+            "options": [
+                "(A) Pride",
+                "(B) Herd",
+                "(C) Pack",
+                "(D) Troop"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A large group or school of fish swimming together",
+            "options": [
+                "(A) Shoal",
+                "(B) Pod",
+                "(C) Swarm",
+                "(D) Flight"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A group of wild animals, especially wolves or hunting dogs, that hunt together",
+            "options": [
+                "(A) Pack",
+                "(B) Herd",
+                "(C) Flock",
+                "(D) Drove"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A large, tall cabinet or closet in which clothes may be hung or stored",
+            "options": [
+                "(A) Wardrobe",
+                "(B) Pantry",
+                "(C) Chest",
+                "(D) Drawer"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A room or compartment where clothes, food, or other household provisions are kept",
+            "options": [
+                "(A) Pantry",
+                "(B) Wardrobe",
+                "(C) Cellar",
+                "(D) Attic"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A group of listeners, spectators, or readers assembled for a performance or presentation",
+            "options": [
+                "(A) Audience",
+                "(B) Congregation",
+                "(C) Mob",
+                "(D) Crowd"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A group of people assembled for religious worship or a church service",
+            "options": [
+                "(A) Congregation",
+                "(B) Assembly",
+                "(C) Gathering",
+                "(D) Audience"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A set of connected rooms, especially in a hotel, or a collection of matching furniture",
+            "options": [
+                "(A) Suite",
+                "(B) Lounge",
+                "(C) Apartment",
+                "(D) Studio"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A strong, fast, and violent stream of water or other liquid",
+            "options": [
+                "(A) Torrent",
+                "(B) Cascade",
+                "(C) Brook",
+                "(D) Streamlet"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A violent, severe windstorm, often accompanied by rain, snow, or hail",
+            "options": [
+                "(A) Tempest",
+                "(B) Breeze",
+                "(C) Gale",
+                "(D) Cyclone"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A deep, narrow gorge or valley with steep, rocky sides, often with a river flowing through it",
+            "options": [
+                "(A) Canyon",
+                "(B) Abyss",
+                "(C) Trench",
+                "(D) Crevice"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A ring-shaped coral reef, island, or chain of islands surrounding a central lagoon",
+            "options": [
+                "(A) Atoll",
+                "(B) Peninsula",
+                "(C) Archipelago",
+                "(D) Gulf"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A piece of land that is completely surrounded by water",
+            "options": [
+                "(A) Island",
+                "(B) Peninsula",
+                "(C) Isthmus",
+                "(D) Strait"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A narrow strip of land with water on both sides, connecting two larger areas of land",
+            "options": [
+                "(A) Isthmus",
+                "(B) Strait",
+                "(C) Channel",
+                "(D) Peninsula"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A narrow passage of water that connects two larger seas or bodies of water",
+            "options": [
+                "(A) Strait",
+                "(B) Isthmus",
+                "(C) Gulf",
+                "(D) Estuary"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A person who is self-centred, selfish, and thinks only of their own interest",
+            "options": [
+                "(A) Egoist",
+                "(B) Egotist",
+                "(C) Altruist",
+                "(D) Optimist"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A person who constantly talks about themselves, their achievements, and their importance",
+            "options": [
+                "(A) Egotist",
+                "(B) Egoist",
+                "(C) Narcissist",
+                "(D) Braggart"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A person who actively opposes or is hostile to someone or something; an adversary",
+            "options": [
+                "(A) Antagonist",
+                "(B) Protagonist",
+                "(C) Competitor",
+                "(D) Ally"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A person who actively helps or collaborates with another in committing a crime or wrongdoing",
+            "options": [
+                "(A) Accomplice",
+                "(B) Associate",
+                "(C) Colleague",
+                "(D) Partner"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A person sent on a special mission, especially as a diplomatic representative",
+            "options": [
+                "(A) Emissary",
+                "(B) Envoy",
+                "(C) Delegate",
+                "(D) Ambassador"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A person who acts as a link between people or groups in order to resolve differences or bring about agreement",
+            "options": [
+                "(A) Intermediary",
+                "(B) Arbitrator",
+                "(C) Negotiator",
+                "(D) Messenger"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "An independent person or body officially appointed to settle a dispute between two conflicting parties",
+            "options": [
+                "(A) Arbitrator",
+                "(B) Judge",
+                "(C) Mediator",
+                "(D) Referee"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A person who freely offers to take part in an enterprise or undertake a task without being paid",
+            "options": [
+                "(A) Volunteer",
+                "(B) Mercenary",
+                "(C) Amateur",
+                "(D) Apprentice"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A person belonging to or coming from another country or nation; a foreigner",
+            "options": [
+                "(A) Alien",
+                "(B) Native",
+                "(C) Citizen",
+                "(D) Emigrant"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The state of being barred from one's native country, typically for political or punitive reasons",
+            "options": [
+                "(A) Exile",
+                "(B) Deportation",
+                "(C) Eviction",
+                "(D) Isolation"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A person who has been forced to leave their country to escape war, persecution, or natural disaster",
+            "options": [
+                "(A) Refugee",
+                "(B) Migrant",
+                "(C) Emigrant",
+                "(D) Expatriate"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Able to adapt or be adapted to many different functions, activities, or skills",
+            "options": [
+                "(A) Versatile",
+                "(B) Flexible",
+                "(C) Talented",
+                "(D) Dynamic"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A person who believes that war and violence are completely unjustifiable, and all disputes should be settled peacefully",
+            "options": [
+                "(A) Pacifist",
+                "(B) Activist",
+                "(C) Diplomat",
+                "(D) Reformer"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A person who travels on foot rather than in a vehicle",
+            "options": [
+                "(A) Pedestrian",
+                "(B) Commuter",
+                "(C) Wanderer",
+                "(D) Passenger"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A person sent or authorized to represent others, typically at a conference or meeting",
+            "options": [
+                "(A) Delegate",
+                "(B) Candidate",
+                "(C) Substitute",
+                "(D) Trustee"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A direct vote of the electorate on a single political question referred to them for a direct decision",
+            "options": [
+                "(A) Referendum",
+                "(B) Election",
+                "(C) Plebiscite",
+                "(D) Poll"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A system of government by the whole population or all the eligible members of a state, typically through elected representatives",
+            "options": [
+                "(A) Democracy",
+                "(B) Bureaucracy",
+                "(C) Monarchy",
+                "(D) Oligarchy"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A form of government in which a country is ruled by a king or queen",
+            "options": [
+                "(A) Monarchy",
+                "(B) Republic",
+                "(C) Dictatorship",
+                "(D) Oligarchy"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A form of government in which power is held by the nobility or privileged upper class",
+            "options": [
+                "(A) Aristocracy",
+                "(B) Oligarchy",
+                "(C) Plutocracy",
+                "(D) Bureaucracy"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A state or government run by the worst, least qualified, or most unscrupulous citizens",
+            "options": [
+                "(A) Kakistocracy",
+                "(B) Autocracy",
+                "(C) Plutocracy",
+                "(D) Oligarchy"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A system of governance or administration where progress is based on individual talent, ability, and achievement",
+            "options": [
+                "(A) Meritocracy",
+                "(B) Bureaucracy",
+                "(C) Aristocracy",
+                "(D) Technocracy"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The science and study of the physical structure, history, and substance of the earth",
+            "options": [
+                "(A) Geology",
+                "(B) Geography",
+                "(C) Meteorology",
+                "(D) Ecology"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The scientific study of plant life, including their structure, physiology, and classification",
+            "options": [
+                "(A) Botany",
+                "(B) Zoology",
+                "(C) Biology",
+                "(D) Horticulture"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The scientific study of the behavior, structure, physiology, and classification of animals",
+            "options": [
+                "(A) Zoology",
+                "(B) Botany",
+                "(C) Entomology",
+                "(D) Ecology"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The branch of science concerned with the processes and phenomena of the atmosphere, especially for forecasting weather",
+            "options": [
+                "(A) Meteorology",
+                "(B) Climatology",
+                "(C) Astronomy",
+                "(D) Hydrology"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The study of handwriting, especially when employed as a means of analyzing character or personality",
+            "options": [
+                "(A) Graphology",
+                "(B) Calligraphy",
+                "(C) Cartography",
+                "(D) Typography"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The branch of science concerned with the study of earthquakes and related phenomena",
+            "options": [
+                "(A) Seismology",
+                "(B) Volcanology",
+                "(C) Meteorology",
+                "(D) Geology"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The study of the nature of God, religious belief, and philosophical ideas about religion",
+            "options": [
+                "(A) Theology",
+                "(B) Philosophy",
+                "(C) Mythology",
+                "(D) Anthropology"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "An extreme or irrational fear of open, crowded, or public spaces where escape might be difficult",
+            "options": [
+                "(A) Agoraphobia",
+                "(B) Claustrophobia",
+                "(C) Acrophobia",
+                "(D) Xenophobia"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "An extreme, intense, or irrational fear of darkness or night",
+            "options": [
+                "(A) Nyctophobia",
+                "(B) Pyrophobia",
+                "(C) Acrophobia",
+                "(D) Cynophobia"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "An extreme, intense, or irrational fear of dogs",
+            "options": [
+                "(A) Cynophobia",
+                "(B) Hydrophobia",
+                "(C) Claustrophobia",
+                "(D) Xenophobia"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "An extreme, intense, or irrational fear of fire",
+            "options": [
+                "(A) Pyrophobia",
+                "(B) Hydrophobia",
+                "(C) Acrophobia",
+                "(D) Claustrophobia"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A person with a recurrent, obsessive, and uncontrollable urge to steal, typically without any economic motive",
+            "options": [
+                "(A) Kleptomaniac",
+                "(B) Pyromaniac",
+                "(C) Bibliomaniac",
+                "(D) Megalomaniac"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A person with an obsessive desire to set fire to things",
+            "options": [
+                "(A) Pyromaniac",
+                "(B) Kleptomaniac",
+                "(C) Dipsomaniac",
+                "(D) Megalomaniac"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "An obsessive, passionate, or excessive enthusiasm for collecting or possessing books",
+            "options": [
+                "(A) Bibliomania",
+                "(B) Pyromania",
+                "(C) Kleptomania",
+                "(D) Megalomania"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A medical practitioner who is qualified to perform medical operations and procedures",
+            "options": [
+                "(A) Surgeon",
+                "(B) Physician",
+                "(C) Pathologist",
+                "(D) Anesthetist"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A medical doctor who specializes in the diagnosis, treatment, and surgery of eye disorders",
+            "options": [
+                "(A) Ophthalmologist",
+                "(B) Optometrist",
+                "(C) Otolaryngologist",
+                "(D) Dermatologist"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A medical doctor who specializes in the study, diagnosis, and treatment of cancers and tumors",
+            "options": [
+                "(A) Oncologist",
+                "(B) Neurologist",
+                "(C) Cardiologist",
+                "(D) Pathologist"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A doctor who specializes in the diagnosis and treatment of disorders of the nervous system",
+            "options": [
+                "(A) Neurologist",
+                "(B) Psychiatrist",
+                "(C) Cardiologist",
+                "(D) Oncologist"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A medical specialist who administers medicines to prevent sensation and pain during a surgical procedure",
+            "options": [
+                "(A) Anesthetist",
+                "(B) Pharmacist",
+                "(C) Surgeon",
+                "(D) Physician"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A substance or material that is highly prone to catching fire and burning easily",
+            "options": [
+                "(A) Flammable",
+                "(B) Non-flammable",
+                "(C) Incombustible",
+                "(D) Soluble"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A substance that is completely incapable of being dissolved in a liquid",
+            "options": [
+                "(A) Insoluble",
+                "(B) Soluble",
+                "(C) Miscible",
+                "(D) Liquid"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "An object or concept that is abstract and cannot be perceived by the sense of touch",
+            "options": [
+                "(A) Intangible",
+                "(B) Tangible",
+                "(C) Invisible",
+                "(D) Transparent"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A false sensory perception or a deceptive appearance of something that does not exist in reality",
+            "options": [
+                "(A) Illusion",
+                "(B) Delusion",
+                "(C) Hallucination",
+                "(D) Mirage"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "An organism that lives on or inside another organism and benefits by deriving nutrients at the host's expense",
+            "options": [
+                "(A) Parasite",
+                "(B) Host",
+                "(C) Predator",
+                "(D) Scavenger"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Cold-blooded animals that can live and breathe both on land and in water",
+            "options": [
+                "(A) Amphibians",
+                "(B) Reptiles",
+                "(C) Mammals",
+                "(D) Marsupials"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A class of mammals whose members are born incomplete and are typically carried in a maternal pouch",
+            "options": [
+                "(A) Marsupials",
+                "(B) Rodents",
+                "(C) Primates",
+                "(D) Cetaceans"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Warm-blooded vertebrate animals characterized by the possession of hair and mammary glands",
+            "options": [
+                "(A) Mammals",
+                "(B) Amphibians",
+                "(C) Reptiles",
+                "(D) Birds"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The natural home, territory, or environmental conditions of an animal, plant, or other organism",
+            "options": [
+                "(A) Habitat",
+                "(B) Ecosystem",
+                "(C) Biosphere",
+                "(D) Territory"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A systematically arranged collection of dried and preserved plant specimens used for scientific study",
+            "options": [
+                "(A) Herbarium",
+                "(B) Arboretum",
+                "(C) Greenhouse",
+                "(D) Nursery"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A group or pattern of stars forming a recognized configuration that is named after its shape or myth",
+            "options": [
+                "(A) Constellation",
+                "(B) Galaxy",
+                "(C) Cosmos",
+                "(D) Nebula"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A large, organized group of soldiers trained to fight on land",
+            "options": [
+                "(A) Army",
+                "(B) Navy",
+                "(C) Squadron",
+                "(D) Battalion"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A collection or group of ships moving or operating together under a single command",
+            "options": [
+                "(A) Fleet",
+                "(B) Navy",
+                "(C) Flotilla",
+                "(D) Armada"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A group of people, traders, or pilgrims traveling together across a desert or hostile country",
+            "options": [
+                "(A) Caravan",
+                "(B) Fleet",
+                "(C) Convoy",
+                "(D) Horde"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A collection of items or supplies hidden in a secret, hard-to-reach place for safety or future use",
+            "options": [
+                "(A) Cache",
+                "(B) Vault",
+                "(C) Arsenal",
+                "(D) Archive"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "An account of a person's life written entirely by that same person",
+            "options": [
+                "(A) Autobiography",
+                "(B) Biography",
+                "(C) Memoir",
+                "(D) Diary"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "An account of a person's life written, compiled, or published by someone else",
+            "options": [
+                "(A) Biography",
+                "(B) Autobiography",
+                "(C) Monograph",
+                "(D) Obituary"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A formal speech or piece of writing containing high praise, typically for someone who has recently died",
+            "options": [
+                "(A) Eulogy",
+                "(B) Epitaph",
+                "(C) Elegy",
+                "(D) Tribute"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "An act, statement, or gift that is intended to show gratitude, respect, or admiration",
+            "options": [
+                "(A) Tribute",
+                "(B) Eulogy",
+                "(C) Legacy",
+                "(D) Award"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A certificate or document confirming that a person has successfully completed a specific course of study",
+            "options": [
+                "(A) Diploma",
+                "(B) Degree",
+                "(C) License",
+                "(D) Syllabus"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A formal written report containing a detailed analysis, evaluation, or review of a book, paper, or system",
+            "options": [
+                "(A) Critique",
+                "(B) Summary",
+                "(C) Essay",
+                "(D) Synopsis"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A public vote of an entire country on a specific question, typically regarding state sovereignty or a transfer of territory",
+            "options": [
+                "(A) Plebiscite",
+                "(B) Franchise",
+                "(C) Suffrage",
+                "(D) Mandate"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A book or collection of maps or geographical charts",
+            "options": [
+                "(A) Atlas",
+                "(B) Directory",
+                "(C) Index",
+                "(D) Catalogue"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A collection of dried plant specimens mounted on sheets of paper and systematically arranged",
+            "options": [
+                "(A) Herbarium",
+                "(B) Greenhouse",
+                "(C) Nursery",
+                "(D) Conservatory"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "A dynamic list of books, articles, or other literary works used as sources",
+            "options": [
+                "(A) Bibliography",
+                "(B) Biography",
+                "(C) Directory",
+                "(D) Reference"
+            ],
+            "answer": "A"
+        }
+    ]
+}

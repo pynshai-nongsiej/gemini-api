@@ -1,0 +1,2956 @@
+{
+  "category": "English - Error Detection",
+  "total_questions": 200,
+  "questions": [
+    {
+      "question": "The introduction of (A) / the new syllabus and textbooks (B) / have caused confusion among students. (C) / No error (D)",
+      "options": [
+        "(A) The introduction of",
+        "(B) the new syllabus and textbooks",
+        "(C) have caused confusion among students.",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Neither of the two candidates (A) / who applied for the post (B) / are eligible for the interview. (C) / No error (D)",
+      "options": [
+        "(A) Neither of the two candidates",
+        "(B) who applied for the post",
+        "(C) are eligible for the interview.",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Each of the employees (A) / in the government department (B) / are required to submit their details. (C) / No error (D)",
+      "options": [
+        "(A) Each of the employees",
+        "(B) in the government department",
+        "(C) are required to submit their details.",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "The panel of judges (A) / have finally announced (B) / the winner of the competition. (C) / No error (D)",
+      "options": [
+        "(A) The panel of judges",
+        "(B) have finally announced",
+        "(C) the winner of the competition.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The quality of the apples (A) / that were supplied to the market (B) / were extremely poor. (C) / No error (D)",
+      "options": [
+        "(A) The quality of the apples",
+        "(B) that were supplied to the market",
+        "(C) were extremely poor.",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "A great many students (A) / has passed the examination (B) / with flying colours this year. (C) / No error (D)",
+      "options": [
+        "(A) A great many students",
+        "(B) has passed the examination",
+        "(C) with flying colours this year.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The Secretary and Treasurer (A) / are attending the meeting (B) / in the conference hall today. (C) / No error (D)",
+      "options": [
+        "(A) The Secretary and Treasurer",
+        "(B) are attending the meeting",
+        "(C) in the conference hall today.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "My father, along with his colleagues, (A) / are going to Delhi (B) / to attend the annual summit. (C) / No error (D)",
+      "options": [
+        "(A) My father, along with his colleagues,",
+        "(B) are going to Delhi",
+        "(C) to attend the annual summit.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Not only the principal (A) / but also the teachers (B) / is responsible for the indiscipline. (C) / No error (D)",
+      "options": [
+        "(A) Not only the principal",
+        "(B) but also the teachers",
+        "(C) is responsible for the indiscipline.",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Many a man (A) / have succumbed to this temptation (B) / during the course of their lives. (C) / No error (D)",
+      "options": [
+        "(A) Many a man",
+        "(B) have succumbed to this temptation",
+        "(C) during the course of their lives.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The number of accidents (A) / on the highway (B) / have decreased significantly this year. (C) / No error (D)",
+      "options": [
+        "(A) The number of accidents",
+        "(B) on the highway",
+        "(C) have decreased significantly this year.",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Ten kilometres (A) / are a long distance (B) / to cover on foot every day. (C) / No error (D)",
+      "options": [
+        "(A) Ten kilometres",
+        "(B) are a long distance",
+        "(C) to cover on foot every day.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Either the manager (A) / or his assistants (B) / is supposed to lock the door. (C) / No error (D)",
+      "options": [
+        "(A) Either the manager",
+        "(B) or his assistants",
+        "(C) is supposed to lock the door.",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "The local police (A) / has arrested the suspect (B) / involved in the bank robbery. (C) / No error (D)",
+      "options": [
+        "(A) The local police",
+        "(B) has arrested the suspect",
+        "(C) involved in the bank robbery.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The information provided (A) / by the witnesses (B) / were crucial to solving the case. (C) / No error (D)",
+      "options": [
+        "(A) The information provided",
+        "(B) by the witnesses",
+        "(C) were crucial to solving the case.",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Much of the furniture (A) / in the old mansion (B) / were destroyed in the fire. (C) / No error (D)",
+      "options": [
+        "(A) Much of the furniture",
+        "(B) in the old mansion",
+        "(C) were destroyed in the fire.",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "The jury (A) / was divided (B) / in their opinion regarding the verdict. (C) / No error (D)",
+      "options": [
+        "(A) The jury",
+        "(B) was divided",
+        "(C) in their opinion regarding the verdict.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "More than one student (A) / have qualified for the scholarship (B) / in the current academic year. (C) / No error (D)",
+      "options": [
+        "(A) More than one student",
+        "(B) have qualified for the scholarship",
+        "(C) in the current academic year.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "One of the reasons (A) / for his failure in the exam (B) / are his lack of dedication. (C) / No error (D)",
+      "options": [
+        "(A) One of the reasons",
+        "(B) for his failure in the exam",
+        "(C) are his lack of dedication.",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "The Chief Minister, as well as his cabinet, (A) / are arriving in Shillong (B) / tomorrow morning. (C) / No error (D)",
+      "options": [
+        "(A) The Chief Minister, as well as his cabinet,",
+        "(B) are arriving in Shillong",
+        "(C) tomorrow morning.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Physics (A) / are a difficult subject (B) / for many high school students. (C) / No error (D)",
+      "options": [
+        "(A) Physics",
+        "(B) are a difficult subject",
+        "(C) for many high school students.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The pair of shoes (A) / that I bought yesterday (B) / are very comfortable to wear. (C) / No error (D)",
+      "options": [
+        "(A) The pair of shoes",
+        "(B) that I bought yesterday",
+        "(C) are very comfortable to wear.",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "The poor (A) / suffers the most (B) / during times of economic crisis. (C) / No error (D)",
+      "options": [
+        "(A) The poor",
+        "(B) suffers the most",
+        "(C) during times of economic crisis.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Every boy and every girl (A) / were given a certificate (B) / for participating in the event. (C) / No error (D)",
+      "options": [
+        "(A) Every boy and every girl",
+        "(B) were given a certificate",
+        "(C) for participating in the event.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Half of the mangoes (A) / in the basket (B) / is rotten. (C) / No error (D)",
+      "options": [
+        "(A) Half of the mangoes",
+        "(B) in the basket",
+        "(C) is rotten.",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "The majority of the population (A) / believe that the new law (B) / will benefit the state. (C) / No error (D)",
+      "options": [
+        "(A) The majority of the population",
+        "(B) believe that the new law",
+        "(C) will benefit the state.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "A variety of pleasant items (A) / is available (B) / in the local market today. (C) / No error (D)",
+      "options": [
+        "(A) A variety of pleasant items",
+        "(B) is available",
+        "(C) in the local market today.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "There is (A) / a pen and a pencil (B) / lying on the teacher's desk. (C) / No error (D)",
+      "options": [
+        "(A) There is",
+        "(B) a pen and a pencil",
+        "(C) lying on the teacher's desk.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "His spectacles (A) / is missing (B) / from the table since yesterday. (C) / No error (D)",
+      "options": [
+        "(A) His spectacles",
+        "(B) is missing",
+        "(C) from the table since yesterday.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The cattle (A) / is grazing (B) / peacefully in the green meadow. (C) / No error (D)",
+      "options": [
+        "(A) The cattle",
+        "(B) is grazing",
+        "(C) peacefully in the green meadow.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The principal, along with the teachers, (A) / have decided to organize (B) / a cultural programme. (C) / No error (D)",
+      "options": [
+        "(A) The principal, along with the teachers,",
+        "(B) have decided to organize",
+        "(C) a cultural programme.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Nothing but trees (A) / were visible (B) / from the top of the hill. (C) / No error (D)",
+      "options": [
+        "(A) Nothing but trees",
+        "(B) were visible",
+        "(C) from the top of the hill.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "A series of lectures (A) / have been arranged (B) / for the newly joined clerks. (C) / No error (D)",
+      "options": [
+        "(A) A series of lectures",
+        "(B) have been arranged",
+        "(C) for the newly joined clerks.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The accountant and the cashier (A) / has absconded (B) / with the office funds. (C) / No error (D)",
+      "options": [
+        "(A) The accountant and the cashier",
+        "(B) has absconded",
+        "(C) with the office funds.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Every student (A) / have to submit the assignment (B) / before the upcoming weekend. (C) / No error (D)",
+      "options": [
+        "(A) Every student",
+        "(B) have to submit the assignment",
+        "(C) before the upcoming weekend.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The behavior of the students (A) / during the school assembly (B) / were highly objectionable. (C) / No error (D)",
+      "options": [
+        "(A) The behavior of the students",
+        "(B) during the school assembly",
+        "(C) were highly objectionable.",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Both the candidates (A) / has excellent academic records (B) / and strong communication skills. (C) / No error (D)",
+      "options": [
+        "(A) Both the candidates",
+        "(B) has excellent academic records",
+        "(C) and strong communication skills.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The news broadcasted (A) / on the national television (B) / are completely fake. (C) / No error (D)",
+      "options": [
+        "(A) The news broadcasted",
+        "(B) on the national television",
+        "(C) are completely fake.",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "My pair of trousers (A) / need to be washed (B) / before the formal event. (C) / No error (D)",
+      "options": [
+        "(A) My pair of trousers",
+        "(B) need to be washed",
+        "(C) before the formal event.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The committee (A) / has issued (B) / their individual reports today. (C) / No error (D)",
+      "options": [
+        "(A) The committee",
+        "(B) has issued",
+        "(C) their individual reports today.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "I am working (A) / in this government office (B) / since 2018. (C) / No error (D)",
+      "options": [
+        "(A) I am working",
+        "(B) in this government office",
+        "(C) since 2018.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He has been suffering (A) / from severe fever (B) / for Monday last. (C) / No error (D)",
+      "options": [
+        "(A) He has been suffering",
+        "(B) from severe fever",
+        "(C) for Monday last.",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "They have lived (A) / in Shillong (B) / since ten years. (C) / No error (D)",
+      "options": [
+        "(A) They have lived",
+        "(B) in Shillong",
+        "(C) since ten years.",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "We are knowing each other (A) / since our childhood days (B) / in the same village. (C) / No error (D)",
+      "options": [
+        "(A) We are knowing each other",
+        "(B) since our childhood days",
+        "(C) in the same village.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "The construction work (A) / is going on (B) / for the last three months. (C) / No error (D)",
+      "options": [
+        "(A) The construction work",
+        "(B) is going on",
+        "(C) for the last three months.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "She has been teaching (A) / English at the college (B) / since a long time. (C) / No error (D)",
+      "options": [
+        "(A) She has been teaching",
+        "(B) English at the college",
+        "(C) since a long time.",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "I did not see him (A) / since he left his hometown (B) / to find a new job. (C) / No error (D)",
+      "options": [
+        "(A) I did not see him",
+        "(B) since he left his hometown",
+        "(C) to find a new job.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "It is raining (A) / continuously in the region (B) / since yesterday morning. (C) / No error (D)",
+      "options": [
+        "(A) It is raining",
+        "(B) continuously in the region",
+        "(C) since yesterday morning.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "The officer is on leave (A) / and is absent from duty (B) / for the 1st of March. (C) / No error (D)",
+      "options": [
+        "(A) The officer is on leave",
+        "(B) and is absent from duty",
+        "(C) for the 1st of March.",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "They are building (A) / the new bridge over the river (B) / since last year. (C) / No error (D)",
+      "options": [
+        "(A) They are building",
+        "(B) the new bridge over the river",
+        "(C) since last year.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He is owning this property (A) / in the main city center (B) / for twenty years. (C) / No error (D)",
+      "options": [
+        "(A) He is owning this property",
+        "(B) in the main city center",
+        "(C) for twenty years.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "I have been writing (A) / this report (B) / since three hours. (C) / No error (D)",
+      "options": [
+        "(A) I have been writing",
+        "(B) this report",
+        "(C) since three hours.",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Nobody has seen him (A) / for he departed (B) / from the railway station. (C) / No error (D)",
+      "options": [
+        "(A) Nobody has seen him",
+        "(B) for he departed",
+        "(C) from the railway station.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "We have been waiting (A) / for the bus to arrive (B) / since a long period. (C) / No error (D)",
+      "options": [
+        "(A) We have been waiting",
+        "(B) for the bus to arrive",
+        "(C) since a long period.",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "He has been a clerk (A) / in this department (B) / since five years. (C) / No error (D)",
+      "options": [
+        "(A) He has been a clerk",
+        "(B) in this department",
+        "(C) since five years.",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "The machinery has been out of order (A) / since the past two weeks (B) / delaying production. (C) / No error (D)",
+      "options": [
+        "(A) The machinery has been out of order",
+        "(B) since the past two weeks",
+        "(C) delaying production.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "I have been believing him (A) / since he first made the promise (B) / to help the community. (C) / No error (D)",
+      "options": [
+        "(A) I have been believing him",
+        "(B) since he first made the promise",
+        "(C) to help the community.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She has been practicing (A) / classical dance (B) / for her childhood. (C) / No error (D)",
+      "options": [
+        "(A) She has been practicing",
+        "(B) classical dance",
+        "(C) for her childhood.",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "I am standing here (A) / in the queue (B) / since 8 o'clock. (C) / No error (D)",
+      "options": [
+        "(A) I am standing here",
+        "(B) in the queue",
+        "(C) since 8 o'clock.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "We are preparing (A) / for the MPSC examination (B) / since the notification arrived. (C) / No error (D)",
+      "options": [
+        "(A) We are preparing",
+        "(B) for the MPSC examination",
+        "(C) since the notification arrived.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "The document was (A) / wrote clearly (B) / by the senior assistant. (C) / No error (D)",
+      "options": [
+        "(A) The document was",
+        "(B) wrote clearly",
+        "(C) by the senior assistant.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "He has ran (A) / all the way to the office (B) / to submit his application. (C) / No error (D)",
+      "options": [
+        "(A) He has ran",
+        "(B) all the way to the office",
+        "(C) to submit his application.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "The river has overflowed (A) / its banks and have sank (B) / many nearby villages. (C) / No error (D)",
+      "options": [
+        "(A) The river has overflowed",
+        "(B) its banks and have sank",
+        "(C) many nearby villages.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The bridge was completely (A) / broke down by the impact (B) / of the heavy floodwaters. (C) / No error (D)",
+      "options": [
+        "(A) The bridge was completely",
+        "(B) broke down by the impact",
+        "(C) of the heavy floodwaters.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "I had barely spoke (A) / to him when the manager (B) / called for a meeting. (C) / No error (D)",
+      "options": [
+        "(A) I had barely spoke",
+        "(B) to him when the manager",
+        "(C) called for a meeting.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "The thief had stole (A) / the important files (B) / from the safe before fleeing. (C) / No error (D)",
+      "options": [
+        "(A) The thief had stole",
+        "(B) the important files",
+        "(C) from the safe before fleeing.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "The old building was (A) / shook by the earthquake (B) / late last night. (C) / No error (D)",
+      "options": [
+        "(A) The old building was",
+        "(B) shook by the earthquake",
+        "(C) late last night.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "She has wore (A) / traditional attire (B) / to the official ceremony. (C) / No error (D)",
+      "options": [
+        "(A) She has wore",
+        "(B) traditional attire",
+        "(C) to the official ceremony.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "The injured man was (A) / took to the hospital (B) / by the local residents. (C) / No error (D)",
+      "options": [
+        "(A) The injured man was",
+        "(B) took to the hospital",
+        "(C) by the local residents.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "He had drove (A) / for five hours continuously (B) / to reach the venue on time. (C) / No error (D)",
+      "options": [
+        "(A) He had drove",
+        "(B) for five hours continuously",
+        "(C) to reach the venue on time.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "The water in the lake (A) / was completely froze (B) / due to the extreme winter. (C) / No error (D)",
+      "options": [
+        "(A) The water in the lake",
+        "(B) was completely froze",
+        "(C) due to the extreme winter.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The bell had rang (A) / before the students (B) / could enter the examination hall. (C) / No error (D)",
+      "options": [
+        "(A) The bell had rang",
+        "(B) before the students",
+        "(C) could enter the examination hall.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "The crucial message was (A) / sent through email but it was (B) / never saw by the recipient. (C) / No error (D)",
+      "options": [
+        "(A) The crucial message was",
+        "(B) sent through email but it was",
+        "(C) never saw by the recipient.",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "The bird has flew (A) / out of the window (B) / right before my eyes. (C) / No error (D)",
+      "options": [
+        "(A) The bird has flew",
+        "(B) out of the window",
+        "(C) right before my eyes.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "The official report (A) / was tore into pieces (B) / in a fit of rage. (C) / No error (D)",
+      "options": [
+        "(A) The official report",
+        "(B) was tore into pieces",
+        "(C) in a fit of rage.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "He had forgot (A) / to bring his admit card (B) / to the test centre. (C) / No error (D)",
+      "options": [
+        "(A) He had forgot",
+        "(B) to bring his admit card",
+        "(C) to the test centre.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "The valuable painting was (A) / hid behind the shelf (B) / to protect it from thieves. (C) / No error (D)",
+      "options": [
+        "(A) The valuable painting was",
+        "(B) hid behind the shelf",
+        "(C) to protect it from thieves.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The trees were (A) / blowed away completely (B) / by the severe cyclone. (C) / No error (D)",
+      "options": [
+        "(A) The trees were",
+        "(B) blowed away completely",
+        "(C) by the severe cyclone.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The dog had bit (A) / the intruder who tried (B) / to jump over the fence. (C) / No error (D)",
+      "options": [
+        "(A) The dog had bit",
+        "(B) the intruder who tried",
+        "(C) to jump over the fence.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "The truth was (A) / finally knew by everyone (B) / present at the meeting. (C) / No error (D)",
+      "options": [
+        "(A) The truth was",
+        "(B) finally knew by everyone",
+        "(C) present at the meeting.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The manager said that (A) / he will grant (B) / leave to the employee. (C) / No error (D)",
+      "options": [
+        "(A) The manager said that",
+        "(B) he will grant",
+        "(C) leave to the employee.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "She told me (A) / that she is preparing (B) / for the competitive exams. (C) / No error (D)",
+      "options": [
+        "(A) She told me",
+        "(B) that she is preparing",
+        "(C) for the competitive exams.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The officer warned the staff (A) / that strict action can be taken (B) / against latecomers. (C) / No error (D)",
+      "options": [
+        "(A) The officer warned the staff",
+        "(B) that strict action can be taken",
+        "(C) against latecomers.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "He asked me (A) / where I am going (B) / so early in the morning. (C) / No error (D)",
+      "options": [
+        "(A) He asked me",
+        "(B) where I am going",
+        "(C) so early in the morning.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The teacher announced (A) / that the school will remain closed (B) / on the following day. (C) / No error (D)",
+      "options": [
+        "(A) The teacher announced",
+        "(B) that the school will remain closed",
+        "(C) on the following day.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "They stated that (A) / they have finished (B) / the project successfully. (C) / No error (D)",
+      "options": [
+        "(A) They stated that",
+        "(B) they have finished",
+        "(C) the project successfully.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The witness reported (A) / that he has seen (B) / the suspect near the crime scene. (C) / No error (D)",
+      "options": [
+        "(A) The witness reported",
+        "(B) that he has seen",
+        "(C) the suspect near the crime scene.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The principal ordered (A) / the peon that he rings (B) / the bell immediately. (C) / No error (D)",
+      "options": [
+        "(A) The principal ordered",
+        "(B) the peon that he rings",
+        "(C) the bell immediately.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "He exclaimed with joy (A) / that they have won (B) / the inter-district tournament. (C) / No error (D)",
+      "options": [
+        "(A) He exclaimed with joy",
+        "(B) that they have won",
+        "(C) the inter-district tournament.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The candidate asked (A) / if he may enter (B) / the interview room. (C) / No error (D)",
+      "options": [
+        "(A) The candidate asked",
+        "(B) if he may enter",
+        "(C) the interview room.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The tourist wanted to know (A) / where was the nearest (B) / historical monument. (C) / No error (D)",
+      "options": [
+        "(A) The tourist wanted to know",
+        "(B) where was the nearest",
+        "(C) historical monument.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "She replied confidently (A) / that she can complete (B) / the task before sunset. (C) / No error (D)",
+      "options": [
+        "(A) She replied confidently",
+        "(B) that she can complete",
+        "(C) the task before sunset.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The doctor advised the patient (A) / that he should took (B) / the medicine regularly. (C) / No error (D)",
+      "options": [
+        "(A) The doctor advised the patient",
+        "(B) that he should took",
+        "(C) the medicine regularly.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The guide told us (A) / that the museum is closed (B) / on Mondays. (C) / No error (D)",
+      "options": [
+        "(A) The guide told us",
+        "(B) that the museum is closed",
+        "(C) on Mondays.",
+        "(D) No error"
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "The minister promised (A) / that roads will be constructed (B) / in the rural areas soon. (C) / No error (D)",
+      "options": [
+        "(A) The minister promised",
+        "(B) that roads will be constructed",
+        "(C) in the rural areas soon.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "He asked his colleague (A) / that why he was late (B) / for the essential briefing. (C) / No error (D)",
+      "options": [
+        "(A) He asked his colleague",
+        "(B) that why he was late",
+        "(C) for the essential briefing.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The passenger complained (A) / that the train is running (B) / three hours late. (C) / No error (D)",
+      "options": [
+        "(A) The passenger complained",
+        "(B) that the train is running",
+        "(C) three hours late.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "She asked me (A) / whether I have seen (B) / her missing file. (C) / No error (D)",
+      "options": [
+        "(A) She asked me",
+        "(B) whether I have seen",
+        "(C) her missing file.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The chairman proposed (A) / that we shall adjourn (B) / the meeting for lunch. (C) / No error (D)",
+      "options": [
+        "(A) The chairman proposed",
+        "(B) that we shall adjourn",
+        "(C) the meeting for lunch.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "He swore (A) / that he has never stolen (B) / anything in his life. (C) / No error (D)",
+      "options": [
+        "(A) He swore",
+        "(B) that he has never stolen",
+        "(C) anything in his life.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "You should submit (A) / the application tomorrow, (B) / should you? (C) / No error (D)",
+      "options": [
+        "(A) You should submit",
+        "(B) the application tomorrow,",
+        "(C) should you?",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Both of the boys (A) / were absent yesterday, (B) / were they? (C) / No error (D)",
+      "options": [
+        "(A) Both of the boys",
+        "(B) were absent yesterday,",
+        "(C) were they?",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Neither of the plans (A) / worked out properly, (B) / didn't they? (C) / No error (D)",
+      "options": [
+        "(A) Neither of the plans",
+        "(B) worked out properly,",
+        "(C) didn't they?",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "We should always respect (A) / our national flag, (B) / shouldn't us? (C) / No error (D)",
+      "options": [
+        "(A) We should always respect",
+        "(B) our national flag,",
+        "(C) shouldn't us?",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Both the files (A) / have been updated, (B) / hasn't they? (C) / No error (D)",
+      "options": [
+        "(A) Both the files",
+        "(B) have been updated,",
+        "(C) hasn't they?",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Neither of the employees (A) / is willing to work late, (B) / are they? (C) / No error (D)",
+      "options": [
+        "(A) Neither of the employees",
+        "(B) is willing to work late,",
+        "(C) are they?",
+        "(D) No error"
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "The government should (A) / reduce the taxes, (B) / ought it? (C) / No error (D)",
+      "options": [
+        "(A) The government should",
+        "(B) reduce the taxes,",
+        "(C) ought it?",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Both the candidates (A) / performed very well, (B) / did they? (C) / No error (D)",
+      "options": [
+        "(A) Both the candidates",
+        "(B) performed very well,",
+        "(C) did they?",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Neither of the roads (A) / leads to the station, (B) / don't they? (C) / No error (D)",
+      "options": [
+        "(A) Neither of the roads",
+        "(B) leads to the station,",
+        "(C) don't they?",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Students should focus (A) / on their studies, (B) / shouldn't they? (C) / No error (D)",
+      "options": [
+        "(A) Students should focus",
+        "(B) on their studies,",
+        "(C) shouldn't they?",
+        "(D) No error"
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "Both of you (A) / can drive the car, (B) / can't you? (C) / No error (D)",
+      "options": [
+        "(A) Both of you",
+        "(B) can drive the car,",
+        "(C) can't you?",
+        "(D) No error"
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "Neither of the options (A) / is correct in this question, (B) / isn't it? (C) / No error (D)",
+      "options": [
+        "(A) Neither of the options",
+        "(B) is correct in this question,",
+        "(C) isn't it?",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "We should not waste (A) / natural resources unnecessarily, (B) / shouldn't we? (C) / No error (D)",
+      "options": [
+        "(A) We should not waste",
+        "(B) natural resources unnecessarily,",
+        "(C) shouldn't we?",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Both the brothers (A) / are preparing for exams, (B) / are they? (C) / No error (D)",
+      "options": [
+        "(A) Both the brothers",
+        "(B) are preparing for exams,",
+        "(C) are they?",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Neither of the members (A) / attended the meeting, (B) / didn't they? (C) / No error (D)",
+      "options": [
+        "(A) Neither of the members",
+        "(B) attended the meeting,",
+        "(C) didn't they?",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "He should apologize (A) / for his rude behavior, (B) / should he not? (C) / No error (D)",
+      "options": [
+        "(A) He should apologize",
+        "(B) for his rude behavior,",
+        "(C) should he not?",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Both of the machines (A) / have broken down, (B) / hasn't it? (C) / No error (D)",
+      "options": [
+        "(A) Both of the machines",
+        "(B) have broken down,",
+        "(C) hasn't it?",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Neither of the women (A) / was present there, (B) / wasn't they? (C) / No error (D)",
+      "options": [
+        "(A) Neither of the women",
+        "(B) was present there,",
+        "(C) wasn't they?",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "They should leave (A) / immediately to catch the bus, (B) / should they? (C) / No error (D)",
+      "options": [
+        "(A) They should leave",
+        "(B) immediately to catch the bus,",
+        "(C) should they?",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Both of the books (A) / are highly informative, (B) / aren't they? (C) / No error (D)",
+      "options": [
+        "(A) Both of the books",
+        "(B) are highly informative,",
+        "(C) aren't they?",
+        "(D) No error"
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "The news of his promotion (A) / have spread rapidly (B) / throughout the entire office. (C) / No error (D)",
+      "options": [
+        "(A) The news of his promotion",
+        "(B) have spread rapidly",
+        "(C) throughout the entire office.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Either my sister or I (A) / is responsible for booking (B) / the tickets for the journey. (C) / No error (D)",
+      "options": [
+        "(A) Either my sister or I",
+        "(B) is responsible for booking",
+        "(C) the tickets for the journey.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The cost of all (A) / essential commodities (B) / have increased drastically. (C) / No error (D)",
+      "options": [
+        "(A) The cost of all",
+        "(B) essential commodities",
+        "(C) have increased drastically.",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Many a student (A) / are aspiring to become (B) / civil servants in the state. (C) / No error (D)",
+      "options": [
+        "(A) Many a student",
+        "(B) are aspiring to become",
+        "(C) civil servants in the state.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The Director, together with (A) / the staff members, (B) / are present in the hall. (C) / No error (D)",
+      "options": [
+        "(A) The Director, together with",
+        "(B) the staff members,",
+        "(C) are present in the hall.",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Three-fourths of the land (A) / have been utilized (B) / for agricultural purposes. (C) / No error (D)",
+      "options": [
+        "(A) Three-fourths of the land",
+        "(B) have been utilized",
+        "(C) for agricultural purposes.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Economics (A) / are an interesting subject (B) / if taught properly. (C) / No error (D)",
+      "options": [
+        "(A) Economics",
+        "(B) are an interesting subject",
+        "(C) if taught properly.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The jury (A) / were unanimous (B) / in taking this crucial decision. (C) / No error (D)",
+      "options": [
+        "(A) The jury",
+        "(B) were unanimous",
+        "(C) in taking this crucial decision.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "One of my best friends (A) / are going to visit (B) / Shillong next week. (C) / No error (D)",
+      "options": [
+        "(A) One of my best friends",
+        "(B) are going to visit",
+        "(C) Shillong next week.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Not only the soldiers (A) / but also the commander (B) / were honored for bravery. (C) / No error (D)",
+      "options": [
+        "(A) Not only the soldiers",
+        "(B) but also the commander",
+        "(C) were honored for bravery.",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "He is working (A) / in the finance department (B) / since last January. (C) / No error (D)",
+      "options": [
+        "(A) He is working",
+        "(B) in the finance department",
+        "(C) since last January.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "The machine is malfunctioning (A) / continuously (B) / for the last three days. (C) / No error (D)",
+      "options": [
+        "(A) The machine is malfunctioning",
+        "(B) continuously",
+        "(C) for the last three days.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "We know him (A) / very well (B) / since many years. (C) / No error (D)",
+      "options": [
+        "(A) We know him",
+        "(B) very well",
+        "(C) since many years.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She has been staying (A) / in the hostel (B) / for 2019. (C) / No error (D)",
+      "options": [
+        "(A) She has been staying",
+        "(B) in the hostel",
+        "(C) for 2019.",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "They are searching (A) / for the missing documents (B) / since morning. (C) / No error (D)",
+      "options": [
+        "(A) They are searching",
+        "(B) for the missing documents",
+        "(C) since morning.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "I am having (A) / this old vehicle (B) / since I got my first job. (C) / No error (D)",
+      "options": [
+        "(A) I am having",
+        "(B) this old vehicle",
+        "(C) since I got my first job.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He did not play (A) / any outdoor sports (B) / since he fractured his leg. (C) / No error (D)",
+      "options": [
+        "(A) He did not play",
+        "(B) any outdoor sports",
+        "(C) since he fractured his leg.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "The scheme has been running (A) / successfully in the state (B) / since ten months. (C) / No error (D)",
+      "options": [
+        "(A) The scheme has been running",
+        "(B) successfully in the state",
+        "(C) since ten months.",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "She is suffering (A) / from severe headache (B) / for yesterday evening. (C) / No error (D)",
+      "options": [
+        "(A) She is suffering",
+        "(B) from severe headache",
+        "(C) for yesterday evening.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "I have been hearing (A) / rumors about his transfer (B) / since quite some time. (C) / No error (D)",
+      "options": [
+        "(A) I have been hearing",
+        "(B) rumors about his transfer",
+        "(C) since quite some time.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "The letter was (A) / carefully write by the clerk (B) / and signed by the officer. (C) / No error (D)",
+      "options": [
+        "(A) The letter was",
+        "(B) carefully write by the clerk",
+        "(C) and signed by the officer.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "He has swam (A) / across the dangerous river (B) / multiple times. (C) / No error (D)",
+      "options": [
+        "(A) He has swam",
+        "(B) across the dangerous river",
+        "(C) multiple times.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "The old tree was (A) / completely shook (B) / by the violent storm. (C) / No error (D)",
+      "options": [
+        "(A) The old tree was",
+        "(B) completely shook",
+        "(C) by the violent storm.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The glass window was (A) / broke by the boys (B) / playing cricket outside. (C) / No error (D)",
+      "options": [
+        "(A) The glass window was",
+        "(B) broke by the boys",
+        "(C) playing cricket outside.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "She had sang (A) / a melodious song (B) / at the annual function. (C) / No error (D)",
+      "options": [
+        "(A) She had sang",
+        "(B) a melodious song",
+        "(C) at the annual function.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "The secret files were (A) / stole from the cabinet (B) / during the power cut. (C) / No error (D)",
+      "options": [
+        "(A) The secret files were",
+        "(B) stole from the cabinet",
+        "(C) during the power cut.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The heavy vehicle had (A) / sank into the mud (B) / due to the heavy rain. (C) / No error (D)",
+      "options": [
+        "(A) The heavy vehicle had",
+        "(B) sank into the mud",
+        "(C) due to the heavy rain.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The clothes were (A) / completely tore (B) / when they caught on the wire. (C) / No error (D)",
+      "options": [
+        "(A) The clothes were",
+        "(B) completely tore",
+        "(C) when they caught on the wire.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "He has drank (A) / three cups of coffee (B) / since this morning. (C) / No error (D)",
+      "options": [
+        "(A) He has drank",
+        "(B) three cups of coffee",
+        "(C) since this morning.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "The picture was (A) / drew by an artist (B) / who visited the state recently. (C) / No error (D)",
+      "options": [
+        "(A) The picture was",
+        "(B) drew by an artist",
+        "(C) who visited the state recently.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The candidate asked the invigilator (A) / that whether he could (B) / use a black pen. (C) / No error (D)",
+      "options": [
+        "(A) The candidate asked the invigilator",
+        "(B) that whether he could",
+        "(C) use a black pen.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "He commanded his subordinates (A) / that they must finish (B) / the pending tasks. (C) / No error (D)",
+      "options": [
+        "(A) He commanded his subordinates",
+        "(B) that they must finish",
+        "(C) the pending tasks.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The headmaster told the boys (A) / that honesty was (B) / the best policy. (C) / No error (D)",
+      "options": [
+        "(A) The headmaster told the boys",
+        "(B) that honesty was",
+        "(C) the best policy.",
+        "(D) No error"
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "She asked me (A) / what was my name (B) / and where I lived. (C) / No error (D)",
+      "options": [
+        "(A) She asked me",
+        "(B) what was my name",
+        "(C) and where I lived.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The old man urged (A) / to the youth to plant (B) / more trees for the future. (C) / No error (D)",
+      "options": [
+        "(A) The old man urged",
+        "(B) to the youth to plant",
+        "(C) more trees for the future.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "He said that (A) / he has been studying (B) / for the examination all night. (C) / No error (D)",
+      "options": [
+        "(A) He said that",
+        "(B) he has been studying",
+        "(C) for the examination all night.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The police asked the suspect (A) / where he went (B) / on the night of the crime. (C) / No error (D)",
+      "options": [
+        "(A) The police asked the suspect",
+        "(B) where he went",
+        "(C) on the night of the crime.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The manager suggested (A) / that the meeting can be postponed (B) / to the following week. (C) / No error (D)",
+      "options": [
+        "(A) The manager suggested",
+        "(B) that the meeting can be postponed",
+        "(C) to the following week.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The lady exclaimed with sorrow (A) / that she loses (B) / her diamond ring. (C) / No error (D)",
+      "options": [
+        "(A) The lady exclaimed with sorrow",
+        "(B) that she loses",
+        "(C) her diamond ring.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "I told him (A) / that I will help him (B) / whenever he needed it. (C) / No error (D)",
+      "options": [
+        "(A) I told him",
+        "(B) that I will help him",
+        "(C) whenever he needed it.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Both the candidates should (A) / prepare thoroughly for the exam, (B) / shouldn't they? (C) / No error (D)",
+      "options": [
+        "(A) Both the candidates should",
+        "(B) prepare thoroughly for the exam,",
+        "(C) shouldn't they?",
+        "(D) No error"
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "Neither of the proposals (A) / was accepted by the committee, (B) / wasn't it? (C) / No error (D)",
+      "options": [
+        "(A) Neither of the proposals",
+        "(B) was accepted by the committee,",
+        "(C) wasn't it?",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "You should not ignore (A) / the official circulars, (B) / should you? (C) / No error (D)",
+      "options": [
+        "(A) You should not ignore",
+        "(B) the official circulars,",
+        "(C) should you?",
+        "(D) No error"
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "Both the ministers (A) / were present in the assembly, (B) / were they? (C) / No error (D)",
+      "options": [
+        "(A) Both the ministers",
+        "(B) were present in the assembly,",
+        "(C) were they?",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Neither of them (A) / has completed the assignment, (B) / hasn't they? (C) / No error (D)",
+      "options": [
+        "(A) Neither of them",
+        "(B) has completed the assignment,",
+        "(C) hasn't they?",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "The citizens should (A) / obey the traffic rules, (B) / shouldn't they? (C) / No error (D)",
+      "options": [
+        "(A) The citizens should",
+        "(B) obey the traffic rules,",
+        "(C) shouldn't they?",
+        "(D) No error"
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "Both the policies (A) / have failed miserably, (B) / hasn't it? (C) / No error (D)",
+      "options": [
+        "(A) Both the policies",
+        "(B) have failed miserably,",
+        "(C) hasn't it?",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Neither of the boys (A) / is guilty of the crime, (B) / aren't they? (C) / No error (D)",
+      "options": [
+        "(A) Neither of the boys",
+        "(B) is guilty of the crime,",
+        "(C) aren't they?",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "He should have (A) / informed the authority earlier, (B) / shouldn't he have? (C) / No error (D)",
+      "options": [
+        "(A) He should have",
+        "(B) informed the authority earlier,",
+        "(C) shouldn't he have?",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Both the rivers (A) / are overflowing their banks, (B) / aren't they? (C) / No error (D)",
+      "options": [
+        "(A) Both the rivers",
+        "(B) are overflowing their banks,",
+        "(C) aren't they?",
+        "(D) No error"
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "The number of candidates (A) / appearing for the LDA exam (B) / are increasing every year. (C) / No error (D)",
+      "options": [
+        "(A) The number of candidates",
+        "(B) appearing for the LDA exam",
+        "(C) are increasing every year.",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "A great deal of money (A) / have been spent (B) / on renovating the old secretariat. (C) / No error (D)",
+      "options": [
+        "(A) A great deal of money",
+        "(B) have been spent",
+        "(C) on renovating the old secretariat.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "None of the applicants (A) / has submitted their (B) / medical certificates yet. (C) / No error (D)",
+      "options": [
+        "(A) None of the applicants",
+        "(B) has submitted their",
+        "(C) medical certificates yet.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The scissors that I (A) / bought from the market (B) / is quite blunt. (C) / No error (D)",
+      "options": [
+        "(A) The scissors that I",
+        "(B) bought from the market",
+        "(C) is quite blunt.",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Measles (A) / are a highly contagious disease (B) / affecting young children. (C) / No error (D)",
+      "options": [
+        "(A) Measles",
+        "(B) are a highly contagious disease",
+        "(C) affecting young children.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The teacher as well as (A) / the students is going (B) / on an educational tour. (C) / No error (D)",
+      "options": [
+        "(A) The teacher as well as",
+        "(B) the students is going",
+        "(C) on an educational tour.",
+        "(D) No error"
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "Neither the manager (A) / nor the workers (B) / is happy with the new policy. (C) / No error (D)",
+      "options": [
+        "(A) Neither the manager",
+        "(B) nor the workers",
+        "(C) is happy with the new policy.",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "The Arabian Nights (A) / are an excellent book (B) / for young readers. (C) / No error (D)",
+      "options": [
+        "(A) The Arabian Nights",
+        "(B) are an excellent book",
+        "(C) for young readers.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "A pair of trousers (A) / were hanging (B) / on the clothesline. (C) / No error (D)",
+      "options": [
+        "(A) A pair of trousers",
+        "(B) were hanging",
+        "(C) on the clothesline.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Everyone of the staff members (A) / were present (B) / during the sudden inspection. (C) / No error (D)",
+      "options": [
+        "(A) Everyone of the staff members",
+        "(B) were present",
+        "(C) during the sudden inspection.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "I am studying (A) / in this prestigious university (B) / since four years. (C) / No error (D)",
+      "options": [
+        "(A) I am studying",
+        "(B) in this prestigious university",
+        "(C) since four years.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "The new manager has been (A) / handling the project (B) / since a week. (C) / No error (D)",
+      "options": [
+        "(A) The new manager has been",
+        "(B) handling the project",
+        "(C) since a week.",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "He did not call me (A) / since he left (B) / for his official tour. (C) / No error (D)",
+      "options": [
+        "(A) He did not call me",
+        "(B) since he left",
+        "(C) for his official tour.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She is knowing (A) / about the problem (B) / since last month. (C) / No error (D)",
+      "options": [
+        "(A) She is knowing",
+        "(B) about the problem",
+        "(C) since last month.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "We have been living (A) / in this rented apartment (B) / for 2012. (C) / No error (D)",
+      "options": [
+        "(A) We have been living",
+        "(B) in this rented apartment",
+        "(C) for 2012.",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "The road is being repaired (A) / continuously (B) / since two months. (C) / No error (D)",
+      "options": [
+        "(A) The road is being repaired",
+        "(B) continuously",
+        "(C) since two months.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "I am waiting (A) / for the manager's approval (B) / since yesterday. (C) / No error (D)",
+      "options": [
+        "(A) I am waiting",
+        "(B) for the manager's approval",
+        "(C) since yesterday.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He has been playing (A) / football for the state team (B) / since a long time. (C) / No error (D)",
+      "options": [
+        "(A) He has been playing",
+        "(B) football for the state team",
+        "(C) since a long time.",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "They are working (A) / on this new proposal (B) / since morning. (C) / No error (D)",
+      "options": [
+        "(A) They are working",
+        "(B) on this new proposal",
+        "(C) since morning.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "Nobody has visited (A) / this remote village (B) / for a long time. (C) / No error (D)",
+      "options": [
+        "(A) Nobody has visited",
+        "(B) this remote village",
+        "(C) for a long time.",
+        "(D) No error"
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "The fragile vase was (A) / completely broke (B) / when it fell from the table. (C) / No error (D)",
+      "options": [
+        "(A) The fragile vase was",
+        "(B) completely broke",
+        "(C) when it fell from the table.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "He has wrote (A) / a detailed letter (B) / to the district magistrate. (C) / No error (D)",
+      "options": [
+        "(A) He has wrote",
+        "(B) a detailed letter",
+        "(C) to the district magistrate.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "The criminal had hid (A) / the stolen money (B) / under the floorboards. (C) / No error (D)",
+      "options": [
+        "(A) The criminal had hid",
+        "(B) the stolen money",
+        "(C) under the floorboards.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "The cloth was (A) / tore by the tailor (B) / by mistake. (C) / No error (D)",
+      "options": [
+        "(A) The cloth was",
+        "(B) tore by the tailor",
+        "(C) by mistake.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "She had spoke (A) / very rudely (B) / to the customer service executive. (C) / No error (D)",
+      "options": [
+        "(A) She had spoke",
+        "(B) very rudely",
+        "(C) to the customer service executive.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "The water in the pond (A) / was completely froze (B) / during the harsh winter. (C) / No error (D)",
+      "options": [
+        "(A) The water in the pond",
+        "(B) was completely froze",
+        "(C) during the harsh winter.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The car was (A) / drove carelessly (B) / by the unlicensed driver. (C) / No error (D)",
+      "options": [
+        "(A) The car was",
+        "(B) drove carelessly",
+        "(C) by the unlicensed driver.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "He had drank (A) / all the water (B) / left in the bottle. (C) / No error (D)",
+      "options": [
+        "(A) He had drank",
+        "(B) all the water",
+        "(C) left in the bottle.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "The bell had rang (A) / just as I stepped (B) / into the classroom. (C) / No error (D)",
+      "options": [
+        "(A) The bell had rang",
+        "(B) just as I stepped",
+        "(C) into the classroom.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "The application was (A) / gave to the officer (B) / by hand. (C) / No error (D)",
+      "options": [
+        "(A) The application was",
+        "(B) gave to the officer",
+        "(C) by hand.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "He told me that (A) / he has finished (B) / his duty for the day. (C) / No error (D)",
+      "options": [
+        "(A) He told me that",
+        "(B) he has finished",
+        "(C) his duty for the day.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The lady asked the shopkeeper (A) / what is the price (B) / of the silk saree. (C) / No error (D)",
+      "options": [
+        "(A) The lady asked the shopkeeper",
+        "(B) what is the price",
+        "(C) of the silk saree.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The supervisor warned the workers (A) / that they will be fired (B) / if they continued to strike. (C) / No error (D)",
+      "options": [
+        "(A) The supervisor warned the workers",
+        "(B) that they will be fired",
+        "(C) if they continued to strike.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "She commanded her servant (A) / that he cleans (B) / the room immediately. (C) / No error (D)",
+      "options": [
+        "(A) She commanded her servant",
+        "(B) that he cleans",
+        "(C) the room immediately.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "He suggested to his friends (A) / that they shall go (B) / for a picnic on Sunday. (C) / No error (D)",
+      "options": [
+        "(A) He suggested to his friends",
+        "(B) that they shall go",
+        "(C) for a picnic on Sunday.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The student inquired (A) / when will the results (B) / be declared by the board. (C) / No error (D)",
+      "options": [
+        "(A) The student inquired",
+        "(B) when will the results",
+        "(C) be declared by the board.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The principal asked the peon (A) / why he is absent (B) / without prior notice. (C) / No error (D)",
+      "options": [
+        "(A) The principal asked the peon",
+        "(B) why he is absent",
+        "(C) without prior notice.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "He exclaimed with joy (A) / that it is a (B) / very beautiful sight. (C) / No error (D)",
+      "options": [
+        "(A) He exclaimed with joy",
+        "(B) that it is a",
+        "(C) very beautiful sight.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The doctor advised the patient (A) / not eat any (B) / oily food for a week. (C) / No error (D)",
+      "options": [
+        "(A) The doctor advised the patient",
+        "(B) not eat any",
+        "(C) oily food for a week.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "She asked her mother (A) / if she can go (B) / to the market alone. (C) / No error (D)",
+      "options": [
+        "(A) She asked her mother",
+        "(B) if she can go",
+        "(C) to the market alone.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Neither of the proposals (A) / was suitable for the project, (B) / wasn't it? (C) / No error (D)",
+      "options": [
+        "(A) Neither of the proposals",
+        "(B) was suitable for the project,",
+        "(C) wasn't it?",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Both the candidates (A) / should submit their forms, (B) / shouldn't they? (C) / No error (D)",
+      "options": [
+        "(A) Both the candidates",
+        "(B) should submit their forms,",
+        "(C) shouldn't they?",
+        "(D) No error"
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "He should have finished (A) / the work by now, (B) / shouldn't he? (C) / No error (D)",
+      "options": [
+        "(A) He should have finished",
+        "(B) the work by now,",
+        "(C) shouldn't he?",
+        "(D) No error"
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "Neither of the boys (A) / are going to the fair, (B) / are they? (C) / No error (D)",
+      "options": [
+        "(A) Neither of the boys",
+        "(B) are going to the fair,",
+        "(C) are they?",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Both of them (A) / were laughing loudly, (B) / wasn't they? (C) / No error (D)",
+      "options": [
+        "(A) Both of them",
+        "(B) were laughing loudly,",
+        "(C) wasn't they?",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "You should respect (A) / your elders, (B) / should you? (C) / No error (D)",
+      "options": [
+        "(A) You should respect",
+        "(B) your elders,",
+        "(C) should you?",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Neither of the doors (A) / was locked from inside, (B) / were they? (C) / No error (D)",
+      "options": [
+        "(A) Neither of the doors",
+        "(B) was locked from inside,",
+        "(C) were they?",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Both the solutions (A) / are practically viable, (B) / are they? (C) / No error (D)",
+      "options": [
+        "(A) Both the solutions",
+        "(B) are practically viable,",
+        "(C) are they?",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "The students should not (A) / make noise in the library, (B) / shouldn't they? (C) / No error (D)",
+      "options": [
+        "(A) The students should not",
+        "(B) make noise in the library,",
+        "(C) shouldn't they?",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Neither of the pens (A) / writes smoothly, (B) / do they? (C) / No error (D)",
+      "options": [
+        "(A) Neither of the pens",
+        "(B) writes smoothly,",
+        "(C) do they?",
+        "(D) No error"
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "A flock of sheep (A) / are grazing in the field (B) / near the highway. (C) / No error (D)",
+      "options": [
+        "(A) A flock of sheep",
+        "(B) are grazing in the field",
+        "(C) near the highway.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The Prime Minister, as well as (A) / the chief ministers, (B) / have arrived for the summit. (C) / No error (D)",
+      "options": [
+        "(A) The Prime Minister, as well as",
+        "(B) the chief ministers,",
+        "(C) have arrived for the summit.",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Either he or I (A) / are to blame (B) / for this massive loss. (C) / No error (D)",
+      "options": [
+        "(A) Either he or I",
+        "(B) are to blame",
+        "(C) for this massive loss.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Gulliver's Travels (A) / were written by (B) / Jonathan Swift. (C) / No error (D)",
+      "options": [
+        "(A) Gulliver's Travels",
+        "(B) were written by",
+        "(C) Jonathan Swift.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Each of the items (A) / in this shop (B) / are very expensive. (C) / No error (D)",
+      "options": [
+        "(A) Each of the items",
+        "(B) in this shop",
+        "(C) are very expensive.",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Mathematics (A) / are a crucial subject (B) / for engineering students. (C) / No error (D)",
+      "options": [
+        "(A) Mathematics",
+        "(B) are a crucial subject",
+        "(C) for engineering students.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The news (A) / broadcasted on the radio (B) / are alarming. (C) / No error (D)",
+      "options": [
+        "(A) The news",
+        "(B) broadcasted on the radio",
+        "(C) are alarming.",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "A pair of spectacles (A) / have been found (B) / in the examination hall. (C) / No error (D)",
+      "options": [
+        "(A) A pair of spectacles",
+        "(B) have been found",
+        "(C) in the examination hall.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "More than one person (A) / have been involved (B) / in this conspiracy. (C) / No error (D)",
+      "options": [
+        "(A) More than one person",
+        "(B) have been involved",
+        "(C) in this conspiracy.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The committee (A) / is divided (B) / on the issue of the new policy. (C) / No error (D)",
+      "options": [
+        "(A) The committee",
+        "(B) is divided",
+        "(C) on the issue of the new policy.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "I am working (A) / as a Lower Division Assistant (B) / since three years. (C) / No error (D)",
+      "options": [
+        "(A) I am working",
+        "(B) as a Lower Division Assistant",
+        "(C) since three years.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She has been ill (A) / with typhoid (B) / for last Monday. (C) / No error (D)",
+      "options": [
+        "(A) She has been ill",
+        "(B) with typhoid",
+        "(C) for last Monday.",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "They are living (A) / in Meghalaya (B) / since their childhood. (C) / No error (D)",
+      "options": [
+        "(A) They are living",
+        "(B) in Meghalaya",
+        "(C) since their childhood.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "We are preparing (A) / for the sports meet (B) / for the last one month. (C) / No error (D)",
+      "options": [
+        "(A) We are preparing",
+        "(B) for the sports meet",
+        "(C) for the last one month.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He has been absent (A) / from his duties (B) / since a week. (C) / No error (D)",
+      "options": [
+        "(A) He has been absent",
+        "(B) from his duties",
+        "(C) since a week.",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "The water has been dripping (A) / from the ceiling (B) / since three hours. (C) / No error (D)",
+      "options": [
+        "(A) The water has been dripping",
+        "(B) from the ceiling",
+        "(C) since three hours.",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "I did not meet him (A) / since he was transferred (B) / to another district. (C) / No error (D)",
+      "options": [
+        "(A) I did not meet him",
+        "(B) since he was transferred",
+        "(C) to another district.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "The company has been (A) / facing huge losses (B) / for 2020. (C) / No error (D)",
+      "options": [
+        "(A) The company has been",
+        "(B) facing huge losses",
+        "(C) for 2020.",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "He is writing (A) / the comprehensive report (B) / since 9 AM. (C) / No error (D)",
+      "options": [
+        "(A) He is writing",
+        "(B) the comprehensive report",
+        "(C) since 9 AM.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "The dog is barking (A) / continuously at the stranger (B) / for a long time. (C) / No error (D)",
+      "options": [
+        "(A) The dog is barking",
+        "(B) continuously at the stranger",
+        "(C) for a long time.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "The old bridge was (A) / severely shake (B) / when the heavy truck passed. (C) / No error (D)",
+      "options": [
+        "(A) The old bridge was",
+        "(B) severely shake",
+        "(C) when the heavy truck passed.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The letter had (A) / fell behind the desk (B) / and remained hidden. (C) / No error (D)",
+      "options": [
+        "(A) The letter had",
+        "(B) fell behind the desk",
+        "(C) and remained hidden.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "He has broke (A) / all the previous records (B) / in the high jump event. (C) / No error (D)",
+      "options": [
+        "(A) He has broke",
+        "(B) all the previous records",
+        "(C) in the high jump event.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "The song was (A) / beautifully sang by the choir (B) / during the ceremony. (C) / No error (D)",
+      "options": [
+        "(A) The song was",
+        "(B) beautifully sang by the choir",
+        "(C) during the ceremony.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "She had tore (A) / the paper into pieces (B) / before throwing it away. (C) / No error (D)",
+      "options": [
+        "(A) She had tore",
+        "(B) the paper into pieces",
+        "(C) before throwing it away.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "The suspect had (A) / hid the weapon (B) / inside the abandoned warehouse. (C) / No error (D)",
+      "options": [
+        "(A) The suspect had",
+        "(B) hid the weapon",
+        "(C) inside the abandoned warehouse.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The water has (A) / completely froze (B) / in the pipes overnight. (C) / No error (D)",
+      "options": [
+        "(A) The water has",
+        "(B) completely froze",
+        "(C) in the pipes overnight.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "He had drove (A) / rashly on the highway (B) / and caused an accident. (C) / No error (D)",
+      "options": [
+        "(A) He had drove",
+        "(B) rashly on the highway",
+        "(C) and caused an accident.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "The bird had (A) / flew away from the cage (B) / when the door was opened. (C) / No error (D)",
+      "options": [
+        "(A) The bird had",
+        "(B) flew away from the cage",
+        "(C) when the door was opened.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The documents were (A) / stole from the office (B) / over the long weekend. (C) / No error (D)",
+      "options": [
+        "(A) The documents were",
+        "(B) stole from the office",
+        "(C) over the long weekend.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "He said that (A) / the sun rises (B) / in the east. (C) / No error (D)",
+      "options": [
+        "(A) He said that",
+        "(B) the sun rises",
+        "(C) in the east.",
+        "(D) No error"
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "The officer ordered his men (A) / that they march (B) / forward immediately. (C) / No error (D)",
+      "options": [
+        "(A) The officer ordered his men",
+        "(B) that they march",
+        "(C) forward immediately.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "She asked me (A) / whether I have finished (B) / the reading assignment. (C) / No error (D)",
+      "options": [
+        "(A) She asked me",
+        "(B) whether I have finished",
+        "(C) the reading assignment.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The mother told her son (A) / that he must not to play (B) / with fire. (C) / No error (D)",
+      "options": [
+        "(A) The mother told her son",
+        "(B) that he must not to play",
+        "(C) with fire.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "He exclaimed with sorrow (A) / that he has lost (B) / his new smartphone. (C) / No error (D)",
+      "options": [
+        "(A) He exclaimed with sorrow",
+        "(B) that he has lost",
+        "(C) his new smartphone.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The traveler asked the stranger (A) / where the post office was (B) / located in that town. (C) / No error (D)",
+      "options": [
+        "(A) The traveler asked the stranger",
+        "(B) where the post office was",
+        "(C) located in that town.",
+        "(D) No error"
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "She said that (A) / she will meet him (B) / the next day at the station. (C) / No error (D)",
+      "options": [
+        "(A) She said that",
+        "(B) she will meet him",
+        "(C) the next day at the station.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The manager urged the staff (A) / that they should completed (B) / the work on time. (C) / No error (D)",
+      "options": [
+        "(A) The manager urged the staff",
+        "(B) that they should completed",
+        "(C) the work on time.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The beggar pleaded (A) / with the rich man that he give (B) / him some food. (C) / No error (D)",
+      "options": [
+        "(A) The beggar pleaded",
+        "(B) with the rich man that he give",
+        "(C) him some food.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "He told me (A) / that he is not feeling well (B) / since yesterday. (C) / No error (D)",
+      "options": [
+        "(A) He told me",
+        "(B) that he is not feeling well",
+        "(C) since yesterday.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Both the systems (A) / should be checked properly, (B) / shouldn't they? (C) / No error (D)",
+      "options": [
+        "(A) Both the systems",
+        "(B) should be checked properly,",
+        "(C) shouldn't they?",
+        "(D) No error"
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "Neither of the children (A) / like playing in the sun, (B) / does they? (C) / No error (D)",
+      "options": [
+        "(A) Neither of the children",
+        "(B) like playing in the sun,",
+        "(C) does they?",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "You should not have (A) / spoken to him like that, (B) / should you have? (C) / No error (D)",
+      "options": [
+        "(A) You should not have",
+        "(B) spoken to him like that,",
+        "(C) should you have?",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Both the candidates (A) / are from the same district, (B) / isn't it? (C) / No error (D)",
+      "options": [
+        "(A) Both the candidates",
+        "(B) are from the same district,",
+        "(C) isn't it?",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Neither of the buses (A) / goes to the airport, (B) / don't they? (C) / No error (D)",
+      "options": [
+        "(A) Neither of the buses",
+        "(B) goes to the airport,",
+        "(C) don't they?",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "The clerk should ensure (A) / all files are updated, (B) / shouldn't he? (C) / No error (D)",
+      "options": [
+        "(A) The clerk should ensure",
+        "(B) all files are updated,",
+        "(C) shouldn't he?",
+        "(D) No error"
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "Both of the cars (A) / are damaged in the accident, (B) / wasn't they? (C) / No error (D)",
+      "options": [
+        "(A) Both of the cars",
+        "(B) are damaged in the accident,",
+        "(C) wasn't they?",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Neither of the keys (A) / opens this lock, (B) / do they? (C) / No error (D)",
+      "options": [
+        "(A) Neither of the keys",
+        "(B) opens this lock,",
+        "(C) do they?",
+        "(D) No error"
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "He should definitely (A) / apply for this post, (B) / shouldn't he? (C) / No error (D)",
+      "options": [
+        "(A) He should definitely",
+        "(B) apply for this post,",
+        "(C) shouldn't he?",
+        "(D) No error"
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "Both the students (A) / have passed the exam, (B) / hasn't they? (C) / No error (D)",
+      "options": [
+        "(A) Both the students",
+        "(B) have passed the exam,",
+        "(C) hasn't they?",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "The scenery of Meghalaya (A) / are truly enchanting (B) / and attract many tourists. (C) / No error (D)",
+      "options": [
+        "(A) The scenery of Meghalaya",
+        "(B) are truly enchanting",
+        "(C) and attract many tourists.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "None of the money (A) / have been recovered (B) / from the bank robbers. (C) / No error (D)",
+      "options": [
+        "(A) None of the money",
+        "(B) have been recovered",
+        "(C) from the bank robbers.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The captain along with (A) / his entire team (B) / are practicing in the field. (C) / No error (D)",
+      "options": [
+        "(A) The captain along with",
+        "(B) his entire team",
+        "(C) are practicing in the field.",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "A number of cases (A) / of malaria has been reported (B) / in the rural hospitals. (C) / No error (D)",
+      "options": [
+        "(A) A number of cases",
+        "(B) of malaria has been reported",
+        "(C) in the rural hospitals.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The information provided (A) / by the department (B) / are subject to verification. (C) / No error (D)",
+      "options": [
+        "(A) The information provided",
+        "(B) by the department",
+        "(C) are subject to verification.",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "I am standing (A) / at the bus stop (B) / since forty-five minutes. (C) / No error (D)",
+      "options": [
+        "(A) I am standing",
+        "(B) at the bus stop",
+        "(C) since forty-five minutes.",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "The committee is discussing (A) / the budget proposals (B) / since last Friday. (C) / No error (D)",
+      "options": [
+        "(A) The committee is discussing",
+        "(B) the budget proposals",
+        "(C) since last Friday.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "She has been taking (A) / medicine for her cough (B) / for yesterday. (C) / No error (D)",
+      "options": [
+        "(A) She has been taking",
+        "(B) medicine for her cough",
+        "(C) for yesterday.",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "We are knowing (A) / the truth about the incident (B) / since it happened. (C) / No error (D)",
+      "options": [
+        "(A) We are knowing",
+        "(B) the truth about the incident",
+        "(C) since it happened.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "He has lived (A) / in this remote village (B) / for 1995. (C) / No error (D)",
+      "options": [
+        "(A) He has lived",
+        "(B) in this remote village",
+        "(C) for 1995.",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "The tree was (A) / blew down completely (B) / in the heavy storm. (C) / No error (D)",
+      "options": [
+        "(A) The tree was",
+        "(B) blew down completely",
+        "(C) in the heavy storm.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The boy had (A) / threw the ball (B) / straight through the window. (C) / No error (D)",
+      "options": [
+        "(A) The boy had",
+        "(B) threw the ball",
+        "(C) straight through the window.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The important file was (A) / forgot by the clerk (B) / on his desk. (C) / No error (D)",
+      "options": [
+        "(A) The important file was",
+        "(B) forgot by the clerk",
+        "(C) on his desk.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "She has wore (A) / the same dress twice (B) / to the office this week. (C) / No error (D)",
+      "options": [
+        "(A) She has wore",
+        "(B) the same dress twice",
+        "(C) to the office this week.",
+        "(D) No error"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "The bridge had (A) / broke down (B) / before the rescue team arrived. (C) / No error (D)",
+      "options": [
+        "(A) The bridge had",
+        "(B) broke down",
+        "(C) before the rescue team arrived.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The officer told me (A) / that I can leave (B) / after completing the task. (C) / No error (D)",
+      "options": [
+        "(A) The officer told me",
+        "(B) that I can leave",
+        "(C) after completing the task.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "She inquired of him (A) / what is the matter (B) / with his computer. (C) / No error (D)",
+      "options": [
+        "(A) She inquired of him",
+        "(B) what is the matter",
+        "(C) with his computer.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "The captain ordered his men (A) / to stood at ease (B) / during the parade. (C) / No error (D)",
+      "options": [
+        "(A) The captain ordered his men",
+        "(B) to stood at ease",
+        "(C) during the parade.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "He exclaimed with joy (A) / that they have won (B) / the first prize. (C) / No error (D)",
+      "options": [
+        "(A) He exclaimed with joy",
+        "(B) that they have won",
+        "(C) the first prize.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "I told him (A) / that he has to work (B) / much harder to succeed. (C) / No error (D)",
+      "options": [
+        "(A) I told him",
+        "(B) that he has to work",
+        "(C) much harder to succeed.",
+        "(D) No error"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "You should write (A) / the answers clearly, (B) / should not you? (C) / No error (D)",
+      "options": [
+        "(A) You should write",
+        "(B) the answers clearly,",
+        "(C) should not you?",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Both the brothers (A) / are working in the bank, (B) / isn't they? (C) / No error (D)",
+      "options": [
+        "(A) Both the brothers",
+        "(B) are working in the bank,",
+        "(C) isn't they?",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Neither of the machines (A) / works properly, (B) / do it? (C) / No error (D)",
+      "options": [
+        "(A) Neither of the machines",
+        "(B) works properly,",
+        "(C) do it?",
+        "(D) No error"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "The applicant should sign (A) / on every page, (B) / shouldn't he? (C) / No error (D)",
+      "options": [
+        "(A) The applicant should sign",
+        "(B) on every page,",
+        "(C) shouldn't he?",
+        "(D) No error"
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "Both the files (A) / were securely locked, (B) / wasn't they? (C) / No error (D)",
+      "options": [
+        "(A) Both the files",
+        "(B) were securely locked,",
+        "(C) wasn't they?",
+        "(D) No error"
+      ],
+      "answer": "C"
+    }
+  ]
+}

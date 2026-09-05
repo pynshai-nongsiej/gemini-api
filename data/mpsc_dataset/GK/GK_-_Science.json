@@ -1,0 +1,696 @@
+{
+    "category": "GK - Science",
+    "total_questions": 69,
+    "questions": [
+        {
+            "question": "Insulin used to cure which disease?",
+            "options": [
+                "(A) Diabetes",
+                "(B) Tuberculosis",
+                "(C) Cancer",
+                "(D) Malaria"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What vitamin is found in 'Gooseberry'?",
+            "options": [
+                "(A) Vitamin D",
+                "(B) Vitamin A",
+                "(C) Vitamin B",
+                "(D) Vitamin C"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "'Phyllanthus Emblica' is whose scientific name?",
+            "options": [
+                "(A) Guava",
+                "(B) Gooseberry",
+                "(C) Mango",
+                "(D) Apple"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Night Blindness is caused by lack of which vitamin?",
+            "options": [
+                "(A) Vitamin B",
+                "(B) Vitamin A",
+                "(C) Vitamin D",
+                "(D) Vitamin C"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Pacemaker is associated with which organ?",
+            "options": [
+                "(A) Brain",
+                "(B) Lungs",
+                "(C) Kidney",
+                "(D) Heart"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Which of the following is known as 'Master gland'?",
+            "options": [
+                "(A) Pituitary gland",
+                "(B) Pancreas",
+                "(C) Thyroid gland",
+                "(D) Adrenal gland"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Humans used which metal firstly?",
+            "options": [
+                "(A) Bronze",
+                "(B) Iron",
+                "(C) Gold",
+                "(D) Copper"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Which gas mainly found in 'Bio Gas'?",
+            "options": [
+                "(A) Hydrogen",
+                "(B) Carbon Dioxide",
+                "(C) Methane",
+                "(D) Nitrogen"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which organ of human body filters urea from Blood?",
+            "options": [
+                "(A) Kidney",
+                "(B) Liver",
+                "(C) Heart",
+                "(D) Spleen"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "'Jaundice' is associated with which organ?",
+            "options": [
+                "(A) Heart",
+                "(B) Kidney",
+                "(C) Liver",
+                "(D) Lungs"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Family Culicidae is the scientific name of whom?",
+            "options": [
+                "(A) Butterfly",
+                "(B) Mosquito",
+                "(C) Honeybee",
+                "(D) Housefly"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "'Impaired Blood clotting' is caused by the lack of which vitamin?",
+            "options": [
+                "(A) Vitamin E",
+                "(B) Vitamin D",
+                "(C) Vitamin K",
+                "(D) Vitamin C"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "'Human Infertility' is caused by the lack of which vitamin?",
+            "options": [
+                "(A) Vitamin E",
+                "(B) Vitamin A",
+                "(C) Vitamin C",
+                "(D) Vitamin B"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "'Calciferol' is the scientific name of which vitamin?",
+            "options": [
+                "(A) Vitamin B",
+                "(B) Vitamin C",
+                "(C) Vitamin D",
+                "(D) Vitamin A"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Red Blood cells made in which part of the body?",
+            "options": [
+                "(A) Liver",
+                "(B) Kidney",
+                "(C) Spleen",
+                "(D) Bone Marrow"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Who had discover 'Vitamin'?",
+            "options": [
+                "(A) Robert Koch",
+                "(B) Alexander Fleming",
+                "(C) Funk",
+                "(D) Pasteur"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which glass is used in kitchen Pots?",
+            "options": [
+                "(A) Flint Glass",
+                "(B) Crown Glass",
+                "(C) Soda Glass",
+                "(D) Pyrex Glass"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Who had discovered 'blood group'?",
+            "options": [
+                "(A) William Harvey",
+                "(B) Robert Koch",
+                "(C) Louis Pasteur",
+                "(D) Karl Landsteiner"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Which gas is found in the Sun Maximum?",
+            "options": [
+                "(A) Nitrogen",
+                "(B) Oxygen",
+                "(C) Hydrogen",
+                "(D) Helium"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which city is known as Las Vegas of Asia?",
+            "options": [
+                "(A) Macau",
+                "(B) Singapore",
+                "(C) Hong Kong",
+                "(D) Tokyo"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which gas is used to make ripe fruits?",
+            "options": [
+                "(A) Ethylene",
+                "(B) Acetylene",
+                "(C) Methane",
+                "(D) Ethane"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Why the colour of Blood is red?",
+            "options": [
+                "(A) Haemoglobin",
+                "(B) Myoglobin",
+                "(C) Chlorophyll",
+                "(D) Hemocyanin"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What is the percentage of Blood in whole human body?",
+            "options": [
+                "(A) 12%",
+                "(B) 7%",
+                "(C) 10%",
+                "(D) 5%"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which gas is used in chips Packet?",
+            "options": [
+                "(A) Helium Gas",
+                "(B) Oxygen Gas",
+                "(C) Nitrogen Gas",
+                "(D) Carbon Dioxide Gas"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which non-metal exists as a liquid at room temp?",
+            "options": [
+                "(A) Iodine",
+                "(B) Bromine",
+                "(C) Mercury",
+                "(D) Chlorine"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which type of glass can cut off UV rays?",
+            "options": [
+                "(A) Soda glass",
+                "(B) Crook glass (Crookes glass)",
+                "(C) Pyrex glass",
+                "(D) Flint glass"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Cinnabar is an ore of which metal?",
+            "options": [
+                "(A) Iron",
+                "(B) Copper",
+                "(C) Lead",
+                "(D) Mercury"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Which chemical is used for fruit-ripening?",
+            "options": [
+                "(A) Acetylene",
+                "(B) Carbon Dioxide",
+                "(C) Methane",
+                "(D) Ethylene"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What type of disease is Haemophilia?",
+            "options": [
+                "(A) Viral Disease",
+                "(B) Infectious Disease",
+                "(C) Deficiency Disease",
+                "(D) Genetic Disease"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Minamata disease is caused by?",
+            "options": [
+                "(A) Arsenic",
+                "(B) Mercury",
+                "(C) Lead",
+                "(D) Lead (Note: Handwritten as 'Lead')"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "'Canis lupus familiaris' is the scientific name of whom?",
+            "options": [
+                "(A) Wolf",
+                "(B) Cat",
+                "(C) Fox",
+                "(D) Dog"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "'Tocopherol' is the chemical name of:",
+            "options": [
+                "(A) Vitamin E",
+                "(B) Vitamin A",
+                "(C) Vitamin K",
+                "(D) Vitamin C"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "There are how many bones in human head?",
+            "options": [
+                "(A) 8 bones (Note: Written as '8 bones')",
+                "(B) 14 bones",
+                "(C) 20 bones",
+                "(D) 8 bones"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The unit of electric current is:",
+            "options": [
+                "(A) Volt",
+                "(B) Ohm",
+                "(C) Ampere",
+                "(D) Watt"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which gas is essential for burning?",
+            "options": [
+                "(A) Nitrogen",
+                "(B) Carbon Dioxide",
+                "(C) Oxygen",
+                "(D) Hydrogen"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "The chemical formula of water is:",
+            "options": [
+                "(A) CO2",
+                "(B) H2O",
+                "(C) H2O2",
+                "(D) HO"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which vitamin is produced by sunlight?",
+            "options": [
+                "(A) Vitamin A",
+                "(B) Vitamin B",
+                "(C) Vitamin C",
+                "(D) Vitamin D"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "The powerhouse of the cell is:",
+            "options": [
+                "(A) Ribosome",
+                "(B) Mitochondria",
+                "(C) Nucleus",
+                "(D) Golgi Apparatus"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Laughing gas is:",
+            "options": [
+                "(A) Nitric Oxide",
+                "(B) Nitrous Oxide",
+                "(C) Nitrogen Dioxide",
+                "(D) Carbon Monoxide"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which metal is liquid at room temperature?",
+            "options": [
+                "(A) Sodium",
+                "(B) Mercury",
+                "(C) Gallium",
+                "(D) Bromine"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Who gave the slogan \"Give me blood and I will give you freedom\"?",
+            "options": [
+                "(A) Subhash Chandra Bose",
+                "(B) Bhagat Singh",
+                "(C) Mahatma Gandhi",
+                "(D) Jawaharlal Nehru"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which vitamin deficiency causes Night Blindness?",
+            "options": [
+                "(A) Vitamin A",
+                "(B) Vitamin B",
+                "(C) Vitamin C",
+                "(D) Vitamin D"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The study of earthquakes is called:",
+            "options": [
+                "(A) Seismology",
+                "(B) Meteorology",
+                "(C) Volcanology",
+                "(D) Geology"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Photosynthesis takes place in:",
+            "options": [
+                "(A) Leaves",
+                "(B) Stems",
+                "(C) Roots",
+                "(D) Flowers"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Blood pressure is measured by:",
+            "options": [
+                "(A) Sphygmomanometer",
+                "(B) Barometer",
+                "(C) Thermometer",
+                "(D) Lactometer"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The largest gland in human body is:",
+            "options": [
+                "(A) Thyroid",
+                "(B) Pancreas",
+                "(C) Liver",
+                "(D) Adrenal"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "The SI unit of force is:",
+            "options": [
+                "(A) Joule",
+                "(B) Watt",
+                "(C) Newton",
+                "(D) Pascal"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "The SI unit of energy is:",
+            "options": [
+                "(A) Watt",
+                "(B) Joule",
+                "(C) Newton",
+                "(D) Calorie"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The SI unit of power is:",
+            "options": [
+                "(A) Joule",
+                "(B) Newton",
+                "(C) Watt",
+                "(D) Volt"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "The most abundant gas in Earth's atmosphere is:",
+            "options": [
+                "(A) Oxygen",
+                "(B) Carbon Dioxide",
+                "(C) Nitrogen",
+                "(D) Argon"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Photosynthesis requires:",
+            "options": [
+                "(A) Oxygen",
+                "(B) Carbon dioxide",
+                "(C) Nitrogen",
+                "(D) Hydrogen"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Blood groups were discovered by:",
+            "options": [
+                "(A) William Harvey",
+                "(B) Karl Landsteiner",
+                "(C) Robert Hooke",
+                "(D) Louis Pasteur"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The disease caused by deficiency of Vitamin D is:",
+            "options": [
+                "(A) Scurvy",
+                "(B) Beriberi",
+                "(C) Rickets",
+                "(D) Night Blindness"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "The disease caused by deficiency of Vitamin C is:",
+            "options": [
+                "(A) Rickets",
+                "(B) Scurvy",
+                "(C) Beriberi",
+                "(D) Goitre"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The smallest bone in human body is:",
+            "options": [
+                "(A) Femur",
+                "(B) Stapes (in ear)",
+                "(C) Humerus",
+                "(D) Clavicle"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The largest bone in human body is:",
+            "options": [
+                "(A) Femur",
+                "(B) Stapes",
+                "(C) Tibia",
+                "(D) Skull bone"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The study of fungi is called:",
+            "options": [
+                "(A) Phycology",
+                "(B) Mycology",
+                "(C) Virology",
+                "(D) Bacteriology"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The study of viruses is called:",
+            "options": [
+                "(A) Mycology",
+                "(B) Virology",
+                "(C) Phycology",
+                "(D) Zoology"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "White blood cells are also called:",
+            "options": [
+                "(A) Erythrocytes",
+                "(B) Leucocytes",
+                "(C) Thrombocytes",
+                "(D) Plasma"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Red blood cells are also called:",
+            "options": [
+                "(A) Erythrocytes",
+                "(B) Leucocytes",
+                "(C) Thrombocytes",
+                "(D) Lymphocytes"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The respiratory organ in fish is called:",
+            "options": [
+                "(A) Lungs",
+                "(B) Gills",
+                "(C) Skin",
+                "(D) Trachea"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The study of weather is:",
+            "options": [
+                "(A) Meteorology",
+                "(B) Climatology",
+                "(C) Geology",
+                "(D) Astrology"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Lightest gas is:",
+            "options": [
+                "(A) Helium",
+                "(B) Hydrogen",
+                "(C) Nitrogen",
+                "(D) Oxygen"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "How many bones in human body?",
+            "options": [
+                "(A) 204",
+                "(B) 206",
+                "(C) 208",
+                "(D) 210"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which organ pumps blood?",
+            "options": [
+                "(A) Lungs",
+                "(B) Heart",
+                "(C) Liver",
+                "(D) Kidneys"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Study of universe is called:",
+            "options": [
+                "(A) Astronomy",
+                "(B) Cosmology",
+                "(C) Astrology",
+                "(D) Meteorology"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which gas is used in balloons?",
+            "options": [
+                "(A) Hydrogen",
+                "(B) Helium",
+                "(C) Nitrogen",
+                "(D) Oxygen"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Lowest layer of atmosphere:",
+            "options": [
+                "(A) Stratosphere",
+                "(B) Troposphere",
+                "(C) Mesosphere",
+                "(D) Thermosphere"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "'Give me blood, and I will give you freedom' said by:",
+            "options": [
+                "(A) Bhagat Singh",
+                "(B) Sukhash chandra Bose",
+                "(C) Chandra Shekhar Azad",
+                "(D) Mahatma Gandhi"
+            ],
+            "answer": "B"
+        }
+    ]
+}

@@ -1,0 +1,43 @@
+{
+  "currentDay": 1,
+  "streak": 2,
+  "lastCompletedTs": 1788450682522,
+  "completed": {
+    "1": {
+      "score": 1,
+      "total": 50,
+      "ts": 1788450682522,
+      "label": "Meghalaya Geography, Districts & Rivers"
+    }
+  },
+  "lifetime": {
+    "answered": 50,
+    "correct": 1
+  },
+  "bySubject": {
+    "gk": {
+      "a": 50,
+      "c": 1
+    },
+    "english": {
+      "a": 0,
+      "c": 0
+    },
+    "math": {
+      "a": 0,
+      "c": 0
+    },
+    "computer": {
+      "a": 0,
+      "c": 0
+    },
+    "science": {
+      "a": 0,
+      "c": 0
+    },
+    "reasoning": {
+      "a": 0,
+      "c": 0
+    }
+  }
+}

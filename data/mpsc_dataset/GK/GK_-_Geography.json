@@ -1,0 +1,1166 @@
+{
+    "category": "GK - Geography",
+    "total_questions": 116,
+    "questions": [
+        {
+            "question": "The sun rises in which state of India firstly?",
+            "options": [
+                "(A) Arunachal Pradesh",
+                "(B) Nagaland",
+                "(C) Assam",
+                "(D) Manipur"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "\"Bihu\" is a famous festival of which state?",
+            "options": [
+                "(A) West Bengal",
+                "(B) Sikkim",
+                "(C) Assam",
+                "(D) Odisha"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "\"Pongal\" is a famous festival of which state?",
+            "options": [
+                "(A) Tamil Nadu",
+                "(B) Kerala",
+                "(C) Karnataka",
+                "(D) Andhra Pradesh"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "'Onam' is the famous festival of which state?",
+            "options": [
+                "(A) Karnataka",
+                "(B) Andhra Pradesh",
+                "(C) Kerala",
+                "(D) Tamil Nadu"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "When did Delhi became the capital of India?",
+            "options": [
+                "(A) 1857 AD",
+                "(B) 1947 AD",
+                "(C) 1911 AD",
+                "(D) 1950 AD"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which planet is known as the 'Galaxy like planet'?",
+            "options": [
+                "(A) Uranus",
+                "(B) Jupiter",
+                "(C) Neptune",
+                "(D) Saturn"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Which is the largest satellite of solar system?",
+            "options": [
+                "(A) Deimos",
+                "(B) Titan",
+                "(C) Phobos",
+                "(D) Ganymede"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Which country shares the land border with maximum countries?",
+            "options": [
+                "(A) China",
+                "(B) India",
+                "(C) Russia",
+                "(D) Canada"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "'Flower Valley' is situated in which state?",
+            "options": [
+                "(A) Sikkim",
+                "(B) Himachal Pradesh",
+                "(C) Uttarakhand",
+                "(D) Jammu & Kashmir"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "'Silao Khaza' is a famous sweet dish of which state?",
+            "options": [
+                "(A) Bihar",
+                "(B) Jharkhand",
+                "(C) Uttar Pradesh",
+                "(D) West Bengal"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which is the largest site of Indus valley civilization?",
+            "options": [
+                "(A) Mohenjodaro",
+                "(B) Lothal",
+                "(C) Harappa",
+                "(D) Rakhigarhi"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Wheeler Island is now known as _______.",
+            "options": [
+                "(A) Ross Island",
+                "(B) Havelock Island",
+                "(C) Wheeler Island",
+                "(D) Abdul Kalam Island"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "In which state of India, There is maximum forest cover?",
+            "options": [
+                "(A) Chhattisgarh",
+                "(B) Odisha",
+                "(C) Arunachal Pradesh",
+                "(D) Madhya Pradesh"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Which is the highest silk producing state in India?",
+            "options": [
+                "(A) West Bengal",
+                "(B) Andhra Pradesh",
+                "(C) Tamil Nadu",
+                "(D) Karnataka"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Ahom kingdom was established in which state of India?",
+            "options": [
+                "(A) Manipur",
+                "(B) Meghalaya",
+                "(C) Assam",
+                "(D) Tripura"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which state is the highest producer of Saffron?",
+            "options": [
+                "(A) Sikkim",
+                "(B) Himachal Pradesh",
+                "(C) Uttarakhand",
+                "(D) Jammu & Kashmir"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Kathakali is a famous dance of which state?",
+            "options": [
+                "(A) Karnataka",
+                "(B) Andhra Pradesh",
+                "(C) Kerala",
+                "(D) Tamil Nadu"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which river is known as the sorrow of Bengal?",
+            "options": [
+                "(A) Kosi",
+                "(B) Hooghly",
+                "(C) Teesta",
+                "(D) Damodar"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Which planet is known as 'Evening star'?",
+            "options": [
+                "(A) Mars",
+                "(B) Jupiter",
+                "(C) Mercury",
+                "(D) Venus"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Which state is known as 'Garden of spices'?",
+            "options": [
+                "(A) Tamil Nadu",
+                "(B) Andhra Pradesh",
+                "(C) Kerala",
+                "(D) Karnataka"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "'Yakshagaan' is a famous dance of which state?",
+            "options": [
+                "(A) Tamil Nadu",
+                "(B) Kerala",
+                "(C) Andhra Pradesh",
+                "(D) Karnataka"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Which rivers made 'Sundarban Delta'?",
+            "options": [
+                "(A) Krishna - Godavari",
+                "(B) Narmada - Tapti",
+                "(C) Ganga - Brahmaputra",
+                "(D) Indus - Ganges"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Sundarban National Park is situated in which state?",
+            "options": [
+                "(A) Odisha",
+                "(B) Assam",
+                "(C) Bihar",
+                "(D) West Bengal"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Hampi is situated in which state?",
+            "options": [
+                "(A) Kerala",
+                "(B) Andhra Pradesh",
+                "(C) Tamil Nadu",
+                "(D) Karnataka (Note: Written as \"Humpy\" in notes)"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Which country has the largest Border?",
+            "options": [
+                "(A) USA",
+                "(B) Canada",
+                "(C) Russia",
+                "(D) China"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "In which state, There is a largest number of Railway Tracks?",
+            "options": [
+                "(A) Uttar Pradesh",
+                "(B) Rajasthan",
+                "(C) West Bengal",
+                "(D) Maharashtra"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What is the distance measurement unit of ocean?",
+            "options": [
+                "(A) Kilometer",
+                "(B) Fathom",
+                "(C) Nautical mile",
+                "(D) Mile"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which Planet has highest density?",
+            "options": [
+                "(A) Jupiter",
+                "(B) Venus",
+                "(C) Earth",
+                "(D) Mercury"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Pangong lake is situated in which state?",
+            "options": [
+                "(A) Ladakh",
+                "(B) Sikkim",
+                "(C) Himachal Pradesh",
+                "(D) Jammu & Kashmir"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Munda is the main Tribe of which state?",
+            "options": [
+                "(A) Chhattisgarh",
+                "(B) Madhya Pradesh",
+                "(C) Jharkhand",
+                "(D) Odisha"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Tamasha is folk dance of which state?",
+            "options": [
+                "(A) Madhya Pradesh",
+                "(B) Gujarat",
+                "(C) Rajasthan",
+                "(D) Maharashtra"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "The deepest lake in the world is:",
+            "options": [
+                "(A) Caspian Sea",
+                "(B) Victoria lake",
+                "(C) Baikal lake",
+                "(D) Superior lake"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Kalibanga is located in which state?",
+            "options": [
+                "(A) Haryana",
+                "(B) Gujarat",
+                "(C) Punjab",
+                "(D) Rajasthan"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Bandipur Tiger Reserve is situated in which state?",
+            "options": [
+                "(A) Andhra Pradesh",
+                "(B) Tamil Nadu",
+                "(C) Kerala",
+                "(D) Karnataka"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Narmada River is the life line of which state?",
+            "options": [
+                "(A) Maharashtra",
+                "(B) Rajasthan",
+                "(C) Gujarat",
+                "(D) Madhya Pradesh"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Which is the twin planet of Earth?",
+            "options": [
+                "(A) Mars",
+                "(B) Uranus",
+                "(C) Mercury",
+                "(D) Venus"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Which state is known as sleeping state of India?",
+            "options": [
+                "(A) Rajasthan",
+                "(B) Madhya Pradesh (Due to high soy production, often called 'Soy State' or sleeping state)",
+                "(C) Uttar Pradesh",
+                "(D) Maharashtra"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which State is the highest producer of Eggs?",
+            "options": [
+                "(A) Karnataka",
+                "(B) Punjab",
+                "(C) Tamil Nadu",
+                "(D) Andhra Pradesh"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Which is the highest lake of the world?",
+            "options": [
+                "(A) Victoria",
+                "(B) Baikal",
+                "(C) Tanganyika",
+                "(D) Titicaca"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Which state is the highest producer of coffee in India?",
+            "options": [
+                "(A) Andhra Pradesh",
+                "(B) Kerala",
+                "(C) Tamil Nadu",
+                "(D) Karnataka"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Which state is the highest producer of Mango?",
+            "options": [
+                "(A) Uttar Pradesh",
+                "(B) Maharashtra",
+                "(C) Bihar",
+                "(D) Andhra Pradesh"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which state is the highest producer of Guava?",
+            "options": [
+                "(A) Bihar",
+                "(B) West Bengal",
+                "(C) Jharkhand",
+                "(D) Uttar Pradesh"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which is the smallest ocean in the world?",
+            "options": [
+                "(A) Indian Ocean",
+                "(B) Pacific Ocean",
+                "(C) Southern Ocean",
+                "(D) Arctic Ocean"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Which state is the highest producer of peanuts?",
+            "options": [
+                "(A) Maharashtra",
+                "(B) Rajasthan",
+                "(C) Gujarat",
+                "(D) Andhra Pradesh"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which state is the highest producer of onion?",
+            "options": [
+                "(A) Madhya Pradesh",
+                "(B) Gujarat",
+                "(C) Uttar Pradesh",
+                "(D) Maharashtra"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Which is the smallest river in the world?",
+            "options": [
+                "(A) Congo river",
+                "(B) Roe river",
+                "(C) Amazon river",
+                "(D) Nile river"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which city is known as capital of cotton clothes?",
+            "options": [
+                "(A) Mumbai",
+                "(B) Surat",
+                "(C) Coimbatore",
+                "(D) Ahmedabad"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Kuchipudi dance belongs to which state?",
+            "options": [
+                "(A) Kerala",
+                "(B) Karnataka",
+                "(C) Tamil Nadu",
+                "(D) Andhra Pradesh"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Which state is the highest producer of silk?",
+            "options": [
+                "(A) Tamil Nadu",
+                "(B) Andhra Pradesh",
+                "(C) West Bengal",
+                "(D) Karnataka"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Zojila pass is in which state?",
+            "options": [
+                "(A) Ladakh",
+                "(B) Uttarakhand",
+                "(C) Himachal Pradesh",
+                "(D) Jammu & Kashmir"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Rajiv Gandhi died in which state?",
+            "options": [
+                "(A) Tamil Nadu",
+                "(B) Andhra Pradesh",
+                "(C) Kerala",
+                "(D) Karnataka"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What is the capital of Maldives?",
+            "options": [
+                "(A) Colombo",
+                "(B) Kathmandu",
+                "(C) Dhaka",
+                "(D) Male"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "What is the finance capital of India?",
+            "options": [
+                "(A) Mumbai",
+                "(B) Delhi",
+                "(C) Chennai",
+                "(D) Kolkata"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The term of a governor of a state is:",
+            "options": [
+                "(A) 4 years",
+                "(B) 5 years",
+                "(C) 6 years",
+                "(D) 3 years"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The Concept of 'Directive principles of state policy' was borrowed from:",
+            "options": [
+                "(A) USA",
+                "(B) USSR",
+                "(C) Ireland",
+                "(D) United Kingdom"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "The Indus valley civilization was discovered in:",
+            "options": [
+                "(A) 1921",
+                "(B) 1922",
+                "(C) 1925",
+                "(D) 1930"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which is the largest river in India?",
+            "options": [
+                "(A) Godavari",
+                "(B) Yamuna",
+                "(C) Ganga",
+                "(D) Brahmaputra"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which planet is known as the red planet?",
+            "options": [
+                "(A) Venus",
+                "(B) Mars",
+                "(C) Jupiter",
+                "(D) Saturn"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The highest peak in India is:",
+            "options": [
+                "(A) K2 (Godwin-Austen)",
+                "(B) Kanchenjunga",
+                "(C) Nanda Devi",
+                "(D) Mount Everest"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which state has the longest coastline in India?",
+            "options": [
+                "(A) Andhra Pradesh",
+                "(B) Tamil Nadu",
+                "(C) Maharashtra",
+                "(D) Gujarat"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Which soil is best for cotton cultivation?",
+            "options": [
+                "(A) Alluvial soil",
+                "(B) Red soil",
+                "(C) Black soil",
+                "(D) Laterite soil"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "The largest freshwater lake in India is:",
+            "options": [
+                "(A) Chilika lake",
+                "(B) Wular lake",
+                "(C) Vembanad lake",
+                "(D) Dal lake"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which is the smallest state in India by area?",
+            "options": [
+                "(A) Sikkim",
+                "(B) Goa",
+                "(C) Tripura",
+                "(D) Mizoram"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which river is known as the \"Sorrow of Bihar\"?",
+            "options": [
+                "(A) Damodar",
+                "(B) Kosi",
+                "(C) Gandak",
+                "(D) Son"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The river Umngot flows through:",
+            "options": [
+                "(A) Cherrapunji",
+                "(B) Dawki",
+                "(C) Jowai",
+                "(D) Tura"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Umiam Lake is also known as:",
+            "options": [
+                "(A) Ward's Lake",
+                "(B) Barapani",
+                "(C) Thadlaskein Lake",
+                "(D) Bir Lake"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The Directive Principles of State Policy are contained in Part:",
+            "options": [
+                "(A) Part III",
+                "(B) Part IV",
+                "(C) Part IVA",
+                "(D) Part V"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which is India's longest river?",
+            "options": [
+                "(A) Ganga",
+                "(B) Godavari",
+                "(C) Brahmaputra",
+                "(D) Indus"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which river is known as 'Dakshina Ganga'?",
+            "options": [
+                "(A) Godavari",
+                "(B) Krishna",
+                "(C) Cauvery",
+                "(D) Mahanadi"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Chilika Lake is located in:",
+            "options": [
+                "(A) Odisha",
+                "(B) Andhra Pradesh",
+                "(C) West Bengal",
+                "(D) Tamil Nadu"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Loktak lake is in:",
+            "options": [
+                "(A) Manipur",
+                "(B) Mizoram",
+                "(C) Meghalaya",
+                "(D) Assam"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Nanda Devi peak is located in:",
+            "options": [
+                "(A) Uttarakhand",
+                "(B) Himachal Pradesh",
+                "(C) Sikkim",
+                "(D) Jammu and Kashmir"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which state is the largest producer of spices?",
+            "options": [
+                "(A) Kerala",
+                "(B) Karnataka",
+                "(C) Andhra Pradesh",
+                "(D) Tamil Nadu"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Silent Valley is located in:",
+            "options": [
+                "(A) Kerala",
+                "(B) Karnataka",
+                "(C) Tamil Nadu",
+                "(D) Uttarakhand"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Jog Falls is located on which river?",
+            "options": [
+                "(A) Sharavathi",
+                "(B) Narmada",
+                "(C) Krishna",
+                "(D) Kaveri"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which state has the maximum forest cover?",
+            "options": [
+                "(A) Madhya Pradesh",
+                "(B) Arunachal Pradesh",
+                "(C) Chhattisgarh",
+                "(D) Mizoram"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The capital of the Mauryan Empire was:",
+            "options": [
+                "(A) Taxila",
+                "(B) Ujjain",
+                "(C) Pataliputra",
+                "(D) Vaishali"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "The largest ocean in the world is:",
+            "options": [
+                "(A) Atlantic",
+                "(B) Indian",
+                "(C) Pacific",
+                "(D) Arctic"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "The longest mountain range in the world is:",
+            "options": [
+                "(A) Andes",
+                "(B) Himalayas",
+                "(C) Rockies",
+                "(D) Alps"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The largest desert in the world is:",
+            "options": [
+                "(A) Antarctic (Polar desert)",
+                "(B) Sahara",
+                "(C) Gobi",
+                "(D) Arabian"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The largest hot desert in the world is:",
+            "options": [
+                "(A) Sahara",
+                "(B) Gobi",
+                "(C) Kalahari",
+                "(D) Thar"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The world's largest island is:",
+            "options": [
+                "(A) Greenland",
+                "(B) Madagascar",
+                "(C) New Guinea",
+                "(D) Borneo"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The Sahara Desert is located in:",
+            "options": [
+                "(A) Asia",
+                "(B) Africa",
+                "(C) South America",
+                "(D) Australia"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The largest planet in our solar system is:",
+            "options": [
+                "(A) Saturn",
+                "(B) Earth",
+                "(C) Jupiter",
+                "(D) Neptune"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "The hottest planet is:",
+            "options": [
+                "(A) Mercury",
+                "(B) Venus",
+                "(C) Mars",
+                "(D) Jupiter"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The capital of Australia is:",
+            "options": [
+                "(A) Sydney",
+                "(B) Melbourne",
+                "(C) Canberra",
+                "(D) Brisbane"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "The capital of Canada is:",
+            "options": [
+                "(A) Toronto",
+                "(B) Vancouver",
+                "(C) Ottawa",
+                "(D) Montreal"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "The capital of Brazil is:",
+            "options": [
+                "(A) Rio de Janeiro",
+                "(B) São Paulo",
+                "(C) Brasilia",
+                "(D) Buenos Aires"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "The Capital of south Africa is:",
+            "options": [
+                "(A) Johannesburg",
+                "(B) Pretoria",
+                "(C) Cape Town",
+                "(D) Durban"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "The Amazon river is in:",
+            "options": [
+                "(A) North America",
+                "(B) South America",
+                "(C) Africa",
+                "(D) Asia"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The Nile river is in:",
+            "options": [
+                "(A) South America",
+                "(B) Africa",
+                "(C) Asia",
+                "(D) Europe"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Largest state in India by area:",
+            "options": [
+                "(A) Madhya Pradesh",
+                "(B) Maharashtra",
+                "(C) Rajasthan",
+                "(D) Uttar Pradesh"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Smallest state in India by area:",
+            "options": [
+                "(A) Goa",
+                "(B) Sikkim",
+                "(C) Tripura",
+                "(D) Mizoram"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which animal is known as the \"ship of the Desert\"?",
+            "options": [
+                "(A) Camel",
+                "(B) Horse",
+                "(C) Donkey",
+                "(D) Yak"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Capital of Japan:",
+            "options": [
+                "(A) Kyoto",
+                "(B) Osaka",
+                "(C) Tokyo",
+                "(D) Hiroshima"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Highest mountain peak in the world:",
+            "options": [
+                "(A) K2",
+                "(B) Kanchenjunga",
+                "(C) Mount Everest",
+                "(D) Lhotse"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Capital of France:",
+            "options": [
+                "(A) Paris",
+                "(B) Lyon",
+                "(C) Marseille",
+                "(D) Nice"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Capital of China:",
+            "options": [
+                "(A) Shanghai",
+                "(B) Beijing",
+                "(C) Guangzhou",
+                "(D) Shenzhen"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Capital of Russia:",
+            "options": [
+                "(A) Saint Petersburg",
+                "(B) Moscow",
+                "(C) Novosibirsk",
+                "(D) Vladivostok"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Capital of U.S.A:",
+            "options": [
+                "(A) New York",
+                "(B) Washington D.C.",
+                "(C) Los Angeles",
+                "(D) Chicago"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which planet has rings:",
+            "options": [
+                "(A) Mars",
+                "(B) Saturn",
+                "(C) Jupiter",
+                "(D) Uranus"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Capital of Bhutan:",
+            "options": [
+                "(A) Kathmandu",
+                "(B) Thimphu",
+                "(C) Dhaka",
+                "(D) Colombo"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Capital of Mizoram:",
+            "options": [
+                "(A) Imphal",
+                "(B) Aizawl",
+                "(C) Kohima",
+                "(D) Gangtok"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Capital of Nagaland:",
+            "options": [
+                "(A) Shillong",
+                "(B) Kohima",
+                "(C) Dimapur",
+                "(D) Itanagar"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Capital of Manipur:",
+            "options": [
+                "(A) Imphal",
+                "(B) Aizawl",
+                "(C) Agartala",
+                "(D) Kohima"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Capital of Arunachal Pradesh:",
+            "options": [
+                "(A) Dispur",
+                "(B) Itanagar",
+                "(C) Gangtok",
+                "(D) Imphal"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Capital of Tripura:",
+            "options": [
+                "(A) Agartala",
+                "(B) Aizawl",
+                "(C) Imphal",
+                "(D) Kohima"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Capital of Sikkim:",
+            "options": [
+                "(A) Imphal",
+                "(B) Gangtok",
+                "(C) Shillong",
+                "(D) Kohima"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Majuli Island is in which river?",
+            "options": [
+                "(A) Ganga",
+                "(B) Brahmaputra",
+                "(C) Yamuna",
+                "(D) Godavari"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Sardar Sarovar Dam is on which river?",
+            "options": [
+                "(A) Ganga",
+                "(B) Narmada",
+                "(C) Mahanadi",
+                "(D) Godavari"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Capital of Germany:",
+            "options": [
+                "(A) Paris",
+                "(B) Berlin",
+                "(C) Munich",
+                "(D) Frankfurt"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which river island is the second largest in Asia?",
+            "options": [
+                "(A) Majuli Island",
+                "(B) Nongkhnum Island",
+                "(C) Srirangam Island",
+                "(D) Divar Island"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Largest river island in the world:",
+            "options": [
+                "(A) Majuli",
+                "(B) Nongkhnum",
+                "(C) Marajó",
+                "(D) Bananal"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Head of State in India:",
+            "options": [
+                "(A) Prime Minister",
+                "(B) President",
+                "(C) Chief Justice of India",
+                "(D) Vice President"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Deepest point in ocean:",
+            "options": [
+                "(A) Java Trench",
+                "(B) Mariana Trench",
+                "(C) Puerto Rico Trench",
+                "(D) Sunda Trench"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Thadlaskein Lake is located in:",
+            "options": [
+                "(A) West Jaintia Hills",
+                "(B) East Khasi Hills",
+                "(C) West Garo Hills",
+                "(D) Ri-Bhoi"
+            ],
+            "answer": "A"
+        }
+    ]
+}

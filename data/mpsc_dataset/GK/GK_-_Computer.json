@@ -1,0 +1,306 @@
+{
+    "category": "GK - Computer",
+    "total_questions": 30,
+    "questions": [
+        {
+            "question": "What is the full form of RAM in computer terminology?",
+            "options": [
+                "(A) Read Access Memory",
+                "(B) Random Access Memory",
+                "(C) Rapid Active Memory",
+                "(D) Readable Allocation Memory"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which component of a computer is commonly referred to as its \"brain\"?",
+            "options": [
+                "(A) RAM",
+                "(B) Hard Disk",
+                "(C) Central Processing Unit (CPU)",
+                "(D) Keyboard"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which keyboard shortcut is used to print a document in MS Word?",
+            "options": [
+                "(A) Ctrl + S",
+                "(B) Ctrl + P",
+                "(C) Ctrl + O",
+                "(D) Ctrl + N"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which of the following is strictly an input device?",
+            "options": [
+                "(A) Monitor",
+                "(B) Printer",
+                "(C) Scanner",
+                "(D) Speaker"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which of the following is non-volatile, permanent memory?",
+            "options": [
+                "(A) RAM",
+                "(B) ROM",
+                "(C) Cache Memory",
+                "(D) Registers"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which communication protocol is used to browse websites securely?",
+            "options": [
+                "(A) HTTP",
+                "(B) FTP",
+                "(C) HTTPS",
+                "(D) SMTP"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "In MS Windows, what is the default keyboard shortcut to \"Undo\" the last action?",
+            "options": [
+                "(A) Ctrl + Y",
+                "(B) Ctrl + U",
+                "(C) Ctrl + Z",
+                "(D) Ctrl + X"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What is the standard file extension of an MS Excel spreadsheet file?",
+            "options": [
+                "(A) .docx",
+                "(B) .xlsx",
+                "(C) .pptx",
+                "(D) .txt"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "In networking terms, what does IP stand for?",
+            "options": [
+                "(A) Internet Protocol",
+                "(B) Intranet Pathway",
+                "(C) Internal Port",
+                "(D) Immediate Process"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which function key is used to refresh the active web browser window?",
+            "options": [
+                "(A) F1",
+                "(B) F2",
+                "(C) F5",
+                "(D) F11"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "A software program specifically designed to detect, prevent, and remove malware is called:",
+            "options": [
+                "(A) Firewall",
+                "(B) Antivirus",
+                "(C) Spyware",
+                "(D) Operating System"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "One Gigabyte (1 GB) is equivalent to how many Megabytes (MB)?",
+            "options": [
+                "(A) 1000 MB",
+                "(B) 1024 MB",
+                "(C) 512 MB",
+                "(D) 2048 MB"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The primary opening page of a website is formally called the:",
+            "options": [
+                "(A) Webpage",
+                "(B) Homepage",
+                "(C) Masterpage",
+                "(D) Portal"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Unsolicited, bulk commercial emails sent to multiple recipients are known as:",
+            "options": [
+                "(A) Phishing",
+                "(B) Spam",
+                "(C) Malware",
+                "(D) Drafts"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which programming language is understood directly by the computer's CPU without translation?",
+            "options": [
+                "(A) assembly Language",
+                "(B) Machine Language",
+                "(C) High-Level Language",
+                "(D) SQL"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Who is universally recognized as the \"Father of Computers\"?",
+            "options": [
+                "(A) Alan Turing",
+                "(B) Charles Babbage",
+                "(C) Bill Gates",
+                "(D) Steve Jobs"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "What does the database acronym SQL stand for?",
+            "options": [
+                "(A) System Query Language",
+                "(B) Structured Query Language",
+                "(C) Standard Queue Logic",
+                "(D) Sequential Query List"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The primary purpose of a computer's operating system is to:",
+            "options": [
+                "(A) Protect the computer from dust",
+                "(B) Manage system resources and hardware",
+                "(C) Perform mathematical calculations",
+                "(D) Create backup spreadsheets"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which network topology connects all device nodes directly to a central hub?",
+            "options": [
+                "(A) Ring Topology",
+                "(B) Star Topology",
+                "(C) Bus Topology",
+                "(D) Mesh Topology"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "What is the keyboard shortcut to copy selected text in Windows?",
+            "options": [
+                "(A) Ctrl + X",
+                "(B) Ctrl + V",
+                "(C) Ctrl + C",
+                "(D) Ctrl + A"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What standard code is used by computers to represent English text characters as numbers?",
+            "options": [
+                "(A) Binary",
+                "(B) ASCII",
+                "(C) Unicode",
+                "(D) Hexadecimal"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The first generation of electronic digital computers relied on which technology?",
+            "options": [
+                "(A) Transistors",
+                "(B) Vacuum Tubes",
+                "(C) Integrated Circuits",
+                "(D) Microprocessors"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which of the following is primarily a search engine?",
+            "options": [
+                "(A) Google Chrome",
+                "(B) Google",
+                "(C) Mozilla Firefox",
+                "(D) MS Excel"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which of the following is an example of secondary storage media?",
+            "options": [
+                "(A) RAM",
+                "(B) Cache Memory",
+                "(C) Hard Disk Drive (HDD)",
+                "(D) Registers"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "In MS Word, what is the keyboard shortcut to insert a hyperlink?",
+            "options": [
+                "(A) Ctrl + H",
+                "(B) Ctrl + L",
+                "(C) Ctrl + K",
+                "(D) Ctrl + I"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What is the shortcut key to insert a hyperlink in MS office?",
+            "options": [
+                "(A) Ctrl + M",
+                "(B) Ctrl + H",
+                "(C) Ctrl + L",
+                "(D) Ctrl + K"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Who is the developer of 'C program language'?",
+            "options": [
+                "(A) Dennis Ritchie",
+                "(B) Bjarne Stroustrup",
+                "(C) Linus Torvalds",
+                "(D) Ken Thompson"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What was the name of first indigenous computer in India?",
+            "options": [
+                "(A) Anurag",
+                "(B) Siddharth",
+                "(C) Param",
+                "(D) Vajra"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "What is the shortcut key to open 'Run Prompt'?",
+            "options": [
+                "(A) Windows + D",
+                "(B) Windows + R",
+                "(C) Windows + E",
+                "(D) Windows + L"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Who is the inventor of WWW?",
+            "options": [
+                "(A) Steve Jobs",
+                "(B) Bill Gates",
+                "(C) Vint Cerf",
+                "(D) Tim Berners Lee"
+            ],
+            "answer": "D"
+        }
+    ]
+}

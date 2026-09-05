@@ -1,0 +1,4076 @@
+{
+  "category": "Vocabulary - Idioms & Phrases",
+  "total_questions": 200,
+  "questions": [
+    {
+      "question": "A hard nut to crack",
+      "options": [
+        "(A) A highly delicate physical object",
+        "(B) A difficult problem to solve",
+        "(C) A tough and demanding taskmaster",
+        "(D) A very costly business investment"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "At the eleventh hour",
+      "options": [
+        "(A) At the very last moment",
+        "(B) During late-night hours",
+        "(C) Exactly at noon time",
+        "(D) Early in the morning"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "Burn the midnight oil",
+      "options": [
+        "(A) To spend money extravagantly",
+        "(B) To create unnecessary friction",
+        "(C) To work or study late into the night",
+        "(D) To waste fuel on a useless journey"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "By leaps and bounds",
+      "options": [
+        "(A) In a very systematic manner",
+        "(B) At a very rapid or fast pace",
+        "(C) Through highly risky paths",
+        "(D) With several interval breaks"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Gift of the gab",
+      "options": [
+        "(A) A talent for speaking eloquently",
+        "(B) An unexpected financial bonus",
+        "(C) A habit of constant complaining",
+        "(D) A highly creative artistic mind"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "Once in a blue moon",
+      "options": [
+        "(A) Regularly on specific dates",
+        "(B) Very rarely or infrequently",
+        "(C) Only during nighttime hours",
+        "(D) On auspicious state occasions"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Spill the beans",
+      "options": [
+        "(A) To waste precious food resources",
+        "(B) To perform a clumsy physical action",
+        "(C) To reveal a secret prematurely",
+        "(D) To behave in an impolite manner"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Leave no stone unturned",
+      "options": [
+        "(A) To search for hidden treasure",
+        "(B) To construct a solid foundation",
+        "(C) To make every possible effort",
+        "(D) To cause widespread destruction"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Under the weather",
+      "options": [
+        "(A) Experiencing extreme climate shifts",
+        "(B) Feeling slightly unwell or ill",
+        "(C) Travelling without safety gear",
+        "(D) Working under heavy pressure"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Through thick and thin",
+      "options": [
+        "(A) Under all circumstances, good or bad",
+        "(B) Walking through dense forest terrain",
+        "(C) During physical transformations",
+        "(D) With highly calculated risks"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "Crocodile tears",
+      "options": [
+        "(A) A state of deep, genuine grief",
+        "(B) An insincere display of sorrow",
+        "(C) A painful physical eye condition",
+        "(D) A dramatic expression of anger"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "A wild goose chase",
+      "options": [
+        "(A) A highly profitable venture",
+        "(B) A useless or hopeless search",
+        "(C) A thrilling outdoor adventure",
+        "(D) A well-planned investigation"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Cry over spilt milk",
+      "options": [
+        "(A) To complain about minor domestic chores",
+        "(B) To express deep regret over past losses",
+        "(C) To worry uselessly about past mistakes",
+        "(D) To argue over small shares of profits"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Face the music",
+      "options": [
+        "(A) To accept unpleasant consequences",
+        "(B) To enjoy a musical performance",
+        "(C) To ignore harsh criticism",
+        "(D) To lead a large public gathering"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "Hit the nail on the head",
+      "options": [
+        "(A) To do or say the exact right thing",
+        "(B) To drive a nail into wooden boards",
+        "(C) To injure oneself during hard work",
+        "(D) To make a loud, disruptive noise"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "In the nick of time",
+      "options": [
+        "(A) After the scheduled departure",
+        "(B) Just at the critical last moment",
+        "(C) Much earlier than anticipated",
+        "(D) At a highly inappropriate hour"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Let the cat out of the bag",
+      "options": [
+        "(A) To free a pet from captivity",
+        "(B) To abandon a useful household item",
+        "(C) To reveal a secret unintentionally",
+        "(D) To act with absolute bravery"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Pull someone's leg",
+      "options": [
+        "(A) To physically trip an opponent",
+        "(B) To tease or play a joke on someone",
+        "(C) To help someone clear an obstacle",
+        "(D) To insult a person in public"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Red letter day",
+      "options": [
+        "(A) A day marked by state disasters",
+        "(B) A highly memorable or important day",
+        "(C) A day spent in official paperwork",
+        "(D) A day of extreme summer heat"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Take something with a grain of salt",
+      "options": [
+        "(A) To accept something with skepticism",
+        "(B) To add spices to a tasteless dish",
+        "(C) To take small medicinal doses",
+        "(D) To agree without any hesitation"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "Apple of discord",
+      "options": [
+        "(A) A very delicious fruit variety",
+        "(B) A cause of dispute or rivalry",
+        "(C) A highly valuable gift item",
+        "(D) A healthy lifestyle routine"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Beat about the bush",
+      "options": [
+        "(A) To clear wild forest growth",
+        "(B) To speak in a roundabout manner",
+        "(C) To hunt animals with basic tools",
+        "(D) To avoid physical hard work"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Bite the bullet",
+      "options": [
+        "(A) To face a grim situation with courage",
+        "(B) To engage in a physical conflict",
+        "(C) To make a highly foolish error",
+        "(D) To speak very rudely to elders"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "Burn the candle at both ends",
+      "options": [
+        "(A) To light up a dark room quickly",
+        "(B) To waste resources in double measure",
+        "(C) To work excessively hard and exhaust oneself",
+        "(D) To celebrate a festive event grandly"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Cock and bull story",
+      "options": [
+        "(A) A traditional folk narrative",
+        "(B) An absurd and unbelievable tale",
+        "(C) A story about farmyard animals",
+        "(D) A highly exciting historic account"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Dark horse",
+      "options": [
+        "(A) A competitor of unknown capabilities who wins",
+        "(B) A majestic breed of racing horse",
+        "(C) A person who works in deep secrecy",
+        "(D) An individual with a shady past"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "Double-dealing",
+      "options": [
+        "(A) Conducting fair business transactions",
+        "(B) Engaging in deceitful or treacherous trade",
+        "(C) Multiplying profits by hard effort",
+        "(D) Handling two projects simultaneously"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "End in smoke",
+      "options": [
+        "(A) To catch fire and get destroyed",
+        "(B) To yield no practical or useful result",
+        "(C) To clear air pollution successfully",
+        "(D) To conclude a meeting with anger"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Fair-weather friend",
+      "options": [
+        "(A) A companion who stays in all seasons",
+        "(B) A friend who supports only during good times",
+        "(C) An associate from a pleasant region",
+        "(D) A loyal advisor in moments of crisis"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Feather in one's cap",
+      "options": [
+        "(A) A symbol of foolish pride",
+        "(B) An additional achievement to be proud of",
+        "(C) A decorative item of tribal wear",
+        "(D) A light burden to carry easily"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Fish out of water",
+      "options": [
+        "(A) An uncomfortable or unfamiliar situation",
+        "(B) A highly energetic and free person",
+        "(C) A biological specimen for research",
+        "(D) A state of extreme mental clarity"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "From hand to mouth",
+      "options": [
+        "(A) Consuming food very quickly",
+        "(B) Having only enough money to survive",
+        "(C) Living a highly luxurious lifestyle",
+        "(D) Sharing secrets through whispers"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Grease someone's palm",
+      "options": [
+        "(A) To offer help in physical labor",
+        "(B) To bribe a person for favors",
+        "(C) To apply medicinal oils to skin",
+        "(D) To shake hands with great warmth"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Hard and fast",
+      "options": [
+        "(A) Rapidly changing daily schedules",
+        "(B) Strict and unalterable regulations",
+        "(C) Difficult and heavy physical loads",
+        "(D) Highly aggressive driving speeds"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "In black and white",
+      "options": [
+        "(A) In a very clear written format",
+        "(B) Lacking any colourful imagination",
+        "(C) Old-fashioned photographic style",
+        "(D) Divided into two direct extremes"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "Keep at arm's length",
+      "options": [
+        "(A) To measure distances precisely",
+        "(B) To maintain a safe social distance",
+        "(C) To avoid close friendly relations",
+        "(D) To stretch one's limbs regularly"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Make both ends meet",
+      "options": [
+        "(A) To tie two loose wire ends together",
+        "(B) To earn just enough to cover expenses",
+        "(C) To travel from one coast to another",
+        "(D) To reconcile two opposing factions"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Out of the blue",
+      "options": [
+        "(A) Moving away from the vast sea",
+        "(B) Completely unexpected or sudden",
+        "(C) Falling down from high altitudes",
+        "(D) Emerging from a state of sadness"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Rainy day",
+      "options": [
+        "(A) A day of pleasant cool weather",
+        "(B) A future time of financial hardship",
+        "(C) An official holiday due to monsoons",
+        "(D) A highly productive agricultural day"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Smell a rat",
+      "options": [
+        "(A) To sense foul air in a room",
+        "(B) To suspect something is wrong or dishonest",
+        "(C) To catch an infectious pest easily",
+        "(D) To find a trace of wild animals"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Turn a deaf ear",
+      "options": [
+        "(A) To suffer a physical hearing loss",
+        "(B) To ignore or refuse to listen",
+        "(C) To turn away from noisy places",
+        "(D) To behave in an extremely rude way"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Up to the mark",
+      "options": [
+        "(A) Meeting the required standard",
+        "(B) Reaching the highest score possible",
+        "(C) Marked with precise signatures",
+        "(D) Rising above sea level heights"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "With open arms",
+      "options": [
+        "(A) Fighting with visible weapons",
+        "(B) Welcoming warmly and enthusiastically",
+        "(C) Demanding explanation from authorities",
+        "(D) Standing in defensive physical posture"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Bosom friend",
+      "options": [
+        "(A) A highly influential relative",
+        "(B) A very close and trusted companion",
+        "(C) A colleague working in same cabin",
+        "(D) A rival pretending to be a helper"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Capital punishment",
+      "options": [
+        "(A) A highly severe financial penalty",
+        "(B) The death penalty awarded by court",
+        "(C) Imprisonment in the state capital",
+        "(D) Demotion from an executive post"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Close shave",
+      "options": [
+        "(A) A clean personal appearance",
+        "(B) A very narrow escape from danger",
+        "(C) A highly economical haircut deal",
+        "(D) A strict conversation with a boss"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Dog in the manger",
+      "options": [
+        "(A) A highly loyal and protective pet",
+        "(B) A person who prevents others from enjoying what they cannot use",
+        "(C) A stubborn animal refusing to work",
+        "(D) A homeless person seeking shelter"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "French leave",
+      "options": [
+        "(A) A highly planned foreign holiday",
+        "(B) Absence from work without permission",
+        "(C) Formal resignation submitted early",
+        "(D) Sick leave granted on medical grounds"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Hue and cry",
+      "options": [
+        "(A) A variety of bright pastel shades",
+        "(B) A loud public protest or clamour",
+        "(C) A painful physical injury state",
+        "(D) A silent demonstration of grief"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "In a nutshell",
+      "options": [
+        "(A) Wrapped inside a protective layer",
+        "(B) Expressed in a very brief form",
+        "(C) Locked in a tiny wooden cabin",
+        "(D) Facing a highly complex mystery"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Maiden speech",
+      "options": [
+        "(A) A highly controversial talk",
+        "(B) The first public speech by someone",
+        "(C) An address made by a lady leader",
+        "(D) A speech praising a state ruler"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Over and above",
+      "options": [
+        "(A) Rising high in sky level",
+        "(B) In addition to something else",
+        "(C) Beyond the control of law",
+        "(D) Better than the local average"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Pros and cons",
+      "options": [
+        "(A) Highly skilled professional teams",
+        "(B) The advantages and disadvantages",
+        "(C) Senior officers and junior clerks",
+        "(D) Complex rules and simple formats"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Scot-free",
+      "options": [
+        "(A) Without paying any entry fee",
+        "(B) Escaping without any punishment",
+        "(C) Traveling in a cold European state",
+        "(D) Independent of all mental stress"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Tooth and nail",
+      "options": [
+        "(A) Fighting with basic animal energy",
+        "(B) With absolute energy and fierce determination",
+        "(C) Damaging physical health in work",
+        "(D) Using dental and beauty cosmetic tools"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Yeoman's service",
+      "options": [
+        "(A) Service done for royal families",
+        "(B) Excellent and highly valuable work",
+        "(C) Basic labor with low wages",
+        "(D) Compulsory military state service"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Achilles' heel",
+      "options": [
+        "(A) A point of physical strength",
+        "(B) A small but critical weakness",
+        "(C) A special type of leather footwear",
+        "(D) An ancient battle tactic technique"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Add fuel to the fire",
+      "options": [
+        "(A) To assist in warming up a cold room",
+        "(B) To make an angry situation worse",
+        "(C) To perform a traditional fire ritual",
+        "(D) To explain a complex subject clearly"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Back to square one",
+      "options": [
+        "(A) Returning to the starting point of an effort",
+        "(B) Walking back to one's native village",
+        "(C) Rebuilding a ruined public monument",
+        "(D) Solving a mathematical puzzle easily"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "Barking up the wrong tree",
+      "options": [
+        "(A) Making loud noises in a quiet forest",
+        "(B) Pursuing a mistaken line of thought",
+        "(C) Blaming an innocent animal for damage",
+        "(D) Chopping down old wood by mistake"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Between the devil and the deep blue sea",
+      "options": [
+        "(A) Standing between two physical barriers",
+        "(B) Facing two equally difficult options",
+        "(C) Sailing in extremely dangerous waters",
+        "(D) Caught between a criminal and law"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Blow one's own trumpet",
+      "options": [
+        "(A) To play a musical piece skillfully",
+        "(B) To boast about one's achievements",
+        "(C) To lead a large marching parade",
+        "(D) To demand attention from everyone"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Break the ice",
+      "options": [
+        "(A) To clear pathways in winter seasons",
+        "(B) To start a conversation in a tense setup",
+        "(C) To perform a highly difficult physical act",
+        "(D) To dissolve cold business relations"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Burn your bridges",
+      "options": [
+        "(A) To destroy your paths of retreat permanently",
+        "(B) To cause heavy loss to state transport",
+        "(C) To end a journey in a dramatic way",
+        "(D) To light up a dark wooden bridge"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "By hook or by crook",
+      "options": [
+        "(A) By using fishing tools carefully",
+        "(B) By any possible means, fair or foul",
+        "(C) Through long systematic training",
+        "(D) With the help of close relatives"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Call it a day",
+      "options": [
+        "(A) To declare a day as a holiday",
+        "(B) To stop working on an activity",
+        "(C) To begin a new morning project",
+        "(D) To schedule an official meeting"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Cold shoulder",
+      "options": [
+        "(A) A painful joint stiffness condition",
+        "(B) A deliberate display of unfriendliness",
+        "(C) A winter coat worn by officers",
+        "(D) A state of fear before public speech"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Cry wolf",
+      "options": [
+        "(A) To seek help from wild forest guides",
+        "(B) To raise false alarms of danger",
+        "(C) To weep loudly in public places",
+        "(D) To speak highly about a rival"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Cut corners",
+      "options": [
+        "(A) To trim borders of a drawing sheet",
+        "(B) To do something poorly to save money",
+        "(C) To drive very fast through small lanes",
+        "(D) To simplify complex designs of buildings"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Cut the rug",
+      "options": [
+        "(A) To damage household carpet flooring",
+        "(B) To dance in an energetic way",
+        "(C) To finalize a trade agreement",
+        "(D) To behave in an impolite manner"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Devil's advocate",
+      "options": [
+        "(A) A lawyer representing a known criminal",
+        "(B) A person presenting an opposing argument",
+        "(C) An official who acts with high bias",
+        "(D) A highly cunning legal advisor"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Don't count your chickens before they hatch",
+      "options": [
+        "(A) Do not rely on plans that are uncertain",
+        "(B) Avoid opening a poultry farm in winter",
+        "(C) Do not calculate profits daily in trade",
+        "(D) Avoid wasting food on expectations"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "Down to the wire",
+      "options": [
+        "(A) Reaching the very end of a contest",
+        "(B) Sliding down from high metal ropes",
+        "(C) Dealing with basic electrical wiring",
+        "(D) Falling to a state of complete poverty"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "Drastic times call for drastic measures",
+      "options": [
+        "(A) Extreme conditions require extreme actions",
+        "(B) Bad climate requires emergency shelter",
+        "(C) Historical events require careful reading",
+        "(D) Sudden delays require quick payments"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "Every cloud has a silver lining",
+      "options": [
+        "(A) Heavy rainfall brings rich agricultural crop",
+        "(B) There is a hopeful side to every bad situation",
+        "(C) Sky formations indicate natural changes",
+        "(D) Shiny metals are found in hilly regions"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Fit as a fiddle",
+      "options": [
+        "(A) Musical instrument in tuned state",
+        "(B) In perfect health and physical form",
+        "(C) Wearing correct size of formal attire",
+        "(D) Highly suitable for a critical job role"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Get a taste of your own medicine",
+      "options": [
+        "(A) To take bitter pills during a critical illness",
+        "(B) To receive the same bad treatment you gave",
+        "(C) To verify the formula of a chemical compound",
+        "(D) To understand the difficulties of doctors"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Go down in flames",
+      "options": [
+        "(A) To catch fire during a heavy explosion",
+        "(B) To fail spectacularly in an endeavor",
+        "(C) To descend quickly into hot valleys",
+        "(D) To get highly angry on trivial issues"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Go the extra mile",
+      "options": [
+        "(A) To walk a long distance for good health",
+        "(B) To make more effort than is expected",
+        "(C) To travel beyond one's native state borders",
+        "(D) To delay completion of a basic task"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Hear it on the grapevine",
+      "options": [
+        "(A) To collect information about farm products",
+        "(B) To hear news through informal rumors",
+        "(C) To listen carefully to secret records",
+        "(D) To discuss plans with senior officials"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Hit the sack",
+      "options": [
+        "(A) To carry heavy sacks of grains",
+        "(B) To go to bed to sleep",
+        "(C) To express deep disappointment",
+        "(D) To pack personal items for tour"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "In the heat of the moment",
+      "options": [
+        "(A) During intense hot summer afternoons",
+        "(B) Saying or doing something without thinking",
+        "(C) Working close to high temperature furnaces",
+        "(D) Making decisions after a long debate"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "It takes two to tango",
+      "options": [
+        "(A) A dance performance requires perfect rhythm",
+        "(B) Both parties are responsible for a discord",
+        "(C) Two leaders are needed for large states",
+        "(D) Twin efforts are required in manual labor"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Keep body and soul together",
+      "options": [
+        "(A) To practice regular spiritual exercises",
+        "(B) To manage to survive on minimal means",
+        "(C) To live a highly disciplined lifestyle",
+        "(D) To remain in peaceful state of mind"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Kill two birds with one stone",
+      "options": [
+        "(A) To hunt wildlife with primitive weapons",
+        "(B) To achieve two goals with one single action",
+        "(C) To solve a dispute between close neighbors",
+        "(D) To damage two precious items by mistake"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Last straw",
+      "options": [
+        "(A) The final trivial problem that makes a situation unbearable",
+        "(B) A tiny dry grass piece used in nesting",
+        "(C) The ultimate tool used to finish tasks",
+        "(D) A very weak argument presented in court"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "Look before you leap",
+      "options": [
+        "(A) To inspect a deep trench before jumping",
+        "(B) To consider potential consequences before acting",
+        "(C) To consult senior guides during travel",
+        "(D) To verify map details of hilly areas"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Method to one's madness",
+      "options": [
+        "(A) A highly systematic clinical mental therapy",
+        "(B) A rational reason for odd behavior",
+        "(C) A chaotic way of managing simple works",
+        "(D) A technique of acting in street plays"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Miss the boat",
+      "options": [
+        "(A) To lose a precious chance of success",
+        "(B) To fail to board a ferry boat on time",
+        "(C) To misjudge deep water current speeds",
+        "(D) To experience heavy motion sickness"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "No pain, no gain",
+      "options": [
+        "(A) Hard physical labor causes heavy exhaustion",
+        "(B) Suffering is necessary to achieve success",
+        "(C) Medical treatment is vital for quick relief",
+        "(D) Avoid worries to lead a peaceful lifestyle"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "On the ball",
+      "options": [
+        "(A) Playing sports with high athletic energy",
+        "(B) Being highly alert and quick to react",
+        "(C) Balancing oneself on an uneven surface",
+        "(D) Following directions given by a team lead"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Out of the frying pan into the fire",
+      "options": [
+        "(A) Moving from one bad situation to a worse one",
+        "(B) Cooking food under high thermal levels",
+        "(C) Getting injured during standard kitchen chores",
+        "(D) Moving from cold areas to warm regions"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "Picture paints a thousand words",
+      "options": [
+        "(A) Graphic art is highly expensive to buy",
+        "(B) A visual image explains a concept better",
+        "(C) Long descriptions are always boring to read",
+        "(D) Painters are highly intelligent individuals"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Play second fiddle",
+      "options": [
+        "(A) To support main musical band players",
+        "(B) To take a subordinate or lesser role",
+        "(C) To perform with highly dual standards",
+        "(D) To practice an instrument in spare time"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Pull yourself together",
+      "options": [
+        "(A) To assemble a broken wooden structure",
+        "(B) To recover control over one's emotions",
+        "(C) To join a group of active volunteers",
+        "(D) To stand straight during physical training"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Saving for a rainy day",
+      "options": [
+        "(A) Collecting rainwater for dry farm seasons",
+        "(B) Reserving financial resources for future crisis",
+        "(C) Purchasing umbrellas before monsoon arrival",
+        "(D) Planning indoor activities for holidays"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "See eye to eye",
+      "options": [
+        "(A) To stare at someone with great anger",
+        "(B) To be in complete agreement with someone",
+        "(C) To undergo a detailed eye checkup",
+        "(D) To stand very close to another person"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Shed light on",
+      "options": [
+        "(A) To switch on heavy power lights",
+        "(B) To clarify or explain a subject",
+        "(C) To focus bright rays on raw gems",
+        "(D) To reduce energy usage in offices"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Sit on the fence",
+      "options": [
+        "(A) To guard a farm boundary boundary line",
+        "(B) To avoid making a decision or commitment",
+        "(C) To rest after a long day of farm work",
+        "(D) To watch a match from high viewpoints"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Speak of the devil",
+      "options": [
+        "(A) To discuss old tales of evil spirits",
+        "(B) When someone appears just as they are mentioned",
+        "(C) To criticise an absent person severely",
+        "(D) To preach moral values to young students"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Steal someone's thunder",
+      "options": [
+        "(A) To predict seasonal rainfall patterns early",
+        "(B) To take credit for another person's work",
+        "(C) To behave in a highly disruptive manner",
+        "(D) To gain fame through magical stage tricks"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Take a back seat",
+      "options": [
+        "(A) To travel as a passenger in a vehicle",
+        "(B) To assume a less prominent or active role",
+        "(C) To decline a formal promotion in service",
+        "(D) To sit at the rear of an exam hall"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Take it easy",
+      "options": [
+        "(A) To handle fragile glassware with caution",
+        "(B) To relax and not get overly stressed",
+        "(C) To complete a simple task very slowly",
+        "(D) To accept bribe money without hesitation"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Throw in the towel",
+      "options": [
+        "(A) To wash personal laundry items quickly",
+        "(B) To admit defeat or give up a struggle",
+        "(C) To express deep disgust during a fight",
+        "(D) To prepare yourself for hard athletic training"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Under your nose",
+      "options": [
+        "(A) In a very hidden or secretive spot",
+        "(B) Right in front of you but unnoticed",
+        "(C) Extremely close to smelling distance",
+        "(D) Strictly within administrative bounds"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Up in arms",
+      "options": [
+        "(A) Holding military weapons in alert state",
+        "(B) Angry and protesting strongly about something",
+        "(C) Celebrating a massive athletic victory",
+        "(D) Lifting children gently with care"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Up in the air",
+      "options": [
+        "(A) Travelling by high speed air flights",
+        "(B) Uncertain or not yet resolved",
+        "(C) Floating high above standard heights",
+        "(D) Displaying high levels of arrogance"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Well-to-do",
+      "options": [
+        "(A) Always behaving in polite manner",
+        "(B) Wealthy or financially well-off",
+        "(C) Performing duties with high skill",
+        "(D) Highly physically fit and active"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Whole nine yards",
+      "options": [
+        "(A) A standard measurement of textile cloth",
+        "(B) Everything possible or the entire amount",
+        "(C) A large courtyard of state buildings",
+        "(D) A long journey covered on foot"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Wolf in sheep's clothing",
+      "options": [
+        "(A) A wild animal wearing natural wool",
+        "(B) A dangerous person pretending to be harmless",
+        "(C) A highly foolish individual wearing rich attire",
+        "(D) A shy child behaving very aggressively"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Zero in on",
+      "options": [
+        "(A) To reduce rates to the lowest level",
+        "(B) To focus attention directly on something",
+        "(C) To fail to achieve any score in sports",
+        "(D) To start counting values from beginning"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "At daggers drawn",
+      "options": [
+        "(A) Displaying unique museum weapons",
+        "(B) In a state of open and bitter hostility",
+        "(C) Ready to begin a fencing contest",
+        "(D) Fighting bravely against wild beasts"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Bad blood",
+      "options": [
+        "(A) An infectious medical blood condition",
+        "(B) Feelings of ill-will or mutual hatred",
+        "(C) Belonging to a low caste family line",
+        "(D) Making very poor personal decisions"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Bed of roses",
+      "options": [
+        "(A) A garden nursery with rare flowers",
+        "(B) A highly comfortable or easy situation",
+        "(C) A decorative setting for formal events",
+        "(D) A state of constant dream and sleep"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Behind closed doors",
+      "options": [
+        "(A) Living in absolute state of poverty",
+        "(B) Doing something in absolute secrecy",
+        "(C) Locked inside a state lockup room",
+        "(D) Repairing old architectural structures"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Beside the mark",
+      "options": [
+        "(A) Standing close to target boards",
+        "(B) Irrelevant or not to the point",
+        "(C) Scoring exactly near passing marks",
+        "(D) Making a visible sign on papers"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Big wig",
+      "options": [
+        "(A) An old-fashioned theatrical headpiece",
+        "(B) An important or highly influential person",
+        "(C) A person with a comical appearance",
+        "(D) A highly complex state administrative rule"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Bird's eye view",
+      "options": [
+        "(A) Looking through high-magnification lenses",
+        "(B) A general overview of a whole situation",
+        "(C) A highly narrow and specific detail study",
+        "(D) Tracking migratory flight paths of birds"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Black sheep",
+      "options": [
+        "(A) A rare breed of high altitude livestock",
+        "(B) A disreputable member of a family or group",
+        "(C) A person working in dark coal mines",
+        "(D) An individual dressed in dark formal suits"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Blessing in disguise",
+      "options": [
+        "(A) A holy priest traveling in simple dress",
+        "(B) Something bad that turns out to be good",
+        "(C) A secret gift received on a birthday",
+        "(D) An unexpected promotion in service"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Blue blood",
+      "options": [
+        "(A) A biological fluid of deep-sea creatures",
+        "(B) Noble or aristocratic ancestry",
+        "(C) A person suffering from cold exposure",
+        "(D) An extremely rare chemical compound"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Bolt from the blue",
+      "options": [
+        "(A) A bright metal screw used in engines",
+        "(B) A sudden and completely unexpected shock",
+        "(C) A severe thunderstorm during monsoons",
+        "(D) A rapid shift in political alliances"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Bone of contention",
+      "options": [
+        "(A) A bone structure found in wild animals",
+        "(B) A subject of dispute or disagreement",
+        "(C) A weak joint in a skeletal system",
+        "(D) A solid piece of historical evidence"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Broad daylight",
+      "options": [
+        "(A) An early morning hour before sunrise",
+        "(B) Fully visible day time when crimes are seen",
+        "(C) A wide sunny area in hilly regions",
+        "(D) A brightly lit state banquet hall"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Bull in a china shop",
+      "options": [
+        "(A) A highly powerful animal in farm lands",
+        "(B) A clumsy person in a delicate situation",
+        "(C) An aggressive trader in foreign markets",
+        "(D) A rare display of power in state meetings"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Burn a hole in the pocket",
+      "options": [
+        "(A) Damaging expensive trousers by accident",
+        "(B) Money spent very quickly or eagerly",
+        "(C) Carrying dangerous matchbox items",
+        "(D) Earning wages through extreme labor"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Bury the hatchet",
+      "options": [
+        "(A) To hide weapons under deep soil layers",
+        "(B) To make peace and end a conflict",
+        "(C) To construct defensive boundary trenches",
+        "(D) To cancel an official court warrant"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "By fits and starts",
+      "options": [
+        "(A) Working with extreme speed and energy",
+        "(B) Irregularly or in an inconsistent manner",
+        "(C) Starting a machine using old cranks",
+        "(D) Acting under sudden severe fits of anger"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Call a spade a spade",
+      "options": [
+        "(A) To speak in a direct, blunt, and frank way",
+        "(B) To list agricultural tools in audit reports",
+        "(C) To play cards with high skill levels",
+        "(D) To criticize local village farmers"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "Cast pearls before swine",
+      "options": [
+        "(A) To feed precious sea gems to farm animals",
+        "(B) To offer valuable things to those who cannot appreciate them",
+        "(C) To waste state funds on luxurious projects",
+        "(D) To display expensive ornaments in local markets"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Rain cats and dogs",
+      "options": [
+        "(A) Animals fighting wildly in street corners",
+        "(B) Rain very heavily over a long duration",
+        "(C) Sudden arrival of small pets in area",
+        "(D) Extreme windy weather before winter"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Chew the cud",
+      "options": [
+        "(A) To eat meals in a slow, noisy manner",
+        "(B) To think deeply or ponder over something",
+        "(C) To waste time in useless gossiping",
+        "(D) To digest difficult text before exams"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Chicken-hearted",
+      "options": [
+        "(A) Having weak cardiovascular health",
+        "(B) Lacking courage or being cowardly",
+        "(C) Behaving in a very gentle manner",
+        "(D) Loving simple poultry dishes"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Child's play",
+      "options": [
+        "(A) A highly noisy playground activity",
+        "(B) A very easy task or simple work",
+        "(C) Innocent behavior shown by adults",
+        "(D) Traditional games played in villages"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Chip of the old block",
+      "options": [
+        "(A) A tiny piece carved from ancient stones",
+        "(B) A child who closely resembles a parent",
+        "(C) An old-fashioned person refusing change",
+        "(D) A small wooden fragment of a log"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Clean slate",
+      "options": [
+        "(A) A newly wiped classroom black board",
+        "(B) A fresh start with no past mistakes",
+        "(C) A clear title deed of village land",
+        "(D) A neat personal writing notebook"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Close-fisted man",
+      "options": [
+        "(A) A highly aggressive physical fighter",
+        "(B) A miserly person who hates spending money",
+        "(C) A determined worker in a labor union",
+        "(D) A strict disciplined military commander"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Cold-blooded",
+      "options": [
+        "(A) A medical state of low body temperature",
+        "(B) Done deliberately with absolute cruelty",
+        "(C) Lacking energy during winter seasons",
+        "(D) Reptiles that live in deep river valleys"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Curry favour",
+      "options": [
+        "(A) To cook delicious traditional state dishes",
+        "(B) To seek approval through insincere flattery",
+        "(C) To assist a needy person financially",
+        "(D) To dispute a decision made by leaders"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Die in harness",
+      "options": [
+        "(A) To die in a tragic horse carriage accident",
+        "(B) To die while still active in service or job",
+        "(C) To die while fighting bravely on borders",
+        "(D) To die due to severe physical exhaustion"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Eat humble pie",
+      "options": [
+        "(A) To consume simple meals in village areas",
+        "(B) To apologize or admit one's mistakes",
+        "(C) To accept a very poor financial offer",
+        "(D) To behave in a highly dignified way"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Elbow room",
+      "options": [
+        "(A) A very cramped and small room setup",
+        "(B) Adequate space or freedom to act",
+        "(C) Physical exercise to improve joints",
+        "(D) Separate cabins given to junior staff"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Face value",
+      "options": [
+        "(A) The actual worth of gold coins",
+        "(B) Initial assessment based on appearance",
+        "(C) A cosmetic treatment done for skin",
+        "(D) The legal authority of state papers"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Fair and square",
+      "options": [
+        "(A) A perfectly drawn geometrical shape",
+        "(B) In an honest, just, and direct manner",
+        "(C) A highly balanced financial ledger book",
+        "(D) A beautiful open public park area"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Feather one's own nest",
+      "options": [
+        "(A) To build a cozy home using soft fabrics",
+        "(B) To enrich oneself by using public funds",
+        "(C) To decorate a room with natural crafts",
+        "(D) To take extra care of young children"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Fight shy of",
+      "options": [
+        "(A) To engage in a quiet verbal debate",
+        "(B) To avoid or keep away from something",
+        "(C) To struggle hard to overcome shyness",
+        "(D) To stand up against aggressive rivals"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Fool's paradise",
+      "options": [
+        "(A) A highly beautiful resort in hills",
+        "(B) Happiness based on false hopes or illusions",
+        "(C) A group of highly impractical plans",
+        "(D) A comic theatrical drama show"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Gird up one's loins",
+      "options": [
+        "(A) To wear heavy traditional warrior clothes",
+        "(B) To prepare oneself for hard physical effort",
+        "(C) To rest after a long day of hard work",
+        "(D) To secure personal belongings carefully"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Go to the dogs",
+      "options": [
+        "(A) To adopt a large pack of rescue pets",
+        "(B) To ruin oneself completely or deteriorate",
+        "(C) To follow a path of high adventure",
+        "(D) To fail in simple veterinary tests"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Green-eyed monster",
+      "options": [
+        "(A) A mythical creature of old legends",
+        "(B) Severe feelings of jealousy or envy",
+        "(C) A highly toxic environmental hazard",
+        "(D) A person wearing tinted green glasses"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Halcyon days",
+      "options": [
+        "(A) Periods of heavy rain and monsoons",
+        "(B) A very calm, peaceful, and happy time",
+        "(C) Days spent in heavy physical training",
+        "(D) The duration of modern state holidays"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Hand in glove",
+      "options": [
+        "(A) Wearing correct uniform safety gear",
+        "(B) Working in close partnership or collusion",
+        "(C) Handling delicate paperwork carefully",
+        "(D) Fighting with high physical safety tools"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Harp on the same string",
+      "options": [
+        "(A) To play a single melody on a sitar",
+        "(B) To repeat the same point repetitively",
+        "(C) To tune a musical instrument perfectly",
+        "(D) To raise a voice against minor errors"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Heart and soul",
+      "options": [
+        "(A) A deeply serious biological talk",
+        "(B) With complete dedication and energy",
+        "(C) A romantic story of young lovers",
+        "(D) The inner core of natural sciences"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Herculean task",
+      "options": [
+        "(A) A project handled by huge machines",
+        "(B) A task requiring immense effort or strength",
+        "(C) A simple job requiring high intellect",
+        "(D) An ancient athletic competitive game"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "High and dry",
+      "options": [
+        "(A) Rising high above wet coastal regions",
+        "(B) Abandoned, helpless, or without resources",
+        "(C) In a state of absolute joy and pride",
+        "(D) A weather condition of hilly districts"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Hit below the belt",
+      "options": [
+        "(A) To fight according to standard rules",
+        "(B) To act unfairly or use dishonest tactics",
+        "(C) To wear loose-fitting formal trousers",
+        "(D) To fail in basic physical athletic tests"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Hobson's choice",
+      "options": [
+        "(A) A choice between two lucrative deals",
+        "(B) No real choice or alternative at all",
+        "(C) A decision made by majority votes",
+        "(D) An easy selection of multiple goods"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Hold water",
+      "options": [
+        "(A) To store water in large storage tanks",
+        "(B) To prove sound, valid, or logical",
+        "(C) To carry liquids in simple clay pots",
+        "(D) To survive in deep water channels"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Hope against hope",
+      "options": [
+        "(A) To expect success with absolute certainty",
+        "(B) To nurture hope when there is no basis",
+        "(C) To compare two highly optimistic ideas",
+        "(D) To lose complete faith in state rules"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "In the doldrums",
+      "options": [
+        "(A) Sailing in strong warm ocean winds",
+        "(B) In a state of depression or inactivity",
+        "(C) Living in remote, high altitude areas",
+        "(D) Celebrating a victory with high music"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "In the good books of",
+      "options": [
+        "(A) Listed in high merit registers of exams",
+        "(B) In a position of favor with someone",
+        "(C) Reading classical literature texts daily",
+        "(D) Managing library catalogs systematically"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Ins and outs",
+      "options": [
+        "(A) Entering and exiting public offices",
+        "(B) Full details or precise intricacies",
+        "(C) The visible and hidden borders of states",
+        "(D) Fluctuations in daily market prices"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Ivory tower",
+      "options": [
+        "(A) A majestic palace built of rare marble",
+        "(B) A state of isolation from real life",
+        "(C) A high watchtower in wildlife parks",
+        "(D) A highly expensive decorative monument"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Kangaroo court",
+      "options": [
+        "(A) A court setup in wild natural habitats",
+        "(B) An unofficial and illegal court trial",
+        "(C) A highly respected judicial bench",
+        "(D) A court dealing only with juvenile law"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Keep the wolf from the door",
+      "options": [
+        "(A) To build secure doors against wild pests",
+        "(B) To ward off extreme poverty or starvation",
+        "(C) To maintain a guard dog at home entrance",
+        "(D) To defend your family from forest attacks"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Kith and kin",
+      "options": [
+        "(A) Close neighbors and business partners",
+        "(B) Relatives and family members",
+        "(C) Traditional tools used in handloom craft",
+        "(D) Young boys and girls of state schools"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Lame excuse",
+      "options": [
+        "(A) An apology made with deep physical injury",
+        "(B) An unconvincing or weak explanation",
+        "(C) A formal application citing sick leave",
+        "(D) A delay caused due to transport issues"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Laughing stock",
+      "options": [
+        "(A) A large collection of comical storybooks",
+        "(B) An object of open ridicule or mockery",
+        "(C) A cheerful person loved by everyone",
+        "(D) A high yield investment share in trade"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Lion's share",
+      "options": [
+        "(A) The territory occupied by wild beasts",
+        "(B) The largest or major portion of something",
+        "(C) A highly risky portion of business trade",
+        "(D) A share of forest wood given to villagers"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Live wire",
+      "options": [
+        "(A) An open electrical line carrying current",
+        "(B) A highly energetic and dynamic person",
+        "(C) A live broadcast of local sports matches",
+        "(D) A tense borders situation between states"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Lock, stock, and barrel",
+      "options": [
+        "(A) Locking up a gun inside wooden boxes",
+        "(B) Completely, including all parts or items",
+        "(C) Storing liquid fuels in metal containers",
+        "(D) Closing a business trade permanently"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Man of straw",
+      "options": [
+        "(A) A simple farmer working in paddy fields",
+        "(B) A weak person of little substance or value",
+        "(C) A decorative figure made of dry grass",
+        "(D) A person who lives a highly basic life"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Mare's nest",
+      "options": [
+        "(A) A stable built for valuable riding horses",
+        "(B) An illusion or a discovery that is useless",
+        "(C) A complex puzzle solved by experts",
+        "(D) A cozy home located in wild hilly areas"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Mind one's P's and Q's",
+      "options": [
+        "(A) To learn basic typing on keyboards",
+        "(B) To be highly polite and careful of behavior",
+        "(C) To verify financial bills in audit offices",
+        "(D) To write letters in clear neat script"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Nip in the bud",
+      "options": [
+        "(A) To prune young flowers during spring time",
+        "(B) To stop an evil or problem at an early stage",
+        "(C) To pluck fresh green tea leaves carefully",
+        "(D) To cultivate plants in small clay pots"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Null and void",
+      "options": [
+        "(A) A document missing signatures of officers",
+        "(B) Having no legal force or validity",
+        "(C) Completely empty and dark space areas",
+        "(D) Resigned from service due to health issues"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "On the horns of a dilemma",
+      "options": [
+        "(A) Caught by an aggressive wild bull",
+        "(B) Facing a choice between two bad options",
+        "(C) Solving a highly complex state issue",
+        "(D) Walking on narrow edges of high cliffs"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Once and for all",
+      "options": [
+        "(A) Giving a single chance to all candidates",
+        "(B) Finally and conclusively, ending all disputes",
+        "(C) Trying a task once with great concentration",
+        "(D) Sharing a prize equally among everyone"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Out of pocket",
+      "options": [
+        "(A) Losing money through loose pocket holes",
+        "(B) Having spent all money or short of cash",
+        "(C) Behaving in a highly undisciplined way",
+        "(D) Earning huge profits through trading"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Palm off",
+      "options": [
+        "(A) To clean surfaces with bare hands",
+        "(B) To fraudulently pass off a fake item as genuine",
+        "(C) To offer help in agricultural works",
+        "(D) To read hand lines for predicting future"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Pay through the nose",
+      "options": [
+        "(A) To suffer physical injuries on the face",
+        "(B) To pay an extremely high or excessive price",
+        "(C) To purchase medicine for severe cold relief",
+        "(D) To pay official fees through simple checks"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Penny wise, pound foolish",
+      "options": [
+        "(A) Managing coin records but losing notes",
+        "(B) Careful in small matters but wasteful in large ones",
+        "(C) Highly skilled in basic currency exchange",
+        "(D) Spending money only on essential food items"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Pin money",
+      "options": [
+        "(A) Small metallic coins of low value",
+        "(B) A small allowance for minor personal expenses",
+        "(C) Bribe money given to clear desk files",
+        "(D) Savings kept hidden in bedroom corners"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Play ducks and drakes",
+      "options": [
+        "(A) To play games with small water birds",
+        "(B) To behave recklessly or squander resources",
+        "(C) To make false promises to close friends",
+        "(D) To work in dual positions at the same time"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Pocket an insult",
+      "options": [
+        "(A) To keep warning letters inside coats",
+        "(B) To tolerate an insult without protest",
+        "(C) To ignore standard regulations of service",
+        "(D) To apologize for a public misbehavior"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Queer fish",
+      "options": [
+        "(A) A rare colorful species of marine life",
+        "(B) A person of highly eccentric behavior",
+        "(C) A fish caught using unique local baits",
+        "(D) An individual who tells grand lies"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Red tape",
+      "options": [
+        "(A) Red colored strings used in packing files",
+        "(B) Excessive administrative rules causing delays",
+        "(C) Highly urgent boundary lines of borders",
+        "(D) Bright markings used in construction areas"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Rise to the occasion",
+      "options": [
+        "(A) To stand up during formal state functions",
+        "(B) To perform well in difficult moments",
+        "(C) To claim a high post in state administration",
+        "(D) To celebrate success with close friends"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Rule of thumb",
+      "options": [
+        "(A) A strict law imposed by old state rulers",
+        "(B) A simple, practical, and approximate method",
+        "(C) A biometric verification used in offices",
+        "(D) A traditional hand gesture of victory"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Run amok",
+      "options": [
+        "(A) To run a long distance in forest areas",
+        "(B) To behave in a wild, uncontrolled manner",
+        "(C) To participate in speed athletic races",
+        "(D) To escape from custody during transport"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Safe and sound",
+      "options": [
+        "(A) Protected inside heavy iron lockers",
+        "(B) Completely unhurt and in good health",
+        "(C) Storing data files in computer drives",
+        "(D) Making clear, loud announcements in public"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Show the white feather",
+      "options": [
+        "(A) To display beautiful traditional wear",
+        "(B) To show cowardice or act like a coward",
+        "(C) To declare peace with strong enemies",
+        "(D) To award prizes to young students"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Sine die",
+      "options": [
+        "(A) Resigning from service due to illness",
+        "(B) Adjourning a meeting without a fixed date",
+        "(C) Signed by supreme judicial authorities",
+        "(D) Passing away during active working hours"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Small fry",
+      "options": [
+        "(A) A delicious recipe of fresh local fish",
+        "(B) Insignificant or unimportant people",
+        "(C) Small children studying in nursery",
+        "(D) Minor details of a long audit report"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Take to task",
+      "options": [
+        "(A) To assign a heavy project to a junior clerk",
+        "(B) To reprimand or scold someone severely",
+        "(C) To accept responsibility for a bad error",
+        "(D) To complete daily work schedules on time"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "To the backbone",
+      "options": [
+        "(A) Suffering from a severe spine injury",
+        "(B) Thoroughly or in every way possible",
+        "(C) Supporting a family with hard effort",
+        "(D) Having a highly strong bone structure"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Turn over a new leaf",
+      "options": [
+        "(A) To prune dry leaves from garden plants",
+        "(B) To change behavior for the better",
+        "(C) To read the next chapter of a big book",
+        "(D) To shift to a new village area"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Uphill task",
+      "options": [
+        "(A) A difficult or challenging endeavor",
+        "(B) Walking up steep hills in winter",
+        "(C) A task handled by state forest guards",
+        "(D) Building a home on hill summits"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "White elephant",
+      "options": [
+        "(A) A highly rare and sacred animal species",
+        "(B) A costly but useless possession",
+        "(C) A grand state heritage building monument",
+        "(D) An item imported from Southeast Asian states"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Against the grain",
+      "options": [
+        "(A) Cleaning raw food crops in farm fields",
+        "(B) Contrary to natural inclination or habit",
+        "(C) Operating old stone mills for grinding",
+        "(D) Disputing high prices of essential items"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "All at sea",
+      "options": [
+        "(A) Travelling in high-speed cruise ships",
+        "(B) Completely puzzled or confused",
+        "(C) Standing near beach areas in summer",
+        "(D) Working in naval defence services"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Alpha and omega",
+      "options": [
+        "(A) Two scientific symbols of chemistry",
+        "(B) The beginning and the end",
+        "(C) Highly complex mathematical calculations",
+        "(D) A duo of extremely talented leaders"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "An axe to grind",
+      "options": [
+        "(A) Sharpening agricultural cutting tools",
+        "(B) A private or selfish motive to serve",
+        "(C) A heavy dispute between forest woodcutters",
+        "(D) Working hard to clear a family debt"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "At a loss",
+      "options": [
+        "(A) Selling trade products at low prices",
+        "(B) Puzzled or unable to decide",
+        "(C) Losing precious items during travel",
+        "(D) Defeated in a sports competitive game"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "At cross purposes",
+      "options": [
+        "(A) Pursuing highly identical family goals",
+        "(B) Having conflicting intentions or goals",
+        "(C) Arguing without understanding local languages",
+        "(D) Drawing complex geometrical intersecting lines"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "At arm's length",
+      "options": [
+        "(A) Measuring distance of objects roughly",
+        "(B) Keeping a safe distance from someone",
+        "(C) Exercising regularly in morning slots",
+        "(D) Standing close to physical safety barriers"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Backstairs influence",
+      "options": [
+        "(A) Repairing old concrete steps in offices",
+        "(B) Influence exerted in an underhand way",
+        "(C) A security force guarding back entrances",
+        "(D) Influence of close friends in home"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Bad egg",
+      "options": [
+        "(A) A decayed food item found in markets",
+        "(B) A worthless or dishonest person",
+        "(C) A highly unsuccessful venture deal",
+        "(D) A student who fails simple tests"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Bark is worse than bite",
+      "options": [
+        "(A) Wild animals making loud noises",
+        "(B) Threatening speech but harmless in action",
+        "(C) A painful physical bite by stray dogs",
+        "(D) Behaving rudely with close family members"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Behind the scenes",
+      "options": [
+        "(A) Acting on standard theatrical stages",
+        "(B) Working in private or out of sight",
+        "(C) Living in remote, dense forest areas",
+        "(D) Watching a show from rear seats"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Bell the cat",
+      "options": [
+        "(A) Feeding milk to domestic pet animals",
+        "(B) To undertake a highly dangerous task",
+        "(C) Playing games with small kittens",
+        "(D) Finding lost articles in dark rooms"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Beside oneself",
+      "options": [
+        "(A) Standing close to close companions",
+        "(B) Overwhelmed with strong emotion",
+        "(C) Sitting alone in a quiet library",
+        "(D) Behaving in a highly quiet manner"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Bite the dust",
+      "options": [
+        "(A) Cleaning dusty furniture in old rooms",
+        "(B) To fail completely or be defeated",
+        "(C) To travel on dusty state roads",
+        "(D) To struggle hard to earn wages"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Black and blue",
+      "options": [
+        "(A) A highly stylish formal color theme",
+        "(B) Heavily bruised from physical impacts",
+        "(C) A dark cloudy sky before rainstorms",
+        "(D) Lacking any clear vision of future"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Blow hot and cold",
+      "options": [
+        "(A) Dealing with sudden climate variations",
+        "(B) Constantly changing one's opinions",
+        "(C) Operating high pressure thermal pipes",
+        "(D) Feeling anxious during state interviews"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Bosom friends",
+      "options": [
+        "(A) Relatives of old royal families",
+        "(B) Extremely intimate or close friends",
+        "(C) Colleagues working in same sections",
+        "(D) Rivals showing fake friendly behavior"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Break a leg",
+      "options": [
+        "(A) An unfortunate physical sports injury",
+        "(B) A phrase wishing good luck before a show",
+        "(C) Running very fast in athletic contests",
+        "(D) Behaving clumsily on formal occasions"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Bring to light",
+      "options": [
+        "(A) Lighting up deep dark cave paths",
+        "(B) To reveal or disclose secret facts",
+        "(C) Focusing a lamp on state files",
+        "(D) Explaining basic concepts of optics"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Bury your head in the sand",
+      "options": [
+        "(A) To play games on bright sandy beaches",
+        "(B) To ignore a difficult reality or problem",
+        "(C) To hide personal gold under floor soils",
+        "(D) To explore deep underground soil layers"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "By word of mouth",
+      "options": [
+        "(A) Pronouncing difficult words in languages",
+        "(B) Spreading information through verbal talks",
+        "(C) Reading aloud from big historic books",
+        "(D) Demanding rights in a loud public way"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Call a halt",
+      "options": [
+        "(A) Stopping a moving vehicle quickly",
+        "(B) To bring an activity to an end",
+        "(C) Scheduling a short lunch recess slot",
+        "(D) Challenging a rival to a direct duel"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Carry the day",
+      "options": [
+        "(A) Traveling a long distance on a hot day",
+        "(B) To win a victory or be successful",
+        "(C) To complete all scheduled office works",
+        "(D) Handling daily chores with great care"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Cheek by jowl",
+      "options": [
+        "(A) An intensive physical facial checkup",
+        "(B) Very close together or side-by-side",
+        "(C) Fighting wildly with bare hands",
+        "(D) Behaving in an impolite manner"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Child's play",
+      "options": [
+        "(A) A highly chaotic sports activity",
+        "(B) An extremely easy task or work",
+        "(C) Innocent behaviors displayed by elders",
+        "(D) Traditional games of local children"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Chip on your shoulder",
+      "options": [
+        "(A) A minor physical wooden injury",
+        "(B) A persistent grievance or angry attitude",
+        "(C) Wearing official badges on shoulders",
+        "(D) Carrying light loads of forest wood"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Close shave",
+      "options": [
+        "(A) A neat daily personal grooming deal",
+        "(B) A very narrow escape from danger",
+        "(C) A major discount on hair cutting costs",
+        "(D) A brief conversation with strict bosses"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Clutch at straws",
+      "options": [
+        "(A) Gathering dry grass pieces in farming",
+        "(B) Trying any small hope in a desperate crisis",
+        "(C) Falling down from a high mountain tree",
+        "(D) Relying on weak physical support tools"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Cold comfort",
+      "options": [
+        "(A) Hot tea served during winter seasons",
+        "(B) Very little or no real consolation",
+        "(C) A cozy room equipped with heaters",
+        "(D) A state of absolute calm in mind"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Come to grief",
+      "options": [
+        "(A) To visit a grieving neighbor family",
+        "(B) To fail or suffer a disaster",
+        "(C) To weep loudly on sudden bad news",
+        "(D) To undergo severe mental pressure"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Crocodile tears",
+      "options": [
+        "(A) A deep and genuine personal sorrow",
+        "(B) An insincere display of grief or pity",
+        "(C) A painful physical eye irritation",
+        "(D) A highly dramatic angry outburst"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Cry wolf",
+      "options": [
+        "(A) To track wild animals in deep forests",
+        "(B) To raise a false alarm of danger",
+        "(C) To weep loudly in public markets",
+        "(D) To criticize rival leaders strongly"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Curry favour",
+      "options": [
+        "(A) To cook traditional local delicacies",
+        "(B) To win approval through false flattery",
+        "(C) To help a poor family in distress",
+        "(D) To debate a decision of state leaders"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Cut a sorry figure",
+      "options": [
+        "(A) Drawing an incorrect shape on paper",
+        "(B) To make a poor or bad impression",
+        "(C) To apologize for a small clerical error",
+        "(D) To appear in a very old dress style"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Cut corners",
+      "options": [
+        "(A) Trimming borders of old drawing sheets",
+        "(B) Doing things poorly to save money",
+        "(C) Driving very fast through small lanes",
+        "(D) Simplifying building designs to save space"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Dark horse",
+      "options": [
+        "(A) An unexpected winner of a contest",
+        "(B) A highly majestic breed of racing horse",
+        "(C) A person who works in deep secrecy",
+        "(D) An individual with a highly shady past"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "Dead letter",
+      "options": [
+        "(A) A letter missing complete address details",
+        "(B) A rule or law no longer enforced",
+        "(C) An ancient historical manuscript piece",
+        "(D) A written threat received from criminals"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Die in harness",
+      "options": [
+        "(A) To perish in a vehicle accident",
+        "(B) To die while still on active duty",
+        "(C) To fall during a tough border battle",
+        "(D) To die due to extreme physical fatigue"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Dog in the manger",
+      "options": [
+        "(A) A highly alert and protective domestic pet",
+        "(B) A person stopping others using what they cannot",
+        "(C) A stubborn farm animal refusing to work",
+        "(D) A homeless individual seeking shelter"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Don't put all your eggs in one basket",
+      "options": [
+        "(A) Avoid carrying fragile foods in single bags",
+        "(B) Do not risk everything on a single venture",
+        "(C) Do not store all grain bags in one room",
+        "(D) Avoid calculating profits before trade ends"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Down to earth",
+      "options": [
+        "(A) Falling down from a high mountain peak",
+        "(B) Practical, realistic, and highly humble",
+        "(C) Living in extremely basic ground rooms",
+        "(D) Dealing with basic agricultural land soil"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Draw the line",
+      "options": [
+        "(A) Drawing borders on clean writing sheets",
+        "(B) To set a limit on what is acceptable",
+        "(C) Marking land boundaries in village survey",
+        "(D) Separating items into specific categories"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Eat humble pie",
+      "options": [
+        "(A) Eating basic food items in villages",
+        "(B) To apologize or admit one's errors",
+        "(C) To accept a very low salary deal",
+        "(D) To behave in a highly majestic manner"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Elbow room",
+      "options": [
+        "(A) A highly congested physical space",
+        "(B) Sufficient space or freedom to act",
+        "(C) Joint exercises for personal health",
+        "(D) Separate cabins allotted to office staff"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Every dog has his day",
+      "options": [
+        "(A) Animals deserve good food in winter",
+        "(B) Everyone gets a chance of good luck",
+        "(C) Street pets require proper local care",
+        "(D) Success depends on hard physical efforts"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Face the music",
+      "options": [
+        "(A) To accept unpleasant consequences",
+        "(B) To enjoy classical musical concert",
+        "(C) To ignore harsh remarks of rivals",
+        "(D) To lead a large public delegation"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "Fair and square",
+      "options": [
+        "(A) A perfectly drawn geometrical figure",
+        "(B) Honest, direct, and just behavior",
+        "(C) A highly balanced account book ledger",
+        "(D) A beautiful central garden in towns"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Fair-weather friend",
+      "options": [
+        "(A) A loyal friend who stays in all seasons",
+        "(B) A companion who leaves during tough times",
+        "(C) An associate from highly pleasant areas",
+        "(D) A supportive guide during state crisis"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Fall flat",
+      "options": [
+        "(A) Falling down on hard concrete floors",
+        "(B) To fail to produce any desired effect",
+        "(C) To lose complete physical balance",
+        "(D) To construct buildings on flat lands"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Feather in one's cap",
+      "options": [
+        "(A) A symbol of useless personal pride",
+        "(B) An achievement to be highly proud of",
+        "(C) A traditional feather hat worn by chiefs",
+        "(D) A minor responsibility handled easily"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Feather one's own nest",
+      "options": [
+        "(A) To build comfortable houses using soft goods",
+        "(B) To enrich oneself through corrupt practices",
+        "(C) To decorate personal office rooms grandly",
+        "(D) To take extreme care of young family members"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Fight shy of",
+      "options": [
+        "(A) To debate issues in a highly quiet way",
+        "(B) To avoid dealing with something directly",
+        "(C) To overcome personal shyness in public",
+        "(D) To defend yourself against noisy critics"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Fish out of water",
+      "options": [
+        "(A) An uncomfortable or unfamiliar situation",
+        "(B) A highly energetic and free person",
+        "(C) A biological specimen used in research",
+        "(D) A state of absolute clarity in mind"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "Fits and starts",
+      "options": [
+        "(A) Working with continuous high speed",
+        "(B) Irregularly or with frequent interruptions",
+        "(C) Starting old machines with manual crank",
+        "(D) Acting under sudden heavy mental anger"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Flesh and blood",
+      "options": [
+        "(A) A biological study of human muscles",
+        "(B) Human nature or physical human form",
+        "(C) A violent scene of accidents on roads",
+        "(D) Family members of royal lineage"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Flog a dead horse",
+      "options": [
+        "(A) Beating an animal in a cruel way",
+        "(B) Wasting energy on a lost cause",
+        "(C) Trying to ride highly weak horses",
+        "(D) Investing money in ruined businesses"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Fly off the handle",
+      "options": [
+        "(A) Flying small aircraft with basic tools",
+        "(B) To lose one's temper very suddenly",
+        "(C) Escaping from custody during transport",
+        "(D) Handling delicate glasswares carelessly"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Fool's paradise",
+      "options": [
+        "(A) A highly scenic resort in hill states",
+        "(B) Happiness based on completely false hopes",
+        "(C) A group of highly impractical designs",
+        "(D) A comic stage drama shown to people"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "French leave",
+      "options": [
+        "(A) A highly luxury foreign trip planned early",
+        "(B) Absent from work without prior permission",
+        "(C) A formal resignation letter sent online",
+        "(D) Sick leave granted under medical grounds"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "From hand to mouth",
+      "options": [
+        "(A) Consuming food in a very fast manner",
+        "(B) Having only enough money to survive",
+        "(C) Living a highly lavish or wealthy life",
+        "(D) Whispering secrets to close associates"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Gird up one's loins",
+      "options": [
+        "(A) To wear heavy ancient warrior dresses",
+        "(B) To prepare yourself for tough action",
+        "(C) To take rest after long hours of labor",
+        "(D) To secure your valuables during tours"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Give a wide berth",
+      "options": [
+        "(A) Allotting a spacious seat in train coach",
+        "(B) To avoid or keep away from someone",
+        "(C) Welcoming visitors with high warmth",
+        "(D) Offering generous funding to state projects"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Give the devil his due",
+      "options": [
+        "(A) To pay off loans taken from bad people",
+        "(B) Give credit to a rival for their good points",
+        "(C) To pardon a known criminal in court",
+        "(D) To praise bad actions of local leaders"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Go the whole hog",
+      "options": [
+        "(A) Traveling across long forest lands",
+        "(B) Doing something completely or thoroughly",
+        "(C) Spending complete savings on luxury",
+        "(D) Behaving in an highly greedy way"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Go to the dogs",
+      "options": [
+        "(A) Adopting many stray dogs as home pets",
+        "(B) To ruin oneself or deteriorate completely",
+        "(C) Following risky paths of forest tracking",
+        "(D) Failing simple veterinary training tests"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Green horn",
+      "options": [
+        "(A) A highly rare animal with green antlers",
+        "(B) An inexperienced or naive young person",
+        "(C) A highly toxic forest plant species",
+        "(D) A skilled hunter working in wildlife"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Grease someone's palm",
+      "options": [
+        "(A) To help someone do hard physical jobs",
+        "(B) To bribe a person for getting favors",
+        "(C) To apply medicinal oils on dry hands",
+        "(D) To shake hands with highly warm gestures"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Halcyon days",
+      "options": [
+        "(A) Periods of heavy rainfall and storms",
+        "(B) A very calm, happy, and peaceful time",
+        "(C) Days spent doing heavy field work",
+        "(D) The duration of national public holidays"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Hand in glove",
+      "options": [
+        "(A) Wearing proper safety items at work",
+        "(B) Working together in close conspiracy",
+        "(C) Handling old official files carefully",
+        "(D) Fighting with high physical shield tools"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Hard and fast",
+      "options": [
+        "(A) Rapidly changing daily schedules",
+        "(B) Strict and unalterable rules",
+        "(C) Difficult and heavy manual labor",
+        "(D) Dangerous driving speeds on roads"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Harp on the same string",
+      "options": [
+        "(A) Playing sweet music on a single sitar",
+        "(B) Repeating the same point repeatedly",
+        "(C) Tuning a musical instrument with ease",
+        "(D) Raising issues about minor mistakes"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Head or tail",
+      "options": [
+        "(A) Coin tossing results in sports events",
+        "(B) Two distinct and opposite viewpoints",
+        "(C) Complete understanding of a subject",
+        "(D) The structural outline of reports"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Heart and soul",
+      "options": [
+        "(A) A highly serious anatomical science lecture",
+        "(B) With absolute devotion and complete energy",
+        "(C) A romantic novel of legendary young lovers",
+        "(D) The core principles of administrative law"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Herculean task",
+      "options": [
+        "(A) A project completed using heavy equipment",
+        "(B) A task of immense physical effort",
+        "(C) A simple job requiring high mental skill",
+        "(D) Traditional athletic contest in state"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "High and dry",
+      "options": [
+        "(A) Rising high above wet coastal regions",
+        "(B) Abandoned, helpless, or without resource",
+        "(C) In a state of absolute joy and pride",
+        "(D) A weather condition of hilly districts"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Hit below the belt",
+      "options": [
+        "(A) To fight according to standard rules",
+        "(B) To act unfairly or use dishonest tactics",
+        "(C) To wear loose-fitting formal trousers",
+        "(D) To fail in basic physical athletic tests"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Hit the nail on the head",
+      "options": [
+        "(A) To do or say the exact right thing",
+        "(B) To drive a nail into wooden boards",
+        "(C) To injure oneself during hard work",
+        "(D) To make a loud, disruptive noise"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "Hobson's choice",
+      "options": [
+        "(A) A choice between two lucrative deals",
+        "(B) No real choice or alternative at all",
+        "(C) A decision made by majority votes",
+        "(D) An easy selection of multiple goods"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Hold water",
+      "options": [
+        "(A) To store water in large storage tanks",
+        "(B) To prove sound, valid, or logical",
+        "(C) To carry liquids in simple clay pots",
+        "(D) To survive in deep water channels"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Hope against hope",
+      "options": [
+        "(A) To expect success with absolute certainty",
+        "(B) To nurture hope when there is no basis",
+        "(C) To compare two highly optimistic ideas",
+        "(D) To lose complete faith in state rules"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Hue and cry",
+      "options": [
+        "(A) A variety of bright pastel shades",
+        "(B) A loud public protest or clamour",
+        "(C) A painful physical injury state",
+        "(D) A silent demonstration of grief"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "In a nutshell",
+      "options": [
+        "(A) Wrapped inside a protective layer",
+        "(B) Expressed in a very brief form",
+        "(C) Locked in a tiny wooden cabin",
+        "(D) Facing a highly complex mystery"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "In black and white",
+      "options": [
+        "(A) In a very clear written format",
+        "(B) Lacking any colourful imagination",
+        "(C) Old-fashioned photographic style",
+        "(D) Divided into two direct extremes"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "In deep water",
+      "options": [
+        "(A) Swimming in deep water reservoirs",
+        "(B) Facing highly severe trouble or difficulty",
+        "(C) Exploring underwater marine flora",
+        "(D) Enjoying holidays near sea coast lines"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "In the doldrums",
+      "options": [
+        "(A) Sailing in strong warm ocean winds",
+        "(B) In a state of depression or inactivity",
+        "(C) Living in remote, high altitude areas",
+        "(D) Celebrating a victory with high music"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "In the good books of",
+      "options": [
+        "(A) Listed in high merit registers of exams",
+        "(B) In a position of favor with someone",
+        "(C) Reading classical literature texts daily",
+        "(D) Managing library catalogs systematically"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "In the long run",
+      "options": [
+        "(A) Running high-speed athletic marathons",
+        "(B) Over a long period of future time",
+        "(C) Moving away to far off destinations",
+        "(D) Delaying decisions on critical projects"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "In the nick of time",
+      "options": [
+        "(A) After the scheduled departure",
+        "(B) Just at the critical last moment",
+        "(C) Much earlier than anticipated",
+        "(D) At a highly inappropriate hour"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Ins and outs",
+      "options": [
+        "(A) Entering and exiting public offices",
+        "(B) Full details or precise intricacies",
+        "(C) The visible and hidden borders of states",
+        "(D) Fluctuations in daily market prices"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Ivory tower",
+      "options": [
+        "(A) A majestic palace built of rare marble",
+        "(B) A state of isolation from real life",
+        "(C) A high watchtower in wildlife parks",
+        "(D) A highly expensive decorative monument"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Kangaroo court",
+      "options": [
+        "(A) A court setup in wild natural habitats",
+        "(B) An unofficial and illegal court trial",
+        "(C) A highly respected judicial bench",
+        "(D) A court dealing only with juvenile law"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Keep at arm's length",
+      "options": [
+        "(A) To measure distances precisely",
+        "(B) To maintain a safe social distance",
+        "(C) To avoid close friendly relations",
+        "(D) To stretch one's limbs regularly"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Keep the wolf from the door",
+      "options": [
+        "(A) To build secure doors against wild pests",
+        "(B) To ward off extreme poverty or starvation",
+        "(C) To maintain a guard dog at home entrance",
+        "(D) To defend your family from forest attacks"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Kith and kin",
+      "options": [
+        "(A) Close neighbors and business partners",
+        "(B) Relatives and family members",
+        "(C) Traditional tools used in handloom craft",
+        "(D) Young boys and girls of state schools"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Lame excuse",
+      "options": [
+        "(A) An apology made with deep physical injury",
+        "(B) An unconvincing or weak explanation",
+        "(C) A formal application citing sick leave",
+        "(D) A delay caused due to transport issues"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Laughing stock",
+      "options": [
+        "(A) A large collection of comical storybooks",
+        "(B) An object of open ridicule or mockery",
+        "(C) A cheerful person loved by everyone",
+        "(D) A high yield investment share in trade"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Leave no stone unturned",
+      "options": [
+        "(A) To search for hidden treasure",
+        "(B) To construct a solid foundation",
+        "(C) To make every possible effort",
+        "(D) To cause widespread destruction"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Let the cat out of the bag",
+      "options": [
+        "(A) To free a pet from captivity",
+        "(B) To abandon a useful household item",
+        "(C) To reveal a secret unintentionally",
+        "(D) To act with absolute bravery"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Lion's share",
+      "options": [
+        "(A) The territory occupied by wild beasts",
+        "(B) The largest or major portion of something",
+        "(C) A highly risky portion of business trade",
+        "(D) A share of forest wood given to villagers"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Live wire",
+      "options": [
+        "(A) An open electrical line carrying current",
+        "(B) A highly energetic and dynamic person",
+        "(C) A live broadcast of local sports matches",
+        "(D) A tense borders situation between states"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Lock, stock, and barrel",
+      "options": [
+        "(A) Locking up a gun inside wooden boxes",
+        "(B) Completely, including all parts or items",
+        "(C) Storing liquid fuels in metal containers",
+        "(D) Closing a business trade permanently"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Maiden speech",
+      "options": [
+        "(A) A highly controversial talk",
+        "(B) The first public speech by someone",
+        "(C) An address made by a lady leader",
+        "(D) A speech praising a state ruler"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Make both ends meet",
+      "options": [
+        "(A) To tie two loose wire ends together",
+        "(B) To earn just enough to cover expenses",
+        "(C) To travel from one coast to another",
+        "(D) To reconcile two opposing factions"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Man of straw",
+      "options": [
+        "(A) A simple farmer working in paddy fields",
+        "(B) A weak person of little substance or value",
+        "(C) A decorative figure made of dry grass",
+        "(D) A person who lives a highly basic life"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Mare's nest",
+      "options": [
+        "(A) A stable built for valuable riding horses",
+        "(B) An illusion or a discovery that is useless",
+        "(C) A complex puzzle solved by experts",
+        "(D) A cozy home located in wild hilly areas"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Mind one's P's and Q's",
+      "options": [
+        "(A) To learn basic typing on keyboards",
+        "(B) To be highly polite and careful of behavior",
+        "(C) To verify financial bills in audit offices",
+        "(D) To write letters in clear neat script"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Nip in the bud",
+      "options": [
+        "(A) To prune young flowers during spring time",
+        "(B) To stop an evil or problem at an early stage",
+        "(C) To pluck fresh green tea leaves carefully",
+        "(D) To cultivate plants in small clay pots"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Null and void",
+      "options": [
+        "(A) A document missing signatures of officers",
+        "(B) Having no legal force or validity",
+        "(C) Completely empty and dark space areas",
+        "(D) Resigned from service due to health issues"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Once in a blue moon",
+      "options": [
+        "(A) Regularly on specific dates",
+        "(B) Very rarely or infrequently",
+        "(C) Only during nighttime hours",
+        "(D) On auspicious state occasions"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "On the horns of a dilemma",
+      "options": [
+        "(A) Caught by an aggressive wild bull",
+        "(B) Facing a choice between two bad options",
+        "(C) Solving a highly complex state issue",
+        "(D) Walking on narrow edges of high cliffs"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Once and for all",
+      "options": [
+        "(A) Giving a single chance to all candidates",
+        "(B) Finally and conclusively, ending all disputes",
+        "(C) Trying a task once with great concentration",
+        "(D) Sharing a prize equally among everyone"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Out of pocket",
+      "options": [
+        "(A) Losing money through loose pocket holes",
+        "(B) Having spent all money or short of cash",
+        "(C) Behaving in a highly undisciplined way",
+        "(D) Earning huge profits through trading"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Out of the blue",
+      "options": [
+        "(A) Moving away from the vast sea",
+        "(B) Completely unexpected or sudden",
+        "(C) Falling down from high altitudes",
+        "(D) Emerging from a state of sadness"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Over and above",
+      "options": [
+        "(A) Rising high in sky level",
+        "(B) In addition to something else",
+        "(C) Beyond the control of law",
+        "(D) Better than the local average"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Palm off",
+      "options": [
+        "(A) To clean surfaces with bare hands",
+        "(B) To fraudulently pass off a fake item as genuine",
+        "(C) To offer help in agricultural works",
+        "(D) To read hand lines for predicting future"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Pay through the nose",
+      "options": [
+        "(A) To suffer physical injuries on the face",
+        "(B) To pay an extremely high or excessive price",
+        "(C) To purchase medicine for severe cold relief",
+        "(D) To pay official fees through simple checks"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Penny wise, pound foolish",
+      "options": [
+        "(A) Managing coin records but losing notes",
+        "(B) Careful in small matters but wasteful in large ones",
+        "(C) Highly skilled in basic currency exchange",
+        "(D) Spending money only on essential food items"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Pin money",
+      "options": [
+        "(A) Small metallic coins of low value",
+        "(B) A small allowance for minor personal expenses",
+        "(C) Bribe money given to clear desk files",
+        "(D) Savings kept hidden in bedroom corners"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Play ducks and drakes",
+      "options": [
+        "(A) To play games with small water birds",
+        "(B) To behave recklessly or squander resources",
+        "(C) To make false promises to close friends",
+        "(D) To work in dual positions at the same time"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Pocket an insult",
+      "options": [
+        "(A) To keep warning letters inside coats",
+        "(B) To tolerate an insult without protest",
+        "(C) To ignore standard regulations of service",
+        "(D) To apologize for a public misbehavior"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Pros and cons",
+      "options": [
+        "(A) Highly skilled professional teams",
+        "(B) The advantages and disadvantages",
+        "(C) Senior officers and junior clerks",
+        "(D) Complex rules and simple formats"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Pull someone's leg",
+      "options": [
+        "(A) To physically trip an opponent",
+        "(B) To tease or play a joke on someone",
+        "(C) To help someone clear an obstacle",
+        "(D) To insult a person in public"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Queer fish",
+      "options": [
+        "(A) A rare colorful species of marine life",
+        "(B) A person of highly eccentric behavior",
+        "(C) A fish caught using unique local baits",
+        "(D) An individual who tells grand lies"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Rainy day",
+      "options": [
+        "(A) A day of pleasant cool weather",
+        "(B) A future time of financial hardship",
+        "(C) An official holiday due to monsoons",
+        "(D) A highly productive agricultural day"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Red letter day",
+      "options": [
+        "(A) A day marked by state disasters",
+        "(B) A highly memorable or important day",
+        "(C) A day spent in official paperwork",
+        "(D) A day of extreme summer heat"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Red tape",
+      "options": [
+        "(A) Red colored strings used in packing files",
+        "(B) Excessive administrative rules causing delays",
+        "(C) Highly urgent boundary lines of borders",
+        "(D) Bright markings used in construction areas"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Rise to the occasion",
+      "options": [
+        "(A) To stand up during formal state functions",
+        "(B) To perform well in difficult moments",
+        "(C) To claim a high post in state administration",
+        "(D) To celebrate success with close friends"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Rule of thumb",
+      "options": [
+        "(A) A strict law imposed by old state rulers",
+        "(B) A simple, practical, and approximate method",
+        "(C) A biometric verification used in offices",
+        "(D) A traditional hand gesture of victory"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Run amok",
+      "options": [
+        "(A) To run a long distance in forest areas",
+        "(B) To behave in a wild, uncontrolled manner",
+        "(C) To participate in speed athletic races",
+        "(D) To escape from custody during transport"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Safe and sound",
+      "options": [
+        "(A) Protected inside heavy iron lockers",
+        "(B) Completely unhurt and in good health",
+        "(C) Storing data files in computer drives",
+        "(D) Making clear, loud announcements in public"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Scot-free",
+      "options": [
+        "(A) Without paying any entry fee",
+        "(B) Escaping without any punishment",
+        "(C) Traveling in a cold European state",
+        "(D) Independent of all mental stress"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Show the white feather",
+      "options": [
+        "(A) To display beautiful traditional wear",
+        "(B) To show cowardice or act like a coward",
+        "(C) To declare peace with strong enemies",
+        "(D) To award prizes to young students"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Sine die",
+      "options": [
+        "(A) Resigning from service due to illness",
+        "(B) Adjourning a meeting without a fixed date",
+        "(C) Signed by supreme judicial authorities",
+        "(D) Passing away during active working hours"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Small fry",
+      "options": [
+        "(A) A delicious recipe of fresh local fish",
+        "(B) Insignificant or unimportant people",
+        "(C) Small children studying in nursery",
+        "(D) Minor details of a long audit report"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Smell a rat",
+      "options": [
+        "(A) To sense foul air in a room",
+        "(B) To suspect something is wrong or dishonest",
+        "(C) To catch an infectious pest easily",
+        "(D) To find a trace of wild animals"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Spill the beans",
+      "options": [
+        "(A) To waste precious food resources",
+        "(B) To perform a clumsy physical action",
+        "(C) To reveal a secret prematurely",
+        "(D) To behave in an impolite manner"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Take something with a grain of salt",
+      "options": [
+        "(A) To accept something with skepticism",
+        "(B) To add spices to a tasteless dish",
+        "(C) To take small medicinal doses",
+        "(D) To agree without any hesitation"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "Take to task",
+      "options": [
+        "(A) To assign a heavy project to a junior clerk",
+        "(B) To reprimand or scold someone severely",
+        "(C) To accept responsibility for a bad error",
+        "(D) To complete daily work schedules on time"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Through thick and thin",
+      "options": [
+        "(A) Under all circumstances, good or bad",
+        "(B) Walking through dense forest terrain",
+        "(C) During physical transformations",
+        "(D) With highly calculated risks"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "To the backbone",
+      "options": [
+        "(A) Suffering from a severe spine injury",
+        "(B) Thoroughly or in every way possible",
+        "(C) Supporting a family with hard effort",
+        "(D) Having a highly strong bone structure"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Tooth and nail",
+      "options": [
+        "(A) Fighting with basic animal energy",
+        "(B) With absolute energy and fierce determination",
+        "(C) Damaging physical health in work",
+        "(D) Using dental and beauty cosmetic tools"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Turn a deaf ear",
+      "options": [
+        "(A) To suffer a physical hearing loss",
+        "(B) To ignore or refuse to listen",
+        "(C) To turn away from noisy places",
+        "(D) To behave in an extremely rude way"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Turn over a new leaf",
+      "options": [
+        "(A) To prune dry leaves from garden plants",
+        "(B) To change behavior for the better",
+        "(C) To read the next chapter of a big book",
+        "(D) To shift to a new village area"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Under the weather",
+      "options": [
+        "(A) Experiencing extreme climate shifts",
+        "(B) Feeling slightly unwell or ill",
+        "(C) Travelling without safety gear",
+        "(D) Working under heavy pressure"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Up to the mark",
+      "options": [
+        "(A) Meeting the required standard",
+        "(B) Reaching the highest score possible",
+        "(C) Marked with precise signatures",
+        "(D) Rising above sea level heights"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "Uphill task",
+      "options": [
+        "(A) A difficult or challenging endeavor",
+        "(B) Walking up steep hills in winter",
+        "(C) A task handled by state forest guards",
+        "(D) Building a home on hill summits"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "White elephant",
+      "options": [
+        "(A) A highly rare and sacred animal species",
+        "(B) A costly but useless possession",
+        "(C) A grand state heritage building monument",
+        "(D) An item imported from Southeast Asian states"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "With open arms",
+      "options": [
+        "(A) Fighting with visible weapons",
+        "(B) Welcoming warmly and enthusiastically",
+        "(C) Demanding explanation from authorities",
+        "(D) Standing in defensive physical posture"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Yeoman's service",
+      "options": [
+        "(A) Service done for royal families",
+        "(B) Excellent and highly valuable work",
+        "(C) Basic labor with low wages",
+        "(D) Compulsory military state service"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "A stitch in time saves nine",
+      "options": [
+        "(A) Sewing damaged textiles immediately",
+        "(B) Timely action prevents greater problems later",
+        "(C) Completing projects much before deadlines",
+        "(D) Avoiding minor physical tasks at home"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "A standard of living",
+      "options": [
+        "(A) Simple habits of village communities",
+        "(B) The level of wealth and comfort available",
+        "(C) Ethical values taught by state schools",
+        "(D) A minimum wage fixed by departments"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Achilles' heel",
+      "options": [
+        "(A) A point of physical strength",
+        "(B) A small but critical weakness",
+        "(C) A special type of leather footwear",
+        "(D) An ancient battle tactic technique"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Add fuel to the fire",
+      "options": [
+        "(A) To assist in warming up a cold room",
+        "(B) To make an angry situation worse",
+        "(C) To perform a traditional fire ritual",
+        "(D) To explain a complex subject clearly"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Apple of one's eye",
+      "options": [
+        "(A) A healthy diet routine for vision",
+        "(B) Someone who is deeply loved and cherished",
+        "(C) A highly valuable ornamental craft piece",
+        "(D) A strict disciplined supervisor at work"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "At a stone's throw",
+      "options": [
+        "(A) Engaging in a local village conflict",
+        "(B) At a very short distance",
+        "(C) Throwing physical debris onto roads",
+        "(D) Located in remote mountain valleys"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Back to square one",
+      "options": [
+        "(A) Returning to the starting point of an effort",
+        "(B) Walking back to one's native village",
+        "(C) Rebuilding a ruined public monument",
+        "(D) Solving a mathematical puzzle easily"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "Barking up the wrong tree",
+      "options": [
+        "(A) Making loud noises in a quiet forest",
+        "(B) Pursuing a mistaken line of thought",
+        "(C) Blaming an innocent animal for damage",
+        "(D) Chopping down old wood by mistake"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Beat about the bush",
+      "options": [
+        "(A) To clear wild forest growth",
+        "(B) To speak in a roundabout manner",
+        "(C) To hunt animals with basic tools",
+        "(D) To avoid physical hard work"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Between the devil and the deep blue sea",
+      "options": [
+        "(A) Standing between two physical barriers",
+        "(B) Facing two equally difficult options",
+        "(C) Sailing in extremely dangerous waters",
+        "(D) Caught between a criminal and law"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Bite the bullet",
+      "options": [
+        "(A) To face a grim situation with courage",
+        "(B) To engage in a physical conflict",
+        "(C) To make a highly foolish error",
+        "(D) To speak very rudely to elders"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "Blow one's own trumpet",
+      "options": [
+        "(A) To play a musical piece skillfully",
+        "(B) To boast about one's achievements",
+        "(C) To lead a large marching parade",
+        "(D) To demand attention from everyone"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Break the ice",
+      "options": [
+        "(A) To clear pathways in winter seasons",
+        "(B) To start a conversation in a tense setup",
+        "(C) To perform a highly difficult physical act",
+        "(D) To dissolve cold business relations"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Burn your bridges",
+      "options": [
+        "(A) To destroy your paths of retreat permanently",
+        "(B) To cause heavy loss to state transport",
+        "(C) To end a journey in a dramatic way",
+        "(D) To light up a dark wooden bridge"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "By hook or by crook",
+      "options": [
+        "(A) By using fishing tools carefully",
+        "(B) By any possible means, fair or foul",
+        "(C) Through long systematic training",
+        "(D) With the help of close relatives"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Call it a day",
+      "options": [
+        "(A) To declare a day as a holiday",
+        "(B) To stop working on an activity",
+        "(C) To begin a new morning project",
+        "(D) To schedule an official meeting"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Cold shoulder",
+      "options": [
+        "(A) A painful joint stiffness condition",
+        "(B) A deliberate display of unfriendliness",
+        "(C) A winter coat worn by officers",
+        "(D) A state of fear before public speech"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Cry over spilt milk",
+      "options": [
+        "(A) To complain about minor domestic chores",
+        "(B) To express deep regret over past losses",
+        "(C) To worry uselessly about past mistakes",
+        "(D) To argue over small shares of profits"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Don't count your chickens before they hatch",
+      "options": [
+        "(A) Do not rely on plans that are uncertain",
+        "(B) Avoid opening a poultry farm in winter",
+        "(C) Do not calculate profits daily in trade",
+        "(D) Avoid wasting food on expectations"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "Down to the wire",
+      "options": [
+        "(A) Reaching the very end of a contest",
+        "(B) Sliding down from high metal ropes",
+        "(C) Dealing with basic electrical wiring",
+        "(D) Falling to a state of complete poverty"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "Drastic times call for drastic measures",
+      "options": [
+        "(A) Extreme conditions require extreme actions",
+        "(B) Bad climate requires emergency shelter",
+        "(C) Historical events require careful reading",
+        "(D) Sudden delays require quick payments"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "Every cloud has a silver lining",
+      "options": [
+        "(A) Heavy rainfall brings rich agricultural crop",
+        "(B) There is a hopeful side to every bad situation",
+        "(C) Sky formations indicate natural changes",
+        "(D) Shiny metals are found in hilly regions"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Fit as a fiddle",
+      "options": [
+        "(A) Musical instrument in tuned state",
+        "(B) In perfect health and physical form",
+        "(C) Wearing correct size of formal attire",
+        "(D) Highly suitable for a critical job role"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Get a taste of your own medicine",
+      "options": [
+        "(A) To take bitter pills during a critical illness",
+        "(B) To receive the same bad treatment you gave",
+        "(C) To verify the formula of a chemical compound",
+        "(D) To understand the difficulties of doctors"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Go down in flames",
+      "options": [
+        "(A) To catch fire during a heavy explosion",
+        "(B) To fail spectacularly in an endeavor",
+        "(C) To descend quickly into hot valleys",
+        "(D) To get highly angry on trivial issues"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Go the extra mile",
+      "options": [
+        "(A) To walk a long distance for good health",
+        "(B) To make more effort than is expected",
+        "(C) To travel beyond one's native state borders",
+        "(D) To delay completion of a basic task"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Hear it on the grapevine",
+      "options": [
+        "(A) To collect information about farm products",
+        "(B) To hear news through informal rumors",
+        "(C) To listen carefully to secret records",
+        "(D) To discuss plans with senior officials"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Hit the sack",
+      "options": [
+        "(A) To carry heavy sacks of grains",
+        "(B) To go to bed to sleep",
+        "(C) To express deep disappointment",
+        "(D) To pack personal items for tour"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "In the heat of the moment",
+      "options": [
+        "(A) During intense hot summer afternoons",
+        "(B) Saying or doing something without thinking",
+        "(C) Working close to high temperature furnaces",
+        "(D) Making decisions after a long debate"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "It takes two to tango",
+      "options": [
+        "(A) A dance performance requires perfect rhythm",
+        "(B) Both parties are responsible for a discord",
+        "(C) Two leaders are needed for large states",
+        "(D) Twin efforts are required in manual labor"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Keep body and soul together",
+      "options": [
+        "(A) To practice regular spiritual exercises",
+        "(B) To manage to survive on minimal means",
+        "(C) To live a highly disciplined lifestyle",
+        "(D) To remain in peaceful state of mind"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Kill two birds with one stone",
+      "options": [
+        "(A) To hunt wildlife with primitive weapons",
+        "(B) To achieve two goals with one single action",
+        "(C) To solve a dispute between close neighbors",
+        "(D) To damage two precious items by mistake"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Last straw",
+      "options": [
+        "(A) The final trivial problem that makes a situation unbearable",
+        "(B) A tiny dry grass piece used in nesting",
+        "(C) The ultimate tool used to finish tasks",
+        "(D) A very weak argument presented in court"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "Look before you leap",
+      "options": [
+        "(A) To inspect a deep trench before jumping",
+        "(B) To consider potential consequences before acting",
+        "(C) To consult senior guides during travel",
+        "(D) To verify map details of hilly areas"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Method to one's madness",
+      "options": [
+        "(A) A highly systematic clinical mental therapy",
+        "(B) A rational reason for odd behavior",
+        "(C) A chaotic way of managing simple works",
+        "(D) A technique of acting in street plays"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Miss the boat",
+      "options": [
+        "(A) To lose a precious chance of success",
+        "(B) To fail to board a ferry boat on time",
+        "(C) To misjudge deep water current speeds",
+        "(D) To experience heavy motion sickness"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "No pain, no gain",
+      "options": [
+        "(A) Hard physical labor causes heavy exhaustion",
+        "(B) Suffering is necessary to achieve success",
+        "(C) Medical treatment is vital for quick relief",
+        "(D) Avoid worries to lead a peaceful lifestyle"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "On the ball",
+      "options": [
+        "(A) Playing sports with high athletic energy",
+        "(B) Being highly alert and quick to react",
+        "(C) Balancing oneself on an uneven surface",
+        "(D) Following directions given by a team lead"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Out of the frying pan into the fire",
+      "options": [
+        "(A) Moving from one bad situation to a worse one",
+        "(B) Cooking food under high thermal levels",
+        "(C) Getting injured during standard kitchen chores",
+        "(D) Moving from cold areas to warm regions"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "Picture paints a thousand words",
+      "options": [
+        "(A) Graphic art is highly expensive to buy",
+        "(B) A visual image explains a concept better",
+        "(C) Long descriptions are always boring to read",
+        "(D) Painters are highly intelligent individuals"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Play second fiddle",
+      "options": [
+        "(A) To support main musical band players",
+        "(B) To take a subordinate or lesser role",
+        "(C) To perform with highly dual standards",
+        "(D) To practice an instrument in spare time"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Pull yourself together",
+      "options": [
+        "(A) To assemble a broken wooden structure",
+        "(B) To recover control over one's emotions",
+        "(C) To join a group of active volunteers",
+        "(D) To stand straight during physical training"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Saving for a rainy day",
+      "options": [
+        "(A) Collecting rainwater for dry farm seasons",
+        "(B) Reserving financial resources for future crisis",
+        "(C) Purchasing umbrellas before monsoon arrival",
+        "(D) Planning indoor activities for holidays"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "See eye to eye",
+      "options": [
+        "(A) To stare at someone with great anger",
+        "(B) To be in complete agreement with someone",
+        "(C) To undergo a detailed eye checkup",
+        "(D) To stand very close to another person"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Shed light on",
+      "options": [
+        "(A) To switch on heavy power lights",
+        "(B) To clarify or explain a subject",
+        "(C) To focus bright rays on raw gems",
+        "(D) To reduce energy usage in offices"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Sit on the fence",
+      "options": [
+        "(A) To guard a farm boundary boundary line",
+        "(B) To avoid making a decision or commitment",
+        "(C) To rest after a long day of farm work",
+        "(D) To watch a match from high viewpoints"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Speak of the devil",
+      "options": [
+        "(A) To discuss old tales of evil spirits",
+        "(B) When someone appears just as they are mentioned",
+        "(C) To criticise an absent person severely",
+        "(D) To preach moral values to young students"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Steal someone's thunder",
+      "options": [
+        "(A) To predict seasonal rainfall patterns early",
+        "(B) To take credit for another person's work",
+        "(C) To behave in a highly disruptive manner",
+        "(D) To gain fame through magical stage tricks"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Take a back seat",
+      "options": [
+        "(A) To travel as a passenger in a vehicle",
+        "(B) To assume a less prominent or active role",
+        "(C) To decline a formal promotion in service",
+        "(D) To sit at the rear of an exam hall"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Take it easy",
+      "options": [
+        "(A) To handle fragile glassware with caution",
+        "(B) To relax and not get overly stressed",
+        "(C) To complete a simple task very slowly",
+        "(D) To accept bribe money without hesitation"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Throw in the towel",
+      "options": [
+        "(A) To wash personal laundry items quickly",
+        "(B) To admit defeat or give up a struggle",
+        "(C) To express deep disgust during a fight",
+        "(D) To prepare yourself for hard athletic training"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Under your nose",
+      "options": [
+        "(A) In a very hidden or secretive spot",
+        "(B) Right in front of you but unnoticed",
+        "(C) Extremely close to smelling distance",
+        "(D) Strictly within administrative bounds"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Up in arms",
+      "options": [
+        "(A) Holding military weapons in alert state",
+        "(B) Angry and protesting strongly about something",
+        "(C) Celebrating a massive athletic victory",
+        "(D) Lifting children gently with care"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Up in the air",
+      "options": [
+        "(A) Travelling by high speed air flights",
+        "(B) Uncertain or not yet resolved",
+        "(C) Floating high above standard heights",
+        "(D) Displaying high levels of arrogance"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Well-to-do",
+      "options": [
+        "(A) Always behaving in polite manner",
+        "(B) Wealthy or financially well-off",
+        "(C) Performing duties with high skill",
+        "(D) Highly physically fit and active"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Whole nine yards",
+      "options": [
+        "(A) A standard measurement of textile cloth",
+        "(B) Everything possible or the entire amount",
+        "(C) A large courtyard of state buildings",
+        "(D) A long journey covered on foot"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Wolf in sheep's clothing",
+      "options": [
+        "(A) A wild animal wearing natural wool",
+        "(B) A dangerous person pretending to be harmless",
+        "(C) A highly foolish individual wearing rich attire",
+        "(D) A shy child behaving very aggressively"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Zero in on",
+      "options": [
+        "(A) To reduce rates to the lowest level",
+        "(B) To focus attention directly on something",
+        "(C) To fail to achieve any score in sports",
+        "(D) To start counting values from beginning"
+      ],
+      "answer": "B"
+    }
+  ]
+}

@@ -1,0 +1,3626 @@
+{
+    "category": "GK - General",
+    "total_questions": 362,
+    "questions": [
+        {
+            "question": "In which place Lord Buddha has been enlightened?",
+            "options": [
+                "(A) Lumbini",
+                "(B) Kushinagar",
+                "(C) Sarnath",
+                "(D) Bodhgaya"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Who is the founder of \"Arya Samaj\"?",
+            "options": [
+                "(A) Swami Dayanand",
+                "(B) Ramakrishna Paramahansa",
+                "(C) Raja Rammohan Roy",
+                "(D) Swami Vivekananda"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What is the sign language of \"Punjabi\"?",
+            "options": [
+                "(A) Bengali",
+                "(B) Devanagari",
+                "(C) Shahmukhi",
+                "(D) Gurmukhi"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "What is the Southern Most area of Indian land?",
+            "options": [
+                "(A) Kavaratti",
+                "(B) Indira Point",
+                "(C) Kanyakumari",
+                "(D) Indira Col"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What was the childhood name of 'Gautam Buddha'?",
+            "options": [
+                "(A) Rahul",
+                "(B) Siddharth",
+                "(C) Gautam",
+                "(D) Vardhamana"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Fish takes breath by:",
+            "options": [
+                "(A) Lungs",
+                "(B) Spiracles",
+                "(C) Gills",
+                "(D) Skin"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Who gave the slogan 'Inquilab Zindabad'?",
+            "options": [
+                "(A) Chandrashekhar Azad",
+                "(B) Hasrat Mohani",
+                "(C) Subhas Chandra Bose",
+                "(D) Bhagat Singh"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Who is known as 'Punjab Kesari'?",
+            "options": [
+                "(A) Bal Gangadhar Tilak",
+                "(B) Bhagat Singh",
+                "(C) Bipin Chandra Pal",
+                "(D) Lala Lajpat Rai"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "'J.P. Saunders' was killed in which city?",
+            "options": [
+                "(A) Lahore",
+                "(B) Karachi",
+                "(C) Amritsar",
+                "(D) Delhi"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "First female Indian, who summited Mt. Everest twice?",
+            "options": [
+                "(A) Santosh Yadav",
+                "(B) Bachendri Pal",
+                "(C) Arunima Sinha",
+                "(D) Premalata Agarwal"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "When did Vasco da gama came into India?",
+            "options": [
+                "(A) 1498 AD",
+                "(B) 1526 AD",
+                "(C) 1600 AD",
+                "(D) 1757 AD"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "When did East India company came into India?",
+            "options": [
+                "(A) 1602 AD",
+                "(B) 1608 AD",
+                "(C) 1600 AD",
+                "(D) 1498 AD"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Guru Nanak Dev was born in which place?",
+            "options": [
+                "(A) Amritsar",
+                "(B) Nankana Sahib",
+                "(C) Patna Sahib",
+                "(D) Anandpur Sahib"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Who has given the concept of Khalsa?",
+            "options": [
+                "(A) Guru Govind Singh",
+                "(B) Guru Arjun Dev",
+                "(C) Guru Nanak",
+                "(D) Guru Tegh Bahadur"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Akbar was impressed by which sikh Guru?",
+            "options": [
+                "(A) Guru Nanak",
+                "(B) Guru Arjun Dev",
+                "(C) Guru Ramdas",
+                "(D) Guru Angad Dev"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Who is known as 'Iron Man of India'?",
+            "options": [
+                "(A) Lal Bahadur Shastri",
+                "(B) Jawaharlal Nehru",
+                "(C) Subhas Chandra Bose",
+                "(D) Sardar Vallabh Bhai Patel"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Who wrote 'Arthashastra'?",
+            "options": [
+                "(A) Banabhatta",
+                "(B) Megasthenes",
+                "(C) Kautilya",
+                "(D) Kalidasa"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "When do we observe 'Red Cross Day'?",
+            "options": [
+                "(A) 8 May",
+                "(B) 22 April",
+                "(C) 10 December",
+                "(D) 5 June"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Peacock was declared as the national bird of India in which year?",
+            "options": [
+                "(A) 1972",
+                "(B) 1950",
+                "(C) 1963",
+                "(D) 1947"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What is the Ratio of Indian National Flag?",
+            "options": [
+                "(A) 3:2",
+                "(B) 4:3",
+                "(C) 2:3",
+                "(D) 3:1"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Who has written 'National Song'?",
+            "options": [
+                "(A) Sri Aurobindo",
+                "(B) Sarojini Naidu",
+                "(C) Bankim Chandra Chatterjee",
+                "(D) Rabindranath Tagore"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Indian Calendar follows which pattern?",
+            "options": [
+                "(A) Saka Samvat",
+                "(B) Hijri pattern",
+                "(C) Vikram Samvat",
+                "(D) Gregorian pattern"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Firstly, Metro Train was started in which city of India?",
+            "options": [
+                "(A) Mumbai",
+                "(B) Delhi",
+                "(C) Chennai",
+                "(D) Kolkata"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Who was the first Indian Astronaut?",
+            "options": [
+                "(A) Sunita Williams",
+                "(B) Rakesh Sharma",
+                "(C) Kalpana Chawla",
+                "(D) Ravish Malhotra"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "What is headquarter of 'International Court of Justice'?",
+            "options": [
+                "(A) New York",
+                "(B) The Hague",
+                "(C) London",
+                "(D) Geneva"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which Britisher has fought for Indian Freedom against British Empire?",
+            "options": [
+                "(A) Thomas Munro",
+                "(B) Warren Hastings",
+                "(C) William Bentinck",
+                "(D) William Gordon"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Earth rotates on its axis __________.",
+            "options": [
+                "(A) West to East",
+                "(B) East to West",
+                "(C) South to North",
+                "(D) North to South"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which was the first Hindi language newspaper?",
+            "options": [
+                "(A) Udant Martand",
+                "(B) Kesari",
+                "(C) Samachar Darpan",
+                "(D) Bengal Gazette"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which of the following range is known as 'Himadri'?",
+            "options": [
+                "(A) Karakoram",
+                "(B) Outer Himalaya",
+                "(C) Greater Himalaya",
+                "(D) Lesser Himalaya"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which woman has firstly summited Mt. Everest in the world?",
+            "options": [
+                "(A) Yoko Ono",
+                "(B) Junko Tabei",
+                "(C) Tamae Watanabe",
+                "(D) Bachendri Pal"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Ashoka was influenced by which Buddhist Monk?",
+            "options": [
+                "(A) Chandragupta",
+                "(B) Upagupta",
+                "(C) Bindusara",
+                "(D) Chanakya"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Firstly, who told that Earth rotates around the sun?",
+            "options": [
+                "(A) Galileo",
+                "(B) Copernicus",
+                "(C) Kepler",
+                "(D) Newton"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Who is known as Napoleon of India?",
+            "options": [
+                "(A) Ashoka",
+                "(B) Samudragupta",
+                "(C) Harsha",
+                "(D) Chandragupta Maurya"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "In which year Mahatma Gandhi was born?",
+            "options": [
+                "(A) 1885",
+                "(B) 1875",
+                "(C) 1857",
+                "(D) 1869"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Who is the author of 'My Experiment with Truth'?",
+            "options": [
+                "(A) Jawaharlal Nehru",
+                "(B) Mahatma Gandhi",
+                "(C) Subhas Chandra Bose",
+                "(D) B.G. Tilak"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Dada Saheb Phalke award is associate with which field?",
+            "options": [
+                "(A) Literature",
+                "(B) Film",
+                "(C) Sports",
+                "(D) Science"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which is the highest bravery award in India?",
+            "options": [
+                "(A) Vir Chakra",
+                "(B) Ashok Chakra",
+                "(C) Bharat Ratna",
+                "(D) Paramveer Chakra"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Who is known as the Shakespeare of India?",
+            "options": [
+                "(A) Tulsidas",
+                "(B) Rabindranath Tagore",
+                "(C) Valmiki",
+                "(D) Kalidas"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "First Indian satellite was launched in which year?",
+            "options": [
+                "(A) 1980",
+                "(B) 1983",
+                "(C) 1975",
+                "(D) 1969"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "In which date we celebrate 'International Women's Day'?",
+            "options": [
+                "(A) 10 December",
+                "(B) 8 March",
+                "(C) 22 April",
+                "(D) 5 June"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "What is the total length of Indian Coastal line?",
+            "options": [
+                "(A) 7516 km",
+                "(B) 8200 km",
+                "(C) 5400 km",
+                "(D) 6100 km"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Who built G.T Road?",
+            "options": [
+                "(A) Chandragupta Maurya",
+                "(B) Sher Shah Suri",
+                "(C) Akbar",
+                "(D) Alauddin Khilji"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "We observe 'National Science Day' on which date?",
+            "options": [
+                "(A) 28 March",
+                "(B) 28 February",
+                "(C) 28 April",
+                "(D) 28 January"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "In Eye Donation, which part of eye is suppose to donate?",
+            "options": [
+                "(A) Lens",
+                "(B) Iris",
+                "(C) Cornea",
+                "(D) Retina"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Congress was divided into two parts in which year?",
+            "options": [
+                "(A) 1911",
+                "(B) 1905",
+                "(C) 1907",
+                "(D) 1916"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which country is the highest producer of Silver?",
+            "options": [
+                "(A) Mexico",
+                "(B) China",
+                "(C) Australia",
+                "(D) Peru"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "We observe 'world Earth Day' on which date?",
+            "options": [
+                "(A) 22 April",
+                "(B) 22 March",
+                "(C) 22 June",
+                "(D) 22 May"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What is the life span of RBC?",
+            "options": [
+                "(A) 150 Days",
+                "(B) 90 Days",
+                "(C) 60 Days",
+                "(D) 120 Days"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "UNESCO gives 'Kalinga Award' in which field?",
+            "options": [
+                "(A) Journalism",
+                "(B) Science",
+                "(C) Literature",
+                "(D) Peace"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "'White Revolution' is associated with which thing?",
+            "options": [
+                "(A) Petroleum",
+                "(B) Fish",
+                "(C) Milk",
+                "(D) Eggs"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "In which year firstly, national emergency was imposed in India?",
+            "options": [
+                "(A) 1950",
+                "(B) 1975",
+                "(C) 1971",
+                "(D) 1962"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Which city is known as 'Brass city'?",
+            "options": [
+                "(A) Aligarh",
+                "(B) Moradabad",
+                "(C) Varanasi",
+                "(D) Firozabad"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which city is known as 'City of locks'?",
+            "options": [
+                "(A) Agra",
+                "(B) Moradabad",
+                "(C) Aligarh",
+                "(D) Kanpur"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "'Make In India' Project has been launched in which year?",
+            "options": [
+                "(A) 2015",
+                "(B) 2014",
+                "(C) 2017",
+                "(D) 2016"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Who is known as 'Desh-Bandhu'?",
+            "options": [
+                "(A) C.R. Das",
+                "(B) B.G. Tilak",
+                "(C) C.F. Andrews",
+                "(D) Subhas Chandra Bose"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "How many spokes are there in 'Ashoka Chakra'?",
+            "options": [
+                "(A) 26",
+                "(B) 28",
+                "(C) 22",
+                "(D) 24"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Round Revolution is associated with which?",
+            "options": [
+                "(A) Eggplant",
+                "(B) Tomato",
+                "(C) Potato",
+                "(D) Onion"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What is the ancient name of sri Lanka?",
+            "options": [
+                "(A) Burma",
+                "(B) Formosa",
+                "(C) Siam",
+                "(D) Ceylon"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Who was the First Muslim Invader in India?",
+            "options": [
+                "(A) Mhd Bin Qasim",
+                "(B) Mahmud Ghazni",
+                "(C) Babur",
+                "(D) Muhammad Ghori"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What is the hq of 'ICC'?",
+            "options": [
+                "(A) Mumbai",
+                "(B) London",
+                "(C) Dubai",
+                "(D) Melbourne"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which country is the highest producer of Gold?",
+            "options": [
+                "(A) China",
+                "(B) Russia",
+                "(C) Australia",
+                "(D) South Africa"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Kandariya Mahadev Temple is situated in which place?",
+            "options": [
+                "(A) Konark",
+                "(B) Puri",
+                "(C) Mount Abu",
+                "(D) Khajuraho"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "What is the symptom of Black Fungus?",
+            "options": [
+                "(A) Cough",
+                "(B) Skin rash",
+                "(C) Nasal congestion",
+                "(D) Fever"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Mid Day was started in which year?",
+            "options": [
+                "(A) 2005",
+                "(B) 1995",
+                "(C) 1990",
+                "(D) 2000"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which is the largest fort of India?",
+            "options": [
+                "(A) Chittorgarh Fort",
+                "(B) Mehrangarh Fort",
+                "(C) Red Fort",
+                "(D) Gwalior Fort"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Who is known as 'shaheed E Azam'?",
+            "options": [
+                "(A) Sukhdev",
+                "(B) Bhagat Singh",
+                "(C) Rajguru",
+                "(D) Chandra Shekhar Azad"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Who killed General Dyer?",
+            "options": [
+                "(A) Bhagat Singh",
+                "(B) Udham Singh",
+                "(C) Kartar Singh Sarabha",
+                "(D) Madan Lal Dhingra"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Who has built peacock throne?",
+            "options": [
+                "(A) Jahangir",
+                "(B) Shahjahan",
+                "(C) Akbar",
+                "(D) Aurangzeb"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Plaster of Paris is made up of ________.",
+            "options": [
+                "(A) Silica",
+                "(B) Clay",
+                "(C) Gypsum",
+                "(D) Limestone"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Tap roots protects plants from whom?",
+            "options": [
+                "(A) Insects",
+                "(B) Rodents",
+                "(C) Worms",
+                "(D) Birds"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "There are how many stars in Indian Railway Logo?",
+            "options": [
+                "(A) 16",
+                "(B) 18",
+                "(C) 17",
+                "(D) 15"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Who is the founder of 'Homeopathy'?",
+            "options": [
+                "(A) Edward Jenner",
+                "(B) Hippocrates",
+                "(C) Samuel Hahnemann",
+                "(D) Louis Pasteur"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Nobel Award was started in which year?",
+            "options": [
+                "(A) 1896",
+                "(B) 1911",
+                "(C) 1901",
+                "(D) 1921"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Who was the founder of Fort William College?",
+            "options": [
+                "(A) Lord Wellesley",
+                "(B) Lord Cornwallis",
+                "(C) Warren Hastings",
+                "(D) Lord Dalhousie"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Headquarters of Gadar Party is in which city?",
+            "options": [
+                "(A) San Francisco",
+                "(B) Vancouver",
+                "(C) London",
+                "(D) New York"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What is the ancient name of Allahabad?",
+            "options": [
+                "(A) Avantika",
+                "(B) Pataliputra",
+                "(C) Prayagraj",
+                "(D) Kashi"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "National Unity Day is celebrated in:",
+            "options": [
+                "(A) 31st October",
+                "(B) 31st December",
+                "(C) 31st August",
+                "(D) 31st July"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What is the source of energy in human body?",
+            "options": [
+                "(A) Protein",
+                "(B) Fat",
+                "(C) Vitamin",
+                "(D) Carbohydrate"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Who was the first foreigner attacker in India?",
+            "options": [
+                "(A) Darius",
+                "(B) Sikandar (Alexander the Great)",
+                "(C) Xerxes",
+                "(D) Cyrus"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The one and only Pakistani who awarded with Bharat Ratna:",
+            "options": [
+                "(A) Benazir Bhutto",
+                "(B) Khan Abdul Gaffar Khan",
+                "(C) Muhammad Ali Jinnah",
+                "(D) Liaquat Ali Khan"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "In human, old age become the lack of ______.",
+            "options": [
+                "(A) Thyroid",
+                "(B) Pituitary",
+                "(C) Thymus (Due to degeneration of the thymus gland)",
+                "(D) Adrenal"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Who is the writer of Malgudie days?",
+            "options": [
+                "(A) Ruskin Bond",
+                "(B) Raja Rao",
+                "(C) R.K. Narayan",
+                "(D) Mulk Raj Anand"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "'Straight from the Heart' is a biography of whom?",
+            "options": [
+                "(A) Sachin Tendulkar",
+                "(B) Sourav Ganguly",
+                "(C) Sunil Gavaskar",
+                "(D) Kapil Dev"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Where is the tomb of saint Kabir?",
+            "options": [
+                "(A) Mathura",
+                "(B) Ayodhya",
+                "(C) Varanasi",
+                "(D) Maghar"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "The one and only active volcano of india is situated in:",
+            "options": [
+                "(A) Minicoy",
+                "(B) Barren Andaman & Nicobar (Barren Island)",
+                "(C) Narcondam",
+                "(D) Lakshadweep"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "World Doctor's day is celebrated on which date?",
+            "options": [
+                "(A) 1 July",
+                "(B) 2 July",
+                "(C) 4 July",
+                "(D) 3 July"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "What is the idle temperature for rice cultivation?",
+            "options": [
+                "(A) 10°C - 15°C",
+                "(B) 25°C - 35°C",
+                "(C) 20°C - 27°C",
+                "(D) 15°C - 20°C"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Who was designated as a commander in chief in Akbar's court?",
+            "options": [
+                "(A) Todar Mal",
+                "(B) Birbal",
+                "(C) Tansen",
+                "(D) Maan Singh (Man Singh I)"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Air force day is celebrated on:",
+            "options": [
+                "(A) 4th December",
+                "(B) 26th January",
+                "(C) 15th January",
+                "(D) 8th October"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Who is the author of a most famous book 'Life of Pi'?",
+            "options": [
+                "(A) Arundhati Roy",
+                "(B) Salman Rushdie",
+                "(C) Yann Martel",
+                "(D) Kiran Desai"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "One Astronomical Unit is the average distance between:",
+            "options": [
+                "(A) Earth and Sun",
+                "(B) Sun and Pluto",
+                "(C) Sun and Mars",
+                "(D) Earth and Moon"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Who destroyed 'Nalanda University'?",
+            "options": [
+                "(A) Mahmud Ghazni",
+                "(B) Muhammad Ghori",
+                "(C) Bakhtiyar Khilji",
+                "(D) Alauddin Khilji"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which type of waves are used in night vision equipment?",
+            "options": [
+                "(A) Ultraviolet waves",
+                "(B) Infra-red waves",
+                "(C) Microwaves",
+                "(D) Radio waves"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Butterfly has ______ number of legs.",
+            "options": [
+                "(A) Six",
+                "(B) Ten",
+                "(C) Four",
+                "(D) Eight"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "One barrel of oil is approximately equal to:",
+            "options": [
+                "(A) 200 litres",
+                "(B) 120 litres",
+                "(C) 159 litres",
+                "(D) 100 litres"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Who discovered heavy water?",
+            "options": [
+                "(A) Harold Clayton Urey",
+                "(B) Niels Bohr",
+                "(C) Albert Einstein",
+                "(D) Marie Curie"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "When does Heart rest?",
+            "options": [
+                "(A) During deep breathing",
+                "(B) Between two beats",
+                "(C) During sleep",
+                "(D) Never"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The human hormone insulin is present in:",
+            "options": [
+                "(A) Pancreas",
+                "(B) Thyroid",
+                "(C) Adrenal",
+                "(D) Pituitary"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Where is 'Chichen Itza' situated?",
+            "options": [
+                "(A) Mexico",
+                "(B) Peru",
+                "(C) Egypt",
+                "(D) Brazil"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which element is used in the manufacture of safety matches?",
+            "options": [
+                "(A) Phosphorous",
+                "(B) Sulfur",
+                "(C) Carbon",
+                "(D) Sodium"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Who appoints the members of UPSC?",
+            "options": [
+                "(A) Chief Justice",
+                "(B) UPSC Chairman",
+                "(C) Prime Minister",
+                "(D) President"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Bharat Ratna was first awarded in:",
+            "options": [
+                "(A) 1947",
+                "(B) 1962",
+                "(C) 1954",
+                "(D) 1950"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Who discovered 'Radioactivity'?",
+            "options": [
+                "(A) Henry Becquerel",
+                "(B) Wilhelm Rontgen",
+                "(C) Marie Curie",
+                "(D) Ernest Rutherford"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "'Giddha' is the famous dance of?",
+            "options": [
+                "(A) Rajasthan",
+                "(B) Haryana",
+                "(C) Punjab",
+                "(D) Himachal Pradesh"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Who is the first Indian woman to win Miss Universe?",
+            "options": [
+                "(A) Reita Faria",
+                "(B) Aishwarya Rai",
+                "(C) Sushmita Sen",
+                "(D) Lara Dutta"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "In which field is B.C. Roy award given?",
+            "options": [
+                "(A) Medical",
+                "(B) Sports",
+                "(C) Science",
+                "(D) Literature"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Layer of a \"capsule\" is made by:",
+            "options": [
+                "(A) Cellulose",
+                "(B) Gelatin",
+                "(C) Plastic",
+                "(D) Starch"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Twin cities are _______.",
+            "options": [
+                "(A) Kolkata and Howrah",
+                "(B) Delhi and Noida",
+                "(C) Mumbai and Pune",
+                "(D) Hyderabad and Sikandarabad"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Bull Fight conducts in which Country?",
+            "options": [
+                "(A) France",
+                "(B) Spain",
+                "(C) Mexico",
+                "(D) Portugal"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Kailash Temple is situated in:",
+            "options": [
+                "(A) Khajuraho",
+                "(B) Elephanta",
+                "(C) Ajanta",
+                "(D) Ellora"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Who has the power to impose 'Marshal Law'?",
+            "options": [
+                "(A) Chief Justice",
+                "(B) Parliament",
+                "(C) Prime Minister",
+                "(D) President"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Who was the first commander in chief of Indian Army?",
+            "options": [
+                "(A) K.M. Kariappa (K.M. Cariappa)",
+                "(B) Arjan Singh",
+                "(C) Sam Manekshaw",
+                "(D) Bipin Rawat"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which city is known as Boston of India?",
+            "options": [
+                "(A) Mumbai",
+                "(B) Ahmedabad",
+                "(C) Kolkata",
+                "(D) Chennai"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which city is known as 'City of Roses'?",
+            "options": [
+                "(A) Jaipur",
+                "(B) Lucknow",
+                "(C) Chandigarh",
+                "(D) Srinagar"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which is the first Oscar award winning Indian movie?",
+            "options": [
+                "(A) Lagaan",
+                "(B) Salaam Bombay",
+                "(C) Mother India",
+                "(D) Gandhi (Bhanu Athaiya won Best Costume Design for the movie 'Gandhi' in 1983)"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Who gave Black hole concept in India?",
+            "options": [
+                "(A) C.V. Raman",
+                "(B) S. Chandra Shekhar (Subrahmanyan Chandrasekhar)",
+                "(C) Homi Bhabha",
+                "(D) Vikram Sarabhai"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "What is the currency of Norway?",
+            "options": [
+                "(A) Krone",
+                "(B) Dollar",
+                "(C) Euro",
+                "(D) Pound"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Bridge of Adam is between:",
+            "options": [
+                "(A) India and Bangladesh",
+                "(B) India and Myanmar",
+                "(C) India and Srilanka",
+                "(D) India and Maldives"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which is the first english translated movie in India?",
+            "options": [
+                "(A) Noorjahan",
+                "(B) Devdas",
+                "(C) Raja Harishchandra",
+                "(D) Alam Ara"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "'Natraj Temple' is situated in:",
+            "options": [
+                "(A) Madurai",
+                "(B) Chidambaram",
+                "(C) Tanjore",
+                "(D) Rameshwaram"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Who is the chairman of Rajya Sabha?",
+            "options": [
+                "(A) Prime Minister",
+                "(B) Vice-President",
+                "(C) Speaker of Lok Sabha",
+                "(D) President"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "pH value of urine:",
+            "options": [
+                "(A) 8.0",
+                "(B) 6.0",
+                "(C) 7.0",
+                "(D) 5.0"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Who is the inventor of diesel engine?",
+            "options": [
+                "(A) Thomas Edison",
+                "(B) George Stephenson",
+                "(C) James Watt (Note: Written as 'James Watt')",
+                "(D) James Watt"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "In which year Taj Mahal construction has been completed?",
+            "options": [
+                "(A) 1660 AD",
+                "(B) 1658 AD",
+                "(C) 1648 AD",
+                "(D) 1653 AD"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "AIDS day celebrated in:",
+            "options": [
+                "(A) 1st December",
+                "(B) 1st September",
+                "(C) 1st October",
+                "(D) 1st November"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What is the fuel of future?",
+            "options": [
+                "(A) Methane",
+                "(B) Nitrogen",
+                "(C) Hydrogen",
+                "(D) Helium"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which country is known as 'land of Thunder Bolt'?",
+            "options": [
+                "(A) Bhutan",
+                "(B) Tibet",
+                "(C) Nepal",
+                "(D) Myanmar"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Who is first lady IAS officer?",
+            "options": [
+                "(A) Arundhati Roy",
+                "(B) Anna George (Anna Rajam Malhotra)",
+                "(C) Kiran Bedi",
+                "(D) Sarojini Naidu"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Who abolished slavery system in India?",
+            "options": [
+                "(A) Humayun",
+                "(B) Shah Jahan",
+                "(C) Babur",
+                "(D) Akbar"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "World Tourism day:",
+            "options": [
+                "(A) 27 October",
+                "(B) 27 August",
+                "(C) 27 November",
+                "(D) 27 September"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Which is the largest mosque in India?",
+            "options": [
+                "(A) Taj-ul-Masajid",
+                "(B) Jama Masjid",
+                "(C) Mecca Masjid",
+                "(D) Hazratbal"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Who was the first Indian to be elected as member of British Parliament?",
+            "options": [
+                "(A) Gopal Krishna Gokhale",
+                "(B) Dinshaw Wacha",
+                "(C) D.B. Naoroji (Dadabhai Naoroji)",
+                "(D) W.C. Banerjee"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which city is the main industrial area of diamond cutting?",
+            "options": [
+                "(A) Surat",
+                "(B) Mumbai",
+                "(C) Ahmedabad (Note: Written as 'Ahmedabad')",
+                "(D) Ahmedabad"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "When oral polio vaccine came into use?",
+            "options": [
+                "(A) 1955",
+                "(B) 1961",
+                "(C) 1970",
+                "(D) 1965"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which Country is known as Bowl of sugar?",
+            "options": [
+                "(A) India",
+                "(B) USA",
+                "(C) Brazil",
+                "(D) Cuba"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Which is the largest district of India?",
+            "options": [
+                "(A) Barmer",
+                "(B) Leh",
+                "(C) Jaisalmer",
+                "(D) Kutch"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Which is the country of snakes?",
+            "options": [
+                "(A) India",
+                "(B) Brazil",
+                "(C) Australia",
+                "(D) South Africa"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which city is known as Garden of India?",
+            "options": [
+                "(A) Bangalore",
+                "(B) Pune",
+                "(C) Chandigarh (Note: Written as 'Chandigarh')",
+                "(D) Mysore"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which city is known as 'city of glutton'?",
+            "options": [
+                "(A) Bhopal",
+                "(B) Ujjain",
+                "(C) Indore",
+                "(D) Gwalior"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which is the smallest district of India?",
+            "options": [
+                "(A) Yanam",
+                "(B) Lakshadweep",
+                "(C) Diu",
+                "(D) Mahe"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Borlaug Award is related to which field?",
+            "options": [
+                "(A) Medicine",
+                "(B) Journalism",
+                "(C) Science",
+                "(D) Agriculture"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Which is the longest indoor stadium of India?",
+            "options": [
+                "(A) Talkatora Stadium",
+                "(B) Netaji Indoor Stadium",
+                "(C) Indira Gandhi Stadium (Indira Gandhi Indoor Arena, Delhi)",
+                "(D) Salt Lake Stadium"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What is the currency of 'slovakia'?",
+            "options": [
+                "(A) Krone",
+                "(B) Euro",
+                "(C) Dollar",
+                "(D) Koruna"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The official government documents of India is known as:",
+            "options": [
+                "(A) Blue Book",
+                "(B) Green Paper",
+                "(C) White Paper",
+                "(D) Yellow Book"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What is the previous name of Lucknow?",
+            "options": [
+                "(A) Lucknow",
+                "(B) Lakshmanpur",
+                "(C) Lakhnauti (Note: Written as 'Lakhnauti')",
+                "(D) Lakhnauti"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What protocol is used in data transfer?",
+            "options": [
+                "(A) FTP (File Transfer Protocol)",
+                "(B) SMTP",
+                "(C) TCP",
+                "(D) HTTP"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Who is the writer of Mahabharata?",
+            "options": [
+                "(A) Kalidas",
+                "(B) Tulsidas",
+                "(C) Valmiki",
+                "(D) Ved Vyas"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "What is the currency of Myanmar?",
+            "options": [
+                "(A) Kyat",
+                "(B) Baht",
+                "(C) Rupee",
+                "(D) Taka"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Who is known as the father of 'Economy'?",
+            "options": [
+                "(A) Alfred Marshall",
+                "(B) Karl Marx",
+                "(C) Adam Smith",
+                "(D) John Keynes"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What is the national language of Bangladesh?",
+            "options": [
+                "(A) Hindi",
+                "(B) Bengali",
+                "(C) English",
+                "(D) Urdu"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "What is used in Electric Heater?",
+            "options": [
+                "(A) Iron",
+                "(B) Copper",
+                "(C) Tungsten",
+                "(D) Nichrome"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Who appoints the chief justice of India?",
+            "options": [
+                "(A) Prime Minister",
+                "(B) President",
+                "(C) Parliament",
+                "(D) Law Minister"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Who was the founder of Buddhism?",
+            "options": [
+                "(A) Mahavira",
+                "(B) Gautama Buddha",
+                "(C) Ashoka",
+                "(D) Guru Nanak"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Who is known as the \"Iron Man of India\"?",
+            "options": [
+                "(A) Bal Gangadhar Tilak",
+                "(B) Sardar Vallabhbhai Patel",
+                "(C) Jawaharlal Nehru",
+                "(D) Mahatma Gandhi"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Who wrote the book \"Discovery of India\"?",
+            "options": [
+                "(A) Mahatma Gandhi",
+                "(B) Jawaharlal Nehru",
+                "(C) Rabindranath Tagore",
+                "(D) Sardar Patel"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The imaginary line that divides India into two almost equal parts is:",
+            "options": [
+                "(A) Equator",
+                "(B) Tropic of Capricorn",
+                "(C) Tropic of Cancer",
+                "(D) Prime Meridian"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Gir National Park is famous for:",
+            "options": [
+                "(A) Bengal Tigers",
+                "(B) Asiatic Lions",
+                "(C) One-horned Rhinoceros",
+                "(D) Snow Leopards"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Who is known as the Father of Indian Economics?",
+            "options": [
+                "(A) M. G. Ranade",
+                "(B) Dadabhai Naoroji",
+                "(C) Amartya Sen",
+                "(D) Manmohan Singh"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "GST stands for:",
+            "options": [
+                "(A) Government Sales Tax",
+                "(B) Goods and Service Tax",
+                "(C) General Service Tax",
+                "(D) Growth and Standard Tariff"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "NITI Aayog replaced which body?",
+            "options": [
+                "(A) National Development Council",
+                "(B) Finance Commission",
+                "(C) Planning Commission",
+                "(D) Tariff Commission"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "The currency of Japan is:",
+            "options": [
+                "(A) Yuan",
+                "(B) Yen",
+                "(C) Won",
+                "(D) Ringgit"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Human heart has how many chambers?",
+            "options": [
+                "(A) 2",
+                "(B) 3",
+                "(C) 4",
+                "(D) 5"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Sound cannot travel through:",
+            "options": [
+                "(A) Solid",
+                "(B) Liquid",
+                "(C) Gas",
+                "(D) Vacuum"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Light year is a unit of:",
+            "options": [
+                "(A) Time",
+                "(B) Distance",
+                "(C) Speed",
+                "(D) Intensity"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "World Environment Day is celebrated on:",
+            "options": [
+                "(A) 22nd April",
+                "(B) 5th June",
+                "(C) 16th September",
+                "(D) 11th July"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Nohkalikai Falls is located near:",
+            "options": [
+                "(A) Shillong",
+                "(B) Jowai",
+                "(C) Cherrapunji (sohra)",
+                "(D) Tura"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "The living root bridges are found in:",
+            "options": [
+                "(A) Assam",
+                "(B) Arunachal Pradesh",
+                "(C) Nagaland",
+                "(D) Meghalaya"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "'shad suk Mynsiem' is a festival of which tribe?",
+            "options": [
+                "(A) Garo",
+                "(B) Khasi",
+                "(C) Jaintia",
+                "(D) Hajong"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which city is called the 'scotland of the East'?",
+            "options": [
+                "(A) Tura",
+                "(B) Shillong",
+                "(C) Jowai",
+                "(D) Nongstoin"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Chandrayaan-3 landed on which part of the moon?",
+            "options": [
+                "(A) North Pole",
+                "(B) Equator",
+                "(C) South Pole",
+                "(D) Far Side"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "How many types of emergencies are there?",
+            "options": [
+                "(A) 2",
+                "(B) 3",
+                "(C) 4",
+                "(D) 5"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The Controller and Auditor General of India holds office for:",
+            "options": [
+                "(A) 5 years or 65 years of age",
+                "(B) 6 years or 65 years of age",
+                "(C) 6 years or 62 years of age",
+                "(D) 5 years or 62 years of age"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Who was the founder of Mughal Empire in India?",
+            "options": [
+                "(A) Akbar",
+                "(B) Babur",
+                "(C) Humayun",
+                "(D) Sher Shah Suri"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Who built the Taj Mahal?",
+            "options": [
+                "(A) Akbar",
+                "(B) Shah Jahan",
+                "(C) Jahangir",
+                "(D) Aurangzeb"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The Vedic Age is associated with:",
+            "options": [
+                "(A) Harappans",
+                "(B) Aryans",
+                "(C) Dravidians",
+                "(D) Kushanas"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Who was the first woman ruler of India?",
+            "options": [
+                "(A) Razia Sultan",
+                "(B) Chand Bibi",
+                "(C) Rani Lakshmibai",
+                "(D) Nur Jahan"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The Simon Commission came to India in:",
+            "options": [
+                "(A) 1928",
+                "(B) 1927",
+                "(C) 1930",
+                "(D) 1942"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The Cripps Mission came to India in:",
+            "options": [
+                "(A) 1942",
+                "(B) 1940",
+                "(C) 1945",
+                "(D) 1946"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The Dandi March was associated with:",
+            "options": [
+                "(A) Non-Cooperation Movement",
+                "(B) Civil Disobedience Movement",
+                "(C) Quit India Movement",
+                "(D) Khilafat Movement"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Mahatma Gandhi returned to India from South Africa in:",
+            "options": [
+                "(A) 1915",
+                "(B) 1914",
+                "(C) 1916",
+                "(D) 1918"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Who was known as the \"Nightingale of India\"?",
+            "options": [
+                "(A) Sarojini Naidu",
+                "(B) Lata Mangeshkar",
+                "(C) Indira Gandhi",
+                "(D) Annie Besant"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The Rowlatt Act was passed in:",
+            "options": [
+                "(A) 1919",
+                "(B) 1920",
+                "(C) 1917",
+                "(D) 1915"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The Indian Independence Act was passed in:",
+            "options": [
+                "(A) 1947",
+                "(B) 1946",
+                "(C) 1945",
+                "(D) 1950"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Duncan Passage separates:",
+            "options": [
+                "(A) South Andaman and Little Andaman",
+                "(B) North Andaman and South Andaman",
+                "(C) Andaman and Nicobar",
+                "(D) Lakshadweep and Maldives"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The Tropic of Cancer does not pass through:",
+            "options": [
+                "(A) Rajasthan",
+                "(B) Gujarat",
+                "(C) Tripura",
+                "(D) Punjab"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Which pass connects Srinagar with Leh?",
+            "options": [
+                "(A) Zoji La",
+                "(B) Shipki La",
+                "(C) Nathu La",
+                "(D) Jelep La"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which is the southernmost point of India?",
+            "options": [
+                "(A) Indira Point",
+                "(B) Kanyakumari",
+                "(C) Indira Col",
+                "(D) Point Calimere"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The Western Ghats are also known as:",
+            "options": [
+                "(A) Sahyadri",
+                "(B) Himadri",
+                "(C) Shivalik",
+                "(D) Purvanchal"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The Sundarbans mangrove forest is located in:",
+            "options": [
+                "(A) West Bengal",
+                "(B) Odisha",
+                "(C) Bangladesh",
+                "(D) Assam"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which is India's first national park?",
+            "options": [
+                "(A) Corbett",
+                "(B) Kaziranga",
+                "(C) Gir",
+                "(D) Kanha"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which city is known as the \"Pink City\"?",
+            "options": [
+                "(A) Jaipur",
+                "(B) Udaipur",
+                "(C) Jodhpur",
+                "(D) Jaisalmer"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The Palk Strait lies between:",
+            "options": [
+                "(A) India and Sri Lanka",
+                "(B) India and Maldives",
+                "(C) India and Myanmar",
+                "(D) India and Indonesia"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The Deccan Plateau is primarily made of:",
+            "options": [
+                "(A) Basalt rocks",
+                "(B) Granite rocks",
+                "(C) Limestone rocks",
+                "(D) Sandstone rocks"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Inflation is measured by which index?",
+            "options": [
+                "(A) WPI & CPI",
+                "(B) GDP Deflator",
+                "(C) IIP",
+                "(D) Sensex"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The headquarters of RBI is in:",
+            "options": [
+                "(A) New Delhi",
+                "(B) Mumbai",
+                "(C) Kolkata",
+                "(D) Chennai"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The ozone layer protects us from:",
+            "options": [
+                "(A) Infrared rays",
+                "(B) Ultraviolet rays",
+                "(C) X-rays",
+                "(D) Gamma rays"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The atomic number of hydrogen is:",
+            "options": [
+                "(A) 1",
+                "(B) 2",
+                "(C) 3",
+                "(D) 4"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Cherrapunji is also known as:",
+            "options": [
+                "(A) Sohra",
+                "(B) Mawsynram",
+                "(C) Jowai",
+                "(D) Nongstoin"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which tribe celebrates the Behdeinkhlam festival?",
+            "options": [
+                "(A) Khasi",
+                "(B) Garo",
+                "(C) Jaintia",
+                "(D) Rabha"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Green revolution in India was started during:",
+            "options": [
+                "(A) 1950s",
+                "(B) 1960s",
+                "(C) 1970s",
+                "(D) 1980s"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Malaria is caused by:",
+            "options": [
+                "(A) Bacteria",
+                "(B) Virus",
+                "(C) Protozoa",
+                "(D) Fungi"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "The cleanest village in Asia, Mawlynnong, is in which district?",
+            "options": [
+                "(A) East Khasi Hills",
+                "(B) West Khasi Hills",
+                "(C) West Jaintia Hills",
+                "(D) Ri-Bhoi"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The Harappan civilization belonged to:",
+            "options": [
+                "(A) Iron Age",
+                "(B) Bronze Age",
+                "(C) Stone Age",
+                "(D) Copper Age"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The main source of information about Ashoka is:",
+            "options": [
+                "(A) Coins",
+                "(B) Edicts",
+                "(C) Secular literature",
+                "(D) Foreign accounts"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The Gupta period is known as:",
+            "options": [
+                "(A) Golden age",
+                "(B) Dark age",
+                "(C) Transition age",
+                "(D) Bronze age"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The Upanishads are:",
+            "options": [
+                "(A) Philosophical texts",
+                "(B) Religious rituals",
+                "(C) Legal codes",
+                "(D) Epic stories"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Mahavira was the founder of:",
+            "options": [
+                "(A) Buddhism",
+                "(B) Jainism",
+                "(C) Sikhism",
+                "(D) Hinduism"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Who wrote Arthashastra?",
+            "options": [
+                "(A) Kautilya (Chanakya)",
+                "(B) Megasthenes",
+                "(C) Kalidasa",
+                "(D) Banabhatta"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The Mahabharata was written by:",
+            "options": [
+                "(A) Valmiki",
+                "(B) Vyasa",
+                "(C) Kalidasa",
+                "(D) Tulsidas"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The Ramayana was written by:",
+            "options": [
+                "(A) Valmiki",
+                "(B) Vyasa",
+                "(C) Tulsidas",
+                "(D) Kalidasa"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The Sangam Age is related to:",
+            "options": [
+                "(A) North India",
+                "(B) South India",
+                "(C) East India",
+                "(D) West India"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Chandragupta II was also known as:",
+            "options": [
+                "(A) Vikramaditya",
+                "(B) Shakari",
+                "(C) Napoleon of India",
+                "(D) Priyadarshi"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The Ellora Caves are located in:",
+            "options": [
+                "(A) Maharashtra",
+                "(B) Madhya Pradesh",
+                "(C) Karnataka",
+                "(D) Gujarat"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Iron Pillar of Delhi was built during:",
+            "options": [
+                "(A) Mauryan period",
+                "(B) Gupta period",
+                "(C) Kushan period",
+                "(D) Delhi Sultanate"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Nalanda University was famous for:",
+            "options": [
+                "(A) Vedic studies",
+                "(B) Buddhist learning",
+                "(C) Jain philosophy",
+                "(D) Military science"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The Rig Veda is:",
+            "options": [
+                "(A) Oldest Veda",
+                "(B) Book of music",
+                "(C) Book of rituals",
+                "(D) Latest Veda"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The Sun Temple at Konark was built by:",
+            "options": [
+                "(A) Rajaraja Chola",
+                "(B) Narsimha Deva I",
+                "(C) Krishnadevaraya",
+                "(D) Kharavela"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Aryabhata was a famous:",
+            "options": [
+                "(A) Physician",
+                "(B) Grammarian",
+                "(C) Mathematician and Astronomer",
+                "(D) Poet"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Qutub Minar was built by:",
+            "options": [
+                "(A) Iltutmish",
+                "(B) Qutub-ud-din Aibak",
+                "(C) Alauddin Khalji",
+                "(D) Firoz Shah Tughlaq"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Red Fort was built by:",
+            "options": [
+                "(A) Akbar",
+                "(B) Shah Jahan",
+                "(C) Sher Shah Suri",
+                "(D) Aurangzeb"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Aurangzeb's real name was:",
+            "options": [
+                "(A) Muhi-al-Din",
+                "(B) Khurram",
+                "(C) Salim",
+                "(D) Dara Shikoh"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Who was known as the \"Grand Old Man of India\"?",
+            "options": [
+                "(A) Bal Gangadhar Tilak",
+                "(B) Dadabhai Naoroji",
+                "(C) Gopal Krishna Gokhale",
+                "(D) W.C. Bonnerjee"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The Sikh scripture is called:",
+            "options": [
+                "(A) Guru Granth Sahib",
+                "(B) Adi Granth",
+                "(C) Dasam Granth",
+                "(D) Janamsakhis"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The Salt March was led by:",
+            "options": [
+                "(A) Mahatma Gandhi",
+                "(B) Jawaharlal Nehru",
+                "(C) Sardar Patel",
+                "(D) Subhash Chandra Bose"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The highest waterfall in the world is:",
+            "options": [
+                "(A) Angel Falls",
+                "(B) Niagara Falls",
+                "(C) Victoria Falls",
+                "(D) Jog Falls"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The Panama Canal connects:",
+            "options": [
+                "(A) Atlantic and Pacific",
+                "(B) Red Sea and Mediterranean",
+                "(C) Indian and Pacific",
+                "(D) North Sea and Baltic"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The Suez Canal connects:",
+            "options": [
+                "(A) Red sea and Mediterranean",
+                "(B) Persian Gulf and Arabian Sea",
+                "(C) Atlantic and Pacific",
+                "(D) Black Sea and Aegean Sea"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The Great Barrier Reef is located in:",
+            "options": [
+                "(A) Australia",
+                "(B) Indonesia",
+                "(C) Philippines",
+                "(D) USA"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Mount Kilimanjaro is in:",
+            "options": [
+                "(A) Kenya",
+                "(B) Tanzania",
+                "(C) South Africa",
+                "(D) Uganda"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The Amazon rainforest is mainly in:",
+            "options": [
+                "(A) Peru",
+                "(B) Colombia",
+                "(C) Brazil",
+                "(D) Bolivia"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "The Dead sea is located between:",
+            "options": [
+                "(A) Egypt and Israel",
+                "(B) Jordan and Saudi Arabia",
+                "(C) Israel and Jordan",
+                "(D) Lebanon and Syria"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "The Equator passes through how many continents?",
+            "options": [
+                "(A) 2",
+                "(B) 3 (Africa, South America, Asia)",
+                "(C) 4",
+                "(D) 5"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The Great Wall of China is approximately:",
+            "options": [
+                "(A) 10000 km long",
+                "(B) 15000 km long",
+                "(C) 21000 km long",
+                "(D) 5000 km long"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which country has the most time zones?",
+            "options": [
+                "(A) Russia",
+                "(B) USA",
+                "(C) France",
+                "(D) Canada"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "The speed of light is approximately:",
+            "options": [
+                "(A) $3 \\times 10^5\\text{ m/s}$",
+                "(B) $3 \\times 10^6\\text{ m/s}$",
+                "(C) $3 \\times 10^8\\text{ m/s}$",
+                "(D) $3 \\times 10^{10}\\text{ m/s}$"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "The atomic number represents:",
+            "options": [
+                "(A) Number of neutrons",
+                "(B) Number of protons",
+                "(C) Sum of protons and neutrons",
+                "(D) Number of electrons"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The pH of pure water is:",
+            "options": [
+                "(A) 5",
+                "(B) 6",
+                "(C) 7",
+                "(D) 8"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "The process by which plants lose water is:",
+            "options": [
+                "(A) Respiration",
+                "(B) Photosynthesis",
+                "(C) Transpiration",
+                "(D) Absorption"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Penicillin was discovered by:",
+            "options": [
+                "(A) Louis Pasteur",
+                "(B) Alexander Fleming",
+                "(C) Edward Jenner",
+                "(D) Robert Koch"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The normal body temperature of a human is:",
+            "options": [
+                "(A) $35^\\circ\\text{C}$",
+                "(B) $37^\\circ\\text{C}$",
+                "(C) $39^\\circ\\text{C}$",
+                "(D) $40^\\circ\\text{C}$"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Insulin is produced in:",
+            "options": [
+                "(A) Liver",
+                "(B) Thyroid",
+                "(C) Pancreas",
+                "(D) Kidney"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "DNA stands for:",
+            "options": [
+                "(A) Ribonucleic Acid",
+                "(B) Deoxyribonucleic Acid",
+                "(C) Deoxyribonucleic Atom",
+                "(D) Dinucleic Acid"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Glucose is a type of:",
+            "options": [
+                "(A) Protein",
+                "(B) Fat",
+                "(C) Carbohydrate",
+                "(D) Vitamin"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Hemoglobin contains:",
+            "options": [
+                "(A) Calcium",
+                "(B) Iron",
+                "(C) Magnesium",
+                "(D) Copper"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Chlorophyll gives plants their:",
+            "options": [
+                "(A) Red colour",
+                "(B) Yellow colour",
+                "(C) Green colour",
+                "(D) Blue colour"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "GST was implemented in India in:",
+            "options": [
+                "(A) 2014",
+                "(B) 2016",
+                "(C) 2017",
+                "(D) 2019"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "The headquarter of IMF is in:",
+            "options": [
+                "(A) New York",
+                "(B) Geneva",
+                "(C) Washington DC",
+                "(D) Paris"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "The headquarter of world bank is in:",
+            "options": [
+                "(A) London",
+                "(B) Washington DC",
+                "(C) Geneva",
+                "(D) New York"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "UNESCO headquarters is in:",
+            "options": [
+                "(A) Geneva",
+                "(B) New York",
+                "(C) Paris",
+                "(D) Rome"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "UNICEF works for:",
+            "options": [
+                "(A) Women",
+                "(B) Children",
+                "(C) Refugees",
+                "(D) Elderly"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "WHO stands for:",
+            "options": [
+                "(A) World Health Organization",
+                "(B) World Housing Organization",
+                "(C) World Human Organization",
+                "(D) World Trade Organization"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The currency of China is:",
+            "options": [
+                "(A) Yen",
+                "(B) Yuan",
+                "(C) Won",
+                "(D) Baht"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The currency of UK is:",
+            "options": [
+                "(A) Dollar",
+                "(B) Euro",
+                "(C) Pound",
+                "(D) Yen"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "The smallest country in the world is:",
+            "options": [
+                "(A) Monaco",
+                "(B) Vatican City",
+                "(C) Nauru",
+                "(D) San Marino"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The largest country by area is:",
+            "options": [
+                "(A) Canada",
+                "(B) China",
+                "(C) USA",
+                "(D) Russia"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "The most populous country is:",
+            "options": [
+                "(A) China",
+                "(B) India",
+                "(C) USA",
+                "(D) Indonesia"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The Statue of Liberty is in:",
+            "options": [
+                "(A) Washington D.C.",
+                "(B) New York",
+                "(C) Paris",
+                "(D) London"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The Eiffel Tower is in:",
+            "options": [
+                "(A) London",
+                "(B) Berlin",
+                "(C) Paris",
+                "(D) Rome"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "The Pyramids are in:",
+            "options": [
+                "(A) Greece",
+                "(B) Italy",
+                "(C) Mexico",
+                "(D) Egypt"
+            ],
+            "answer": "D"
+        },
+        {
+            "question": "Big Ben is in:",
+            "options": [
+                "(A) Paris",
+                "(B) London",
+                "(C) New York",
+                "(D) Rome"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The Colosseum is in:",
+            "options": [
+                "(A) Rome",
+                "(B) Paris",
+                "(C) Athens",
+                "(D) London"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Machu Picchu is in:",
+            "options": [
+                "(A) Peru",
+                "(B) Mexico",
+                "(C) Brazil",
+                "(D) Bolivia"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Petra is in:",
+            "options": [
+                "(A) Egypt",
+                "(B) Jordan",
+                "(C) Turkey",
+                "(D) Greece"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The Christ Redeemer is in:",
+            "options": [
+                "(A) Brazil",
+                "(B) Argentina",
+                "(C) Mexico",
+                "(D) Spain"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "The leaning Tower is in:",
+            "options": [
+                "(A) Rome",
+                "(B) Pisa",
+                "(C) Venice",
+                "(D) Florence"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Antarctica is governed by:",
+            "options": [
+                "(A) United Nations",
+                "(B) Antarctic Treaty",
+                "(C) USA",
+                "(D) No governing body"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Greenland belongs to:",
+            "options": [
+                "(A) Canada",
+                "(B) Denmark",
+                "(C) Norway",
+                "(D) Iceland"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The Bermuda Triangle is in:",
+            "options": [
+                "(A) Pacific ocean",
+                "(B) Atlantic Ocean",
+                "(C) Indian Ocean",
+                "(D) Arctic Ocean"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Acid rain is caused by:",
+            "options": [
+                "(A) Water pollution",
+                "(B) Air pollution",
+                "(C) Soil pollution",
+                "(D) Noise pollution"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Deforestation leads to:",
+            "options": [
+                "(A) More rainfall",
+                "(B) Less rainfall",
+                "(C) Soil enrichment",
+                "(D) Increased oxygen levels"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "WWF stands for:",
+            "options": [
+                "(A) World Wildlife Fund",
+                "(B) World Water Forum",
+                "(C) World Welfare Federation",
+                "(D) World Wide Forest"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Earth Day is celebrated on:",
+            "options": [
+                "(A) 22 April",
+                "(B) 5 June",
+                "(C) 21 March",
+                "(D) 16 September"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "CFC damages:",
+            "options": [
+                "(A) Ozone layer",
+                "(B) Biosphere",
+                "(C) Hydrosphere",
+                "(D) Lithosphere"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Smog is a combination of:",
+            "options": [
+                "(A) Smoke and fog",
+                "(B) Smoke and dust",
+                "(C) Fog and rain",
+                "(D) Dust and water vapor"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Red Data Book contains information about:",
+            "options": [
+                "(A) Endangered species",
+                "(B) Extinct species only",
+                "(C) Red Sea biodiversity",
+                "(D) Soil erosion data"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Project Tiger was launched in:",
+            "options": [
+                "(A) 1973",
+                "(B) 1972",
+                "(C) 1980",
+                "(D) 1992"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "National pollution control Day is on:",
+            "options": [
+                "(A) 2nd December",
+                "(B) 5th June",
+                "(C) 16th September",
+                "(D) 22nd April"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Van Mahotsav is related to:",
+            "options": [
+                "(A) Tree planting",
+                "(B) Forest harvesting",
+                "(C) Wildlife tourism",
+                "(D) Agricultural harvest"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Wildlife protection Act was passed in:",
+            "options": [
+                "(A) 1972",
+                "(B) 1980",
+                "(C) 1986",
+                "(D) 1991"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "National song of India:",
+            "options": [
+                "(A) Jana Gana Mana",
+                "(B) Vande Mataram",
+                "(C) Sare Jahan Se Achha",
+                "(D) Ae Mere Watan Ke Logon"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "ISRO headquarters is in:",
+            "options": [
+                "(A) New Delhi",
+                "(B) Bangalore",
+                "(C) Mumbai",
+                "(D) Chennai"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "India's first satellite was:",
+            "options": [
+                "(A) Aryabhata",
+                "(B) Bhaskara",
+                "(C) Rohini",
+                "(D) INSAT-1A"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Metro Man of India is:",
+            "options": [
+                "(A) E. Sreedharan",
+                "(B) M. Visvesvaraya",
+                "(C) Verghese Kurien",
+                "(D) C.R. Rao"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Digital India was launched in:",
+            "options": [
+                "(A) 2015",
+                "(B) 2014",
+                "(C) 2016",
+                "(D) 2019"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Swachh Bharat Mission was launched in:",
+            "options": [
+                "(A) 2014",
+                "(B) 2015",
+                "(C) 2019",
+                "(D) 2012"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Make in India was launched in:",
+            "options": [
+                "(A) 2014",
+                "(B) 2015",
+                "(C) 2016",
+                "(D) 2018"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Skill India Mission was launched in:",
+            "options": [
+                "(A) 2014",
+                "(B) 2015",
+                "(C) 2016",
+                "(D) 2018"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "The first Indian woman in space was:",
+            "options": [
+                "(A) Kalpana Chawla",
+                "(B) Sunita Williams",
+                "(C) Shawna Pandya",
+                "(D) Tessy Thomas"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Who discovered gravity?",
+            "options": [
+                "(A) Albert Einstein",
+                "(B) Isaac Newton",
+                "(C) Galileo Galilei",
+                "(D) Nicolaus Copernicus"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Smallest continent:",
+            "options": [
+                "(A) Europe",
+                "(B) Antarctica",
+                "(C) Australia",
+                "(D) South America"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What is the boiling point of water?",
+            "options": [
+                "(A) $90^\\circ\\text{C}$",
+                "(B) $100^\\circ\\text{C}$",
+                "(C) $110^\\circ\\text{C}$",
+                "(D) $120^\\circ\\text{C}$"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Who wrote 'Discovery of India'?",
+            "options": [
+                "(A) Mahatma Gandhi",
+                "(B) Jawaharlal Nehru",
+                "(C) Rabindranath Tagore",
+                "(D) Subhash Chandra Bose"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Who discovered the bulb?",
+            "options": [
+                "(A) Nikola Tesla",
+                "(B) Thomas Alva Edison",
+                "(C) Benjamin Franklin",
+                "(D) Alexander Graham Bell"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which country gifted Statue of Liberty to USA?",
+            "options": [
+                "(A) United Kingdom",
+                "(B) France",
+                "(C) Germany",
+                "(D) Italy"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "'Land of Rising sun' is:",
+            "options": [
+                "(A) Norway",
+                "(B) Japan",
+                "(C) Australia",
+                "(D) Canada"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Largest animal on land:",
+            "options": [
+                "(A) Blue whale",
+                "(B) Elephant",
+                "(C) Giraffe",
+                "(D) Hippopotamus"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Largest mammal:",
+            "options": [
+                "(A) Blue whale",
+                "(B) Elephant",
+                "(C) Giraffe",
+                "(D) Killer Whale"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which festival is of lights?",
+            "options": [
+                "(A) Holi",
+                "(B) Diwali",
+                "(C) Dussehra",
+                "(D) Eid"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which festival is of colours?",
+            "options": [
+                "(A) Diwali",
+                "(B) Holi",
+                "(C) Raksha Bandhan",
+                "(D) Onam"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Who is known as the 'Missile Man of India'?",
+            "options": [
+                "(A) Homi J. Bhabha",
+                "(B) Vikram Sarabhai",
+                "(C) APJ Abdul Kalam",
+                "(D) Satish Dhawan"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Sun rises in the:",
+            "options": [
+                "(A) East",
+                "(B) West",
+                "(C) North",
+                "(D) South"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Sun sets in the:",
+            "options": [
+                "(A) East",
+                "(B) West",
+                "(C) North",
+                "(D) South"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Fastest animal on earth:",
+            "options": [
+                "(A) Lion",
+                "(B) Cheetah",
+                "(C) Leopard",
+                "(D) Tiger"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Tallest animal:",
+            "options": [
+                "(A) Elephant",
+                "(B) Giraffe",
+                "(C) Ostrich",
+                "(D) Camel"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which bird lays largest egg?",
+            "options": [
+                "(A) Eagle",
+                "(B) Ostrich",
+                "(C) Peacock",
+                "(D) Albatross"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which part of plant is underground?",
+            "options": [
+                "(A) Stem",
+                "(B) Root",
+                "(C) Leaf",
+                "(D) Flower"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Gateway of India is in:",
+            "options": [
+                "(A) New Delhi",
+                "(B) Mumbai",
+                "(C) Kolkata",
+                "(D) Chennai"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "India Gate is in:",
+            "options": [
+                "(A) Mumbai",
+                "(B) New Delhi",
+                "(C) Kolkata",
+                "(D) Hyderabad"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Largest democracy in the world:",
+            "options": [
+                "(A) USA",
+                "(B) India",
+                "(C) China",
+                "(D) Brazil"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Smallest bird:",
+            "options": [
+                "(A) Sparrow",
+                "(B) Humming Bird",
+                "(C) Robin",
+                "(D) Parrot"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "National Tree of India:",
+            "options": [
+                "(A) Neem Tree",
+                "(B) Banyan Tree",
+                "(C) Peepal Tree",
+                "(D) Mango Tree"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Who designed Indian National Flag?",
+            "options": [
+                "(A) Rabindranath Tagore",
+                "(B) Pingali Venkayya",
+                "(C) Mahatma Gandhi",
+                "(D) Bankim Chandra Chatterjee"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "'Vande Mataram' is written by:",
+            "options": [
+                "(A) Rabindranath Tagore",
+                "(B) Bankim Chandra Chatterjee",
+                "(C) Sarojini Naidu",
+                "(D) Subhash Chandra Bose"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Golden Temple is in:",
+            "options": [
+                "(A) Amritsar",
+                "(B) Ludhiana",
+                "(C) Jalandhar",
+                "(D) Chandigarh"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Charminar is in:",
+            "options": [
+                "(A) Bengaluru",
+                "(B) Hyderabad",
+                "(C) Chennai",
+                "(D) Mysore"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Nokrek National park is famous for:",
+            "options": [
+                "(A) Tiger",
+                "(B) Red panda",
+                "(C) Elephant",
+                "(D) One-horned Rhinoceros"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which waterfall is also known as \"seven sister falls\"?",
+            "options": [
+                "(A) Nohkalikai Falls",
+                "(B) Nohsngithiang Falls",
+                "(C) Kynrem Falls",
+                "(D) Sweet Falls"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "'Shad suk Mynsiem' is a:",
+            "options": [
+                "(A) Harvest Dance",
+                "(B) War Dance",
+                "(C) Rain Dance",
+                "(D) Hunting Dance"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Balpakram National park is in:",
+            "options": [
+                "(A) East Khasi Hills",
+                "(B) South Garo hills",
+                "(C) West Jaintia Hills",
+                "(D) Ri-Bhoi"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "World's longest sandstone cave 'krempuri' is in:",
+            "options": [
+                "(A) Cherrapunji",
+                "(B) Mawsynram",
+                "(C) Jowai",
+                "(D) Tura"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "'Monoliths' are associated with:",
+            "options": [
+                "(A) Garo Culture",
+                "(B) Khasi Culture",
+                "(C) Jaintia Culture",
+                "(D) Rabha Culture"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Who is 'Flying Sikh'?",
+            "options": [
+                "(A) Milkha Singh",
+                "(B) Harbhajan Singh",
+                "(C) Navjot Singh Sidhu",
+                "(D) Abhinav Bindra"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Deficiency of Iron causes:",
+            "options": [
+                "(A) Scurvy",
+                "(B) Anaemia",
+                "(C) Goitre",
+                "(D) Rickets"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Headquarters of UN is in:",
+            "options": [
+                "(A) Geneva",
+                "(B) New York",
+                "(C) Paris",
+                "(D) London"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Purest form of gold is:",
+            "options": [
+                "(A) 18 carat",
+                "(B) 22 carat",
+                "(C) 24 carat",
+                "(D) 20 carat"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Bihu is festival of:",
+            "options": [
+                "(A) Assam",
+                "(B) Nagaland",
+                "(C) Tripura",
+                "(D) Manipur"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "'Do or Die' slogan given by:",
+            "options": [
+                "(A) Subhash Chandra Bose",
+                "(B) Mahatma Gandhi",
+                "(C) Bhagat Singh",
+                "(D) Jawaharlal Nehru"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Statue of Unity is in:",
+            "options": [
+                "(A) Maharashtra",
+                "(B) Gujarat",
+                "(C) Rajasthan",
+                "(D) Madhya Pradesh"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Gir National Park is famous for:",
+            "options": [
+                "(A) Bengal Tiger",
+                "(B) Asiatic Lion",
+                "(C) One-horned Rhino",
+                "(D) Elephant"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Siju Bird Sanctuary is located in which district?",
+            "options": [
+                "(A) West Garo Hills",
+                "(B) South Garo Hills",
+                "(C) East Garo Hills",
+                "(D) South West Garo Hills"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "'Shad Nongkrem' is associated with which deity?",
+            "options": [
+                "(A) Ka Blei Synshar",
+                "(B) U Blei Nongthaw",
+                "(C) U Ryngkew",
+                "(D) Ka Meikha"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Death Anniversary of U Tirot Sing Syiem is observed on:",
+            "options": [
+                "(A) July 17",
+                "(B) August 15",
+                "(C) December 30",
+                "(D) October 2"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Death Anniversary of U Kiang Nangbah is observed on:",
+            "options": [
+                "(A) July 17",
+                "(B) December 30",
+                "(C) October 2",
+                "(D) January 26"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Pa Togan Sangma died on:",
+            "options": [
+                "(A) December 12, 1872",
+                "(B) July 17, 1872",
+                "(C) December 30, 1872",
+                "(D) August 15, 1872"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Uranium deposits are found in:",
+            "options": [
+                "(A) Domiasiat",
+                "(B) Nongstoin",
+                "(C) Jowai",
+                "(D) Mawkyrwat"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Mawmluh Cave is famous for:",
+            "options": [
+                "(A) GSI Heritage Tag",
+                "(B) Oldest Fossil",
+                "(C) Cave Paintings",
+                "(D) Deepest Abyss"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "'Sacred Groves' are found in:",
+            "options": [
+                "(A) Sohra",
+                "(B) Mawphlang",
+                "(C) Nongpoh",
+                "(D) Tura"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "'Ki Sngi Barim U Hynniew Trep' was written by:",
+            "options": [
+                "(A) Soso Tham",
+                "(B) U Rabon Singh",
+                "(C) Radhon Singh Berry",
+                "(D) Jeebon Roy"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Demonetization year in India:",
+            "options": [
+                "(A) 2014",
+                "(B) 2016",
+                "(C) 2018",
+                "(D) 2020"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Highest Dam in India:",
+            "options": [
+                "(A) Bhakra Dam",
+                "(B) Tehri Dam",
+                "(C) Hirakud Dam",
+                "(D) Sardar Sarovar Dam"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Longest Dam in India:",
+            "options": [
+                "(A) Bhakra Dam",
+                "(B) Hirakud Dam",
+                "(C) Tehri Dam",
+                "(D) Nagarjuna Sagar Dam"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Current chief Justice of India:",
+            "options": [
+                "(A) D.Y. Chandrachud",
+                "(B) Surya Kant",
+                "(C) Sanjiv Khanna",
+                "(D) B.R. Gavai"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Ozone layer is in:",
+            "options": [
+                "(A) Troposphere",
+                "(B) Stratosphere",
+                "(C) Mesosphere",
+                "(D) Exosphere"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Sound is measured in:",
+            "options": [
+                "(A) Hertz",
+                "(B) Decibel",
+                "(C) Watt",
+                "(D) Pascal"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Current is measured in:",
+            "options": [
+                "(A) Volt",
+                "(B) Ampere",
+                "(C) Ohm",
+                "(D) Watt"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Resistance is measured in:",
+            "options": [
+                "(A) Ampere",
+                "(B) Ohm",
+                "(C) Volt",
+                "(D) Farad"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Nokrek National Park is famous for:",
+            "options": [
+                "(A) Citrus indica",
+                "(B) Pitcher Plant",
+                "(C) Golden Langur",
+                "(D) Red Panda"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Double Decker Living Root Bridge is in:",
+            "options": [
+                "(A) Mawlynnong",
+                "(B) Nongriat",
+                "(C) Sohra",
+                "(D) Dawki"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "First Viceroy of India:",
+            "options": [
+                "(A) Lord Warren Hastings",
+                "(B) Lord Canning",
+                "(C) Lord Mountbatten",
+                "(D) Lord Dalhousie"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Who wrote 'Wings of Fire'?",
+            "options": [
+                "(A) APJ Abdul Kalam",
+                "(B) Pranab Mukherjee",
+                "(C) Atal Bihari Vajpayee",
+                "(D) Dr. S. Radhakrishnan"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Eden Gardens Stadium is in:",
+            "options": [
+                "(A) Mumbai",
+                "(B) Kolkata",
+                "(C) Delhi",
+                "(D) Bengaluru"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Wankhede Stadium is in:",
+            "options": [
+                "(A) Kolkata",
+                "(B) Mumbai",
+                "(C) Chennai",
+                "(D) Pune"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "'Land of White Elephant' is:",
+            "options": [
+                "(A) India",
+                "(B) Thailand",
+                "(C) Myanmar",
+                "(D) Cambodia"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "How many languages in 8th schedule?",
+            "options": [
+                "(A) 18",
+                "(B) 22",
+                "(C) 24",
+                "(D) 14"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "First man in space:",
+            "options": [
+                "(A) Neil Armstrong",
+                "(B) Yuri Gagarin",
+                "(C) Rakesh Sharma",
+                "(D) Buzz Aldrin"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "First Indian in space:",
+            "options": [
+                "(A) Kalpana Chawla",
+                "(B) Rakesh Sharma",
+                "(C) Ravish Malhotra",
+                "(D) Sunita Williams"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Teacher of Alexander the Great:",
+            "options": [
+                "(A) Plato",
+                "(B) Aristotle",
+                "(C) Socrates",
+                "(D) Pythagoras"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which country is known as 'sugar bowl of the world'?",
+            "options": [
+                "(A) Brazil",
+                "(B) Cuba",
+                "(C) India",
+                "(D) USA"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Who is the CEM of KHADC?",
+            "options": [
+                "(A) Pynshngain Syiem",
+                "(B) Hinson Tony Lyngdoh",
+                "(C) Latiplang Kharkongor",
+                "(D) Titosstarwell Chyne"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "'Monolith Festival' is held in:",
+            "options": [
+                "(A) Mawlynnong",
+                "(B) Mawphlang",
+                "(C) Sohra",
+                "(D) Jowai"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "'Land of midnight sun'",
+            "options": [
+                "(A) Sweden",
+                "(B) Norway",
+                "(C) Finland",
+                "(D) Japan"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "International Yoga day",
+            "options": [
+                "(A) 21st June",
+                "(B) 5th June",
+                "(C) 22nd April",
+                "(D) 11th July"
+            ],
+            "answer": "A"
+        }
+    ]
+}
