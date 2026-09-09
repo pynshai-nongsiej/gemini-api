@@ -1,0 +1,630 @@
+{
+  "id": "auto-2-the-planet-where-it-rains-molten",
+  "title": "The Planet Where It Rains Glass Sideways",
+  "composition": "AutoTheplanetwhereitrain",
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSec": 40.84
+  },
+  "vo": [
+    {
+      "beat": "hook",
+      "text": "This deep blue exoplanet rains molten glass sideways at five thousand miles an hour.",
+      "imagePrompt": "Close-up of vibrant blue gas giant HD 189733b, glass rain streaks across atmospheric storms, dramatic space lighting",
+      "sfxHint": "deep impact",
+      "start": 0.25,
+      "end": 5.26,
+      "words": [
+        {
+          "w": "This",
+          "start": 0.25,
+          "end": 0.553
+        },
+        {
+          "w": "deep",
+          "start": 0.553,
+          "end": 0.856
+        },
+        {
+          "w": "blue",
+          "start": 0.856,
+          "end": 1.159
+        },
+        {
+          "w": "exoplanet",
+          "start": 1.159,
+          "end": 1.727
+        },
+        {
+          "w": "rains",
+          "start": 1.727,
+          "end": 2.083
+        },
+        {
+          "w": "molten",
+          "start": 2.083,
+          "end": 2.492
+        },
+        {
+          "w": "glass",
+          "start": 2.492,
+          "end": 2.848
+        },
+        {
+          "w": "sideways",
+          "start": 2.848,
+          "end": 3.364
+        },
+        {
+          "w": "at",
+          "start": 3.364,
+          "end": 3.56
+        },
+        {
+          "w": "five",
+          "start": 3.56,
+          "end": 3.863
+        },
+        {
+          "w": "thousand",
+          "start": 3.863,
+          "end": 4.378
+        },
+        {
+          "w": "miles",
+          "start": 4.378,
+          "end": 4.734
+        },
+        {
+          "w": "an",
+          "start": 4.734,
+          "end": 4.931
+        },
+        {
+          "w": "hour.",
+          "start": 4.931,
+          "end": 5.263
+        }
+      ]
+    },
+    {
+      "beat": "setup",
+      "text": "HD 189733b looks peaceful, but its atmosphere reaches two thousand degrees Fahrenheit.",
+      "imagePrompt": "Cinematic wide shot of deep blue planet next to a scorching bright sun in dark deep space",
+      "sfxHint": "low rumble",
+      "start": 5.74,
+      "end": 12.02,
+      "words": [
+        {
+          "w": "HD",
+          "start": 5.74,
+          "end": 5.985
+        },
+        {
+          "w": "189733b",
+          "start": 5.985,
+          "end": 6.563
+        },
+        {
+          "w": "looks",
+          "start": 6.563,
+          "end": 7.008
+        },
+        {
+          "w": "peaceful,",
+          "start": 7.008,
+          "end": 7.687
+        },
+        {
+          "w": "but",
+          "start": 7.687,
+          "end": 7.999
+        },
+        {
+          "w": "its",
+          "start": 7.999,
+          "end": 8.311
+        },
+        {
+          "w": "atmosphere",
+          "start": 8.311,
+          "end": 9.087
+        },
+        {
+          "w": "reaches",
+          "start": 9.087,
+          "end": 9.664
+        },
+        {
+          "w": "two",
+          "start": 9.664,
+          "end": 9.976
+        },
+        {
+          "w": "thousand",
+          "start": 9.976,
+          "end": 10.619
+        },
+        {
+          "w": "degrees",
+          "start": 10.619,
+          "end": 11.196
+        },
+        {
+          "w": "Fahrenheit.",
+          "start": 11.196,
+          "end": 12.008
+        }
+      ]
+    },
+    {
+      "beat": "setup",
+      "text": "That extreme heat condenses airborne silicate particles directly into liquid glass.",
+      "imagePrompt": "Microscopic view of molten silicate drops forming and shimmering in violent orange atmospheric clouds",
+      "sfxHint": "riser",
+      "start": 10.49,
+      "end": 14.83,
+      "words": [
+        {
+          "w": "That",
+          "start": 10.49,
+          "end": 10.761
+        },
+        {
+          "w": "extreme",
+          "start": 10.761,
+          "end": 11.175
+        },
+        {
+          "w": "heat",
+          "start": 11.175,
+          "end": 11.446
+        },
+        {
+          "w": "condenses",
+          "start": 11.446,
+          "end": 11.955
+        },
+        {
+          "w": "airborne",
+          "start": 11.955,
+          "end": 12.417
+        },
+        {
+          "w": "silicate",
+          "start": 12.417,
+          "end": 12.877
+        },
+        {
+          "w": "particles",
+          "start": 12.877,
+          "end": 13.386
+        },
+        {
+          "w": "directly",
+          "start": 13.386,
+          "end": 13.848
+        },
+        {
+          "w": "into",
+          "start": 13.848,
+          "end": 14.119
+        },
+        {
+          "w": "liquid",
+          "start": 14.119,
+          "end": 14.485
+        },
+        {
+          "w": "glass.",
+          "start": 14.485,
+          "end": 14.83
+        }
+      ]
+    },
+    {
+      "beat": "quiz",
+      "text": "Pause right now. Guess why this glass falls sideways instead of down.",
+      "imagePrompt": "Planet atmosphere showing massive swirling storm fronts moving horizontally at extreme speeds",
+      "sfxHint": "tick",
+      "start": 14.88,
+      "end": 18.86,
+      "words": [
+        {
+          "w": "Pause",
+          "start": 14.88,
+          "end": 15.225
+        },
+        {
+          "w": "right",
+          "start": 15.225,
+          "end": 15.57
+        },
+        {
+          "w": "now.",
+          "start": 15.57,
+          "end": 15.84
+        },
+        {
+          "w": "Guess",
+          "start": 15.84,
+          "end": 16.185
+        },
+        {
+          "w": "why",
+          "start": 16.185,
+          "end": 16.427
+        },
+        {
+          "w": "this",
+          "start": 16.427,
+          "end": 16.72
+        },
+        {
+          "w": "glass",
+          "start": 16.72,
+          "end": 17.065
+        },
+        {
+          "w": "falls",
+          "start": 17.065,
+          "end": 17.41
+        },
+        {
+          "w": "sideways",
+          "start": 17.41,
+          "end": 17.909
+        },
+        {
+          "w": "instead",
+          "start": 17.909,
+          "end": 18.357
+        },
+        {
+          "w": "of",
+          "start": 18.357,
+          "end": 18.548
+        },
+        {
+          "w": "down.",
+          "start": 18.548,
+          "end": 18.869
+        }
+      ]
+    },
+    {
+      "beat": "reveal",
+      "text": "Supersonic winds fly at seven times the speed of sound, whipping rain horizontally.",
+      "imagePrompt": "Hyper-realistic rendering of glowing glass rain flying horizontally across violent blue clouds",
+      "sfxHint": "whipping wind whoosh",
+      "start": 19.63,
+      "end": 24.4,
+      "words": [
+        {
+          "w": "Supersonic",
+          "start": 19.63,
+          "end": 20.236
+        },
+        {
+          "w": "winds",
+          "start": 20.236,
+          "end": 20.583
+        },
+        {
+          "w": "fly",
+          "start": 20.583,
+          "end": 20.827
+        },
+        {
+          "w": "at",
+          "start": 20.827,
+          "end": 21.019
+        },
+        {
+          "w": "seven",
+          "start": 21.019,
+          "end": 21.366
+        },
+        {
+          "w": "times",
+          "start": 21.366,
+          "end": 21.714
+        },
+        {
+          "w": "the",
+          "start": 21.714,
+          "end": 21.957
+        },
+        {
+          "w": "speed",
+          "start": 21.957,
+          "end": 22.305
+        },
+        {
+          "w": "of",
+          "start": 22.305,
+          "end": 22.497
+        },
+        {
+          "w": "sound,",
+          "start": 22.497,
+          "end": 22.872
+        },
+        {
+          "w": "whipping",
+          "start": 22.872,
+          "end": 23.375
+        },
+        {
+          "w": "rain",
+          "start": 23.375,
+          "end": 23.671
+        },
+        {
+          "w": "horizontally.",
+          "start": 23.671,
+          "end": 24.409
+        }
+      ]
+    },
+    {
+      "beat": "reveal",
+      "text": "It creates a massive storm of endless, deadly razor-sharp glass blades.",
+      "imagePrompt": "Internal view of storm clouds shredded by millions of sharp, glowing glass droplets in motion",
+      "sfxHint": "shatter",
+      "start": 24.75,
+      "end": 28.58,
+      "words": [
+        {
+          "w": "It",
+          "start": 24.75,
+          "end": 24.933
+        },
+        {
+          "w": "creates",
+          "start": 24.933,
+          "end": 25.362
+        },
+        {
+          "w": "a",
+          "start": 25.362,
+          "end": 25.496
+        },
+        {
+          "w": "massive",
+          "start": 25.496,
+          "end": 25.925
+        },
+        {
+          "w": "storm",
+          "start": 25.925,
+          "end": 26.256
+        },
+        {
+          "w": "of",
+          "start": 26.256,
+          "end": 26.438
+        },
+        {
+          "w": "endless,",
+          "start": 26.438,
+          "end": 26.895
+        },
+        {
+          "w": "deadly",
+          "start": 26.895,
+          "end": 27.275
+        },
+        {
+          "w": "razor-sharp",
+          "start": 27.275,
+          "end": 27.852
+        },
+        {
+          "w": "glass",
+          "start": 27.852,
+          "end": 28.183
+        },
+        {
+          "w": "blades.",
+          "start": 28.183,
+          "end": 28.59
+        }
+      ]
+    },
+    {
+      "beat": "twist",
+      "text": "The beautiful sapphire color isn't oceans—it is light scattering off glass rain.",
+      "imagePrompt": "Stunning blue wavelength light reflecting through millions of atmospheric glass crystals in space",
+      "sfxHint": "ethereal swell",
+      "start": 29.14,
+      "end": 33.75,
+      "words": [
+        {
+          "w": "The",
+          "start": 29.14,
+          "end": 29.389
+        },
+        {
+          "w": "beautiful",
+          "start": 29.389,
+          "end": 29.956
+        },
+        {
+          "w": "sapphire",
+          "start": 29.956,
+          "end": 30.47
+        },
+        {
+          "w": "color",
+          "start": 30.47,
+          "end": 30.825
+        },
+        {
+          "w": "isn't",
+          "start": 30.825,
+          "end": 31.127
+        },
+        {
+          "w": "oceans—it",
+          "start": 31.127,
+          "end": 31.641
+        },
+        {
+          "w": "is",
+          "start": 31.641,
+          "end": 31.838
+        },
+        {
+          "w": "light",
+          "start": 31.838,
+          "end": 32.193
+        },
+        {
+          "w": "scattering",
+          "start": 32.193,
+          "end": 32.812
+        },
+        {
+          "w": "off",
+          "start": 32.812,
+          "end": 33.062
+        },
+        {
+          "w": "glass",
+          "start": 33.062,
+          "end": 33.417
+        },
+        {
+          "w": "rain.",
+          "start": 33.417,
+          "end": 33.748
+        }
+      ]
+    },
+    {
+      "beat": "twist",
+      "text": "Standing here would shred you apart before you ever hit the surface.",
+      "imagePrompt": "Terrifying view from inside the hurricane-force glass storm looking out toward space",
+      "sfxHint": "heavy bass drop",
+      "start": 33.89,
+      "end": 37.24,
+      "words": [
+        {
+          "w": "Standing",
+          "start": 33.89,
+          "end": 34.312
+        },
+        {
+          "w": "here",
+          "start": 34.312,
+          "end": 34.56
+        },
+        {
+          "w": "would",
+          "start": 34.56,
+          "end": 34.852
+        },
+        {
+          "w": "shred",
+          "start": 34.852,
+          "end": 35.143
+        },
+        {
+          "w": "you",
+          "start": 35.143,
+          "end": 35.348
+        },
+        {
+          "w": "apart",
+          "start": 35.348,
+          "end": 35.64
+        },
+        {
+          "w": "before",
+          "start": 35.64,
+          "end": 35.975
+        },
+        {
+          "w": "you",
+          "start": 35.975,
+          "end": 36.179
+        },
+        {
+          "w": "ever",
+          "start": 36.179,
+          "end": 36.428
+        },
+        {
+          "w": "hit",
+          "start": 36.428,
+          "end": 36.632
+        },
+        {
+          "w": "the",
+          "start": 36.632,
+          "end": 36.837
+        },
+        {
+          "w": "surface.",
+          "start": 36.837,
+          "end": 37.239
+        }
+      ]
+    },
+    {
+      "beat": "loop",
+      "text": "Which explains why...",
+      "imagePrompt": "Close-up of vibrant blue gas giant HD 189733b, glass rain streaks across atmospheric storms, dramatic space lighting",
+      "sfxHint": "soft whoosh",
+      "start": 38.65,
+      "end": 40.1,
+      "words": [
+        {
+          "w": "Which",
+          "start": 38.65,
+          "end": 39.099
+        },
+        {
+          "w": "explains",
+          "start": 39.099,
+          "end": 39.749
+        },
+        {
+          "w": "why...",
+          "start": 39.749,
+          "end": 40.101
+        }
+      ]
+    }
+  ],
+  "beats": [
+    {
+      "id": "hook",
+      "visual": "Extreme close-up of a deep sapphire planet showing sharp streaks of glowing liquid glass whipping across space."
+    },
+    {
+      "id": "setup",
+      "visual": "A wide shot comparing the deceptively tranquil blue hue to its intense proximity to a scorching host star."
+    },
+    {
+      "id": "quiz",
+      "visual": "A stylized pause graphic overlaid on violent planetary cloud bands moving at extreme velocities."
+    },
+    {
+      "id": "reveal",
+      "visual": "High-speed macro visualization of liquid glass droplets flying completely horizontal through roaring storms."
+    },
+    {
+      "id": "twist",
+      "visual": "Spectrogram-style light rays bending through glass particles, exposing the terrifying truth behind its azure glow."
+    },
+    {
+      "id": "loop",
+      "visual": "Extreme close-up of a deep sapphire planet showing sharp streaks of glowing liquid glass whipping across space."
+    }
+  ],
+  "voiceStatus": "kokoro:bf_emma"
+}

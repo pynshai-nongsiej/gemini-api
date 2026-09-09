@@ -13,6 +13,58 @@ Every track shares the same backbone: ElevenLabs voice with **word-exact synced 
 frame-by-frame QA at phone scale, a reusable self-growing SFX/music library, seamless
 frame-0==last-frame loops, and no dated engagement-CTA outros.
 
+---
+
+## ⚡ LOCAL PIPELINE + OPERATOR (this fork)
+
+This fork runs **100% local & free** — no ElevenLabs, no Gemini API keys:
+
+| Previous (cloud) | Now (local) |
+|---|---|
+| ElevenLabs voice | **Kokoro ONNX TTS** (`tools/kokoro_tts.py`, batch mode, word-synced captions) |
+| Gemini API scripts | **local gemini-web2api proxy** (`127.0.0.1:8081`) via `tools/gen_script.py` |
+| Gemini image gen | **Pollinations FLUX** (keyless, retry+backoff) via `tools/gen_image.py` |
+| ElevenLabs SFX/music | shared library (committed) + offline ffmpeg synthesis fallback |
+
+### One command
+
+```bash
+./launch.sh short "the sound a black hole makes" --style "space documentary"
+# or through the operator API / dashboard:
+python3 tools/make_short.py --topic "..." --voice bm_george --music ambient-pad
+```
+
+### The Operator (management layer — `operator/server.js`, port 3457)
+
+The full management layer from the previous youtube-automation-agent, rebuilt around
+the local pipeline:
+
+- **Job queue** — POST `/api/jobs` {topic}; statuses queued→running→completed/failed/cancelled;
+  cancel (process-group kill), resume (`--resume`), live logs, interrupt recovery on boot
+- **Readiness gate** — generation is blocked until web2api / Kokoro models / ffmpeg /
+  Remotion / node deps all pass
+- **Review gate (approval-first)** — every short lands in `needs_review`; approve requires
+  `confirm_reviewed:true`; metadata (title/description/tags) editable before approval
+- **Autonomous operator** — POST `/api/operator/start`: local-AI topic research with the
+  FULL production history as an exclusion list → plans & enqueues N shorts
+- **Publish scheduling** — approve schedules into the next configured HH:MM slot; YouTube
+  OAuth + resumable upload + thumbnail (frame-0 beat) + SRT captions; pause/resume/retry;
+  fail-closed (never publishes a missing/placeholder file)
+- **Scheduler** — auto-generate to fill the weekly cadence (opt-in), publish due entries,
+  refresh analytics for published shorts
+- **Dashboard** — `http://localhost:3457` (Generate / Library / Review / Publish / Settings)
+
+```bash
+./launch.sh operator   # gemini proxy + operator dashboard
+npm start              # same, from the repo root
+```
+
+Security: set `OPERATOR_API_KEY` in `.env` (or Settings tab) — ALL mutating routes then
+require the `x-api-key` header. YouTube OAuth: set `GOOGLE_CLIENT_ID`/`GOOGLE_CLIENT_SECRET`,
+then open `/api/youtube/auth` from the Publish tab.
+
+---
+
 ## 📖 Read the guide
 
 I wrote up the whole system on my site, including the six-beat grammar that decides whether a

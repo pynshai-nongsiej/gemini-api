@@ -1,0 +1,11 @@
+{
+  "prompt": "Hyper-realistic rendering of glowing glass rain flying horizontally across violent blue clouds",
+  "engine": "pollinations",
+  "model": "flux",
+  "aspect_ratio": "9:16",
+  "image_size": "1K",
+  "width": 1080,
+  "height": 1920,
+  "seed": null,
+  "created": "2026-09-10T01:06:32"
+}

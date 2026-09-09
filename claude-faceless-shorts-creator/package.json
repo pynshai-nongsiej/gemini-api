@@ -1,0 +1,15 @@
+{
+  "name": "local-shorts-operator",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Operator & management layer for the local shorts factory (jobs, review, publishing, scheduling, dashboard)",
+  "main": "operator/server.js",
+  "scripts": {
+    "start": "node operator/server.js",
+    "operator": "node operator/server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "googleapis": "^144.0.0"
+  }
+}

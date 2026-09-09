@@ -345,6 +345,18 @@ def main():
     print(f"      {total:.1f}s  voice={beats.get('voiceStatus')}  "
           f"images={len(srcs)}  accent={accent}")
     print("=" * 60)
+    # machine-readable result for the operator worker (operator/worker.js)
+    print("FINAL:" + json.dumps({
+        "proj_id": proj_id,
+        "title": beats["title"],
+        "final": final_copy,
+        "beats": beats_path,
+        "duration": round(total, 2),
+        "composition": comp_id,
+        "voice": beats.get("voiceStatus"),
+        "images": len(srcs),
+        "accent": accent,
+    }, ensure_ascii=False))
 
 
 if __name__ == "__main__":

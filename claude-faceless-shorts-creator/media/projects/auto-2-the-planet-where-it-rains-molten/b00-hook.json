@@ -1,0 +1,11 @@
+{
+  "prompt": "Close-up of vibrant blue gas giant HD 189733b, glass rain streaks across atmospheric storms, dramatic space lighting",
+  "engine": "pollinations",
+  "model": "flux",
+  "aspect_ratio": "9:16",
+  "image_size": "1K",
+  "width": 1080,
+  "height": 1920,
+  "seed": null,
+  "created": "2026-09-10T01:03:30"
+}

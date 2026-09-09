@@ -1,0 +1,11 @@
+{
+  "prompt": "Internal view of storm clouds shredded by millions of sharp, glowing glass droplets in motion",
+  "engine": "pollinations",
+  "model": "flux",
+  "aspect_ratio": "9:16",
+  "image_size": "1K",
+  "width": 1080,
+  "height": 1920,
+  "seed": null,
+  "created": "2026-09-10T01:07:16"
+}

@@ -8,6 +8,14 @@
   "transparent": false
  },
  {
+  "id": "AutoTheplanetwhereitrain",
+  "durationInSeconds": 40.84,
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "transparent": false
+ },
+ {
   "id": "AutoTheterrifyingsoundof",
   "durationInSeconds": 38,
   "fps": 30,

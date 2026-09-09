@@ -17,12 +17,13 @@ cd "$SCRIPT_DIR"
 GEMINI_PORT="${GEMINI_PORT:-8081}"
 LDA_PORT="${PORT:-8080}"
 YOUTUBE_PORT="${YOUTUBE_PORT:-3456}"
+OPERATOR_PORT="${OPERATOR_PORT:-3457}"
 HOST="${HOST:-0.0.0.0}"
 MODEL="${MODEL:-gemini-3.6-flash}"
 
 LOGS_DIR="$SCRIPT_DIR/logs"
 mkdir -p "$LOGS_DIR"
-touch "$LOGS_DIR/gemini.log" "$LOGS_DIR/lda.log" "$LOGS_DIR/youtube.log"
+touch "$LOGS_DIR/gemini.log" "$LOGS_DIR/lda.log" "$LOGS_DIR/youtube.log" "$LOGS_DIR/operator.log"
 mkdir -p "$SCRIPT_DIR/data/questions" "$SCRIPT_DIR/web" "$SCRIPT_DIR/static"
 
 # Color Palette
@@ -159,6 +160,34 @@ start_youtube() {
     fi
 }
 
+start_operator() {
+    if is_port_in_use "$OPERATOR_PORT"; then
+        local existing_pid
+        existing_pid=$(get_port_pid "$OPERATOR_PORT")
+        echo -e "  ${C_GREEN}✓${C_RESET} ${C_BOLD}Local Shorts Operator${C_RESET} is already running on port ${C_CYAN}${OPERATOR_PORT}${C_RESET} ${C_DIM}(PID: ${existing_pid})${C_RESET}"
+    else
+        echo -e "${C_GOLD}⏳ Starting Local Shorts Operator on port ${OPERATOR_PORT}...${C_RESET}"
+        (cd "$SCRIPT_DIR/claude-faceless-shorts-creator" && OPERATOR_PORT="$OPERATOR_PORT" node operator/server.js > "$LOGS_DIR/operator.log" 2>&1) &
+        local pid=$!
+        STARTED_PIDS+=("$pid")
+
+        local ready=0
+        for _ in {1..20}; do
+            if curl -s -m 1 "http://127.0.0.1:${OPERATOR_PORT}/health" > /dev/null 2>&1; then
+                ready=1
+                break
+            fi
+            sleep 0.5
+        done
+
+        if [ "$ready" -eq 1 ]; then
+            echo -e "  ${C_GREEN}✓${C_RESET} ${C_BOLD}Local Shorts Operator${C_RESET} started on port ${C_CYAN}${OPERATOR_PORT}${C_RESET} ${C_DIM}(PID: ${pid})${C_RESET} ${C_DIM}→ http://localhost:${OPERATOR_PORT}${C_RESET}"
+        else
+            echo -e "  ${C_RED}✗ Local Shorts Operator failed to start. Check logs/operator.log${C_RESET}"
+        fi
+    fi
+}
+
 show_status() {
     echo -e "${C_BOLD}━━━━━━━━━━━━━━━━━━━━━━━━ SYSTEM STATUS ━━━━━━━━━━━━━━━━━━━━━━━━${C_RESET}"
     printf "  %-30s %-8s %-12s %s\n" "SERVICE" "PORT" "STATUS" "PID"
@@ -190,13 +219,22 @@ show_status() {
     else
         printf "  %-30s %-8s ${C_RED}%-12s${C_RESET} %s\n" "Mission LDA Platform" "$LDA_PORT" "STOPPED" "-"
     fi
+
+    # Local Shorts Operator
+    local o_pid
+    o_pid=$(get_port_pid "$OPERATOR_PORT")
+    if [ -n "$o_pid" ]; then
+        printf "  %-30s %-8s ${C_GREEN}%-12s${C_RESET} %s\n" "Local Shorts Operator" "$OPERATOR_PORT" "RUNNING" "$o_pid"
+    else
+        printf "  %-30s %-8s ${C_RED}%-12s${C_RESET} %s\n" "Local Shorts Operator" "$OPERATOR_PORT" "STOPPED" "-"
+    fi
     echo -e "${C_BOLD}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${C_RESET}"
     echo ""
 }
 
 stop_all() {
     echo -e "${C_BOLD}${C_GOLD}🛑 Stopping all services...${C_RESET}"
-    local ports=("$GEMINI_PORT" "$LDA_PORT" "$YOUTUBE_PORT")
+    local ports=("$GEMINI_PORT" "$LDA_PORT" "$YOUTUBE_PORT" "$OPERATOR_PORT")
     for p in "${ports[@]}"; do
         local pid
         pid=$(get_port_pid "$p")
@@ -264,6 +302,24 @@ case "$COMMAND" in
         echo -e "${C_DIM}Streaming YouTube Studio logs (Press Ctrl+C to exit)...${C_RESET}"
         tail -f "$LOGS_DIR/youtube.log"
         ;;
+    short)
+        banner
+        echo -e "${C_BOLD}Local Shorts Factory (claude-faceless-shorts-creator)...${C_RESET}"
+        start_gemini
+        TOPIC_ARGS=()
+        STYLE_ARGS=()
+        while [[ $# -ge 2 ]]; do
+            case "$2" in
+                --style) STYLE_ARGS=(--style "$3"); shift 2 ;;
+                *) TOPIC_ARGS+=("$2"); shift ;;
+            esac
+        done
+        if [ ${#TOPIC_ARGS[@]} -eq 0 ]; then
+            echo -e "  ${C_RED}Usage: ./launch.sh short \"your topic here\" [--style \"niche\"]${C_RESET}"
+            exit 1
+        fi
+        (cd "$SCRIPT_DIR/claude-faceless-shorts-creator" && python3 tools/make_short.py --topic "${TOPIC_ARGS[*]}" "${STYLE_ARGS[@]}")
+        ;;
     lda)
         banner
         echo -e "${C_BOLD}Starting Mission LDA Exam Platform & Gemini backend...${C_RESET}"
@@ -273,10 +329,20 @@ case "$COMMAND" in
         echo -e "${C_DIM}Streaming Mission LDA logs (Press Ctrl+C to exit)...${C_RESET}"
         tail -f "$LOGS_DIR/lda.log"
         ;;
+    operator)
+        banner
+        echo -e "${C_BOLD}Starting Local Shorts Operator (new video generator)...${C_RESET}"
+        start_gemini
+        start_operator
+        print_endpoints
+        echo -e "${C_DIM}Streaming Operator logs (Press Ctrl+C to exit)...${C_RESET}"
+        tail -f "$LOGS_DIR/operator.log"
+        ;;
     all|start)
         banner
         echo -e "${C_BOLD}Launching full ecosystem...${C_RESET}"
         start_gemini
+        start_operator
         start_youtube
         start_lda
         print_endpoints
@@ -290,8 +356,10 @@ case "$COMMAND" in
         echo -e "${C_BOLD}Usage:${C_RESET} ./launch.sh [command]"
         echo ""
         echo "Commands:"
-        echo "  all      Launch Gemini Web2API, YouTube Studio, and Mission LDA (Default)"
-        echo "  youtube  Launch Gemini Web2API + YouTube Automation Studio"
+        echo "  all      Launch Gemini Web2API, Shorts Operator, YouTube Studio, and Mission LDA (Default)"
+        echo "  operator Launch Gemini Web2API + Local Shorts Operator (dashboard :3457)"
+        echo "  short    Generate a local short end-to-end: ./launch.sh short \"topic\" [--style \"niche\"]"
+        echo "  youtube  Launch Gemini Web2API + old YouTube Automation Studio"
         echo "  lda      Launch Gemini Web2API + Mission LDA Exam Platform"
         echo "  gemini   Launch Gemini Web2API only"
         echo "  status   Show current status of all services and ports"

@@ -1,0 +1,126 @@
+{
+  "master": "remotion/out/AutoTheplanetwhereitrain-voiced.mp4",
+  "master_fps": 30,
+  "catalog": "media/library/sfx/catalog.json",
+  "render": {
+    "preview": "remotion/out/AutoTheplanetwhereitrain-voiced.mp4",
+    "out": "shorts/auto-2-the-planet-where-it-rains-molten/output/auto-2-the-planet-where-it-rains-molten-sfx.mp4",
+    "end_s": 40.84,
+    "duck": true
+  },
+  "events": [
+    {
+      "at_s": 0.3,
+      "sfx_id": "impact-deep-soft",
+      "gain_db": -8,
+      "shot": "MainScene",
+      "cue": "sfxHint 'deep impact'"
+    },
+    {
+      "at_s": 5.74,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -11,
+      "shot": "MainScene",
+      "cue": "beat change: setup",
+      "optional": true
+    },
+    {
+      "at_s": 10.49,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -11,
+      "shot": "MainScene",
+      "cue": "beat change: setup",
+      "optional": true
+    },
+    {
+      "at_s": 10.54,
+      "sfx_id": "riser-soft",
+      "gain_db": -8,
+      "shot": "MainScene",
+      "cue": "sfxHint 'riser'"
+    },
+    {
+      "at_s": 14.88,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -11,
+      "shot": "MainScene",
+      "cue": "beat change: quiz",
+      "optional": true
+    },
+    {
+      "at_s": 14.93,
+      "sfx_id": "clock-tick-soft",
+      "gain_db": -8,
+      "shot": "MainScene",
+      "cue": "sfxHint 'tick'"
+    },
+    {
+      "at_s": 19.63,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -11,
+      "shot": "MainScene",
+      "cue": "beat change: reveal",
+      "optional": true
+    },
+    {
+      "at_s": 19.68,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -8,
+      "shot": "MainScene",
+      "cue": "sfxHint 'whipping wind whoosh'"
+    },
+    {
+      "at_s": 19.63,
+      "sfx_id": "impact-deep-soft",
+      "gain_db": -7,
+      "shot": "MainScene",
+      "cue": "the reveal lands"
+    },
+    {
+      "at_s": 24.75,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -11,
+      "shot": "MainScene",
+      "cue": "beat change: reveal",
+      "optional": true
+    },
+    {
+      "at_s": 24.75,
+      "sfx_id": "impact-deep-soft",
+      "gain_db": -7,
+      "shot": "MainScene",
+      "cue": "the reveal lands"
+    },
+    {
+      "at_s": 29.14,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -11,
+      "shot": "MainScene",
+      "cue": "beat change: twist",
+      "optional": true
+    },
+    {
+      "at_s": 33.89,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -11,
+      "shot": "MainScene",
+      "cue": "beat change: twist",
+      "optional": true
+    },
+    {
+      "at_s": 38.65,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -11,
+      "shot": "MainScene",
+      "cue": "beat change: loop",
+      "optional": true
+    },
+    {
+      "at_s": 38.7,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -8,
+      "shot": "MainScene",
+      "cue": "sfxHint 'soft whoosh'"
+    }
+  ]
+}

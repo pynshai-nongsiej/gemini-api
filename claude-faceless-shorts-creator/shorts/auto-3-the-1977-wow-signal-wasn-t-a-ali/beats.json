@@ -1,0 +1,112 @@
+{
+  "id": "auto-3-the-1977-wow-signal-wasn-t-a-ali",
+  "title": "The Wow! Signal Just Got a Twin",
+  "composition": "AutoThewowsignaljustgot",
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSec": 35.53
+  },
+  "vo": [
+    {
+      "beat": "hook",
+      "text": "The famous Wow Signal was never an alien broadcast.",
+      "imagePrompt": "Massive radio telescope dish at night under a starry sky, glowing neon red indicator lights, cinematic sci-fi lighting",
+      "sfxHint": "deep impact",
+      "start": 0.25,
+      "end": 3.71
+    },
+    {
+      "beat": "hook",
+      "text": "It was just neutral hydrogen singing in deep space.",
+      "imagePrompt": "Glowing blue hydrogen atom radiating cosmic waves through dark outer space, highly detailed 3d render",
+      "sfxHint": "static burst",
+      "start": 4.06,
+      "end": 7.52
+    },
+    {
+      "beat": "setup",
+      "text": "In 1977, astronomers detected a seventy-two second burst that stumped science.",
+      "imagePrompt": "Vintage computer monitor displaying glowing red numbers and text in a dark observatory, 1970s aesthetics",
+      "sfxHint": "low rumble",
+      "start": 7.87,
+      "end": 12.1
+    },
+    {
+      "beat": "setup",
+      "text": "It sat perfectly at the natural frequency of neutral hydrogen.",
+      "imagePrompt": "Abstract audio wave graph pulsing at 1420 Megahertz against a starry void, crisp cyan lines",
+      "sfxHint": "electronic hum",
+      "start": 12.45,
+      "end": 16.3
+    },
+    {
+      "beat": "quiz",
+      "text": "Pause right now and guess where it came from.",
+      "imagePrompt": "Deep space star field with a glowing yellow target reticle focusing on an empty dark sector",
+      "sfxHint": "clock tick",
+      "start": 16.65,
+      "end": 20.11
+    },
+    {
+      "beat": "reveal",
+      "text": "Comets. Solar flares hitting hydrogen clouds caused a natural cosmic laser.",
+      "imagePrompt": "A massive icy comet passing through an intense glowing solar flare, spewing brilliant blue gas",
+      "sfxHint": "rising swell",
+      "start": 20.46,
+      "end": 24.69
+    },
+    {
+      "beat": "twist",
+      "text": "Then astronomers found its identical twin signal eighteen hundred light-years away.",
+      "imagePrompt": "Two identical glowing golden signal beams crossing deep space from distant star clusters",
+      "sfxHint": "sub bass drop",
+      "start": 25.04,
+      "end": 29.27
+    },
+    {
+      "beat": "twist",
+      "text": "Originating from absolute void with no comets in sight.",
+      "imagePrompt": "Eerie dark void of deep space with distant faint galaxies, pitch black emptiness, atmospheric photo",
+      "sfxHint": "echoing chime",
+      "start": 29.62,
+      "end": 33.08
+    },
+    {
+      "beat": "loop",
+      "text": "Proving that...",
+      "imagePrompt": "Massive radio telescope dish at night under a starry sky, glowing neon red indicator lights, cinematic sci-fi lighting",
+      "sfxHint": "soft reverse whoosh",
+      "start": 33.43,
+      "end": 34.43
+    }
+  ],
+  "beats": [
+    {
+      "id": "hook",
+      "visual": "Cinematic low-angle shot of the Big Ear radio telescope against a dark, star-filled sky."
+    },
+    {
+      "id": "setup",
+      "visual": "A vintage 1970s computer screen displaying glowing red telemetry data and the famous printout."
+    },
+    {
+      "id": "quiz",
+      "visual": "A targeted reticle scanning across an empty sector of a deep-space star map."
+    },
+    {
+      "id": "reveal",
+      "visual": "Dynamic 3D animation of a comet getting blasted by solar wind, emitting a blinding radio burst."
+    },
+    {
+      "id": "twist",
+      "visual": "Split-screen visual showing two identical waveform beams beaming from a pitch-black cosmic void."
+    },
+    {
+      "id": "loop",
+      "visual": "Cinematic low-angle shot of the Big Ear radio telescope against a dark, star-filled sky."
+    }
+  ],
+  "voiceStatus": "pending:kokoro"
+}
