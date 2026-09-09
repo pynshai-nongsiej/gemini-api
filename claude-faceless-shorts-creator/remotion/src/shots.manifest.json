@@ -8,8 +8,24 @@
   "transparent": false
  },
  {
+  "id": "AutoThecosmicjetthatswal",
+  "durationInSeconds": 40.82,
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "transparent": false
+ },
+ {
   "id": "AutoTheplanetwhereitrain",
   "durationInSeconds": 40.84,
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "transparent": false
+ },
+ {
+  "id": "AutoThestarthatdiedinbr",
+  "durationInSeconds": 37.26,
   "fps": 30,
   "width": 1080,
   "height": 1920,

@@ -142,10 +142,24 @@ class Worker {
       const beats = JSON.parse(fs.readFileSync(info.beats, 'utf8'));
       const voText = (beats.vo || []).map(v => v.text).join(' ');
       const seo = await suggestSEO(info.title, voText, this.db.getSettings());
+
+      // asset manifest: NASA-first imagery provenance per beat
+      let imageAssets = [];
+      try {
+        imageAssets = JSON.parse(fs.readFileSync(info.images_manifest, 'utf8'))
+          .map(a => ({
+            beat: a.beat, source: a.source, title: a.title,
+            nasa_id: a.nasa_id || null, details_url: a.details_url || null,
+            url: `/media/projects/${info.proj_id}/${a.src}`,
+          }));
+      } catch { /* manifest optional on older runs */ }
+
       const meta = {
         hook: beats.vo?.[0]?.text || '',
         accent: info.accent,
         images: info.images,
+        nasa_images: info.nasa_images || imageAssets.filter(a => a.source === 'nasa').length,
+        imageAssets,
         srt: this.writeSrt(info.proj_id, beats),
       };
       this.db.upsertShort({

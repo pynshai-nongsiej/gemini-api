@@ -77,29 +77,87 @@ def next_index():
 
 
 def gen_images(beats, proj_dir, media_dir, size):
-    """One image per vo line (cached on disk). Returns staticFile-relative paths."""
+    """One image per vo line, NASA-FIRST (real imagery), AI fallback.
+
+    Resolution order per beat:
+      1. cached file (any prior run)
+      2. NASA Image Library via tools/nasa_media.py (nasaQuery / imagePrompt
+         keywords) — real telescope & mission photography
+      3. Pollinations FLUX (tools/gen_image.py) — only when NASA has no
+         authentic match
+    Writes media/projects/<id>/images.json — the asset manifest the operator
+    UI reads to badge each beat as NASA or AI.
+    """
     os.makedirs(media_dir, exist_ok=True)
-    srcs = []
+    sys.path.insert(0, os.path.join(ROOT, "tools"))
+    from nasa_media import fetch_nasa_image  # local import: heavy only when used
+
+    manifest_path = os.path.join(media_dir, "images.json")
+    manifest = []
+    if os.path.exists(manifest_path):
+        try:
+            manifest = json.load(open(manifest_path, encoding="utf-8"))
+        except ValueError:
+            manifest = []
+
+    srcs, exclude_urls = [], set()
     for i, v in enumerate(beats["vo"]):
         stem = f"b{i:02d}-{slugify(v.get('beat', 'beat'), 18)}"
-        # cached? accept any extension gen_image may have picked
         cached = next((f for f in os.listdir(media_dir)
                        if f.startswith(stem + ".") and not f.endswith(".json")), None)
         if cached:
             srcs.append(f"projects/{os.path.basename(media_dir)}/{cached}")
+            if i < len(manifest):
+                manifest[i]["src"] = cached
+                exclude_urls.add(manifest[i].get("url", ""))
             print(f"    image {i}: cached ({cached})")
             continue
+
+        entry = {"beat": v.get("beat", ""), "stem": stem, "src": None,
+                 "source": None, "nasa_id": None, "title": None, "url": None}
+
+        # --- 1. NASA first: real imagery when the archive has a match ---
+        nasa_query = v.get("nasaQuery") or v.get("imagePrompt") or beats["title"]
+        out = os.path.join(media_dir, stem + ".nasa.jpg")
+        try:
+            hit = fetch_nasa_image(nasa_query, out, exclude_urls=exclude_urls,
+                                   fallback_title=beats["title"])
+        except Exception as e:  # noqa: BLE001 — NASA down -> AI fallback
+            print(f"    image {i}: NASA fetch error ({e}); falling back to AI")
+            hit = None
+        if hit and os.path.exists(out):
+            entry.update(source="nasa", nasa_id=hit.get("nasa_id"),
+                         title=hit.get("title"), url=hit.get("url"),
+                         details_url=hit.get("details_url"), query=hit.get("query"),
+                         src=os.path.basename(out))
+            manifest.append(entry)
+            srcs.append(f"projects/{os.path.basename(media_dir)}/{os.path.basename(out)}")
+            print(f"    image {i}: NASA ✓ {hit.get('title', '')[:60]} ({hit['bytes'] // 1024}KB)")
+            continue
+
+        # --- 2. AI fallback: NASA had no authentic match ---
         prompt = v.get("imagePrompt") or f"{beats['title']}, cinematic scene, dramatic lighting"
-        out = os.path.join(media_dir, stem + ".png")
-        print(f"    image {i}: {prompt[:70]}…")
+        ai_out = os.path.join(media_dir, stem + ".png")
+        print(f"    image {i}: NASA ✗ — AI fallback: {prompt[:60]}…")
         sh([sys.executable, "tools/gen_image.py", "--prompt", prompt,
-            "--aspect", "9:16", "--size", size, "--out", out])
-        # gen_image may have re-extensioned the file
+            "--aspect", "9:16", "--size", size, "--out", ai_out])
         actual = next((f for f in os.listdir(media_dir)
                        if f.startswith(stem + ".") and not f.endswith(".json")), None)
         if not actual:
             sys.exit(f"image {i} did not land in {media_dir}")
+        entry.update(source="ai", src=actual, title=f"AI visualization — {prompt[:80]}")
+        manifest.append(entry)
         srcs.append(f"projects/{os.path.basename(media_dir)}/{actual}")
+
+    # persist the manifest (pad to vo length on cached runs)
+    while len(manifest) < len(beats["vo"]):
+        manifest.append({"beat": "?", "source": "unknown"})
+    with open(manifest_path, "w", encoding="utf-8") as f:
+        json.dump(manifest[:len(beats["vo"])], f, indent=2, ensure_ascii=False)
+        f.write("\n")
+    nasa_count = sum(1 for m in manifest if m.get("source") == "nasa")
+    print(f"    assets: {nasa_count}/{len(manifest)} NASA real imagery, "
+          f"{len(manifest) - nasa_count} AI")
     return srcs
 
 
@@ -346,6 +404,13 @@ def main():
           f"images={len(srcs)}  accent={accent}")
     print("=" * 60)
     # machine-readable result for the operator worker (operator/worker.js)
+    manifest_path = os.path.join(media_dir, "images.json")
+    nasa_count = 0
+    try:
+        manifest = json.load(open(manifest_path, encoding="utf-8"))
+        nasa_count = sum(1 for m in manifest if m.get("source") == "nasa")
+    except (OSError, ValueError):
+        pass
     print("FINAL:" + json.dumps({
         "proj_id": proj_id,
         "title": beats["title"],
@@ -355,6 +420,8 @@ def main():
         "composition": comp_id,
         "voice": beats.get("voiceStatus"),
         "images": len(srcs),
+        "nasa_images": nasa_count,
+        "images_manifest": manifest_path,
         "accent": accent,
     }, ensure_ascii=False))
 

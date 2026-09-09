@@ -1,0 +1,90 @@
+[
+  {
+    "beat": "hook",
+    "stem": "b00-hook",
+    "src": "b00-hook.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA03606",
+    "title": "Most Detailed Image of the Crab Nebula",
+    "url": "https://images-assets.nasa.gov/image/PIA03606/PIA03606~large.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA03606.html",
+    "query": "crab nebula"
+  },
+  {
+    "beat": "hook",
+    "stem": "b01-hook",
+    "src": "b01-hook.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "GSFC_20171208_Archive_e002134",
+    "title": "Supernova Remnant W49B",
+    "url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e002134/GSFC_20171208_Archive_e002134~large.jpg",
+    "details_url": "https://images.nasa.gov/details-GSFC_20171208_Archive_e002134.html",
+    "query": "supernova remnant"
+  },
+  {
+    "beat": "setup",
+    "stem": "b02-setup",
+    "src": "b02-setup.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "GSFC_20171208_Archive_e000123",
+    "title": "Hubble Hones In on a Hypergiant's Home",
+    "url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000123/GSFC_20171208_Archive_e000123~orig.jpg",
+    "details_url": "https://images.nasa.gov/details-GSFC_20171208_Archive_e000123.html",
+    "query": "red supergiant"
+  },
+  {
+    "beat": "quiz",
+    "stem": "b03-quiz",
+    "src": "b03-quiz.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA17563",
+    "title": "Crab Nebula, as Seen by Herschel and Hubble",
+    "url": "https://images-assets.nasa.gov/image/PIA17563/PIA17563~large.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA17563.html",
+    "query": "crab nebula hubble"
+  },
+  {
+    "beat": "reveal",
+    "stem": "b04-reveal",
+    "src": "b04-reveal.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "GSFC_20171208_Archive_e000053",
+    "title": "Observatories Combine to Crack Open the Crab Nebula",
+    "url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000053/GSFC_20171208_Archive_e000053~large.jpg",
+    "details_url": "https://images.nasa.gov/details-GSFC_20171208_Archive_e000053.html",
+    "query": "crab nebula jwst"
+  },
+  {
+    "beat": "reveal",
+    "stem": "b05-reveal",
+    "src": "b05-reveal.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "9905980",
+    "title": "History of Chandra X-Ray Observatory",
+    "url": "https://images-assets.nasa.gov/image/9905980/9905980~large.jpg",
+    "details_url": "https://images.nasa.gov/details-9905980.html",
+    "query": "crab pulsar"
+  },
+  {
+    "beat": "twist",
+    "stem": "b06-twist",
+    "src": "b06-twist.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "9905485",
+    "title": "History of Chandra X-Ray Observatory",
+    "url": "https://images-assets.nasa.gov/image/9905485/9905485~large.jpg",
+    "details_url": "https://images.nasa.gov/details-9905485.html",
+    "query": "neutron star inner"
+  },
+  {
+    "beat": "loop",
+    "stem": "b07-loop",
+    "src": "b07-loop.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "GSFC_20171208_Archive_e000054",
+    "title": "Observatories Combine to Crack Open the Crab Nebula",
+    "url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000054/GSFC_20171208_Archive_e000054~orig.jpg",
+    "details_url": "https://images.nasa.gov/details-GSFC_20171208_Archive_e000054.html",
+    "query": "crab nebula"
+  }
+]

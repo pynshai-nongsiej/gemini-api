@@ -1,0 +1,563 @@
+{
+  "id": "auto-5-the-crab-nebula-explosion-seen-i",
+  "title": "The Star That Died in Broad Daylight",
+  "composition": "AutoThestarthatdiedinbr",
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSec": 37.26
+  },
+  "vo": [
+    {
+      "beat": "hook",
+      "text": "In 1054, a star exploded so bright it appeared during the day.",
+      "imagePrompt": "Cinematic shot of ancient Chinese astronomers looking at a blinding white super-bright star shining in a midday blue sky, ultra-detailed, photorealistic",
+      "nasaQuery": "crab nebula",
+      "sfxHint": "deep bass boom",
+      "start": 0.25,
+      "end": 4.98,
+      "words": [
+        {
+          "w": "In",
+          "start": 0.25,
+          "end": 0.499
+        },
+        {
+          "w": "1054,",
+          "start": 0.499,
+          "end": 0.919
+        },
+        {
+          "w": "a",
+          "start": 0.919,
+          "end": 1.1
+        },
+        {
+          "w": "star",
+          "start": 1.1,
+          "end": 1.483
+        },
+        {
+          "w": "exploded",
+          "start": 1.483,
+          "end": 2.134
+        },
+        {
+          "w": "so",
+          "start": 2.134,
+          "end": 2.383
+        },
+        {
+          "w": "bright",
+          "start": 2.383,
+          "end": 2.9
+        },
+        {
+          "w": "it",
+          "start": 2.9,
+          "end": 3.149
+        },
+        {
+          "w": "appeared",
+          "start": 3.149,
+          "end": 3.8
+        },
+        {
+          "w": "during",
+          "start": 3.8,
+          "end": 4.317
+        },
+        {
+          "w": "the",
+          "start": 4.317,
+          "end": 4.633
+        },
+        {
+          "w": "day.",
+          "start": 4.633,
+          "end": 4.986
+        }
+      ]
+    },
+    {
+      "beat": "hook",
+      "text": "For 23 days, human history recorded a second sun in the sky.",
+      "imagePrompt": "Wide-angle view of a medieval village bathed in double daylight from the sun and a blinding bright supernova, dramatic atmosphere",
+      "nasaQuery": "supernova remnant",
+      "sfxHint": "bright flash rumble",
+      "start": 5.22,
+      "end": 9.19,
+      "words": [
+        {
+          "w": "For",
+          "start": 5.22,
+          "end": 5.492
+        },
+        {
+          "w": "23",
+          "start": 5.492,
+          "end": 5.707
+        },
+        {
+          "w": "days,",
+          "start": 5.707,
+          "end": 6.069
+        },
+        {
+          "w": "human",
+          "start": 6.069,
+          "end": 6.457
+        },
+        {
+          "w": "history",
+          "start": 6.457,
+          "end": 6.961
+        },
+        {
+          "w": "recorded",
+          "start": 6.961,
+          "end": 7.522
+        },
+        {
+          "w": "a",
+          "start": 7.522,
+          "end": 7.679
+        },
+        {
+          "w": "second",
+          "start": 7.679,
+          "end": 8.125
+        },
+        {
+          "w": "sun",
+          "start": 8.125,
+          "end": 8.397
+        },
+        {
+          "w": "in",
+          "start": 8.397,
+          "end": 8.612
+        },
+        {
+          "w": "the",
+          "start": 8.612,
+          "end": 8.884
+        },
+        {
+          "w": "sky.",
+          "start": 8.884,
+          "end": 9.188
+        }
+      ]
+    },
+    {
+      "beat": "setup",
+      "text": "A massive star six thousand light-years away ran out of fuel and collapsed.",
+      "imagePrompt": "A dying massive red supergiant star collapsing under its own gravity in deep space, glowing hot core, cinematic cosmic lighting",
+      "nasaQuery": "red supergiant",
+      "sfxHint": "low drone tension",
+      "start": 10.18,
+      "end": 14.27,
+      "words": [
+        {
+          "w": "A",
+          "start": 10.18,
+          "end": 10.312
+        },
+        {
+          "w": "massive",
+          "start": 10.312,
+          "end": 10.738
+        },
+        {
+          "w": "star",
+          "start": 10.738,
+          "end": 11.017
+        },
+        {
+          "w": "six",
+          "start": 11.017,
+          "end": 11.248
+        },
+        {
+          "w": "thousand",
+          "start": 11.248,
+          "end": 11.722
+        },
+        {
+          "w": "light-years",
+          "start": 11.722,
+          "end": 12.295
+        },
+        {
+          "w": "away",
+          "start": 12.295,
+          "end": 12.574
+        },
+        {
+          "w": "ran",
+          "start": 12.574,
+          "end": 12.804
+        },
+        {
+          "w": "out",
+          "start": 12.804,
+          "end": 13.035
+        },
+        {
+          "w": "of",
+          "start": 13.035,
+          "end": 13.216
+        },
+        {
+          "w": "fuel",
+          "start": 13.216,
+          "end": 13.495
+        },
+        {
+          "w": "and",
+          "start": 13.495,
+          "end": 13.725
+        },
+        {
+          "w": "collapsed.",
+          "start": 13.725,
+          "end": 14.276
+        }
+      ]
+    },
+    {
+      "beat": "quiz",
+      "text": "Pause the video right now. Can you guess what survived that blast?",
+      "imagePrompt": "A mysterious glowing cosmic cloud glowing violently in space, cosmic dust, extreme details, dark mystery mood",
+      "nasaQuery": "crab nebula hubble",
+      "sfxHint": "clock tick",
+      "start": 15.53,
+      "end": 19.18,
+      "words": [
+        {
+          "w": "Pause",
+          "start": 15.53,
+          "end": 15.858
+        },
+        {
+          "w": "the",
+          "start": 15.858,
+          "end": 16.088
+        },
+        {
+          "w": "video",
+          "start": 16.088,
+          "end": 16.416
+        },
+        {
+          "w": "right",
+          "start": 16.416,
+          "end": 16.744
+        },
+        {
+          "w": "now.",
+          "start": 16.744,
+          "end": 17.001
+        },
+        {
+          "w": "Can",
+          "start": 17.001,
+          "end": 17.232
+        },
+        {
+          "w": "you",
+          "start": 17.232,
+          "end": 17.462
+        },
+        {
+          "w": "guess",
+          "start": 17.462,
+          "end": 17.79
+        },
+        {
+          "w": "what",
+          "start": 17.79,
+          "end": 18.069
+        },
+        {
+          "w": "survived",
+          "start": 18.069,
+          "end": 18.544
+        },
+        {
+          "w": "that",
+          "start": 18.544,
+          "end": 18.823
+        },
+        {
+          "w": "blast?",
+          "start": 18.823,
+          "end": 19.178
+        }
+      ]
+    },
+    {
+      "beat": "reveal",
+      "text": "It left behind the Crab Nebula, spinning a city-sized neutron star.",
+      "imagePrompt": "Gorgous vivid colorful expanding filaments of the Crab Nebula illuminated by a central pulsing neutron star, 8k resolution, cinematic space photo",
+      "nasaQuery": "crab nebula jwst",
+      "sfxHint": "high energy impact",
+      "start": 20.5,
+      "end": 24.32,
+      "words": [
+        {
+          "w": "It",
+          "start": 20.5,
+          "end": 20.692
+        },
+        {
+          "w": "left",
+          "start": 20.692,
+          "end": 20.987
+        },
+        {
+          "w": "behind",
+          "start": 20.987,
+          "end": 21.385
+        },
+        {
+          "w": "the",
+          "start": 21.385,
+          "end": 21.628
+        },
+        {
+          "w": "Crab",
+          "start": 21.628,
+          "end": 21.923
+        },
+        {
+          "w": "Nebula,",
+          "start": 21.923,
+          "end": 22.35
+        },
+        {
+          "w": "spinning",
+          "start": 22.35,
+          "end": 22.852
+        },
+        {
+          "w": "a",
+          "start": 22.852,
+          "end": 22.992
+        },
+        {
+          "w": "city-sized",
+          "start": 22.992,
+          "end": 23.545
+        },
+        {
+          "w": "neutron",
+          "start": 23.545,
+          "end": 23.995
+        },
+        {
+          "w": "star.",
+          "start": 23.995,
+          "end": 24.319
+        }
+      ]
+    },
+    {
+      "beat": "reveal",
+      "text": "This dense stellar corpse spins 30 times every single second.",
+      "imagePrompt": "Hyper-realistic extreme close-up of a tiny ultradense spinning neutron star spewing massive magnetic energy jets into space",
+      "nasaQuery": "crab pulsar",
+      "sfxHint": "rapid pulse hum",
+      "start": 25.08,
+      "end": 28.6,
+      "words": [
+        {
+          "w": "This",
+          "start": 25.08,
+          "end": 25.373
+        },
+        {
+          "w": "dense",
+          "start": 25.373,
+          "end": 25.717
+        },
+        {
+          "w": "stellar",
+          "start": 25.717,
+          "end": 26.163
+        },
+        {
+          "w": "corpse",
+          "start": 26.163,
+          "end": 26.559
+        },
+        {
+          "w": "spins",
+          "start": 26.559,
+          "end": 26.903
+        },
+        {
+          "w": "30",
+          "start": 26.903,
+          "end": 27.093
+        },
+        {
+          "w": "times",
+          "start": 27.093,
+          "end": 27.437
+        },
+        {
+          "w": "every",
+          "start": 27.437,
+          "end": 27.781
+        },
+        {
+          "w": "single",
+          "start": 27.781,
+          "end": 28.176
+        },
+        {
+          "w": "second.",
+          "start": 28.176,
+          "end": 28.6
+        }
+      ]
+    },
+    {
+      "beat": "twist",
+      "text": "One teaspoon of this dead star weighs as much as Mount Everest.",
+      "imagePrompt": "A glowing metallic spoon holding a tiny speck of neutron star material, with a ghostly outline of Mount Everest in the background, dramatic lighting",
+      "nasaQuery": "neutron star inner core",
+      "sfxHint": "heavy metallic thud",
+      "start": 29.27,
+      "end": 32.59,
+      "words": [
+        {
+          "w": "One",
+          "start": 29.27,
+          "end": 29.487
+        },
+        {
+          "w": "teaspoon",
+          "start": 29.487,
+          "end": 29.936
+        },
+        {
+          "w": "of",
+          "start": 29.936,
+          "end": 30.107
+        },
+        {
+          "w": "this",
+          "start": 30.107,
+          "end": 30.371
+        },
+        {
+          "w": "dead",
+          "start": 30.371,
+          "end": 30.635
+        },
+        {
+          "w": "star",
+          "start": 30.635,
+          "end": 30.898
+        },
+        {
+          "w": "weighs",
+          "start": 30.898,
+          "end": 31.254
+        },
+        {
+          "w": "as",
+          "start": 31.254,
+          "end": 31.426
+        },
+        {
+          "w": "much",
+          "start": 31.426,
+          "end": 31.689
+        },
+        {
+          "w": "as",
+          "start": 31.689,
+          "end": 31.861
+        },
+        {
+          "w": "Mount",
+          "start": 31.861,
+          "end": 32.17
+        },
+        {
+          "w": "Everest.",
+          "start": 32.17,
+          "end": 32.598
+        }
+      ]
+    },
+    {
+      "beat": "loop",
+      "text": "And it all started when...",
+      "imagePrompt": "Ancient sky filled with bright stars right before a cosmic explosion occurs, cinematic ultra-detailed space horizon",
+      "nasaQuery": "crab nebula",
+      "sfxHint": "soft reverse whoosh",
+      "start": 34.24,
+      "end": 35.73,
+      "words": [
+        {
+          "w": "And",
+          "start": 34.24,
+          "end": 34.49
+        },
+        {
+          "w": "it",
+          "start": 34.49,
+          "end": 34.687
+        },
+        {
+          "w": "all",
+          "start": 34.687,
+          "end": 34.938
+        },
+        {
+          "w": "started",
+          "start": 34.938,
+          "end": 35.401
+        },
+        {
+          "w": "when...",
+          "start": 35.401,
+          "end": 35.733
+        }
+      ]
+    }
+  ],
+  "beats": [
+    {
+      "id": "hook",
+      "visual": "A blinding white flash explodes across a bright blue midday sky over a medieval landscape."
+    },
+    {
+      "id": "setup",
+      "visual": "3D render zooming into a massive red supergiant star rapidly imploding."
+    },
+    {
+      "id": "quiz",
+      "visual": "Freeze-frame on a glowing cosmic gas cloud with a glowing question mark graphic overlay."
+    },
+    {
+      "id": "reveal",
+      "visual": "High-definition reveal of the colorful Crab Nebula expanding outwards from a pulsating core."
+    },
+    {
+      "id": "twist",
+      "visual": "Visual scale comparison showing a tiny glowing sphere crushing a scale model of Mount Everest."
+    },
+    {
+      "id": "loop",
+      "visual": "Camera zooms back into the center of the brilliant stellar flash seen in the hook beat."
+    }
+  ],
+  "voiceStatus": "kokoro:bf_emma"
+}

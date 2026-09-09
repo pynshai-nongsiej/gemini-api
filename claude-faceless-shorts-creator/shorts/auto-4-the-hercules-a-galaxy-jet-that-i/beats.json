@@ -1,0 +1,670 @@
+{
+  "id": "auto-4-the-hercules-a-galaxy-jet-that-i",
+  "title": "The Cosmic Jet That Swallows Galaxies",
+  "composition": "AutoThecosmicjetthatswal",
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSec": 40.82
+  },
+  "vo": [
+    {
+      "beat": "hook",
+      "text": "This plasma jet is fifteen times wider than our entire Milky Way galaxy.",
+      "imagePrompt": "Massive fiery cosmic plasma jet shooting through dark deep space, cinematic glow, hyperrealistic, ultra detailed, 8k",
+      "nasaQuery": "hercules a jet",
+      "sfxHint": "deep impact",
+      "start": 0.25,
+      "end": 5.1,
+      "words": [
+        {
+          "w": "This",
+          "start": 0.25,
+          "end": 0.588
+        },
+        {
+          "w": "plasma",
+          "start": 0.588,
+          "end": 1.046
+        },
+        {
+          "w": "jet",
+          "start": 1.046,
+          "end": 1.325
+        },
+        {
+          "w": "is",
+          "start": 1.325,
+          "end": 1.545
+        },
+        {
+          "w": "fifteen",
+          "start": 1.545,
+          "end": 2.062
+        },
+        {
+          "w": "times",
+          "start": 2.062,
+          "end": 2.459
+        },
+        {
+          "w": "wider",
+          "start": 2.459,
+          "end": 2.858
+        },
+        {
+          "w": "than",
+          "start": 2.858,
+          "end": 3.196
+        },
+        {
+          "w": "our",
+          "start": 3.196,
+          "end": 3.475
+        },
+        {
+          "w": "entire",
+          "start": 3.475,
+          "end": 3.933
+        },
+        {
+          "w": "Milky",
+          "start": 3.933,
+          "end": 4.33
+        },
+        {
+          "w": "Way",
+          "start": 4.33,
+          "end": 4.61
+        },
+        {
+          "w": "galaxy.",
+          "start": 4.61,
+          "end": 5.1
+        }
+      ]
+    },
+    {
+      "beat": "hook",
+      "text": "It blasts out one point five million light years into absolute nothingness.",
+      "imagePrompt": "Colossal energy beam cutting across distant galaxy cluster, deep blue cosmic background, sharp contrast",
+      "nasaQuery": "hercules a radio jet",
+      "sfxHint": "low rumble",
+      "start": 5.15,
+      "end": 9.64,
+      "words": [
+        {
+          "w": "It",
+          "start": 5.15,
+          "end": 5.348
+        },
+        {
+          "w": "blasts",
+          "start": 5.348,
+          "end": 5.759
+        },
+        {
+          "w": "out",
+          "start": 5.759,
+          "end": 6.011
+        },
+        {
+          "w": "one",
+          "start": 6.011,
+          "end": 6.263
+        },
+        {
+          "w": "point",
+          "start": 6.263,
+          "end": 6.622
+        },
+        {
+          "w": "five",
+          "start": 6.622,
+          "end": 6.926
+        },
+        {
+          "w": "million",
+          "start": 6.926,
+          "end": 7.391
+        },
+        {
+          "w": "light",
+          "start": 7.391,
+          "end": 7.75
+        },
+        {
+          "w": "years",
+          "start": 7.75,
+          "end": 8.108
+        },
+        {
+          "w": "into",
+          "start": 8.108,
+          "end": 8.413
+        },
+        {
+          "w": "absolute",
+          "start": 8.413,
+          "end": 8.931
+        },
+        {
+          "w": "nothingness.",
+          "start": 8.931,
+          "end": 9.64
+        }
+      ]
+    },
+    {
+      "beat": "setup",
+      "text": "At the center of galaxy Hercules A sits a supermassive black hole.",
+      "imagePrompt": "Giant supermassive black hole with glowing golden accretion disk, intense gravity warping space",
+      "nasaQuery": "supermassive black hole",
+      "sfxHint": "soft whoosh",
+      "start": 9.69,
+      "end": 14.18,
+      "words": [
+        {
+          "w": "At",
+          "start": 9.69,
+          "end": 9.912
+        },
+        {
+          "w": "the",
+          "start": 9.912,
+          "end": 10.194
+        },
+        {
+          "w": "center",
+          "start": 10.194,
+          "end": 10.657
+        },
+        {
+          "w": "of",
+          "start": 10.657,
+          "end": 10.879
+        },
+        {
+          "w": "galaxy",
+          "start": 10.879,
+          "end": 11.342
+        },
+        {
+          "w": "Hercules",
+          "start": 11.342,
+          "end": 11.923
+        },
+        {
+          "w": "A",
+          "start": 11.923,
+          "end": 12.086
+        },
+        {
+          "w": "sits",
+          "start": 12.086,
+          "end": 12.428
+        },
+        {
+          "w": "a",
+          "start": 12.428,
+          "end": 12.59
+        },
+        {
+          "w": "supermassive",
+          "start": 12.59,
+          "end": 13.412
+        },
+        {
+          "w": "black",
+          "start": 13.412,
+          "end": 13.815
+        },
+        {
+          "w": "hole.",
+          "start": 13.815,
+          "end": 14.19
+        }
+      ]
+    },
+    {
+      "beat": "setup",
+      "text": "It weighs four billion times more than our own sun.",
+      "imagePrompt": "Massive black core swallowing interstellar gas, fiery orange light effects, astronomical scale",
+      "nasaQuery": "hercules a Hubble",
+      "sfxHint": "riser",
+      "start": 14.24,
+      "end": 17.54,
+      "words": [
+        {
+          "w": "It",
+          "start": 14.24,
+          "end": 14.449
+        },
+        {
+          "w": "weighs",
+          "start": 14.449,
+          "end": 14.884
+        },
+        {
+          "w": "four",
+          "start": 14.884,
+          "end": 15.206
+        },
+        {
+          "w": "billion",
+          "start": 15.206,
+          "end": 15.697
+        },
+        {
+          "w": "times",
+          "start": 15.697,
+          "end": 16.075
+        },
+        {
+          "w": "more",
+          "start": 16.075,
+          "end": 16.397
+        },
+        {
+          "w": "than",
+          "start": 16.397,
+          "end": 16.719
+        },
+        {
+          "w": "our",
+          "start": 16.719,
+          "end": 16.985
+        },
+        {
+          "w": "own",
+          "start": 16.985,
+          "end": 17.25
+        },
+        {
+          "w": "sun.",
+          "start": 17.25,
+          "end": 17.547
+        }
+      ]
+    },
+    {
+      "beat": "quiz",
+      "text": "Pause now and guess how much energy this monster generates every second.",
+      "imagePrompt": "Glowing energy gauge appearing over a spinning black hole core, dramatic cosmic lighting",
+      "nasaQuery": "black hole jet",
+      "sfxHint": "clock tick",
+      "start": 18.08,
+      "end": 22.57,
+      "words": [
+        {
+          "w": "Pause",
+          "start": 18.08,
+          "end": 18.451
+        },
+        {
+          "w": "now",
+          "start": 18.451,
+          "end": 18.712
+        },
+        {
+          "w": "and",
+          "start": 18.712,
+          "end": 18.973
+        },
+        {
+          "w": "guess",
+          "start": 18.973,
+          "end": 19.345
+        },
+        {
+          "w": "how",
+          "start": 19.345,
+          "end": 19.605
+        },
+        {
+          "w": "much",
+          "start": 19.605,
+          "end": 19.922
+        },
+        {
+          "w": "energy",
+          "start": 19.922,
+          "end": 20.349
+        },
+        {
+          "w": "this",
+          "start": 20.349,
+          "end": 20.666
+        },
+        {
+          "w": "monster",
+          "start": 20.666,
+          "end": 21.147
+        },
+        {
+          "w": "generates",
+          "start": 21.147,
+          "end": 21.741
+        },
+        {
+          "w": "every",
+          "start": 21.741,
+          "end": 22.113
+        },
+        {
+          "w": "second.",
+          "start": 22.113,
+          "end": 22.57
+        }
+      ]
+    },
+    {
+      "beat": "reveal",
+      "text": "It pumps out more power than a trillion stars combined.",
+      "imagePrompt": "Blinding white explosion of energy firing from black hole poles into deep space",
+      "nasaQuery": "radio galaxy jets",
+      "sfxHint": "bass drop",
+      "start": 22.62,
+      "end": 26.26,
+      "words": [
+        {
+          "w": "It",
+          "start": 22.62,
+          "end": 22.836
+        },
+        {
+          "w": "pumps",
+          "start": 22.836,
+          "end": 23.227
+        },
+        {
+          "w": "out",
+          "start": 23.227,
+          "end": 23.501
+        },
+        {
+          "w": "more",
+          "start": 23.501,
+          "end": 23.833
+        },
+        {
+          "w": "power",
+          "start": 23.833,
+          "end": 24.224
+        },
+        {
+          "w": "than",
+          "start": 24.224,
+          "end": 24.557
+        },
+        {
+          "w": "a",
+          "start": 24.557,
+          "end": 24.714
+        },
+        {
+          "w": "trillion",
+          "start": 24.714,
+          "end": 25.28
+        },
+        {
+          "w": "stars",
+          "start": 25.28,
+          "end": 25.671
+        },
+        {
+          "w": "combined.",
+          "start": 25.671,
+          "end": 26.268
+        }
+      ]
+    },
+    {
+      "beat": "reveal",
+      "text": "Magnetic fields accelerate plasma to nearly the speed of light.",
+      "imagePrompt": "Swirling magnetic field lines glowing neon cyan around a jet beam, cosmic particle stream",
+      "nasaQuery": "chandra black hole jet",
+      "sfxHint": "electric buzz",
+      "start": 26.47,
+      "end": 30.26,
+      "words": [
+        {
+          "w": "Magnetic",
+          "start": 26.47,
+          "end": 26.991
+        },
+        {
+          "w": "fields",
+          "start": 26.991,
+          "end": 27.404
+        },
+        {
+          "w": "accelerate",
+          "start": 27.404,
+          "end": 28.033
+        },
+        {
+          "w": "plasma",
+          "start": 28.033,
+          "end": 28.446
+        },
+        {
+          "w": "to",
+          "start": 28.446,
+          "end": 28.645
+        },
+        {
+          "w": "nearly",
+          "start": 28.645,
+          "end": 29.059
+        },
+        {
+          "w": "the",
+          "start": 29.059,
+          "end": 29.312
+        },
+        {
+          "w": "speed",
+          "start": 29.312,
+          "end": 29.671
+        },
+        {
+          "w": "of",
+          "start": 29.671,
+          "end": 29.87
+        },
+        {
+          "w": "light.",
+          "start": 29.87,
+          "end": 30.26
+        }
+      ]
+    },
+    {
+      "beat": "twist",
+      "text": "This jet is actively choking its own galaxy from forming new stars.",
+      "imagePrompt": "Red star-forming gas cloud being blown away by massive plasma shockwave",
+      "nasaQuery": "active galactic nucleus",
+      "sfxHint": "wind sweep",
+      "start": 30.31,
+      "end": 34.8,
+      "words": [
+        {
+          "w": "This",
+          "start": 30.31,
+          "end": 30.647
+        },
+        {
+          "w": "jet",
+          "start": 30.647,
+          "end": 30.925
+        },
+        {
+          "w": "is",
+          "start": 30.925,
+          "end": 31.144
+        },
+        {
+          "w": "actively",
+          "start": 31.144,
+          "end": 31.718
+        },
+        {
+          "w": "choking",
+          "start": 31.718,
+          "end": 32.231
+        },
+        {
+          "w": "its",
+          "start": 32.231,
+          "end": 32.51
+        },
+        {
+          "w": "own",
+          "start": 32.51,
+          "end": 32.788
+        },
+        {
+          "w": "galaxy",
+          "start": 32.788,
+          "end": 33.242
+        },
+        {
+          "w": "from",
+          "start": 33.242,
+          "end": 33.58
+        },
+        {
+          "w": "forming",
+          "start": 33.58,
+          "end": 34.094
+        },
+        {
+          "w": "new",
+          "start": 34.094,
+          "end": 34.372
+        },
+        {
+          "w": "stars.",
+          "start": 34.372,
+          "end": 34.8
+        }
+      ]
+    },
+    {
+      "beat": "twist",
+      "text": "It pushes star material out into intergalactic space forever.",
+      "imagePrompt": "Sterile dark galaxy surrounded by massive expanding shockwave lobes in deep vacuum",
+      "nasaQuery": "hercules a composite",
+      "sfxHint": "echo fade",
+      "start": 34.85,
+      "end": 38.28,
+      "words": [
+        {
+          "w": "It",
+          "start": 34.85,
+          "end": 35.038
+        },
+        {
+          "w": "pushes",
+          "start": 35.038,
+          "end": 35.428
+        },
+        {
+          "w": "star",
+          "start": 35.428,
+          "end": 35.717
+        },
+        {
+          "w": "material",
+          "start": 35.717,
+          "end": 36.209
+        },
+        {
+          "w": "out",
+          "start": 36.209,
+          "end": 36.447
+        },
+        {
+          "w": "into",
+          "start": 36.447,
+          "end": 36.736
+        },
+        {
+          "w": "intergalactic",
+          "start": 36.736,
+          "end": 37.481
+        },
+        {
+          "w": "space",
+          "start": 37.481,
+          "end": 37.821
+        },
+        {
+          "w": "forever.",
+          "start": 37.821,
+          "end": 38.29
+        }
+      ]
+    },
+    {
+      "beat": "loop",
+      "text": "And that is why...",
+      "imagePrompt": "Extreme macro view of the origin point of the massive jet beam",
+      "nasaQuery": "hercules a jet",
+      "sfxHint": "whoosh transition",
+      "start": 38.34,
+      "end": 39.76,
+      "words": [
+        {
+          "w": "And",
+          "start": 38.34,
+          "end": 38.687
+        },
+        {
+          "w": "that",
+          "start": 38.687,
+          "end": 39.108
+        },
+        {
+          "w": "is",
+          "start": 39.108,
+          "end": 39.382
+        },
+        {
+          "w": "why...",
+          "start": 39.382,
+          "end": 39.769
+        }
+      ]
+    }
+  ],
+  "beats": [
+    {
+      "id": "hook",
+      "visual": "A massive plasma beam cutting across deep space, scale ruler comparing it to the Milky Way."
+    },
+    {
+      "id": "setup",
+      "visual": "Zoom into the center of Hercules A revealing a four-billion-solar-mass black hole."
+    },
+    {
+      "id": "quiz",
+      "visual": "Freeze frame on the jet core with a flashing pause icon and energy prompt."
+    },
+    {
+      "id": "reveal",
+      "visual": "High-speed camera tracking along the 1.5 million light-year plasma beam blasting outwards."
+    },
+    {
+      "id": "twist",
+      "visual": "Thermal view showing cold gas clouds being blown out of the galaxy, stopping star formation."
+    },
+    {
+      "id": "loop",
+      "visual": "Rapid camera zoom straight back into the plasma jet beam, matching the opening frame."
+    }
+  ],
+  "voiceStatus": "kokoro:bm_george"
+}

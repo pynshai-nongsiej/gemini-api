@@ -106,6 +106,10 @@ words for ~{duration}s at a natural narration pace.
 For every voice line also give:
 - imagePrompt: a visual scene description for an image generator (one clear
   subject, mood, lighting, composition — 15-30 words, no text-in-image requests)
+- nasaQuery: 2-3 words naming the real astronomical object / mission / telescope
+  target for the NASA image archive (e.g. "neutron star", "black hole", "perseus
+  cluster", "jwst deep field"). Use the most specific real object name possible;
+  this is searched FIRST — AI images are only a fallback when NASA has nothing.
 - sfxHint: one short sound-design cue suggestion (e.g. "soft whoosh",
   "deep impact", "riser", "tick", "sparkle")
 
@@ -113,8 +117,8 @@ Return ONLY valid JSON, exactly this shape:
 {{
   "title": "punchy title under 60 chars",
   "vo": [
-    {{"beat": "hook", "text": "...", "imagePrompt": "...", "sfxHint": "..."}},
-    {{"beat": "setup", "text": "...", "imagePrompt": "...", "sfxHint": "..."}}
+    {{"beat": "hook", "text": "...", "imagePrompt": "...", "nasaQuery": "...", "sfxHint": "..."}},
+    {{"beat": "setup", "text": "...", "imagePrompt": "...", "nasaQuery": "...", "sfxHint": "..."}}
   ],
   "beats": [
     {{"id": "hook", "visual": "one line describing the on-screen visual for this beat"}}

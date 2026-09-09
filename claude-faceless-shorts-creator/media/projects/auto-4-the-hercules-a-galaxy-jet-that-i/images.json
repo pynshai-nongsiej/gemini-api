@@ -1,0 +1,112 @@
+[
+  {
+    "beat": "hook",
+    "stem": "b00-hook",
+    "src": "b00-hook.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "GSFC_20171208_Archive_e001618",
+    "title": "A Multi-Wavelength View of Radio Galaxy Hercules A",
+    "url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001618/GSFC_20171208_Archive_e001618~large.jpg",
+    "details_url": "https://images.nasa.gov/details-GSFC_20171208_Archive_e001618.html",
+    "query": "hercules jet"
+  },
+  {
+    "beat": "hook",
+    "stem": "b01-hook",
+    "src": "b01-hook.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "GSFC_20171208_Archive_e001618",
+    "title": "A Multi-Wavelength View of Radio Galaxy Hercules A",
+    "url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001618/GSFC_20171208_Archive_e001618~large.jpg",
+    "details_url": "https://images.nasa.gov/details-GSFC_20171208_Archive_e001618.html",
+    "query": "hercules radio jet"
+  },
+  {
+    "beat": "setup",
+    "stem": "b02-setup",
+    "src": "b02-setup.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "GSFC_20171208_Archive_e000719",
+    "title": "Large Hubble Survey Confirms Link between Mergers and Supermassive Black Holes with Relativistic Jets",
+    "url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000719/GSFC_20171208_Archive_e000719~orig.jpg",
+    "details_url": "https://images.nasa.gov/details-GSFC_20171208_Archive_e000719.html",
+    "query": "supermassive black hole"
+  },
+  {
+    "beat": "setup",
+    "stem": "b03-setup",
+    "src": "b03-setup.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA10387",
+    "title": "Collision Between Two Spiral Galaxies",
+    "url": "https://images-assets.nasa.gov/image/PIA10387/PIA10387~orig.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA10387.html",
+    "query": "hercules hubble"
+  },
+  {
+    "beat": "quiz",
+    "stem": "b04-quiz",
+    "src": "b04-quiz.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA22085",
+    "title": "Black Hole With Jet (Artist's Concept)",
+    "url": "https://images-assets.nasa.gov/image/PIA22085/PIA22085~large.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA22085.html",
+    "query": "black hole jet"
+  },
+  {
+    "beat": "reveal",
+    "stem": "b05-reveal",
+    "src": "b05-reveal.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "hubble-finds-misbehaving-spiral_24662986146_o",
+    "title": "A misbehaving spiral",
+    "url": "https://images-assets.nasa.gov/image/hubble-finds-misbehaving-spiral_24662986146_o/hubble-finds-misbehaving-spiral_24662986146_o~medium.jpg",
+    "details_url": "https://images.nasa.gov/details-hubble-finds-misbehaving-spiral_24662986146_o.html",
+    "query": "radio galaxy jets"
+  },
+  {
+    "beat": "reveal",
+    "stem": "b06-reveal",
+    "src": "b06-reveal.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "0300607",
+    "title": "History of Chandra X-Ray Observatory",
+    "url": "https://images-assets.nasa.gov/image/0300607/0300607~large.jpg",
+    "details_url": "https://images.nasa.gov/details-0300607.html",
+    "query": "chandra black hole"
+  },
+  {
+    "beat": "twist",
+    "stem": "b07-twist",
+    "src": "b07-twist.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA21087",
+    "title": "Galaxy IC 3639 with Obscured Active Galactic Nucleus",
+    "url": "https://images-assets.nasa.gov/image/PIA21087/PIA21087~medium.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA21087.html",
+    "query": "active galactic nucleus"
+  },
+  {
+    "beat": "twist",
+    "stem": "b08-twist",
+    "src": "b08-twist.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "GSFC_20171208_Archive_e001618",
+    "title": "A Multi-Wavelength View of Radio Galaxy Hercules A",
+    "url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001618/GSFC_20171208_Archive_e001618~large.jpg",
+    "details_url": "https://images.nasa.gov/details-GSFC_20171208_Archive_e001618.html",
+    "query": "hercules"
+  },
+  {
+    "beat": "loop",
+    "stem": "b09-loop",
+    "src": "b09-loop.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "GSFC_20171208_Archive_e001618",
+    "title": "A Multi-Wavelength View of Radio Galaxy Hercules A",
+    "url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001618/GSFC_20171208_Archive_e001618~large.jpg",
+    "details_url": "https://images.nasa.gov/details-GSFC_20171208_Archive_e001618.html",
+    "query": "hercules jet"
+  }
+]
