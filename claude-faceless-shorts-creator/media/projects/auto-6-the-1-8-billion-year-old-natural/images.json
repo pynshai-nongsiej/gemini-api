@@ -1,0 +1,95 @@
+[
+  {
+    "beat": "hook",
+    "stem": "b00-hook",
+    "src": "b00-hook.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA10149",
+    "title": "Europa Tide Movie",
+    "url": "https://images-assets.nasa.gov/image/PIA10149/PIA10149~orig.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA10149.html",
+    "query": "earth mantle core"
+  },
+  {
+    "beat": "setup",
+    "stem": "b01-setup",
+    "src": "b01-setup.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA24321",
+    "title": "Europa Clipper Spacecraft (Illustration)",
+    "url": "https://images-assets.nasa.gov/image/PIA24321/PIA24321~large.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA24321.html",
+    "query": "earth geology water"
+  },
+  {
+    "beat": "setup",
+    "stem": "b02-setup",
+    "src": "b02-setup.jpg",
+    "source": "ai",
+    "nasa_id": null,
+    "title": "AI visualization — Subatomic particle simulation, blue Cherenkov radiation light wave pulsating thr",
+    "url": null
+  },
+  {
+    "beat": "quiz",
+    "stem": "b03-quiz",
+    "src": "b03-quiz.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA25878",
+    "title": "Alba Mons Flank",
+    "url": "https://images-assets.nasa.gov/image/PIA25878/PIA25878~large.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA25878.html",
+    "query": "volcanic magma chamber"
+  },
+  {
+    "beat": "reveal",
+    "stem": "b04-reveal",
+    "src": "b04-reveal.jpg",
+    "source": "ai",
+    "nasa_id": null,
+    "title": "AI visualization — Thermal steam vents opening in ancient rock, blue energy calming down to steady ",
+    "url": null
+  },
+  {
+    "beat": "reveal",
+    "stem": "b05-reveal",
+    "src": "b05-reveal.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "SSC-20231017-s03036",
+    "title": "NASA Achieves Milestone for Engines to Power Future Artemis Missions",
+    "url": "https://images-assets.nasa.gov/image/SSC-20231017-s03036/SSC-20231017-s03036~orig.jpg",
+    "details_url": "https://images.nasa.gov/details-SSC-20231017-s03036.html",
+    "query": "steam atmospheric vapor"
+  },
+  {
+    "beat": "twist",
+    "stem": "b06-twist",
+    "src": "b06-twist.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA21455",
+    "title": "Better Preserved on Mars than on Earth",
+    "url": "https://images-assets.nasa.gov/image/PIA21455/PIA21455~medium.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA21455.html",
+    "query": "earth geological time"
+  },
+  {
+    "beat": "twist",
+    "stem": "b07-twist",
+    "src": "b07-twist.jpg",
+    "source": "ai",
+    "nasa_id": null,
+    "title": "AI visualization — Futuristic glass capsule containing glowing ancient rock in clean laboratory set",
+    "url": null
+  },
+  {
+    "beat": "loop",
+    "stem": "b08-loop",
+    "src": "b08-loop.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA26636",
+    "title": "Impactor Debris Scattered Within Mars' Mantle (Artist's Concept)",
+    "url": "https://images-assets.nasa.gov/image/PIA26636/PIA26636~large.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA26636.html",
+    "query": "earth mantle core"
+  }
+]

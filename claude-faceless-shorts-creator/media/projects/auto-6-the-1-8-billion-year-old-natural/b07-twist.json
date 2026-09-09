@@ -1,0 +1,11 @@
+{
+  "prompt": "Futuristic glass capsule containing glowing ancient rock in clean laboratory setting, contrast of dark room and cyan light",
+  "engine": "pollinations",
+  "model": "flux",
+  "aspect_ratio": "9:16",
+  "image_size": "1K",
+  "width": 1080,
+  "height": 1920,
+  "seed": null,
+  "created": "2026-09-10T02:01:45"
+}

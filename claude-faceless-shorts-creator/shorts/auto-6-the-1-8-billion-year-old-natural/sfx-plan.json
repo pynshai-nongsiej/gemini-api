@@ -1,0 +1,119 @@
+{
+  "master": "remotion/out/AutoEarthbuiltanuclearre-voiced.mp4",
+  "master_fps": 30,
+  "catalog": "media/library/sfx/catalog.json",
+  "render": {
+    "preview": "remotion/out/AutoEarthbuiltanuclearre-voiced.mp4",
+    "out": "shorts/auto-6-the-1-8-billion-year-old-natural/output/auto-6-the-1-8-billion-year-old-natural-sfx.mp4",
+    "end_s": 36.07,
+    "duck": true
+  },
+  "events": [
+    {
+      "at_s": 0.3,
+      "sfx_id": "impact-deep-soft",
+      "gain_db": -8,
+      "shot": "MainScene",
+      "cue": "sfxHint 'deep bass drop'"
+    },
+    {
+      "at_s": 4.83,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -11,
+      "shot": "MainScene",
+      "cue": "beat change: setup",
+      "optional": true
+    },
+    {
+      "at_s": 9.41,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -11,
+      "shot": "MainScene",
+      "cue": "beat change: setup",
+      "optional": true
+    },
+    {
+      "at_s": 13.61,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -11,
+      "shot": "MainScene",
+      "cue": "beat change: quiz",
+      "optional": true
+    },
+    {
+      "at_s": 13.66,
+      "sfx_id": "clock-tick-soft",
+      "gain_db": -8,
+      "shot": "MainScene",
+      "cue": "sfxHint 'clock ticking'"
+    },
+    {
+      "at_s": 17.8,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -11,
+      "shot": "MainScene",
+      "cue": "beat change: reveal",
+      "optional": true
+    },
+    {
+      "at_s": 17.8,
+      "sfx_id": "impact-deep-soft",
+      "gain_db": -7,
+      "shot": "MainScene",
+      "cue": "the reveal lands"
+    },
+    {
+      "at_s": 21.62,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -11,
+      "shot": "MainScene",
+      "cue": "beat change: reveal",
+      "optional": true
+    },
+    {
+      "at_s": 21.67,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -8,
+      "shot": "MainScene",
+      "cue": "sfxHint 'soft whoosh'"
+    },
+    {
+      "at_s": 21.62,
+      "sfx_id": "impact-deep-soft",
+      "gain_db": -7,
+      "shot": "MainScene",
+      "cue": "the reveal lands"
+    },
+    {
+      "at_s": 25.43,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -11,
+      "shot": "MainScene",
+      "cue": "beat change: twist",
+      "optional": true
+    },
+    {
+      "at_s": 29.24,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -11,
+      "shot": "MainScene",
+      "cue": "beat change: twist",
+      "optional": true
+    },
+    {
+      "at_s": 29.29,
+      "sfx_id": "chime-reward",
+      "gain_db": -8,
+      "shot": "MainScene",
+      "cue": "sfxHint 'metallic chime'"
+    },
+    {
+      "at_s": 33.43,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -11,
+      "shot": "MainScene",
+      "cue": "beat change: loop",
+      "optional": true
+    }
+  ]
+}
