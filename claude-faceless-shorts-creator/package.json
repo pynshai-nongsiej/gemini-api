@@ -6,7 +6,10 @@
   "main": "operator/server.js",
   "scripts": {
     "start": "node operator/server.js",
-    "operator": "node operator/server.js"
+    "operator": "node operator/server.js",
+    "test": "node operator/test-api.js && node operator/test-ui.js",
+    "test:api": "node operator/test-api.js",
+    "test:ui": "node operator/test-ui.js"
   },
   "dependencies": {
     "express": "^4.21.2",

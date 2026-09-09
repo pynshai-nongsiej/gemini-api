@@ -1,0 +1,26 @@
+
+==============================================
+  Local Shorts Operator
+  http://localhost:3457
+  readiness: unknown
+  ⚠ API_KEY not set — mutating routes are UNPROTECTED
+    set it: PUT /api/settings {"api_key": "..."} (then send x-api-key header)
+==============================================
+
+[worker] start job_1788985636298_dgryqt: python3 tools/make_short.py --topic audit lifecycle test — never renders --style space documentary --voice bm_george
+[worker] start job_1788985636298_dgryqt: python3 tools/make_short.py --topic audit lifecycle test — never renders --style space documentary --voice bm_george
+[worker] start job_1788985639374_ofnoaf: python3 tools/make_short.py --topic key-authenticated enqueue test --style space documentary --voice bm_george
+[worker] start job_1788985642420_b7b3vi: python3 tools/make_short.py --topic final unauthenticated validation --style space documentary --voice bm_george
+[worker] start job_1788985678447_r7opgo: python3 tools/make_short.py --topic audit lifecycle test — never renders --style space documentary --voice bm_george
+[worker] start job_1788985678447_r7opgo: python3 tools/make_short.py --topic audit lifecycle test — never renders --style space documentary --voice bm_george
+[worker] start job_1788985681524_mg23di: python3 tools/make_short.py --topic key-authenticated enqueue test --style space documentary --voice bm_george
+[worker] start job_1788985684563_ocvzyo: python3 tools/make_short.py --topic final unauthenticated validation --style space documentary --voice bm_george
+[worker] start job_1788985694657_js5kiw: python3 tools/make_short.py --topic audit lifecycle test — never renders --style space documentary --voice bm_george
+[worker] start job_1788985694657_js5kiw: python3 tools/make_short.py --topic audit lifecycle test — never renders --style space documentary --voice bm_george
+[worker] start job_1788985697733_kfvk6u: python3 tools/make_short.py --topic key-authenticated enqueue test --style space documentary --voice bm_george
+[worker] start job_1788985700769_i5egf1: python3 tools/make_short.py --topic final unauthenticated validation --style space documentary --voice bm_george
+[worker] start job_1788985729560_p1ywk7: python3 tools/make_short.py --topic audit lifecycle test — never renders --style space documentary --voice bm_george
+[worker] start job_1788985729560_p1ywk7: python3 tools/make_short.py --topic audit lifecycle test — never renders --style space documentary --voice bm_george
+[worker] start job_1788985732632_gvxgaa: python3 tools/make_short.py --topic key-authenticated enqueue test --style space documentary --voice bm_george
+[worker] start job_1788985735681_oix6gx: python3 tools/make_short.py --topic final unauthenticated validation --style space documentary --voice bm_george
+[worker] start job_1788985791262_8himte: python3 tools/make_short.py --topic The 1.8-billion-year-old natural nuclear reactor in Oklo, Gabon, that self-regulated and ran for hundreds of thousands of years without human intervention. --style space documentary --voice bm_george

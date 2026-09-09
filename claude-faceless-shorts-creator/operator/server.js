@@ -71,7 +71,12 @@ function requireAPIKey(req, res, next) {
 const protect = requireAPIKey;
 
 // ---------- static: dashboard + media ----------
-app.use(express.static(path.join(__dirname, 'public')));
+// no-cache: the dashboard must never run a stale app.js against a new server
+app.use(express.static(path.join(__dirname, 'public'), {
+  etag: true,
+  maxAge: 0,
+  setHeaders: (res) => res.setHeader('Cache-Control', 'no-cache'),
+}));
 // final videos: /media/shorts/<projId>/<file>
 app.use('/media/shorts', express.static(path.join(config.ROOT, 'shorts'), {
   setHeaders: (res, p) => { if (p.endsWith('.mp4')) res.setHeader('Content-Type', 'video/mp4'); },

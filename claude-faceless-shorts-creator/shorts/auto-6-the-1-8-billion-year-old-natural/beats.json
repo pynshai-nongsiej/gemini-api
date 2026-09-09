@@ -1,0 +1,121 @@
+{
+  "id": "auto-6-the-1-8-billion-year-old-natural",
+  "title": "Earth Built a Nuclear Reactor 2 Billion Years Ago",
+  "composition": "AutoEarthbuiltanuclearre",
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSec": 36.07
+  },
+  "vo": [
+    {
+      "beat": "hook",
+      "text": "Two billion years ago, Earth built its own working nuclear reactor.",
+      "imagePrompt": "Ancient glowing subterranean uranium deposit deep underground, cyan radiation energy pulsing through wet stone, hyperrealistic cinematic lighting, vertical 9:16",
+      "nasaQuery": "earth mantle core",
+      "sfxHint": "deep bass drop",
+      "start": 0.25,
+      "end": 4.48
+    },
+    {
+      "beat": "setup",
+      "text": "In Oklo, Gabon, underground water met highly enriched natural uranium ores.",
+      "imagePrompt": "Cross section of ancient African cave bedrock with groundwater seeping into glowing uranium veins, dramatic shadows, vertical composition",
+      "nasaQuery": "earth geology water",
+      "sfxHint": "water drip sound",
+      "start": 4.83,
+      "end": 9.06
+    },
+    {
+      "beat": "setup",
+      "text": "Water slowed down neutrons, triggering a sustained nuclear chain reaction.",
+      "imagePrompt": "Subatomic particle simulation, blue Cherenkov radiation light wave pulsating through liquid water molecules, dark space background",
+      "nasaQuery": "uranium element cluster",
+      "sfxHint": "rising electronic hum",
+      "start": 9.41,
+      "end": 13.26
+    },
+    {
+      "beat": "quiz",
+      "text": "Pause—how did this natural power plant avoid blowing itself apart?",
+      "imagePrompt": "Deep underground rocky chamber overheating, steam bubbling up through fractured stone, red danger glow, dramatic wide angle vertical",
+      "nasaQuery": "volcanic magma chamber",
+      "sfxHint": "clock ticking",
+      "start": 13.61,
+      "end": 17.45
+    },
+    {
+      "beat": "reveal",
+      "text": "It built a self-regulating safety system without human control.",
+      "imagePrompt": "Thermal steam vents opening in ancient rock, blue energy calming down to steady pulse, golden hour glow underground, ultra detailed",
+      "nasaQuery": "geysers thermal activity",
+      "sfxHint": "steam release valve",
+      "start": 17.8,
+      "end": 21.27
+    },
+    {
+      "beat": "reveal",
+      "text": "Heat boiled away water, stopping fission until it cooled.",
+      "imagePrompt": "Water vapor evaporating from glowing blue mineral crystal, cycles of light dimming and rising, macro photography style",
+      "nasaQuery": "steam atmospheric vapor",
+      "sfxHint": "soft whoosh",
+      "start": 21.62,
+      "end": 25.08
+    },
+    {
+      "beat": "twist",
+      "text": "This alien engine ran for one hundred thousand years.",
+      "imagePrompt": "Time-lapse effect of underground cavern over millennia, steady blue power grid pattern inside bedrock, cinematic cosmic atmosphere",
+      "nasaQuery": "earth geological time",
+      "sfxHint": "low rumble",
+      "start": 25.43,
+      "end": 28.89
+    },
+    {
+      "beat": "twist",
+      "text": "Modern scientists still cannot match its perfect nuclear waste containment.",
+      "imagePrompt": "Futuristic glass capsule containing glowing ancient rock in clean laboratory setting, contrast of dark room and cyan light",
+      "nasaQuery": "nuclear waste container",
+      "sfxHint": "metallic chime",
+      "start": 29.24,
+      "end": 33.08
+    },
+    {
+      "beat": "loop",
+      "text": "Long before humans existed,",
+      "imagePrompt": "Glowing cyan subterranean uranium deposit deep underground, atmospheric fog, dramatic cinematic vertical shot",
+      "nasaQuery": "earth mantle core",
+      "sfxHint": "subtle reverse transition",
+      "start": 33.43,
+      "end": 34.97
+    }
+  ],
+  "beats": [
+    {
+      "id": "hook",
+      "visual": "A dramatic pull-out from glowing subterranean uranium veins emitting a pulsing cyan light deep underground."
+    },
+    {
+      "id": "setup",
+      "visual": "Cross-section animation showing groundwater seeping into rich underground mineral deposits."
+    },
+    {
+      "id": "quiz",
+      "visual": "Screen freezes with a subtle red pulsing aura over the subterranean rock face as temperature indicators spike."
+    },
+    {
+      "id": "reveal",
+      "visual": "Steam bursts from rock fractures, immediately dampening the cyan glow into a stable pulse."
+    },
+    {
+      "id": "twist",
+      "visual": "Cinematic time-lapse camera sweeps through the underground chamber as millennium counters roll by fast."
+    },
+    {
+      "id": "loop",
+      "visual": "A dramatic pull-out from glowing subterranean uranium veins emitting a pulsing cyan light deep underground."
+    }
+  ],
+  "voiceStatus": "pending:kokoro"
+}

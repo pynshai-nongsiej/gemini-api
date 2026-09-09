@@ -4,7 +4,7 @@
 # ==============================================================================
 # Manages and orchestrates all project services:
 #   1. Gemini Web2API Daemon          -> http://localhost:8081
-#   2. YouTube Automation Studio      -> http://localhost:3456
+#   2. Shorts Studio Operator (YouTube video generator) -> http://localhost:3457
 #   3. Mission LDA Exam Platform      -> http://localhost:8080
 # ==============================================================================
 
@@ -16,14 +16,13 @@ cd "$SCRIPT_DIR"
 # Configuration defaults
 GEMINI_PORT="${GEMINI_PORT:-8081}"
 LDA_PORT="${PORT:-8080}"
-YOUTUBE_PORT="${YOUTUBE_PORT:-3456}"
 OPERATOR_PORT="${OPERATOR_PORT:-3457}"
 HOST="${HOST:-0.0.0.0}"
 MODEL="${MODEL:-gemini-3.6-flash}"
 
 LOGS_DIR="$SCRIPT_DIR/logs"
 mkdir -p "$LOGS_DIR"
-touch "$LOGS_DIR/gemini.log" "$LOGS_DIR/lda.log" "$LOGS_DIR/youtube.log" "$LOGS_DIR/operator.log"
+touch "$LOGS_DIR/gemini.log" "$LOGS_DIR/lda.log" "$LOGS_DIR/operator.log"
 mkdir -p "$SCRIPT_DIR/data/questions" "$SCRIPT_DIR/web" "$SCRIPT_DIR/static"
 
 # Color Palette
@@ -132,34 +131,6 @@ start_lda() {
     fi
 }
 
-start_youtube() {
-    if is_port_in_use "$YOUTUBE_PORT"; then
-        local existing_pid
-        existing_pid=$(get_port_pid "$YOUTUBE_PORT")
-        echo -e "  ${C_GREEN}✓${C_RESET} ${C_BOLD}YouTube Automation Studio${C_RESET} is already running on port ${C_CYAN}${YOUTUBE_PORT}${C_RESET} ${C_DIM}(PID: ${existing_pid})${C_RESET}"
-    else
-        echo -e "  ${C_GOLD}⏳ Starting YouTube Automation Studio on port ${YOUTUBE_PORT}...${C_RESET}"
-        (cd "$SCRIPT_DIR/youtube-automation-agent" && PORT="$YOUTUBE_PORT" node index.js > "$LOGS_DIR/youtube.log" 2>&1) &
-        local pid=$!
-        STARTED_PIDS+=("$pid")
-
-        local ready=0
-        for _ in {1..15}; do
-            if curl -s -m 1 "http://127.0.0.1:${YOUTUBE_PORT}/health" > /dev/null 2>&1; then
-                ready=1
-                break
-            fi
-            sleep 0.5
-        done
-
-        if [ "$ready" -eq 1 ]; then
-            echo -e "  ${C_GREEN}✓${C_RESET} ${C_BOLD}YouTube Automation Studio${C_RESET} started on port ${C_CYAN}${YOUTUBE_PORT}${C_RESET} ${C_DIM}(PID: ${pid})${C_RESET}"
-        else
-            echo -e "  ${C_RED}✗ YouTube Automation Studio initialization taking longer or had an issue. Check logs/youtube.log${C_RESET}"
-        fi
-    fi
-}
-
 start_operator() {
     if is_port_in_use "$OPERATOR_PORT"; then
         local existing_pid
@@ -202,13 +173,13 @@ show_status() {
         printf "  %-30s %-8s ${C_RED}%-12s${C_RESET} %s\n" "Gemini Web2API" "$GEMINI_PORT" "STOPPED" "-"
     fi
 
-    # YouTube Agent
-    local y_pid
-    y_pid=$(get_port_pid "$YOUTUBE_PORT")
-    if [ -n "$y_pid" ]; then
-        printf "  %-30s %-8s ${C_GREEN}%-12s${C_RESET} %s\n" "YouTube Studio & Agent" "$YOUTUBE_PORT" "RUNNING" "$y_pid"
+    # Shorts Studio Operator
+    local o_pid
+    o_pid=$(get_port_pid "$OPERATOR_PORT")
+    if [ -n "$o_pid" ]; then
+        printf "  %-30s %-8s ${C_GREEN}%-12s${C_RESET} %s\n" "Shorts Studio Operator" "$OPERATOR_PORT" "RUNNING" "$o_pid"
     else
-        printf "  %-30s %-8s ${C_RED}%-12s${C_RESET} %s\n" "YouTube Studio & Agent" "$YOUTUBE_PORT" "STOPPED" "-"
+        printf "  %-30s %-8s ${C_RED}%-12s${C_RESET} %s\n" "Shorts Studio Operator" "$OPERATOR_PORT" "STOPPED" "-"
     fi
 
     # Mission LDA
@@ -234,7 +205,7 @@ show_status() {
 
 stop_all() {
     echo -e "${C_BOLD}${C_GOLD}🛑 Stopping all services...${C_RESET}"
-    local ports=("$GEMINI_PORT" "$LDA_PORT" "$YOUTUBE_PORT" "$OPERATOR_PORT")
+    local ports=("$GEMINI_PORT" "$LDA_PORT" "$OPERATOR_PORT")
     for p in "${ports[@]}"; do
         local pid
         pid=$(get_port_pid "$p")
@@ -254,10 +225,9 @@ print_endpoints() {
     echo ""
     echo -e "${C_BOLD}${C_GREEN}🌟 ALL ACTIVE ENDPOINTS:${C_RESET}"
     echo -e "${C_CYAN}──────────────────────────────────────────────────────────────────────${C_RESET}"
-    echo -e "  🎬 ${C_BOLD}YouTube Automation Studio:${C_RESET}  ${C_CYAN}http://localhost:${YOUTUBE_PORT}/${C_RESET}"
-    echo -e "     • Operator Hub:                ${C_DIM}http://localhost:${YOUTUBE_PORT}/?view=operator${C_RESET}"
-    echo -e "     • Generation Review:           ${C_DIM}http://localhost:${YOUTUBE_PORT}/?view=content${C_RESET}"
-    echo -e "     • Production Health API:       ${C_DIM}http://localhost:${YOUTUBE_PORT}/health${C_RESET}"
+    echo -e "  🎬 ${C_BOLD}Shorts Studio Operator:${C_RESET}     ${C_CYAN}http://localhost:${OPERATOR_PORT}/${C_RESET}"
+    echo -e "     • Dashboard (generate/review): ${C_DIM}http://localhost:${OPERATOR_PORT}/${C_RESET}"
+    echo -e "     • Health API:                  ${C_DIM}http://localhost:${OPERATOR_PORT}/health${C_RESET}"
     echo ""
     echo -e "  🏛️  ${C_BOLD}Mission LDA Exam Platform:${C_RESET}  ${C_CYAN}http://localhost:${LDA_PORT}/${C_RESET}"
     echo -e "     • Legacy Exam Interface:       ${C_DIM}http://localhost:${LDA_PORT}/legacy${C_RESET}"
@@ -293,14 +263,16 @@ case "$COMMAND" in
         echo ""
         show_status
         ;;
-    youtube)
+    youtube|operator)
+        # 'youtube' kept as an alias: the Shorts Studio Operator IS the
+        # youtube video generator now (old youtube-automation-agent removed)
         banner
-        echo -e "${C_BOLD}Starting YouTube Automation Studio & Gemini backend...${C_RESET}"
+        echo -e "${C_BOLD}Starting Shorts Studio Operator (YouTube video generator)...${C_RESET}"
         start_gemini
-        start_youtube
+        start_operator
         print_endpoints
-        echo -e "${C_DIM}Streaming YouTube Studio logs (Press Ctrl+C to exit)...${C_RESET}"
-        tail -f "$LOGS_DIR/youtube.log"
+        echo -e "${C_DIM}Streaming Operator logs (Press Ctrl+C to exit)...${C_RESET}"
+        tail -f "$LOGS_DIR/operator.log"
         ;;
     short)
         banner
@@ -343,27 +315,26 @@ case "$COMMAND" in
         echo -e "${C_BOLD}Launching full ecosystem...${C_RESET}"
         start_gemini
         start_operator
-        start_youtube
         start_lda
         print_endpoints
 
         # Keep alive in foreground so Ctrl+C gracefully stops everything
         echo -e "${C_DIM}Services running in background. Live tail of latest logs (Ctrl+C to quit all)...${C_RESET}"
-        tail -f "$LOGS_DIR/youtube.log" "$LOGS_DIR/lda.log" 2>/dev/null
+        tail -f "$LOGS_DIR/operator.log" "$LOGS_DIR/lda.log" 2>/dev/null
         ;;
     help|--help|-h)
         banner
         echo -e "${C_BOLD}Usage:${C_RESET} ./launch.sh [command]"
         echo ""
         echo "Commands:"
-        echo "  all      Launch Gemini Web2API, Shorts Operator, YouTube Studio, and Mission LDA (Default)"
-        echo "  operator Launch Gemini Web2API + Local Shorts Operator (dashboard :3457)"
+        echo "  all      Launch Gemini Web2API, Shorts Operator, and Mission LDA (Default)"
+        echo "  youtube  Launch Gemini Web2API + Shorts Studio Operator (the video generator)"
+        echo "  operator Same as 'youtube'"
         echo "  short    Generate a local short end-to-end: ./launch.sh short \"topic\" [--style \"niche\"]"
-        echo "  youtube  Launch Gemini Web2API + old YouTube Automation Studio"
         echo "  lda      Launch Gemini Web2API + Mission LDA Exam Platform"
         echo "  gemini   Launch Gemini Web2API only"
         echo "  status   Show current status of all services and ports"
-        echo "  stop     Stop all running services on ports 8081, 8080, 3456"
+        echo "  stop     Stop all running services on ports 8081, 8080, 3457"
         echo "  help     Display this help message"
         echo ""
         ;;

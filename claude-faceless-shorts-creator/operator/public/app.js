@@ -44,49 +44,72 @@ const when = (iso) => {
 const VOICES = ['bm_george', 'bf_emma', 'am_adam', 'af_nova', 'am_onyx', 'bm_daniel', 'af_sarah', 'am_eric'];
 const MUSIC = ['', 'ambient-pad', 'tech-pulse', 'lofi-warm', 'cinematic-min', 'docu-pluck'];
 
+/* defensive accessors — an unexpected API shape must NEVER blank the page */
+const arr = (v) => (Array.isArray(v) ? v : []);
+const obj = (v) => (v && typeof v === 'object' ? v : {});
+
+/* surface ANY uncaught script error so it is diagnosable, never silent */
+window.addEventListener('error', (e) => {
+  toast(`UI error: ${e.message} (${(e.filename || '').split('/').pop()}:${e.lineno})`, 'err');
+});
+window.addEventListener('unhandledrejection', (e) => {
+  const m = e.reason?.message || String(e.reason);
+  if (!/Failed to fetch|Load failed|NetworkError/i.test(m)) toast(`Async error: ${m}`, 'err');
+});
+
 /* ============ readiness + sidebar status ============ */
 async function refreshStatus() {
   try {
-    const r = await api.get('/api/readiness');
+    const r = obj(await api.get('/api/readiness'));
     const dot = $('#ready-dot'), title = $('#ready-title'), sub = $('#ready-sub');
     if (r.status === 'ready') {
       dot.className = 'ready-dot ok'; title.textContent = 'All systems ready';
       sub.textContent = 'pipeline operational';
     } else {
       dot.className = 'ready-dot warn';
-      title.textContent = `Degraded: ${r.blocking.join(', ')}`;
+      const blocking = arr(r.blocking);
+      title.textContent = r.status === 'error' ? 'Readiness check failed'
+        : `Degraded: ${blocking.join(', ') || 'unknown'}`;
       sub.textContent = 'click for details';
     }
   } catch {
-    $('#ready-dot').className = 'ready-dot';
-    $('#ready-title').textContent = 'Server unreachable';
+    try {
+      $('#ready-dot').className = 'ready-dot';
+      $('#ready-title').textContent = 'Server unreachable';
+      $('#ready-sub').textContent = './launch.sh operator';
+    } catch { /* DOM not ready — ignore */ }
   }
   try {
-    const yt = await api.get('/api/youtube/status');
+    const yt = obj(await api.get('/api/youtube/status'));
     const card = $('#yt-card');
     card.classList.toggle('on', !!yt.authorized);
     $('#yt-status-icon').textContent = yt.authorized ? '✓' : '▷';
     $('#yt-status-text').textContent = yt.authorized ? 'YouTube connected' : 'YouTube not connected';
-  } catch {}
+  } catch { /* non-fatal */ }
 }
 
 async function refreshBadges() {
   try {
-    const s = await api.get('/api/stats');
+    const s = obj(await api.get('/api/stats'));
     lastStats = s;
-    const set = (id, n) => { const el = $(id); el.hidden = !n; el.textContent = n; };
-    set('#badge-gen', s.jobs.queued + s.jobs.running);
-    set('#badge-review', s.shorts.needs_review);
-    set('#badge-pub', s.queue.scheduled);
-  } catch {}
+    const j = obj(s.jobs), sh = obj(s.shorts), q = obj(s.queue);
+    const set = (id, n) => { const el = $(id); if (!el) return; el.hidden = !n; el.textContent = n; };
+    set('#badge-gen', (j.queued ?? 0) + (j.running ?? 0));
+    set('#badge-review', sh.needs_review ?? 0);
+    set('#badge-pub', q.scheduled ?? 0);
+  } catch { /* non-fatal */ }
 }
 
 /* ============ OVERVIEW ============ */
 async function viewOverview() {
-  const [stats, { shorts }, { jobs }, { notifications }] = await Promise.all([
+  const [statsR, shortsR, jobsR, notifR] = await Promise.all([
     api.get('/api/stats'), api.get('/api/shorts'), api.get('/api/jobs'),
     api.get('/api/notifications'),
   ]);
+  const stats = obj(statsR);
+  const shorts = arr(obj(shortsR).shorts);
+  const jobs = arr(obj(jobsR).jobs);
+  const notifications = arr(obj(notifR).notifications);
   const recent = shorts.slice(0, 6);
   const activeJobs = jobs.filter(j => ['queued', 'running'].includes(j.status));
 
@@ -99,14 +122,14 @@ async function viewOverview() {
     </div>
 
     <div class="stats">
-      <div class="stat"><div class="v">${stats.shorts.total}</div><div class="l">Shorts</div>
-        <div class="hint">${stats.producedThisWeek} this week</div></div>
-      <div class="stat"><div class="v">${stats.shorts.needs_review}</div><div class="l">In review</div>
+      <div class="stat"><div class="v">${obj(stats.shorts).total ?? 0}</div><div class="l">Shorts</div>
+        <div class="hint">${stats.producedThisWeek ?? 0} this week</div></div>
+      <div class="stat"><div class="v">${obj(stats.shorts).needs_review ?? 0}</div><div class="l">In review</div>
         <div class="hint">approval-first gate</div></div>
-      <div class="stat"><div class="v">${stats.shorts.published}</div><div class="l">Published</div></div>
-      <div class="stat"><div class="v">${stats.jobs.running}</div><div class="l">Rendering</div>
-        <div class="hint">${stats.jobs.queued} queued</div></div>
-      <div class="stat"><div class="v">${stats.queue.scheduled}</div><div class="l">Scheduled</div></div>
+      <div class="stat"><div class="v">${obj(stats.shorts).published ?? 0}</div><div class="l">Published</div></div>
+      <div class="stat"><div class="v">${obj(stats.jobs).running ?? 0}</div><div class="l">Rendering</div>
+        <div class="hint">${obj(stats.jobs).queued ?? 0} queued</div></div>
+      <div class="stat"><div class="v">${obj(stats.queue).scheduled ?? 0}</div><div class="l">Scheduled</div></div>
     </div>
 
     ${activeJobs.length ? `
@@ -140,7 +163,7 @@ async function viewOverview() {
 
       <div class="panel">
         <h2>Activity</h2>
-        ${notifications.notifications.length ? notifications.notifications.slice(0, 8).map(n => `
+        ${notifications.length ? notifications.slice(0, 8).map(n => `
           <div class="row" style="padding:6px 0;align-items:baseline">
             <span style="width:8px;height:8px;border-radius:50%;flex-shrink:0;
               background:${{ success: 'var(--ok)', error: 'var(--err)', warn: 'var(--warn)', info: 'var(--accent)' }[n.level] || 'var(--dim)'}"></span>
@@ -166,8 +189,10 @@ function safeMeta(s) {
 
 /* ============ GENERATE ============ */
 async function viewGenerate() {
-  const [{ jobs }, { runs }] = await Promise.all([
+  const [jobsR, runsR] = await Promise.all([
     api.get('/api/jobs'), api.get('/api/operator/runs')]);
+  const jobs = arr(obj(jobsR).jobs);
+  const runs = arr(obj(runsR).runs);
 
   $('#main').innerHTML = `
     <div class="page-head">
@@ -264,7 +289,7 @@ window.showLog = async (id) => {
 
 /* ============ REVIEW / LIBRARY ============ */
 async function viewShorts(reviewOnly) {
-  const { shorts } = await api.get('/api/shorts');
+  const shorts = arr(obj(await api.get('/api/shorts')).shorts);
   const list = reviewOnly ? shorts.filter(s => s.status === 'needs_review') : shorts;
 
   $('#main').innerHTML = `
@@ -382,8 +407,10 @@ window.rejectShort = async (id, inModal = false) => {
 
 /* ============ PUBLISH ============ */
 async function viewPublish() {
-  const [{ queue }, yt] = await Promise.all([
+  const [queueR, ytR] = await Promise.all([
     api.get('/api/publish-queue'), api.get('/api/youtube/status')]);
+  const queue = arr(obj(queueR).queue);
+  const yt = obj(ytR);
 
   $('#main').innerHTML = `
     <div class="page-head"><h1>Publish</h1>
@@ -438,7 +465,7 @@ window.startYouTubeAuth = async () => {
 
 /* ============ ANALYTICS ============ */
 async function viewAnalytics() {
-  const { shorts } = await api.get('/api/shorts');
+  const shorts = arr(obj(await api.get('/api/shorts')).shorts);
   const pub = shorts.filter(s => s.status === 'published');
   const totalViews = pub.reduce((a, s) => a + (s.views || 0), 0);
   const totalLikes = pub.reduce((a, s) => a + (s.likes || 0), 0);
@@ -492,8 +519,12 @@ async function viewAnalytics() {
 
 /* ============ SETTINGS ============ */
 async function viewSettings() {
-  const [{ settings: s, api_key_set }, r] = await Promise.all([
+  const [settingsR, readyR] = await Promise.all([
     api.get('/api/settings'), api.get('/api/readiness')]);
+  const settingsWrap = obj(settingsR);
+  const s = obj(settingsWrap.settings);
+  const api_key_set = !!settingsWrap.api_key_set;
+  const r = obj(readyR);
 
   $('#main').innerHTML = `
     <div class="page-head"><h1>Settings</h1><span class="sub">pipeline · channel · security</span></div>
@@ -601,8 +632,15 @@ async function refresh() {
     else if (tab === 'analytics') await viewAnalytics();
     else if (tab === 'settings') await viewSettings();
   } catch (e) {
-    $('#main').innerHTML = `<div class="panel"><h2>⚠ ${esc(e.message)}</h2>
-      <div class="dim">Is the operator server running? <span class="mono">./launch.sh operator</span></div></div>`;
+    const offline = /failed to fetch|load failed|networkerror|connection refused/i.test(e.message || '');
+    $('#main').innerHTML = `
+      <div class="panel">
+        <h2>⚠ ${offline ? 'Operator server unreachable' : `Error in ${tab} view`}</h2>
+        <div class="dim mono" style="margin-bottom:10px">${esc(e.message || String(e))}</div>
+        ${offline
+          ? `<div class="dim">Start it with <span class="mono">./launch.sh operator</span> (dashboard: <span class="mono">http://localhost:3457</span>)</div>`
+          : `<div class="dim">The view will retry automatically. If it persists, reload the page (⌘⇧R) and check the server console.</div>`}
+      </div>`;
   }
   refreshStatus();
   refreshBadges();
