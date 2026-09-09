@@ -1,0 +1,11 @@
+{
+  "prompt": "Shockwaves pushing through interstellar gas clouds, high dynamic range, intense particle dust",
+  "engine": "pollinations",
+  "model": "flux",
+  "aspect_ratio": "9:16",
+  "image_size": "1K",
+  "width": 1080,
+  "height": 1920,
+  "seed": null,
+  "created": "2026-09-10T00:35:05"
+}

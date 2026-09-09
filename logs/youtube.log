@@ -1,44 +1,44 @@
 
 🎬 YouTube Automation Agent v2.10.0
 ──────────────────────────────────────────────────
-1:24:09 pm [MainAgent] [INFO] Initializing database...
-1:24:09 pm [Database] [INFO] Initializing database...
-1:24:09 pm [Database] [SUCCESS] Database initialized successfully
-1:24:09 pm [MainAgent] [INFO] Loading credentials...
+11:37:33 pm [MainAgent] [INFO] Initializing database...
+11:37:33 pm [Database] [INFO] Initializing database...
+11:37:33 pm [Database] [SUCCESS] Database initialized successfully
+11:37:33 pm [MainAgent] [INFO] Loading credentials...
 
 ⚠️  Missing credentials for: youtube
 Any one AI provider is enough — run: npm run credentials:setup
 
 ⚠️  Some credentials are missing or invalid.
 Run: npm run credentials:setup
-1:24:09 pm [MainAgent] [INFO] AI provider detected. Enabling local production and review studio (YouTube upload will remain paused until OAuth setup).
-1:24:09 pm [MainAgent] [INFO] Initializing agents...
-1:24:09 pm [AITextService] [INFO] Gemini (Local Web2API) initialized at http://127.0.0.1:8081/v1 (model: gemini-3.6-flash)
-1:24:09 pm [AITextService] [INFO] Gemini (Local Web2API) initialized at http://127.0.0.1:8081/v1 (model: gemini-3.6-flash)
-1:24:09 pm [AITextService] [INFO] Gemini (Local Web2API) initialized at http://127.0.0.1:8081/v1 (model: gemini-3.6-flash)
-1:24:09 pm [AIVideoGenerator] [INFO] OpenAI service initialized
-1:24:09 pm [AIVideoGenerator] [WARN] Replicate API key not found - advanced video generation unavailable
-1:24:09 pm [AIVideoGenerator] [INFO] Kokoro TTS engine enabled (voice: bm_george, model: kokoro-v1.0.onnx)
-1:24:09 pm [ContentStrategy] [INFO] Initializing Content Strategy Agent...
-1:24:10 pm [ContentStrategy] [INFO] Identified 50 trending topics
-1:24:10 pm [MainAgent] [INFO] ✓ strategy agent initialized
-1:24:10 pm [ScriptWriter] [INFO] Initializing Script Writer Agent...
-1:24:10 pm [MainAgent] [INFO] ✓ scriptWriter agent initialized
-1:24:10 pm [ThumbnailDesigner] [INFO] Initializing Thumbnail Designer Agent...
-1:24:10 pm [MainAgent] [INFO] ✓ thumbnailDesigner agent initialized
-1:24:10 pm [SEOOptimizer] [INFO] Initializing SEO Optimizer Agent...
-1:24:10 pm [MainAgent] [INFO] ✓ seoOptimizer agent initialized
-1:24:10 pm [ProductionManagement] [INFO] Initializing Production Management Agent...
-1:24:10 pm [MainAgent] [INFO] ✓ production agent initialized
-1:24:10 pm [PublishingScheduling] [INFO] Initializing Publishing & Scheduling Agent...
-1:24:10 pm [PublishingScheduling] [WARN] YouTube API not active (YouTube credentials not configured); local generation & review enabled, YouTube publishing will stay paused.
-1:24:10 pm [PublishingScheduling] [INFO] Loaded 0 items in publish queue
-1:24:10 pm [MainAgent] [INFO] ✓ publishing agent initialized
-1:24:10 pm [AnalyticsOptimization] [INFO] Initializing Analytics & Optimization Agent...
-1:24:10 pm [AnalyticsOptimization] [WARN] YouTube Analytics API not active (YouTube credentials not configured); local database metrics enabled.
-1:24:10 pm [AnalyticsOptimization] [INFO] Loaded 0 historical records
-1:24:10 pm [MainAgent] [INFO] ✓ analytics agent initialized
-1:24:10 pm [AITextService] [INFO] Gemini (Local Web2API) initialized at http://127.0.0.1:8081/v1 (model: gemini-3.6-flash)
+11:37:33 pm [MainAgent] [INFO] AI provider detected. Enabling local production and review studio (YouTube upload will remain paused until OAuth setup).
+11:37:33 pm [MainAgent] [INFO] Initializing agents...
+11:37:33 pm [AITextService] [INFO] Gemini (Local Web2API) initialized at http://127.0.0.1:8081/v1 (model: gemini-3.6-flash)
+11:37:33 pm [AITextService] [INFO] Gemini (Local Web2API) initialized at http://127.0.0.1:8081/v1 (model: gemini-3.6-flash)
+11:37:33 pm [AITextService] [INFO] Gemini (Local Web2API) initialized at http://127.0.0.1:8081/v1 (model: gemini-3.6-flash)
+11:37:33 pm [AIVideoGenerator] [INFO] OpenAI service initialized
+11:37:33 pm [AIVideoGenerator] [WARN] Replicate API key not found - advanced video generation unavailable
+11:37:33 pm [AIVideoGenerator] [INFO] Kokoro TTS engine enabled (voice: bm_george, model: kokoro-v1.0.onnx)
+11:37:33 pm [ContentStrategy] [INFO] Initializing Content Strategy Agent...
+11:37:38 pm [ContentStrategy] [INFO] Identified 50 trending topics
+11:37:38 pm [MainAgent] [INFO] ✓ strategy agent initialized
+11:37:38 pm [ScriptWriter] [INFO] Initializing Script Writer Agent...
+11:37:38 pm [MainAgent] [INFO] ✓ scriptWriter agent initialized
+11:37:38 pm [ThumbnailDesigner] [INFO] Initializing Thumbnail Designer Agent...
+11:37:38 pm [MainAgent] [INFO] ✓ thumbnailDesigner agent initialized
+11:37:38 pm [SEOOptimizer] [INFO] Initializing SEO Optimizer Agent...
+11:37:38 pm [MainAgent] [INFO] ✓ seoOptimizer agent initialized
+11:37:38 pm [ProductionManagement] [INFO] Initializing Production Management Agent...
+11:37:38 pm [MainAgent] [INFO] ✓ production agent initialized
+11:37:38 pm [PublishingScheduling] [INFO] Initializing Publishing & Scheduling Agent...
+11:37:38 pm [PublishingScheduling] [WARN] YouTube API not active (YouTube credentials not configured); local generation & review enabled, YouTube publishing will stay paused.
+11:37:38 pm [PublishingScheduling] [INFO] Loaded 0 items in publish queue
+11:37:38 pm [MainAgent] [INFO] ✓ publishing agent initialized
+11:37:38 pm [AnalyticsOptimization] [INFO] Initializing Analytics & Optimization Agent...
+11:37:38 pm [AnalyticsOptimization] [WARN] YouTube Analytics API not active (YouTube credentials not configured); local database metrics enabled.
+11:37:38 pm [AnalyticsOptimization] [INFO] Loaded 0 historical records
+11:37:38 pm [MainAgent] [INFO] ✓ analytics agent initialized
+11:37:38 pm [AITextService] [INFO] Gemini (Local Web2API) initialized at http://127.0.0.1:8081/v1 (model: gemini-3.6-flash)
 
 🔎 Capability check:
   ✓ Script & strategy generation
@@ -47,19 +47,19 @@ Run: npm run credentials:setup
   ✓ Video assembly (FFmpeg)
   ✗ YouTube upload — run: npm run credentials:setup
 
-1:24:10 pm [MainAgent] [WARN] API_KEY is not set; mutating API routes are unprotected
-1:24:10 pm [MainAgent] [INFO] Setting up automation scheduler...
-1:24:10 pm [DailyAutomation] [INFO] Initializing daily automation scheduler...
-1:24:10 pm [DailyAutomation] [INFO] Started scheduled task: daily-content-generation
-1:24:10 pm [DailyAutomation] [INFO] Started scheduled task: publish-queue-processing
-1:24:10 pm [DailyAutomation] [INFO] Started scheduled task: daily-analytics
-1:24:10 pm [DailyAutomation] [INFO] Started scheduled task: weekly-strategy-review
-1:24:10 pm [DailyAutomation] [INFO] Started scheduled task: daily-optimization
-1:24:10 pm [DailyAutomation] [INFO] Started scheduled task: database-maintenance
-1:24:10 pm [DailyAutomation] [INFO] Started scheduled task: audience-engagement-sync
-1:24:10 pm [DailyAutomation] [INFO] Started scheduled task: growth-experiment-refresh
-1:24:10 pm [DailyAutomation] [SUCCESS] Daily automation initialized successfully
-1:24:10 pm [MainAgent] [SUCCESS] YouTube Automation Agent initialized successfully!
+11:37:38 pm [MainAgent] [WARN] API_KEY is not set; mutating API routes are unprotected
+11:37:38 pm [MainAgent] [INFO] Setting up automation scheduler...
+11:37:38 pm [DailyAutomation] [INFO] Initializing daily automation scheduler...
+11:37:38 pm [DailyAutomation] [INFO] Started scheduled task: daily-content-generation
+11:37:38 pm [DailyAutomation] [INFO] Started scheduled task: publish-queue-processing
+11:37:38 pm [DailyAutomation] [INFO] Started scheduled task: daily-analytics
+11:37:38 pm [DailyAutomation] [INFO] Started scheduled task: weekly-strategy-review
+11:37:38 pm [DailyAutomation] [INFO] Started scheduled task: daily-optimization
+11:37:38 pm [DailyAutomation] [INFO] Started scheduled task: database-maintenance
+11:37:38 pm [DailyAutomation] [INFO] Started scheduled task: audience-engagement-sync
+11:37:38 pm [DailyAutomation] [INFO] Started scheduled task: growth-experiment-refresh
+11:37:38 pm [DailyAutomation] [SUCCESS] Daily automation initialized successfully
+11:37:38 pm [MainAgent] [SUCCESS] YouTube Automation Agent initialized successfully!
 
 ✅ YouTube Automation Agent running on port 3456
 ──────────────────────────────────────────────────
@@ -70,8 +70,11 @@ Run: npm run credentials:setup
 ──────────────────────────────────────────────────
 
 🤖 Automation is active. Approved content will be published on schedule.
-1:30:00 pm [PublishingScheduling] [INFO] Publish queue is empty — nothing scheduled yet.
-1:45:00 pm [PublishingScheduling] [INFO] Publish queue is empty — nothing scheduled yet.
-2:00:01 pm [PublishingScheduling] [INFO] Publish queue is empty — nothing scheduled yet.
-2:15:00 pm [PublishingScheduling] [INFO] Publish queue is empty — nothing scheduled yet.
-2:24:10 pm [DailyAutomation] [INFO] System health check passed: 80/100
+11:45:00 pm [PublishingScheduling] [INFO] Publish queue is empty — nothing scheduled yet.
+12:00:00 am [PublishingScheduling] [INFO] Publish queue is empty — nothing scheduled yet.
+12:00:00 am [DailyAutomation] [INFO] Starting audience comment sync...
+12:00:00 am [DailyAutomation] [SUCCESS] Audience engagement sync completed: 0 synced, 0 skipped, 0 failed
+12:15:00 am [PublishingScheduling] [INFO] Publish queue is empty — nothing scheduled yet.
+12:30:00 am [PublishingScheduling] [INFO] Publish queue is empty — nothing scheduled yet.
+12:37:38 am [DailyAutomation] [INFO] System health check passed: 80/100
+12:45:00 am [PublishingScheduling] [INFO] Publish queue is empty — nothing scheduled yet.

@@ -1,28 +1,16 @@
-[13:24:07] 127.0.0.1 "GET / HTTP/1.1" 200 -
-[13:24:10] 127.0.0.1 "GET / HTTP/1.1" 200 -
-[13:24:30] 127.0.0.1 "GET /v1/models HTTP/1.1" 200 -
-[13:25:05] 127.0.0.1 "POST /v1/chat/completions HTTP/1.1" 200 -
-[13:42:41] 127.0.0.1 "GET / HTTP/1.1" 200 -
-[13:47:50] 127.0.0.1 "GET /v1/models HTTP/1.1" 200 -
-[13:48:06] 127.0.0.1 "POST /v1/chat/completions HTTP/1.1" 200 -
-[13:48:29] 127.0.0.1 "POST /v1/chat/completions HTTP/1.1" 200 -
-[13:48:48] 127.0.0.1 "POST /v1/chat/completions HTTP/1.1" 200 -
-[13:50:18] 127.0.0.1 "GET / HTTP/1.1" 200 -
-[13:50:30] 127.0.0.1 "POST /v1/chat/completions HTTP/1.1" 200 -
-[13:54:12] 127.0.0.1 "GET / HTTP/1.1" 200 -
-[13:54:17] 127.0.0.1 "GET /v1/models HTTP/1.1" 200 -
-[13:54:27] 127.0.0.1 "POST /v1/chat/completions HTTP/1.1" 200 -
-[13:55:22] 127.0.0.1 "POST /v1/chat/completions HTTP/1.1" 200 -
-[13:58:44] 127.0.0.1 "POST /v1/chat/completions HTTP/1.1" 200 -
-[14:00:30] 127.0.0.1 "GET / HTTP/1.1" 200 -
-[14:00:50] 127.0.0.1 "POST /v1/chat/completions HTTP/1.1" 200 -
-[14:04:26] 127.0.0.1 "POST /v1/chat/completions HTTP/1.1" 200 -
-[14:05:39] 127.0.0.1 "POST /v1/chat/completions HTTP/1.1" 200 -
-[14:13:11] 127.0.0.1 "GET / HTTP/1.1" 200 -
-[14:16:24] 127.0.0.1 "POST /v1/chat/completions HTTP/1.1" 200 -
-[14:16:28] 127.0.0.1 "POST /v1/chat/completions HTTP/1.1" 200 -
-[14:16:34] 127.0.0.1 "POST /v1/chat/completions HTTP/1.1" 200 -
-[14:16:36] 127.0.0.1 "POST /v1/chat/completions HTTP/1.1" 200 -
-[14:16:48] 127.0.0.1 "GET / HTTP/1.1" 200 -
-[14:20:01] 127.0.0.1 "GET / HTTP/1.1" 200 -
-[14:23:35] 127.0.0.1 "POST /v1/chat/completions HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/Users/pynshainongsiej/gemini-web2api/gemini_web2api.py", line 1112, in <module>
+    main()
+    ~~~~^^
+  File "/Users/pynshainongsiej/gemini-web2api/gemini_web2api.py", line 1093, in main
+    server = ThreadedServer((CONFIG["host"], port), GeminiHandler)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/socketserver.py", line 457, in __init__
+    self.server_bind()
+    ~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 48] Address already in use

@@ -1,0 +1,11 @@
+{
+  "prompt": "Spacetime rippling outward in circular waves from a pitch black central void, dramatic backlighting",
+  "engine": "pollinations",
+  "model": "flux",
+  "aspect_ratio": "9:16",
+  "image_size": "1K",
+  "width": 1080,
+  "height": 1920,
+  "seed": null,
+  "created": "2026-09-10T00:34:19"
+}

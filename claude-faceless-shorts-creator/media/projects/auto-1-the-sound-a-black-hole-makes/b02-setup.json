@@ -1,0 +1,11 @@
+{
+  "prompt": "Glowing hot gas clouds swirling inside a dense galactic cluster, vibrant purple and blue haze",
+  "engine": "pollinations",
+  "model": "flux",
+  "aspect_ratio": "9:16",
+  "image_size": "1K",
+  "width": 1080,
+  "height": 1920,
+  "seed": null,
+  "created": "2026-09-10T00:32:48"
+}

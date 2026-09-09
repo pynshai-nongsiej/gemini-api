@@ -1,0 +1,570 @@
+{
+  "id": "auto-1-the-sound-a-black-hole-makes",
+  "title": "The Terrifying Sound of a Black Hole",
+  "composition": "AutoTheterrifyingsoundof",
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSec": 38.0
+  },
+  "vo": [
+    {
+      "beat": "hook",
+      "text": "NASA captured the actual sound of a supermassive black hole.",
+      "imagePrompt": "A supermassive black hole surrounded by an glowing accretion disk in deep space, cinematic, dark atmospheric lighting, highly detailed",
+      "sfxHint": "deep rumble",
+      "start": 0.25,
+      "end": 4.4,
+      "words": [
+        {
+          "w": "NASA",
+          "start": 0.25,
+          "end": 0.601
+        },
+        {
+          "w": "captured",
+          "start": 0.601,
+          "end": 1.196
+        },
+        {
+          "w": "the",
+          "start": 1.196,
+          "end": 1.485
+        },
+        {
+          "w": "actual",
+          "start": 1.485,
+          "end": 1.958
+        },
+        {
+          "w": "sound",
+          "start": 1.958,
+          "end": 2.369
+        },
+        {
+          "w": "of",
+          "start": 2.369,
+          "end": 2.597
+        },
+        {
+          "w": "a",
+          "start": 2.597,
+          "end": 2.763
+        },
+        {
+          "w": "supermassive",
+          "start": 2.763,
+          "end": 3.604
+        },
+        {
+          "w": "black",
+          "start": 3.604,
+          "end": 4.016
+        },
+        {
+          "w": "hole.",
+          "start": 4.016,
+          "end": 4.4
+        }
+      ]
+    },
+    {
+      "beat": "setup",
+      "text": "Space is a vacuum, so sound waves normally cannot travel.",
+      "imagePrompt": "Empty cosmic void filled with distant faint stars, cold blue atmosphere, extreme wide shot",
+      "sfxHint": "subtle whoosh",
+      "start": 4.45,
+      "end": 8.59,
+      "words": [
+        {
+          "w": "Space",
+          "start": 4.45,
+          "end": 4.883
+        },
+        {
+          "w": "is",
+          "start": 4.883,
+          "end": 5.122
+        },
+        {
+          "w": "a",
+          "start": 5.122,
+          "end": 5.297
+        },
+        {
+          "w": "vacuum,",
+          "start": 5.297,
+          "end": 5.829
+        },
+        {
+          "w": "so",
+          "start": 5.829,
+          "end": 6.068
+        },
+        {
+          "w": "sound",
+          "start": 6.068,
+          "end": 6.501
+        },
+        {
+          "w": "waves",
+          "start": 6.501,
+          "end": 6.934
+        },
+        {
+          "w": "normally",
+          "start": 6.934,
+          "end": 7.56
+        },
+        {
+          "w": "cannot",
+          "start": 7.56,
+          "end": 8.058
+        },
+        {
+          "w": "travel.",
+          "start": 8.058,
+          "end": 8.59
+        }
+      ]
+    },
+    {
+      "beat": "setup",
+      "text": "In the Perseus galaxy cluster, dense gas surrounds the center.",
+      "imagePrompt": "Glowing hot gas clouds swirling inside a dense galactic cluster, vibrant purple and blue haze",
+      "sfxHint": "low drone",
+      "start": 8.64,
+      "end": 12.79,
+      "words": [
+        {
+          "w": "In",
+          "start": 8.64,
+          "end": 8.863
+        },
+        {
+          "w": "the",
+          "start": 8.863,
+          "end": 9.145
+        },
+        {
+          "w": "Perseus",
+          "start": 9.145,
+          "end": 9.667
+        },
+        {
+          "w": "galaxy",
+          "start": 9.667,
+          "end": 10.129
+        },
+        {
+          "w": "cluster,",
+          "start": 10.129,
+          "end": 10.685
+        },
+        {
+          "w": "dense",
+          "start": 10.685,
+          "end": 11.088
+        },
+        {
+          "w": "gas",
+          "start": 11.088,
+          "end": 11.37
+        },
+        {
+          "w": "surrounds",
+          "start": 11.37,
+          "end": 12.012
+        },
+        {
+          "w": "the",
+          "start": 12.012,
+          "end": 12.294
+        },
+        {
+          "w": "center.",
+          "start": 12.294,
+          "end": 12.79
+        }
+      ]
+    },
+    {
+      "beat": "quiz",
+      "text": "Listen closely. Is this a cosmic howl or pure noise?",
+      "imagePrompt": "Close-up of audio waveform lines glowing in dark space, high contrast, mysterious blue glow",
+      "sfxHint": "glitch static",
+      "start": 12.84,
+      "end": 16.53,
+      "words": [
+        {
+          "w": "Listen",
+          "start": 12.84,
+          "end": 13.321
+        },
+        {
+          "w": "closely.",
+          "start": 13.321,
+          "end": 13.898
+        },
+        {
+          "w": "Is",
+          "start": 13.898,
+          "end": 14.129
+        },
+        {
+          "w": "this",
+          "start": 14.129,
+          "end": 14.485
+        },
+        {
+          "w": "a",
+          "start": 14.485,
+          "end": 14.654
+        },
+        {
+          "w": "cosmic",
+          "start": 14.654,
+          "end": 15.135
+        },
+        {
+          "w": "howl",
+          "start": 15.135,
+          "end": 15.491
+        },
+        {
+          "w": "or",
+          "start": 15.491,
+          "end": 15.722
+        },
+        {
+          "w": "pure",
+          "start": 15.722,
+          "end": 16.078
+        },
+        {
+          "w": "noise?",
+          "start": 16.078,
+          "end": 16.531
+        }
+      ]
+    },
+    {
+      "beat": "reveal",
+      "text": "This is the pitch shifted fifty seven octaves up to be audible.",
+      "imagePrompt": "Spacetime rippling outward in circular waves from a pitch black central void, dramatic backlighting",
+      "sfxHint": "creepy ghostly reverberation",
+      "start": 17.03,
+      "end": 21.52,
+      "words": [
+        {
+          "w": "This",
+          "start": 17.03,
+          "end": 17.387
+        },
+        {
+          "w": "is",
+          "start": 17.387,
+          "end": 17.618
+        },
+        {
+          "w": "the",
+          "start": 17.618,
+          "end": 17.912
+        },
+        {
+          "w": "pitch",
+          "start": 17.912,
+          "end": 18.332
+        },
+        {
+          "w": "shifted",
+          "start": 18.332,
+          "end": 18.876
+        },
+        {
+          "w": "fifty",
+          "start": 18.876,
+          "end": 19.295
+        },
+        {
+          "w": "seven",
+          "start": 19.295,
+          "end": 19.714
+        },
+        {
+          "w": "octaves",
+          "start": 19.714,
+          "end": 20.258
+        },
+        {
+          "w": "up",
+          "start": 20.258,
+          "end": 20.49
+        },
+        {
+          "w": "to",
+          "start": 20.49,
+          "end": 20.721
+        },
+        {
+          "w": "be",
+          "start": 20.721,
+          "end": 20.953
+        },
+        {
+          "w": "audible.",
+          "start": 20.953,
+          "end": 21.531
+        }
+      ]
+    },
+    {
+      "beat": "reveal",
+      "text": "Pressure waves create a terrifying, continuous low frequency hum.",
+      "imagePrompt": "Shockwaves pushing through interstellar gas clouds, high dynamic range, intense particle dust",
+      "sfxHint": "heavy bass impact",
+      "start": 22.0,
+      "end": 25.79,
+      "words": [
+        {
+          "w": "Pressure",
+          "start": 22.0,
+          "end": 22.515
+        },
+        {
+          "w": "waves",
+          "start": 22.515,
+          "end": 22.871
+        },
+        {
+          "w": "create",
+          "start": 22.871,
+          "end": 23.279
+        },
+        {
+          "w": "a",
+          "start": 23.279,
+          "end": 23.423
+        },
+        {
+          "w": "terrifying,",
+          "start": 23.423,
+          "end": 24.073
+        },
+        {
+          "w": "continuous",
+          "start": 24.073,
+          "end": 24.695
+        },
+        {
+          "w": "low",
+          "start": 24.695,
+          "end": 24.944
+        },
+        {
+          "w": "frequency",
+          "start": 24.944,
+          "end": 25.512
+        },
+        {
+          "w": "hum.",
+          "start": 25.512,
+          "end": 25.791
+        }
+      ]
+    },
+    {
+      "beat": "twist",
+      "text": "This note has been ringing continuously for over two billion years.",
+      "imagePrompt": "Ancient galaxy cluster viewed across vast cosmic time, glowing core, hyperrealistic space render",
+      "sfxHint": "fading echo",
+      "start": 25.81,
+      "end": 30.2,
+      "words": [
+        {
+          "w": "This",
+          "start": 25.81,
+          "end": 26.143
+        },
+        {
+          "w": "note",
+          "start": 26.143,
+          "end": 26.476
+        },
+        {
+          "w": "has",
+          "start": 26.476,
+          "end": 26.751
+        },
+        {
+          "w": "been",
+          "start": 26.751,
+          "end": 27.084
+        },
+        {
+          "w": "ringing",
+          "start": 27.084,
+          "end": 27.591
+        },
+        {
+          "w": "continuously",
+          "start": 27.591,
+          "end": 28.391
+        },
+        {
+          "w": "for",
+          "start": 28.391,
+          "end": 28.666
+        },
+        {
+          "w": "over",
+          "start": 28.666,
+          "end": 28.999
+        },
+        {
+          "w": "two",
+          "start": 28.999,
+          "end": 29.273
+        },
+        {
+          "w": "billion",
+          "start": 29.273,
+          "end": 29.781
+        },
+        {
+          "w": "years.",
+          "start": 29.781,
+          "end": 30.205
+        }
+      ]
+    },
+    {
+      "beat": "twist",
+      "text": "It is fifty seven octaves below middle C, lowest in the universe.",
+      "imagePrompt": "A giant grand piano floating in space fading into a dark event horizon, haunting surreal lighting",
+      "sfxHint": "sub bass drop",
+      "start": 30.39,
+      "end": 35.06,
+      "words": [
+        {
+          "w": "It",
+          "start": 30.39,
+          "end": 30.625
+        },
+        {
+          "w": "is",
+          "start": 30.625,
+          "end": 30.861
+        },
+        {
+          "w": "fifty",
+          "start": 30.861,
+          "end": 31.287
+        },
+        {
+          "w": "seven",
+          "start": 31.287,
+          "end": 31.712
+        },
+        {
+          "w": "octaves",
+          "start": 31.712,
+          "end": 32.265
+        },
+        {
+          "w": "below",
+          "start": 32.265,
+          "end": 32.691
+        },
+        {
+          "w": "middle",
+          "start": 32.691,
+          "end": 33.181
+        },
+        {
+          "w": "C,",
+          "start": 33.181,
+          "end": 33.387
+        },
+        {
+          "w": "lowest",
+          "start": 33.387,
+          "end": 33.877
+        },
+        {
+          "w": "in",
+          "start": 33.877,
+          "end": 34.112
+        },
+        {
+          "w": "the",
+          "start": 34.112,
+          "end": 34.411
+        },
+        {
+          "w": "universe.",
+          "start": 34.411,
+          "end": 35.062
+        }
+      ]
+    },
+    {
+      "beat": "loop",
+      "text": "And that is why...",
+      "imagePrompt": "A supermassive black hole surrounded by an glowing accretion disk in deep space, cinematic, dark atmospheric lighting, highly detailed",
+      "sfxHint": "rising tension",
+      "start": 35.36,
+      "end": 36.78,
+      "words": [
+        {
+          "w": "And",
+          "start": 35.36,
+          "end": 35.707
+        },
+        {
+          "w": "that",
+          "start": 35.707,
+          "end": 36.128
+        },
+        {
+          "w": "is",
+          "start": 36.128,
+          "end": 36.402
+        },
+        {
+          "w": "why...",
+          "start": 36.402,
+          "end": 36.789
+        }
+      ]
+    }
+  ],
+  "beats": [
+    {
+      "id": "hook",
+      "visual": "A terrifying supermassive black hole glowing ominously in deep space."
+    },
+    {
+      "id": "setup",
+      "visual": "A quiet cosmic void transitioning into dense glowing gas clouds."
+    },
+    {
+      "id": "quiz",
+      "visual": "Glow-in-the-dark audio wave pulses against a pitch-black background."
+    },
+    {
+      "id": "reveal",
+      "visual": "Massive spacetime shockwaves radiating out from the event horizon."
+    },
+    {
+      "id": "twist",
+      "visual": "A grand piano dissolving into a black hole across billions of light-years."
+    },
+    {
+      "id": "loop",
+      "visual": "A terrifying supermassive black hole glowing ominously in deep space."
+    }
+  ],
+  "voiceStatus": "kokoro:bm_george"
+}

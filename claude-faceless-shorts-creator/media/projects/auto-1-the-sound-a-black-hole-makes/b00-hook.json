@@ -1,0 +1,11 @@
+{
+  "prompt": "A supermassive black hole surrounded by an glowing accretion disk in deep space, cinematic, dark atmospheric lighting, highly detailed",
+  "engine": "pollinations",
+  "model": "flux",
+  "aspect_ratio": "9:16",
+  "image_size": "1K",
+  "width": 1080,
+  "height": 1920,
+  "seed": null,
+  "created": "2026-09-10T00:31:18"
+}
