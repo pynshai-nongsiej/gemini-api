@@ -190,15 +190,6 @@ show_status() {
     else
         printf "  %-30s %-8s ${C_RED}%-12s${C_RESET} %s\n" "Mission LDA Platform" "$LDA_PORT" "STOPPED" "-"
     fi
-
-    # Local Shorts Operator
-    local o_pid
-    o_pid=$(get_port_pid "$OPERATOR_PORT")
-    if [ -n "$o_pid" ]; then
-        printf "  %-30s %-8s ${C_GREEN}%-12s${C_RESET} %s\n" "Local Shorts Operator" "$OPERATOR_PORT" "RUNNING" "$o_pid"
-    else
-        printf "  %-30s %-8s ${C_RED}%-12s${C_RESET} %s\n" "Local Shorts Operator" "$OPERATOR_PORT" "STOPPED" "-"
-    fi
     echo -e "${C_BOLD}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${C_RESET}"
     echo ""
 }
@@ -300,15 +291,6 @@ case "$COMMAND" in
         print_endpoints
         echo -e "${C_DIM}Streaming Mission LDA logs (Press Ctrl+C to exit)...${C_RESET}"
         tail -f "$LOGS_DIR/lda.log"
-        ;;
-    operator)
-        banner
-        echo -e "${C_BOLD}Starting Local Shorts Operator (new video generator)...${C_RESET}"
-        start_gemini
-        start_operator
-        print_endpoints
-        echo -e "${C_DIM}Streaming Operator logs (Press Ctrl+C to exit)...${C_RESET}"
-        tail -f "$LOGS_DIR/operator.log"
         ;;
     all|start)
         banner
