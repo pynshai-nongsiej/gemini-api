@@ -73,15 +73,18 @@ need a re-run when Commons rate-limits: `python3 tools/fetch_sfx.py` resumes).
 Commons rate-limits hard (HTTP 429): the fetcher backs off automatically, but
 for a big refill run it in the background and expect several minutes.
 
-## Edit-format wiring (transitions + captions + SFX as one system)
+## Edit-format wiring (transitions + captions as one system)
 
 - `remotion/src/lib/transitions.tsx` — whip-pan / flash / glitch / wipe /
-  rewind overlays generated at every beat change (`transitionFor` in
-  `tools/make_short.py` mirrors the picker: reveal gets flash/rewind, twist
-  gets glitch/wipe).
-- `build_sfx_plan(..., pipeline)` — each cut cue matches its visual transition
-  (whip→whip swish, rewind→reverse, wipe→paper slide); finance adds a cash
-  register on the hook/reveal graphics.
+  rewind / flare overlays generated at every beat change (`transitionFor` in
+  `tools/make_short.py` mirrors the picker: space gets flare-on-reveal and a
+  whip-pan twist; history wipes carry the next date stamp).
+- **Audio is narration-first**: the rendered track is ONLY the Kokoro voice —
+  no music bed (opt-in via `--music`) and no library SFX. The SFX mappings
+  (`SFX_MAP`, `TRANSITION_SFX`) remain in `tools/make_short.py` for hand-built
+  plans only. The pipeline outputs exactly one file per short:
+  `shorts/<id>/output/<id>-final.mp4` — intermediates are deleted after the
+  final copy (`--keep-intermediates` opts out).
 - Captions take `highlight` — numbers/dollars/percents ("$612", "19%", "1981")
   burn in the accent color through the whole word, on top of the existing
   word-pop animation.
