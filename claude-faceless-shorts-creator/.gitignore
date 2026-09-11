@@ -26,3 +26,6 @@ ai-shorts/*/bakeoff/*.mp4
 # local editor config
 .vscode/
 operator/data/
+
+# local run logs
+logs/
