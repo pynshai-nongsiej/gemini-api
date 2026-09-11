@@ -22,7 +22,64 @@
       "motion": false,
       "sfxHint": "impact",
       "start": 0.25,
-      "end": 3.18
+      "end": 4.8,
+      "words": [
+        {
+          "w": "The",
+          "start": 0.25,
+          "end": 0.535
+        },
+        {
+          "w": "average",
+          "start": 0.535,
+          "end": 1.065
+        },
+        {
+          "w": "30-year-old",
+          "start": 1.065,
+          "end": 1.715
+        },
+        {
+          "w": "has",
+          "start": 1.715,
+          "end": 2.0
+        },
+        {
+          "w": "$5,400",
+          "start": 2.0,
+          "end": 2.347
+        },
+        {
+          "w": "in",
+          "start": 2.347,
+          "end": 2.572
+        },
+        {
+          "w": "checking.",
+          "start": 2.572,
+          "end": 3.195
+        },
+        {
+          "w": "You",
+          "start": 3.195,
+          "end": 3.48
+        },
+        {
+          "w": "probably",
+          "start": 3.48,
+          "end": 4.069
+        },
+        {
+          "w": "have",
+          "start": 4.069,
+          "end": 4.416
+        },
+        {
+          "w": "less.",
+          "start": 4.416,
+          "end": 4.795
+        }
+      ]
     },
     {
       "beat": "hook",
@@ -36,7 +93,64 @@
       "motion": false,
       "sfxHint": "tick",
       "start": 3.42,
-      "end": 6.36
+      "end": 8.13,
+      "words": [
+        {
+          "w": "Leaving",
+          "start": 3.42,
+          "end": 3.979
+        },
+        {
+          "w": "over",
+          "start": 3.979,
+          "end": 4.346
+        },
+        {
+          "w": "five",
+          "start": 4.346,
+          "end": 4.712
+        },
+        {
+          "w": "grand",
+          "start": 4.712,
+          "end": 5.143
+        },
+        {
+          "w": "in",
+          "start": 5.143,
+          "end": 5.382
+        },
+        {
+          "w": "checking",
+          "start": 5.382,
+          "end": 6.005
+        },
+        {
+          "w": "loses",
+          "start": 6.005,
+          "end": 6.435
+        },
+        {
+          "w": "exactly",
+          "start": 6.435,
+          "end": 6.995
+        },
+        {
+          "w": "$412",
+          "start": 6.995,
+          "end": 7.297
+        },
+        {
+          "w": "every",
+          "start": 7.297,
+          "end": 7.728
+        },
+        {
+          "w": "year.",
+          "start": 7.728,
+          "end": 8.13
+        }
+      ]
     },
     {
       "beat": "setup",
@@ -54,7 +168,64 @@
       "motion": false,
       "sfxHint": "whoosh",
       "start": 6.6,
-      "end": 9.53
+      "end": 11.61,
+      "words": [
+        {
+          "w": "Your",
+          "start": 6.6,
+          "end": 7.051
+        },
+        {
+          "w": "bank",
+          "start": 7.051,
+          "end": 7.502
+        },
+        {
+          "w": "pays",
+          "start": 7.502,
+          "end": 7.953
+        },
+        {
+          "w": "0.01%",
+          "start": 7.953,
+          "end": 8.325
+        },
+        {
+          "w": "but",
+          "start": 8.325,
+          "end": 8.697
+        },
+        {
+          "w": "lends",
+          "start": 8.697,
+          "end": 9.228
+        },
+        {
+          "w": "your",
+          "start": 9.228,
+          "end": 9.678
+        },
+        {
+          "w": "cash",
+          "start": 9.678,
+          "end": 10.129
+        },
+        {
+          "w": "overnight",
+          "start": 10.129,
+          "end": 10.975
+        },
+        {
+          "w": "at",
+          "start": 10.975,
+          "end": 11.268
+        },
+        {
+          "w": "5.3%.",
+          "start": 11.268,
+          "end": 11.605
+        }
+      ]
     },
     {
       "beat": "setup",
@@ -68,7 +239,59 @@
       "motion": false,
       "sfxHint": "tick",
       "start": 9.77,
-      "end": 12.44
+      "end": 12.72,
+      "words": [
+        {
+          "w": "That",
+          "start": 9.77,
+          "end": 10.015
+        },
+        {
+          "w": "spread",
+          "start": 10.015,
+          "end": 10.348
+        },
+        {
+          "w": "goes",
+          "start": 10.348,
+          "end": 10.593
+        },
+        {
+          "w": "straight",
+          "start": 10.593,
+          "end": 11.011
+        },
+        {
+          "w": "into",
+          "start": 11.011,
+          "end": 11.257
+        },
+        {
+          "w": "the",
+          "start": 11.257,
+          "end": 11.459
+        },
+        {
+          "w": "bank's",
+          "start": 11.459,
+          "end": 11.748
+        },
+        {
+          "w": "net",
+          "start": 11.748,
+          "end": 11.951
+        },
+        {
+          "w": "interest",
+          "start": 11.951,
+          "end": 12.368
+        },
+        {
+          "w": "margin.",
+          "start": 12.368,
+          "end": 12.724
+        }
+      ]
     },
     {
       "beat": "quiz",
@@ -82,7 +305,64 @@
       "motion": false,
       "sfxHint": "tick",
       "start": 12.68,
-      "end": 15.61
+      "end": 15.8,
+      "words": [
+        {
+          "w": "Pause.",
+          "start": 12.68,
+          "end": 13.026
+        },
+        {
+          "w": "Check",
+          "start": 13.026,
+          "end": 13.346
+        },
+        {
+          "w": "your",
+          "start": 13.346,
+          "end": 13.618
+        },
+        {
+          "w": "app",
+          "start": 13.618,
+          "end": 13.843
+        },
+        {
+          "w": "right",
+          "start": 13.843,
+          "end": 14.162
+        },
+        {
+          "w": "now.",
+          "start": 14.162,
+          "end": 14.413
+        },
+        {
+          "w": "How",
+          "start": 14.413,
+          "end": 14.637
+        },
+        {
+          "w": "much",
+          "start": 14.637,
+          "end": 14.91
+        },
+        {
+          "w": "is",
+          "start": 14.91,
+          "end": 15.086
+        },
+        {
+          "w": "sitting",
+          "start": 15.086,
+          "end": 15.501
+        },
+        {
+          "w": "idle?",
+          "start": 15.501,
+          "end": 15.8
+        }
+      ]
     },
     {
       "beat": "quiz",
@@ -96,7 +376,64 @@
       "motion": false,
       "sfxHint": "whoosh",
       "start": 15.85,
-      "end": 18.79
+      "end": 19.24,
+      "words": [
+        {
+          "w": "Comment",
+          "start": 15.85,
+          "end": 16.259
+        },
+        {
+          "w": "your",
+          "start": 16.259,
+          "end": 16.527
+        },
+        {
+          "w": "idle",
+          "start": 16.527,
+          "end": 16.795
+        },
+        {
+          "w": "cash",
+          "start": 16.795,
+          "end": 17.063
+        },
+        {
+          "w": "balance",
+          "start": 17.063,
+          "end": 17.472
+        },
+        {
+          "w": "below",
+          "start": 17.472,
+          "end": 17.787
+        },
+        {
+          "w": "if",
+          "start": 17.787,
+          "end": 17.961
+        },
+        {
+          "w": "you",
+          "start": 17.961,
+          "end": 18.182
+        },
+        {
+          "w": "dare",
+          "start": 18.182,
+          "end": 18.45
+        },
+        {
+          "w": "audit",
+          "start": 18.45,
+          "end": 18.765
+        },
+        {
+          "w": "yourself.",
+          "start": 18.765,
+          "end": 19.247
+        }
+      ]
     },
     {
       "beat": "reveal",
@@ -110,7 +447,69 @@
       "motion": true,
       "sfxHint": "riser",
       "start": 19.03,
-      "end": 22.23
+      "end": 23.32,
+      "words": [
+        {
+          "w": "Set",
+          "start": 19.03,
+          "end": 19.326
+        },
+        {
+          "w": "a",
+          "start": 19.326,
+          "end": 19.497
+        },
+        {
+          "w": "$1,000",
+          "start": 19.497,
+          "end": 19.856
+        },
+        {
+          "w": "checking",
+          "start": 19.856,
+          "end": 20.467
+        },
+        {
+          "w": "floor",
+          "start": 20.467,
+          "end": 20.889
+        },
+        {
+          "w": "and",
+          "start": 20.889,
+          "end": 21.185
+        },
+        {
+          "w": "sweep",
+          "start": 21.185,
+          "end": 21.608
+        },
+        {
+          "w": "the",
+          "start": 21.608,
+          "end": 21.905
+        },
+        {
+          "w": "rest",
+          "start": 21.905,
+          "end": 22.264
+        },
+        {
+          "w": "to",
+          "start": 22.264,
+          "end": 22.497
+        },
+        {
+          "w": "high",
+          "start": 22.497,
+          "end": 22.856
+        },
+        {
+          "w": "yield.",
+          "start": 22.856,
+          "end": 23.313
+        }
+      ]
     },
     {
       "beat": "reveal",
@@ -124,7 +523,64 @@
       "motion": false,
       "sfxHint": "cash register",
       "start": 22.47,
-      "end": 25.4
+      "end": 26.36,
+      "words": [
+        {
+          "w": "Treasury",
+          "start": 22.47,
+          "end": 23.015
+        },
+        {
+          "w": "money",
+          "start": 23.015,
+          "end": 23.391
+        },
+        {
+          "w": "market",
+          "start": 23.391,
+          "end": 23.823
+        },
+        {
+          "w": "sweeps",
+          "start": 23.823,
+          "end": 24.255
+        },
+        {
+          "w": "give",
+          "start": 24.255,
+          "end": 24.575
+        },
+        {
+          "w": "you",
+          "start": 24.575,
+          "end": 24.84
+        },
+        {
+          "w": "5%",
+          "start": 24.84,
+          "end": 24.992
+        },
+        {
+          "w": "with",
+          "start": 24.992,
+          "end": 25.312
+        },
+        {
+          "w": "zero",
+          "start": 25.312,
+          "end": 25.632
+        },
+        {
+          "w": "added",
+          "start": 25.632,
+          "end": 26.008
+        },
+        {
+          "w": "risk.",
+          "start": 26.008,
+          "end": 26.359
+        }
+      ]
     },
     {
       "beat": "twist",
@@ -138,7 +594,64 @@
       "motion": false,
       "sfxHint": "impact",
       "start": 25.64,
-      "end": 28.58
+      "end": 30.65,
+      "words": [
+        {
+          "w": "Banks",
+          "start": 25.64,
+          "end": 26.085
+        },
+        {
+          "w": "set",
+          "start": 26.085,
+          "end": 26.398
+        },
+        {
+          "w": "sweep",
+          "start": 26.398,
+          "end": 26.844
+        },
+        {
+          "w": "defaults",
+          "start": 26.844,
+          "end": 27.489
+        },
+        {
+          "w": "to",
+          "start": 27.489,
+          "end": 27.735
+        },
+        {
+          "w": "0.01%",
+          "start": 27.735,
+          "end": 28.048
+        },
+        {
+          "w": "because",
+          "start": 28.048,
+          "end": 28.627
+        },
+        {
+          "w": "lazy",
+          "start": 28.627,
+          "end": 29.006
+        },
+        {
+          "w": "money",
+          "start": 29.006,
+          "end": 29.452
+        },
+        {
+          "w": "funds",
+          "start": 29.452,
+          "end": 29.897
+        },
+        {
+          "w": "dividends.",
+          "start": 29.897,
+          "end": 30.645
+        }
+      ]
     },
     {
       "beat": "loop",
@@ -152,7 +665,64 @@
       "motion": false,
       "sfxHint": "tick",
       "start": 28.82,
-      "end": 31.75
+      "end": 33.53,
+      "words": [
+        {
+          "w": "And",
+          "start": 28.82,
+          "end": 29.14
+        },
+        {
+          "w": "that",
+          "start": 29.14,
+          "end": 29.528
+        },
+        {
+          "w": "is",
+          "start": 29.528,
+          "end": 29.779
+        },
+        {
+          "w": "why",
+          "start": 29.779,
+          "end": 30.099
+        },
+        {
+          "w": "idle",
+          "start": 30.099,
+          "end": 30.487
+        },
+        {
+          "w": "balances",
+          "start": 30.487,
+          "end": 31.146
+        },
+        {
+          "w": "forfeit",
+          "start": 31.146,
+          "end": 31.738
+        },
+        {
+          "w": "exactly",
+          "start": 31.738,
+          "end": 32.329
+        },
+        {
+          "w": "$412",
+          "start": 32.329,
+          "end": 32.649
+        },
+        {
+          "w": "every",
+          "start": 32.649,
+          "end": 33.105
+        },
+        {
+          "w": "year.",
+          "start": 33.105,
+          "end": 33.53
+        }
+      ]
     }
   ],
   "beats": [
@@ -181,6 +751,6 @@
       "visual": "The $412 counter returns full-screen over the opening phone background, seamlessly looping back to the hook."
     }
   ],
-  "voiceStatus": "pending:kokoro",
+  "voiceStatus": "kokoro:bm_george",
   "pipeline": "finance"
 }

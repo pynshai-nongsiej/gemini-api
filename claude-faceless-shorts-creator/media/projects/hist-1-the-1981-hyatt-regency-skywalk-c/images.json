@@ -21,6 +21,11 @@
         1494,
         1997
       ]
+    },
+    "src_b": "b00-hook-b.jpg",
+    "src_b_info": {
+      "source": "wikimedia",
+      "title": "1981-1982 building technology project summaries (IA 19811982building4466rauf).pd"
     }
   },
   {
@@ -45,6 +50,11 @@
         1531,
         1997
       ]
+    },
+    "src_b": "b01-setup-b.jpg",
+    "src_b_info": {
+      "source": "wikimedia",
+      "title": "Building technology publications, supplement 7 - 1982 (IA buildingtechnolo4577be"
     }
   },
   {
@@ -69,6 +79,11 @@
         2529,
         1997
       ]
+    },
+    "src_b": "b02-setup-b.jpg",
+    "src_b_info": {
+      "source": "wikimedia",
+      "title": "Kansas City Hyatt Regency Walkways Collapse 11.gif"
     }
   },
   {
@@ -93,6 +108,11 @@
         2168,
         1997
       ]
+    },
+    "src_b": "b03-quiz-b.jpg",
+    "src_b_info": {
+      "source": "wikimedia",
+      "title": "Hyatt regency bolt.jpg"
     }
   },
   {
@@ -117,6 +137,11 @@
         2662,
         1997
       ]
+    },
+    "src_b": "b04-reveal-b.jpg",
+    "src_b_info": {
+      "source": "wikimedia",
+      "title": "Hyatt regency bolt.jpg"
     }
   },
   {
@@ -141,6 +166,11 @@
         2936,
         1997
       ]
+    },
+    "src_b": "b05-reveal-b.jpg",
+    "src_b_info": {
+      "source": "wikimedia",
+      "title": "Hyatt regency bolt.jpg"
     }
   },
   {
@@ -165,6 +195,11 @@
         2938,
         1997
       ]
+    },
+    "src_b": "b06-twist-b.jpg",
+    "src_b_info": {
+      "source": "wikimedia",
+      "title": "1981-1982 building technology project summaries (IA 19811982building4466rauf).pd"
     }
   },
   {
@@ -178,7 +213,12 @@
     "query": "hyatt regency skywalk",
     "creator": "Silver181",
     "year": "2025",
-    "license": "CC0"
+    "license": "CC0",
+    "src_b": "b07-twist-b.jpg",
+    "src_b_info": {
+      "source": "wikimedia",
+      "title": "Hyatt regency bolt.jpg"
+    }
   },
   {
     "beat": "loop",
@@ -202,6 +242,11 @@
         1226,
         1997
       ]
+    },
+    "src_b": "b08-loop-b.jpg",
+    "src_b_info": {
+      "source": "wikimedia",
+      "title": "1981-1982 building technology project summaries (IA 19811982building4466rauf).pd"
     }
   }
 ]

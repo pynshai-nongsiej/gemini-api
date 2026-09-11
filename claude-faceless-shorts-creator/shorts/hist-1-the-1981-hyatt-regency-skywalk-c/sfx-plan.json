@@ -17,6 +17,14 @@
       "cue": "sfxHint 'impact'"
     },
     {
+      "at_s": 5.0,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -10,
+      "shot": "MainScene",
+      "cue": "transition wipe: setup",
+      "optional": true
+    },
+    {
       "at_s": 10.12,
       "sfx_id": "transition-whip",
       "gain_db": -10,
@@ -41,10 +49,26 @@
     },
     {
       "at_s": 18.16,
+      "sfx_id": "whoosh-reverse",
+      "gain_db": -10,
+      "shot": "MainScene",
+      "cue": "transition rewind: reveal",
+      "optional": true
+    },
+    {
+      "at_s": 18.16,
       "sfx_id": "impact-deep-soft",
       "gain_db": -7,
       "shot": "MainScene",
       "cue": "the reveal lands"
+    },
+    {
+      "at_s": 23.28,
+      "sfx_id": "whoosh-reverse",
+      "gain_db": -10,
+      "shot": "MainScene",
+      "cue": "transition rewind: reveal",
+      "optional": true
     },
     {
       "at_s": 23.33,
@@ -61,11 +85,35 @@
       "cue": "the reveal lands"
     },
     {
+      "at_s": 27.67,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -10,
+      "shot": "MainScene",
+      "cue": "transition wipe: twist",
+      "optional": true
+    },
+    {
+      "at_s": 32.05,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -10,
+      "shot": "MainScene",
+      "cue": "transition wipe: twist",
+      "optional": true
+    },
+    {
       "at_s": 36.44,
       "sfx_id": "transition-whip",
       "gain_db": -10,
       "shot": "MainScene",
       "cue": "transition whip-pan: loop",
+      "optional": true
+    },
+    {
+      "at_s": 36.44,
+      "sfx_id": "page-flip",
+      "gain_db": -14,
+      "shot": "MainScene",
+      "cue": "loop page back to hook",
       "optional": true
     },
     {
