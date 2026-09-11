@@ -22,62 +22,62 @@
       "motion": false,
       "sfxHint": "impact",
       "start": 0.25,
-      "end": 4.8,
+      "end": 4.83,
       "words": [
         {
           "w": "The",
           "start": 0.25,
-          "end": 0.535
+          "end": 0.538
         },
         {
           "w": "average",
-          "start": 0.535,
-          "end": 1.065
+          "start": 0.538,
+          "end": 1.07
         },
         {
           "w": "30-year-old",
-          "start": 1.065,
-          "end": 1.715
+          "start": 1.07,
+          "end": 1.725
         },
         {
           "w": "has",
-          "start": 1.715,
-          "end": 2.0
+          "start": 1.725,
+          "end": 2.013
         },
         {
           "w": "$5,400",
-          "start": 2.0,
-          "end": 2.347
+          "start": 2.013,
+          "end": 2.362
         },
         {
           "w": "in",
-          "start": 2.347,
-          "end": 2.572
+          "start": 2.362,
+          "end": 2.588
         },
         {
           "w": "checking.",
-          "start": 2.572,
-          "end": 3.195
+          "start": 2.588,
+          "end": 3.215
         },
         {
           "w": "You",
-          "start": 3.195,
-          "end": 3.48
+          "start": 3.215,
+          "end": 3.503
         },
         {
           "w": "probably",
-          "start": 3.48,
-          "end": 4.069
+          "start": 3.503,
+          "end": 4.097
         },
         {
           "w": "have",
-          "start": 4.069,
-          "end": 4.416
+          "start": 4.097,
+          "end": 4.446
         },
         {
           "w": "less.",
-          "start": 4.416,
-          "end": 4.795
+          "start": 4.446,
+          "end": 4.828
         }
       ]
     },
@@ -93,62 +93,62 @@
       "motion": false,
       "sfxHint": "tick",
       "start": 3.42,
-      "end": 8.13,
+      "end": 7.93,
       "words": [
         {
           "w": "Leaving",
           "start": 3.42,
-          "end": 3.979
+          "end": 3.956
         },
         {
           "w": "over",
-          "start": 3.979,
-          "end": 4.346
+          "start": 3.956,
+          "end": 4.307
         },
         {
           "w": "five",
-          "start": 4.346,
-          "end": 4.712
+          "start": 4.307,
+          "end": 4.658
         },
         {
           "w": "grand",
-          "start": 4.712,
-          "end": 5.143
+          "start": 4.658,
+          "end": 5.071
         },
         {
           "w": "in",
-          "start": 5.143,
-          "end": 5.382
+          "start": 5.071,
+          "end": 5.299
         },
         {
           "w": "checking",
-          "start": 5.382,
-          "end": 6.005
+          "start": 5.299,
+          "end": 5.897
         },
         {
           "w": "loses",
-          "start": 6.005,
-          "end": 6.435
+          "start": 5.897,
+          "end": 6.309
         },
         {
           "w": "exactly",
-          "start": 6.435,
-          "end": 6.995
+          "start": 6.309,
+          "end": 6.845
         },
         {
           "w": "$412",
-          "start": 6.995,
-          "end": 7.297
+          "start": 6.845,
+          "end": 7.135
         },
         {
           "w": "every",
-          "start": 7.297,
-          "end": 7.728
+          "start": 7.135,
+          "end": 7.548
         },
         {
           "w": "year.",
-          "start": 7.728,
-          "end": 8.13
+          "start": 7.548,
+          "end": 7.933
         }
       ]
     },
@@ -168,62 +168,62 @@
       "motion": false,
       "sfxHint": "whoosh",
       "start": 6.6,
-      "end": 11.61,
+      "end": 11.52,
       "words": [
         {
           "w": "Your",
           "start": 6.6,
-          "end": 7.051
+          "end": 7.044
         },
         {
           "w": "bank",
-          "start": 7.051,
-          "end": 7.502
+          "start": 7.044,
+          "end": 7.488
         },
         {
           "w": "pays",
-          "start": 7.502,
-          "end": 7.953
+          "start": 7.488,
+          "end": 7.931
         },
         {
           "w": "0.01%",
-          "start": 7.953,
-          "end": 8.325
+          "start": 7.931,
+          "end": 8.297
         },
         {
           "w": "but",
-          "start": 8.325,
-          "end": 8.697
+          "start": 8.297,
+          "end": 8.663
         },
         {
           "w": "lends",
-          "start": 8.697,
-          "end": 9.228
+          "start": 8.663,
+          "end": 9.185
         },
         {
           "w": "your",
-          "start": 9.228,
-          "end": 9.678
+          "start": 9.185,
+          "end": 9.628
         },
         {
           "w": "cash",
-          "start": 9.678,
-          "end": 10.129
+          "start": 9.628,
+          "end": 10.072
         },
         {
           "w": "overnight",
-          "start": 10.129,
-          "end": 10.975
+          "start": 10.072,
+          "end": 10.904
         },
         {
           "w": "at",
-          "start": 10.975,
-          "end": 11.268
+          "start": 10.904,
+          "end": 11.192
         },
         {
           "w": "5.3%.",
-          "start": 11.268,
-          "end": 11.605
+          "start": 11.192,
+          "end": 11.523
         }
       ]
     },
@@ -239,57 +239,57 @@
       "motion": false,
       "sfxHint": "tick",
       "start": 9.77,
-      "end": 12.72,
+      "end": 12.64,
       "words": [
         {
           "w": "That",
           "start": 9.77,
-          "end": 10.015
+          "end": 10.008
         },
         {
           "w": "spread",
-          "start": 10.015,
-          "end": 10.348
+          "start": 10.008,
+          "end": 10.329
         },
         {
           "w": "goes",
-          "start": 10.348,
-          "end": 10.593
+          "start": 10.329,
+          "end": 10.567
         },
         {
           "w": "straight",
-          "start": 10.593,
-          "end": 11.011
+          "start": 10.567,
+          "end": 10.972
         },
         {
           "w": "into",
-          "start": 11.011,
-          "end": 11.257
+          "start": 10.972,
+          "end": 11.21
         },
         {
           "w": "the",
-          "start": 11.257,
-          "end": 11.459
+          "start": 11.21,
+          "end": 11.406
         },
         {
           "w": "bank's",
-          "start": 11.459,
-          "end": 11.748
+          "start": 11.406,
+          "end": 11.685
         },
         {
           "w": "net",
-          "start": 11.748,
-          "end": 11.951
+          "start": 11.685,
+          "end": 11.881
         },
         {
           "w": "interest",
-          "start": 11.951,
-          "end": 12.368
+          "start": 11.881,
+          "end": 12.286
         },
         {
           "w": "margin.",
-          "start": 12.368,
-          "end": 12.724
+          "start": 12.286,
+          "end": 12.63
         }
       ]
     },
@@ -376,62 +376,62 @@
       "motion": false,
       "sfxHint": "whoosh",
       "start": 15.85,
-      "end": 19.24,
+      "end": 19.05,
       "words": [
         {
           "w": "Comment",
           "start": 15.85,
-          "end": 16.259
+          "end": 16.235
         },
         {
           "w": "your",
-          "start": 16.259,
-          "end": 16.527
+          "start": 16.235,
+          "end": 16.488
         },
         {
           "w": "idle",
-          "start": 16.527,
-          "end": 16.795
+          "start": 16.488,
+          "end": 16.74
         },
         {
           "w": "cash",
-          "start": 16.795,
-          "end": 17.063
+          "start": 16.74,
+          "end": 16.993
         },
         {
           "w": "balance",
-          "start": 17.063,
-          "end": 17.472
+          "start": 16.993,
+          "end": 17.378
         },
         {
           "w": "below",
-          "start": 17.472,
-          "end": 17.787
+          "start": 17.378,
+          "end": 17.675
         },
         {
           "w": "if",
-          "start": 17.787,
-          "end": 17.961
+          "start": 17.675,
+          "end": 17.838
         },
         {
           "w": "you",
-          "start": 17.961,
-          "end": 18.182
+          "start": 17.838,
+          "end": 18.047
         },
         {
           "w": "dare",
-          "start": 18.182,
-          "end": 18.45
+          "start": 18.047,
+          "end": 18.299
         },
         {
           "w": "audit",
-          "start": 18.45,
-          "end": 18.765
+          "start": 18.299,
+          "end": 18.596
         },
         {
           "w": "yourself.",
-          "start": 18.765,
-          "end": 19.247
+          "start": 18.596,
+          "end": 19.05
         }
       ]
     },
@@ -447,67 +447,67 @@
       "motion": true,
       "sfxHint": "riser",
       "start": 19.03,
-      "end": 23.32,
+      "end": 23.17,
       "words": [
         {
           "w": "Set",
           "start": 19.03,
-          "end": 19.326
+          "end": 19.316
         },
         {
           "w": "a",
-          "start": 19.326,
-          "end": 19.497
+          "start": 19.316,
+          "end": 19.481
         },
         {
           "w": "$1,000",
-          "start": 19.497,
-          "end": 19.856
+          "start": 19.481,
+          "end": 19.828
         },
         {
           "w": "checking",
-          "start": 19.856,
-          "end": 20.467
+          "start": 19.828,
+          "end": 20.418
         },
         {
           "w": "floor",
-          "start": 20.467,
-          "end": 20.889
+          "start": 20.418,
+          "end": 20.825
         },
         {
           "w": "and",
-          "start": 20.889,
-          "end": 21.185
+          "start": 20.825,
+          "end": 21.112
         },
         {
           "w": "sweep",
-          "start": 21.185,
-          "end": 21.608
+          "start": 21.112,
+          "end": 21.519
         },
         {
           "w": "the",
-          "start": 21.608,
-          "end": 21.905
+          "start": 21.519,
+          "end": 21.805
         },
         {
           "w": "rest",
-          "start": 21.905,
-          "end": 22.264
+          "start": 21.805,
+          "end": 22.152
         },
         {
           "w": "to",
-          "start": 22.264,
-          "end": 22.497
+          "start": 22.152,
+          "end": 22.378
         },
         {
           "w": "high",
-          "start": 22.497,
-          "end": 22.856
+          "start": 22.378,
+          "end": 22.725
         },
         {
           "w": "yield.",
-          "start": 22.856,
-          "end": 23.313
+          "start": 22.725,
+          "end": 23.165
         }
       ]
     },
@@ -523,62 +523,62 @@
       "motion": false,
       "sfxHint": "cash register",
       "start": 22.47,
-      "end": 26.36,
+      "end": 26.08,
       "words": [
         {
           "w": "Treasury",
           "start": 22.47,
-          "end": 23.015
+          "end": 22.975
         },
         {
           "w": "money",
-          "start": 23.015,
-          "end": 23.391
+          "start": 22.975,
+          "end": 23.325
         },
         {
           "w": "market",
-          "start": 23.391,
-          "end": 23.823
+          "start": 23.325,
+          "end": 23.726
         },
         {
           "w": "sweeps",
-          "start": 23.823,
-          "end": 24.255
+          "start": 23.726,
+          "end": 24.128
         },
         {
           "w": "give",
-          "start": 24.255,
-          "end": 24.575
+          "start": 24.128,
+          "end": 24.425
         },
         {
           "w": "you",
-          "start": 24.575,
-          "end": 24.84
+          "start": 24.425,
+          "end": 24.67
         },
         {
           "w": "5%",
-          "start": 24.84,
-          "end": 24.992
+          "start": 24.67,
+          "end": 24.811
         },
         {
           "w": "with",
-          "start": 24.992,
-          "end": 25.312
+          "start": 24.811,
+          "end": 25.108
         },
         {
           "w": "zero",
-          "start": 25.312,
-          "end": 25.632
+          "start": 25.108,
+          "end": 25.405
         },
         {
           "w": "added",
-          "start": 25.632,
-          "end": 26.008
+          "start": 25.405,
+          "end": 25.755
         },
         {
           "w": "risk.",
-          "start": 26.008,
-          "end": 26.359
+          "start": 25.755,
+          "end": 26.08
         }
       ]
     },
@@ -594,62 +594,62 @@
       "motion": false,
       "sfxHint": "impact",
       "start": 25.64,
-      "end": 30.65,
+      "end": 30.55,
       "words": [
         {
           "w": "Banks",
           "start": 25.64,
-          "end": 26.085
+          "end": 26.077
         },
         {
           "w": "set",
-          "start": 26.085,
-          "end": 26.398
+          "start": 26.077,
+          "end": 26.384
         },
         {
           "w": "sweep",
-          "start": 26.398,
-          "end": 26.844
+          "start": 26.384,
+          "end": 26.821
         },
         {
           "w": "defaults",
-          "start": 26.844,
-          "end": 27.489
+          "start": 26.821,
+          "end": 27.453
         },
         {
           "w": "to",
-          "start": 27.489,
-          "end": 27.735
+          "start": 27.453,
+          "end": 27.694
         },
         {
           "w": "0.01%",
-          "start": 27.735,
-          "end": 28.048
+          "start": 27.694,
+          "end": 28.001
         },
         {
           "w": "because",
-          "start": 28.048,
-          "end": 28.627
+          "start": 28.001,
+          "end": 28.568
         },
         {
           "w": "lazy",
-          "start": 28.627,
-          "end": 29.006
+          "start": 28.568,
+          "end": 28.94
         },
         {
           "w": "money",
-          "start": 29.006,
-          "end": 29.452
+          "start": 28.94,
+          "end": 29.377
         },
         {
           "w": "funds",
-          "start": 29.452,
-          "end": 29.897
+          "start": 29.377,
+          "end": 29.814
         },
         {
           "w": "dividends.",
-          "start": 29.897,
-          "end": 30.645
+          "start": 29.814,
+          "end": 30.547
         }
       ]
     },
@@ -665,62 +665,62 @@
       "motion": false,
       "sfxHint": "tick",
       "start": 28.82,
-      "end": 33.53,
+      "end": 33.24,
       "words": [
         {
           "w": "And",
           "start": 28.82,
-          "end": 29.14
+          "end": 29.12
         },
         {
           "w": "that",
-          "start": 29.14,
-          "end": 29.528
+          "start": 29.12,
+          "end": 29.483
         },
         {
           "w": "is",
-          "start": 29.528,
-          "end": 29.779
+          "start": 29.483,
+          "end": 29.719
         },
         {
           "w": "why",
-          "start": 29.779,
-          "end": 30.099
+          "start": 29.719,
+          "end": 30.019
         },
         {
           "w": "idle",
-          "start": 30.099,
-          "end": 30.487
+          "start": 30.019,
+          "end": 30.382
         },
         {
           "w": "balances",
-          "start": 30.487,
-          "end": 31.146
+          "start": 30.382,
+          "end": 31.001
         },
         {
           "w": "forfeit",
-          "start": 31.146,
-          "end": 31.738
+          "start": 31.001,
+          "end": 31.555
         },
         {
           "w": "exactly",
-          "start": 31.738,
-          "end": 32.329
+          "start": 31.555,
+          "end": 32.109
         },
         {
           "w": "$412",
-          "start": 32.329,
-          "end": 32.649
+          "start": 32.109,
+          "end": 32.409
         },
         {
           "w": "every",
-          "start": 32.649,
-          "end": 33.105
+          "start": 32.409,
+          "end": 32.836
         },
         {
           "w": "year.",
-          "start": 33.105,
-          "end": 33.53
+          "start": 32.836,
+          "end": 33.235
         }
       ]
     }
@@ -751,6 +751,6 @@
       "visual": "The $412 counter returns full-screen over the opening phone background, seamlessly looping back to the hook."
     }
   ],
-  "voiceStatus": "kokoro:bm_george",
+  "voiceStatus": "kokoro:bm_lewis",
   "pipeline": "finance"
 }

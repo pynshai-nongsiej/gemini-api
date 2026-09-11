@@ -22,31 +22,31 @@
       "motion": false,
       "sfxHint": "impact",
       "start": 0.25,
-      "end": 4.11,
+      "end": 4.1,
       "words": [
         {
           "w": "8.2",
           "start": 0.25,
-          "end": 0.423
+          "end": 0.422
         },
         {
           "w": "percent",
-          "start": 0.423,
-          "end": 0.828
+          "start": 0.422,
+          "end": 0.827
         },
         {
           "w": "of",
-          "start": 0.828,
+          "start": 0.827,
           "end": 1.0
         },
         {
           "w": "your",
           "start": 1.0,
-          "end": 1.265
+          "end": 1.266
         },
         {
           "w": "liquid",
-          "start": 1.265,
+          "start": 1.266,
           "end": 1.624
         },
         {
@@ -103,67 +103,67 @@
       "motion": false,
       "sfxHint": "tick",
       "start": 4.15,
-      "end": 8.24,
+      "end": 8.09,
       "words": [
         {
           "w": "Leaving",
           "start": 4.15,
-          "end": 4.578
+          "end": 4.563
         },
         {
           "w": "ten",
-          "start": 4.578,
-          "end": 4.81
+          "start": 4.563,
+          "end": 4.786
         },
         {
           "w": "thousand",
-          "start": 4.81,
-          "end": 5.288
+          "start": 4.786,
+          "end": 5.247
         },
         {
           "w": "dollars",
-          "start": 5.288,
-          "end": 5.716
+          "start": 5.247,
+          "end": 5.66
         },
         {
           "w": "in",
-          "start": 5.716,
-          "end": 5.898
+          "start": 5.66,
+          "end": 5.835
         },
         {
           "w": "checking",
-          "start": 5.898,
-          "end": 6.376
+          "start": 5.835,
+          "end": 6.296
         },
         {
           "w": "pays",
-          "start": 6.376,
-          "end": 6.657
+          "start": 6.296,
+          "end": 6.567
         },
         {
           "w": "zero",
-          "start": 6.657,
-          "end": 6.938
+          "start": 6.567,
+          "end": 6.838
         },
         {
           "w": "point",
-          "start": 6.938,
-          "end": 7.268
+          "start": 6.838,
+          "end": 7.155
         },
         {
           "w": "zero",
-          "start": 7.268,
-          "end": 7.549
+          "start": 7.155,
+          "end": 7.426
         },
         {
           "w": "one",
-          "start": 7.549,
-          "end": 7.781
+          "start": 7.426,
+          "end": 7.649
         },
         {
           "w": "percent.",
-          "start": 7.781,
-          "end": 8.236
+          "start": 7.649,
+          "end": 8.088
         }
       ]
     },
@@ -194,21 +194,21 @@
         {
           "w": "sweeps",
           "start": 8.273,
-          "end": 8.646
+          "end": 8.647
         },
         {
           "w": "your",
-          "start": 8.646,
+          "start": 8.647,
           "end": 8.922
         },
         {
           "w": "cash",
           "start": 8.922,
-          "end": 9.199
+          "end": 9.198
         },
         {
           "w": "overnight",
-          "start": 9.199,
+          "start": 9.198,
           "end": 9.716
         },
         {
@@ -219,26 +219,26 @@
         {
           "w": "lends",
           "start": 9.943,
-          "end": 10.268
+          "end": 10.267
         },
         {
           "w": "it",
-          "start": 10.268,
+          "start": 10.267,
           "end": 10.447
         },
         {
           "w": "at",
           "start": 10.447,
-          "end": 10.626
+          "end": 10.627
         },
         {
           "w": "five",
-          "start": 10.626,
-          "end": 10.903
+          "start": 10.627,
+          "end": 10.902
         },
         {
           "w": "percent.",
-          "start": 10.903,
+          "start": 10.902,
           "end": 11.35
         }
       ]
@@ -255,7 +255,7 @@
       "motion": false,
       "sfxHint": "tick",
       "start": 11.4,
-      "end": 14.7,
+      "end": 14.69,
       "words": [
         {
           "w": "Pause",
@@ -290,21 +290,21 @@
         {
           "w": "cash",
           "start": 13.28,
-          "end": 13.557
+          "end": 13.556
         },
         {
           "w": "is",
-          "start": 13.557,
-          "end": 13.736
+          "start": 13.556,
+          "end": 13.737
         },
         {
           "w": "in",
-          "start": 13.736,
-          "end": 13.917
+          "start": 13.737,
+          "end": 13.916
         },
         {
           "w": "your",
-          "start": 13.917,
+          "start": 13.916,
           "end": 14.193
         },
         {
@@ -326,16 +326,16 @@
       "motion": false,
       "sfxHint": "tick",
       "start": 14.74,
-      "end": 18.03,
+      "end": 18.04,
       "words": [
         {
           "w": "Comment",
           "start": 14.74,
-          "end": 15.172
+          "end": 15.171
         },
         {
           "w": "your",
-          "start": 15.172,
+          "start": 15.171,
           "end": 15.455
         },
         {
@@ -361,21 +361,21 @@
         {
           "w": "if",
           "start": 16.786,
-          "end": 16.97
+          "end": 16.969
         },
         {
           "w": "you",
-          "start": 16.97,
+          "start": 16.969,
           "end": 17.203
         },
         {
           "w": "dare",
           "start": 17.203,
-          "end": 17.486
+          "end": 17.487
         },
         {
           "w": "to",
-          "start": 17.486,
+          "start": 17.487,
           "end": 17.67
         },
         {
@@ -397,21 +397,21 @@
       "motion": true,
       "sfxHint": "impact",
       "start": 18.08,
-      "end": 21.66,
+      "end": 21.65,
       "words": [
         {
           "w": "Cap",
           "start": 18.08,
-          "end": 18.316
+          "end": 18.317
         },
         {
           "w": "checking",
-          "start": 18.316,
-          "end": 18.804
+          "start": 18.317,
+          "end": 18.805
         },
         {
           "w": "at",
-          "start": 18.804,
+          "start": 18.805,
           "end": 18.991
         },
         {
@@ -442,11 +442,11 @@
         {
           "w": "rest",
           "start": 20.526,
-          "end": 20.812
+          "end": 20.813
         },
         {
           "w": "to",
-          "start": 20.812,
+          "start": 20.813,
           "end": 20.998
         },
         {
@@ -477,62 +477,62 @@
       "motion": false,
       "sfxHint": "cash register",
       "start": 21.7,
-      "end": 25.38,
+      "end": 25.21,
       "words": [
         {
           "w": "That",
           "start": 21.7,
-          "end": 21.962
+          "end": 21.948
         },
         {
           "w": "simple",
-          "start": 21.962,
-          "end": 22.314
+          "start": 21.948,
+          "end": 22.284
         },
         {
           "w": "move",
-          "start": 22.314,
-          "end": 22.575
+          "start": 22.284,
+          "end": 22.532
         },
         {
           "w": "recovers",
-          "start": 22.575,
-          "end": 23.019
+          "start": 22.532,
+          "end": 22.955
         },
         {
           "w": "four",
-          "start": 23.019,
-          "end": 23.281
+          "start": 22.955,
+          "end": 23.203
         },
         {
           "w": "hundred",
-          "start": 23.281,
-          "end": 23.679
+          "start": 23.203,
+          "end": 23.582
         },
         {
           "w": "twelve",
-          "start": 23.679,
-          "end": 24.032
+          "start": 23.582,
+          "end": 23.917
         },
         {
           "w": "dollars",
-          "start": 24.032,
-          "end": 24.43
+          "start": 23.917,
+          "end": 24.296
         },
         {
           "w": "every",
-          "start": 24.43,
-          "end": 24.737
+          "start": 24.296,
+          "end": 24.588
         },
         {
           "w": "single",
-          "start": 24.737,
-          "end": 25.09
+          "start": 24.588,
+          "end": 24.923
         },
         {
           "w": "year.",
-          "start": 25.09,
-          "end": 25.376
+          "start": 24.923,
+          "end": 25.195
         }
       ]
     },
@@ -563,11 +563,11 @@
         {
           "w": "rely",
           "start": 25.906,
-          "end": 26.16
+          "end": 26.161
         },
         {
           "w": "on",
-          "start": 26.16,
+          "start": 26.161,
           "end": 26.326
         },
         {
@@ -634,31 +634,31 @@
         {
           "w": "that",
           "start": 28.915,
-          "end": 29.224
+          "end": 29.223
         },
         {
           "w": "is",
-          "start": 29.224,
+          "start": 29.223,
           "end": 29.424
         },
         {
           "w": "exactly",
           "start": 29.424,
-          "end": 29.895
+          "end": 29.894
         },
         {
           "w": "why",
-          "start": 29.895,
-          "end": 30.15
+          "start": 29.894,
+          "end": 30.149
         },
         {
           "w": "eight",
-          "start": 30.15,
-          "end": 30.512
+          "start": 30.149,
+          "end": 30.513
         },
         {
           "w": "point",
-          "start": 30.512,
+          "start": 30.513,
           "end": 30.875
         },
         {
@@ -710,6 +710,6 @@
       "visual": "Screen snaps back to the identical 8.2% counter graphic and vault backdrop as frame 0."
     }
   ],
-  "voiceStatus": "kokoro:bm_george",
+  "voiceStatus": "kokoro:bm_lewis",
   "pipeline": "finance"
 }

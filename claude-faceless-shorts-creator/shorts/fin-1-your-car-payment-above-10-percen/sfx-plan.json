@@ -10,171 +10,18 @@
   },
   "events": [
     {
-      "at_s": 0.3,
-      "sfx_id": "impact-deep-soft",
-      "gain_db": -8,
-      "shot": "MainScene",
-      "cue": "sfxHint 'impact'"
-    },
-    {
-      "at_s": 0.35,
-      "sfx_id": "cash-register",
-      "gain_db": -12,
-      "shot": "MainScene",
-      "cue": "percent graphic lands",
-      "optional": true
-    },
-    {
-      "at_s": 4.81,
-      "sfx_id": "whoosh-soft",
-      "gain_db": -10,
-      "shot": "MainScene",
-      "cue": "transition wipe: setup",
-      "optional": true
-    },
-    {
-      "at_s": 4.86,
-      "sfx_id": "clock-tick-soft",
-      "gain_db": -8,
-      "shot": "MainScene",
-      "cue": "sfxHint 'tick'"
-    },
-    {
-      "at_s": 9.74,
-      "sfx_id": "transition-whip",
-      "gain_db": -10,
-      "shot": "MainScene",
-      "cue": "transition whip-pan: setup",
-      "optional": true
-    },
-    {
-      "at_s": 9.79,
-      "sfx_id": "whoosh-soft",
-      "gain_db": -8,
-      "shot": "MainScene",
-      "cue": "sfxHint 'whoosh'"
-    },
-    {
-      "at_s": 14.3,
-      "sfx_id": "glitch-zap",
-      "gain_db": -10,
-      "shot": "MainScene",
-      "cue": "transition glitch: quiz",
-      "optional": true
-    },
-    {
-      "at_s": 14.35,
-      "sfx_id": "clock-tick-soft",
-      "gain_db": -8,
-      "shot": "MainScene",
-      "cue": "sfxHint 'tick'"
-    },
-    {
       "at_s": 18.47,
       "sfx_id": "impact-deep-soft",
-      "gain_db": -10,
+      "gain_db": -13,
       "shot": "MainScene",
-      "cue": "transition flash: reveal",
-      "optional": true
-    },
-    {
-      "at_s": 18.52,
-      "sfx_id": "riser-soft",
-      "gain_db": -8,
-      "shot": "MainScene",
-      "cue": "sfxHint 'riser'"
-    },
-    {
-      "at_s": 18.57,
-      "sfx_id": "cash-register",
-      "gain_db": -12,
-      "shot": "MainScene",
-      "cue": "rule graphic lands",
-      "optional": true
+      "cue": "the reveal lands"
     },
     {
       "at_s": 23.03,
       "sfx_id": "impact-deep-soft",
-      "gain_db": -10,
+      "gain_db": -13,
       "shot": "MainScene",
-      "cue": "transition flash: reveal",
-      "optional": true
-    },
-    {
-      "at_s": 23.08,
-      "sfx_id": "whoosh-soft",
-      "gain_db": -8,
-      "shot": "MainScene",
-      "cue": "sfxHint 'whoosh'"
-    },
-    {
-      "at_s": 23.13,
-      "sfx_id": "cash-register",
-      "gain_db": -12,
-      "shot": "MainScene",
-      "cue": "bars graphic lands",
-      "optional": true
-    },
-    {
-      "at_s": 27.58,
-      "sfx_id": "glitch-zap",
-      "gain_db": -10,
-      "shot": "MainScene",
-      "cue": "transition glitch: twist",
-      "optional": true
-    },
-    {
-      "at_s": 27.63,
-      "sfx_id": "impact-deep-soft",
-      "gain_db": -8,
-      "shot": "MainScene",
-      "cue": "sfxHint 'impact'"
-    },
-    {
-      "at_s": 32.14,
-      "sfx_id": "glitch-zap",
-      "gain_db": -10,
-      "shot": "MainScene",
-      "cue": "transition glitch: twist",
-      "optional": true
-    },
-    {
-      "at_s": 32.19,
-      "sfx_id": "whoosh-soft",
-      "gain_db": -8,
-      "shot": "MainScene",
-      "cue": "sfxHint 'whoosh'"
-    },
-    {
-      "at_s": 36.31,
-      "sfx_id": "transition-whip",
-      "gain_db": -10,
-      "shot": "MainScene",
-      "cue": "transition whip-pan: loop",
-      "optional": true
-    },
-    {
-      "at_s": 36.36,
-      "sfx_id": "impact-deep-soft",
-      "gain_db": -8,
-      "shot": "MainScene",
-      "cue": "sfxHint 'impact'"
-    },
-    {
-      "at_s": 36.31,
-      "sfx_id": "coins-drop",
-      "gain_db": -14,
-      "shot": "MainScene",
-      "cue": "loop coin back to hook",
-      "optional": true
-    },
-    {
-      "at_s": 36.31,
-      "sfx_id": "whoosh-soft",
-      "gain_db": -10,
-      "shot": "MainScene",
-      "cue": "loop back to hook",
-      "optional": true
+      "cue": "the reveal lands"
     }
   ]
 }
