@@ -14,6 +14,32 @@ captions (`gen_voice.py`), frame-by-frame QA at phone scale, library-first SFX (
 optional music bed, seamless frame-0==last-frame loops, no CTA outros. TSX crash rules live in
 `/vidtsx-2d-generator`.
 
+## Multi-channel automation (operator)
+
+The operator dashboard (`./launch.sh operator` → localhost:3457) automates **multiple YouTube
+channels** in parallel. Channels live in the `channels` DB table (seeded: `cosmic-archive`
+space · `wealth-engine` finance · `footnote-files` history); each has its own niche, voice,
+publish slots, cadence, and YouTube OAuth tokens (`operator/data/youtube_tokens[_<channel>].json`).
+The **Channels tab** is the automation hub: per-channel auto-research, generation stats,
+YouTube connect, and add/edit channels.
+
+`tools/make_short.py --pipeline space|finance|history` switches the whole pipeline:
+script grammar (`gen_script.py` / `gen_script_finance.py` / `gen_script_history.py`),
+imagery strategy, and Remotion edit format (`lib/story` / `lib/finance` / `lib/archival`).
+Real-archive-first sourcing for every pipeline — see **IMAGERY-SOURCES.md** (NASA,
+Wikimedia, LoC, Openverse, Met, archive.org footage; AI only as labeled fallback).
+
+**Growth loop** (2026 Shorts-algorithm driven): per-channel target durations
+(completion lever), A/B hook races (`POST /api/channels/:id/start {"variants":3}` —
+one topic, 3 hook angles, the feed votes), micro-cuts (visual change every ~2.5s
+inside a voice line), comment-bait quiz beats, weighted slots (Fri PM / weekend AM
+bonus slots), and a retention feedback loop — `refreshRetention` pulls
+averageViewPercentage per published short (needs one re-auth per channel for the
+new analytics scope) and `winningHooks` feeds 70%+ retention hooks back into
+topic research. Monetization guard: the July 2025 "inauthentic content" policy
+targets templated mass-production — keep the human review gate ON and the three
+channels' formats distinct.
+
 ## Layout
 
 ```
