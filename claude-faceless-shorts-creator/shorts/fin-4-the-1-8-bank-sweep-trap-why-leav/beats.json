@@ -1,0 +1,186 @@
+{
+  "id": "fin-4-the-1-8-bank-sweep-trap-why-leav",
+  "title": "The $412 Bank Sweep Trap",
+  "composition": "AutoThe412Banksweeptrap",
+  "hookCard": "THE _$412_ CHECKING TRAP",
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSec": 32.74
+  },
+  "vo": [
+    {
+      "beat": "hook",
+      "text": "The average 30-year-old has $5,400 in checking. You probably have less.",
+      "graphic": "counter",
+      "statValue": "$5,400",
+      "statLabel": "median checking balance",
+      "onScreen": "MEDIAN _CHECKING_ BALANCE",
+      "bgPrompt": "Cinematic close up of a glowing smartphone displaying a bank app in a dim room.",
+      "camera": "push-in",
+      "motion": false,
+      "sfxHint": "impact",
+      "start": 0.25,
+      "end": 3.18
+    },
+    {
+      "beat": "hook",
+      "text": "Leaving over five grand in checking loses exactly $412 every year.",
+      "graphic": "counter",
+      "statValue": "$412",
+      "statLabel": "annual forfeited yield",
+      "onScreen": "_FORFEITED_ ANNUAL YIELD",
+      "bgPrompt": "Dark macro shot of crisp dollar bills stacked neatly on a reflective glass table.",
+      "camera": "push-in",
+      "motion": false,
+      "sfxHint": "tick",
+      "start": 3.42,
+      "end": 6.36
+    },
+    {
+      "beat": "setup",
+      "text": "Your bank pays 0.01% but lends your cash overnight at 5.3%.",
+      "graphic": "bars",
+      "statValue": "5.29%",
+      "statLabel": "bank yield spread",
+      "statBars": [
+        "Bank Overnight=5.30",
+        "Your Checking=0.01"
+      ],
+      "onScreen": "THE _YIELD_ SPREAD",
+      "bgPrompt": "Atmospheric shot of glass financial skyscrapers at night with illuminated windows.",
+      "camera": "orbit-left",
+      "motion": false,
+      "sfxHint": "whoosh",
+      "start": 6.6,
+      "end": 9.53
+    },
+    {
+      "beat": "setup",
+      "text": "That spread goes straight into the bank's net interest margin.",
+      "graphic": "counter",
+      "statValue": "5.29%",
+      "statLabel": "bank profit margin",
+      "onScreen": "BANK _PROFIT_ MARGIN",
+      "bgPrompt": "High angle shot of a massive empty bank vault door glowing under moody light.",
+      "camera": "drift-down",
+      "motion": false,
+      "sfxHint": "tick",
+      "start": 9.77,
+      "end": 12.44
+    },
+    {
+      "beat": "quiz",
+      "text": "Pause. Check your app right now. How much is sitting idle?",
+      "graphic": "counter",
+      "statValue": "CHECK YOUR APP",
+      "statLabel": "your idle balance",
+      "onScreen": "CHECK _YOUR_ APP",
+      "bgPrompt": "Sleek modern smartphone lying flat on a dark executive desk with glowing screen.",
+      "camera": "settle",
+      "motion": false,
+      "sfxHint": "tick",
+      "start": 12.68,
+      "end": 15.61
+    },
+    {
+      "beat": "quiz",
+      "text": "Comment your idle cash balance below if you dare audit yourself.",
+      "graphic": "counter",
+      "statValue": "$0",
+      "statLabel": "comment your cash",
+      "onScreen": "AUDIT _YOUR_ CASH",
+      "bgPrompt": "Abstract dark blue grid with illuminated glowing digital particles floating slowly.",
+      "camera": "drift-up",
+      "motion": false,
+      "sfxHint": "whoosh",
+      "start": 15.85,
+      "end": 18.79
+    },
+    {
+      "beat": "reveal",
+      "text": "Set a $1,000 checking floor and sweep the rest to high yield.",
+      "graphic": "rule",
+      "statValue": "$1,000",
+      "statLabel": "max checking floor",
+      "onScreen": "SET A _CHECKING_ FLOOR",
+      "bgPrompt": "Fast kinetic chart lines surging upward against a dark moody trading screen.",
+      "camera": "crash-zoom",
+      "motion": true,
+      "sfxHint": "riser",
+      "start": 19.03,
+      "end": 22.23
+    },
+    {
+      "beat": "reveal",
+      "text": "Treasury money market sweeps give you 5% with zero added risk.",
+      "graphic": "percent",
+      "statValue": "5.00%",
+      "statLabel": "risk-free yield",
+      "onScreen": "_RISK-FREE_ REVENUE STREAM",
+      "bgPrompt": "Macro detail of a shiny gold coin resting on dark textured concrete.",
+      "camera": "push-in",
+      "motion": false,
+      "sfxHint": "cash register",
+      "start": 22.47,
+      "end": 25.4
+    },
+    {
+      "beat": "twist",
+      "text": "Banks set sweep defaults to 0.01% because lazy money funds dividends.",
+      "graphic": "percent",
+      "statValue": "0.01%",
+      "statLabel": "default sweep rate",
+      "onScreen": "_DEFAULT_ SWEEP TRAP",
+      "bgPrompt": "Dark corporate boardroom table with empty chairs overlooking a lit city skyline.",
+      "camera": "pull-back",
+      "motion": false,
+      "sfxHint": "impact",
+      "start": 25.64,
+      "end": 28.58
+    },
+    {
+      "beat": "loop",
+      "text": "And that is why idle balances forfeit exactly $412 every year.",
+      "graphic": "counter",
+      "statValue": "$412",
+      "statLabel": "annual forfeited yield",
+      "onScreen": "STOP _FORFEITING_ $412",
+      "bgPrompt": "Cinematic close up of a glowing smartphone displaying a bank app in a dim room.",
+      "camera": "push-in",
+      "motion": false,
+      "sfxHint": "tick",
+      "start": 28.82,
+      "end": 31.75
+    }
+  ],
+  "beats": [
+    {
+      "id": "hook",
+      "visual": "A massive counter flashing $5,400 overlays a moody phone display before pivoting to a kinetic $412 counter."
+    },
+    {
+      "id": "setup",
+      "visual": "Dual-bar graphic comparing Bank Overnight 5.30% vs Checking 0.01% over illuminated city skyscrapers."
+    },
+    {
+      "id": "quiz",
+      "visual": "A giant pulsing question mark counter over a phone screen, prompting immediate comment interaction."
+    },
+    {
+      "id": "reveal",
+      "visual": "Crash-zoom onto a clean 5.00% rule card graphic showing the $1,000 sweep floor framework."
+    },
+    {
+      "id": "twist",
+      "visual": "A stark 0.01% percent dial graphic highlighted over a dark corporate executive boardroom."
+    },
+    {
+      "id": "loop",
+      "visual": "The $412 counter returns full-screen over the opening phone background, seamlessly looping back to the hook."
+    }
+  ],
+  "voiceStatus": "pending:kokoro",
+  "pipeline": "finance"
+}

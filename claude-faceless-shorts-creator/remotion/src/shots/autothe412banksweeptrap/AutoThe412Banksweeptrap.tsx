@@ -13,7 +13,7 @@ import { VO } from './vo.gen';
 // =============================================================================
 export const compositionConfig = {
   id: 'AutoThe412Banksweeptrap',
-  durationInSeconds: 32.76,
+  durationInSeconds: 32.8,
   fps: 30,
   width: 1080,
   height: 1920,
@@ -23,51 +23,51 @@ const ACCENT = '#a78bfa';
 const TAIL = 20;
 
 const BEATS = [
-  { src: 'projects/fin-2-the-1-8-bank-sweep-trap-why-leav/b00-hook.jpg', start: 0, end: 55, move: 'push-in', intensity: 0.5, clip: null, fadeIn: 0 },
-  { src: 'projects/fin-2-the-1-8-bank-sweep-trap-why-leav/b00-hook.jpg', start: 55, end: 123, move: 'pan-right', intensity: 0.42, clip: null, fadeIn: 0 },
-  { src: 'projects/fin-2-the-1-8-bank-sweep-trap-why-leav/b01-setup.jpg', start: 123, end: 172, move: 'drift-down', intensity: 0.65, clip: null, fadeIn: 14 },
-  { src: 'projects/fin-2-the-1-8-bank-sweep-trap-why-leav/b01-setup.jpg', start: 172, end: 231, move: 'pan-left', intensity: 0.55, clip: null, fadeIn: 0 },
-  { src: 'projects/fin-2-the-1-8-bank-sweep-trap-why-leav/b02-setup.jpg', start: 231, end: 280, move: 'pan-right', intensity: 0.7, clip: null, fadeIn: 14 },
-  { src: 'projects/fin-2-the-1-8-bank-sweep-trap-why-leav/b02-setup.jpg', start: 280, end: 340, move: 'pull-back', intensity: 0.59, clip: null, fadeIn: 0 },
-  { src: 'projects/fin-2-the-1-8-bank-sweep-trap-why-leav/b03-quiz.jpg', start: 340, end: 385, move: 'settle', intensity: 0.75, clip: null, fadeIn: 14 },
-  { src: 'projects/fin-2-the-1-8-bank-sweep-trap-why-leav/b03-quiz.jpg', start: 385, end: 440, move: 'pan-right', intensity: 0.64, clip: null, fadeIn: 0 },
-  { src: 'projects/fin-2-the-1-8-bank-sweep-trap-why-leav/b04-quiz.jpg', start: 440, end: 485, move: 'drift-up', intensity: 0.75, clip: null, fadeIn: 14 },
-  { src: 'projects/fin-2-the-1-8-bank-sweep-trap-why-leav/b04-quiz.jpg', start: 485, end: 540, move: 'pan-right', intensity: 0.64, clip: null, fadeIn: 0 },
-  { src: 'projects/fin-2-the-1-8-bank-sweep-trap-why-leav/b05-reveal.jpg', start: 540, end: 589, move: 'crash-zoom', intensity: 1.2, clip: null, fadeIn: 14 },
-  { src: 'projects/fin-2-the-1-8-bank-sweep-trap-why-leav/b05-reveal.jpg', start: 589, end: 649, move: 'settle', intensity: 1.02, clip: null, fadeIn: 0 },
-  { src: 'projects/fin-2-the-1-8-bank-sweep-trap-why-leav/b06-reveal.jpg', start: 649, end: 694, move: 'push-in', intensity: 1.2, clip: null, fadeIn: 14 },
-  { src: 'projects/fin-2-the-1-8-bank-sweep-trap-why-leav/b06-reveal.jpg', start: 694, end: 749, move: 'pan-right', intensity: 1.02, clip: null, fadeIn: 0 },
-  { src: 'projects/fin-2-the-1-8-bank-sweep-trap-why-leav/b07-twist.jpg', start: 749, end: 798, move: 'pull-back', intensity: 1.15, clip: null, fadeIn: 14 },
-  { src: 'projects/fin-2-the-1-8-bank-sweep-trap-why-leav/b07-twist.jpg', start: 798, end: 858, move: 'pan-left', intensity: 0.98, clip: null, fadeIn: 0 },
-  { src: 'projects/fin-2-the-1-8-bank-sweep-trap-why-leav/b08-loop.jpg', start: 858, end: 914, move: 'push-in', intensity: 0.7, clip: null, fadeIn: 14 },
-  { src: 'projects/fin-2-the-1-8-bank-sweep-trap-why-leav/b08-loop.jpg', start: 914, end: 983, move: 'pan-right', intensity: 0.59, clip: null, fadeIn: 0 },
+  { src: 'projects/fin-3-the-1-8-bank-sweep-trap-why-leav/b00-hook.jpg', start: 0, end: 56, move: 'push-in', intensity: 0.5, clip: null, fadeIn: 0 },
+  { src: 'projects/fin-3-the-1-8-bank-sweep-trap-why-leav/b00-hook.jpg', start: 56, end: 125, move: 'pan-right', intensity: 0.42, clip: null, fadeIn: 0 },
+  { src: 'projects/fin-3-the-1-8-bank-sweep-trap-why-leav/b01-setup.jpg', start: 125, end: 174, move: 'orbit-left', intensity: 0.65, clip: null, fadeIn: 14 },
+  { src: 'projects/fin-3-the-1-8-bank-sweep-trap-why-leav/b01-setup.jpg', start: 174, end: 234, move: 'drift-up', intensity: 0.55, clip: null, fadeIn: 0 },
+  { src: 'projects/fin-3-the-1-8-bank-sweep-trap-why-leav/b02-setup.jpg', start: 234, end: 284, move: 'drift-up', intensity: 0.7, clip: null, fadeIn: 14 },
+  { src: 'projects/fin-3-the-1-8-bank-sweep-trap-why-leav/b02-setup.jpg', start: 284, end: 344, move: 'pan-right', intensity: 0.59, clip: null, fadeIn: 0 },
+  { src: 'projects/fin-3-the-1-8-bank-sweep-trap-why-leav/b03-quiz.jpg', start: 344, end: 389, move: 'settle', intensity: 0.75, clip: null, fadeIn: 14 },
+  { src: 'projects/fin-3-the-1-8-bank-sweep-trap-why-leav/b03-quiz.jpg', start: 389, end: 443, move: 'pan-right', intensity: 0.64, clip: null, fadeIn: 0 },
+  { src: 'projects/fin-3-the-1-8-bank-sweep-trap-why-leav/b04-quiz.jpg', start: 443, end: 483, move: 'pan-right', intensity: 0.75, clip: null, fadeIn: 14 },
+  { src: 'projects/fin-3-the-1-8-bank-sweep-trap-why-leav/b04-quiz.jpg', start: 483, end: 532, move: 'pull-back', intensity: 0.64, clip: null, fadeIn: 0 },
+  { src: 'projects/fin-3-the-1-8-bank-sweep-trap-why-leav/b05-reveal.jpg', start: 532, end: 590, move: 'crash-zoom', intensity: 1.2, clip: null, fadeIn: 14 },
+  { src: 'projects/fin-3-the-1-8-bank-sweep-trap-why-leav/b05-reveal.jpg', start: 590, end: 662, move: 'settle', intensity: 1.02, clip: null, fadeIn: 0 },
+  { src: 'projects/fin-3-the-1-8-bank-sweep-trap-why-leav/b06-reveal.jpg', start: 662, end: 711, move: 'pull-back', intensity: 1.2, clip: null, fadeIn: 14 },
+  { src: 'projects/fin-3-the-1-8-bank-sweep-trap-why-leav/b06-reveal.jpg', start: 711, end: 771, move: 'pan-left', intensity: 1.02, clip: null, fadeIn: 0 },
+  { src: 'projects/fin-3-the-1-8-bank-sweep-trap-why-leav/b07-twist.jpg', start: 771, end: 820, move: 'orbit-right', intensity: 1.15, clip: null, fadeIn: 14 },
+  { src: 'projects/fin-3-the-1-8-bank-sweep-trap-why-leav/b07-twist.jpg', start: 820, end: 880, move: 'drift-down', intensity: 0.98, clip: null, fadeIn: 0 },
+  { src: 'projects/fin-3-the-1-8-bank-sweep-trap-why-leav/b08-loop.jpg', start: 880, end: 927, move: 'push-in', intensity: 0.7, clip: null, fadeIn: 14 },
+  { src: 'projects/fin-3-the-1-8-bank-sweep-trap-why-leav/b08-loop.jpg', start: 927, end: 984, move: 'pan-right', intensity: 0.59, clip: null, fadeIn: 0 },
 ] as const;
 
 const STATS = [
-  { graphic: 'counter', value: "8.2%", label: "of your savings", bars: null, onScreen: "YOUR _SAVINGS_ ARE LEAKING", from: 0, end: 123 },
-  { graphic: 'counter', value: "0.01%", label: "checking account yield", bars: null, onScreen: "CHECKING PAYS _NOTHING_", from: 123, end: 231 },
-  { graphic: 'counter', value: "5.30%", label: "bank overnight rate", bars: null, onScreen: "THEY _LEND_ YOUR CASH", from: 231, end: 340 },
-  { graphic: 'counter', value: "CHECK YOUR BALANCE", label: "your idle balance", bars: null, onScreen: "CHECK YOUR _BALANCE_", from: 340, end: 440 },
-  { graphic: 'counter', value: "$0", label: "comment your number", bars: null, onScreen: "DROP YOUR _NUMBER_", from: 440, end: 540 },
-  { graphic: 'rule', value: "$5,000", label: "max checking balance", bars: null, onScreen: "THE _$5,000_ RULE", from: 540, end: 649 },
-  { graphic: 'bars', value: "$412", label: "annual yield spread", bars: ["High Yield=$530", "Checking=$1"], onScreen: "RECOVER _$412_ ANNUALLY", from: 649, end: 749 },
-  { graphic: 'percent', value: "98%", label: "bank profit margin", bars: null, onScreen: "BANKS PROFIT ON _INERTIA_", from: 749, end: 858 },
-  { graphic: 'counter', value: "8.2%", label: "of your savings", bars: null, onScreen: "THE _8.2%_ LEAK", from: 858, end: 983 },
+  { graphic: 'counter', value: "$412", label: "annual forfeited yield", bars: null, onScreen: "YOUR _CHECKING_ IS LEAKING", from: 0, end: 125 },
+  { graphic: 'counter', value: "0.01%", label: "standard checking rate", bars: null, onScreen: "BANK PAYS _0.01%_ YIELD", from: 125, end: 234 },
+  { graphic: 'counter', value: "5.00%", label: "overnight lending spread", bars: null, onScreen: "THEY LEND AT _5%_", from: 234, end: 344 },
+  { graphic: 'rule', value: "PAUSE AND CHECK BALANCE", label: "check your balance", bars: null, onScreen: "PAUSE AND _CHECK_ BALANCE", from: 344, end: 443 },
+  { graphic: 'rule', value: "COMMENT YOUR IDLE CASH", label: "drop your total", bars: null, onScreen: "_COMMENT_ YOUR IDLE CASH", from: 443, end: 532 },
+  { graphic: 'rule', value: "$5,000", label: "maximum checking cap", bars: null, onScreen: "CAP CHECKING AT _$5K_", from: 532, end: 662 },
+  { graphic: 'bars', value: "4.5%", label: "yield spread comparison", bars: ["High Yield=4.50", "Checking=0.01"], onScreen: "_SWEEP_ THE SPREAD DIFFERENCE", from: 662, end: 771 },
+  { graphic: 'counter', value: "$412", label: "bank profit on sweep", bars: null, onScreen: "THEY PROFIT ON _LAZINESS_", from: 771, end: 880 },
+  { graphic: 'counter', value: "$412", label: "annual forfeited yield", bars: null, onScreen: "EVERY MONTH _$34_ DISAPPEARS", from: 880, end: 984 },
 ] as const;
 
 const TRANSITIONS = [
-  { kind: 'wipe', at: 123, dur: 8 },
-  { kind: 'whip-pan', at: 231, dur: 8 },
-  { kind: 'glitch', at: 340, dur: 8 },
-  { kind: 'whip-pan', at: 440, dur: 8 },
-  { kind: 'flash', at: 540, dur: 8 },
-  { kind: 'flash', at: 649, dur: 8 },
-  { kind: 'glitch', at: 749, dur: 8 },
-  { kind: 'whip-pan', at: 858, dur: 8 },
+  { kind: 'wipe', at: 125, dur: 8 },
+  { kind: 'whip-pan', at: 234, dur: 8 },
+  { kind: 'glitch', at: 344, dur: 8 },
+  { kind: 'whip-pan', at: 443, dur: 8 },
+  { kind: 'flash', at: 532, dur: 8 },
+  { kind: 'flash', at: 662, dur: 8 },
+  { kind: 'glitch', at: 771, dur: 8 },
+  { kind: 'whip-pan', at: 880, dur: 8 },
 ] as const;
 
-const HOOK_CARD = "THE _8.2%_ LEAK";
-const HOOK_END = 123;
+const HOOK_CARD = "THE _$412_ BANK TRAP";
+const HOOK_END = 125;
 
 const AutoThe412Banksweeptrap: React.FC = () => {
   return (
