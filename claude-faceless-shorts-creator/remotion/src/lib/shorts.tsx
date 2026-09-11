@@ -41,15 +41,64 @@ export const timeWords = (line: VoLine): TimedWord[] => {
 
 type Chunk = { words: TimedWord[]; start: number; end: number; hold: number };
 
-// Split VO lines into caption chunks of <= maxWords; each chunk holds until the next
-// chunk in the same line starts, or the line ends (+ a small tail between lines).
-export const chunkLines = (lines: VoLine[], maxWords = 4): Chunk[] => {
+// Words that must never END a caption chunk — breaking after one of these reads
+// as a fragment ("OUT OF FUEL AND"). The connector folds into the NEXT chunk.
+const TRAILING_STOPWORDS = new Set([
+  'A', 'AN', 'THE', 'AND', 'BUT', 'OR', 'NOR', 'SO', 'YET', 'IF', 'AS', 'AT',
+  'BY', 'FOR', 'FROM', 'IN', 'INTO', 'OF', 'OFF', 'ON', 'ONTO', 'OVER', 'TO',
+  'UP', 'WITH', 'WITHOUT', 'THAN', 'THAT', 'THIS', 'THESE', 'THOSE', 'WHEN',
+  'WHILE', 'BEFORE', 'AFTER', 'UNDER', 'ABOVE', 'BELOW', 'DURING', 'SINCE',
+  'UNTIL', 'BETWEEN', 'BEHIND', 'ITS', "IT'S", 'IT', 'IS', 'WAS', 'ARE', 'WERE', 'BE', 'BEEN',
+  'HAS', 'HAVE', 'HAD', 'NOT', 'NO', 'YOUR', 'OUR', 'THEIR', 'HIS', 'HER',
+  'WILL', 'WOULD', 'CAN', 'COULD', 'JUST', 'STILL', 'MORE', 'MOST',
+]);
+
+const bareWord = (w: string) => w.replace(/[^A-Z']/gi, '').toUpperCase();
+
+// Split VO lines into complete-thought caption chunks: punctuation clauses first,
+// then word windows (<= maxWords) that never break after a connector word. Each
+// chunk holds until the next chunk starts, or the line ends (+ a small tail).
+export const chunkLines = (lines: VoLine[], maxWords = 5): Chunk[] => {
   const chunks: Chunk[] = [];
   lines.forEach((line) => {
     const words = timeWords(line);
-    for (let i = 0; i < words.length; i += maxWords) {
-      const ws = words.slice(i, i + maxWords);
-      chunks.push({ words: ws, start: ws[0].start, end: ws[ws.length - 1].end, hold: 0 });
+    // clause segments: a word with terminal punctuation ends the current segment
+    const segments: TimedWord[][] = [];
+    let seg: TimedWord[] = [];
+    words.forEach((w, i) => {
+      seg.push(w);
+      const nextIsDash = i < words.length - 1 && /^[-—–]$/.test(words[i + 1].w);
+      if (/[.!?,;:]$/.test(w.w) || nextIsDash || i === words.length - 1) {
+        segments.push(seg);
+        seg = [];
+      }
+    });
+    if (seg.length) segments.push(seg);
+
+    for (const segment of segments) {
+      if (segment.length <= maxWords) {
+        chunks.push({
+          words: segment,
+          start: segment[0].start,
+          end: segment[segment.length - 1].end,
+          hold: 0,
+        });
+        continue;
+      }
+      let i = 0;
+      while (i < segment.length) {
+        let j = Math.min(i + maxWords, segment.length);
+        // never strand a one-word orphan tail — pull the break back instead
+        if (segment.length - j === 1 && j - i > 1) j -= 1;
+        // pull the break back so this chunk never ends on a dangling connector
+        while (j - i > 1 && j < segment.length && TRAILING_STOPWORDS.has(bareWord(segment[j - 1].w))) {
+          j -= 1;
+        }
+        if (j <= i) j = i + 1;
+        const ws = segment.slice(i, j);
+        chunks.push({ words: ws, start: ws[0].start, end: ws[ws.length - 1].end, hold: 0 });
+        i = j;
+      }
     }
   });
   chunks.forEach((c, i) => {
@@ -69,7 +118,8 @@ export const Captions: React.FC<{
   accent?: string;
   maxWords?: number;
   plate?: boolean; // dark pill behind the words — for compositions with light scenes
-}> = ({ lines, y = 1280, size = 58, accent = '#f5d76e', maxWords = 4, plate = false }) => {
+  highlight?: boolean; // numbers/dollars/percents always burn in accent (finance/history)
+}> = ({ lines, y = 1280, size = 58, accent = '#f5d76e', maxWords = 4, plate = false, highlight = false }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const t = frame / fps;
@@ -112,6 +162,7 @@ export const Captions: React.FC<{
       {active.words.map((word, i) => {
         const started = prog(t, word.start, word.start + 0.12);
         const isActive = t >= word.start && t < word.end + 0.05;
+        const isKey = highlight && /[\d$%]/.test(word.w); // "$612", "19%", "1981"
         return (
           <span
             key={i}
@@ -122,10 +173,12 @@ export const Captions: React.FC<{
               lineHeight: 1.15,
               textTransform: 'uppercase',
               letterSpacing: 0.5,
-              color: isActive ? accent : '#ffffff',
+              color: isKey ? accent : (isActive ? accent : '#ffffff'),
               opacity: 0.3 + 0.7 * started,
               transform: `scale(${0.92 + 0.08 * EASE_OUT(started) + (isActive ? 0.05 : 0)})`,
-              textShadow: '0 3px 26px rgba(0,0,0,0.65), 0 1px 4px rgba(0,0,0,0.5)',
+              textShadow: isKey
+                ? `0 0 22px ${accent}55, 0 3px 26px rgba(0,0,0,0.65)`
+                : '0 3px 26px rgba(0,0,0,0.65), 0 1px 4px rgba(0,0,0,0.5)',
             }}
           >
             {word.w}
@@ -194,6 +247,63 @@ export const Kicker: React.FC<{ text: string; color?: string; y?: number; at?: n
       >
         {text}
       </div>
+    </div>
+  );
+};
+
+// =============================================================================
+// HOOK CARD — frame-0 banner that dramatizes the title (the hook rule: frame 0
+// is FULLY composed, no fade-in). Words wrapped in _underscores_ get the accent
+// color. Fades out over the last 12 frames of its sequence.
+// =============================================================================
+export const HookCard: React.FC<{
+  text: string;
+  until: number; // sequence-relative frame where the card has fully exited
+  accent?: string;
+  y?: number;
+  size?: number;
+}> = ({ text, until, accent = '#f5d76e', y = 640, size = 92 }) => {
+  const frame = useCurrentFrame();
+  const out = 1 - prog(frame, until - 12, until);
+  if (out <= 0.01) return null;
+  // pre-rolled entrance (warm): the card is already on screen at frame 0
+  const enter = prog(frame + 24, 0, 10);
+  const pulse = 1 + 0.015 * Math.sin(frame / 9);
+  return (
+    <div
+      style={{
+        position: 'absolute',
+        top: y,
+        left: 56,
+        right: 56,
+        textAlign: 'center',
+        opacity: out * (0.35 + 0.65 * EASE_OUT(enter)),
+        transform: `scale(${(0.96 + 0.04 * EASE_OUT(enter)) * pulse})`,
+      }}
+    >
+      {text.toUpperCase().split(/\s+/).map((raw, i) => {
+        const emphasized = /^_(.+)_$/.test(raw);
+        const word = raw.replace(/^_(.+)_$/, '$1');
+        return (
+          <span
+            key={i}
+            style={{
+              fontFamily: FONT_DISPLAY,
+              fontWeight: 700,
+              fontSize: size,
+              lineHeight: 1.1,
+              textTransform: 'uppercase',
+              letterSpacing: 1,
+              color: emphasized ? accent : '#ffffff',
+              textShadow: '0 4px 34px rgba(0,0,0,0.7), 0 2px 6px rgba(0,0,0,0.55)',
+              marginRight: size * 0.26,
+              display: 'inline-block',
+            }}
+          >
+            {word}
+          </span>
+        );
+      })}
     </div>
   );
 };

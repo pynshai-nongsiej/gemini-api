@@ -29,6 +29,8 @@ import urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BEAT_GRAMMAR = ["hook", "setup", "quiz", "reveal", "twist", "loop"]
+CAMERA_MOVES = ["push-in", "pull-back", "orbit-left", "orbit-right", "drift-up",
+                "drift-down", "pan-left", "pan-right", "crash-zoom", "settle"]
 
 
 def load_env():
@@ -89,9 +91,16 @@ retention grammar:
 
 - hook    (0-3s): the single boldest visual + a verbal hook that states a
           shocking fact, bold claim, or curiosity gap. NO questions like "have
-          you ever wondered", NO "in this video", NO greetings.
+          you ever wondered", NO "in this video", NO greetings. The hook VISUAL
+          must instantly dramatize or CONTRADICT the title (title says a star
+          "died in broad daylight" -> frame 0 is an ordinary bright blue daytime
+          sky with an impossible star in it). The viewer must feel the
+          contradiction before a single word of explanation.
 - setup   (3-10s): the minimum context needed to understand the payoff. Tight.
 - quiz    (10-15s): a challenge to the viewer ("pause — can you spot it?").
+          Make it COMMENT BAIT: end the line with an invitation to answer in
+          the comments ("wrong answers only", "comment what you think it is")
+          — comment velocity widens the test audience.
 - reveal  (15-25s): the payoff, delivered with energy. This is the share moment.
 - twist   (25-35s): the unexpected consequence / deeper fact that recontextualizes
           the reveal.
@@ -105,7 +114,17 @@ words for ~{duration}s at a natural narration pace.
 
 For every voice line also give:
 - imagePrompt: a visual scene description for an image generator (one clear
-  subject, mood, lighting, composition — 15-30 words, no text-in-image requests)
+  subject, mood, lighting, composition — 15-30 words, no text-in-image
+  requests). Always include the CAMERA treatment: framing (extreme close-up,
+  wide establishing shot, low angle looking up) and a sense of movement or
+  scale (approaching, towering above, plunging through, tiny against vast).
+- camera: ONE of these exact tokens for the beat's camera move — "push-in",
+  "pull-back", "orbit-left", "orbit-right", "drift-up", "drift-down",
+  "pan-left", "pan-right", "crash-zoom", "settle". Calm beats get gentle moves
+  (drift, settle); the reveal earns "crash-zoom" or a fast push-in.
+- motion: true ONLY for 1-2 beats (ideally reveal/twist) where a real AI video
+  clip (5s) would be dramatically better than a moving still — the explosion,
+  the collision, the collapse. All other lines: false.
 - nasaQuery: 2-3 words naming the real astronomical object / mission / telescope
   target for the NASA image archive (e.g. "neutron star", "black hole", "perseus
   cluster", "jwst deep field"). Use the most specific real object name possible;
@@ -113,12 +132,17 @@ For every voice line also give:
 - sfxHint: one short sound-design cue suggestion (e.g. "soft whoosh",
   "deep impact", "riser", "tick", "sparkle")
 
+Also give "hookCard": a 3-7 word ALL-CAPS banner burned over frame 0 that
+punches the title's contradiction (e.g. "IT APPEARED AT NOON"). Wrap the 1-2
+key words in _underscores_ — they render in the accent color.
+
 Return ONLY valid JSON, exactly this shape:
 {{
   "title": "punchy title under 60 chars",
+  "hookCard": "THE _IMPOSSIBLE_ STAR",
   "vo": [
-    {{"beat": "hook", "text": "...", "imagePrompt": "...", "nasaQuery": "...", "sfxHint": "..."}},
-    {{"beat": "setup", "text": "...", "imagePrompt": "...", "nasaQuery": "...", "sfxHint": "..."}}
+    {{"beat": "hook", "text": "...", "imagePrompt": "...", "camera": "push-in",
+      "motion": false, "nasaQuery": "...", "sfxHint": "..."}}
   ],
   "beats": [
     {{"id": "hook", "visual": "one line describing the on-screen visual for this beat"}}
@@ -152,6 +176,21 @@ def generate_script(topic, style, duration, word_budget):
 def normalize(data, out_dir, duration, fps=30):
     """Validate + add estimated timings (words-per-second pacing)."""
     vo = data["vo"]
+
+    def sanitize_camera(v, i):
+        cam = str(v.get("camera") or "").strip().lower()
+        if cam not in CAMERA_MOVES:
+            # deterministic fallback so adjacent beats never drift the same way
+            cam = ["push-in", "orbit-right", "drift-up", "pan-left",
+                   "orbit-left", "pull-back"][i % 6]
+        v["camera"] = cam
+
+    # motion clips are expensive: keep at most 2, prefer reveal/twist order
+    motion_idx = [i for i, v in enumerate(vo) if v.get("motion")]
+    keep = set(motion_idx[:2])
+    for i, v in enumerate(vo):
+        v["motion"] = i in keep
+
     words = [len(v["text"].split()) for v in vo]
     total_words = sum(words)
     # ~2.6 words/sec narration, plus a 0.35s gap between lines
@@ -164,7 +203,8 @@ def normalize(data, out_dir, duration, fps=30):
         scale = (duration - 0.5) / total
         total = duration - 0.5
     t = 0.25
-    for v, w in zip(vo, words):
+    for i, (v, w) in enumerate(zip(vo, words)):
+        sanitize_camera(v, i)
         d = max(1.0, (w / wps) * scale)
         v.setdefault("beat", "setup")
         v["start"] = round(t, 2)
@@ -195,10 +235,12 @@ def normalize(data, out_dir, duration, fps=30):
         beat_bounds = beats
 
     comp_id = "Auto" + slugify(data.get("title", out_dir), 24).replace("-", "").title()
+    hook_card = str(data.get("hookCard") or data.get("title") or "WAIT FOR IT").strip()
     return {
         "id": os.path.basename(out_dir.rstrip("/")),
         "title": data.get("title", "Untitled Short"),
         "composition": comp_id[:30],
+        "hookCard": hook_card,
         "format": {"width": 1080, "height": 1920, "fps": fps,
                    "durationSec": round(max(t + 0.75, 8.0), 2)},
         "vo": vo,
@@ -217,6 +259,8 @@ def write_script_md(beats, topic, style, path):
     for i, v in enumerate(beats["vo"]):
         lines.append(f"**[{v['beat'].upper()}] {v['start']:.1f}s** — {v['text']}  ")
         lines.append(f"  - *image:* {v.get('imagePrompt', '—')}  ")
+        lines.append(f"  - *camera:* {v.get('camera', '—')}"
+                     + ("  + AI video clip" if v.get("motion") else "") + "  ")
         lines.append(f"  - *sfx:* {v.get('sfxHint', '—')}  ")
     lines += ["", "## Beats", ""]
     for b in beats["beats"]:

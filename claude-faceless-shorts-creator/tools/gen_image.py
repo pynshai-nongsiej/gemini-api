@@ -185,11 +185,26 @@ def main():
         f.write(data)
     print(f"  {fmt}  -> {rel(out)}  ({len(data) // 1024}KB)")
 
+    # the free engine often ignores the requested size (e.g. returns 576x1024 for
+    # a 1080x1920 request) — verify ACTUAL pixels and enhance, never discard
+    from enhance_image import enhance_for_cover, image_size, update_sidecar
+
+    actual = image_size(out)
+    delivered_w, delivered_h = actual or (width, height)
+    if actual and (actual[0] < width or actual[1] < height):
+        print(f"  engine delivered {actual[0]}x{actual[1]} (requested {width}x{height}) — enhancing")
+        report = enhance_for_cover(out, target_w=width, target_h=height)
+        delivered_w, delivered_h = report.get("final") or (actual[0], actual[1])
+        if report.get("enhanced"):
+            print(f"  enhanced {report['original']} -> {report['final']} "
+                  f"(x{report.get('factor')}, {report.get('method')})")
+
     sidecar = os.path.splitext(out)[0] + ".json"
     with open(sidecar, "w", encoding="utf-8") as f:
         json.dump({"prompt": prompt, "engine": "pollinations", "model": model,
                    "aspect_ratio": aspect, "image_size": size, "width": width,
                    "height": height, "seed": seed,
+                   "delivered_width": delivered_w, "delivered_height": delivered_h,
                    "created": time.strftime("%Y-%m-%dT%H:%M:%S")}, f, indent=2, ensure_ascii=False)
         f.write("\n")
     print(f"  meta -> {rel(sidecar)}")

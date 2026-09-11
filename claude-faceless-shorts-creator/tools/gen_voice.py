@@ -39,6 +39,11 @@ KOKORO_BRIDGE = os.path.join(ROOT, "tools", "kokoro_tts.py")
 # Kokoro voices this pipeline knows. --voice accepts any Kokoro id (af_/am_/bf_/bm_…);
 # legacy ElevenLabs ids/names map onto the closest Kokoro narrator.
 DEFAULT_VOICE = "bm_george"
+DYNAMIC_VOICE_POOL = [
+    "bm_george", "bf_emma", "am_adam", "af_nova", "am_onyx",
+    "bm_daniel", "af_sarah", "am_eric", "bm_lewis", "af_river",
+    "am_michael", "bf_isabella"
+]
 VOICE_MAP = {
     # elevenlabs premade id -> kokoro
     "TX3LPaxmHKxFdv7VOQHJ": "bm_george",   # Liam
@@ -171,10 +176,19 @@ def main():
     if args.model:
         print(f"    (--model is ignored — Kokoro is local)")
 
-    voice = VOICE_MAP.get(args.voice, VOICE_MAP.get(args.voice.lower(), args.voice))
-
     beats_path = os.path.abspath(args.beats)
     beats = json.load(open(beats_path, encoding="utf-8"))
+
+    raw_voice = (args.voice or "").strip()
+    if raw_voice.lower() in ("dynamic", "auto", "random"):
+        # Deterministically select voice for this short's title/path so reruns are stable,
+        # but different shorts get diverse voices
+        h = int(hashlib.md5((beats.get("title") or beats_path).encode("utf-8")).hexdigest(), 16)
+        voice = DYNAMIC_VOICE_POOL[h % len(DYNAMIC_VOICE_POOL)]
+        print(f"    voice selected dynamically: {voice}")
+    else:
+        voice = VOICE_MAP.get(raw_voice, VOICE_MAP.get(raw_voice.lower(), raw_voice or DEFAULT_VOICE))
+
     vo = beats["vo"]
     total = float(beats["format"]["durationSec"])
     vdir = os.path.join(os.path.dirname(beats_path), "voice")
