@@ -1,0 +1,628 @@
+{
+  "id": "auto-14-the-moon-is-shrinking-and-it-is",
+  "title": "The Moon Is Shrinking and Cracking Open",
+  "composition": "AutoThemoonisshrinkingan",
+  "hookCard": "THE MOON IS _SHRINKING_",
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSec": 40.3
+  },
+  "vo": [
+    {
+      "beat": "hook",
+      "text": "The Moon is physically shrinking, and it is triggering massive quakes.",
+      "imagePrompt": "Extreme close-up of a giant glowing fracture ripping across the lunar surface, harsh sunlight, ultra-detailed crater texture, ominous dark space background.",
+      "camera": "crash-zoom",
+      "motion": true,
+      "nasaQuery": "lunar recon orbiter thrust fault",
+      "sfxHint": "deep rumble",
+      "start": 0.25,
+      "end": 4.19,
+      "words": [
+        {
+          "w": "The",
+          "start": 0.25,
+          "end": 0.489
+        },
+        {
+          "w": "Moon",
+          "start": 0.489,
+          "end": 0.778
+        },
+        {
+          "w": "is",
+          "start": 0.778,
+          "end": 0.966
+        },
+        {
+          "w": "physically",
+          "start": 0.966,
+          "end": 1.559
+        },
+        {
+          "w": "shrinking,",
+          "start": 1.559,
+          "end": 2.129
+        },
+        {
+          "w": "and",
+          "start": 2.129,
+          "end": 2.368
+        },
+        {
+          "w": "it",
+          "start": 2.368,
+          "end": 2.556
+        },
+        {
+          "w": "is",
+          "start": 2.556,
+          "end": 2.744
+        },
+        {
+          "w": "triggering",
+          "start": 2.744,
+          "end": 3.337
+        },
+        {
+          "w": "massive",
+          "start": 3.337,
+          "end": 3.778
+        },
+        {
+          "w": "quakes.",
+          "start": 3.778,
+          "end": 4.197
+        }
+      ]
+    },
+    {
+      "beat": "setup",
+      "text": "Over millions of years, its molten core has cooled down.",
+      "imagePrompt": "Cross-section of the Moon showing a glowing, cooling metallic core shrinking within a dark rocky mantle, subtle dust particles, cinematic sci-fi lighting.",
+      "camera": "pull-back",
+      "motion": false,
+      "nasaQuery": "moon interior core",
+      "sfxHint": "subtle riser",
+      "start": 4.83,
+      "end": 8.62,
+      "words": [
+        {
+          "w": "Over",
+          "start": 4.83,
+          "end": 5.173
+        },
+        {
+          "w": "millions",
+          "start": 5.173,
+          "end": 5.757
+        },
+        {
+          "w": "of",
+          "start": 5.757,
+          "end": 5.979
+        },
+        {
+          "w": "years,",
+          "start": 5.979,
+          "end": 6.416
+        },
+        {
+          "w": "its",
+          "start": 6.416,
+          "end": 6.699
+        },
+        {
+          "w": "molten",
+          "start": 6.699,
+          "end": 7.162
+        },
+        {
+          "w": "core",
+          "start": 7.162,
+          "end": 7.505
+        },
+        {
+          "w": "has",
+          "start": 7.505,
+          "end": 7.788
+        },
+        {
+          "w": "cooled",
+          "start": 7.788,
+          "end": 8.251
+        },
+        {
+          "w": "down.",
+          "start": 8.251,
+          "end": 8.627
+        }
+      ]
+    },
+    {
+      "beat": "setup",
+      "text": "This cooling forces the lunar crust to wrinkle like a drying raisin.",
+      "imagePrompt": "Low angle wide shot looking up at massive, mile-long cliff scarps pushing upward against the desolate, black sky of space.",
+      "camera": "orbit-right",
+      "motion": false,
+      "nasaQuery": "lobate scarps moon",
+      "sfxHint": "low hum",
+      "start": 9.03,
+      "end": 13.35,
+      "words": [
+        {
+          "w": "This",
+          "start": 9.03,
+          "end": 9.351
+        },
+        {
+          "w": "cooling",
+          "start": 9.351,
+          "end": 9.84
+        },
+        {
+          "w": "forces",
+          "start": 9.84,
+          "end": 10.274
+        },
+        {
+          "w": "the",
+          "start": 10.274,
+          "end": 10.538
+        },
+        {
+          "w": "lunar",
+          "start": 10.538,
+          "end": 10.915
+        },
+        {
+          "w": "crust",
+          "start": 10.915,
+          "end": 11.292
+        },
+        {
+          "w": "to",
+          "start": 11.292,
+          "end": 11.501
+        },
+        {
+          "w": "wrinkle",
+          "start": 11.501,
+          "end": 11.99
+        },
+        {
+          "w": "like",
+          "start": 11.99,
+          "end": 12.311
+        },
+        {
+          "w": "a",
+          "start": 12.311,
+          "end": 12.463
+        },
+        {
+          "w": "drying",
+          "start": 12.463,
+          "end": 12.897
+        },
+        {
+          "w": "raisin.",
+          "start": 12.897,
+          "end": 13.361
+        }
+      ]
+    },
+    {
+      "beat": "quiz",
+      "text": "Pause the video—can you spot where the surface just snapped?",
+      "imagePrompt": "High angle wide establishing shot of a quiet lunar crater field with a subtle, sharp shadow line cutting through the middle, stark high-contrast lighting.",
+      "camera": "settle",
+      "motion": false,
+      "nasaQuery": "apollo landing site scarp",
+      "sfxHint": "clock tick",
+      "start": 13.99,
+      "end": 17.4,
+      "words": [
+        {
+          "w": "Pause",
+          "start": 13.99,
+          "end": 14.334
+        },
+        {
+          "w": "the",
+          "start": 14.334,
+          "end": 14.575
+        },
+        {
+          "w": "video—can",
+          "start": 14.575,
+          "end": 15.072
+        },
+        {
+          "w": "you",
+          "start": 15.072,
+          "end": 15.313
+        },
+        {
+          "w": "spot",
+          "start": 15.313,
+          "end": 15.606
+        },
+        {
+          "w": "where",
+          "start": 15.606,
+          "end": 15.949
+        },
+        {
+          "w": "the",
+          "start": 15.949,
+          "end": 16.191
+        },
+        {
+          "w": "surface",
+          "start": 16.191,
+          "end": 16.637
+        },
+        {
+          "w": "just",
+          "start": 16.637,
+          "end": 16.929
+        },
+        {
+          "w": "snapped?",
+          "start": 16.929,
+          "end": 17.403
+        }
+      ]
+    },
+    {
+      "beat": "reveal",
+      "text": "That tiny ridge just triggered a violent moonquake lasting six full hours.",
+      "imagePrompt": "Dramatic low angle shot looking up at regolith dust exploding into zero gravity as a massive fault line violently shifts.",
+      "camera": "push-in",
+      "motion": true,
+      "nasaQuery": "apollo seismometer moonquake",
+      "sfxHint": "heavy impact",
+      "start": 18.19,
+      "end": 22.65,
+      "words": [
+        {
+          "w": "That",
+          "start": 18.19,
+          "end": 18.496
+        },
+        {
+          "w": "tiny",
+          "start": 18.496,
+          "end": 18.803
+        },
+        {
+          "w": "ridge",
+          "start": 18.803,
+          "end": 19.163
+        },
+        {
+          "w": "just",
+          "start": 19.163,
+          "end": 19.47
+        },
+        {
+          "w": "triggered",
+          "start": 19.47,
+          "end": 20.044
+        },
+        {
+          "w": "a",
+          "start": 20.044,
+          "end": 20.19
+        },
+        {
+          "w": "violent",
+          "start": 20.19,
+          "end": 20.657
+        },
+        {
+          "w": "moonquake",
+          "start": 20.657,
+          "end": 21.232
+        },
+        {
+          "w": "lasting",
+          "start": 21.232,
+          "end": 21.7
+        },
+        {
+          "w": "six",
+          "start": 21.7,
+          "end": 21.953
+        },
+        {
+          "w": "full",
+          "start": 21.953,
+          "end": 22.259
+        },
+        {
+          "w": "hours.",
+          "start": 22.259,
+          "end": 22.649
+        }
+      ]
+    },
+    {
+      "beat": "reveal",
+      "text": "Unlike Earth quakes, there is no liquid water to absorb seismic energy.",
+      "imagePrompt": "Extreme close-up of jagged moon rock vibrating violently, dust floating in vacuum against a pitch-black sky.",
+      "camera": "pan-left",
+      "motion": false,
+      "nasaQuery": "lunar regolith closeup",
+      "sfxHint": "metallic resonance",
+      "start": 23.15,
+      "end": 27.67,
+      "words": [
+        {
+          "w": "Unlike",
+          "start": 23.15,
+          "end": 23.588
+        },
+        {
+          "w": "Earth",
+          "start": 23.588,
+          "end": 23.969
+        },
+        {
+          "w": "quakes,",
+          "start": 23.969,
+          "end": 24.438
+        },
+        {
+          "w": "there",
+          "start": 24.438,
+          "end": 24.819
+        },
+        {
+          "w": "is",
+          "start": 24.819,
+          "end": 25.03
+        },
+        {
+          "w": "no",
+          "start": 25.03,
+          "end": 25.241
+        },
+        {
+          "w": "liquid",
+          "start": 25.241,
+          "end": 25.679
+        },
+        {
+          "w": "water",
+          "start": 25.679,
+          "end": 26.06
+        },
+        {
+          "w": "to",
+          "start": 26.06,
+          "end": 26.271
+        },
+        {
+          "w": "absorb",
+          "start": 26.271,
+          "end": 26.709
+        },
+        {
+          "w": "seismic",
+          "start": 26.709,
+          "end": 27.203
+        },
+        {
+          "w": "energy.",
+          "start": 27.203,
+          "end": 27.673
+        }
+      ]
+    },
+    {
+      "beat": "twist",
+      "text": "NASA's future Artemis base sits right inside these active fault zones.",
+      "imagePrompt": "Wide establishing shot of a futuristic human lunar habitat towering above a massive crack on the Moon's south pole, glowing blue lights against icy shadows.",
+      "camera": "drift-up",
+      "motion": false,
+      "nasaQuery": "artemis south pole moon",
+      "sfxHint": "warning chime",
+      "start": 28.12,
+      "end": 32.67,
+      "words": [
+        {
+          "w": "NASA's",
+          "start": 28.12,
+          "end": 28.513
+        },
+        {
+          "w": "future",
+          "start": 28.513,
+          "end": 28.965
+        },
+        {
+          "w": "Artemis",
+          "start": 28.965,
+          "end": 29.474
+        },
+        {
+          "w": "base",
+          "start": 29.474,
+          "end": 29.809
+        },
+        {
+          "w": "sits",
+          "start": 29.809,
+          "end": 30.143
+        },
+        {
+          "w": "right",
+          "start": 30.143,
+          "end": 30.536
+        },
+        {
+          "w": "inside",
+          "start": 30.536,
+          "end": 30.988
+        },
+        {
+          "w": "these",
+          "start": 30.988,
+          "end": 31.381
+        },
+        {
+          "w": "active",
+          "start": 31.381,
+          "end": 31.832
+        },
+        {
+          "w": "fault",
+          "start": 31.832,
+          "end": 32.225
+        },
+        {
+          "w": "zones.",
+          "start": 32.225,
+          "end": 32.65
+        }
+      ]
+    },
+    {
+      "beat": "twist",
+      "text": "A single major quake could collapse our entire habitat in seconds.",
+      "imagePrompt": "Medium shot of a lunar habitat module cracking under intense vibration, solar panels twisting, tiny against vast desolate lunar landscape.",
+      "camera": "push-in",
+      "motion": false,
+      "nasaQuery": "lunar habitat concept",
+      "sfxHint": "distorted bass pulse",
+      "start": 32.7,
+      "end": 37.0,
+      "words": [
+        {
+          "w": "A",
+          "start": 32.7,
+          "end": 32.857
+        },
+        {
+          "w": "single",
+          "start": 32.857,
+          "end": 33.304
+        },
+        {
+          "w": "major",
+          "start": 33.304,
+          "end": 33.693
+        },
+        {
+          "w": "quake",
+          "start": 33.693,
+          "end": 34.082
+        },
+        {
+          "w": "could",
+          "start": 34.082,
+          "end": 34.47
+        },
+        {
+          "w": "collapse",
+          "start": 34.47,
+          "end": 35.033
+        },
+        {
+          "w": "our",
+          "start": 35.033,
+          "end": 35.306
+        },
+        {
+          "w": "entire",
+          "start": 35.306,
+          "end": 35.753
+        },
+        {
+          "w": "habitat",
+          "start": 35.753,
+          "end": 36.258
+        },
+        {
+          "w": "in",
+          "start": 36.258,
+          "end": 36.473
+        },
+        {
+          "w": "seconds.",
+          "start": 36.473,
+          "end": 37.009
+        }
+      ]
+    },
+    {
+      "beat": "loop",
+      "text": "And it all happens because...",
+      "imagePrompt": "Extreme close-up of a giant glowing fracture ripping across the lunar surface, harsh sunlight, ultra-detailed crater texture, ominous dark space background.",
+      "camera": "push-in",
+      "motion": false,
+      "nasaQuery": "lunar recon orbiter thrust fault",
+      "sfxHint": "fast whoosh",
+      "start": 37.28,
+      "end": 39.49,
+      "words": [
+        {
+          "w": "And",
+          "start": 37.28,
+          "end": 37.616
+        },
+        {
+          "w": "it",
+          "start": 37.616,
+          "end": 37.881
+        },
+        {
+          "w": "all",
+          "start": 37.881,
+          "end": 38.217
+        },
+        {
+          "w": "happens",
+          "start": 38.217,
+          "end": 38.838
+        },
+        {
+          "w": "because...",
+          "start": 38.838,
+          "end": 39.499
+        }
+      ]
+    }
+  ],
+  "beats": [
+    {
+      "id": "hook",
+      "visual": "A dramatic close-up of the Moon cracking open with glowing fault lines."
+    },
+    {
+      "id": "setup",
+      "visual": "A cross-section cutaway of the Moon's interior core cooling and contracting."
+    },
+    {
+      "id": "quiz",
+      "visual": "A still, high-contrast aerial scan of the lunar surface with a hidden cliff fault."
+    },
+    {
+      "id": "reveal",
+      "visual": "The surface ruptures violently as dust flies into vacuum space during a quake."
+    },
+    {
+      "id": "twist",
+      "visual": "A futuristic NASA base built dangerously close to a cracking fault line."
+    },
+    {
+      "id": "loop",
+      "visual": "A dramatic close-up of the Moon cracking open with glowing fault lines."
+    }
+  ],
+  "voiceStatus": "kokoro:af_nova"
+}

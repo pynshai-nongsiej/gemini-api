@@ -1,0 +1,140 @@
+{
+  "id": "auto-15-the-rogue-planet-floating-alone",
+  "title": "The Rogue Planet Floating Alone in Deep Space",
+  "composition": "AutoTherogueplanetfloatin",
+  "hookCard": "A PLANET _WITHOUT_ A STAR",
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSec": 40.83
+  },
+  "vo": [
+    {
+      "beat": "hook",
+      "text": "A lonely world floats through total darkness, burning with radioactive power.",
+      "imagePrompt": "Wide establishing shot of a pitch-black cosmic void, a dark rogue planet looming with eerie purple aurora crown, cold blue lighting, floating through deep space.",
+      "camera": "push-in",
+      "motion": false,
+      "nasaQuery": "brown dwarf auroras",
+      "sfxHint": "deep rumble",
+      "start": 0.25,
+      "end": 4.23
+    },
+    {
+      "beat": "setup",
+      "text": "Meet SIMP J0136, a massive gas giant twenty light-years from Earth.",
+      "imagePrompt": "Medium shot of a massive gas giant glowing with faint crimson warmth, orbiting no star, surrounded by distant dim background stars.",
+      "camera": "orbit-left",
+      "motion": false,
+      "nasaQuery": "SIMP J01363567+0933473",
+      "sfxHint": "soft whoosh",
+      "start": 4.55,
+      "end": 8.53
+    },
+    {
+      "beat": "setup",
+      "text": "It has no parent sun, meaning it drifted alone into eternal night.",
+      "imagePrompt": "Wide shot looking out from near the planet into an endless, empty galactic void, tiny distant galaxies scattered in darkness.",
+      "camera": "pull-back",
+      "motion": false,
+      "nasaQuery": "exoplanet deep space",
+      "sfxHint": "eerie drone",
+      "start": 8.86,
+      "end": 13.2
+    },
+    {
+      "beat": "quiz",
+      "text": "Without solar wind, auroras should be physically impossible here. Guess how it forms them.",
+      "imagePrompt": "Extreme close-up of turbulent cloud belts on a giant planet, static electrical arcs crackling across dark purple atmospheres.",
+      "camera": "drift-down",
+      "motion": false,
+      "nasaQuery": "jupiter aurora hubble",
+      "sfxHint": "tick",
+      "start": 13.53,
+      "end": 18.59
+    },
+    {
+      "beat": "reveal",
+      "text": "Its magnetic field is two hundred times stronger than giant Jupiter's.",
+      "imagePrompt": "Low angle looking up, glowing invisible magnetic field lines tearing through space around the massive planet like brilliant glowing blue filaments.",
+      "camera": "crash-zoom",
+      "motion": true,
+      "nasaQuery": "jupiter magnetosphere",
+      "sfxHint": "riser impact",
+      "start": 18.92,
+      "end": 22.89
+    },
+    {
+      "beat": "reveal",
+      "text": "That hyper-magnetism ignites auroras ten thousand times brighter than Earth's light shows.",
+      "imagePrompt": "Wide cinematic shot, massive blinding violet and neon green light curtains exploding across the planet pole in deep space.",
+      "camera": "push-in",
+      "motion": true,
+      "nasaQuery": "aurora flare space",
+      "sfxHint": "electric surge",
+      "start": 23.22,
+      "end": 27.56
+    },
+    {
+      "beat": "twist",
+      "text": "An unseen moon might be spraying volcanic plasma directly into its atmosphere.",
+      "imagePrompt": "Low angle, a tiny icy volcanic moon plunging past the giant planet, blasting a vibrant trail of glowing plasma into the upper cloud layer.",
+      "camera": "orbit-right",
+      "motion": false,
+      "nasaQuery": "io jupiter plasma belt",
+      "sfxHint": "sparkle",
+      "start": 27.89,
+      "end": 32.22
+    },
+    {
+      "beat": "twist",
+      "text": "Creating a glowing light show in the coldest, dark corner of space.",
+      "imagePrompt": "High angle shot looking down at the entire planet glowing silently, crowned in luminous ultraviolet fire, tiny against the cosmos.",
+      "camera": "drift-up",
+      "motion": false,
+      "nasaQuery": "rogue planet aurora",
+      "sfxHint": "subtle hum",
+      "start": 32.55,
+      "end": 36.89
+    },
+    {
+      "beat": "loop",
+      "text": "And somewhere out there in the dark...",
+      "imagePrompt": "Wide establishing shot of a pitch-black cosmic void, a dark rogue planet looming with eerie purple aurora crown, cold blue lighting, floating through deep space.",
+      "camera": "settle",
+      "motion": false,
+      "nasaQuery": "brown dwarf auroras",
+      "sfxHint": "whoosh decay",
+      "start": 37.22,
+      "end": 39.75
+    }
+  ],
+  "beats": [
+    {
+      "id": "hook",
+      "visual": "A massive, dark rogue planet floating in pitch-black space, crowned by an impossibly vivid purple aura."
+    },
+    {
+      "id": "setup",
+      "visual": "Camera glides around the giant crimson-tinted rogue world drifting solitary through the galactic void."
+    },
+    {
+      "id": "quiz",
+      "visual": "Macro view of violent, static-charged storm clouds swirling across the planet surface without sun exposure."
+    },
+    {
+      "id": "reveal",
+      "visual": "Violent surge of neon-violet energy arcs bursting over the planet poles in a blinding magnetic display."
+    },
+    {
+      "id": "twist",
+      "visual": "A miniature volcanic moon spewing glowing plasma streams directly into the planet powerful magnetic field lines."
+    },
+    {
+      "id": "loop",
+      "visual": "A massive, dark rogue planet floating in pitch-black space, crowned by an impossibly vivid purple aura."
+    }
+  ],
+  "voiceStatus": "pending:kokoro"
+}

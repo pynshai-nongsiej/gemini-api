@@ -1,0 +1,209 @@
+[
+  {
+    "beat": "hook",
+    "stem": "b00-hook",
+    "src": "b00-hook.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA16114",
+    "title": "Quasar Drenched in Water Vapor Artist Concept",
+    "url": "https://images-assets.nasa.gov/image/PIA16114/PIA16114~orig.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA16114.html",
+    "query": "quasar apm",
+    "enhanced": {
+      "from": [
+        1259,
+        944
+      ],
+      "factor": 2.115,
+      "final": [
+        2663,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "hook",
+    "stem": "b01-hook",
+    "src": "b01-hook.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA00342",
+    "title": "The Earth & Moon",
+    "url": "https://images-assets.nasa.gov/image/PIA00342/PIA00342~medium.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA00342.html",
+    "query": "earth",
+    "enhanced": {
+      "from": [
+        1005,
+        1280
+      ],
+      "factor": 1.56,
+      "final": [
+        1568,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "setup",
+    "stem": "b02-setup",
+    "src": "b02-setup.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA23410",
+    "title": "Quasars' Multiple Images Shed Light on Tiny Dark Matter Clumps",
+    "url": "https://images-assets.nasa.gov/image/PIA23410/PIA23410~medium.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA23410.html",
+    "query": "quasar core",
+    "enhanced": {
+      "from": [
+        1280,
+        853
+      ],
+      "factor": 2.341,
+      "final": [
+        2996,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "setup",
+    "stem": "b03-setup",
+    "src": "b03-setup.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA22085",
+    "title": "Black Hole With Jet (Artist's Concept)",
+    "url": "https://images-assets.nasa.gov/image/PIA22085/PIA22085~large.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA22085.html",
+    "query": "black hole jet",
+    "enhanced": {
+      "from": [
+        1920,
+        1080
+      ],
+      "factor": 1.849,
+      "final": [
+        3550,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "quiz",
+    "stem": "b04-quiz",
+    "src": "b04-quiz.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA14417",
+    "title": "Weighing in on the Dumbbell Nebula",
+    "url": "https://images-assets.nasa.gov/image/PIA14417/PIA14417~medium.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA14417.html",
+    "query": "nebula",
+    "enhanced": {
+      "from": [
+        1280,
+        640
+      ],
+      "factor": 3.12,
+      "final": [
+        3994,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "reveal",
+    "stem": "b05-reveal",
+    "src": "b05-reveal.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA24985",
+    "title": "COWVR's New Map",
+    "url": "https://images-assets.nasa.gov/image/PIA24985/PIA24985~large.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA24985.html",
+    "query": "water vapor cloud",
+    "enhanced": {
+      "from": [
+        1920,
+        657
+      ],
+      "factor": 3.039,
+      "final": [
+        5835,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "reveal",
+    "stem": "b06-reveal",
+    "src": "b06-reveal.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA13959",
+    "title": "Orion Rainbow of Infrared Light",
+    "url": "https://images-assets.nasa.gov/image/PIA13959/PIA13959~large.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA13959.html",
+    "query": "orion nebula gas",
+    "enhanced": {
+      "from": [
+        1866,
+        1920
+      ],
+      "factor": 1.04,
+      "final": [
+        1941,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "twist",
+    "stem": "b07-twist",
+    "src": "b07-twist.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA12110",
+    "title": "Hubble Deep Field Image Unveils Myriad Galaxies Back to the Beginning of Time",
+    "url": "https://images-assets.nasa.gov/image/PIA12110/PIA12110~medium.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA12110.html",
+    "query": "deep field early",
+    "enhanced": {
+      "from": [
+        1246,
+        1280
+      ],
+      "factor": 1.56,
+      "final": [
+        1944,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "twist",
+    "stem": "b08-twist",
+    "src": "b08-twist.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA15255",
+    "title": "A Dwarf Galaxy Star Bar and Dusty Wing",
+    "url": "https://images-assets.nasa.gov/image/PIA15255/PIA15255~large.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA15255.html",
+    "query": "star formation cloud",
+    "enhanced": {
+      "from": [
+        1920,
+        960
+      ],
+      "factor": 2.08,
+      "final": [
+        3994,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "loop",
+    "stem": "b09-loop",
+    "src": "b09-loop.jpg",
+    "source": "ai",
+    "nasa_id": null,
+    "title": "AI visualization — Wide establishing shot approaching a colossal, glowing water mass hovering in th",
+    "url": null
+  }
+]

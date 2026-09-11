@@ -1,0 +1,183 @@
+[
+  {
+    "beat": "hook",
+    "stem": "b00-hook",
+    "src": "b00-hook.jpg",
+    "source": "ai",
+    "nasa_id": null,
+    "title": "AI visualization — Wide establishing shot of a blazing black hole trailing a bright blue glowing sh",
+    "url": null
+  },
+  {
+    "beat": "hook",
+    "stem": "b01-hook",
+    "src": "b01-hook.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA23122",
+    "title": "Spitzer Captures Messier 87",
+    "url": "https://images-assets.nasa.gov/image/PIA23122/PIA23122~medium.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA23122.html",
+    "query": "black hole shockwave",
+    "enhanced": {
+      "from": [
+        1280,
+        719
+      ],
+      "factor": 2.777,
+      "final": [
+        3555,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "setup",
+    "stem": "b02-setup",
+    "src": "b02-setup.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA12110",
+    "title": "Hubble Deep Field Image Unveils Myriad Galaxies Back to the Beginning of Time",
+    "url": "https://images-assets.nasa.gov/image/PIA12110/PIA12110~medium.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA12110.html",
+    "query": "hubble",
+    "enhanced": {
+      "from": [
+        1246,
+        1280
+      ],
+      "factor": 1.56,
+      "final": [
+        1944,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "setup",
+    "stem": "b03-setup",
+    "src": "b03-setup.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "0002272",
+    "title": "History of Chandra X-Ray Observatory",
+    "url": "https://images-assets.nasa.gov/image/0002272/0002272~large.jpg",
+    "details_url": "https://images.nasa.gov/details-0002272.html",
+    "query": "binary black hole",
+    "enhanced": {
+      "from": [
+        1920,
+        1615
+      ],
+      "factor": 1.236,
+      "final": [
+        2374,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "quiz",
+    "stem": "b04-quiz",
+    "src": "b04-quiz.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "GSFC_20171208_Archive_e001178",
+    "title": "NASA's Hubble Finds Life is Too Fast, Too Furious for This Runaway Galaxy",
+    "url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001178/GSFC_20171208_Archive_e001178~large.jpg",
+    "details_url": "https://images.nasa.gov/details-GSFC_20171208_Archive_e001178.html",
+    "query": "hubble streak trail",
+    "enhanced": {
+      "from": [
+        1920,
+        1911
+      ],
+      "factor": 1.045,
+      "final": [
+        2006,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "reveal",
+    "stem": "b05-reveal",
+    "src": "b05-reveal.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA16022",
+    "title": "Hubble Sees the Force Awakening in a Newborn Star",
+    "url": "https://images-assets.nasa.gov/image/PIA16022/PIA16022~orig.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA16022.html",
+    "query": "star birth cloud",
+    "enhanced": {
+      "from": [
+        1028,
+        1218
+      ],
+      "factor": 1.639,
+      "final": [
+        1685,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "reveal",
+    "stem": "b06-reveal",
+    "src": "b06-reveal.jpg",
+    "source": "ai",
+    "nasa_id": null,
+    "title": "AI visualization — Wide establishing shot showing a massive straight blue bridge of young stellar c",
+    "url": null
+  },
+  {
+    "beat": "twist",
+    "stem": "b07-twist",
+    "src": "b07-twist.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA09926",
+    "title": "Infrared Coronet Cluster",
+    "url": "https://images-assets.nasa.gov/image/PIA09926/PIA09926~large.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA09926.html",
+    "query": "star formation cluster",
+    "enhanced": {
+      "from": [
+        1920,
+        1920
+      ],
+      "factor": 1.04,
+      "final": [
+        1997,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "twist",
+    "stem": "b08-twist",
+    "src": "b08-twist.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA22079",
+    "title": "NASA's Hubble Spots Embryonic Galaxy SPT0615-JD",
+    "url": "https://images-assets.nasa.gov/image/PIA22079/PIA22079~small.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA22079.html",
+    "query": "gravitational lensing",
+    "enhanced": {
+      "from": [
+        640,
+        480
+      ],
+      "factor": 4.0,
+      "final": [
+        2560,
+        1920
+      ]
+    }
+  },
+  {
+    "beat": "loop",
+    "stem": "b09-loop",
+    "src": "b09-loop.jpg",
+    "source": "ai",
+    "nasa_id": null,
+    "title": "AI visualization — Wide establishing shot of a blazing black hole trailing a bright blue glowing sh",
+    "url": null
+  }
+]

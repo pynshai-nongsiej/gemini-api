@@ -1,0 +1,187 @@
+[
+  {
+    "beat": "hook",
+    "stem": "b00-hook",
+    "src": "b00-hook.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "GSFC_20171208_Archive_e001552",
+    "title": "NASA's Fermi Proves Supernova Remnants Produce Cosmic Rays",
+    "url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001552/GSFC_20171208_Archive_e001552~orig.jpg",
+    "details_url": "https://images.nasa.gov/details-GSFC_20171208_Archive_e001552.html",
+    "query": "cosmic ray",
+    "enhanced": {
+      "from": [
+        800,
+        902
+      ],
+      "factor": 2.214,
+      "final": [
+        1771,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "hook",
+    "stem": "b01-hook",
+    "src": "b01-hook.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "astronomers-find-the-first-wind-nebula-around-a-rare-ultra-magnetic-neutron-star_27744663791_o",
+    "title": "Astronomers Find the First 'Wind Nebula' Around a Rare Ultra-Magnetic Neutron Star",
+    "url": "https://images-assets.nasa.gov/image/astronomers-find-the-first-wind-nebula-around-a-rare-ultra-magnetic-neutron-star_27744663791_o/astronomers-find-the-first-wind-nebula-around-a-rare-ultra-magnetic-neutron-star_27744663791_o~orig.jpg",
+    "details_url": "https://images.nasa.gov/details-astronomers-find-the-first-wind-nebula-around-a-rare-ultra-magnetic-neutron-star_27744663791_o.html",
+    "query": "ultra high energy",
+    "enhanced": {
+      "from": [
+        1041,
+        589
+      ],
+      "factor": 3.39,
+      "final": [
+        3529,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "setup",
+    "stem": "b02-setup",
+    "src": "b02-setup.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "GSFC_20260623_DV_001198",
+    "title": "GSFC_20260623_DV_001198.jpg",
+    "url": "https://images-assets.nasa.gov/image/GSFC_20260623_DV_001198/GSFC_20260623_DV_001198~large.jpg",
+    "details_url": "https://images.nasa.gov/details-GSFC_20260623_DV_001198.html",
+    "query": "flys eye utah",
+    "enhanced": {
+      "from": [
+        1920,
+        1280
+      ],
+      "factor": 1.56,
+      "final": [
+        2995,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "setup",
+    "stem": "b03-setup",
+    "src": "b03-setup.jpg",
+    "source": "ai",
+    "nasa_id": null,
+    "title": "AI visualization — Extreme close-up, glowing proton hovering in cold dark space surrounded by faint",
+    "url": null
+  },
+  {
+    "beat": "quiz",
+    "stem": "b04-quiz",
+    "src": "b04-quiz.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA21087",
+    "title": "Galaxy IC 3639 with Obscured Active Galactic Nucleus",
+    "url": "https://images-assets.nasa.gov/image/PIA21087/PIA21087~medium.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA21087.html",
+    "query": "active galactic nucleus",
+    "enhanced": {
+      "from": [
+        1280,
+        1280
+      ],
+      "factor": 1.56,
+      "final": [
+        1997,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "reveal",
+    "stem": "b05-reveal",
+    "src": "b05-reveal.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA23403",
+    "title": "The \"Jack-o'-Lantern Nebula\"",
+    "url": "https://images-assets.nasa.gov/image/PIA23403/PIA23403~orig.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA23403.html",
+    "query": "omg particle cosmic",
+    "enhanced": {
+      "from": [
+        1041,
+        586
+      ],
+      "factor": 3.408,
+      "final": [
+        3547,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "twist",
+    "stem": "b06-twist",
+    "src": "b06-twist.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "GSFC_20171208_Archive_e000254",
+    "title": "Hubble Uncovers a Galaxy Pair Coming in from the Wilderness",
+    "url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000254/GSFC_20171208_Archive_e000254~orig.jpg",
+    "details_url": "https://images.nasa.gov/details-GSFC_20171208_Archive_e000254.html",
+    "query": "cosmic web void",
+    "enhanced": {
+      "from": [
+        949,
+        597
+      ],
+      "factor": 3.345,
+      "final": [
+        3174,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "twist",
+    "stem": "b07-twist",
+    "src": "b07-twist.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "sts054-152-102",
+    "title": "Bahama Banks, Tongue of the Ocean, Bahamas",
+    "url": "https://images-assets.nasa.gov/image/sts054-152-102/sts054-152-102~large.jpg",
+    "details_url": "https://images.nasa.gov/details-sts054-152-102.html",
+    "query": "deep background",
+    "enhanced": {
+      "from": [
+        1594,
+        1920
+      ],
+      "factor": 1.04,
+      "final": [
+        1658,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "loop",
+    "stem": "b08-loop",
+    "src": "b08-loop.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "GSFC_20171208_Archive_e002183",
+    "title": "Cassiopeia A supernova",
+    "url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e002183/GSFC_20171208_Archive_e002183~large.jpg",
+    "details_url": "https://images.nasa.gov/details-GSFC_20171208_Archive_e002183.html",
+    "query": "cosmic ray",
+    "enhanced": {
+      "from": [
+        1920,
+        1453
+      ],
+      "factor": 1.374,
+      "final": [
+        2639,
+        1997
+      ]
+    }
+  }
+]

@@ -1,0 +1,646 @@
+{
+  "id": "auto-22-the-planet-640-light-years-away",
+  "title": "The Planet Where Metal Rains From Sky",
+  "composition": "AutoTheplanetwheremetalr",
+  "hookCard": "RAIN OF _SOLID_ METAL",
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSec": 40.85
+  },
+  "vo": [
+    {
+      "beat": "hook",
+      "text": "Six hundred light-years away, it literally rains liquid iron.",
+      "imagePrompt": "Wide establishing shot of extreme hot Jupiter WASP-76b, glowing red-hot tidally locked exoplanet, dark sky background, cosmic scale",
+      "camera": "push-in",
+      "motion": false,
+      "nasaQuery": "exoplanet illustration WASP-76b",
+      "sfxHint": "deep rumble",
+      "start": 0.25,
+      "end": 3.64,
+      "words": [
+        {
+          "w": "Six",
+          "start": 0.25,
+          "end": 0.49
+        },
+        {
+          "w": "hundred",
+          "start": 0.49,
+          "end": 0.935
+        },
+        {
+          "w": "light-years",
+          "start": 0.935,
+          "end": 1.532
+        },
+        {
+          "w": "away,",
+          "start": 1.532,
+          "end": 1.851
+        },
+        {
+          "w": "it",
+          "start": 1.851,
+          "end": 2.041
+        },
+        {
+          "w": "literally",
+          "start": 2.041,
+          "end": 2.587
+        },
+        {
+          "w": "rains",
+          "start": 2.587,
+          "end": 2.929
+        },
+        {
+          "w": "liquid",
+          "start": 2.929,
+          "end": 3.323
+        },
+        {
+          "w": "iron.",
+          "start": 3.323,
+          "end": 3.642
+        }
+      ]
+    },
+    {
+      "beat": "setup",
+      "text": "Meet WASP-76b, a giant exoplanet locked in a permanent nightmare.",
+      "imagePrompt": "Extreme close-up of blazing hot star towering above giant scorched gas planet atmosphere, blinding starlight, fiery orange heat",
+      "camera": "orbit-left",
+      "motion": false,
+      "nasaQuery": "hot jupiter exoplanet",
+      "sfxHint": "rising sizzle",
+      "start": 4.04,
+      "end": 8.18,
+      "words": [
+        {
+          "w": "Meet",
+          "start": 4.04,
+          "end": 4.371
+        },
+        {
+          "w": "WASP-76b,",
+          "start": 4.371,
+          "end": 4.908
+        },
+        {
+          "w": "a",
+          "start": 4.908,
+          "end": 5.065
+        },
+        {
+          "w": "giant",
+          "start": 5.065,
+          "end": 5.455
+        },
+        {
+          "w": "exoplanet",
+          "start": 5.455,
+          "end": 6.076
+        },
+        {
+          "w": "locked",
+          "start": 6.076,
+          "end": 6.524
+        },
+        {
+          "w": "in",
+          "start": 6.524,
+          "end": 6.738
+        },
+        {
+          "w": "a",
+          "start": 6.738,
+          "end": 6.895
+        },
+        {
+          "w": "permanent",
+          "start": 6.895,
+          "end": 7.516
+        },
+        {
+          "w": "nightmare.",
+          "start": 7.516,
+          "end": 8.17
+        }
+      ]
+    },
+    {
+      "beat": "setup",
+      "text": "Its day side boils at four thousand degrees Fahrenheit.",
+      "imagePrompt": "Low angle looking up at blinding glowing atmosphere evaporating, molten heat waves, violent thermal currents, intense solar radiation",
+      "camera": "drift-up",
+      "motion": false,
+      "nasaQuery": "wasp 76b atmosphere",
+      "sfxHint": "heat wave pass",
+      "start": 8.22,
+      "end": 11.48,
+      "words": [
+        {
+          "w": "Its",
+          "start": 8.22,
+          "end": 8.468
+        },
+        {
+          "w": "day",
+          "start": 8.468,
+          "end": 8.716
+        },
+        {
+          "w": "side",
+          "start": 8.716,
+          "end": 9.017
+        },
+        {
+          "w": "boils",
+          "start": 9.017,
+          "end": 9.371
+        },
+        {
+          "w": "at",
+          "start": 9.371,
+          "end": 9.566
+        },
+        {
+          "w": "four",
+          "start": 9.566,
+          "end": 9.867
+        },
+        {
+          "w": "thousand",
+          "start": 9.867,
+          "end": 10.379
+        },
+        {
+          "w": "degrees",
+          "start": 10.379,
+          "end": 10.838
+        },
+        {
+          "w": "Fahrenheit.",
+          "start": 10.838,
+          "end": 11.484
+        }
+      ]
+    },
+    {
+      "beat": "setup",
+      "text": "That is hot enough to vaporize solid iron into gas.",
+      "imagePrompt": "Extreme close-up of iron molecules evaporating into metallic cloud vapor, red hot incandescent particles glowing brightly, microscopic scale",
+      "camera": "push-in",
+      "motion": false,
+      "nasaQuery": "exoplanet atmosphere metal",
+      "sfxHint": "high frequency hiss",
+      "start": 12.01,
+      "end": 15.2,
+      "words": [
+        {
+          "w": "That",
+          "start": 12.01,
+          "end": 12.322
+        },
+        {
+          "w": "is",
+          "start": 12.322,
+          "end": 12.524
+        },
+        {
+          "w": "hot",
+          "start": 12.524,
+          "end": 12.781
+        },
+        {
+          "w": "enough",
+          "start": 12.781,
+          "end": 13.202
+        },
+        {
+          "w": "to",
+          "start": 13.202,
+          "end": 13.404
+        },
+        {
+          "w": "vaporize",
+          "start": 13.404,
+          "end": 13.934
+        },
+        {
+          "w": "solid",
+          "start": 13.934,
+          "end": 14.3
+        },
+        {
+          "w": "iron",
+          "start": 14.3,
+          "end": 14.612
+        },
+        {
+          "w": "into",
+          "start": 14.612,
+          "end": 14.923
+        },
+        {
+          "w": "gas.",
+          "start": 14.923,
+          "end": 15.21
+        }
+      ]
+    },
+    {
+      "beat": "quiz",
+      "text": "Pause. Where does all that airborne metal actually go?",
+      "imagePrompt": "Wide shot across planet terminator line, split contrast between blinding day side and pitch black night sky, dramatic horizon line",
+      "camera": "settle",
+      "motion": false,
+      "nasaQuery": "exoplanet terminator line",
+      "sfxHint": "clock tick",
+      "start": 16.19,
+      "end": 19.02,
+      "words": [
+        {
+          "w": "Pause.",
+          "start": 16.19,
+          "end": 16.531
+        },
+        {
+          "w": "Where",
+          "start": 16.531,
+          "end": 16.845
+        },
+        {
+          "w": "does",
+          "start": 16.845,
+          "end": 17.113
+        },
+        {
+          "w": "all",
+          "start": 17.113,
+          "end": 17.334
+        },
+        {
+          "w": "that",
+          "start": 17.334,
+          "end": 17.602
+        },
+        {
+          "w": "airborne",
+          "start": 17.602,
+          "end": 18.057
+        },
+        {
+          "w": "metal",
+          "start": 18.057,
+          "end": 18.372
+        },
+        {
+          "w": "actually",
+          "start": 18.372,
+          "end": 18.828
+        },
+        {
+          "w": "go?",
+          "start": 18.828,
+          "end": 19.027
+        }
+      ]
+    },
+    {
+      "beat": "reveal",
+      "text": "Violent eleven-thousand-mile-an-hour winds sweep the iron vapor into the night side.",
+      "imagePrompt": "Approaching fast, planetary scale super-rotation winds carrying glowing metal clouds around dark side horizon, hyper-speed motion blur",
+      "camera": "crash-zoom",
+      "motion": true,
+      "nasaQuery": "exoplanet extreme winds",
+      "sfxHint": "massive wind roar",
+      "start": 19.98,
+      "end": 24.49,
+      "words": [
+        {
+          "w": "Violent",
+          "start": 19.98,
+          "end": 20.425
+        },
+        {
+          "w": "eleven-thousand-mile-an-hour",
+          "start": 20.425,
+          "end": 21.737
+        },
+        {
+          "w": "winds",
+          "start": 21.737,
+          "end": 22.079
+        },
+        {
+          "w": "sweep",
+          "start": 22.079,
+          "end": 22.422
+        },
+        {
+          "w": "the",
+          "start": 22.422,
+          "end": 22.662
+        },
+        {
+          "w": "iron",
+          "start": 22.662,
+          "end": 22.954
+        },
+        {
+          "w": "vapor",
+          "start": 22.954,
+          "end": 23.296
+        },
+        {
+          "w": "into",
+          "start": 23.296,
+          "end": 23.588
+        },
+        {
+          "w": "the",
+          "start": 23.588,
+          "end": 23.828
+        },
+        {
+          "w": "night",
+          "start": 23.828,
+          "end": 24.171
+        },
+        {
+          "w": "side.",
+          "start": 24.171,
+          "end": 24.49
+        }
+      ]
+    },
+    {
+      "beat": "reveal",
+      "text": "Temperatures plummet, instantly condensing the vapor into molten iron raindrops.",
+      "imagePrompt": "Plunging through heavy clouds of glowing red molten iron droplets falling through pitch black alien atmosphere, cinematic volumetric lighting",
+      "camera": "drift-down",
+      "motion": true,
+      "nasaQuery": "molten iron rain exoplanet",
+      "sfxHint": "metallic splash impact",
+      "start": 24.54,
+      "end": 28.67,
+      "words": [
+        {
+          "w": "Temperatures",
+          "start": 24.54,
+          "end": 25.19
+        },
+        {
+          "w": "plummet,",
+          "start": 25.19,
+          "end": 25.628
+        },
+        {
+          "w": "instantly",
+          "start": 25.628,
+          "end": 26.136
+        },
+        {
+          "w": "condensing",
+          "start": 26.136,
+          "end": 26.69
+        },
+        {
+          "w": "the",
+          "start": 26.69,
+          "end": 26.913
+        },
+        {
+          "w": "vapor",
+          "start": 26.913,
+          "end": 27.231
+        },
+        {
+          "w": "into",
+          "start": 27.231,
+          "end": 27.501
+        },
+        {
+          "w": "molten",
+          "start": 27.501,
+          "end": 27.866
+        },
+        {
+          "w": "iron",
+          "start": 27.866,
+          "end": 28.137
+        },
+        {
+          "w": "raindrops.",
+          "start": 28.137,
+          "end": 28.67
+        }
+      ]
+    },
+    {
+      "beat": "twist",
+      "text": "The planet is actually inflating like a balloon from the heat.",
+      "imagePrompt": "Wide shot comparing puffed swollen giant planet tiny against vast starfield backdrop, glowing red aura extending out",
+      "camera": "pull-back",
+      "motion": false,
+      "nasaQuery": "inflated hot jupiter",
+      "sfxHint": "low sub boom",
+      "start": 28.72,
+      "end": 31.87,
+      "words": [
+        {
+          "w": "The",
+          "start": 28.72,
+          "end": 28.931
+        },
+        {
+          "w": "planet",
+          "start": 28.931,
+          "end": 29.277
+        },
+        {
+          "w": "is",
+          "start": 29.277,
+          "end": 29.444
+        },
+        {
+          "w": "actually",
+          "start": 29.444,
+          "end": 29.88
+        },
+        {
+          "w": "inflating",
+          "start": 29.88,
+          "end": 30.36
+        },
+        {
+          "w": "like",
+          "start": 30.36,
+          "end": 30.616
+        },
+        {
+          "w": "a",
+          "start": 30.616,
+          "end": 30.738
+        },
+        {
+          "w": "balloon",
+          "start": 30.738,
+          "end": 31.129
+        },
+        {
+          "w": "from",
+          "start": 31.129,
+          "end": 31.385
+        },
+        {
+          "w": "the",
+          "start": 31.385,
+          "end": 31.596
+        },
+        {
+          "w": "heat.",
+          "start": 31.596,
+          "end": 31.877
+        }
+      ]
+    },
+    {
+      "beat": "twist",
+      "text": "It is slowly bleeding its own atmosphere out into deep space.",
+      "imagePrompt": "Extreme wide shot showing trailing comet-like tail of glowing metallic gas stripping away from planet into dark void",
+      "camera": "orbit-right",
+      "motion": false,
+      "nasaQuery": "evaporating exoplanet tail",
+      "sfxHint": "fading chime",
+      "start": 33.28,
+      "end": 36.73,
+      "words": [
+        {
+          "w": "It",
+          "start": 33.28,
+          "end": 33.465
+        },
+        {
+          "w": "is",
+          "start": 33.465,
+          "end": 33.65
+        },
+        {
+          "w": "slowly",
+          "start": 33.65,
+          "end": 34.034
+        },
+        {
+          "w": "bleeding",
+          "start": 34.034,
+          "end": 34.518
+        },
+        {
+          "w": "its",
+          "start": 34.518,
+          "end": 34.752
+        },
+        {
+          "w": "own",
+          "start": 34.752,
+          "end": 34.987
+        },
+        {
+          "w": "atmosphere",
+          "start": 34.987,
+          "end": 35.571
+        },
+        {
+          "w": "out",
+          "start": 35.571,
+          "end": 35.805
+        },
+        {
+          "w": "into",
+          "start": 35.805,
+          "end": 36.09
+        },
+        {
+          "w": "deep",
+          "start": 36.09,
+          "end": 36.374
+        },
+        {
+          "w": "space.",
+          "start": 36.374,
+          "end": 36.736
+        }
+      ]
+    },
+    {
+      "beat": "loop",
+      "text": "Because on an alien world",
+      "imagePrompt": "Wide establishing shot of extreme hot Jupiter WASP-76b, glowing red-hot tidally locked exoplanet, dark sky background, cosmic scale",
+      "camera": "push-in",
+      "motion": false,
+      "nasaQuery": "exoplanet illustration WASP-76b",
+      "sfxHint": "soft transition whoosh",
+      "start": 37.84,
+      "end": 39.58,
+      "words": [
+        {
+          "w": "Because",
+          "start": 37.84,
+          "end": 38.356
+        },
+        {
+          "w": "on",
+          "start": 38.356,
+          "end": 38.575
+        },
+        {
+          "w": "an",
+          "start": 38.575,
+          "end": 38.795
+        },
+        {
+          "w": "alien",
+          "start": 38.795,
+          "end": 39.192
+        },
+        {
+          "w": "world",
+          "start": 39.192,
+          "end": 39.589
+        }
+      ]
+    }
+  ],
+  "beats": [
+    {
+      "id": "hook",
+      "visual": "A scorching, fiery red exoplanet glowing in deep space against a dark cosmic void."
+    },
+    {
+      "id": "setup",
+      "visual": "The blazing surface of a star looming terrifyingly close over WASP-76b's atmosphere."
+    },
+    {
+      "id": "quiz",
+      "visual": "A stark view of the planet's terminator line separating blinding light and total darkness."
+    },
+    {
+      "id": "reveal",
+      "visual": "Heavy torrents of glowing liquid iron falling through dark night-side storm clouds."
+    },
+    {
+      "id": "twist",
+      "visual": "Streams of metallic gas stripping away from the bloated planet into the vacuum of space."
+    },
+    {
+      "id": "loop",
+      "visual": "A scorching, fiery red exoplanet glowing in deep space against a dark cosmic void."
+    }
+  ],
+  "voiceStatus": "kokoro:am_eric"
+}

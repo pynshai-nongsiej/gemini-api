@@ -1,0 +1,31 @@
+1
+00:00:00,250 --> 00:00:05,940
+This sphere is crushed smaller than Manhattan, yet it spins 716 times every second.
+
+2
+00:00:05,980 --> 00:00:13,180
+Meet PSR J1748-2446 ad, the fastest-spinning pulsar ever discovered in our universe.
+
+3
+00:00:10,950 --> 00:00:15,960
+Its equator travels at 24 percent the speed of light, dragging space itself.
+
+4
+00:00:16,300 --> 00:00:21,160
+Pause right now. What keeps centrifugal force from shredding this dead star apart?
+
+5
+00:00:21,650 --> 00:00:26,590
+Crushing gravity! Centrifugal force flattens the star, but gravity clamps it together.
+
+6
+00:00:26,620 --> 00:00:31,170
+If it spun just slightly faster, centrifugal force would overcome gravity.
+
+7
+00:00:31,200 --> 00:00:34,990
+The entire dead star would instantly tear itself to shreds.
+
+8
+00:00:35,390 --> 00:00:38,540
+Yet right now, buried in cluster Terzan 5...

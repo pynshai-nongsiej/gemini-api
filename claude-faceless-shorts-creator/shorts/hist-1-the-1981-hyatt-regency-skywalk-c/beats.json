@@ -1,0 +1,677 @@
+{
+  "id": "hist-1-the-1981-hyatt-regency-skywalk-c",
+  "title": "The 2mm Design Change That Killed 114 People",
+  "composition": "AutoThe2Mmdesignchangeth",
+  "hookCard": "A _2MM_ fatal MISTAKE",
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSec": 40.84
+  },
+  "vo": [
+    {
+      "beat": "hook",
+      "text": "On July 17, 1981, a single design change collapsed two steel skywalks.",
+      "archiveQuery": "hyatt regency skywalk collapse 1981",
+      "onScreen": "JULY 17, 1981",
+      "sourceHint": "photo",
+      "imagePrompt": "Debris and bent steel beams inside a high-rise atrium lobby, flash photography, vintage news aesthetic.",
+      "camera": "push-in",
+      "motion": false,
+      "sfxHint": "impact",
+      "start": 0.25,
+      "end": 4.96,
+      "words": [
+        {
+          "w": "On",
+          "start": 0.25,
+          "end": 0.473
+        },
+        {
+          "w": "July",
+          "start": 0.473,
+          "end": 0.816
+        },
+        {
+          "w": "17,",
+          "start": 0.816,
+          "end": 1.073
+        },
+        {
+          "w": "1981,",
+          "start": 1.073,
+          "end": 1.449
+        },
+        {
+          "w": "a",
+          "start": 1.449,
+          "end": 1.611
+        },
+        {
+          "w": "single",
+          "start": 1.611,
+          "end": 2.075
+        },
+        {
+          "w": "design",
+          "start": 2.075,
+          "end": 2.539
+        },
+        {
+          "w": "change",
+          "start": 2.539,
+          "end": 3.002
+        },
+        {
+          "w": "collapsed",
+          "start": 3.002,
+          "end": 3.646
+        },
+        {
+          "w": "two",
+          "start": 3.646,
+          "end": 3.93
+        },
+        {
+          "w": "steel",
+          "start": 3.93,
+          "end": 4.333
+        },
+        {
+          "w": "skywalks.",
+          "start": 4.333,
+          "end": 4.95
+        }
+      ]
+    },
+    {
+      "beat": "setup",
+      "text": "Over fifteen hundred people gathered in Kansas City's Hyatt Regency for a dance.",
+      "archiveQuery": "hyatt regency kansas city atrium 1981",
+      "onScreen": "KANSAS CITY, MO",
+      "sourceHint": "photo",
+      "imagePrompt": "Multi-story glass hotel atrium crowded with people in 1980s attire, wide lens shot.",
+      "camera": "drift-up",
+      "motion": false,
+      "sfxHint": "archive reel",
+      "start": 5.0,
+      "end": 10.07,
+      "words": [
+        {
+          "w": "Over",
+          "start": 5.0,
+          "end": 5.326
+        },
+        {
+          "w": "fifteen",
+          "start": 5.326,
+          "end": 5.824
+        },
+        {
+          "w": "hundred",
+          "start": 5.824,
+          "end": 6.321
+        },
+        {
+          "w": "people",
+          "start": 6.321,
+          "end": 6.761
+        },
+        {
+          "w": "gathered",
+          "start": 6.761,
+          "end": 7.316
+        },
+        {
+          "w": "in",
+          "start": 7.316,
+          "end": 7.528
+        },
+        {
+          "w": "Kansas",
+          "start": 7.528,
+          "end": 7.968
+        },
+        {
+          "w": "City's",
+          "start": 7.968,
+          "end": 8.352
+        },
+        {
+          "w": "Hyatt",
+          "start": 8.352,
+          "end": 8.734
+        },
+        {
+          "w": "Regency",
+          "start": 8.734,
+          "end": 9.232
+        },
+        {
+          "w": "for",
+          "start": 9.232,
+          "end": 9.501
+        },
+        {
+          "w": "a",
+          "start": 9.501,
+          "end": 9.656
+        },
+        {
+          "w": "dance.",
+          "start": 9.656,
+          "end": 10.07
+        }
+      ]
+    },
+    {
+      "beat": "setup",
+      "text": "Suspended walkways allowed guests to view the party from above.",
+      "archiveQuery": "hyatt regency Kansas City walkway pre-collapse 1981",
+      "onScreen": "HYATT REGENCY ATRIUM",
+      "sourceHint": "photo",
+      "imagePrompt": "Suspended steel and glass walkway viewed from below inside a modern hotel atrium, 1980s photograph.",
+      "camera": "pan-right",
+      "motion": false,
+      "sfxHint": "",
+      "start": 10.12,
+      "end": 14.08,
+      "words": [
+        {
+          "w": "Suspended",
+          "start": 10.12,
+          "end": 10.722
+        },
+        {
+          "w": "walkways",
+          "start": 10.722,
+          "end": 11.268
+        },
+        {
+          "w": "allowed",
+          "start": 11.268,
+          "end": 11.757
+        },
+        {
+          "w": "guests",
+          "start": 11.757,
+          "end": 12.19
+        },
+        {
+          "w": "to",
+          "start": 12.19,
+          "end": 12.399
+        },
+        {
+          "w": "view",
+          "start": 12.399,
+          "end": 12.719
+        },
+        {
+          "w": "the",
+          "start": 12.719,
+          "end": 12.984
+        },
+        {
+          "w": "party",
+          "start": 12.984,
+          "end": 13.362
+        },
+        {
+          "w": "from",
+          "start": 13.362,
+          "end": 13.682
+        },
+        {
+          "w": "above.",
+          "start": 13.682,
+          "end": 14.09
+        }
+      ]
+    },
+    {
+      "beat": "quiz",
+      "text": "Pause—what do you think broke first under all that weight?",
+      "archiveQuery": "hyatt regency skywalk tie rod connection 1981",
+      "onScreen": "PAUSE AND THINK",
+      "sourceHint": "photo",
+      "imagePrompt": "Close-up of a heavy steel threaded rod and nut assembly, extreme macro photography, dark background.",
+      "camera": "settle",
+      "motion": false,
+      "sfxHint": "riser",
+      "start": 14.14,
+      "end": 17.4,
+      "words": [
+        {
+          "w": "Pause—what",
+          "start": 14.14,
+          "end": 14.681
+        },
+        {
+          "w": "do",
+          "start": 14.681,
+          "end": 14.868
+        },
+        {
+          "w": "you",
+          "start": 14.868,
+          "end": 15.106
+        },
+        {
+          "w": "think",
+          "start": 15.106,
+          "end": 15.445
+        },
+        {
+          "w": "broke",
+          "start": 15.445,
+          "end": 15.783
+        },
+        {
+          "w": "first",
+          "start": 15.783,
+          "end": 16.122
+        },
+        {
+          "w": "under",
+          "start": 16.122,
+          "end": 16.461
+        },
+        {
+          "w": "all",
+          "start": 16.461,
+          "end": 16.699
+        },
+        {
+          "w": "that",
+          "start": 16.699,
+          "end": 16.987
+        },
+        {
+          "w": "weight?",
+          "start": 16.987,
+          "end": 17.404
+        }
+      ]
+    },
+    {
+      "beat": "reveal",
+      "text": "Contractors couldn't thread one long continuous rod, so they split it in two.",
+      "archiveQuery": "hyatt regency skywalk blue print 1981",
+      "onScreen": "ENGINEERING DIAGRAM",
+      "sourceHint": "document",
+      "imagePrompt": "Vintage engineering blueprint showing structural steel rod attachments with technical annotations.",
+      "camera": "crash-zoom",
+      "motion": false,
+      "sfxHint": "typewriter",
+      "start": 18.16,
+      "end": 22.87,
+      "words": [
+        {
+          "w": "Contractors",
+          "start": 18.16,
+          "end": 18.862
+        },
+        {
+          "w": "couldn't",
+          "start": 18.862,
+          "end": 19.344
+        },
+        {
+          "w": "thread",
+          "start": 19.344,
+          "end": 19.77
+        },
+        {
+          "w": "one",
+          "start": 19.77,
+          "end": 20.03
+        },
+        {
+          "w": "long",
+          "start": 20.03,
+          "end": 20.345
+        },
+        {
+          "w": "continuous",
+          "start": 20.345,
+          "end": 20.993
+        },
+        {
+          "w": "rod,",
+          "start": 20.993,
+          "end": 21.283
+        },
+        {
+          "w": "so",
+          "start": 21.283,
+          "end": 21.488
+        },
+        {
+          "w": "they",
+          "start": 21.488,
+          "end": 21.804
+        },
+        {
+          "w": "split",
+          "start": 21.804,
+          "end": 22.174
+        },
+        {
+          "w": "it",
+          "start": 22.174,
+          "end": 22.379
+        },
+        {
+          "w": "in",
+          "start": 22.379,
+          "end": 22.584
+        },
+        {
+          "w": "two.",
+          "start": 22.584,
+          "end": 22.875
+        }
+      ]
+    },
+    {
+      "beat": "reveal",
+      "text": "That subtle change doubled the stress on the upper crossbeam nut.",
+      "archiveQuery": "hyatt regency skywalk box beam failure 1981",
+      "onScreen": "LOAD PATH DOUBLED",
+      "sourceHint": "photo",
+      "imagePrompt": "Forensic close-up of torn steel box beam and displaced washer, harsh scientific lighting.",
+      "camera": "push-in",
+      "motion": true,
+      "sfxHint": "impact",
+      "start": 23.28,
+      "end": 27.41,
+      "words": [
+        {
+          "w": "That",
+          "start": 23.28,
+          "end": 23.602
+        },
+        {
+          "w": "subtle",
+          "start": 23.602,
+          "end": 24.037
+        },
+        {
+          "w": "change",
+          "start": 24.037,
+          "end": 24.472
+        },
+        {
+          "w": "doubled",
+          "start": 24.472,
+          "end": 24.964
+        },
+        {
+          "w": "the",
+          "start": 24.964,
+          "end": 25.229
+        },
+        {
+          "w": "stress",
+          "start": 25.229,
+          "end": 25.664
+        },
+        {
+          "w": "on",
+          "start": 25.664,
+          "end": 25.873
+        },
+        {
+          "w": "the",
+          "start": 25.873,
+          "end": 26.139
+        },
+        {
+          "w": "upper",
+          "start": 26.139,
+          "end": 26.518
+        },
+        {
+          "w": "crossbeam",
+          "start": 26.518,
+          "end": 27.122
+        },
+        {
+          "w": "nut.",
+          "start": 27.122,
+          "end": 27.419
+        }
+      ]
+    },
+    {
+      "beat": "twist",
+      "text": "The lead engineer never recalculated the load before approving the change.",
+      "archiveQuery": "hyatt regency skywalk disaster investigation document 1981",
+      "onScreen": "NIST INVESTIGATION",
+      "sourceHint": "document",
+      "imagePrompt": "Official government investigation report page with stamped red APPROVED mark, close-up.",
+      "camera": "orbit-left",
+      "motion": false,
+      "sfxHint": "typewriter",
+      "start": 27.67,
+      "end": 31.99,
+      "words": [
+        {
+          "w": "The",
+          "start": 27.67,
+          "end": 27.918
+        },
+        {
+          "w": "lead",
+          "start": 27.918,
+          "end": 28.218
+        },
+        {
+          "w": "engineer",
+          "start": 28.218,
+          "end": 28.729
+        },
+        {
+          "w": "never",
+          "start": 28.729,
+          "end": 29.081
+        },
+        {
+          "w": "recalculated",
+          "start": 29.081,
+          "end": 29.802
+        },
+        {
+          "w": "the",
+          "start": 29.802,
+          "end": 30.049
+        },
+        {
+          "w": "load",
+          "start": 30.049,
+          "end": 30.35
+        },
+        {
+          "w": "before",
+          "start": 30.35,
+          "end": 30.756
+        },
+        {
+          "w": "approving",
+          "start": 30.756,
+          "end": 31.319
+        },
+        {
+          "w": "the",
+          "start": 31.319,
+          "end": 31.565
+        },
+        {
+          "w": "change.",
+          "start": 31.565,
+          "end": 32.0
+        }
+      ]
+    },
+    {
+      "beat": "twist",
+      "text": "It became the deadliest structural failure in American history until 2001.",
+      "archiveQuery": "hyatt regency skywalk rescue effort 1981",
+      "onScreen": "114 FATALITIES",
+      "sourceHint": "newsreel",
+      "imagePrompt": "First responders navigating illuminated rubble in a destroyed hotel atrium, historic news style.",
+      "camera": "pull-back",
+      "motion": true,
+      "sfxHint": "",
+      "start": 32.05,
+      "end": 36.4,
+      "words": [
+        {
+          "w": "It",
+          "start": 32.05,
+          "end": 32.245
+        },
+        {
+          "w": "became",
+          "start": 32.245,
+          "end": 32.652
+        },
+        {
+          "w": "the",
+          "start": 32.652,
+          "end": 32.9
+        },
+        {
+          "w": "deadliest",
+          "start": 32.9,
+          "end": 33.464
+        },
+        {
+          "w": "structural",
+          "start": 33.464,
+          "end": 34.081
+        },
+        {
+          "w": "failure",
+          "start": 34.081,
+          "end": 34.54
+        },
+        {
+          "w": "in",
+          "start": 34.54,
+          "end": 34.736
+        },
+        {
+          "w": "American",
+          "start": 34.736,
+          "end": 35.247
+        },
+        {
+          "w": "history",
+          "start": 35.247,
+          "end": 35.706
+        },
+        {
+          "w": "until",
+          "start": 35.706,
+          "end": 36.06
+        },
+        {
+          "w": "2001.",
+          "start": 36.06,
+          "end": 36.39
+        }
+      ]
+    },
+    {
+      "beat": "loop",
+      "text": "All because a single modification broke two steel skywalks.",
+      "archiveQuery": "hyatt regency skywalk collapse 1981",
+      "onScreen": "JULY 17, 1981",
+      "sourceHint": "photo",
+      "imagePrompt": "Debris and bent steel beams inside a high-rise atrium lobby, flash photography, vintage news aesthetic.",
+      "camera": "push-in",
+      "motion": false,
+      "sfxHint": "archive reel",
+      "start": 36.44,
+      "end": 40.4,
+      "words": [
+        {
+          "w": "All",
+          "start": 36.44,
+          "end": 36.723
+        },
+        {
+          "w": "because",
+          "start": 36.723,
+          "end": 37.248
+        },
+        {
+          "w": "a",
+          "start": 37.248,
+          "end": 37.411
+        },
+        {
+          "w": "single",
+          "start": 37.411,
+          "end": 37.874
+        },
+        {
+          "w": "modification",
+          "start": 37.874,
+          "end": 38.7
+        },
+        {
+          "w": "broke",
+          "start": 38.7,
+          "end": 39.103
+        },
+        {
+          "w": "two",
+          "start": 39.103,
+          "end": 39.387
+        },
+        {
+          "w": "steel",
+          "start": 39.387,
+          "end": 39.791
+        },
+        {
+          "w": "skywalks.",
+          "start": 39.791,
+          "end": 40.408
+        }
+      ]
+    }
+  ],
+  "beats": [
+    {
+      "id": "hook",
+      "visual": "A gritty archival photo of crumpled steel beams in the destroyed hotel atrium."
+    },
+    {
+      "id": "setup",
+      "visual": "Historical photos showing the crowded dance floor and suspended glass skywalks before the crash."
+    },
+    {
+      "id": "quiz",
+      "visual": "Extreme close-up on a macro view of a threaded steel bolt and support nut."
+    },
+    {
+      "id": "reveal",
+      "visual": "Fast transition to architectural blueprints detailing the altered double-rod assembly."
+    },
+    {
+      "id": "twist",
+      "visual": "Stamped official investigation papers overlaid with archival rescue footage."
+    },
+    {
+      "id": "loop",
+      "visual": "A gritty archival photo of crumpled steel beams in the destroyed hotel atrium."
+    }
+  ],
+  "voiceStatus": "kokoro:am_onyx",
+  "pipeline": "history"
+}

@@ -1,0 +1,222 @@
+[
+  {
+    "beat": "hook",
+    "stem": "b00-hook",
+    "src": "b00-hook.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA19821",
+    "title": "NuSTAR Stares at the Sun",
+    "url": "https://images-assets.nasa.gov/image/PIA19821/PIA19821~large.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA19821.html",
+    "query": "solar flare",
+    "enhanced": {
+      "from": [
+        1920,
+        1920
+      ],
+      "factor": 1.04,
+      "final": [
+        1997,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "hook",
+    "stem": "b01-hook",
+    "src": "b01-hook.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "GSFC_20171208_Archive_e002082",
+    "title": "Coronal Rain, Solar Storm",
+    "url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e002082/GSFC_20171208_Archive_e002082~orig.jpg",
+    "details_url": "https://images.nasa.gov/details-GSFC_20171208_Archive_e002082.html",
+    "query": "coronal mass ejection",
+    "enhanced": {
+      "from": [
+        821,
+        691
+      ],
+      "factor": 2.89,
+      "final": [
+        2372,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "setup",
+    "stem": "b02-setup",
+    "src": "b02-setup.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "0301628",
+    "title": "History of Chandra X-Ray Observatory",
+    "url": "https://images-assets.nasa.gov/image/0301628/0301628~large.jpg",
+    "details_url": "https://images.nasa.gov/details-0301628.html",
+    "query": "sun active region",
+    "enhanced": {
+      "from": [
+        1871,
+        1920
+      ],
+      "factor": 1.04,
+      "final": [
+        1946,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "setup",
+    "stem": "b03-setup",
+    "src": "b03-setup.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "iss069e025742",
+    "title": "Nanoracks Cubesat Deployer Installation",
+    "url": "https://images-assets.nasa.gov/image/iss069e025742/iss069e025742~large.jpg",
+    "details_url": "https://images.nasa.gov/details-iss069e025742.html",
+    "query": "solar radiation storm",
+    "enhanced": {
+      "from": [
+        1920,
+        1280
+      ],
+      "factor": 1.56,
+      "final": [
+        2995,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "quiz",
+    "stem": "b04-quiz",
+    "src": "b04-quiz.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "GSFC_20171208_Archive_e000614",
+    "title": "Nighttime View of Aurora Borealis",
+    "url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000614/GSFC_20171208_Archive_e000614~small.jpg",
+    "details_url": "https://images.nasa.gov/details-GSFC_20171208_Archive_e000614.html",
+    "query": "aurora borealis",
+    "enhanced": {
+      "from": [
+        640,
+        461
+      ],
+      "factor": 4.0,
+      "final": [
+        2560,
+        1844
+      ]
+    }
+  },
+  {
+    "beat": "reveal",
+    "stem": "b05-reveal",
+    "src": "b05-reveal.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "GSFC_20171208_Archive_e000738",
+    "title": "Filament Burst [video]",
+    "url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000738/GSFC_20171208_Archive_e000738~orig.jpg",
+    "details_url": "https://images.nasa.gov/details-GSFC_20171208_Archive_e000738.html",
+    "query": "solar prominence",
+    "enhanced": {
+      "from": [
+        1200,
+        1200
+      ],
+      "factor": 1.664,
+      "final": [
+        1997,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "reveal",
+    "stem": "b06-reveal",
+    "src": "b06-reveal.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA06345",
+    "title": "Behold Saturn's Magnetosphere!",
+    "url": "https://images-assets.nasa.gov/image/PIA06345/PIA06345~orig.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA06345.html",
+    "query": "earth magnetosphere",
+    "enhanced": {
+      "from": [
+        720,
+        486
+      ],
+      "factor": 4.0,
+      "final": [
+        2880,
+        1944
+      ]
+    }
+  },
+  {
+    "beat": "twist",
+    "stem": "b07-twist",
+    "src": "b07-twist.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "s36-39-014",
+    "title": "STS-36 night Earth observation of New York City, New York",
+    "url": "https://images-assets.nasa.gov/image/s36-39-014/s36-39-014~large.jpg",
+    "details_url": "https://images.nasa.gov/details-s36-39-014.html",
+    "query": "earth night",
+    "enhanced": {
+      "from": [
+        1920,
+        1251
+      ],
+      "factor": 1.596,
+      "final": [
+        3065,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "twist",
+    "stem": "b08-twist",
+    "src": "b08-twist.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA18156",
+    "title": "Aqua Satellite Orbiting Earth Artist Concept",
+    "url": "https://images-assets.nasa.gov/image/PIA18156/PIA18156~orig.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA18156.html",
+    "query": "satellite orbit",
+    "enhanced": {
+      "from": [
+        1280,
+        720
+      ],
+      "factor": 2.773,
+      "final": [
+        3550,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "loop",
+    "stem": "b09-loop",
+    "src": "b09-loop.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "GRC-2015-C-01953",
+    "title": "GRIPS test in the B-2",
+    "url": "https://images-assets.nasa.gov/image/GRC-2015-C-01953/GRC-2015-C-01953~large.jpg",
+    "details_url": "https://images.nasa.gov/details-GRC-2015-C-01953.html",
+    "query": "solar flare",
+    "enhanced": {
+      "from": [
+        1920,
+        1440
+      ],
+      "factor": 1.387,
+      "final": [
+        2662,
+        1997
+      ]
+    }
+  }
+]

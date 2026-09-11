@@ -1,0 +1,174 @@
+[
+  {
+    "beat": "hook",
+    "stem": "b00-hook",
+    "src": "b00-hook.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "GSFC_20171208_Archive_e000078",
+    "title": "Gigantic Wave Discovered in Perseus Galaxy Cluster",
+    "url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000078/GSFC_20171208_Archive_e000078~large.jpg",
+    "details_url": "https://images.nasa.gov/details-GSFC_20171208_Archive_e000078.html",
+    "query": "perseus cluster black",
+    "enhanced": {
+      "from": [
+        1920,
+        1762
+      ],
+      "factor": 1.133,
+      "final": [
+        2176,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "hook",
+    "stem": "b01-hook",
+    "src": "b01-hook.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "behemoth-black-hole-found-in-an-unlikely-place_26209716511_o",
+    "title": "Behemoth Black Hole Found in an Unlikely Place",
+    "url": "https://images-assets.nasa.gov/image/behemoth-black-hole-found-in-an-unlikely-place_26209716511_o/behemoth-black-hole-found-in-an-unlikely-place_26209716511_o~large.jpg",
+    "details_url": "https://images.nasa.gov/details-behemoth-black-hole-found-in-an-unlikely-place_26209716511_o.html",
+    "query": "black hole",
+    "enhanced": {
+      "from": [
+        1920,
+        1899
+      ],
+      "factor": 1.052,
+      "final": [
+        2019,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "setup",
+    "stem": "b02-setup",
+    "src": "b02-setup.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA19341",
+    "title": "Tracing the Arms of our Milky Way Galaxy",
+    "url": "https://images-assets.nasa.gov/image/PIA19341/PIA19341~medium.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA19341.html",
+    "query": "perseus cluster",
+    "enhanced": {
+      "from": [
+        1280,
+        1280
+      ],
+      "factor": 1.56,
+      "final": [
+        1997,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "setup",
+    "stem": "b03-setup",
+    "src": "b03-setup.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "0300607",
+    "title": "History of Chandra X-Ray Observatory",
+    "url": "https://images-assets.nasa.gov/image/0300607/0300607~large.jpg",
+    "details_url": "https://images.nasa.gov/details-0300607.html",
+    "query": "chandra black hole",
+    "enhanced": {
+      "from": [
+        1920,
+        1920
+      ],
+      "factor": 1.04,
+      "final": [
+        1997,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "quiz",
+    "stem": "b04-quiz",
+    "src": "b04-quiz.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "0200207",
+    "title": "History of Chandra X-Ray Observatory",
+    "url": "https://images-assets.nasa.gov/image/0200207/0200207~large.jpg",
+    "details_url": "https://images.nasa.gov/details-0200207.html",
+    "query": "chandra x-ray galaxy",
+    "enhanced": {
+      "from": [
+        1920,
+        1920
+      ],
+      "factor": 1.04,
+      "final": [
+        1997,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "reveal",
+    "stem": "b05-reveal",
+    "src": "b05-reveal.jpg",
+    "source": "ai",
+    "nasa_id": null,
+    "title": "AI visualization — Extreme close-up showing visible ripples reverberating through superheated cosmi",
+    "url": null
+  },
+  {
+    "beat": "reveal",
+    "stem": "b06-reveal",
+    "src": "b06-reveal.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA10091",
+    "title": "Missing Black Holes Found!",
+    "url": "https://images-assets.nasa.gov/image/PIA10091/PIA10091~orig.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA10091.html",
+    "query": "chandra deep field",
+    "enhanced": {
+      "from": [
+        1003,
+        1139
+      ],
+      "factor": 1.753,
+      "final": [
+        1758,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "twist",
+    "stem": "b07-twist",
+    "src": "b07-twist.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA21087",
+    "title": "Galaxy IC 3639 with Obscured Active Galactic Nucleus",
+    "url": "https://images-assets.nasa.gov/image/PIA21087/PIA21087~medium.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA21087.html",
+    "query": "active galactic nucleus",
+    "enhanced": {
+      "from": [
+        1280,
+        1280
+      ],
+      "factor": 1.56,
+      "final": [
+        1997,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "loop",
+    "stem": "b08-loop",
+    "src": "b08-loop.jpg",
+    "source": "ai",
+    "nasa_id": null,
+    "title": "AI visualization — Wide establishing shot of a massive cosmic black hole pulsing dark acoustic shoc",
+    "url": null
+  }
+]

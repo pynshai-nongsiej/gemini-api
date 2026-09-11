@@ -1,0 +1,161 @@
+[
+  {
+    "beat": "hook",
+    "stem": "b00-hook",
+    "src": "b00-hook.jpg",
+    "source": "ai",
+    "nasa_id": null,
+    "title": "AI visualization — Wide establishing shot approaching a terrifying, pitch-black spherical abyss in ",
+    "url": null
+  },
+  {
+    "beat": "hook",
+    "stem": "b01-hook",
+    "src": "b01-hook.jpg",
+    "source": "ai",
+    "nasa_id": null,
+    "title": "AI visualization — Extreme close-up panning across a map of the universe showing a giant empty dark",
+    "url": null
+  },
+  {
+    "beat": "setup",
+    "stem": "b02-setup",
+    "src": "b02-setup.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA12110",
+    "title": "Hubble Deep Field Image Unveils Myriad Galaxies Back to the Beginning of Time",
+    "url": "https://images-assets.nasa.gov/image/PIA12110/PIA12110~medium.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA12110.html",
+    "query": "deep field",
+    "enhanced": {
+      "from": [
+        1246,
+        1280
+      ],
+      "factor": 1.56,
+      "final": [
+        1944,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "setup",
+    "stem": "b03-setup",
+    "src": "b03-setup.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA17253",
+    "title": "Monster in the Middle: Brightest Cluster Galaxy",
+    "url": "https://images-assets.nasa.gov/image/PIA17253/PIA17253~orig.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA17253.html",
+    "query": "galaxy cluster",
+    "enhanced": {
+      "from": [
+        2400,
+        1200
+      ],
+      "factor": 1.664,
+      "final": [
+        3994,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "quiz",
+    "stem": "b04-quiz",
+    "src": "b04-quiz.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA01280",
+    "title": "Hubble Captures Detailed Image of Uranus Atmosphere",
+    "url": "https://images-assets.nasa.gov/image/PIA01280/PIA01280~orig.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA01280.html",
+    "query": "hubble deep",
+    "enhanced": {
+      "from": [
+        450,
+        293
+      ],
+      "factor": 4.0,
+      "final": [
+        1800,
+        1172
+      ]
+    }
+  },
+  {
+    "beat": "reveal",
+    "stem": "b05-reveal",
+    "src": "b05-reveal.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA20695",
+    "title": "Frankenstein Galaxy",
+    "url": "https://images-assets.nasa.gov/image/PIA20695/PIA20695~large.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA20695.html",
+    "query": "isolated galaxy",
+    "enhanced": {
+      "from": [
+        1920,
+        1079
+      ],
+      "factor": 1.851,
+      "final": [
+        3553,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "twist",
+    "stem": "b06-twist",
+    "src": "b06-twist.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "GSFC_20171208_Archive_e001326",
+    "title": "Tracing the growth of Milky Way-like galaxies",
+    "url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001326/GSFC_20171208_Archive_e001326~large.jpg",
+    "details_url": "https://images.nasa.gov/details-GSFC_20171208_Archive_e001326.html",
+    "query": "milky way galaxy",
+    "enhanced": {
+      "from": [
+        1920,
+        1536
+      ],
+      "factor": 1.3,
+      "final": [
+        2496,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "twist",
+    "stem": "b07-twist",
+    "src": "b07-twist.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "GSFC_20171208_Archive_e002081",
+    "title": "Cen A Radio Optical Gamma Composite",
+    "url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e002081/GSFC_20171208_Archive_e002081~large.jpg",
+    "details_url": "https://images.nasa.gov/details-GSFC_20171208_Archive_e002081.html",
+    "query": "radio",
+    "enhanced": {
+      "from": [
+        1466,
+        1920
+      ],
+      "factor": 1.04,
+      "final": [
+        1525,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "loop",
+    "stem": "b08-loop",
+    "src": "b08-loop.jpg",
+    "source": "ai",
+    "nasa_id": null,
+    "title": "AI visualization — Wide establishing shot pulling back from the pitch-black spherical abyss in spac",
+    "url": null
+  }
+]

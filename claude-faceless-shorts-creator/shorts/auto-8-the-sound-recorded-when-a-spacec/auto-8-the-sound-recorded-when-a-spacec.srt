@@ -1,0 +1,39 @@
+1
+00:00:00,250 --> 00:00:02,940
+Humanity recorded the sound of touching our Sun.
+
+2
+00:00:03,680 --> 00:00:07,830
+In 2021, Parker Solar Probe plunged into the solar corona.
+
+3
+00:00:07,870 --> 00:00:10,440
+Temperatures hit two million degrees Fahrenheit.
+
+4
+00:00:10,530 --> 00:00:12,940
+Pause. Sound cannot travel through a vacuum.
+
+5
+00:00:13,570 --> 00:00:15,870
+How did sensors capture actual noise?
+
+6
+00:00:16,230 --> 00:00:19,770
+Hypervelocity dust grains smashed into the probe at high speeds.
+
+7
+00:00:20,430 --> 00:00:23,800
+Each collision vaporized metal, creating tiny plasma explosions.
+
+8
+00:00:23,850 --> 00:00:27,230
+Instruments recorded those plasma shocks as acoustic soundwaves.
+
+9
+00:00:27,280 --> 00:00:31,330
+You are hearing dust disintegrating at three hundred thousand miles per hour.
+
+10
+00:00:32,250 --> 00:00:33,460
+And that is how...

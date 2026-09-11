@@ -1,0 +1,161 @@
+[
+  {
+    "beat": "hook",
+    "stem": "b00-hook",
+    "src": "b00-hook.jpg",
+    "source": "ai",
+    "nasa_id": null,
+    "title": "AI visualization — Wide establishing shot approaching a glowing blue ice planet wrapped in searing ",
+    "url": null
+  },
+  {
+    "beat": "setup",
+    "stem": "b01-setup",
+    "src": "b01-setup.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA10364",
+    "title": "NASA Spitzer Finds Water Vapor on Hot, Alien Planet Artist Concept",
+    "url": "https://images-assets.nasa.gov/image/PIA10364/PIA10364~medium.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA10364.html",
+    "query": "exoplanet transit",
+    "enhanced": {
+      "from": [
+        1280,
+        1267
+      ],
+      "factor": 1.576,
+      "final": [
+        2017,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "setup",
+    "stem": "b02-setup",
+    "src": "b02-setup.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA09927",
+    "title": "Neptune Hot South Pole",
+    "url": "https://images-assets.nasa.gov/image/PIA09927/PIA09927~orig.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA09927.html",
+    "query": "hot neptune",
+    "enhanced": {
+      "from": [
+        720,
+        540
+      ],
+      "factor": 3.698,
+      "final": [
+        2662,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "quiz",
+    "stem": "b03-quiz",
+    "src": "b03-quiz.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "KSC-08pd2732",
+    "title": "KSC-08pd2732",
+    "url": "https://images-assets.nasa.gov/image/KSC-08pd2732/KSC-08pd2732~large.jpg",
+    "details_url": "https://images.nasa.gov/details-KSC-08pd2732.html",
+    "query": "crystal structure",
+    "enhanced": {
+      "from": [
+        1920,
+        1280
+      ],
+      "factor": 1.56,
+      "final": [
+        2995,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "reveal",
+    "stem": "b04-reveal",
+    "src": "b04-reveal.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA13409",
+    "title": "An Unexpected Scattering of Light",
+    "url": "https://images-assets.nasa.gov/image/PIA13409/PIA13409~large.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA13409.html",
+    "query": "planet core",
+    "enhanced": {
+      "from": [
+        1920,
+        1111
+      ],
+      "factor": 1.797,
+      "final": [
+        3451,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "reveal",
+    "stem": "b05-reveal",
+    "src": "b05-reveal.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "GRC-2019-C-13064",
+    "title": "High Pressure Plasma-assisted Combustion",
+    "url": "https://images-assets.nasa.gov/image/GRC-2019-C-13064/GRC-2019-C-13064~large.jpg",
+    "details_url": "https://images.nasa.gov/details-GRC-2019-C-13064.html",
+    "query": "high pressure",
+    "enhanced": {
+      "from": [
+        1920,
+        1280
+      ],
+      "factor": 1.56,
+      "final": [
+        2995,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "twist",
+    "stem": "b06-twist",
+    "src": "b06-twist.jpg",
+    "source": "ai",
+    "nasa_id": null,
+    "title": "AI visualization — Wide wide shot showing a glowing planetary tail trailing fifty million miles int",
+    "url": null
+  },
+  {
+    "beat": "twist",
+    "stem": "b07-twist",
+    "src": "b07-twist.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "GSFC_20171208_Archive_e000704",
+    "title": "Hubble Sees a “Behemoth” Bleeding Atmosphere Around a Warm Exoplanet",
+    "url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000704/GSFC_20171208_Archive_e000704~medium.jpg",
+    "details_url": "https://images.nasa.gov/details-GSFC_20171208_Archive_e000704.html",
+    "query": "exoplanet atmosphere",
+    "enhanced": {
+      "from": [
+        1280,
+        708
+      ],
+      "factor": 2.82,
+      "final": [
+        3610,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "loop",
+    "stem": "b08-loop",
+    "src": "b08-loop.jpg",
+    "source": "ai",
+    "nasa_id": null,
+    "title": "AI visualization — Wide establishing shot approaching a glowing blue ice planet wrapped in searing ",
+    "url": null
+  }
+]

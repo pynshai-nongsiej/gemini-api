@@ -1,0 +1,222 @@
+[
+  {
+    "beat": "hook",
+    "stem": "b00-hook",
+    "src": "b00-hook.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "KSC-20180812-PH_GEB01_0033",
+    "title": "Dr. Parker Watches Parker Solar Probe Liftoff",
+    "url": "https://images-assets.nasa.gov/image/KSC-20180812-PH_GEB01_0033/KSC-20180812-PH_GEB01_0033~large.jpg",
+    "details_url": "https://images.nasa.gov/details-KSC-20180812-PH_GEB01_0033.html",
+    "query": "parker solar probe",
+    "enhanced": {
+      "from": [
+        1920,
+        1280
+      ],
+      "factor": 1.56,
+      "final": [
+        2995,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "setup",
+    "stem": "b01-setup",
+    "src": "b01-setup.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "KSC-20180812-PH_GEB01_0053",
+    "title": "Dr. Parker Watches Parker Solar Probe Liftoff",
+    "url": "https://images-assets.nasa.gov/image/KSC-20180812-PH_GEB01_0053/KSC-20180812-PH_GEB01_0053~large.jpg",
+    "details_url": "https://images.nasa.gov/details-KSC-20180812-PH_GEB01_0053.html",
+    "query": "parker solar probe",
+    "enhanced": {
+      "from": [
+        1920,
+        1280
+      ],
+      "factor": 1.56,
+      "final": [
+        2995,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "setup",
+    "stem": "b02-setup",
+    "src": "b02-setup.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA03149",
+    "title": "Handle-shaped Prominence",
+    "url": "https://images-assets.nasa.gov/image/PIA03149/PIA03149~large.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA03149.html",
+    "query": "sun corona",
+    "enhanced": {
+      "from": [
+        1920,
+        1859
+      ],
+      "factor": 1.074,
+      "final": [
+        2062,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "quiz",
+    "stem": "b03-quiz",
+    "src": "b03-quiz.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA25628",
+    "title": "Three-Telescope View of the Sun",
+    "url": "https://images-assets.nasa.gov/image/PIA25628/PIA25628~large.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA25628.html",
+    "query": "sun atmosphere",
+    "enhanced": {
+      "from": [
+        1920,
+        1920
+      ],
+      "factor": 1.04,
+      "final": [
+        1997,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "quiz",
+    "stem": "b04-quiz",
+    "src": "b04-quiz.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "KSC-20180812-PH_GEB01_0045",
+    "title": "Dr. Parker Watches Parker Solar Probe Liftoff",
+    "url": "https://images-assets.nasa.gov/image/KSC-20180812-PH_GEB01_0045/KSC-20180812-PH_GEB01_0045~large.jpg",
+    "details_url": "https://images.nasa.gov/details-KSC-20180812-PH_GEB01_0045.html",
+    "query": "parker solar probe",
+    "enhanced": {
+      "from": [
+        1280,
+        1920
+      ],
+      "factor": 1.04,
+      "final": [
+        1331,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "reveal",
+    "stem": "b05-reveal",
+    "src": "b05-reveal.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "KSC-20250123-PH-SRI01_0002",
+    "title": "PUNCH Satellites Processing - Integration and Testing",
+    "url": "https://images-assets.nasa.gov/image/KSC-20250123-PH-SRI01_0002/KSC-20250123-PH-SRI01_0002~medium.jpg",
+    "details_url": "https://images.nasa.gov/details-KSC-20250123-PH-SRI01_0002.html",
+    "query": "solar wind",
+    "enhanced": {
+      "from": [
+        1280,
+        960
+      ],
+      "factor": 2.08,
+      "final": [
+        2662,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "reveal",
+    "stem": "b06-reveal",
+    "src": "b06-reveal.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA21764",
+    "title": "Coils of Magnetic Field Lines",
+    "url": "https://images-assets.nasa.gov/image/PIA21764/PIA21764~medium.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA21764.html",
+    "query": "sun plasma",
+    "enhanced": {
+      "from": [
+        1280,
+        1171
+      ],
+      "factor": 1.705,
+      "final": [
+        2183,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "twist",
+    "stem": "b07-twist",
+    "src": "b07-twist.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA19821",
+    "title": "NuSTAR Stares at the Sun",
+    "url": "https://images-assets.nasa.gov/image/PIA19821/PIA19821~large.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA19821.html",
+    "query": "solar flare",
+    "enhanced": {
+      "from": [
+        1920,
+        1920
+      ],
+      "factor": 1.04,
+      "final": [
+        1997,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "twist",
+    "stem": "b08-twist",
+    "src": "b08-twist.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "GSFC_20171208_Archive_e001831",
+    "title": "SDO Spots Extra Energy in the Sun's Corona",
+    "url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001831/GSFC_20171208_Archive_e001831~large.jpg",
+    "details_url": "https://images.nasa.gov/details-GSFC_20171208_Archive_e001831.html",
+    "query": "sun corona",
+    "enhanced": {
+      "from": [
+        1919,
+        1850
+      ],
+      "factor": 1.079,
+      "final": [
+        2071,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "loop",
+    "stem": "b09-loop",
+    "src": "b09-loop.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "KSC-20180812-PH_GEB01_0039",
+    "title": "Dr. Parker Watches Parker Solar Probe Liftoff",
+    "url": "https://images-assets.nasa.gov/image/KSC-20180812-PH_GEB01_0039/KSC-20180812-PH_GEB01_0039~large.jpg",
+    "details_url": "https://images.nasa.gov/details-KSC-20180812-PH_GEB01_0039.html",
+    "query": "parker solar probe",
+    "enhanced": {
+      "from": [
+        1280,
+        1920
+      ],
+      "factor": 1.04,
+      "final": [
+        1331,
+        1997
+      ]
+    }
+  }
+]

@@ -1,0 +1,583 @@
+{
+  "id": "auto-25-the-cosmic-radio-signal-repeatin",
+  "title": "The Cosmic Signal Defying Physics for 35 Years",
+  "composition": "AutoThecosmicsignaldefyin",
+  "hookCard": "SIGNAL FROM THE _DEAD_",
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSec": 36.84
+  },
+  "vo": [
+    {
+      "beat": "hook",
+      "text": "Astronomers detected a radio signal pulsing every twenty-two minutes.",
+      "imagePrompt": "Wide establishing shot of giant radio telescope arrays glowing under a starlit night sky, slowly approaching a massive dish pointing into the void.",
+      "camera": "push-in",
+      "motion": false,
+      "nasaQuery": "radio telescope",
+      "sfxHint": "deep space drone",
+      "start": 0.25,
+      "end": 4.02,
+      "words": [
+        {
+          "w": "Astronomers",
+          "start": 0.25,
+          "end": 0.888
+        },
+        {
+          "w": "detected",
+          "start": 0.888,
+          "end": 1.375
+        },
+        {
+          "w": "a",
+          "start": 1.375,
+          "end": 1.511
+        },
+        {
+          "w": "radio",
+          "start": 1.511,
+          "end": 1.848
+        },
+        {
+          "w": "signal",
+          "start": 1.848,
+          "end": 2.234
+        },
+        {
+          "w": "pulsing",
+          "start": 2.234,
+          "end": 2.671
+        },
+        {
+          "w": "every",
+          "start": 2.671,
+          "end": 3.008
+        },
+        {
+          "w": "twenty-two",
+          "start": 3.008,
+          "end": 3.546
+        },
+        {
+          "w": "minutes.",
+          "start": 3.546,
+          "end": 4.01
+        }
+      ]
+    },
+    {
+      "beat": "hook",
+      "text": "It has been repeating non-stop since 1988.",
+      "imagePrompt": "Low angle looking up at a glowing digital clock face reading 1988 ticking fast against a background of swirling galaxies.",
+      "camera": "orbit-left",
+      "motion": false,
+      "nasaQuery": "deep field",
+      "sfxHint": "clock tick",
+      "start": 4.06,
+      "end": 7.05,
+      "words": [
+        {
+          "w": "It",
+          "start": 4.06,
+          "end": 4.299
+        },
+        {
+          "w": "has",
+          "start": 4.299,
+          "end": 4.601
+        },
+        {
+          "w": "been",
+          "start": 4.601,
+          "end": 4.968
+        },
+        {
+          "w": "repeating",
+          "start": 4.968,
+          "end": 5.657
+        },
+        {
+          "w": "non-stop",
+          "start": 5.657,
+          "end": 6.216
+        },
+        {
+          "w": "since",
+          "start": 6.216,
+          "end": 6.648
+        },
+        {
+          "w": "1988.",
+          "start": 6.648,
+          "end": 7.05
+        }
+      ]
+    },
+    {
+      "beat": "setup",
+      "text": "Known pulsars spin rapidly, flashing every few seconds.",
+      "imagePrompt": "Extreme close-up of a hyper-dense spinning neutron star beaming bright violet energy beams into space, tiny against vast cosmic dust.",
+      "camera": "orbit-right",
+      "motion": false,
+      "nasaQuery": "pulsar concept",
+      "sfxHint": "rapid pulse",
+      "start": 7.1,
+      "end": 10.49,
+      "words": [
+        {
+          "w": "Known",
+          "start": 7.1,
+          "end": 7.473
+        },
+        {
+          "w": "pulsars",
+          "start": 7.473,
+          "end": 7.958
+        },
+        {
+          "w": "spin",
+          "start": 7.958,
+          "end": 8.275
+        },
+        {
+          "w": "rapidly,",
+          "start": 8.275,
+          "end": 8.79
+        },
+        {
+          "w": "flashing",
+          "start": 8.79,
+          "end": 9.33
+        },
+        {
+          "w": "every",
+          "start": 9.33,
+          "end": 9.704
+        },
+        {
+          "w": "few",
+          "start": 9.704,
+          "end": 9.965
+        },
+        {
+          "w": "seconds.",
+          "start": 9.965,
+          "end": 10.48
+        }
+      ]
+    },
+    {
+      "beat": "setup",
+      "text": "According to physics, slowing down to twenty-two minutes kills the beam.",
+      "imagePrompt": "Wide establishing shot of a dying neutron star fading into darkness, towering above cold interstellar clouds.",
+      "camera": "drift-down",
+      "motion": false,
+      "nasaQuery": "neutron star",
+      "sfxHint": "power down synth",
+      "start": 10.53,
+      "end": 14.3,
+      "words": [
+        {
+          "w": "According",
+          "start": 10.53,
+          "end": 11.043
+        },
+        {
+          "w": "to",
+          "start": 11.043,
+          "end": 11.22
+        },
+        {
+          "w": "physics,",
+          "start": 11.22,
+          "end": 11.663
+        },
+        {
+          "w": "slowing",
+          "start": 11.663,
+          "end": 12.08
+        },
+        {
+          "w": "down",
+          "start": 12.08,
+          "end": 12.353
+        },
+        {
+          "w": "to",
+          "start": 12.353,
+          "end": 12.531
+        },
+        {
+          "w": "twenty-two",
+          "start": 12.531,
+          "end": 13.043
+        },
+        {
+          "w": "minutes",
+          "start": 13.043,
+          "end": 13.46
+        },
+        {
+          "w": "kills",
+          "start": 13.46,
+          "end": 13.781
+        },
+        {
+          "w": "the",
+          "start": 13.781,
+          "end": 14.007
+        },
+        {
+          "w": "beam.",
+          "start": 14.007,
+          "end": 14.306
+        }
+      ]
+    },
+    {
+      "beat": "quiz",
+      "text": "Pause and guess. What could power an impossible signal for decades?",
+      "imagePrompt": "Low angle looking up at a glowing question mark formed by cosmic nebulae, approaching a dark stellar expanse.",
+      "camera": "push-in",
+      "motion": false,
+      "nasaQuery": "crab nebula",
+      "sfxHint": "riser",
+      "start": 15.11,
+      "end": 19.18,
+      "words": [
+        {
+          "w": "Pause",
+          "start": 15.11,
+          "end": 15.475
+        },
+        {
+          "w": "and",
+          "start": 15.475,
+          "end": 15.731
+        },
+        {
+          "w": "guess.",
+          "start": 15.731,
+          "end": 16.126
+        },
+        {
+          "w": "What",
+          "start": 16.126,
+          "end": 16.437
+        },
+        {
+          "w": "could",
+          "start": 16.437,
+          "end": 16.802
+        },
+        {
+          "w": "power",
+          "start": 16.802,
+          "end": 17.167
+        },
+        {
+          "w": "an",
+          "start": 17.167,
+          "end": 17.368
+        },
+        {
+          "w": "impossible",
+          "start": 17.368,
+          "end": 18.005
+        },
+        {
+          "w": "signal",
+          "start": 18.005,
+          "end": 18.425
+        },
+        {
+          "w": "for",
+          "start": 18.425,
+          "end": 18.681
+        },
+        {
+          "w": "decades?",
+          "start": 18.681,
+          "end": 19.185
+        }
+      ]
+    },
+    {
+      "beat": "reveal",
+      "text": "It is target GPM J1839-10, an ultra-long period magnetar.",
+      "imagePrompt": "Extreme close-up of an immense magnetar bursting with blinding white electromagnetic discharge, plunging through dark space.",
+      "camera": "crash-zoom",
+      "motion": true,
+      "nasaQuery": "magnetar",
+      "sfxHint": "deep impact",
+      "start": 19.69,
+      "end": 24.68,
+      "words": [
+        {
+          "w": "It",
+          "start": 19.69,
+          "end": 19.991
+        },
+        {
+          "w": "is",
+          "start": 19.991,
+          "end": 20.292
+        },
+        {
+          "w": "target",
+          "start": 20.292,
+          "end": 20.918
+        },
+        {
+          "w": "GPM",
+          "start": 20.918,
+          "end": 21.299
+        },
+        {
+          "w": "J1839-10,",
+          "start": 21.299,
+          "end": 22.051
+        },
+        {
+          "w": "an",
+          "start": 22.051,
+          "end": 22.352
+        },
+        {
+          "w": "ultra-long",
+          "start": 22.352,
+          "end": 23.221
+        },
+        {
+          "w": "period",
+          "start": 23.221,
+          "end": 23.846
+        },
+        {
+          "w": "magnetar.",
+          "start": 23.846,
+          "end": 24.678
+        }
+      ]
+    },
+    {
+      "beat": "twist",
+      "text": "Its magnetic field is so powerful it breaks every existing pulsar model.",
+      "imagePrompt": "Wide establishing shot of invisible magnetic field lines tearing through gas clouds, towering above a dying star.",
+      "camera": "pan-right",
+      "motion": false,
+      "nasaQuery": "magnetic field star",
+      "sfxHint": "electric hum",
+      "start": 23.5,
+      "end": 28.23,
+      "words": [
+        {
+          "w": "Its",
+          "start": 23.5,
+          "end": 23.775
+        },
+        {
+          "w": "magnetic",
+          "start": 23.775,
+          "end": 24.342
+        },
+        {
+          "w": "field",
+          "start": 24.342,
+          "end": 24.734
+        },
+        {
+          "w": "is",
+          "start": 24.734,
+          "end": 24.951
+        },
+        {
+          "w": "so",
+          "start": 24.951,
+          "end": 25.168
+        },
+        {
+          "w": "powerful",
+          "start": 25.168,
+          "end": 25.735
+        },
+        {
+          "w": "it",
+          "start": 25.735,
+          "end": 25.952
+        },
+        {
+          "w": "breaks",
+          "start": 25.952,
+          "end": 26.402
+        },
+        {
+          "w": "every",
+          "start": 26.402,
+          "end": 26.794
+        },
+        {
+          "w": "existing",
+          "start": 26.794,
+          "end": 27.361
+        },
+        {
+          "w": "pulsar",
+          "start": 27.361,
+          "end": 27.812
+        },
+        {
+          "w": "model.",
+          "start": 27.812,
+          "end": 28.236
+        }
+      ]
+    },
+    {
+      "beat": "twist",
+      "text": "Scientists hid thirty-five years of data because nobody could explain it.",
+      "imagePrompt": "Low angle looking up at dusty retro observatory archives illuminated by cyan light beams, drifting slowly past file stacks.",
+      "camera": "drift-up",
+      "motion": false,
+      "nasaQuery": "observatory dome",
+      "sfxHint": "soft whoosh",
+      "start": 28.47,
+      "end": 32.61,
+      "words": [
+        {
+          "w": "Scientists",
+          "start": 28.47,
+          "end": 29.073
+        },
+        {
+          "w": "hid",
+          "start": 29.073,
+          "end": 29.316
+        },
+        {
+          "w": "thirty-five",
+          "start": 29.316,
+          "end": 29.919
+        },
+        {
+          "w": "years",
+          "start": 29.919,
+          "end": 30.264
+        },
+        {
+          "w": "of",
+          "start": 30.264,
+          "end": 30.455
+        },
+        {
+          "w": "data",
+          "start": 30.455,
+          "end": 30.75
+        },
+        {
+          "w": "because",
+          "start": 30.75,
+          "end": 31.198
+        },
+        {
+          "w": "nobody",
+          "start": 31.198,
+          "end": 31.595
+        },
+        {
+          "w": "could",
+          "start": 31.595,
+          "end": 31.941
+        },
+        {
+          "w": "explain",
+          "start": 31.941,
+          "end": 32.389
+        },
+        {
+          "w": "it.",
+          "start": 32.389,
+          "end": 32.609
+        }
+      ]
+    },
+    {
+      "beat": "loop",
+      "text": "Deep in space, a mystery remains as...",
+      "imagePrompt": "Wide establishing shot of giant radio telescope arrays glowing under a starlit night sky, slowly approaching a massive dish pointing into the void.",
+      "camera": "settle",
+      "motion": false,
+      "nasaQuery": "radio telescope",
+      "sfxHint": "subtle pulse",
+      "start": 33.05,
+      "end": 35.33,
+      "words": [
+        {
+          "w": "Deep",
+          "start": 33.05,
+          "end": 33.367
+        },
+        {
+          "w": "in",
+          "start": 33.367,
+          "end": 33.574
+        },
+        {
+          "w": "space,",
+          "start": 33.574,
+          "end": 33.977
+        },
+        {
+          "w": "a",
+          "start": 33.977,
+          "end": 34.128
+        },
+        {
+          "w": "mystery",
+          "start": 34.128,
+          "end": 34.612
+        },
+        {
+          "w": "remains",
+          "start": 34.612,
+          "end": 35.096
+        },
+        {
+          "w": "as...",
+          "start": 35.096,
+          "end": 35.333
+        }
+      ]
+    }
+  ],
+  "beats": [
+    {
+      "id": "hook",
+      "visual": "Massive radio telescopes pointed toward a dark, empty patch of space illuminated by an impossible rhythmic beam."
+    },
+    {
+      "id": "setup",
+      "visual": "A side-by-side comparison showing a fast-spinning normal pulsar next to a frozen, dormant star."
+    },
+    {
+      "id": "quiz",
+      "visual": "An interactive-style pause frame highlighting the mystery star coords in dark space."
+    },
+    {
+      "id": "reveal",
+      "visual": "A terrifying high-energy cinematic explosion revealing the violent magnetar emitting its signal."
+    },
+    {
+      "id": "twist",
+      "visual": "Archival timeline graphic showing 1988 through present day with a constant, unexplained signal spike."
+    },
+    {
+      "id": "loop",
+      "visual": "Massive radio telescopes pointed toward a dark, empty patch of space illuminated by an impossible rhythmic beam."
+    }
+  ],
+  "voiceStatus": "kokoro:af_sarah"
+}

@@ -1,0 +1,141 @@
+{
+  "master": "remotion/out/AutoTheoceanfloatinginde-voiced.mp4",
+  "master_fps": 30,
+  "catalog": "media/library/sfx/catalog.json",
+  "render": {
+    "preview": "remotion/out/AutoTheoceanfloatinginde-voiced.mp4",
+    "out": "shorts/auto-12-the-100-trillion-ton-water-ocean/output/auto-12-the-100-trillion-ton-water-ocean-sfx.mp4",
+    "end_s": 40.82,
+    "duck": true
+  },
+  "events": [
+    {
+      "at_s": 0.3,
+      "sfx_id": "impact-deep-soft",
+      "gain_db": -8,
+      "shot": "MainScene",
+      "cue": "sfxHint 'deep bass drone'"
+    },
+    {
+      "at_s": 3.42,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -11,
+      "shot": "MainScene",
+      "cue": "beat change: hook",
+      "optional": true
+    },
+    {
+      "at_s": 3.47,
+      "sfx_id": "riser-soft",
+      "gain_db": -8,
+      "shot": "MainScene",
+      "cue": "sfxHint 'subtle riser'"
+    },
+    {
+      "at_s": 6.94,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -11,
+      "shot": "MainScene",
+      "cue": "beat change: setup",
+      "optional": true
+    },
+    {
+      "at_s": 10.81,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -11,
+      "shot": "MainScene",
+      "cue": "beat change: setup",
+      "optional": true
+    },
+    {
+      "at_s": 15.04,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -11,
+      "shot": "MainScene",
+      "cue": "beat change: quiz",
+      "optional": true
+    },
+    {
+      "at_s": 15.09,
+      "sfx_id": "clock-tick-soft",
+      "gain_db": -8,
+      "shot": "MainScene",
+      "cue": "sfxHint 'tick'"
+    },
+    {
+      "at_s": 18.56,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -11,
+      "shot": "MainScene",
+      "cue": "beat change: reveal",
+      "optional": true
+    },
+    {
+      "at_s": 18.61,
+      "sfx_id": "impact-deep-soft",
+      "gain_db": -8,
+      "shot": "MainScene",
+      "cue": "sfxHint 'deep impact'"
+    },
+    {
+      "at_s": 18.56,
+      "sfx_id": "impact-deep-soft",
+      "gain_db": -7,
+      "shot": "MainScene",
+      "cue": "the reveal lands"
+    },
+    {
+      "at_s": 23.15,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -11,
+      "shot": "MainScene",
+      "cue": "beat change: reveal",
+      "optional": true
+    },
+    {
+      "at_s": 23.2,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -8,
+      "shot": "MainScene",
+      "cue": "sfxHint 'soft whoosh'"
+    },
+    {
+      "at_s": 23.15,
+      "sfx_id": "impact-deep-soft",
+      "gain_db": -7,
+      "shot": "MainScene",
+      "cue": "the reveal lands"
+    },
+    {
+      "at_s": 27.38,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -11,
+      "shot": "MainScene",
+      "cue": "beat change: twist",
+      "optional": true
+    },
+    {
+      "at_s": 32.32,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -11,
+      "shot": "MainScene",
+      "cue": "beat change: twist",
+      "optional": true
+    },
+    {
+      "at_s": 32.37,
+      "sfx_id": "sparkle-soft",
+      "gain_db": -8,
+      "shot": "MainScene",
+      "cue": "sfxHint 'shimmering sparkle'"
+    },
+    {
+      "at_s": 36.55,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -11,
+      "shot": "MainScene",
+      "cue": "beat change: loop",
+      "optional": true
+    }
+  ]
+}

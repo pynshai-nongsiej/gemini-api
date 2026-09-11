@@ -1,0 +1,200 @@
+[
+  {
+    "beat": "hook",
+    "stem": "b00-hook",
+    "src": "b00-hook.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "GSFC_20171208_Archive_e002081",
+    "title": "Cen A Radio Optical Gamma Composite",
+    "url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e002081/GSFC_20171208_Archive_e002081~large.jpg",
+    "details_url": "https://images.nasa.gov/details-GSFC_20171208_Archive_e002081.html",
+    "query": "radio",
+    "enhanced": {
+      "from": [
+        1466,
+        1920
+      ],
+      "factor": 1.04,
+      "final": [
+        1525,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "hook",
+    "stem": "b01-hook",
+    "src": "b01-hook.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA12110",
+    "title": "Hubble Deep Field Image Unveils Myriad Galaxies Back to the Beginning of Time",
+    "url": "https://images-assets.nasa.gov/image/PIA12110/PIA12110~medium.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA12110.html",
+    "query": "deep field",
+    "enhanced": {
+      "from": [
+        1246,
+        1280
+      ],
+      "factor": 1.56,
+      "final": [
+        1944,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "setup",
+    "stem": "b02-setup",
+    "src": "b02-setup.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA20970",
+    "title": "Pulsar Candidate in Andromeda",
+    "url": "https://images-assets.nasa.gov/image/PIA20970/PIA20970~orig.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA20970.html",
+    "query": "pulsar",
+    "enhanced": {
+      "from": [
+        2048,
+        1152
+      ],
+      "factor": 1.733,
+      "final": [
+        3550,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "setup",
+    "stem": "b03-setup",
+    "src": "b03-setup.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "GSFC_20171208_Archive_e001097",
+    "title": "Neutron Stars Rip Each Other Apart to Form Black Hole",
+    "url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001097/GSFC_20171208_Archive_e001097~orig.jpg",
+    "details_url": "https://images.nasa.gov/details-GSFC_20171208_Archive_e001097.html",
+    "query": "neutron star",
+    "enhanced": {
+      "from": [
+        1920,
+        1080
+      ],
+      "factor": 1.849,
+      "final": [
+        3550,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "quiz",
+    "stem": "b04-quiz",
+    "src": "b04-quiz.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA03606",
+    "title": "Most Detailed Image of the Crab Nebula",
+    "url": "https://images-assets.nasa.gov/image/PIA03606/PIA03606~large.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA03606.html",
+    "query": "crab nebula",
+    "enhanced": {
+      "from": [
+        1920,
+        1920
+      ],
+      "factor": 1.04,
+      "final": [
+        1997,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "reveal",
+    "stem": "b05-reveal",
+    "src": "b05-reveal.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA26274",
+    "title": "A Magnetar Loses Mass (Artist's Concept)",
+    "url": "https://images-assets.nasa.gov/image/PIA26274/PIA26274~large.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA26274.html",
+    "query": "magnetar",
+    "enhanced": {
+      "from": [
+        1920,
+        1080
+      ],
+      "factor": 1.849,
+      "final": [
+        3550,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "twist",
+    "stem": "b06-twist",
+    "src": "b06-twist.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA25781",
+    "title": "Magnetic Fields Around an Ultraluminous X-ray Source (Illustration)",
+    "url": "https://images-assets.nasa.gov/image/PIA25781/PIA25781~large.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA25781.html",
+    "query": "magnetic field star",
+    "enhanced": {
+      "from": [
+        1920,
+        1080
+      ],
+      "factor": 1.849,
+      "final": [
+        3550,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "twist",
+    "stem": "b07-twist",
+    "src": "b07-twist.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "ARC-2007-ACD07-0203-010",
+    "title": "ARC-2007-ACD07-0203-010",
+    "url": "https://images-assets.nasa.gov/image/ARC-2007-ACD07-0203-010/ARC-2007-ACD07-0203-010~large.jpg",
+    "details_url": "https://images.nasa.gov/details-ARC-2007-ACD07-0203-010.html",
+    "query": "observatory dome",
+    "enhanced": {
+      "from": [
+        1287,
+        1920
+      ],
+      "factor": 1.04,
+      "final": [
+        1338,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "loop",
+    "stem": "b08-loop",
+    "src": "b08-loop.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "GSFC_20171208_Archive_e001618",
+    "title": "A Multi-Wavelength View of Radio Galaxy Hercules A",
+    "url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001618/GSFC_20171208_Archive_e001618~large.jpg",
+    "details_url": "https://images.nasa.gov/details-GSFC_20171208_Archive_e001618.html",
+    "query": "radio",
+    "enhanced": {
+      "from": [
+        1920,
+        1363
+      ],
+      "factor": 1.465,
+      "final": [
+        2813,
+        1997
+      ]
+    }
+  }
+]

@@ -1,0 +1,196 @@
+[
+  {
+    "beat": "hook",
+    "stem": "b00-hook",
+    "src": "b00-hook.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA20690",
+    "title": "Exoplanet Orbits Youthful Star (Artist Concept)",
+    "url": "https://images-assets.nasa.gov/image/PIA20690/PIA20690~large.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA20690.html",
+    "query": "exoplanet wasp-76b",
+    "enhanced": {
+      "from": [
+        1920,
+        1080
+      ],
+      "factor": 1.849,
+      "final": [
+        3550,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "setup",
+    "stem": "b01-setup",
+    "src": "b01-setup.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA20687",
+    "title": "Hot Jupiter with Hidden Water (Artist Concept)",
+    "url": "https://images-assets.nasa.gov/image/PIA20687/PIA20687~large.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA20687.html",
+    "query": "hot jupiter exoplanet",
+    "enhanced": {
+      "from": [
+        1920,
+        1080
+      ],
+      "factor": 1.849,
+      "final": [
+        3550,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "setup",
+    "stem": "b02-setup",
+    "src": "b02-setup.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA22565",
+    "title": "Ultrahot Jupiter WASP-121b",
+    "url": "https://images-assets.nasa.gov/image/PIA22565/PIA22565~large.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA22565.html",
+    "query": "wasp 76b atmosphere",
+    "enhanced": {
+      "from": [
+        1920,
+        1440
+      ],
+      "factor": 1.387,
+      "final": [
+        2662,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "setup",
+    "stem": "b03-setup",
+    "src": "b03-setup.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "GSFC_20171208_Archive_e000704",
+    "title": "Hubble Sees a “Behemoth” Bleeding Atmosphere Around a Warm Exoplanet",
+    "url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000704/GSFC_20171208_Archive_e000704~medium.jpg",
+    "details_url": "https://images.nasa.gov/details-GSFC_20171208_Archive_e000704.html",
+    "query": "exoplanet atmosphere metal",
+    "enhanced": {
+      "from": [
+        1280,
+        708
+      ],
+      "factor": 2.82,
+      "final": [
+        3610,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "quiz",
+    "stem": "b04-quiz",
+    "src": "b04-quiz.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA21423",
+    "title": "Surface of TRAPPIST-1f",
+    "url": "https://images-assets.nasa.gov/image/PIA21423/PIA21423~large.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA21423.html",
+    "query": "exoplanet terminator line",
+    "enhanced": {
+      "from": [
+        1920,
+        1079
+      ],
+      "factor": 1.851,
+      "final": [
+        3553,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "reveal",
+    "stem": "b05-reveal",
+    "src": "b05-reveal.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA23130",
+    "title": "Rare Glimpse of the Surface of a Rocky World (Illustration)",
+    "url": "https://images-assets.nasa.gov/image/PIA23130/PIA23130~large.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA23130.html",
+    "query": "exoplanet winds",
+    "enhanced": {
+      "from": [
+        1920,
+        1080
+      ],
+      "factor": 1.849,
+      "final": [
+        3550,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "reveal",
+    "stem": "b06-reveal",
+    "src": "b06-reveal.jpg",
+    "source": "ai",
+    "nasa_id": null,
+    "title": "AI visualization — Plunging through heavy clouds of glowing red molten iron droplets falling throug",
+    "url": null
+  },
+  {
+    "beat": "twist",
+    "stem": "b07-twist",
+    "src": "b07-twist.jpg",
+    "source": "ai",
+    "nasa_id": null,
+    "title": "AI visualization — Wide shot comparing puffed swollen giant planet tiny against vast starfield back",
+    "url": null
+  },
+  {
+    "beat": "twist",
+    "stem": "b08-twist",
+    "src": "b08-twist.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "hubble-sees-a-behemoth-bleeding-atmosphere-around-a-warm-exoplanet_19125041621_o",
+    "title": "Hubble Sees a “Behemoth” Bleeding Atmosphere Around a Warm Exoplanet",
+    "url": "https://images-assets.nasa.gov/image/hubble-sees-a-behemoth-bleeding-atmosphere-around-a-warm-exoplanet_19125041621_o/hubble-sees-a-behemoth-bleeding-atmosphere-around-a-warm-exoplanet_19125041621_o~medium.jpg",
+    "details_url": "https://images.nasa.gov/details-hubble-sees-a-behemoth-bleeding-atmosphere-around-a-warm-exoplanet_19125041621_o.html",
+    "query": "evaporating exoplanet tail",
+    "enhanced": {
+      "from": [
+        1280,
+        708
+      ],
+      "factor": 2.82,
+      "final": [
+        3610,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "loop",
+    "stem": "b09-loop",
+    "src": "b09-loop.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA20068",
+    "title": "Hot-Lava World Illustration",
+    "url": "https://images-assets.nasa.gov/image/PIA20068/PIA20068~large.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA20068.html",
+    "query": "exoplanet wasp-76b",
+    "enhanced": {
+      "from": [
+        1920,
+        1080
+      ],
+      "factor": 1.849,
+      "final": [
+        3550,
+        1997
+      ]
+    }
+  }
+]

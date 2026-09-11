@@ -1,0 +1,187 @@
+[
+  {
+    "beat": "hook",
+    "stem": "b00-hook",
+    "src": "b00-hook.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "GSFC_20171208_Archive_e002081",
+    "title": "Cen A Radio Optical Gamma Composite",
+    "url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e002081/GSFC_20171208_Archive_e002081~large.jpg",
+    "details_url": "https://images.nasa.gov/details-GSFC_20171208_Archive_e002081.html",
+    "query": "radio",
+    "enhanced": {
+      "from": [
+        1466,
+        1920
+      ],
+      "factor": 1.04,
+      "final": [
+        1525,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "setup",
+    "stem": "b01-setup",
+    "src": "b01-setup.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "KSC-07pd3039",
+    "title": "KSC-07pd3039",
+    "url": "https://images-assets.nasa.gov/image/KSC-07pd3039/KSC-07pd3039~large.jpg",
+    "details_url": "https://images.nasa.gov/details-KSC-07pd3039.html",
+    "query": "big ear",
+    "enhanced": {
+      "from": [
+        1280,
+        1920
+      ],
+      "factor": 1.04,
+      "final": [
+        1331,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "setup",
+    "stem": "b02-setup",
+    "src": "b02-setup.jpg",
+    "source": "ai",
+    "nasa_id": null,
+    "title": "AI visualization — Extreme close-up on retro computer mainframe lights flickering rapidly in a dark",
+    "url": null
+  },
+  {
+    "beat": "quiz",
+    "stem": "b03-quiz",
+    "src": "b03-quiz.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA15776",
+    "title": "Asteroid 1999 RQ36",
+    "url": "https://images-assets.nasa.gov/image/PIA15776/PIA15776~orig.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA15776.html",
+    "query": "deep network",
+    "enhanced": {
+      "from": [
+        901,
+        407
+      ],
+      "factor": 4.0,
+      "final": [
+        3604,
+        1628
+      ]
+    }
+  },
+  {
+    "beat": "reveal",
+    "stem": "b04-reveal",
+    "src": "b04-reveal.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "hubble-peers-into-the-most-crowded-place-in-the-milky-way_18051161100_o",
+    "title": "The most crowded place in the Milky Way",
+    "url": "https://images-assets.nasa.gov/image/hubble-peers-into-the-most-crowded-place-in-the-milky-way_18051161100_o/hubble-peers-into-the-most-crowded-place-in-the-milky-way_18051161100_o~orig.jpg",
+    "details_url": "https://images.nasa.gov/details-hubble-peers-into-the-most-crowded-place-in-the-milky-way_18051161100_o.html",
+    "query": "sagittarius star cluster",
+    "enhanced": {
+      "from": [
+        1280,
+        1143
+      ],
+      "factor": 1.747,
+      "final": [
+        2236,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "reveal",
+    "stem": "b05-reveal",
+    "src": "b05-reveal.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "GSFC_20171208_Archive_e000796",
+    "title": "NASA's LRO Discovers Lunar Hydrogen More Abundant on Moon's Pole-Facing Slopes",
+    "url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000796/GSFC_20171208_Archive_e000796~orig.jpg",
+    "details_url": "https://images.nasa.gov/details-GSFC_20171208_Archive_e000796.html",
+    "query": "wow signal paper",
+    "enhanced": {
+      "from": [
+        673,
+        196
+      ],
+      "factor": 4.0,
+      "final": [
+        2692,
+        784
+      ]
+    }
+  },
+  {
+    "beat": "twist",
+    "stem": "b06-twist",
+    "src": "b06-twist.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA00342",
+    "title": "The Earth & Moon",
+    "url": "https://images-assets.nasa.gov/image/PIA00342/PIA00342~medium.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA00342.html",
+    "query": "earth",
+    "enhanced": {
+      "from": [
+        1005,
+        1280
+      ],
+      "factor": 1.56,
+      "final": [
+        1568,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "twist",
+    "stem": "b07-twist",
+    "src": "b07-twist.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA03654",
+    "title": "A Cauldron of Stars at the Galaxy Center",
+    "url": "https://images-assets.nasa.gov/image/PIA03654/PIA03654~large.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA03654.html",
+    "query": "milky way core",
+    "enhanced": {
+      "from": [
+        1920,
+        1384
+      ],
+      "factor": 1.443,
+      "final": [
+        2770,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "loop",
+    "stem": "b08-loop",
+    "src": "b08-loop.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "84pc-684",
+    "title": "KSC-84pc-684",
+    "url": "https://images-assets.nasa.gov/image/84pc-684/84pc-684~large.jpg",
+    "details_url": "https://images.nasa.gov/details-84pc-684.html",
+    "query": "radio dish",
+    "enhanced": {
+      "from": [
+        1920,
+        1508
+      ],
+      "factor": 1.324,
+      "final": [
+        2542,
+        1997
+      ]
+    }
+  }
+]

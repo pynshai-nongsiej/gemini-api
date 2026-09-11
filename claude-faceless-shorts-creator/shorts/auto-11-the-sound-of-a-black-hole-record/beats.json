@@ -1,0 +1,628 @@
+{
+  "id": "auto-11-the-sound-of-a-black-hole-record",
+  "title": "The Deepest Sound in the Universe",
+  "composition": "AutoThedeepestsoundinthe",
+  "hookCard": "SPACE IS NOT _SILENT_",
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSec": 40.3
+  },
+  "vo": [
+    {
+      "beat": "hook",
+      "text": "NASA captured a sound fifty-seven octaves below middle C.",
+      "imagePrompt": "Wide establishing shot of a massive cosmic black hole pulsing dark acoustic shockwaves through glowing galaxy cluster gas, mysterious and immense scale.",
+      "camera": "push-in",
+      "motion": false,
+      "nasaQuery": "perseus cluster black hole sound",
+      "sfxHint": "deep rumble",
+      "start": 0.25,
+      "end": 3.92,
+      "words": [
+        {
+          "w": "NASA",
+          "start": 0.25,
+          "end": 0.583
+        },
+        {
+          "w": "captured",
+          "start": 0.583,
+          "end": 1.149
+        },
+        {
+          "w": "a",
+          "start": 1.149,
+          "end": 1.307
+        },
+        {
+          "w": "sound",
+          "start": 1.307,
+          "end": 1.698
+        },
+        {
+          "w": "fifty-seven",
+          "start": 1.698,
+          "end": 2.381
+        },
+        {
+          "w": "octaves",
+          "start": 2.381,
+          "end": 2.889
+        },
+        {
+          "w": "below",
+          "start": 2.889,
+          "end": 3.28
+        },
+        {
+          "w": "middle",
+          "start": 3.28,
+          "end": 3.729
+        },
+        {
+          "w": "C.",
+          "start": 3.729,
+          "end": 3.919
+        }
+      ]
+    },
+    {
+      "beat": "hook",
+      "text": "It is the deepest note in the entire known universe.",
+      "imagePrompt": "Extreme close-up of a pitch-black event horizon tearing through cosmic dust in deep indigo void.",
+      "camera": "crash-zoom",
+      "motion": true,
+      "nasaQuery": "black hole",
+      "sfxHint": "bass drop",
+      "start": 4.06,
+      "end": 7.15,
+      "words": [
+        {
+          "w": "It",
+          "start": 4.06,
+          "end": 4.252
+        },
+        {
+          "w": "is",
+          "start": 4.252,
+          "end": 4.445
+        },
+        {
+          "w": "the",
+          "start": 4.445,
+          "end": 4.689
+        },
+        {
+          "w": "deepest",
+          "start": 4.689,
+          "end": 5.141
+        },
+        {
+          "w": "note",
+          "start": 5.141,
+          "end": 5.437
+        },
+        {
+          "w": "in",
+          "start": 5.437,
+          "end": 5.629
+        },
+        {
+          "w": "the",
+          "start": 5.629,
+          "end": 5.873
+        },
+        {
+          "w": "entire",
+          "start": 5.873,
+          "end": 6.273
+        },
+        {
+          "w": "known",
+          "start": 6.273,
+          "end": 6.621
+        },
+        {
+          "w": "universe.",
+          "start": 6.621,
+          "end": 7.153
+        }
+      ]
+    },
+    {
+      "beat": "setup",
+      "text": "Two hundred forty million light-years away sits the Perseus Cluster.",
+      "imagePrompt": "Wide floating view of thousands of galaxies glowing blue and gold in a dense cosmic web.",
+      "camera": "orbit-left",
+      "motion": false,
+      "nasaQuery": "perseus cluster",
+      "sfxHint": "subtle riser",
+      "start": 8.26,
+      "end": 12.25,
+      "words": [
+        {
+          "w": "Two",
+          "start": 8.26,
+          "end": 8.512
+        },
+        {
+          "w": "hundred",
+          "start": 8.512,
+          "end": 8.977
+        },
+        {
+          "w": "forty",
+          "start": 8.977,
+          "end": 9.336
+        },
+        {
+          "w": "million",
+          "start": 9.336,
+          "end": 9.801
+        },
+        {
+          "w": "light-years",
+          "start": 9.801,
+          "end": 10.427
+        },
+        {
+          "w": "away",
+          "start": 10.427,
+          "end": 10.732
+        },
+        {
+          "w": "sits",
+          "start": 10.732,
+          "end": 11.037
+        },
+        {
+          "w": "the",
+          "start": 11.037,
+          "end": 11.289
+        },
+        {
+          "w": "Perseus",
+          "start": 11.289,
+          "end": 11.754
+        },
+        {
+          "w": "Cluster.",
+          "start": 11.754,
+          "end": 12.249
+        }
+      ]
+    },
+    {
+      "beat": "setup",
+      "text": "Its supermassive black hole blasts energy into surrounding hot gas.",
+      "imagePrompt": "Low angle looking up at bright plasma jets exploding out from a central galactic core.",
+      "camera": "drift-up",
+      "motion": false,
+      "nasaQuery": "chandra black hole jet",
+      "sfxHint": "whoosh",
+      "start": 12.45,
+      "end": 16.52,
+      "words": [
+        {
+          "w": "Its",
+          "start": 12.45,
+          "end": 12.707
+        },
+        {
+          "w": "supermassive",
+          "start": 12.707,
+          "end": 13.456
+        },
+        {
+          "w": "black",
+          "start": 13.456,
+          "end": 13.822
+        },
+        {
+          "w": "hole",
+          "start": 13.822,
+          "end": 14.133
+        },
+        {
+          "w": "blasts",
+          "start": 14.133,
+          "end": 14.554
+        },
+        {
+          "w": "energy",
+          "start": 14.554,
+          "end": 14.975
+        },
+        {
+          "w": "into",
+          "start": 14.975,
+          "end": 15.287
+        },
+        {
+          "w": "surrounding",
+          "start": 15.287,
+          "end": 15.981
+        },
+        {
+          "w": "hot",
+          "start": 15.981,
+          "end": 16.238
+        },
+        {
+          "w": "gas.",
+          "start": 16.238,
+          "end": 16.525
+        }
+      ]
+    },
+    {
+      "beat": "quiz",
+      "text": "Scientists say sound cannot travel through space. So how is this possible?",
+      "imagePrompt": "Floating camera plunging through cold purple cosmic dust toward an ominous glowing void.",
+      "camera": "push-in",
+      "motion": false,
+      "nasaQuery": "chandra x-ray galaxy",
+      "sfxHint": "tick",
+      "start": 16.65,
+      "end": 21.02,
+      "words": [
+        {
+          "w": "Scientists",
+          "start": 16.65,
+          "end": 17.27
+        },
+        {
+          "w": "say",
+          "start": 17.27,
+          "end": 17.519
+        },
+        {
+          "w": "sound",
+          "start": 17.519,
+          "end": 17.874
+        },
+        {
+          "w": "cannot",
+          "start": 17.874,
+          "end": 18.283
+        },
+        {
+          "w": "travel",
+          "start": 18.283,
+          "end": 18.691
+        },
+        {
+          "w": "through",
+          "start": 18.691,
+          "end": 19.152
+        },
+        {
+          "w": "space.",
+          "start": 19.152,
+          "end": 19.536
+        },
+        {
+          "w": "So",
+          "start": 19.536,
+          "end": 19.732
+        },
+        {
+          "w": "how",
+          "start": 19.732,
+          "end": 19.982
+        },
+        {
+          "w": "is",
+          "start": 19.982,
+          "end": 20.178
+        },
+        {
+          "w": "this",
+          "start": 20.178,
+          "end": 20.48
+        },
+        {
+          "w": "possible?",
+          "start": 20.48,
+          "end": 21.023
+        }
+      ]
+    },
+    {
+      "beat": "reveal",
+      "text": "The cluster gas is so dense it carries actual pressure waves.",
+      "imagePrompt": "Extreme close-up showing visible ripples reverberating through superheated cosmic gas layers around a void.",
+      "camera": "push-in",
+      "motion": true,
+      "nasaQuery": "perseus cluster x-ray",
+      "sfxHint": "heavy impact",
+      "start": 21.62,
+      "end": 25.24,
+      "words": [
+        {
+          "w": "The",
+          "start": 21.62,
+          "end": 21.866
+        },
+        {
+          "w": "cluster",
+          "start": 21.866,
+          "end": 22.322
+        },
+        {
+          "w": "gas",
+          "start": 22.322,
+          "end": 22.568
+        },
+        {
+          "w": "is",
+          "start": 22.568,
+          "end": 22.762
+        },
+        {
+          "w": "so",
+          "start": 22.762,
+          "end": 22.956
+        },
+        {
+          "w": "dense",
+          "start": 22.956,
+          "end": 23.307
+        },
+        {
+          "w": "it",
+          "start": 23.307,
+          "end": 23.501
+        },
+        {
+          "w": "carries",
+          "start": 23.501,
+          "end": 23.956
+        },
+        {
+          "w": "actual",
+          "start": 23.956,
+          "end": 24.359
+        },
+        {
+          "w": "pressure",
+          "start": 24.359,
+          "end": 24.867
+        },
+        {
+          "w": "waves.",
+          "start": 24.867,
+          "end": 25.247
+        }
+      ]
+    },
+    {
+      "beat": "reveal",
+      "text": "NASA rescaled the frequency fifty-seven octaves so humans could hear it.",
+      "imagePrompt": "Low angle view of soundwaves pulsing outward in bright cyan and violet light across space.",
+      "camera": "orbit-right",
+      "motion": false,
+      "nasaQuery": "chandra deep field",
+      "sfxHint": "haunting drone",
+      "start": 26.2,
+      "end": 30.55,
+      "words": [
+        {
+          "w": "NASA",
+          "start": 26.2,
+          "end": 26.513
+        },
+        {
+          "w": "rescaled",
+          "start": 26.513,
+          "end": 27.046
+        },
+        {
+          "w": "the",
+          "start": 27.046,
+          "end": 27.304
+        },
+        {
+          "w": "frequency",
+          "start": 27.304,
+          "end": 27.891
+        },
+        {
+          "w": "fifty-seven",
+          "start": 27.891,
+          "end": 28.534
+        },
+        {
+          "w": "octaves",
+          "start": 28.534,
+          "end": 29.011
+        },
+        {
+          "w": "so",
+          "start": 29.011,
+          "end": 29.215
+        },
+        {
+          "w": "humans",
+          "start": 29.215,
+          "end": 29.637
+        },
+        {
+          "w": "could",
+          "start": 29.637,
+          "end": 30.005
+        },
+        {
+          "w": "hear",
+          "start": 30.005,
+          "end": 30.319
+        },
+        {
+          "w": "it.",
+          "start": 30.319,
+          "end": 30.552
+        }
+      ]
+    },
+    {
+      "beat": "twist",
+      "text": "That single acoustic note has been singing continuously for two billion years.",
+      "imagePrompt": "Wide epic shot of time passing, cosmic gas swirling endlessly in dark deep space.",
+      "camera": "pull-back",
+      "motion": false,
+      "nasaQuery": "active galactic nucleus",
+      "sfxHint": "echoing reverb",
+      "start": 30.78,
+      "end": 35.34,
+      "words": [
+        {
+          "w": "That",
+          "start": 30.78,
+          "end": 31.079
+        },
+        {
+          "w": "single",
+          "start": 31.079,
+          "end": 31.484
+        },
+        {
+          "w": "acoustic",
+          "start": 31.484,
+          "end": 31.993
+        },
+        {
+          "w": "note",
+          "start": 31.993,
+          "end": 32.292
+        },
+        {
+          "w": "has",
+          "start": 32.292,
+          "end": 32.539
+        },
+        {
+          "w": "been",
+          "start": 32.539,
+          "end": 32.838
+        },
+        {
+          "w": "singing",
+          "start": 32.838,
+          "end": 33.295
+        },
+        {
+          "w": "continuously",
+          "start": 33.295,
+          "end": 34.014
+        },
+        {
+          "w": "for",
+          "start": 34.014,
+          "end": 34.261
+        },
+        {
+          "w": "two",
+          "start": 34.261,
+          "end": 34.508
+        },
+        {
+          "w": "billion",
+          "start": 34.508,
+          "end": 34.965
+        },
+        {
+          "w": "years.",
+          "start": 34.965,
+          "end": 35.345
+        }
+      ]
+    },
+    {
+      "beat": "loop",
+      "text": "Which means in the absolute silence of deep space...",
+      "imagePrompt": "Wide establishing shot of a massive cosmic black hole pulsing dark acoustic shockwaves through glowing galaxy cluster gas, mysterious and immense scale.",
+      "camera": "settle",
+      "motion": false,
+      "nasaQuery": "perseus cluster black hole sound",
+      "sfxHint": "soft woosh",
+      "start": 35.74,
+      "end": 38.79,
+      "words": [
+        {
+          "w": "Which",
+          "start": 35.74,
+          "end": 36.1
+        },
+        {
+          "w": "means",
+          "start": 36.1,
+          "end": 36.459
+        },
+        {
+          "w": "in",
+          "start": 36.459,
+          "end": 36.658
+        },
+        {
+          "w": "the",
+          "start": 36.658,
+          "end": 36.91
+        },
+        {
+          "w": "absolute",
+          "start": 36.91,
+          "end": 37.43
+        },
+        {
+          "w": "silence",
+          "start": 37.43,
+          "end": 37.897
+        },
+        {
+          "w": "of",
+          "start": 37.897,
+          "end": 38.096
+        },
+        {
+          "w": "deep",
+          "start": 38.096,
+          "end": 38.402
+        },
+        {
+          "w": "space...",
+          "start": 38.402,
+          "end": 38.791
+        }
+      ]
+    }
+  ],
+  "beats": [
+    {
+      "id": "hook",
+      "visual": "Massive cosmic black hole pulsing dark acoustic shockwaves through glowing galaxy cluster gas."
+    },
+    {
+      "id": "setup",
+      "visual": "Thousands of bright galaxies burning in the dense Perseus Cluster."
+    },
+    {
+      "id": "quiz",
+      "visual": "Camera plunges through cold cosmic dust toward an empty black void."
+    },
+    {
+      "id": "reveal",
+      "visual": "Visible ripples shockwave through superheated gas layers surrounding the black hole."
+    },
+    {
+      "id": "twist",
+      "visual": "Time-lapse effect of galactic gas swirling in deep space over billions of years."
+    },
+    {
+      "id": "loop",
+      "visual": "Massive cosmic black hole pulsing dark acoustic shockwaves through glowing galaxy cluster gas."
+    }
+  ],
+  "voiceStatus": "kokoro:bm_daniel"
+}

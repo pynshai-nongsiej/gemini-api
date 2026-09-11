@@ -1,0 +1,118 @@
+{
+  "master": "remotion/out/AutoThedeadstarspinning7-voiced.mp4",
+  "master_fps": 30,
+  "catalog": "media/library/sfx/catalog.json",
+  "render": {
+    "preview": "remotion/out/AutoThedeadstarspinning7-voiced.mp4",
+    "out": "shorts/auto-27-the-dead-star-spinning-716-times/output/auto-27-the-dead-star-spinning-716-times-sfx.mp4",
+    "end_s": 39.57,
+    "duck": true
+  },
+  "events": [
+    {
+      "at_s": 5.98,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -11,
+      "shot": "MainScene",
+      "cue": "beat change: setup",
+      "optional": true
+    },
+    {
+      "at_s": 10.95,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -11,
+      "shot": "MainScene",
+      "cue": "beat change: setup",
+      "optional": true
+    },
+    {
+      "at_s": 11.0,
+      "sfx_id": "riser-soft",
+      "gain_db": -8,
+      "shot": "MainScene",
+      "cue": "sfxHint 'heavy riser'"
+    },
+    {
+      "at_s": 16.3,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -11,
+      "shot": "MainScene",
+      "cue": "beat change: quiz",
+      "optional": true
+    },
+    {
+      "at_s": 16.35,
+      "sfx_id": "clock-tick-soft",
+      "gain_db": -8,
+      "shot": "MainScene",
+      "cue": "sfxHint 'clock tick'"
+    },
+    {
+      "at_s": 21.65,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -11,
+      "shot": "MainScene",
+      "cue": "beat change: reveal",
+      "optional": true
+    },
+    {
+      "at_s": 21.7,
+      "sfx_id": "impact-deep-soft",
+      "gain_db": -8,
+      "shot": "MainScene",
+      "cue": "sfxHint 'deep impact'"
+    },
+    {
+      "at_s": 21.65,
+      "sfx_id": "impact-deep-soft",
+      "gain_db": -7,
+      "shot": "MainScene",
+      "cue": "the reveal lands"
+    },
+    {
+      "at_s": 26.62,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -11,
+      "shot": "MainScene",
+      "cue": "beat change: twist",
+      "optional": true
+    },
+    {
+      "at_s": 26.67,
+      "sfx_id": "riser-soft",
+      "gain_db": -8,
+      "shot": "MainScene",
+      "cue": "sfxHint 'screeching tension'"
+    },
+    {
+      "at_s": 31.2,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -11,
+      "shot": "MainScene",
+      "cue": "beat change: twist",
+      "optional": true
+    },
+    {
+      "at_s": 31.25,
+      "sfx_id": "impact-deep-soft",
+      "gain_db": -8,
+      "shot": "MainScene",
+      "cue": "sfxHint 'massive boom'"
+    },
+    {
+      "at_s": 35.39,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -11,
+      "shot": "MainScene",
+      "cue": "beat change: loop",
+      "optional": true
+    },
+    {
+      "at_s": 35.44,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -8,
+      "shot": "MainScene",
+      "cue": "sfxHint 'soft whoosh'"
+    }
+  ]
+}

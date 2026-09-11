@@ -1,0 +1,540 @@
+{
+  "id": "auto-7-the-star-that-died-in-broad-dayl",
+  "title": "The Star That Died in Broad Daylight",
+  "composition": "AutoThestarthatdiedinbr",
+  "hookCard": "VISIBLE AT _HIGH NOON_",
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSec": 34.18
+  },
+  "vo": [
+    {
+      "beat": "hook",
+      "text": "In July 1054, a second sun appeared in the daytime sky.",
+      "imagePrompt": "Wide establishing shot looking up at a bright blue noon sky where two brilliant suns shine side by side, low angle, vast scale.",
+      "camera": "push-in",
+      "motion": false,
+      "nasaQuery": "crab nebula",
+      "sfxHint": "heavy boom",
+      "start": 0.25,
+      "end": 4.77,
+      "words": [
+        {
+          "w": "In",
+          "start": 0.25,
+          "end": 0.517
+        },
+        {
+          "w": "July",
+          "start": 0.517,
+          "end": 0.929
+        },
+        {
+          "w": "1054,",
+          "start": 0.929,
+          "end": 1.379
+        },
+        {
+          "w": "a",
+          "start": 1.379,
+          "end": 1.574
+        },
+        {
+          "w": "second",
+          "start": 1.574,
+          "end": 2.129
+        },
+        {
+          "w": "sun",
+          "start": 2.129,
+          "end": 2.469
+        },
+        {
+          "w": "appeared",
+          "start": 2.469,
+          "end": 3.167
+        },
+        {
+          "w": "in",
+          "start": 3.167,
+          "end": 3.435
+        },
+        {
+          "w": "the",
+          "start": 3.435,
+          "end": 3.774
+        },
+        {
+          "w": "daytime",
+          "start": 3.774,
+          "end": 4.402
+        },
+        {
+          "w": "sky.",
+          "start": 4.402,
+          "end": 4.78
+        }
+      ]
+    },
+    {
+      "beat": "setup",
+      "text": "Chinese astronomers watched a dying star explode six thousand light-years away.",
+      "imagePrompt": "Low angle shot of ancient Chinese astronomers on a high stone observatory tower, gazing up at a dazzling celestial event, towering structures.",
+      "camera": "drift-up",
+      "motion": false,
+      "nasaQuery": "supernova remnant",
+      "sfxHint": "soft wind",
+      "start": 4.83,
+      "end": 9.36,
+      "words": [
+        {
+          "w": "Chinese",
+          "start": 4.83,
+          "end": 5.287
+        },
+        {
+          "w": "astronomers",
+          "start": 5.287,
+          "end": 5.954
+        },
+        {
+          "w": "watched",
+          "start": 5.954,
+          "end": 6.41
+        },
+        {
+          "w": "a",
+          "start": 6.41,
+          "end": 6.552
+        },
+        {
+          "w": "dying",
+          "start": 6.552,
+          "end": 6.904
+        },
+        {
+          "w": "star",
+          "start": 6.904,
+          "end": 7.204
+        },
+        {
+          "w": "explode",
+          "start": 7.204,
+          "end": 7.661
+        },
+        {
+          "w": "six",
+          "start": 7.661,
+          "end": 7.908
+        },
+        {
+          "w": "thousand",
+          "start": 7.908,
+          "end": 8.418
+        },
+        {
+          "w": "light-years",
+          "start": 8.418,
+          "end": 9.032
+        },
+        {
+          "w": "away.",
+          "start": 9.032,
+          "end": 9.36
+        }
+      ]
+    },
+    {
+      "beat": "setup",
+      "text": "It burned four times brighter than Venus for twenty-three straight days.",
+      "imagePrompt": "Extreme close-up of a blinding stellar core detonating into brilliant white light, massive cosmic scale.",
+      "camera": "pull-back",
+      "motion": false,
+      "nasaQuery": "supernova 1054",
+      "sfxHint": "rising tension",
+      "start": 9.41,
+      "end": 13.94,
+      "words": [
+        {
+          "w": "It",
+          "start": 9.41,
+          "end": 9.621
+        },
+        {
+          "w": "burned",
+          "start": 9.621,
+          "end": 10.061
+        },
+        {
+          "w": "four",
+          "start": 10.061,
+          "end": 10.388
+        },
+        {
+          "w": "times",
+          "start": 10.388,
+          "end": 10.771
+        },
+        {
+          "w": "brighter",
+          "start": 10.771,
+          "end": 11.325
+        },
+        {
+          "w": "than",
+          "start": 11.325,
+          "end": 11.651
+        },
+        {
+          "w": "Venus",
+          "start": 11.651,
+          "end": 12.034
+        },
+        {
+          "w": "for",
+          "start": 12.034,
+          "end": 12.303
+        },
+        {
+          "w": "twenty-three",
+          "start": 12.303,
+          "end": 13.028
+        },
+        {
+          "w": "straight",
+          "start": 13.028,
+          "end": 13.583
+        },
+        {
+          "w": "days.",
+          "start": 13.583,
+          "end": 13.94
+        }
+      ]
+    },
+    {
+      "beat": "quiz",
+      "text": "Pause the video now. Can you spot what it left behind?",
+      "imagePrompt": "Wide establishing shot of a pitch black star field with a subtle faint glowing cosmic cloud in the center, approaching dark expanse.",
+      "camera": "settle",
+      "motion": false,
+      "nasaQuery": "crab nebula hubble",
+      "sfxHint": "clock tick",
+      "start": 13.99,
+      "end": 17.38,
+      "words": [
+        {
+          "w": "Pause",
+          "start": 13.99,
+          "end": 14.358
+        },
+        {
+          "w": "the",
+          "start": 14.358,
+          "end": 14.616
+        },
+        {
+          "w": "video",
+          "start": 14.616,
+          "end": 14.983
+        },
+        {
+          "w": "now.",
+          "start": 14.983,
+          "end": 15.272
+        },
+        {
+          "w": "Can",
+          "start": 15.272,
+          "end": 15.53
+        },
+        {
+          "w": "you",
+          "start": 15.53,
+          "end": 15.788
+        },
+        {
+          "w": "spot",
+          "start": 15.788,
+          "end": 16.1
+        },
+        {
+          "w": "what",
+          "start": 16.1,
+          "end": 16.413
+        },
+        {
+          "w": "it",
+          "start": 16.413,
+          "end": 16.617
+        },
+        {
+          "w": "left",
+          "start": 16.617,
+          "end": 16.929
+        },
+        {
+          "w": "behind?",
+          "start": 16.929,
+          "end": 17.382
+        }
+      ]
+    },
+    {
+      "beat": "reveal",
+      "text": "That brilliant explosion created the famous Crab Nebula.",
+      "imagePrompt": "Crash-zoom into a glowing colorful cosmic gas cloud with chaotic tendrils expanding outward, intense energy, dramatic perspective.",
+      "camera": "crash-zoom",
+      "motion": true,
+      "nasaQuery": "crab nebula jwst",
+      "sfxHint": "cosmic roar",
+      "start": 18.57,
+      "end": 21.95,
+      "words": [
+        {
+          "w": "That",
+          "start": 18.57,
+          "end": 18.88
+        },
+        {
+          "w": "brilliant",
+          "start": 18.88,
+          "end": 19.462
+        },
+        {
+          "w": "explosion",
+          "start": 19.462,
+          "end": 20.044
+        },
+        {
+          "w": "created",
+          "start": 20.044,
+          "end": 20.517
+        },
+        {
+          "w": "the",
+          "start": 20.517,
+          "end": 20.773
+        },
+        {
+          "w": "famous",
+          "start": 20.773,
+          "end": 21.191
+        },
+        {
+          "w": "Crab",
+          "start": 21.191,
+          "end": 21.501
+        },
+        {
+          "w": "Nebula.",
+          "start": 21.501,
+          "end": 21.95
+        }
+      ]
+    },
+    {
+      "beat": "twist",
+      "text": "At its center sits a pulsar spinning thirty times every single second.",
+      "imagePrompt": "Extreme close-up of a hyper-dense magnetized neutron star shooting lethal beams of light into space, rotating wildly, vast dark background.",
+      "camera": "orbit-left",
+      "motion": true,
+      "nasaQuery": "crab pulsar",
+      "sfxHint": "rapid pulse",
+      "start": 22.0,
+      "end": 26.84,
+      "words": [
+        {
+          "w": "At",
+          "start": 22.0,
+          "end": 22.227
+        },
+        {
+          "w": "its",
+          "start": 22.227,
+          "end": 22.516
+        },
+        {
+          "w": "center",
+          "start": 22.516,
+          "end": 22.988
+        },
+        {
+          "w": "sits",
+          "start": 22.988,
+          "end": 23.338
+        },
+        {
+          "w": "a",
+          "start": 23.338,
+          "end": 23.503
+        },
+        {
+          "w": "pulsar",
+          "start": 23.503,
+          "end": 23.976
+        },
+        {
+          "w": "spinning",
+          "start": 23.976,
+          "end": 24.57
+        },
+        {
+          "w": "thirty",
+          "start": 24.57,
+          "end": 25.043
+        },
+        {
+          "w": "times",
+          "start": 25.043,
+          "end": 25.454
+        },
+        {
+          "w": "every",
+          "start": 25.454,
+          "end": 25.865
+        },
+        {
+          "w": "single",
+          "start": 25.865,
+          "end": 26.337
+        },
+        {
+          "w": "second.",
+          "start": 26.337,
+          "end": 26.843
+        }
+      ]
+    },
+    {
+      "beat": "twist",
+      "text": "Its magnetic field sprays high-energy radiation across the entire galaxy.",
+      "imagePrompt": "Wide view plunging through glowing blue plasma rings sweeping across interstellar space, dramatic cosmic rays, massive scale.",
+      "camera": "orbit-right",
+      "motion": false,
+      "nasaQuery": "pulsar wind nebula",
+      "sfxHint": "electric hum",
+      "start": 26.97,
+      "end": 31.26,
+      "words": [
+        {
+          "w": "Its",
+          "start": 26.97,
+          "end": 27.223
+        },
+        {
+          "w": "magnetic",
+          "start": 27.223,
+          "end": 27.745
+        },
+        {
+          "w": "field",
+          "start": 27.745,
+          "end": 28.106
+        },
+        {
+          "w": "sprays",
+          "start": 28.106,
+          "end": 28.521
+        },
+        {
+          "w": "high-energy",
+          "start": 28.521,
+          "end": 29.151
+        },
+        {
+          "w": "radiation",
+          "start": 29.151,
+          "end": 29.727
+        },
+        {
+          "w": "across",
+          "start": 29.727,
+          "end": 30.141
+        },
+        {
+          "w": "the",
+          "start": 30.141,
+          "end": 30.395
+        },
+        {
+          "w": "entire",
+          "start": 30.395,
+          "end": 30.809
+        },
+        {
+          "w": "galaxy.",
+          "start": 30.809,
+          "end": 31.253
+        }
+      ]
+    },
+    {
+      "beat": "loop",
+      "text": "And it all started when...",
+      "imagePrompt": "Wide shot low angle looking up at a bright daytime sky with a solitary blinding white light beside the sun, subtle zoom.",
+      "camera": "push-in",
+      "motion": false,
+      "nasaQuery": "crab nebula",
+      "sfxHint": "whoosh",
+      "start": 31.16,
+      "end": 32.78,
+      "words": [
+        {
+          "w": "And",
+          "start": 31.16,
+          "end": 31.432
+        },
+        {
+          "w": "it",
+          "start": 31.432,
+          "end": 31.646
+        },
+        {
+          "w": "all",
+          "start": 31.646,
+          "end": 31.918
+        },
+        {
+          "w": "started",
+          "start": 31.918,
+          "end": 32.42
+        },
+        {
+          "w": "when...",
+          "start": 32.42,
+          "end": 32.781
+        }
+      ]
+    }
+  ],
+  "beats": [
+    {
+      "id": "hook",
+      "visual": "Bright blue daytime sky showing two suns shining simultaneously."
+    },
+    {
+      "id": "setup",
+      "visual": "Ancient astronomers on an observatory tower charting the new bright light."
+    },
+    {
+      "id": "quiz",
+      "visual": "Dark starfield with a faint glowing cloud in the center."
+    },
+    {
+      "id": "reveal",
+      "visual": "Rapid crash zoom into the vibrant, colorful filaments of the Crab Nebula."
+    },
+    {
+      "id": "twist",
+      "visual": "A rapidly spinning neutron star emitting powerful light beams."
+    },
+    {
+      "id": "loop",
+      "visual": "Bright blue daytime sky showing two suns shining simultaneously."
+    }
+  ],
+  "voiceStatus": "kokoro:bm_george"
+}

@@ -1,0 +1,583 @@
+{
+  "id": "auto-19-the-planet-made-entirely-of-froz",
+  "title": "The Burning Ice Planet (Gliese 436b)",
+  "composition": "AutoTheburningiceplanetg",
+  "hookCard": "ICE THAT BURNS AT _800 DEGREES_",
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSec": 36.84
+  },
+  "vo": [
+    {
+      "beat": "hook",
+      "text": "This planet is covered in solid ice that actively burns.",
+      "imagePrompt": "Wide establishing shot approaching a glowing blue ice planet wrapped in searing flames and white steam, dark cosmic void background",
+      "camera": "crash-zoom",
+      "motion": true,
+      "nasaQuery": "Gliese 436b",
+      "sfxHint": "deep impact",
+      "start": 0.25,
+      "end": 3.64,
+      "words": [
+        {
+          "w": "This",
+          "start": 0.25,
+          "end": 0.554
+        },
+        {
+          "w": "planet",
+          "start": 0.554,
+          "end": 0.965
+        },
+        {
+          "w": "is",
+          "start": 0.965,
+          "end": 1.163
+        },
+        {
+          "w": "covered",
+          "start": 1.163,
+          "end": 1.627
+        },
+        {
+          "w": "in",
+          "start": 1.627,
+          "end": 1.825
+        },
+        {
+          "w": "solid",
+          "start": 1.825,
+          "end": 2.182
+        },
+        {
+          "w": "ice",
+          "start": 2.182,
+          "end": 2.433
+        },
+        {
+          "w": "that",
+          "start": 2.433,
+          "end": 2.738
+        },
+        {
+          "w": "actively",
+          "start": 2.738,
+          "end": 3.255
+        },
+        {
+          "w": "burns.",
+          "start": 3.255,
+          "end": 3.642
+        }
+      ]
+    },
+    {
+      "beat": "setup",
+      "text": "Meet Gliese 436b, a scorching exoplanet 33 light-years away.",
+      "imagePrompt": "Low angle looking up at a massive exoplanet orbiting extremely close to a glowing red dwarf star",
+      "camera": "orbit-left",
+      "motion": false,
+      "nasaQuery": "exoplanet transit",
+      "sfxHint": "soft whoosh",
+      "start": 4.45,
+      "end": 8.73,
+      "words": [
+        {
+          "w": "Meet",
+          "start": 4.45,
+          "end": 4.823
+        },
+        {
+          "w": "Gliese",
+          "start": 4.823,
+          "end": 5.328
+        },
+        {
+          "w": "436b,",
+          "start": 5.328,
+          "end": 5.737
+        },
+        {
+          "w": "a",
+          "start": 5.737,
+          "end": 5.914
+        },
+        {
+          "w": "scorching",
+          "start": 5.914,
+          "end": 6.615
+        },
+        {
+          "w": "exoplanet",
+          "start": 6.615,
+          "end": 7.315
+        },
+        {
+          "w": "33",
+          "start": 7.315,
+          "end": 7.558
+        },
+        {
+          "w": "light-years",
+          "start": 7.558,
+          "end": 8.324
+        },
+        {
+          "w": "away.",
+          "start": 8.324,
+          "end": 8.733
+        }
+      ]
+    },
+    {
+      "beat": "setup",
+      "text": "Its surface temperatures reach over eight hundred degrees Fahrenheit.",
+      "imagePrompt": "Extreme close-up of a blistering planetary crust radiating intense thermal energy and bright red infrared heat glow",
+      "camera": "push-in",
+      "motion": false,
+      "nasaQuery": "hot neptune",
+      "sfxHint": "riser",
+      "start": 8.26,
+      "end": 12.0,
+      "words": [
+        {
+          "w": "Its",
+          "start": 8.26,
+          "end": 8.493
+        },
+        {
+          "w": "surface",
+          "start": 8.493,
+          "end": 8.923
+        },
+        {
+          "w": "temperatures",
+          "start": 8.923,
+          "end": 9.601
+        },
+        {
+          "w": "reach",
+          "start": 9.601,
+          "end": 9.933
+        },
+        {
+          "w": "over",
+          "start": 9.933,
+          "end": 10.215
+        },
+        {
+          "w": "eight",
+          "start": 10.215,
+          "end": 10.547
+        },
+        {
+          "w": "hundred",
+          "start": 10.547,
+          "end": 10.978
+        },
+        {
+          "w": "degrees",
+          "start": 10.978,
+          "end": 11.408
+        },
+        {
+          "w": "Fahrenheit.",
+          "start": 11.408,
+          "end": 12.015
+        }
+      ]
+    },
+    {
+      "beat": "quiz",
+      "text": "Pause—how can ice exist at temperatures hot enough to melt lead?",
+      "imagePrompt": "Low angle shot of dense crystal lattice structure glowing under extreme pressure and white thermal intensity",
+      "camera": "settle",
+      "motion": false,
+      "nasaQuery": "crystal structure",
+      "sfxHint": "tick",
+      "start": 12.07,
+      "end": 15.73,
+      "words": [
+        {
+          "w": "Pause—how",
+          "start": 12.07,
+          "end": 12.569
+        },
+        {
+          "w": "can",
+          "start": 12.569,
+          "end": 12.812
+        },
+        {
+          "w": "ice",
+          "start": 12.812,
+          "end": 13.054
+        },
+        {
+          "w": "exist",
+          "start": 13.054,
+          "end": 13.399
+        },
+        {
+          "w": "at",
+          "start": 13.399,
+          "end": 13.589
+        },
+        {
+          "w": "temperatures",
+          "start": 13.589,
+          "end": 14.295
+        },
+        {
+          "w": "hot",
+          "start": 14.295,
+          "end": 14.537
+        },
+        {
+          "w": "enough",
+          "start": 14.537,
+          "end": 14.933
+        },
+        {
+          "w": "to",
+          "start": 14.933,
+          "end": 15.124
+        },
+        {
+          "w": "melt",
+          "start": 15.124,
+          "end": 15.418
+        },
+        {
+          "w": "lead?",
+          "start": 15.418,
+          "end": 15.739
+        }
+      ]
+    },
+    {
+      "beat": "reveal",
+      "text": "Crushing gravity forces all the water molecules into an ultra-dense solid state.",
+      "imagePrompt": "Plunging through heavy atmosphere into a super compressed core where water freezes under immense gravitational force",
+      "camera": "crash-zoom",
+      "motion": true,
+      "nasaQuery": "planet core",
+      "sfxHint": "deep impact",
+      "start": 16.65,
+      "end": 21.45,
+      "words": [
+        {
+          "w": "Crushing",
+          "start": 16.65,
+          "end": 17.179
+        },
+        {
+          "w": "gravity",
+          "start": 17.179,
+          "end": 17.654
+        },
+        {
+          "w": "forces",
+          "start": 17.654,
+          "end": 18.074
+        },
+        {
+          "w": "all",
+          "start": 18.074,
+          "end": 18.331
+        },
+        {
+          "w": "the",
+          "start": 18.331,
+          "end": 18.588
+        },
+        {
+          "w": "water",
+          "start": 18.588,
+          "end": 18.953
+        },
+        {
+          "w": "molecules",
+          "start": 18.953,
+          "end": 19.537
+        },
+        {
+          "w": "into",
+          "start": 19.537,
+          "end": 19.848
+        },
+        {
+          "w": "an",
+          "start": 19.848,
+          "end": 20.05
+        },
+        {
+          "w": "ultra-dense",
+          "start": 20.05,
+          "end": 20.689
+        },
+        {
+          "w": "solid",
+          "start": 20.689,
+          "end": 21.054
+        },
+        {
+          "w": "state.",
+          "start": 21.054,
+          "end": 21.45
+        }
+      ]
+    },
+    {
+      "beat": "reveal",
+      "text": "It forms Ice-Ten, a exotic crystalline phase that never melts.",
+      "imagePrompt": "Extreme close-up framing translucent hyper-compressed ice crystals reflecting intense heat from an unseen stellar furnace",
+      "camera": "push-in",
+      "motion": false,
+      "nasaQuery": "high pressure ice",
+      "sfxHint": "sparkle",
+      "start": 21.62,
+      "end": 25.58,
+      "words": [
+        {
+          "w": "It",
+          "start": 21.62,
+          "end": 21.836
+        },
+        {
+          "w": "forms",
+          "start": 21.836,
+          "end": 22.226
+        },
+        {
+          "w": "Ice-Ten,",
+          "start": 22.226,
+          "end": 22.707
+        },
+        {
+          "w": "a",
+          "start": 22.707,
+          "end": 22.864
+        },
+        {
+          "w": "exotic",
+          "start": 22.864,
+          "end": 23.313
+        },
+        {
+          "w": "crystalline",
+          "start": 23.313,
+          "end": 24.053
+        },
+        {
+          "w": "phase",
+          "start": 24.053,
+          "end": 24.443
+        },
+        {
+          "w": "that",
+          "start": 24.443,
+          "end": 24.775
+        },
+        {
+          "w": "never",
+          "start": 24.775,
+          "end": 25.166
+        },
+        {
+          "w": "melts.",
+          "start": 25.166,
+          "end": 25.588
+        }
+      ]
+    },
+    {
+      "beat": "twist",
+      "text": "The star's radiation bleeds off steam, trailing a gigantic comet-like tail.",
+      "imagePrompt": "Wide wide shot showing a glowing planetary tail trailing fifty million miles into the dark expanse of space",
+      "camera": "pull-back",
+      "motion": false,
+      "nasaQuery": "Gliese 436b tail",
+      "sfxHint": "soft whoosh",
+      "start": 25.81,
+      "end": 30.35,
+      "words": [
+        {
+          "w": "The",
+          "start": 25.81,
+          "end": 26.073
+        },
+        {
+          "w": "star's",
+          "start": 26.073,
+          "end": 26.449
+        },
+        {
+          "w": "radiation",
+          "start": 26.449,
+          "end": 27.049
+        },
+        {
+          "w": "bleeds",
+          "start": 27.049,
+          "end": 27.481
+        },
+        {
+          "w": "off",
+          "start": 27.481,
+          "end": 27.745
+        },
+        {
+          "w": "steam,",
+          "start": 27.745,
+          "end": 28.151
+        },
+        {
+          "w": "trailing",
+          "start": 28.151,
+          "end": 28.694
+        },
+        {
+          "w": "a",
+          "start": 28.694,
+          "end": 28.846
+        },
+        {
+          "w": "gigantic",
+          "start": 28.846,
+          "end": 29.39
+        },
+        {
+          "w": "comet-like",
+          "start": 29.39,
+          "end": 29.99
+        },
+        {
+          "w": "tail.",
+          "start": 29.99,
+          "end": 30.34
+        }
+      ]
+    },
+    {
+      "beat": "twist",
+      "text": "This burning giant is literally evaporating into space forever.",
+      "imagePrompt": "Low angle looking up at a bleeding atmosphere dispersing into cosmic vacuum near a massive star",
+      "camera": "drift-up",
+      "motion": false,
+      "nasaQuery": "exoplanet atmosphere",
+      "sfxHint": "riser",
+      "start": 30.39,
+      "end": 34.1,
+      "words": [
+        {
+          "w": "This",
+          "start": 30.39,
+          "end": 30.693
+        },
+        {
+          "w": "burning",
+          "start": 30.693,
+          "end": 31.155
+        },
+        {
+          "w": "giant",
+          "start": 31.155,
+          "end": 31.511
+        },
+        {
+          "w": "is",
+          "start": 31.511,
+          "end": 31.708
+        },
+        {
+          "w": "literally",
+          "start": 31.708,
+          "end": 32.277
+        },
+        {
+          "w": "evaporating",
+          "start": 32.277,
+          "end": 32.951
+        },
+        {
+          "w": "into",
+          "start": 32.951,
+          "end": 33.254
+        },
+        {
+          "w": "space",
+          "start": 33.254,
+          "end": 33.611
+        },
+        {
+          "w": "forever.",
+          "start": 33.611,
+          "end": 34.102
+        }
+      ]
+    },
+    {
+      "beat": "loop",
+      "text": "Yet inside its atmosphere,",
+      "imagePrompt": "Wide establishing shot approaching a glowing blue ice planet wrapped in searing flames and white steam, dark cosmic void background",
+      "camera": "settle",
+      "motion": false,
+      "nasaQuery": "Gliese 436b",
+      "sfxHint": "tick",
+      "start": 34.2,
+      "end": 36.14,
+      "words": [
+        {
+          "w": "Yet",
+          "start": 34.2,
+          "end": 34.511
+        },
+        {
+          "w": "inside",
+          "start": 34.511,
+          "end": 35.02
+        },
+        {
+          "w": "its",
+          "start": 35.02,
+          "end": 35.331
+        },
+        {
+          "w": "atmosphere,",
+          "start": 35.331,
+          "end": 36.141
+        }
+      ]
+    }
+  ],
+  "beats": [
+    {
+      "id": "hook",
+      "visual": "A blazing ice planet glowing white-hot in deep space, completely surrounded by roaring solar fire."
+    },
+    {
+      "id": "setup",
+      "visual": "A fiery red dwarf star dominating the sky above a massive blue world."
+    },
+    {
+      "id": "quiz",
+      "visual": "An impossible close-up of solid crystal lattice burning under extreme heat."
+    },
+    {
+      "id": "reveal",
+      "visual": "A rapid plunge into the core showing extreme atmospheric pressure locking water into hyper-dense solid ice."
+    },
+    {
+      "id": "twist",
+      "visual": "A wide view revealing a massive 50-million-mile comet tail bleeding off the planet into space."
+    },
+    {
+      "id": "loop",
+      "visual": "A blazing ice planet glowing white-hot in deep space, completely surrounded by roaring solar fire."
+    }
+  ],
+  "voiceStatus": "kokoro:bf_isabella"
+}

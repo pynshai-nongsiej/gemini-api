@@ -1,0 +1,172 @@
+{
+  "id": "fin-3-the-1-8-bank-sweep-trap-why-leav",
+  "title": "The $412 Bank Sweep Trap",
+  "composition": "AutoThe412Banksweeptrap",
+  "hookCard": "THE _$412_ BANK TRAP",
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSec": 32.8
+  },
+  "vo": [
+    {
+      "beat": "hook",
+      "text": "Thirty-four dollars quietly disappears from your checking account every single month.",
+      "graphic": "counter",
+      "statValue": "$412",
+      "statLabel": "annual forfeited yield",
+      "onScreen": "YOUR _CHECKING_ IS LEAKING",
+      "bgPrompt": "Dark minimalist glass office, stacks of cash on table lit by sharp spotlight",
+      "camera": "push-in",
+      "motion": false,
+      "sfxHint": "impact",
+      "start": 0.25,
+      "end": 3.93
+    },
+    {
+      "beat": "setup",
+      "text": "Holding ten thousand in checking pays point zero one percent.",
+      "graphic": "counter",
+      "statValue": "0.01%",
+      "statLabel": "standard checking rate",
+      "onScreen": "BANK PAYS _0.01%_ YIELD",
+      "bgPrompt": "Macro shot of polished vault lock dial spinning slowly in low key lighting",
+      "camera": "orbit-left",
+      "motion": false,
+      "sfxHint": "tick",
+      "start": 4.23,
+      "end": 7.57
+    },
+    {
+      "beat": "setup",
+      "text": "Your bank lends that cash overnight at five percent spread.",
+      "graphic": "counter",
+      "statValue": "5.00%",
+      "statLabel": "overnight lending spread",
+      "onScreen": "THEY LEND AT _5%_",
+      "bgPrompt": "Cinematic dark skyscraper corridor with glowing blue server rack indicators",
+      "camera": "drift-up",
+      "motion": false,
+      "sfxHint": "whoosh",
+      "start": 7.87,
+      "end": 11.22
+    },
+    {
+      "beat": "quiz",
+      "text": "Pause. How much cash are you holding right now?",
+      "graphic": "rule",
+      "statValue": "PAUSE AND CHECK BALANCE",
+      "statLabel": "check your balance",
+      "onScreen": "PAUSE AND _CHECK_ BALANCE",
+      "bgPrompt": "Moody moody dark atmospheric shot of generic banking app on smartphone screen",
+      "camera": "settle",
+      "motion": false,
+      "sfxHint": "tick",
+      "start": 11.52,
+      "end": 14.53
+    },
+    {
+      "beat": "quiz",
+      "text": "Comment your idle checking balance if you dare.",
+      "graphic": "rule",
+      "statValue": "COMMENT YOUR IDLE CASH",
+      "statLabel": "drop your total",
+      "onScreen": "_COMMENT_ YOUR IDLE CASH",
+      "bgPrompt": "Extreme close-up on keyboard illuminated by dark cyan neon backlight",
+      "camera": "pan-right",
+      "motion": false,
+      "sfxHint": "whoosh",
+      "start": 14.83,
+      "end": 17.5
+    },
+    {
+      "beat": "reveal",
+      "text": "Keep five thousand max in checking, sweep the rest to high yield.",
+      "graphic": "rule",
+      "statValue": "$5,000",
+      "statLabel": "maximum checking cap",
+      "onScreen": "CAP CHECKING AT _$5K_",
+      "bgPrompt": "Glowing cyan visual chart splitting capital into two distinct high-contrast pathways",
+      "camera": "crash-zoom",
+      "motion": true,
+      "sfxHint": "riser",
+      "start": 17.81,
+      "end": 21.82
+    },
+    {
+      "beat": "reveal",
+      "text": "High yield pays four point five, checking pays practically zero.",
+      "graphic": "bars",
+      "statValue": "4.5%",
+      "statLabel": "yield spread comparison",
+      "statBars": [
+        "High Yield=4.50",
+        "Checking=0.01"
+      ],
+      "onScreen": "_SWEEP_ THE SPREAD DIFFERENCE",
+      "bgPrompt": "Dark financial district tower glowing at night with subtle volumetric fog",
+      "camera": "pull-back",
+      "motion": false,
+      "sfxHint": "cash register",
+      "start": 22.12,
+      "end": 25.46
+    },
+    {
+      "beat": "twist",
+      "text": "Banks profit four hundred twelve dollars on your default laziness.",
+      "graphic": "counter",
+      "statValue": "$412",
+      "statLabel": "bank profit on sweep",
+      "onScreen": "THEY PROFIT ON _LAZINESS_",
+      "bgPrompt": "Shadowy corporate boardroom table in high-contrast cinematic dark tone",
+      "camera": "orbit-right",
+      "motion": false,
+      "sfxHint": "impact",
+      "start": 25.77,
+      "end": 29.11
+    },
+    {
+      "beat": "loop",
+      "text": "Which is why thirty-four dollars quietly disappears.",
+      "graphic": "counter",
+      "statValue": "$412",
+      "statLabel": "annual forfeited yield",
+      "onScreen": "EVERY MONTH _$34_ DISAPPEARS",
+      "bgPrompt": "Dark minimalist glass office, stacks of cash on table lit by sharp spotlight",
+      "camera": "push-in",
+      "motion": false,
+      "sfxHint": "tick",
+      "start": 29.41,
+      "end": 31.75
+    }
+  ],
+  "beats": [
+    {
+      "id": "hook",
+      "visual": "Massive red kinetic counter counting down to $412 loss over dark bank vault"
+    },
+    {
+      "id": "setup",
+      "visual": "Comparison breakdown showing 0.01% checking interest versus 5% lending rate"
+    },
+    {
+      "id": "quiz",
+      "visual": "Audit challenge rule card prompting viewer to check balance and comment"
+    },
+    {
+      "id": "reveal",
+      "visual": "Data graphic displaying $5,000 cap rule card and animated spread comparison bar chart"
+    },
+    {
+      "id": "twist",
+      "visual": "Counter graphic highlighting bank profit margin on un-swept user balances"
+    },
+    {
+      "id": "loop",
+      "visual": "Massive red kinetic counter returning to $412 mirror frame visual"
+    }
+  ],
+  "voiceStatus": "pending:kokoro",
+  "pipeline": "finance"
+}

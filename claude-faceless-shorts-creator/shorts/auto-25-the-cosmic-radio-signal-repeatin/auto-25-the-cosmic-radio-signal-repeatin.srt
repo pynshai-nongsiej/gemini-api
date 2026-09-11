@@ -1,0 +1,35 @@
+1
+00:00:00,250 --> 00:00:04,020
+Astronomers detected a radio signal pulsing every twenty-two minutes.
+
+2
+00:00:04,060 --> 00:00:07,050
+It has been repeating non-stop since 1988.
+
+3
+00:00:07,100 --> 00:00:10,490
+Known pulsars spin rapidly, flashing every few seconds.
+
+4
+00:00:10,530 --> 00:00:14,300
+According to physics, slowing down to twenty-two minutes kills the beam.
+
+5
+00:00:15,110 --> 00:00:19,180
+Pause and guess. What could power an impossible signal for decades?
+
+6
+00:00:19,690 --> 00:00:24,680
+It is target GPM J1839-10, an ultra-long period magnetar.
+
+7
+00:00:23,500 --> 00:00:28,230
+Its magnetic field is so powerful it breaks every existing pulsar model.
+
+8
+00:00:28,470 --> 00:00:32,610
+Scientists hid thirty-five years of data because nobody could explain it.
+
+9
+00:00:33,050 --> 00:00:35,330
+Deep in space, a mystery remains as...

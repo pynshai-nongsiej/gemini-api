@@ -1,0 +1,13 @@
+{
+  "prompt": "Extreme close-up of a giant glowing fracture ripping across the lunar surface, harsh sunlight, ultra-detailed crater texture, ominous dark space background.",
+  "engine": "pollinations",
+  "model": "flux",
+  "aspect_ratio": "9:16",
+  "image_size": "1K",
+  "width": 1080,
+  "height": 1920,
+  "seed": null,
+  "delivered_width": 1123,
+  "delivered_height": 1997,
+  "created": "2026-09-10T20:07:35"
+}

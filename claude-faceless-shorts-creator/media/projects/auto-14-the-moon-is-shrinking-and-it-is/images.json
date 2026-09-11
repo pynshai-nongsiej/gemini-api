@@ -1,0 +1,174 @@
+[
+  {
+    "beat": "hook",
+    "stem": "b00-hook",
+    "src": "b00-hook.jpg",
+    "source": "ai",
+    "nasa_id": null,
+    "title": "AI visualization — Extreme close-up of a giant glowing fracture ripping across the lunar surface, h",
+    "url": null
+  },
+  {
+    "beat": "setup",
+    "stem": "b01-setup",
+    "src": "b01-setup.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA00519",
+    "title": "Ganymede G1 & G2 Encounters - Interior of Ganymede",
+    "url": "https://images-assets.nasa.gov/image/PIA00519/PIA00519~large.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA00519.html",
+    "query": "moon interior core",
+    "enhanced": {
+      "from": [
+        1920,
+        1439
+      ],
+      "factor": 1.388,
+      "final": [
+        2664,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "setup",
+    "stem": "b02-setup",
+    "src": "b02-setup.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA23236",
+    "title": "Lobate Scarps on the Moon",
+    "url": "https://images-assets.nasa.gov/image/PIA23236/PIA23236~orig.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA23236.html",
+    "query": "lobate scarps moon",
+    "enhanced": {
+      "from": [
+        1631,
+        1010
+      ],
+      "factor": 1.977,
+      "final": [
+        3225,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "quiz",
+    "stem": "b03-quiz",
+    "src": "b03-quiz.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA12889",
+    "title": "LROC First Look at the Apollo Landing Sites",
+    "url": "https://images-assets.nasa.gov/image/PIA12889/PIA12889~orig.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA12889.html",
+    "query": "apollo landing site",
+    "enhanced": {
+      "from": [
+        936,
+        592
+      ],
+      "factor": 3.373,
+      "final": [
+        3157,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "reveal",
+    "stem": "b04-reveal",
+    "src": "b04-reveal.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "S69-39587",
+    "title": "Dr. Garry Latham studies seismometer tracings from the moon",
+    "url": "https://images-assets.nasa.gov/image/S69-39587/S69-39587~large.jpg",
+    "details_url": "https://images.nasa.gov/details-S69-39587.html",
+    "query": "apollo seismometer moonquake",
+    "enhanced": {
+      "from": [
+        1265,
+        1920
+      ],
+      "factor": 1.04,
+      "final": [
+        1316,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "reveal",
+    "stem": "b05-reveal",
+    "src": "b05-reveal.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA25317",
+    "title": "NASA's COLDArm at Lunar Regolith Simulant Test Bed",
+    "url": "https://images-assets.nasa.gov/image/PIA25317/PIA25317~large.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA25317.html",
+    "query": "lunar regolith closeup",
+    "enhanced": {
+      "from": [
+        1280,
+        1920
+      ],
+      "factor": 1.04,
+      "final": [
+        1331,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "twist",
+    "stem": "b06-twist",
+    "src": "b06-twist.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "ACD20-0047",
+    "title": "VIPER Drill",
+    "url": "https://images-assets.nasa.gov/image/ACD20-0047/ACD20-0047~large.jpg",
+    "details_url": "https://images.nasa.gov/details-ACD20-0047.html",
+    "query": "artemis south pole",
+    "enhanced": {
+      "from": [
+        1920,
+        1080
+      ],
+      "factor": 1.849,
+      "final": [
+        3550,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "twist",
+    "stem": "b07-twist",
+    "src": "b07-twist.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "LRC-2011-00021",
+    "title": "Expandable Lunar Habitat (X-Hab)",
+    "url": "https://images-assets.nasa.gov/image/LRC-2011-00021/LRC-2011-00021~large.jpg",
+    "details_url": "https://images.nasa.gov/details-LRC-2011-00021.html",
+    "query": "lunar habitat",
+    "enhanced": {
+      "from": [
+        1920,
+        1277
+      ],
+      "factor": 1.564,
+      "final": [
+        3002,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "loop",
+    "stem": "b08-loop",
+    "src": "b08-loop.jpg",
+    "source": "ai",
+    "nasa_id": null,
+    "title": "AI visualization — Extreme close-up of a giant glowing fracture ripping across the lunar surface, h",
+    "url": null
+  }
+]

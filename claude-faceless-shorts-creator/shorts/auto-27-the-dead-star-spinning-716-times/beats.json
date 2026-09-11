@@ -1,0 +1,610 @@
+{
+  "id": "auto-27-the-dead-star-spinning-716-times",
+  "title": "The Dead Star Spinning 716 Times Per Second",
+  "composition": "AutoThedeadstarspinning7",
+  "hookCard": "SPINNING _716 TIMES_ PER SECOND",
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSec": 39.57
+  },
+  "vo": [
+    {
+      "beat": "hook",
+      "text": "This sphere is crushed smaller than Manhattan, yet it spins 716 times every second.",
+      "imagePrompt": "Wide establishing shot approaching a glowing, squashed neutron star floating in deep, dark space, towering against massive distant nebula, cinematic lighting.",
+      "camera": "push-in",
+      "motion": false,
+      "nasaQuery": "PSR J1748-2446 ad",
+      "sfxHint": "high pitch whir",
+      "start": 0.25,
+      "end": 5.94,
+      "words": [
+        {
+          "w": "This",
+          "start": 0.25,
+          "end": 0.598
+        },
+        {
+          "w": "sphere",
+          "start": 0.598,
+          "end": 1.069
+        },
+        {
+          "w": "is",
+          "start": 1.069,
+          "end": 1.296
+        },
+        {
+          "w": "crushed",
+          "start": 1.296,
+          "end": 1.827
+        },
+        {
+          "w": "smaller",
+          "start": 1.827,
+          "end": 2.36
+        },
+        {
+          "w": "than",
+          "start": 2.36,
+          "end": 2.708
+        },
+        {
+          "w": "Manhattan,",
+          "start": 2.708,
+          "end": 3.396
+        },
+        {
+          "w": "yet",
+          "start": 3.396,
+          "end": 3.683
+        },
+        {
+          "w": "it",
+          "start": 3.683,
+          "end": 3.909
+        },
+        {
+          "w": "spins",
+          "start": 3.909,
+          "end": 4.319
+        },
+        {
+          "w": "716",
+          "start": 4.319,
+          "end": 4.606
+        },
+        {
+          "w": "times",
+          "start": 4.606,
+          "end": 5.016
+        },
+        {
+          "w": "every",
+          "start": 5.016,
+          "end": 5.425
+        },
+        {
+          "w": "second.",
+          "start": 5.425,
+          "end": 5.93
+        }
+      ]
+    },
+    {
+      "beat": "setup",
+      "text": "Meet PSR J1748-2446 ad, the fastest-spinning pulsar ever discovered in our universe.",
+      "imagePrompt": "Low angle looking up at a hyper-dense dead star spinning violently, crackling blue magnetic lines, dramatic neon rim light.",
+      "camera": "orbit-left",
+      "motion": false,
+      "nasaQuery": "pulsar neutron star",
+      "sfxHint": "sub bass drone",
+      "start": 5.98,
+      "end": 13.18,
+      "words": [
+        {
+          "w": "Meet",
+          "start": 5.98,
+          "end": 6.433
+        },
+        {
+          "w": "PSR",
+          "start": 6.433,
+          "end": 6.806
+        },
+        {
+          "w": "J1748-2446",
+          "start": 6.806,
+          "end": 7.656
+        },
+        {
+          "w": "ad,",
+          "start": 7.656,
+          "end": 7.994
+        },
+        {
+          "w": "the",
+          "start": 7.994,
+          "end": 8.367
+        },
+        {
+          "w": "fastest-spinning",
+          "start": 8.367,
+          "end": 9.693
+        },
+        {
+          "w": "pulsar",
+          "start": 9.693,
+          "end": 10.305
+        },
+        {
+          "w": "ever",
+          "start": 10.305,
+          "end": 10.757
+        },
+        {
+          "w": "discovered",
+          "start": 10.757,
+          "end": 11.686
+        },
+        {
+          "w": "in",
+          "start": 11.686,
+          "end": 11.981
+        },
+        {
+          "w": "our",
+          "start": 11.981,
+          "end": 12.354
+        },
+        {
+          "w": "universe.",
+          "start": 12.354,
+          "end": 13.168
+        }
+      ]
+    },
+    {
+      "beat": "setup",
+      "text": "Its equator travels at 24 percent the speed of light, dragging space itself.",
+      "imagePrompt": "Extreme close-up plunging through distorted space-time waves wrapping around an oblate glowing core, ultra-detailed quantum grid overlay.",
+      "camera": "crash-zoom",
+      "motion": false,
+      "nasaQuery": "neutron star spin",
+      "sfxHint": "heavy riser",
+      "start": 10.95,
+      "end": 15.96,
+      "words": [
+        {
+          "w": "Its",
+          "start": 10.95,
+          "end": 11.227
+        },
+        {
+          "w": "equator",
+          "start": 11.227,
+          "end": 11.738
+        },
+        {
+          "w": "travels",
+          "start": 11.738,
+          "end": 12.25
+        },
+        {
+          "w": "at",
+          "start": 12.25,
+          "end": 12.468
+        },
+        {
+          "w": "24",
+          "start": 12.468,
+          "end": 12.686
+        },
+        {
+          "w": "percent",
+          "start": 12.686,
+          "end": 13.198
+        },
+        {
+          "w": "the",
+          "start": 13.198,
+          "end": 13.475
+        },
+        {
+          "w": "speed",
+          "start": 13.475,
+          "end": 13.869
+        },
+        {
+          "w": "of",
+          "start": 13.869,
+          "end": 14.087
+        },
+        {
+          "w": "light,",
+          "start": 14.087,
+          "end": 14.513
+        },
+        {
+          "w": "dragging",
+          "start": 14.513,
+          "end": 15.084
+        },
+        {
+          "w": "space",
+          "start": 15.084,
+          "end": 15.478
+        },
+        {
+          "w": "itself.",
+          "start": 15.478,
+          "end": 15.963
+        }
+      ]
+    },
+    {
+      "beat": "quiz",
+      "text": "Pause right now. What keeps centrifugal force from shredding this dead star apart?",
+      "imagePrompt": "Extreme close-up on the bulging equatorial ridge of the squashed star, glowing plasma tendrils stretching outward into black void.",
+      "camera": "settle",
+      "motion": false,
+      "nasaQuery": "terzan 5 pulsar",
+      "sfxHint": "clock tick",
+      "start": 16.3,
+      "end": 21.16,
+      "words": [
+        {
+          "w": "Pause",
+          "start": 16.3,
+          "end": 16.657
+        },
+        {
+          "w": "right",
+          "start": 16.657,
+          "end": 17.015
+        },
+        {
+          "w": "now.",
+          "start": 17.015,
+          "end": 17.295
+        },
+        {
+          "w": "What",
+          "start": 17.295,
+          "end": 17.599
+        },
+        {
+          "w": "keeps",
+          "start": 17.599,
+          "end": 17.956
+        },
+        {
+          "w": "centrifugal",
+          "start": 17.956,
+          "end": 18.633
+        },
+        {
+          "w": "force",
+          "start": 18.633,
+          "end": 18.991
+        },
+        {
+          "w": "from",
+          "start": 18.991,
+          "end": 19.295
+        },
+        {
+          "w": "shredding",
+          "start": 19.295,
+          "end": 19.865
+        },
+        {
+          "w": "this",
+          "start": 19.865,
+          "end": 20.169
+        },
+        {
+          "w": "dead",
+          "start": 20.169,
+          "end": 20.473
+        },
+        {
+          "w": "star",
+          "start": 20.473,
+          "end": 20.777
+        },
+        {
+          "w": "apart?",
+          "start": 20.777,
+          "end": 21.164
+        }
+      ]
+    },
+    {
+      "beat": "reveal",
+      "text": "Crushing gravity! Centrifugal force flattens the star, but gravity clamps it together.",
+      "imagePrompt": "Wide dynamic angle showing a collapsed pulsar violently bulged into a oblate pancake shape, intense blinding gamma-ray jets blasting from poles.",
+      "camera": "push-in",
+      "motion": true,
+      "nasaQuery": "fastest pulsar jet",
+      "sfxHint": "deep impact",
+      "start": 21.65,
+      "end": 26.59,
+      "words": [
+        {
+          "w": "Crushing",
+          "start": 21.65,
+          "end": 22.157
+        },
+        {
+          "w": "gravity!",
+          "start": 22.157,
+          "end": 22.641
+        },
+        {
+          "w": "Centrifugal",
+          "start": 22.641,
+          "end": 23.306
+        },
+        {
+          "w": "force",
+          "start": 23.306,
+          "end": 23.656
+        },
+        {
+          "w": "flattens",
+          "start": 23.656,
+          "end": 24.163
+        },
+        {
+          "w": "the",
+          "start": 24.163,
+          "end": 24.409
+        },
+        {
+          "w": "star,",
+          "start": 24.409,
+          "end": 24.736
+        },
+        {
+          "w": "but",
+          "start": 24.736,
+          "end": 24.982
+        },
+        {
+          "w": "gravity",
+          "start": 24.982,
+          "end": 25.438
+        },
+        {
+          "w": "clamps",
+          "start": 25.438,
+          "end": 25.841
+        },
+        {
+          "w": "it",
+          "start": 25.841,
+          "end": 26.034
+        },
+        {
+          "w": "together.",
+          "start": 26.034,
+          "end": 26.57
+        }
+      ]
+    },
+    {
+      "beat": "twist",
+      "text": "If it spun just slightly faster, centrifugal force would overcome gravity.",
+      "imagePrompt": "Low angle looking up at a star on the verge of total disruption, blinding plasma tears peeling off the equator into deep space.",
+      "camera": "orbit-right",
+      "motion": true,
+      "nasaQuery": "supernova remnant central",
+      "sfxHint": "screeching tension",
+      "start": 26.62,
+      "end": 31.17,
+      "words": [
+        {
+          "w": "If",
+          "start": 26.62,
+          "end": 26.825
+        },
+        {
+          "w": "it",
+          "start": 26.825,
+          "end": 27.03
+        },
+        {
+          "w": "spun",
+          "start": 27.03,
+          "end": 27.346
+        },
+        {
+          "w": "just",
+          "start": 27.346,
+          "end": 27.661
+        },
+        {
+          "w": "slightly",
+          "start": 27.661,
+          "end": 28.199
+        },
+        {
+          "w": "faster,",
+          "start": 28.199,
+          "end": 28.655
+        },
+        {
+          "w": "centrifugal",
+          "start": 28.655,
+          "end": 29.358
+        },
+        {
+          "w": "force",
+          "start": 29.358,
+          "end": 29.73
+        },
+        {
+          "w": "would",
+          "start": 29.73,
+          "end": 30.101
+        },
+        {
+          "w": "overcome",
+          "start": 30.101,
+          "end": 30.638
+        },
+        {
+          "w": "gravity.",
+          "start": 30.638,
+          "end": 31.15
+        }
+      ]
+    },
+    {
+      "beat": "twist",
+      "text": "The entire dead star would instantly tear itself to shreds.",
+      "imagePrompt": "Wide shot pulling back from a catastrophic cosmic explosion of pure magnetic energy and neutron matter scattering across space.",
+      "camera": "pull-back",
+      "motion": false,
+      "nasaQuery": "magnetar explosion",
+      "sfxHint": "massive boom",
+      "start": 31.2,
+      "end": 34.99,
+      "words": [
+        {
+          "w": "The",
+          "start": 31.2,
+          "end": 31.468
+        },
+        {
+          "w": "entire",
+          "start": 31.468,
+          "end": 31.908
+        },
+        {
+          "w": "dead",
+          "start": 31.908,
+          "end": 32.233
+        },
+        {
+          "w": "star",
+          "start": 32.233,
+          "end": 32.558
+        },
+        {
+          "w": "would",
+          "start": 32.558,
+          "end": 32.941
+        },
+        {
+          "w": "instantly",
+          "start": 32.941,
+          "end": 33.551
+        },
+        {
+          "w": "tear",
+          "start": 33.551,
+          "end": 33.876
+        },
+        {
+          "w": "itself",
+          "start": 33.876,
+          "end": 34.315
+        },
+        {
+          "w": "to",
+          "start": 34.315,
+          "end": 34.527
+        },
+        {
+          "w": "shreds.",
+          "start": 34.527,
+          "end": 34.997
+        }
+      ]
+    },
+    {
+      "beat": "loop",
+      "text": "Yet right now, buried in cluster Terzan 5...",
+      "imagePrompt": "Wide establishing shot approaching a dense globular star cluster packed with millions of bright stars, dark space surrounding, eerie cold atmosphere.",
+      "camera": "push-in",
+      "motion": false,
+      "nasaQuery": "terzan 5 cluster",
+      "sfxHint": "soft whoosh",
+      "start": 35.39,
+      "end": 38.54,
+      "words": [
+        {
+          "w": "Yet",
+          "start": 35.39,
+          "end": 35.701
+        },
+        {
+          "w": "right",
+          "start": 35.701,
+          "end": 36.145
+        },
+        {
+          "w": "now,",
+          "start": 36.145,
+          "end": 36.492
+        },
+        {
+          "w": "buried",
+          "start": 36.492,
+          "end": 37.002
+        },
+        {
+          "w": "in",
+          "start": 37.002,
+          "end": 37.247
+        },
+        {
+          "w": "cluster",
+          "start": 37.247,
+          "end": 37.823
+        },
+        {
+          "w": "Terzan",
+          "start": 37.823,
+          "end": 38.332
+        },
+        {
+          "w": "5...",
+          "start": 38.332,
+          "end": 38.547
+        }
+      ]
+    }
+  ],
+  "beats": [
+    {
+      "id": "hook",
+      "visual": "A hyper-dense dead star squashed into a glowing oval disk, spinning so fast it blurs space-time."
+    },
+    {
+      "id": "setup",
+      "visual": "Camera orbits the pulsar as magnetic field lines twist violently around its equator."
+    },
+    {
+      "id": "quiz",
+      "visual": "A visual freeze-frame zooming in on the equatorial bulge of the star with a static grid."
+    },
+    {
+      "id": "reveal",
+      "visual": "Blinding shockwave animation as immense gravity locks the pancake shape in place."
+    },
+    {
+      "id": "twist",
+      "visual": "Simulated tear along the star's equator with matter hurling out into interstellar space."
+    },
+    {
+      "id": "loop",
+      "visual": "Slow push into cluster Terzan 5, perfectly framing the squashed spinning star at the center."
+    }
+  ],
+  "voiceStatus": "kokoro:af_nova"
+}

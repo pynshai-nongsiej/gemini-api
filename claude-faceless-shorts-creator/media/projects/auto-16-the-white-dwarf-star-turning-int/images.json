@@ -1,0 +1,161 @@
+[
+  {
+    "beat": "hook",
+    "stem": "b00-hook",
+    "src": "b00-hook.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "GSFC_20171208_Archive_e000577",
+    "title": "Hubble Sees an Aging Star Wave Goodbye",
+    "url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000577/GSFC_20171208_Archive_e000577~orig.jpg",
+    "details_url": "https://images.nasa.gov/details-GSFC_20171208_Archive_e000577.html",
+    "query": "white dwarf star",
+    "enhanced": {
+      "from": [
+        1280,
+        1276
+      ],
+      "factor": 1.565,
+      "final": [
+        2003,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "hook",
+    "stem": "b01-hook",
+    "src": "b01-hook.jpg",
+    "source": "ai",
+    "nasa_id": null,
+    "title": "AI visualization — Extreme close-up of a hyper-dense crystalline stellar surface refracting starlig",
+    "url": null
+  },
+  {
+    "beat": "setup",
+    "stem": "b02-setup",
+    "src": "b02-setup.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "hubble-sees-an-aging-star-wave-goodbye_21866697898_o",
+    "title": "Waving goodbye",
+    "url": "https://images-assets.nasa.gov/image/hubble-sees-an-aging-star-wave-goodbye_21866697898_o/hubble-sees-an-aging-star-wave-goodbye_21866697898_o~orig.jpg",
+    "details_url": "https://images.nasa.gov/details-hubble-sees-an-aging-star-wave-goodbye_21866697898_o.html",
+    "query": "planetary nebula core",
+    "enhanced": {
+      "from": [
+        1280,
+        1276
+      ],
+      "factor": 1.565,
+      "final": [
+        2003,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "setup",
+    "stem": "b03-setup",
+    "src": "b03-setup.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA19346",
+    "title": "Hypothetical Rejuvenated Planets Artist Concept",
+    "url": "https://images-assets.nasa.gov/image/PIA19346/PIA19346~large.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA19346.html",
+    "query": "white dwarf cooling",
+    "enhanced": {
+      "from": [
+        1920,
+        1080
+      ],
+      "factor": 1.849,
+      "final": [
+        3550,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "quiz",
+    "stem": "b04-quiz",
+    "src": "b04-quiz.jpg",
+    "source": "ai",
+    "nasa_id": null,
+    "title": "AI visualization — Low angle looking up at a glowing atomic lattice structure compressing under vas",
+    "url": null
+  },
+  {
+    "beat": "reveal",
+    "stem": "b05-reveal",
+    "src": "b05-reveal.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA20468",
+    "title": "Hubble Unveils a Tapestry of Dazzling Diamond-Like Stars",
+    "url": "https://images-assets.nasa.gov/image/PIA20468/PIA20468~large.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA20468.html",
+    "query": "diamond star lucy",
+    "enhanced": {
+      "from": [
+        1920,
+        1920
+      ],
+      "factor": 1.04,
+      "final": [
+        1997,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "twist",
+    "stem": "b06-twist",
+    "src": "b06-twist.jpg",
+    "source": "ai",
+    "nasa_id": null,
+    "title": "AI visualization — Wide orbit around a sparkling white-blue diamond world five thousand light-years",
+    "url": null
+  },
+  {
+    "beat": "twist",
+    "stem": "b07-twist",
+    "src": "b07-twist.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA22084",
+    "title": "Polluted White Dwarf (Artist's Concept)",
+    "url": "https://images-assets.nasa.gov/image/PIA22084/PIA22084~orig.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA22084.html",
+    "query": "sun white dwarf",
+    "enhanced": {
+      "from": [
+        2048,
+        1152
+      ],
+      "factor": 1.733,
+      "final": [
+        3550,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "loop",
+    "stem": "b08-loop",
+    "src": "b08-loop.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA03652",
+    "title": "Comet Bites the Dust Around Dead Star  Artist Concept",
+    "url": "https://images-assets.nasa.gov/image/PIA03652/PIA03652~large.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA03652.html",
+    "query": "white dwarf star",
+    "enhanced": {
+      "from": [
+        1920,
+        1536
+      ],
+      "factor": 1.3,
+      "final": [
+        2496,
+        1997
+      ]
+    }
+  }
+]

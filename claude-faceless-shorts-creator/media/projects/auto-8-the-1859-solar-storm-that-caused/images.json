@@ -1,0 +1,222 @@
+[
+  {
+    "beat": "hook",
+    "stem": "b00-hook",
+    "src": "b00-hook.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA19821",
+    "title": "NuSTAR Stares at the Sun",
+    "url": "https://images-assets.nasa.gov/image/PIA19821/PIA19821~large.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA19821.html",
+    "query": "solar flare",
+    "enhanced": {
+      "from": [
+        1920,
+        1920
+      ],
+      "factor": 1.04,
+      "final": [
+        1997,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "hook",
+    "stem": "b01-hook",
+    "src": "b01-hook.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA25628",
+    "title": "Three-Telescope View of the Sun",
+    "url": "https://images-assets.nasa.gov/image/PIA25628/PIA25628~large.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA25628.html",
+    "query": "sun atmosphere",
+    "enhanced": {
+      "from": [
+        1920,
+        1920
+      ],
+      "factor": 1.04,
+      "final": [
+        1997,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "setup",
+    "stem": "b02-setup",
+    "src": "b02-setup.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA01319",
+    "title": "A Star Close Encounter",
+    "url": "https://images-assets.nasa.gov/image/PIA01319/PIA01319~orig.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA01319.html",
+    "query": "sun white light",
+    "enhanced": {
+      "from": [
+        1500,
+        558
+      ],
+      "factor": 3.578,
+      "final": [
+        5368,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "setup",
+    "stem": "b03-setup",
+    "src": "b03-setup.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "GSFC_20171208_Archive_e000738",
+    "title": "Filament Burst [video]",
+    "url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000738/GSFC_20171208_Archive_e000738~orig.jpg",
+    "details_url": "https://images.nasa.gov/details-GSFC_20171208_Archive_e000738.html",
+    "query": "solar prominence",
+    "enhanced": {
+      "from": [
+        1200,
+        1200
+      ],
+      "factor": 1.664,
+      "final": [
+        1997,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "quiz",
+    "stem": "b04-quiz",
+    "src": "b04-quiz.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "GSFC_20171208_Archive_e002082",
+    "title": "Coronal Rain, Solar Storm",
+    "url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e002082/GSFC_20171208_Archive_e002082~orig.jpg",
+    "details_url": "https://images.nasa.gov/details-GSFC_20171208_Archive_e002082.html",
+    "query": "coronal mass ejection",
+    "enhanced": {
+      "from": [
+        821,
+        691
+      ],
+      "factor": 2.89,
+      "final": [
+        2372,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "reveal",
+    "stem": "b05-reveal",
+    "src": "b05-reveal.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "0300803",
+    "title": "Space Science",
+    "url": "https://images-assets.nasa.gov/image/0300803/0300803~large.jpg",
+    "details_url": "https://images.nasa.gov/details-0300803.html",
+    "query": "aurora station",
+    "enhanced": {
+      "from": [
+        1920,
+        1272
+      ],
+      "factor": 1.57,
+      "final": [
+        3014,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "reveal",
+    "stem": "b06-reveal",
+    "src": "b06-reveal.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA24433",
+    "title": "Aurorae on Jupiter and Earth",
+    "url": "https://images-assets.nasa.gov/image/PIA24433/PIA24433~orig.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA24433.html",
+    "query": "earth aurora",
+    "enhanced": {
+      "from": [
+        1667,
+        1250
+      ],
+      "factor": 1.597,
+      "final": [
+        2663,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "twist",
+    "stem": "b07-twist",
+    "src": "b07-twist.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "GSFC_20171208_Archive_e000614",
+    "title": "Nighttime View of Aurora Borealis",
+    "url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000614/GSFC_20171208_Archive_e000614~small.jpg",
+    "details_url": "https://images.nasa.gov/details-GSFC_20171208_Archive_e000614.html",
+    "query": "aurora borealis",
+    "enhanced": {
+      "from": [
+        640,
+        461
+      ],
+      "factor": 4.0,
+      "final": [
+        2560,
+        1844
+      ]
+    }
+  },
+  {
+    "beat": "twist",
+    "stem": "b08-twist",
+    "src": "b08-twist.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "0300802",
+    "title": "Space Science",
+    "url": "https://images-assets.nasa.gov/image/0300802/0300802~large.jpg",
+    "details_url": "https://images.nasa.gov/details-0300802.html",
+    "query": "earth blackouts night",
+    "enhanced": {
+      "from": [
+        1920,
+        1826
+      ],
+      "factor": 1.094,
+      "final": [
+        2100,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "loop",
+    "stem": "b09-loop",
+    "src": "b09-loop.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "GRC-2015-C-01953",
+    "title": "GRIPS test in the B-2",
+    "url": "https://images-assets.nasa.gov/image/GRC-2015-C-01953/GRC-2015-C-01953~large.jpg",
+    "details_url": "https://images.nasa.gov/details-GRC-2015-C-01953.html",
+    "query": "solar flare",
+    "enhanced": {
+      "from": [
+        1920,
+        1440
+      ],
+      "factor": 1.387,
+      "final": [
+        2662,
+        1997
+      ]
+    }
+  }
+]

@@ -1,0 +1,566 @@
+{
+  "id": "auto-8-the-sound-recorded-when-a-spacec",
+  "title": "We Audio-Recorded Touching the Sun",
+  "composition": "AutoWeaudiorecordedtouchi",
+  "hookCard": "HUMANS _LISTENED_ TO SUN",
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSec": 34.88
+  },
+  "vo": [
+    {
+      "beat": "hook",
+      "text": "Humanity recorded the sound of touching our Sun.",
+      "imagePrompt": "Extreme close-up of solar plasma, glowing fiery orange solar flares arching over dark sunspots, wide low angle camera looking up into blistering heat.",
+      "camera": "crash-zoom",
+      "motion": false,
+      "nasaQuery": "parker solar probe",
+      "sfxHint": "heavy static surge",
+      "start": 0.25,
+      "end": 3.1,
+      "words": [
+        {
+          "w": "Humanity",
+          "start": 0.25,
+          "end": 0.762
+        },
+        {
+          "w": "recorded",
+          "start": 0.762,
+          "end": 1.274
+        },
+        {
+          "w": "the",
+          "start": 1.274,
+          "end": 1.522
+        },
+        {
+          "w": "sound",
+          "start": 1.522,
+          "end": 1.876
+        },
+        {
+          "w": "of",
+          "start": 1.876,
+          "end": 2.071
+        },
+        {
+          "w": "touching",
+          "start": 2.071,
+          "end": 2.583
+        },
+        {
+          "w": "our",
+          "start": 2.583,
+          "end": 2.831
+        },
+        {
+          "w": "Sun.",
+          "start": 2.831,
+          "end": 3.109
+        }
+      ]
+    },
+    {
+      "beat": "setup",
+      "text": "In 2021, Parker Solar Probe plunged into the solar corona.",
+      "imagePrompt": "Wide establishing shot of a gold-shielded spacecraft flying through blinding white plasma gusts, tiny against a towering solar surface.",
+      "camera": "push-in",
+      "motion": false,
+      "nasaQuery": "parker solar probe",
+      "sfxHint": "deep space drone",
+      "start": 3.68,
+      "end": 7.83,
+      "words": [
+        {
+          "w": "In",
+          "start": 3.68,
+          "end": 3.915
+        },
+        {
+          "w": "2021,",
+          "start": 3.915,
+          "end": 4.313
+        },
+        {
+          "w": "Parker",
+          "start": 4.313,
+          "end": 4.802
+        },
+        {
+          "w": "Solar",
+          "start": 4.802,
+          "end": 5.229
+        },
+        {
+          "w": "Probe",
+          "start": 5.229,
+          "end": 5.655
+        },
+        {
+          "w": "plunged",
+          "start": 5.655,
+          "end": 6.208
+        },
+        {
+          "w": "into",
+          "start": 6.208,
+          "end": 6.571
+        },
+        {
+          "w": "the",
+          "start": 6.571,
+          "end": 6.87
+        },
+        {
+          "w": "solar",
+          "start": 6.87,
+          "end": 7.296
+        },
+        {
+          "w": "corona.",
+          "start": 7.296,
+          "end": 7.82
+        }
+      ]
+    },
+    {
+      "beat": "setup",
+      "text": "Temperatures hit two million degrees Fahrenheit.",
+      "imagePrompt": "Extreme close-up of heat-shield glowing red-hot from intense radiation, embers scattering into dark space.",
+      "camera": "orbit-left",
+      "motion": false,
+      "nasaQuery": "sun corona",
+      "sfxHint": "intense heat hiss",
+      "start": 7.87,
+      "end": 10.5,
+      "words": [
+        {
+          "w": "Temperatures",
+          "start": 7.87,
+          "end": 8.547
+        },
+        {
+          "w": "hit",
+          "start": 8.547,
+          "end": 8.78
+        },
+        {
+          "w": "two",
+          "start": 8.78,
+          "end": 9.013
+        },
+        {
+          "w": "million",
+          "start": 9.013,
+          "end": 9.444
+        },
+        {
+          "w": "degrees",
+          "start": 9.444,
+          "end": 9.874
+        },
+        {
+          "w": "Fahrenheit.",
+          "start": 9.874,
+          "end": 10.48
+        }
+      ]
+    },
+    {
+      "beat": "quiz",
+      "text": "Pause. Sound cannot travel through a vacuum.",
+      "imagePrompt": "Wide shot of absolute black void of space framing a silent glowing star in distant center.",
+      "camera": "settle",
+      "motion": false,
+      "nasaQuery": "sun atmosphere",
+      "sfxHint": "sudden audio drop",
+      "start": 10.53,
+      "end": 13.19,
+      "words": [
+        {
+          "w": "Pause.",
+          "start": 10.53,
+          "end": 10.924
+        },
+        {
+          "w": "Sound",
+          "start": 10.924,
+          "end": 11.289
+        },
+        {
+          "w": "cannot",
+          "start": 11.289,
+          "end": 11.708
+        },
+        {
+          "w": "travel",
+          "start": 11.708,
+          "end": 12.127
+        },
+        {
+          "w": "through",
+          "start": 12.127,
+          "end": 12.601
+        },
+        {
+          "w": "a",
+          "start": 12.601,
+          "end": 12.748
+        },
+        {
+          "w": "vacuum.",
+          "start": 12.748,
+          "end": 13.197
+        }
+      ]
+    },
+    {
+      "beat": "quiz",
+      "text": "How did sensors capture actual noise?",
+      "imagePrompt": "Macro shot of scientific antennas vibrating violently amid incoming hypervelocity particle rain.",
+      "camera": "push-in",
+      "motion": false,
+      "nasaQuery": "parker solar probe",
+      "sfxHint": "suspense riser",
+      "start": 13.57,
+      "end": 16.02,
+      "words": [
+        {
+          "w": "How",
+          "start": 13.57,
+          "end": 13.846
+        },
+        {
+          "w": "did",
+          "start": 13.846,
+          "end": 14.123
+        },
+        {
+          "w": "sensors",
+          "start": 14.123,
+          "end": 14.634
+        },
+        {
+          "w": "capture",
+          "start": 14.634,
+          "end": 15.145
+        },
+        {
+          "w": "actual",
+          "start": 15.145,
+          "end": 15.597
+        },
+        {
+          "w": "noise?",
+          "start": 15.597,
+          "end": 16.023
+        }
+      ]
+    },
+    {
+      "beat": "reveal",
+      "text": "Hypervelocity dust grains smashed into the probe at high speeds.",
+      "imagePrompt": "Microscopic perspective of solar dust particles violently striking metallic shielding, causing instant glowing micro-explosions.",
+      "camera": "crash-zoom",
+      "motion": true,
+      "nasaQuery": "solar wind",
+      "sfxHint": "sharp glass crack",
+      "start": 16.23,
+      "end": 20.1,
+      "words": [
+        {
+          "w": "Hypervelocity",
+          "start": 16.23,
+          "end": 17.027
+        },
+        {
+          "w": "dust",
+          "start": 17.027,
+          "end": 17.337
+        },
+        {
+          "w": "grains",
+          "start": 17.337,
+          "end": 17.755
+        },
+        {
+          "w": "smashed",
+          "start": 17.755,
+          "end": 18.227
+        },
+        {
+          "w": "into",
+          "start": 18.227,
+          "end": 18.536
+        },
+        {
+          "w": "the",
+          "start": 18.536,
+          "end": 18.791
+        },
+        {
+          "w": "probe",
+          "start": 18.791,
+          "end": 19.155
+        },
+        {
+          "w": "at",
+          "start": 19.155,
+          "end": 19.356
+        },
+        {
+          "w": "high",
+          "start": 19.356,
+          "end": 19.665
+        },
+        {
+          "w": "speeds.",
+          "start": 19.665,
+          "end": 20.113
+        }
+      ]
+    },
+    {
+      "beat": "reveal",
+      "text": "Each collision vaporized metal, creating tiny plasma explosions.",
+      "imagePrompt": "Tight tracking shot of electric shockwaves radiating across spacecraft body, illuminated in brilliant cyan plasma bursts.",
+      "camera": "orbit-right",
+      "motion": false,
+      "nasaQuery": "sun plasma",
+      "sfxHint": "electrical zap",
+      "start": 20.43,
+      "end": 23.81,
+      "words": [
+        {
+          "w": "Each",
+          "start": 20.43,
+          "end": 20.706
+        },
+        {
+          "w": "collision",
+          "start": 20.706,
+          "end": 21.223
+        },
+        {
+          "w": "vaporized",
+          "start": 21.223,
+          "end": 21.74
+        },
+        {
+          "w": "metal,",
+          "start": 21.74,
+          "end": 22.091
+        },
+        {
+          "w": "creating",
+          "start": 22.091,
+          "end": 22.559
+        },
+        {
+          "w": "tiny",
+          "start": 22.559,
+          "end": 22.836
+        },
+        {
+          "w": "plasma",
+          "start": 22.836,
+          "end": 23.208
+        },
+        {
+          "w": "explosions.",
+          "start": 23.208,
+          "end": 23.8
+        }
+      ]
+    },
+    {
+      "beat": "twist",
+      "text": "Instruments recorded those plasma shocks as acoustic soundwaves.",
+      "imagePrompt": "Wide low angle looking up at giant radio frequency waveforms overlaying the solar corona backdrop.",
+      "camera": "drift-up",
+      "motion": false,
+      "nasaQuery": "solar flare",
+      "sfxHint": "rhythmic radio static",
+      "start": 23.85,
+      "end": 27.24,
+      "words": [
+        {
+          "w": "Instruments",
+          "start": 23.85,
+          "end": 24.461
+        },
+        {
+          "w": "recorded",
+          "start": 24.461,
+          "end": 24.929
+        },
+        {
+          "w": "those",
+          "start": 24.929,
+          "end": 25.252
+        },
+        {
+          "w": "plasma",
+          "start": 25.252,
+          "end": 25.623
+        },
+        {
+          "w": "shocks",
+          "start": 25.623,
+          "end": 25.994
+        },
+        {
+          "w": "as",
+          "start": 25.994,
+          "end": 26.172
+        },
+        {
+          "w": "acoustic",
+          "start": 26.172,
+          "end": 26.64
+        },
+        {
+          "w": "soundwaves.",
+          "start": 26.64,
+          "end": 27.23
+        }
+      ]
+    },
+    {
+      "beat": "twist",
+      "text": "You are hearing dust disintegrating at three hundred thousand miles per hour.",
+      "imagePrompt": "Extreme close-up view of space dust disintegrating instantly into blinding energy streaks.",
+      "camera": "push-in",
+      "motion": true,
+      "nasaQuery": "sun corona",
+      "sfxHint": "distorted bass thud",
+      "start": 27.28,
+      "end": 31.45,
+      "words": [
+        {
+          "w": "You",
+          "start": 27.28,
+          "end": 27.509
+        },
+        {
+          "w": "are",
+          "start": 27.509,
+          "end": 27.738
+        },
+        {
+          "w": "hearing",
+          "start": 27.738,
+          "end": 28.161
+        },
+        {
+          "w": "dust",
+          "start": 28.161,
+          "end": 28.438
+        },
+        {
+          "w": "disintegrating",
+          "start": 28.438,
+          "end": 29.201
+        },
+        {
+          "w": "at",
+          "start": 29.201,
+          "end": 29.382
+        },
+        {
+          "w": "three",
+          "start": 29.382,
+          "end": 29.708
+        },
+        {
+          "w": "hundred",
+          "start": 29.708,
+          "end": 30.131
+        },
+        {
+          "w": "thousand",
+          "start": 30.131,
+          "end": 30.603
+        },
+        {
+          "w": "miles",
+          "start": 30.603,
+          "end": 30.929
+        },
+        {
+          "w": "per",
+          "start": 30.929,
+          "end": 31.157
+        },
+        {
+          "w": "hour.",
+          "start": 31.157,
+          "end": 31.461
+        }
+      ]
+    },
+    {
+      "beat": "loop",
+      "text": "And that is how...",
+      "imagePrompt": "Extreme close-up of solar plasma, glowing fiery orange solar flares arching over dark sunspots, wide low angle camera looking up into blistering heat.",
+      "camera": "pull-back",
+      "motion": false,
+      "nasaQuery": "parker solar probe",
+      "sfxHint": "subtle reverse transition",
+      "start": 32.25,
+      "end": 33.65,
+      "words": [
+        {
+          "w": "And",
+          "start": 32.25,
+          "end": 32.592
+        },
+        {
+          "w": "that",
+          "start": 32.592,
+          "end": 33.007
+        },
+        {
+          "w": "is",
+          "start": 33.007,
+          "end": 33.276
+        },
+        {
+          "w": "how...",
+          "start": 33.276,
+          "end": 33.658
+        }
+      ]
+    }
+  ],
+  "beats": [
+    {
+      "id": "hook",
+      "visual": "A blinding view of solar plasma as a spacecraft heat shield pushes into the corona."
+    },
+    {
+      "id": "setup",
+      "visual": "Parker Solar Probe traversing through multi-million degree plasma streams."
+    },
+    {
+      "id": "quiz",
+      "visual": "Text graphic overlay in void of space questioning how sound travels in vacuum."
+    },
+    {
+      "id": "reveal",
+      "visual": "High-speed macro visualization of dust grains violently slamming into the hull."
+    },
+    {
+      "id": "twist",
+      "visual": "Audio waveform translation showing dust impacts converted to acoustic signals."
+    },
+    {
+      "id": "loop",
+      "visual": "A blinding view of solar plasma as a spacecraft heat shield pushes into the corona."
+    }
+  ],
+  "voiceStatus": "kokoro:bf_isabella"
+}

@@ -1,0 +1,139 @@
+[
+  {
+    "beat": "hook",
+    "stem": "b00-hook",
+    "src": "b00-hook.jpg",
+    "source": "ai",
+    "nasa_id": null,
+    "title": "AI visualization — Wide establishing shot approaching a glowing, squashed neutron star floating in ",
+    "url": null
+  },
+  {
+    "beat": "setup",
+    "stem": "b01-setup",
+    "src": "b01-setup.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "9905980",
+    "title": "History of Chandra X-Ray Observatory",
+    "url": "https://images-assets.nasa.gov/image/9905980/9905980~large.jpg",
+    "details_url": "https://images.nasa.gov/details-9905980.html",
+    "query": "pulsar neutron star",
+    "enhanced": {
+      "from": [
+        1822,
+        1920
+      ],
+      "factor": 1.04,
+      "final": [
+        1895,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "setup",
+    "stem": "b02-setup",
+    "src": "b02-setup.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA01320",
+    "title": "Dead Star Creates Celestial Havoc",
+    "url": "https://images-assets.nasa.gov/image/PIA01320/PIA01320~large.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA01320.html",
+    "query": "neutron star spin",
+    "enhanced": {
+      "from": [
+        1920,
+        1760
+      ],
+      "factor": 1.135,
+      "final": [
+        2178,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "quiz",
+    "stem": "b03-quiz",
+    "src": "b03-quiz.jpg",
+    "source": "ai",
+    "nasa_id": null,
+    "title": "AI visualization — Extreme close-up on the bulging equatorial ridge of the squashed star, glowing p",
+    "url": null
+  },
+  {
+    "beat": "reveal",
+    "stem": "b04-reveal",
+    "src": "b04-reveal.jpg",
+    "source": "ai",
+    "nasa_id": null,
+    "title": "AI visualization — Wide dynamic angle showing a collapsed pulsar violently bulged into a oblate pan",
+    "url": null
+  },
+  {
+    "beat": "twist",
+    "stem": "b05-twist",
+    "src": "b05-twist.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "9905485",
+    "title": "History of Chandra X-Ray Observatory",
+    "url": "https://images-assets.nasa.gov/image/9905485/9905485~large.jpg",
+    "details_url": "https://images.nasa.gov/details-9905485.html",
+    "query": "supernova remnant central",
+    "enhanced": {
+      "from": [
+        1920,
+        1920
+      ],
+      "factor": 1.04,
+      "final": [
+        1997,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "twist",
+    "stem": "b06-twist",
+    "src": "b06-twist.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA26274",
+    "title": "A Magnetar Loses Mass (Artist's Concept)",
+    "url": "https://images-assets.nasa.gov/image/PIA26274/PIA26274~large.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA26274.html",
+    "query": "magnetar explosion",
+    "enhanced": {
+      "from": [
+        1920,
+        1080
+      ],
+      "factor": 1.849,
+      "final": [
+        3550,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "loop",
+    "stem": "b07-loop",
+    "src": "b07-loop.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "hubble-checks-out-a-home-for-old-stars_23521659649_o",
+    "title": "A home for old stars",
+    "url": "https://images-assets.nasa.gov/image/hubble-checks-out-a-home-for-old-stars_23521659649_o/hubble-checks-out-a-home-for-old-stars_23521659649_o~orig.jpg",
+    "details_url": "https://images.nasa.gov/details-hubble-checks-out-a-home-for-old-stars_23521659649_o.html",
+    "query": "terzan cluster",
+    "enhanced": {
+      "from": [
+        1280,
+        1091
+      ],
+      "factor": 1.83,
+      "final": [
+        2343,
+        1997
+      ]
+    }
+  }
+]

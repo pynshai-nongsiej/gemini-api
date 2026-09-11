@@ -1,0 +1,126 @@
+{
+  "master": "remotion/out/AutoThe10000Quadrilliona-voiced.mp4",
+  "master_fps": 30,
+  "catalog": "media/library/sfx/catalog.json",
+  "render": {
+    "preview": "remotion/out/AutoThe10000Quadrilliona-voiced.mp4",
+    "out": "shorts/auto-10-the-asteroid-made-entirely-of-go/output/auto-10-the-asteroid-made-entirely-of-go-sfx.mp4",
+    "end_s": 39.53,
+    "duck": true
+  },
+  "events": [
+    {
+      "at_s": 0.3,
+      "sfx_id": "impact-deep-soft",
+      "gain_db": -8,
+      "shot": "MainScene",
+      "cue": "sfxHint 'deep space drone'"
+    },
+    {
+      "at_s": 5.22,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -11,
+      "shot": "MainScene",
+      "cue": "beat change: setup",
+      "optional": true
+    },
+    {
+      "at_s": 9.03,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -11,
+      "shot": "MainScene",
+      "cue": "beat change: setup",
+      "optional": true
+    },
+    {
+      "at_s": 13.61,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -11,
+      "shot": "MainScene",
+      "cue": "beat change: quiz",
+      "optional": true
+    },
+    {
+      "at_s": 13.66,
+      "sfx_id": "clock-tick-soft",
+      "gain_db": -8,
+      "shot": "MainScene",
+      "cue": "sfxHint 'tick'"
+    },
+    {
+      "at_s": 18.57,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -11,
+      "shot": "MainScene",
+      "cue": "beat change: reveal",
+      "optional": true
+    },
+    {
+      "at_s": 18.62,
+      "sfx_id": "impact-deep-soft",
+      "gain_db": -8,
+      "shot": "MainScene",
+      "cue": "sfxHint 'heavy impact'"
+    },
+    {
+      "at_s": 18.57,
+      "sfx_id": "impact-deep-soft",
+      "gain_db": -7,
+      "shot": "MainScene",
+      "cue": "the reveal lands"
+    },
+    {
+      "at_s": 22.0,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -11,
+      "shot": "MainScene",
+      "cue": "beat change: reveal",
+      "optional": true
+    },
+    {
+      "at_s": 22.05,
+      "sfx_id": "riser-soft",
+      "gain_db": -8,
+      "shot": "MainScene",
+      "cue": "sfxHint 'riser'"
+    },
+    {
+      "at_s": 22.0,
+      "sfx_id": "impact-deep-soft",
+      "gain_db": -7,
+      "shot": "MainScene",
+      "cue": "the reveal lands"
+    },
+    {
+      "at_s": 26.97,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -11,
+      "shot": "MainScene",
+      "cue": "beat change: twist",
+      "optional": true
+    },
+    {
+      "at_s": 32.32,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -11,
+      "shot": "MainScene",
+      "cue": "beat change: twist",
+      "optional": true
+    },
+    {
+      "at_s": 35.74,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -11,
+      "shot": "MainScene",
+      "cue": "beat change: loop",
+      "optional": true
+    },
+    {
+      "at_s": 35.79,
+      "sfx_id": "whoosh-soft",
+      "gain_db": -8,
+      "shot": "MainScene",
+      "cue": "sfxHint 'soft whoosh'"
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+[
+  {
+    "beat": "hook",
+    "stem": "b00-hook",
+    "src": "b00-hook.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA24788",
+    "title": "Preparing Psyche's Thruster Installation",
+    "url": "https://images-assets.nasa.gov/image/PIA24788/PIA24788~large.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA24788.html",
+    "query": "asteroid psyche",
+    "enhanced": {
+      "from": [
+        1920,
+        1280
+      ],
+      "factor": 1.56,
+      "final": [
+        2995,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "setup",
+    "stem": "b01-setup",
+    "src": "b01-setup.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA24030",
+    "title": "Psyche's Hall Thruster",
+    "url": "https://images-assets.nasa.gov/image/PIA24030/PIA24030~medium.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA24030.html",
+    "query": "asteroid psyche",
+    "enhanced": {
+      "from": [
+        1280,
+        719
+      ],
+      "factor": 2.777,
+      "final": [
+        3555,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "setup",
+    "stem": "b02-setup",
+    "src": "b02-setup.jpg",
+    "source": "ai",
+    "nasa_id": null,
+    "title": "AI visualization — Cross-section extreme close-up of a planet's molten core cooling into pure dense",
+    "url": null
+  },
+  {
+    "beat": "quiz",
+    "stem": "b03-quiz",
+    "src": "b03-quiz.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA21499",
+    "title": "Artist's Concept of Psyche Spacecraft with Five-Panel Array",
+    "url": "https://images-assets.nasa.gov/image/PIA21499/PIA21499~large.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA21499.html",
+    "query": "asteroid metallic",
+    "enhanced": {
+      "from": [
+        1920,
+        1425
+      ],
+      "factor": 1.401,
+      "final": [
+        2690,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "reveal",
+    "stem": "b04-reveal",
+    "src": "b04-reveal.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA24326",
+    "title": "Power On: Psyche Spacecraft",
+    "url": "https://images-assets.nasa.gov/image/PIA24326/PIA24326~orig.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA24326.html",
+    "query": "psyche asteroid",
+    "enhanced": {
+      "from": [
+        1650,
+        1101
+      ],
+      "factor": 1.814,
+      "final": [
+        2992,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "reveal",
+    "stem": "b05-reveal",
+    "src": "b05-reveal.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA00342",
+    "title": "The Earth & Moon",
+    "url": "https://images-assets.nasa.gov/image/PIA00342/PIA00342~medium.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA00342.html",
+    "query": "earth",
+    "enhanced": {
+      "from": [
+        1005,
+        1280
+      ],
+      "factor": 1.56,
+      "final": [
+        1568,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "twist",
+    "stem": "b06-twist",
+    "src": "b06-twist.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA26587",
+    "title": "NASA's Goldstone Planetary Radar Observes Fast-Spinning Asteroid",
+    "url": "https://images-assets.nasa.gov/image/PIA26587/PIA26587~medium.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA26587.html",
+    "query": "asteroid approaching earth",
+    "enhanced": {
+      "from": [
+        1280,
+        1206
+      ],
+      "factor": 1.656,
+      "final": [
+        2119,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "twist",
+    "stem": "b07-twist",
+    "src": "b07-twist.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA22069",
+    "title": "55 Cancri e with Atmosphere (Artist's Concept)",
+    "url": "https://images-assets.nasa.gov/image/PIA22069/PIA22069~large.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA22069.html",
+    "query": "earth atmosphere",
+    "enhanced": {
+      "from": [
+        1920,
+        1080
+      ],
+      "factor": 1.849,
+      "final": [
+        3550,
+        1997
+      ]
+    }
+  },
+  {
+    "beat": "loop",
+    "stem": "b08-loop",
+    "src": "b08-loop.nasa.jpg",
+    "source": "nasa",
+    "nasa_id": "PIA10235",
+    "title": "Color View of Ceres",
+    "url": "https://images-assets.nasa.gov/image/PIA10235/PIA10235~orig.jpg",
+    "details_url": "https://images.nasa.gov/details-PIA10235.html",
+    "query": "asteroid belt",
+    "enhanced": {
+      "from": [
+        250,
+        250
+      ],
+      "factor": 4.0,
+      "final": [
+        1000,
+        1000
+      ]
+    }
+  }
+]
