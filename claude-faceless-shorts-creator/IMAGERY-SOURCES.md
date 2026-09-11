@@ -79,10 +79,12 @@ for a big refill run it in the background and expect several minutes.
   rewind / flare overlays generated at every beat change (`transitionFor` in
   `tools/make_short.py` mirrors the picker: space gets flare-on-reveal and a
   whip-pan twist; history wipes carry the next date stamp).
-- **Audio is narration-first**: the rendered track is ONLY the Kokoro voice —
-  no music bed (opt-in via `--music`) and no library SFX. The SFX mappings
-  (`SFX_MAP`, `TRANSITION_SFX`) remain in `tools/make_short.py` for hand-built
-  plans only. The pipeline outputs exactly one file per short:
+- **Audio is narration-first**: the track is the Kokoro voice plus ONE ducked
+  impact on the reveal — no music bed (opt-in via `--music`) and no per-line
+  or transition sounds; `transition-whip` is hard-excluded from the automated
+  pipeline (`EXCLUDED_SFX`). The full SFX mappings (`SFX_MAP`,
+  `TRANSITION_SFX`) remain in `tools/make_short.py` for hand-built plans.
+  The pipeline outputs exactly one file per short:
   `shorts/<id>/output/<id>-final.mp4` — intermediates are deleted after the
   final copy (`--keep-intermediates` opts out).
 - Captions take `highlight` — numbers/dollars/percents ("$612", "19%", "1981")

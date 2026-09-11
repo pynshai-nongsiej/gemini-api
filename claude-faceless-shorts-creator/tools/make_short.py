@@ -138,6 +138,10 @@ SFX_MAP = [
     (r"sub bass|sub drop|deep drop", "transition-drop"),
 ]
 
+# sounds the AUTOMATED pipeline must never use (transition-whip removed by
+# user request — it cuts over the voice). Manual/hand-built plans may differ.
+EXCLUDED_SFX = {"transition-whip"}
+
 # transition kind -> cut-cue fallback chain (first one present in the library
 # wins); second element is the pipeline default beat-change cue
 TRANSITION_SFX = {
@@ -982,6 +986,8 @@ def build_sfx_plan(beats, proj_id, voiced_rel, end_s, pipeline="space"):
     def add(at, sid, gain, cue, optional=False):
         if sid is None or sid not in lib:
             return
+        if sid in EXCLUDED_SFX:  # e.g. transition-whip — never in automated plans
+            return
         key = (round(at, 2), sid)
         if key in seen_at:
             return
@@ -990,10 +996,9 @@ def build_sfx_plan(beats, proj_id, voiced_rel, end_s, pipeline="space"):
                        "shot": "MainScene", "cue": cue, **({"optional": True} if optional else {})})
 
     # MINIMAL sound design — the narration IS the audio; effects only mark the
-    # one moment that earns a punctuation (the reveal). Music beds and per-line
-    # whooshes/hints/generic cues are gone: they compete with the speech and
-    # read as clutter on rewatch. (Audio opt-ins: --music, and the SFX_MAP
-    # mappings remain for hand-built plans.)
+    # one moment that earns a punctuation (the reveal). No music, no per-line
+    # whooshes/hints, and NO transition sounds (transition-whip & friends are
+    # hard-excluded below — user request).
     for i, v in enumerate(beats["vo"]):
         if v.get("beat") == "reveal" and i > 0:
             add(float(v["start"]), "impact-deep-soft", -13, "the reveal lands")
@@ -1133,10 +1138,18 @@ def main():
         "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k",
         "-t", str(total), voiced])
 
-    # 7. narration-only audio: NO library SFX (the reveal impact / transition
-    # hits read as clutter over the voice). Music stays an explicit opt-in.
-    print("\n[7/8] audio: narration only (SFX/music skipped)")
+    # 7. MINIMAL SFX — one ducked impact on the reveal, nothing else.
+    # Transition/whip sounds are hard-excluded from the automated pipeline
+    # (EXCLUDED_SFX below); music stays an explicit opt-in.
+    print("\n[7/8] SFX mix (minimal: reveal impact only — no transition sounds)")
+    voiced_rel = os.path.relpath(voiced, ROOT)
+    plan = build_sfx_plan(beats, proj_id, voiced_rel, total, pipeline)
     final = voiced
+    if plan:
+        sh([sys.executable, "tools/mix_sfx.py", f"shorts/{proj_id}/sfx-plan.json"])
+        sfx_out = os.path.join(ROOT, "shorts", proj_id, "output", f"{proj_id}-sfx.mp4")
+        if os.path.exists(sfx_out):
+            final = sfx_out
 
     if args.music:
         print(f"      music bed: {args.music}")
