@@ -1036,6 +1036,8 @@ def main():
     ap.add_argument("--skip-render", action="store_true")
     ap.add_argument("--no-clips", action="store_true",
                     help="skip video clips (degraded auto-retry mode)")
+    ap.add_argument("--keep-intermediates", action="store_true",
+                    help="keep raw render/voiced/sfx intermediates (debugging)")
     args = ap.parse_args()
 
     pipeline = args.pipeline
@@ -1131,16 +1133,10 @@ def main():
         "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k",
         "-t", str(total), voiced])
 
-    # 7. SFX (library) + optional music
-    print("\n[7/8] SFX mix (shared library)")
-    voiced_rel = os.path.relpath(voiced, ROOT)
-    plan = build_sfx_plan(beats, proj_id, voiced_rel, total, pipeline)
+    # 7. narration-only audio: NO library SFX (the reveal impact / transition
+    # hits read as clutter over the voice). Music stays an explicit opt-in.
+    print("\n[7/8] audio: narration only (SFX/music skipped)")
     final = voiced
-    if plan:
-        sh([sys.executable, "tools/mix_sfx.py", f"shorts/{proj_id}/sfx-plan.json"])
-        sfx_out = os.path.join(ROOT, "shorts", proj_id, "output", f"{proj_id}-sfx.mp4")
-        if os.path.exists(sfx_out):
-            final = sfx_out
 
     if args.music:
         print(f"      music bed: {args.music}")
@@ -1151,12 +1147,27 @@ def main():
         if os.path.exists(music_out):
             final = music_out
 
-    # final copy
+    # final copy — then remove every intermediate so the ONLY artifact is
+    # <proj_id>-final.mp4 (render + voiced mux + any sfx/music variants go)
     out_dir = os.path.join(proj_dir, "output")
     os.makedirs(out_dir, exist_ok=True)
     final_copy = os.path.join(out_dir, f"{proj_id}-final.mp4")
     import shutil
     shutil.copy2(final, final_copy)
+
+    if not args.keep_intermediates:
+        import glob as _glob
+        stale = [rendered, voiced,
+                 os.path.join(out_dir, f"{proj_id}-sfx.mp4"),
+                 os.path.join(out_dir, f"{proj_id}-music.mp4")]
+        stale += [p for p in _glob.glob(os.path.join(out_dir, "*.mp4")) if p != final_copy]
+        for p in stale:
+            if os.path.exists(p):
+                try:
+                    os.remove(p)
+                    print(f"      cleaned intermediate: {os.path.relpath(p, ROOT)}")
+                except OSError:
+                    pass
 
     # 8. quality gate: structural checks. A flag never deletes the
     #    render — it records reasons and publisher.js refuses to publish it.

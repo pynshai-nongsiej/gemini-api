@@ -21,67 +21,67 @@
       "motion": false,
       "sfxHint": "impact",
       "start": 0.25,
-      "end": 4.96,
+      "end": 5.62,
       "words": [
         {
           "w": "On",
           "start": 0.25,
-          "end": 0.473
+          "end": 0.505
         },
         {
           "w": "July",
-          "start": 0.473,
-          "end": 0.816
+          "start": 0.505,
+          "end": 0.897
         },
         {
           "w": "17,",
-          "start": 0.816,
-          "end": 1.073
+          "start": 0.897,
+          "end": 1.189
         },
         {
           "w": "1981,",
-          "start": 1.073,
-          "end": 1.449
+          "start": 1.189,
+          "end": 1.618
         },
         {
           "w": "a",
-          "start": 1.449,
-          "end": 1.611
+          "start": 1.618,
+          "end": 1.805
         },
         {
           "w": "single",
-          "start": 1.611,
-          "end": 2.075
+          "start": 1.805,
+          "end": 2.334
         },
         {
           "w": "design",
-          "start": 2.075,
-          "end": 2.539
+          "start": 2.334,
+          "end": 2.863
         },
         {
           "w": "change",
-          "start": 2.539,
-          "end": 3.002
+          "start": 2.863,
+          "end": 3.392
         },
         {
           "w": "collapsed",
-          "start": 3.002,
-          "end": 3.646
+          "start": 3.392,
+          "end": 4.128
         },
         {
           "w": "two",
-          "start": 3.646,
-          "end": 3.93
+          "start": 4.128,
+          "end": 4.451
         },
         {
           "w": "steel",
-          "start": 3.93,
-          "end": 4.333
+          "start": 4.451,
+          "end": 4.912
         },
         {
           "w": "skywalks.",
-          "start": 4.333,
-          "end": 4.95
+          "start": 4.912,
+          "end": 5.616
         }
       ]
     },
@@ -96,7 +96,7 @@
       "motion": false,
       "sfxHint": "archive reel",
       "start": 5.0,
-      "end": 10.07,
+      "end": 10.08,
       "words": [
         {
           "w": "Over",
@@ -106,11 +106,11 @@
         {
           "w": "fifteen",
           "start": 5.326,
-          "end": 5.824
+          "end": 5.823
         },
         {
           "w": "hundred",
-          "start": 5.824,
+          "start": 5.823,
           "end": 6.321
         },
         {
@@ -136,21 +136,21 @@
         {
           "w": "City's",
           "start": 7.968,
-          "end": 8.352
+          "end": 8.351
         },
         {
           "w": "Hyatt",
-          "start": 8.352,
-          "end": 8.734
+          "start": 8.351,
+          "end": 8.735
         },
         {
           "w": "Regency",
-          "start": 8.734,
-          "end": 9.232
+          "start": 8.735,
+          "end": 9.231
         },
         {
           "w": "for",
-          "start": 9.232,
+          "start": 9.231,
           "end": 9.501
         },
         {
@@ -176,7 +176,7 @@
       "motion": false,
       "sfxHint": "",
       "start": 10.12,
-      "end": 14.08,
+      "end": 14.1,
       "words": [
         {
           "w": "Suspended",
@@ -196,11 +196,11 @@
         {
           "w": "guests",
           "start": 11.757,
-          "end": 12.19
+          "end": 12.191
         },
         {
           "w": "to",
-          "start": 12.19,
+          "start": 12.191,
           "end": 12.399
         },
         {
@@ -216,11 +216,11 @@
         {
           "w": "party",
           "start": 12.984,
-          "end": 13.362
+          "end": 13.361
         },
         {
           "w": "from",
-          "start": 13.362,
+          "start": 13.361,
           "end": 13.682
         },
         {
@@ -241,57 +241,57 @@
       "motion": false,
       "sfxHint": "riser",
       "start": 14.14,
-      "end": 17.4,
+      "end": 17.31,
       "words": [
         {
           "w": "Pause—what",
           "start": 14.14,
-          "end": 14.681
+          "end": 14.667
         },
         {
           "w": "do",
-          "start": 14.681,
-          "end": 14.868
+          "start": 14.667,
+          "end": 14.849
         },
         {
           "w": "you",
-          "start": 14.868,
-          "end": 15.106
+          "start": 14.849,
+          "end": 15.081
         },
         {
           "w": "think",
-          "start": 15.106,
-          "end": 15.445
+          "start": 15.081,
+          "end": 15.411
         },
         {
           "w": "broke",
-          "start": 15.445,
-          "end": 15.783
+          "start": 15.411,
+          "end": 15.74
         },
         {
           "w": "first",
-          "start": 15.783,
-          "end": 16.122
+          "start": 15.74,
+          "end": 16.07
         },
         {
           "w": "under",
-          "start": 16.122,
-          "end": 16.461
+          "start": 16.07,
+          "end": 16.4
         },
         {
           "w": "all",
-          "start": 16.461,
-          "end": 16.699
+          "start": 16.4,
+          "end": 16.632
         },
         {
           "w": "that",
-          "start": 16.699,
-          "end": 16.987
+          "start": 16.632,
+          "end": 16.913
         },
         {
           "w": "weight?",
-          "start": 16.987,
-          "end": 17.404
+          "start": 16.913,
+          "end": 17.319
         }
       ]
     },
@@ -306,72 +306,72 @@
       "motion": false,
       "sfxHint": "typewriter",
       "start": 18.16,
-      "end": 22.87,
+      "end": 22.89,
       "words": [
         {
           "w": "Contractors",
           "start": 18.16,
-          "end": 18.862
+          "end": 18.866
         },
         {
           "w": "couldn't",
-          "start": 18.862,
-          "end": 19.344
+          "start": 18.866,
+          "end": 19.349
         },
         {
           "w": "thread",
-          "start": 19.344,
-          "end": 19.77
+          "start": 19.349,
+          "end": 19.777
         },
         {
           "w": "one",
-          "start": 19.77,
-          "end": 20.03
+          "start": 19.777,
+          "end": 20.038
         },
         {
           "w": "long",
-          "start": 20.03,
-          "end": 20.345
+          "start": 20.038,
+          "end": 20.355
         },
         {
           "w": "continuous",
-          "start": 20.345,
-          "end": 20.993
+          "start": 20.355,
+          "end": 21.005
         },
         {
           "w": "rod,",
-          "start": 20.993,
-          "end": 21.283
+          "start": 21.005,
+          "end": 21.297
         },
         {
           "w": "so",
-          "start": 21.283,
-          "end": 21.488
+          "start": 21.297,
+          "end": 21.503
         },
         {
           "w": "they",
-          "start": 21.488,
-          "end": 21.804
+          "start": 21.503,
+          "end": 21.82
         },
         {
           "w": "split",
-          "start": 21.804,
-          "end": 22.174
+          "start": 21.82,
+          "end": 22.192
         },
         {
           "w": "it",
-          "start": 22.174,
-          "end": 22.379
+          "start": 22.192,
+          "end": 22.398
         },
         {
           "w": "in",
-          "start": 22.379,
-          "end": 22.584
+          "start": 22.398,
+          "end": 22.604
         },
         {
           "w": "two.",
-          "start": 22.584,
-          "end": 22.875
+          "start": 22.604,
+          "end": 22.896
         }
       ]
     },
@@ -386,62 +386,62 @@
       "motion": true,
       "sfxHint": "impact",
       "start": 23.28,
-      "end": 27.41,
+      "end": 27.28,
       "words": [
         {
           "w": "That",
           "start": 23.28,
-          "end": 23.602
+          "end": 23.592
         },
         {
           "w": "subtle",
-          "start": 23.602,
-          "end": 24.037
+          "start": 23.592,
+          "end": 24.014
         },
         {
           "w": "change",
-          "start": 24.037,
-          "end": 24.472
+          "start": 24.014,
+          "end": 24.435
         },
         {
           "w": "doubled",
-          "start": 24.472,
-          "end": 24.964
+          "start": 24.435,
+          "end": 24.911
         },
         {
           "w": "the",
-          "start": 24.964,
-          "end": 25.229
+          "start": 24.911,
+          "end": 25.169
         },
         {
           "w": "stress",
-          "start": 25.229,
-          "end": 25.664
+          "start": 25.169,
+          "end": 25.59
         },
         {
           "w": "on",
-          "start": 25.664,
-          "end": 25.873
+          "start": 25.59,
+          "end": 25.793
         },
         {
           "w": "the",
-          "start": 25.873,
-          "end": 26.139
+          "start": 25.793,
+          "end": 26.051
         },
         {
           "w": "upper",
-          "start": 26.139,
-          "end": 26.518
+          "start": 26.051,
+          "end": 26.418
         },
         {
           "w": "crossbeam",
-          "start": 26.518,
-          "end": 27.122
+          "start": 26.418,
+          "end": 27.003
         },
         {
           "w": "nut.",
-          "start": 27.122,
-          "end": 27.419
+          "start": 27.003,
+          "end": 27.291
         }
       ]
     },
@@ -456,26 +456,26 @@
       "motion": false,
       "sfxHint": "typewriter",
       "start": 27.67,
-      "end": 31.99,
+      "end": 32.01,
       "words": [
         {
           "w": "The",
           "start": 27.67,
-          "end": 27.918
+          "end": 27.917
         },
         {
           "w": "lead",
-          "start": 27.918,
-          "end": 28.218
+          "start": 27.917,
+          "end": 28.217
         },
         {
           "w": "engineer",
-          "start": 28.218,
-          "end": 28.729
+          "start": 28.217,
+          "end": 28.728
         },
         {
           "w": "never",
-          "start": 28.729,
+          "start": 28.728,
           "end": 29.081
         },
         {
@@ -486,31 +486,31 @@
         {
           "w": "the",
           "start": 29.802,
-          "end": 30.049
+          "end": 30.05
         },
         {
           "w": "load",
-          "start": 30.049,
+          "start": 30.05,
           "end": 30.35
         },
         {
           "w": "before",
           "start": 30.35,
-          "end": 30.756
+          "end": 30.755
         },
         {
           "w": "approving",
-          "start": 30.756,
-          "end": 31.319
+          "start": 30.755,
+          "end": 31.318
         },
         {
           "w": "the",
-          "start": 31.319,
-          "end": 31.565
+          "start": 31.318,
+          "end": 31.566
         },
         {
           "w": "change.",
-          "start": 31.565,
+          "start": 31.566,
           "end": 32.0
         }
       ]
@@ -531,11 +531,11 @@
         {
           "w": "It",
           "start": 32.05,
-          "end": 32.245
+          "end": 32.246
         },
         {
           "w": "became",
-          "start": 32.245,
+          "start": 32.246,
           "end": 32.652
         },
         {
@@ -546,11 +546,11 @@
         {
           "w": "deadliest",
           "start": 32.9,
-          "end": 33.464
+          "end": 33.465
         },
         {
           "w": "structural",
-          "start": 33.464,
+          "start": 33.465,
           "end": 34.081
         },
         {
@@ -596,52 +596,52 @@
       "motion": false,
       "sfxHint": "archive reel",
       "start": 36.44,
-      "end": 40.4,
+      "end": 40.47,
       "words": [
         {
           "w": "All",
           "start": 36.44,
-          "end": 36.723
+          "end": 36.728
         },
         {
           "w": "because",
-          "start": 36.723,
-          "end": 37.248
+          "start": 36.728,
+          "end": 37.261
         },
         {
           "w": "a",
-          "start": 37.248,
-          "end": 37.411
+          "start": 37.261,
+          "end": 37.426
         },
         {
           "w": "single",
-          "start": 37.411,
-          "end": 37.874
+          "start": 37.426,
+          "end": 37.898
         },
         {
           "w": "modification",
-          "start": 37.874,
-          "end": 38.7
+          "start": 37.898,
+          "end": 38.736
         },
         {
           "w": "broke",
-          "start": 38.7,
-          "end": 39.103
+          "start": 38.736,
+          "end": 39.146
         },
         {
           "w": "two",
-          "start": 39.103,
-          "end": 39.387
+          "start": 39.146,
+          "end": 39.434
         },
         {
           "w": "steel",
-          "start": 39.387,
-          "end": 39.791
+          "start": 39.434,
+          "end": 39.845
         },
         {
           "w": "skywalks.",
-          "start": 39.791,
-          "end": 40.408
+          "start": 39.845,
+          "end": 40.472
         }
       ]
     }
@@ -672,6 +672,6 @@
       "visual": "A gritty archival photo of crumpled steel beams in the destroyed hotel atrium."
     }
   ],
-  "voiceStatus": "kokoro:am_onyx",
+  "voiceStatus": "kokoro:am_michael",
   "pipeline": "history"
 }
