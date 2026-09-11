@@ -989,28 +989,14 @@ def build_sfx_plan(beats, proj_id, voiced_rel, end_s, pipeline="space"):
         events.append({"at_s": round(at, 2), "sfx_id": sid, "gain_db": gain,
                        "shot": "MainScene", "cue": cue, **({"optional": True} if optional else {})})
 
-    default_cut = PIPELINE_CUT_SFX.get(pipeline, "whoosh-soft")
+    # MINIMAL sound design — the narration IS the audio; effects only mark the
+    # one moment that earns a punctuation (the reveal). Music beds and per-line
+    # whooshes/hints/generic cues are gone: they compete with the speech and
+    # read as clutter on rewatch. (Audio opt-ins: --music, and the SFX_MAP
+    # mappings remain for hand-built plans.)
     for i, v in enumerate(beats["vo"]):
-        at = float(v["start"])
-        if i > 0:  # every line change: cut cue matched to the visual transition
-            kind = transition_for(v.get("beat", ""), i, pipeline)
-            chain = TRANSITION_SFX.get(kind, ((default_cut,),))[0] if kind else (default_cut,)
-            sid = next((s for s in chain if s in lib), None)
-            add(at, sid, -10,
-                f"transition {kind or 'crossfade'}: {v['beat']}", optional=True)
-        hint_sid = map_hint(v.get("sfxHint"))
-        add(at + 0.05, hint_sid, -8, f"sfxHint '{v.get('sfxHint', '')}'")
         if v.get("beat") == "reveal" and i > 0:
-            add(at, "impact-deep-soft", -7, "the reveal lands")
-        if (v.get("graphic") in ("counter", "bars", "percent", "rule")
-                and pipeline == "finance" and v.get("beat") in ("hook", "reveal")):
-            add(at + 0.1, "cash-register" if "cash-register" in lib else "pop-reveal", -12,
-                f"{v.get('graphic')} graphic lands", optional=True)
-        accent = PIPELINE_ACCENT_SFX.get(pipeline, {}).get(v.get("beat"))
-        if accent:
-            add(at, accent[0] if accent[0] in lib else None, accent[1], accent[2], optional=True)
-        if v.get("beat") == "loop" and i > 0:
-            add(at, "whoosh-soft", -10, "loop back to hook", optional=True)
+            add(float(v["start"]), "impact-deep-soft", -13, "the reveal lands")
 
     plan = {
         "master": voiced_rel,

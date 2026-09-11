@@ -180,11 +180,10 @@ class DB {
         c.id, c.name, c.niche, c.style, c.pipeline, c.voice, c.accent || null,
         c.tokens_path || null, now, now);
     }
-    // distinct audio identity per channel (brand recall in the feed) — only
-    // applied while unset so users can override in the dashboard
-    this.run(`UPDATE channels SET music='ambient-pad' WHERE id='cosmic-archive' AND (music IS NULL OR music='')`);
-    this.run(`UPDATE channels SET music='tech-pulse' WHERE id='wealth-engine' AND (music IS NULL OR music='')`);
-    this.run(`UPDATE channels SET music='docu-pluck' WHERE id='footnote-files' AND (music IS NULL OR music='')`);
+    // music is OPT-IN — a bed under dense voice narration muddies the speech.
+    // Clear any previously auto-applied defaults; set music per channel in the
+    // dashboard only if you actually want it.
+    this.run(`UPDATE channels SET music=NULL WHERE music IN ('ambient-pad','tech-pulse','docu-pluck')`);
   }
 
   _seedSettings() {
