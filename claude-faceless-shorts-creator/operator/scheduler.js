@@ -103,12 +103,26 @@ class Scheduler {
     } catch (err) {
       console.warn('[scheduler] analytics refresh failed:', err.message);
     }
-    // retention loop: feeds winning hooks back into topic research
+    // retention loop: curves + averages; promotes A/B variant winners and
+    // feeds winning hooks back into topic research
     try {
       const r = await publisher.refreshRetention(this.db);
-      if (r > 0) this.db.notify('info', `Retention data updated for ${r} short(s) — winning hooks fed back to research`);
+      if (r.updated > 0) {
+        this.db.notify('info', `Retention data updated for ${r.updated} short(s)` +
+          (r.promoted ? ` — ${r.promoted} variant winner(s) promoted` : ''));
+      }
     } catch (err) {
       console.warn('[scheduler] retention refresh failed:', err.message);
+    }
+    // comment mining: viewer questions become topic candidates
+    for (const channel of this.db.listChannels()) {
+      if (!channel.enabled) continue;
+      try {
+        const mined = await publisher.mineComments(this.db, channel.id);
+        if (mined > 0) this.db.notify('info', `💬 ${mined} viewer question(s) mined from ${channel.name}'s comments — research will prioritize them`);
+      } catch (err) {
+        console.warn(`[scheduler] comment mining failed for ${channel.id}:`, err.message);
+      }
     }
     this.lastAnalytics = Date.now();
   }

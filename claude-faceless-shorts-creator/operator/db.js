@@ -131,6 +131,11 @@ class DB {
     addColumn('jobs', 'variant_group', 'TEXT');
     addColumn('jobs', 'variant_hint', 'TEXT');
     addColumn('shorts', 'variant_group', 'TEXT');
+    // learning loop: auto-promoted winning hook + comment-mined topics +
+    // auto-retry budget + tokenized review links
+    addColumn('channels', 'default_hook_hint', 'TEXT');
+    addColumn('jobs', 'retries', 'INTEGER DEFAULT 0');
+    addColumn('shorts', 'review_token', 'TEXT');
   }
 
   /** The three connected channels: the original space channel plus the two new
@@ -175,6 +180,11 @@ class DB {
         c.id, c.name, c.niche, c.style, c.pipeline, c.voice, c.accent || null,
         c.tokens_path || null, now, now);
     }
+    // distinct audio identity per channel (brand recall in the feed) — only
+    // applied while unset so users can override in the dashboard
+    this.run(`UPDATE channels SET music='ambient-pad' WHERE id='cosmic-archive' AND (music IS NULL OR music='')`);
+    this.run(`UPDATE channels SET music='tech-pulse' WHERE id='wealth-engine' AND (music IS NULL OR music='')`);
+    this.run(`UPDATE channels SET music='docu-pluck' WHERE id='footnote-files' AND (music IS NULL OR music='')`);
   }
 
   _seedSettings() {
@@ -391,6 +401,44 @@ class DB {
       } catch { /* malformed meta — skip */ }
     }
     return out;
+  }
+
+  /** VIEWER-QUESTION MINING — questions harvested from published shorts'
+   *  comment sections (source='comment' topic rows), still unproduced. These
+   *  are the audience literally asking for their next videos. */
+  minedQuestions(channelId, limit = 10) {
+    return this.all(
+      `SELECT id, title FROM topics
+       WHERE channel_id=? AND source='comment' AND status='idea'
+       ORDER BY id DESC LIMIT ?`, channelId, limit);
+  }
+  markMinedQuestionsUsed(channelId) {
+    this.run(
+      `UPDATE topics SET status='queued'
+       WHERE channel_id=? AND source='comment' AND status='idea'`, channelId);
+  }
+
+  /** A/B WINNER PROMOTION — the variant-group short that cleared the retention
+   *  threshold while its siblings didn't becomes the channel's default hook. */
+  bestVariantIn(group) {
+    const rows = this.all(
+      `SELECT s.id, s.title, s.meta_json, j.variant_hint FROM shorts s
+       LEFT JOIN jobs j ON j.proj_id = s.id
+       WHERE s.variant_group=?`, group);
+    let best = null;
+    for (const r of rows) {
+      let ret = 0;
+      try { ret = Number(JSON.parse(r.meta_json || '{}')?.retention?.avgViewPercentage) || 0; } catch {}
+      if (!best || ret > best.retention) {
+        best = { shortId: r.id, title: r.title, hint: r.variant_hint || '', retention: ret };
+      }
+    }
+    return best;
+  }
+  variantGroupsPending() {
+    return this.all(
+      `SELECT DISTINCT variant_group g FROM shorts
+       WHERE variant_group IS NOT NULL AND status='published'`).map(r => r.g);
   }
 
   // --- publish queue ---

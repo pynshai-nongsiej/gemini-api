@@ -904,6 +904,20 @@ async function viewSettings() {
     </div>
 
     <div class="panel">
+      <h2>Notifications & review from anywhere</h2>
+      <div class="grid2">
+        <label class="f"><span class="lt">WEBHOOK URL (Discord/Slack-compatible — posts every notification)</span>
+          <input id="s-webhook" value="${esc(s.notify_webhook || '')}" placeholder="https://discord.com/api/webhooks/…"></label>
+        <label class="f"><span class="lt">PUBLIC BASE URL (makes review links clickable from your phone)</span>
+          <input id="s-baseurl" value="${esc(s.public_base_url || '')}" placeholder="https://your-tunnel.example.com"></label>
+      </div>
+      <div class="dim" style="font-size:12px">"Short ready for review" notifications then carry a tokenized approve/reject link — no API key exposed, valid for that one short only. For phone access over the internet, point public_base_url at a tunnel (e.g. <span class="mono">cloudflared tunnel --url localhost:3457</span>).</div>
+      <div class="row" style="margin-top:8px">
+        <button class="btn primary" onclick="saveNotify()">save</button>
+      </div>
+    </div>
+
+    <div class="panel">
       <h2>Channel & automation</h2>
       <div class="grid3">
         <label class="f"><span class="lt">CHANNEL NAME</span><input id="s-channel" value="${esc(s.channel_name)}"></label>
@@ -962,6 +976,15 @@ async function viewSettings() {
         auto_approve: $('#s-autopr').checked,
       });
       toast('settings saved', 'ok');
+    } catch (e) { toast(e.message, 'err'); }
+  };
+  window.saveNotify = async () => {
+    try {
+      await api.put('/api/settings', {
+        notify_webhook: $('#s-webhook').value.trim(),
+        public_base_url: $('#s-baseurl').value.trim(),
+      });
+      toast('notification settings saved', 'ok');
     } catch (e) { toast(e.message, 'err'); }
   };
   window.saveAPIKey = async (wasSet) => {

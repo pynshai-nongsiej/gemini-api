@@ -332,8 +332,90 @@ async function refreshAnalytics(db) {
 }
 
 /**
+ * COMMENT MINING — read the comment sections of a channel's published shorts
+ * (youtube.force-ssl scope we already hold) and harvest viewer QUESTIONS as
+ * topic candidates (topics.source='comment'). The audience asking is the
+ * highest-signal topic research there is.
+ */
+async function mineComments(db, channelId) {
+  const tp = tokensPathFor(channelId);
+  if (!fs.existsSync(tp)) return 0;
+  const yt = await getYouTube(tp);
+  if (!yt) return 0;
+  const published = db.listShorts('published', channelId).filter(s => s.youtube_id);
+  if (!published.length) return 0;
+
+  const QUESTION_RE = /\?|how (do|does|can|much|many|long)|what (if|is|are|was)|why (do|does|is|are)|should i|is it (true|safe|worth)/i;
+  let added = 0;
+  for (const s of published.slice(0, 12)) {
+    let threads;
+    try {
+      threads = await yt.commentThreads.list({
+        part: 'snippet', videoId: s.youtube_id, maxResults: 50, order: 'relevance', textFormat: 'plainText',
+      });
+    } catch (err) {
+      console.warn(`[publisher] comments unavailable for ${s.id}: ${err.message.slice(0, 80)}`);
+      continue;
+    }
+    for (const item of threads.data.items || []) {
+      const c = item.snippet?.topLevelComment?.snippet || {};
+      const text = (c.textDisplay || '').trim();
+      if (text.length < 12 || text.length > 220 || !QUESTION_RE.test(text)) continue;
+      // skip creator replies and bare emoji/spam
+      if (/^@/.test(text) || (text.match(/http/g) || []).length > 1) continue;
+      const existing = db.get(`SELECT id FROM topics WHERE title=? AND channel_id=?`, text, channelId);
+      if (existing) continue;
+      db.addTopic(`${text} (on "${(s.title || '').slice(0, 60)}")`, 'comment', channelId);
+      added++;
+    }
+  }
+  return added;
+}
+
+/**
+ * AUTO-PROMOTE VARIANT WINNERS — for every A/B race group with published
+ * shorts and retention data: if the best variant cleared the 70% threshold
+ * and clearly beats its siblings, its hook angle becomes the channel's
+ * default HOOK REQUIREMENT until a better variant dethrones it.
+ */
+async function promoteVariantWinners(db) {
+  let promoted = 0;
+  for (const group of db.variantGroupsPending()) {
+    const shorts = db.all(`SELECT channel_id FROM shorts WHERE variant_group=?`, group);
+    const channelId = shorts[0]?.channel_id;
+    if (!channelId) continue;
+    // need all group members published + retention measured before judging
+    const members = db.all(
+      `SELECT status, meta_json FROM shorts WHERE variant_group=?`, group);
+    const judged = members.filter(m => m.status === 'published' &&
+      (() => { try { return !!JSON.parse(m.meta_json || '{}')?.retention; } catch { return false; } })());
+    if (judged.length < members.length) continue; // race still in flight
+
+    let best = null, runnerUp = 0;
+    for (const m of judged) {
+      const pct = (() => { try { return Number(JSON.parse(m.meta_json)?.retention?.avgViewPercentage) || 0; } catch { return 0; } })();
+      if (!best || pct > best.pct) { runnerUp = best ? best.pct : 0; best = { pct }; }
+      else if (pct > runnerUp) runnerUp = pct;
+    }
+    if (!best || best.pct < 70 || best.pct - runnerUp < 8) continue; // no clear winner
+
+    const winner = db.bestVariantIn(group);
+    if (!winner?.hint) continue;
+    const channel = db.getChannel(channelId);
+    if (channel && channel.default_hook_hint !== winner.hint) {
+      db.saveChannel(channelId, { default_hook_hint: winner.hint });
+      db.notify('success', `🏆 Variant winner promoted on ${channel.name}: "${winner.hint.slice(0, 70)}…" (${Math.round(winner.retention)}% retention) — now the channel's default hook`);
+      promoted++;
+    }
+  }
+  return promoted;
+}
+
+/**
  * RETENTION FEEDBACK LOOP — pull averageViewPercentage per published short via
- * the YouTube Analytics API and store it in the short's meta. The topic
+ * the YouTube Analytics API and store it in the short's meta, plus retention
+ * CURVES (audienceWatchRatio over elapsed time) for the channel's top shorts —
+ * "viewers bail at 40%" is far more actionable than an average. The topic
  * researcher reads these (db.winningHooks) so each channel learns which hook
  * angles beat the 70% promotion threshold. Needs the analytics scope, so a
  * channel must re-authorize once after this update; failures are non-fatal.
@@ -349,7 +431,8 @@ async function refreshRetention(db) {
     try { oauth = getOAuthClient(tp); } catch { continue; }
     if (!oauth) continue;
     const yta = google.youtubeAnalytics({ version: 'v2', auth: oauth });
-    const published = db.listShorts('published', channel.id).filter(s => s.youtube_id);
+    const published = db.listShorts('published', channel.id)
+      .filter(s => s.youtube_id && (s.views || 0) > 0);
     if (!published.length) continue;
 
     // chunk the video filter (API caps filter lists)
@@ -380,15 +463,50 @@ async function refreshRetention(db) {
           avgViewPercentage: Math.round(hit.pct * 10) / 10,
           fetched_at: DBNow(),
         };
+
+        // curve for the channel's strongest current short (1 query each, capped)
+        const isTop = chunk.indexOf(s) === 0 || (meta.retention.avgViewPercentage >= 55);
+        if (isTop && n < 40) {
+          try {
+            const curve = await yta.reports.query({
+              ids: 'channel==MINE', startDate, endDate,
+              metrics: 'audienceWatchRatio',
+              dimensions: 'elapsedVideoTimeRatio',
+              filters: `video==${s.youtube_id}`,
+            });
+            const crows = (curve.data.rows || []).map(r => [Math.round(r[0] * 100) / 100, Math.round(r[1] * 10) / 10]);
+            if (crows.length) {
+              const at = (p) => (crows.find(r => r[0] >= p) || [])[1];
+              let dropAt = 0, dropSize = 0;
+              for (let k = 1; k < crows.length; k++) {
+                const d = crows[k - 1][1] - crows[k][1];
+                if (d > dropSize) { dropSize = d; dropAt = crows[k][0]; }
+              }
+              meta.retention.curve = {
+                q25: at(0.25), q50: at(0.5), q75: at(0.75),
+                biggest_drop_at: dropAt, biggest_drop_size: Math.round(dropSize * 10) / 10,
+                samples: crows.length,
+              };
+            }
+          } catch (err) {
+            console.warn(`[publisher] curve query failed for ${s.id}: ${err.message.slice(0, 80)}`);
+          }
+        }
+
         db.run(`UPDATE shorts SET meta_json=?, updated_at=? WHERE id=?`,
           JSON.stringify(meta), DBNow(), s.id);
         n++;
       }
     }
   }
-  return n;
+  let promoted = 0;
+  try { promoted = await promoteVariantWinners(db); } catch (err) {
+    console.warn('[publisher] variant promotion failed:', err.message);
+  }
+  return { updated: n, promoted };
 }
 
 module.exports = { authUrl, exchangeCode, hasTokens, tokensPathFor, tokensPathForShort,
                    getYouTube, publishShort, scheduleOnYouTube, makePublicNow,
-                   refreshAnalytics, refreshRetention, assertPublishable };
+                   refreshAnalytics, refreshRetention, mineComments, promoteVariantWinners,
+                   assertPublishable };

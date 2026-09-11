@@ -42,6 +42,30 @@ const scheduler = new Scheduler(db, worker);
 const app = express();
 app.use(express.json({ limit: '1mb' }));
 
+// ---------- webhook notifications (Discord/Slack-compatible) ----------
+// every db.notify ALSO fires at settings.notify_webhook, so the review gate
+// can live on your phone: "ready for review" messages carry a tokenized
+// approve/reject link (no api key exposed).
+const _notify = db.notify.bind(db);
+db.notify = (level, message, meta = {}) => {
+  _notify(level, message);
+  try {
+    const s = db.getSettings();
+    const hook = s.notify_webhook;
+    if (!hook) return;
+    const base = String(s.public_base_url || `http://localhost:${config.PORT}`).replace(/\/$/, '');
+    const icon = { error: '🔴', warn: '🟡', success: '🟢', info: '🔵' }[level] || '🔵';
+    let content = `${icon} ${message}`;
+    if (meta.shortId && meta.reviewToken) {
+      content += `\n▶ Review: ${base}/review/${meta.shortId}/${meta.reviewToken}`;
+    }
+    fetch(hook, {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(content.includes('\n') ? { content } : { content }),
+    }).catch(() => {}); // webhook is best-effort, never blocks the pipeline
+  } catch { /* never let notifications break the pipeline */ }
+};
+
 /** Weighted slots (growth tuning): Buffer's 1.8M-video dataset shows Friday
  *  4-7 PM and weekend mornings over-index for Shorts — one dynamic bonus slot
  *  on those days, per channel, on top of the configured daily slots. */
@@ -104,6 +128,52 @@ app.use('/media/shorts', express.static(path.join(config.ROOT, 'shorts'), {
 }));
 // beat images: /media/projects/<projId>/<file>
 app.use('/media/projects', express.static(path.join(config.ROOT, 'media', 'projects')));
+
+// ---------- review by link (phone-friendly, tokenized — no api key) ----------
+app.get('/review/:shortId/:token', async (req, res) => {
+  const s = db.getShort(req.params.shortId);
+  if (!s || !s.review_token || s.review_token !== req.params.token) {
+    return res.status(404).send('<h2>Review link invalid</h2>');
+  }
+  const decorated = decorateShort(s);
+  res.send(`<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Review — ${decorated.title}</title>
+<style>body{font-family:-apple-system,sans-serif;background:#0d1117;color:#e6edf3;margin:0;padding:20px;max-width:560px;margin:0 auto}
+video{width:100%;border-radius:12px}h1{font-size:18px}.m{color:#8b949e;font-size:13px;margin:8px 0 16px}
+button{width:100%;padding:14px;border:0;border-radius:10px;font-size:16px;font-weight:700;margin-top:10px;cursor:pointer}
+.ok{background:#238636;color:#fff}.no{background:#b62324;color:#fff}</style></head><body>
+<h1>${decorated.title}</h1>
+<div class="m">${Math.round(decorated.duration_s || 0)}s · ${decorated.status} · ${(decorated.seo && decorated.seo.description || '').slice(0, 140)}</div>
+${decorated.videoUrl ? `<video src="${decorated.videoUrl}" controls autoplay></video>` : '<p>video file missing</p>'}
+<a id="u" href="https://studio.youtube.com" target="_blank" style="display:none"></a>
+<button class="ok" onclick="act('approve')">✓ Approve & schedule</button>
+<button class="no" onclick="act('reject')">✕ Reject</button>
+<div id="r" class="m" style="margin-top:14px"></div>
+<script>
+async function act(a){
+  const r = await fetch('/api/review/${s.id}/${s.review_token}/' + a, {method:'POST'});
+  const d = await r.json().catch(()=>({}));
+  document.getElementById('r').textContent = r.ok
+    ? (a === 'approve' ? '✓ Approved — scheduled to publish ' + (d.scheduled_at || '').slice(0,16).replace('T',' ') + ' UTC' : '✕ Rejected')
+    : ('error: ' + (d.error || r.status));
+  if (r.ok) { document.querySelectorAll('button').forEach(b=>b.disabled=true); }
+}
+</script></body></html>`);
+});
+
+// NOTE: no `protect` — the per-short review token IS the credential here
+// (scoped to exactly one short, approve/reject only), so the link works from
+// a phone without the api key.
+app.post('/api/review/:shortId/:token/:action', async (req, res) => {
+  const s = db.getShort(req.params.shortId);
+  if (!s || !s.review_token || s.review_token !== req.params.token) {
+    return res.status(404).json({ error: 'review link invalid' });
+  }
+  const action = req.params.action;
+  if (action === 'approve') return approveAndSchedule(s, res);
+  if (action === 'reject') return rejectShortById(s, res);
+  res.status(400).json({ error: 'action must be approve|reject' });
+});
 
 // ---------- health ----------
 app.get('/health', (_req, res) => {
@@ -265,7 +335,20 @@ app.post('/api/analytics/refresh', protect, async (_req, res) => {
   try {
     const views = await publisher.refreshAnalytics(db);
     const retention = await publisher.refreshRetention(db);
-    res.json({ views_updated: views, retention_updated: retention });
+    res.json({ views_updated: views, retention_updated: retention.updated, winners_promoted: retention.promoted });
+  } catch (err) {
+    res.status(502).json({ error: err.message });
+  }
+});
+
+/** Comment mining (the scheduler also does this every 6h). */
+app.post('/api/analytics/mine-comments', protect, async (_req, res) => {
+  try {
+    let mined = 0;
+    for (const channel of db.listChannels()) {
+      if (channel.enabled) mined += await publisher.mineComments(db, channel.id);
+    }
+    res.json({ questions_mined: mined });
   } catch (err) {
     res.status(502).json({ error: err.message });
   }
@@ -338,18 +421,13 @@ app.put('/api/shorts/:id/meta', protect, (req, res) => {
   res.json({ short: decorateShort(db.getShort(s.id)) });
 });
 
-app.post('/api/shorts/:id/approve', protect, async (req, res) => {
-  const s = db.getShort(req.params.id);
-  if (!s) return res.status(404).json({ error: 'short not found' });
+/** Shared approve logic — used by the dashboard route AND the tokenized
+ *  phone-review link (confirm_reviewed implied: the link holder reviewed it). */
+async function approveAndSchedule(s, res) {
   if (s.status === 'published') return res.status(409).json({ error: 'already published' });
   if (s.status === 'scheduled_on_youtube') return res.status(409).json({ error: 'already scheduled on YouTube' });
   try { publisher.assertPublishable(decorateShort(s)); }
   catch (err) { return res.status(409).json({ error: err.message }); }
-
-  const settings = db.getSettings();
-  if (settings.auto_approve !== true && !(req.body || {}).confirm_reviewed) {
-    return res.status(400).json({ error: 'pass confirm_reviewed: true to acknowledge the human review gate' });
-  }
 
   // schedule into the next open publish slot FOR THIS SHORT'S CHANNEL
   const channel = db.getChannel(s.channel_id || 'cosmic-archive');
@@ -381,17 +459,31 @@ app.post('/api/shorts/:id/approve', protect, async (req, res) => {
       error: err.message,
     });
   }
-});
+}
 
-app.post('/api/shorts/:id/reject', protect, (req, res) => {
-  const s = db.getShort(req.params.id);
-  if (!s) return res.status(404).json({ error: 'short not found' });
+function rejectShortById(s, res) {
   if (s.status === 'published') return res.status(409).json({ error: 'already published — manage it on YouTube' });
   // drop from publish queue regardless of prior schedule status
   db.run("DELETE FROM publish_queue WHERE short_id=?", s.id);
   db.updateShort(s.id, { status: 'rejected', youtube_id: null, youtube_url: null });
   db.notify('info', `Rejected: "${s.title}"`);
   res.json({ short: db.getShort(s.id) });
+}
+
+app.post('/api/shorts/:id/approve', protect, async (req, res) => {
+  const s = db.getShort(req.params.id);
+  if (!s) return res.status(404).json({ error: 'short not found' });
+  const settings = db.getSettings();
+  if (settings.auto_approve !== true && !(req.body || {}).confirm_reviewed) {
+    return res.status(400).json({ error: 'pass confirm_reviewed: true to acknowledge the human review gate' });
+  }
+  return approveAndSchedule(s, res);
+});
+
+app.post('/api/shorts/:id/reject', protect, (req, res) => {
+  const s = db.getShort(req.params.id);
+  if (!s) return res.status(404).json({ error: 'short not found' });
+  return rejectShortById(s, res);
 });
 
 // ---------- publish queue ----------
@@ -513,8 +605,9 @@ app.get('/api/settings', (_req, res) => {
 app.put('/api/settings', protect, (req, res) => {
   const allowed = ['channel_name', 'niche', 'cadence_per_week', 'videos_per_run',
     'default_voice', 'default_style', 'default_music', 'publish_slots',
-    'youtube_privacy', 'declare_ai_media', 'auto_generate', 'auto_approve',
-    'retention_min_duration', 'retention_max_duration', 'api_key'];
+    'youtube_privacy', 'declare_ai_media', 'auto_approve',
+    'retention_min_duration', 'retention_max_duration', 'api_key',
+    'notify_webhook', 'public_base_url'];
   const patch = {};
   for (const k of allowed) if (k in (req.body || {})) patch[k] = req.body[k];
   const s = db.saveSettings(patch);
@@ -563,6 +656,11 @@ app.get('/api/youtube/status', (req, res) => {
 
 // ---------- boot ----------
 db.markInterruptedJobs();
+// review links for shorts that predate the tokenized-review feature
+for (const s of db.all(`SELECT id FROM shorts WHERE review_token IS NULL OR review_token=''`)) {
+  db.run(`UPDATE shorts SET review_token=? WHERE id=?`,
+    require('crypto').randomBytes(10).toString('hex'), s.id);
+}
 
 const server = app.listen(config.PORT, () => {
   const s = db.getSettings();

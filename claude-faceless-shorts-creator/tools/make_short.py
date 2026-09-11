@@ -218,6 +218,65 @@ def _manifest_finish(manifest_path, manifest, beats, srcs):
     return counts, real
 
 
+def _fetch_second_image(pipeline, v, media_dir, stem, entry, exclude_urls, beats, size):
+    """Second image for a micro-cut beat (the composition hard-cuts to it
+    mid-line). Real archive second hit first (exclude_urls forces a DIFFERENT
+    asset); AI 'alternate angle' as fallback. Writes entry['src_b'] and returns
+    the staticFile-relative path or None."""
+    import json as _json
+    b_stem = stem + "-b"
+    cached = next((f for f in os.listdir(media_dir)
+                   if f.startswith(b_stem + ".") and not f.endswith(".json")), None)
+    if cached:
+        entry["src_b"] = cached
+        return f"projects/{os.path.basename(media_dir)}/{cached}"
+
+    out = os.path.join(media_dir, b_stem + ".jpg")
+    hit = None
+    try:
+        if pipeline == "history":
+            from archive_media import fetch_archival_image
+            hit = fetch_archival_image((v.get("archiveQuery") or "") + " archive photo",
+                                       out, exclude_urls=exclude_urls,
+                                       fallback_title=beats["title"])
+        elif pipeline == "space":
+            from nasa_media import fetch_nasa_image
+            hit = fetch_nasa_image(v.get("nasaQuery") or v.get("imagePrompt") or beats["title"],
+                                   out, exclude_urls=exclude_urls,
+                                   fallback_title=beats["title"])
+    except Exception as e:  # noqa: BLE001 — second hit is best-effort
+        print(f"    b-image: archive error ({e})")
+        hit = None
+
+    if hit and os.path.exists(out):
+        try:
+            from enhance_image import enhance_for_cover
+            enhance_for_cover(out, target_w=1080, target_h=1920)
+        except Exception:
+            pass
+        entry["src_b"] = os.path.basename(out)
+        entry.setdefault("src_b_info", {"source": hit.get("source"), "title": (hit.get("title") or "")[:80]})
+        print(f"    b-image ✓ [{hit.get('source', hit.get('nasa_id') and 'nasa')}] {(hit.get('title') or '')[:50]}")
+        return f"projects/{os.path.basename(media_dir)}/{entry['src_b']}"
+
+    # AI alternate-angle fallback
+    prompt = (v.get("imagePrompt") or beats["title"]) + ", alternate angle, different framing"
+    ai_out = os.path.join(media_dir, b_stem + ".png")
+    try:
+        sh([sys.executable, "tools/gen_image.py", "--prompt", prompt,
+            "--aspect", "9:16", "--size", size, "--out", ai_out])
+    except SystemExit:
+        return None
+    actual = next((f for f in os.listdir(media_dir)
+                   if f.startswith(b_stem + ".") and not f.endswith(".json")), None)
+    if not actual:
+        return None
+    entry["src_b"] = actual
+    entry["src_b_ai"] = True
+    print(f"    b-image: AI alternate angle")
+    return f"projects/{os.path.basename(media_dir)}/{actual}"
+
+
 def gen_images_history(beats, proj_dir, media_dir, size):
     """ARCHIVE-FIRST: Wikimedia Commons / Library of Congress / Openverse / Met
     per beat, with license + creator + year metadata for the on-screen source
@@ -235,15 +294,26 @@ def gen_images_history(beats, proj_dir, media_dir, size):
         cached = next((f for f in os.listdir(media_dir)
                        if f.startswith(stem + ".") and not f.endswith(".json")
                        and not f.endswith("-clip.mp4")), None)
+        needs_b = (float(v.get("end", 0)) - float(v.get("start", 0))) > MICRO_CUT_SECS
         if cached:
             srcs.append(f"projects/{os.path.basename(media_dir)}/{cached}")
             if i < len(manifest):
                 manifest[i]["src"] = cached
+            # b-image backfill on resume: fetch if this is a micro-cut beat
+            # whose second image is missing (archives may have been down before)
+            if needs_b and not (i < len(manifest) and manifest[i].get("src_b")):
+                entry = manifest[i] if i < len(manifest) else {"stem": stem}
+                _fetch_second_image("history", v, media_dir, stem, entry,
+                                    exclude_urls, beats, size)
             print(f"    image {i}: cached ({cached})")
             continue
 
         entry = {"beat": v.get("beat", ""), "stem": stem, "src": None,
                  "source": None, "title": None, "url": None}
+
+        # lines longer than ~2.6s become micro-cut beats: the composition
+        # splits them into two shots, so they need a SECOND image (true
+        # b-roll variety instead of a camera trick on the same photo)
 
         # --- 1. real archives first ---
         query = v.get("archiveQuery") or v.get("imagePrompt") or beats["title"]
@@ -268,6 +338,8 @@ def gen_images_history(beats, proj_dir, media_dir, size):
             manifest.append(entry)
             srcs.append(f"projects/{os.path.basename(media_dir)}/{os.path.basename(out)}")
             print(f"    image {i}: ARCHIVE ✓ [{hit['source']}] {hit.get('title', '')[:60]}")
+            if needs_b:
+                _fetch_second_image("history", v, media_dir, stem, entry, exclude_urls, beats, size)
             continue
 
         # --- 2. era-consistent AI fallback (all archives missed) ---
@@ -289,6 +361,8 @@ def gen_images_history(beats, proj_dir, media_dir, size):
         entry.update(source="ai", src=actual, title=f"AI period visualization — {prompt[:80]}")
         manifest.append(entry)
         srcs.append(f"projects/{os.path.basename(media_dir)}/{actual}")
+        if needs_b:
+            _fetch_second_image("history", v, media_dir, stem, entry, exclude_urls, beats, size)
 
     counts, real = _manifest_finish(manifest_path, manifest, beats, srcs)
     return srcs
@@ -362,11 +436,16 @@ def gen_images_space(beats, proj_dir, media_dir, size):
         stem = f"b{i:02d}-{slugify(v.get('beat', 'beat'), 18)}"
         cached = next((f for f in os.listdir(media_dir)
                        if f.startswith(stem + ".") and not f.endswith(".json")), None)
+        needs_b = (float(v.get("end", 0)) - float(v.get("start", 0))) > MICRO_CUT_SECS
         if cached:
             srcs.append(f"projects/{os.path.basename(media_dir)}/{cached}")
             if i < len(manifest):
                 manifest[i]["src"] = cached
                 exclude_urls.add(manifest[i].get("url", ""))
+            if needs_b and not (i < len(manifest) and manifest[i].get("src_b")):
+                entry = manifest[i] if i < len(manifest) else {"stem": stem}
+                _fetch_second_image("space", v, media_dir, stem, entry,
+                                    exclude_urls, beats, size)
             print(f"    image {i}: cached ({cached})")
             continue
 
@@ -399,6 +478,8 @@ def gen_images_space(beats, proj_dir, media_dir, size):
             manifest.append(entry)
             srcs.append(f"projects/{os.path.basename(media_dir)}/{os.path.basename(out)}")
             print(f"    image {i}: NASA ✓ {hit.get('title', '')[:60]} ({hit['bytes'] // 1024}KB)")
+            if needs_b:
+                _fetch_second_image("space", v, media_dir, stem, entry, exclude_urls, beats, size)
             continue
 
         # --- 2. AI fallback: NASA had no authentic match ---
@@ -506,10 +587,11 @@ def _vo_frames(beats, fps):
     return frames
 
 
-def _spans(beats, srcs, clips, fps=None):
+def _spans(beats, srcs, clips, fps=None, srcs_b=None):
     """VISUAL grid: one or two shots per voice line. Lines longer than
-    MICRO_CUT_SECS split at ~45% into a counter-move second shot (hard cut,
-    fadeIn 0) so the eye re-engages mid-line."""
+    MICRO_CUT_SECS split at ~45% into a second image (a real second archive
+    hit / AI alternate angle when one was fetched, else the same image under a
+    counter-move camera) with a hard cut so the eye re-engages mid-line."""
     fps = fps or beats["format"].get("fps", FPS)
     spans = []
     for i, f in enumerate(_vo_frames(beats, fps)):
@@ -523,7 +605,8 @@ def _spans(beats, srcs, clips, fps=None):
                           "move": move, "intensity": inten,
                           "clip": clips.get(i), "fadeIn": 0 if i == 0 else 14,
                           "voi": i})
-            spans.append({"src": srcs[min(i, len(srcs) - 1)],
+            b = (srcs_b or {}).get(i)
+            spans.append({"src": b or srcs[min(i, len(srcs) - 1)],
                           "start": mid, "end": f["end"],
                           "move": COUNTER_MOVE.get(move, "pan-right"),
                           "intensity": round(inten * 0.85, 2),
@@ -538,6 +621,20 @@ def _spans(beats, srcs, clips, fps=None):
     return spans
 
 
+def _srcs_b(beats, media_dir):
+    """{line_index: staticFile path} for second micro-cut images, from the
+    images.json manifest's src_b fields."""
+    try:
+        manifest = json.load(open(os.path.join(media_dir, "images.json"), encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+    out = {}
+    for i, m in enumerate(manifest[:len(beats["vo"])]):
+        if m.get("src_b"):
+            out[i] = f"projects/{os.path.basename(media_dir)}/{m['src_b']}"
+    return out
+
+
 def gen_composition(beats, srcs, clips, comp_id, shot_dir, accent, pipeline="space"):
     """Write the AutoN.tsx Remotion composition from ACTUAL voice timings —
     in the pipeline's edit format. Visual grid may hold micro-cuts (2 shots
@@ -545,7 +642,8 @@ def gen_composition(beats, srcs, clips, comp_id, shot_dir, accent, pipeline="spa
     os.makedirs(shot_dir, exist_ok=True)
     fps = beats["format"].get("fps", FPS)
     total = beats["format"]["durationSec"]
-    spans = _spans(beats, srcs, clips, fps)
+    media_dir = os.path.join(ROOT, "media", "projects", beats["id"])
+    spans = _spans(beats, srcs, clips, fps, _srcs_b(beats, media_dir))
     vo_frames = _vo_frames(beats, fps)
 
     if pipeline == "finance":
@@ -950,6 +1048,8 @@ def main():
     ap.add_argument("--accent", default=None, help="caption accent color (default rotates)")
     ap.add_argument("--music", default=None, help="music bed id to mix (e.g. ambient-pad)")
     ap.add_argument("--skip-render", action="store_true")
+    ap.add_argument("--no-clips", action="store_true",
+                    help="skip video clips (degraded auto-retry mode)")
     args = ap.parse_args()
 
     pipeline = args.pipeline
@@ -994,7 +1094,7 @@ def main():
     # 3. real video clips for motion:true beats (history: archive.org footage
     #    first; everything: FAL AI clip when configured; stills as last resort)
     print("\n[3/8] video clips (payoff beats; history tries archive.org footage first)")
-    clips = gen_clips(beats, media_dir, pipeline)
+    clips = {} if args.no_clips else gen_clips(beats, media_dir, pipeline)
     if clips:
         print(f"      {len(clips)} clip(s): {sorted(clips)}")
 

@@ -89,16 +89,21 @@ class Worker {
     if (channel && channel.duration_s) {
       args.push('--duration', String(channel.duration_s));
     }
+    // auto-retry degrades: drop the expensive/flaky steps on the second pass
+    if ((job.retries || 0) > 0) {
+      args.push('--no-clips');
+    }
     if (job.proj_id && (job.status === 'failed' || job.status === 'cancelled' ||
         job.error === 'interrupted by server restart')) {
       args.push('--resume', path.join('shorts', job.proj_id));
     } else {
       args.push('--topic', job.topic);
       let style = job.style || (channel && channel.style) || settings.default_style;
-      // A/B hook variants: the variant hint rides along with the style line so
-      // every script generator (space/finance/history) shapes its hook to it
-      if (job.variant_hint) {
-        style = `${style || ''} HOOK REQUIREMENT: ${job.variant_hint}`.trim();
+      // A/B hook variants + auto-promoted winners: the hook hint rides along
+      // with the style line so every script generator shapes its hook to it
+      const hookHint = job.variant_hint || (channel && channel.default_hook_hint);
+      if (hookHint) {
+        style = `${style || ''} HOOK REQUIREMENT: ${hookHint}`.trim();
       }
       if (style) args.push('--style', style);
     }
@@ -166,8 +171,17 @@ class Worker {
       this.db.markTopicProduced(job.topic, finalInfo.title);
     } else {
       const tailErr = (log || '').trim().split('\n').filter(Boolean).slice(-3).join(' | ') || `exit ${code}`;
-      this.db.updateJob(job.id, { status: 'failed', error: tailErr, log });
-      this.db.notify('error', `Generation failed: ${job.topic} — ${tailErr.slice(0, 160)}`);
+      // auto-retry once with a degraded recipe (no AI clips) before failing —
+      // transient image/clip/network failures self-heal instead of waiting
+      // for a human
+      if ((job.retries || 0) < 1) {
+        this.db.run(`UPDATE jobs SET status='queued', retries=retries+1, error=?, log=?, updated_at=? WHERE id=?`,
+          `auto-retry 1/1 after: ${tailErr.slice(0, 140)}`, log, DB.now(), job.id);
+        this.db.notify('warn', `Generation failed (${tailErr.slice(0, 80)}) — auto-retrying degraded (no clips): ${job.topic}`);
+      } else {
+        this.db.updateJob(job.id, { status: 'failed', error: tailErr, log });
+        this.db.notify('error', `Generation failed: ${job.topic} — ${tailErr.slice(0, 160)}`);
+      }
     }
     this.poke();
     resolve();
@@ -225,10 +239,15 @@ class Worker {
         seo_json: JSON.stringify(seo),
         meta_json: JSON.stringify(meta),
       });
+      // tokenized review link (works from a phone via the notification URL)
+      this.db.run(`UPDATE shorts SET review_token=? WHERE id=? AND (review_token IS NULL OR review_token='')`,
+        require('crypto').randomBytes(10).toString('hex'), info.proj_id);
       if (meta.qc && meta.qc.verdict === 'flag') {
         this.db.notify('warn', `QC flagged "${info.title}": ${(meta.qc.issues || []).slice(0, 2).join(' | ') || 'see qc-report.json'} — publish will be blocked`);
       } else {
-        this.db.notify('success', `Short ready for review: "${info.title}" (${info.duration}s)`);
+        const token = this.db.get('SELECT review_token FROM shorts WHERE id=?', info.proj_id)?.review_token;
+        this.db.notify('success', `Short ready for review: "${info.title}" (${info.duration}s)`,
+          token ? { shortId: info.proj_id, reviewToken: token } : {});
       }
     } catch (err) {
       console.error('[worker] registerShort failed:', err);

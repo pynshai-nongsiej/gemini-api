@@ -69,13 +69,20 @@ async function researchTopics(db, count = 5, extraHints = '', channelId = null) 
     ? `\nHOOKS THAT MEASURED ABOVE 70% RETENTION ON THIS CHANNEL (study and imitate their angle, never their topic):\n${winners.slice(0, 8).map(w => `- "${w.hook || w.title}" (${Math.round(w.retention)}% retention)`).join('\n')}`
     : '';
 
+  // comment mining: questions the audience literally asked under published
+  // shorts — the highest-signal topic source there is
+  const questions = channelId ? db.minedQuestions(channelId) : [];
+  const questionsBlock = questions.length
+    ? `\nVIEWER QUESTIONS mined from this channel's comment section (PRIORITIZE these — real people are asking):\n${questions.map(q => `- ${q.title}`).join('\n')}`
+    : '';
+
   const prompt = `You are the head of content research for a faceless YouTube Shorts channel in the "${niche}" niche.
 Propose ${count} FRESH, specific, high-retention short topics.
 
 Rules:
 ${PIPELINE_TOPIC_RULES[pipeline] || PIPELINE_TOPIC_RULES.space}
 - No generic listicles, no "top 10", no news that will age in a week
-- Each must be explainable in ~40 seconds${extraHints ? `\nEXTRA HINTS: ${extraHints}` : ''}${winnersBlock}${exclusion}
+- Each must be explainable in ~40 seconds${extraHints ? `\nEXTRA HINTS: ${extraHints}` : ''}${winnersBlock}${questionsBlock}${exclusion}
 
 Return ONLY valid JSON: {"topics": ["...", "..."]}`;
 
@@ -184,6 +191,9 @@ async function runOperatorCycle(db, { count = null, hints = '', channelId = null
   const topics = await researchTopics(db, n + 2, hints, cid);
   const ranked = await scoreCuriosity(topics, niche);
   const chosen = ranked.slice(0, n);
+
+  // the mined questions influenced this research call — mark them consumed
+  if (cid) db.markMinedQuestionsUsed(cid);
 
   const run = db.createOperatorRun(chosen.length, cid);
   for (const topic of chosen) {
