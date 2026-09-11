@@ -35,13 +35,20 @@ function toast(msg, cls = '') {
 }
 const esc = (s) => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const dur = (s) => s ? `${Math.round(s)}s` : '—';
+/* USA targeting: every timestamp renders in US Eastern Time with an ET label */
 const when = (iso) => {
   if (!iso) return '—';
-  const d = new Date(iso);
-  return d.toLocaleDateString(undefined, { month: 'short', day: 'numeric' }) + ' ' +
-         d.toLocaleTimeString(undefined, { hour: '2-digit', minute: '2-digit' });
+  try {
+    return new Intl.DateTimeFormat('en-US', {
+      timeZone: 'America/New_York', month: 'short', day: 'numeric',
+      hour: 'numeric', minute: '2-digit', hour12: true,
+    }).format(new Date(iso)) + ' ET';
+  } catch { return String(iso); }
 };
-const VOICES = ['bm_george', 'bf_emma', 'am_adam', 'af_nova', 'am_onyx', 'bm_daniel', 'af_sarah', 'am_eric'];
+const VOICES = [
+  'dynamic', 'bm_george', 'bf_emma', 'am_adam', 'af_nova', 'am_onyx',
+  'bm_daniel', 'af_sarah', 'am_eric', 'bm_lewis', 'af_river', 'am_michael', 'bf_isabella'
+];
 const MUSIC = ['', 'ambient-pad', 'tech-pulse', 'lofi-warm', 'cinematic-min', 'docu-pluck'];
 
 /* defensive accessors — an unexpected API shape must NEVER blank the page */
@@ -152,7 +159,7 @@ async function viewOverview() {
           ${recent.map(s => {
             const m = safeMeta(s);
             return `<tr>
-              <td style="width:52px"><img src="${m.thumb}" style="width:44px;height:64px;object-fit:cover;border-radius:6px" onerror="this.style.visibility='hidden'"></td>
+              <td style="width:52px">${m.thumb ? `<img src="${m.thumb}" style="width:44px;height:64px;object-fit:cover;border-radius:6px" onerror="this.style.visibility='hidden'">` : ''}</td>
               <td><b>${esc(s.title)}</b><div class="dim" style="font-size:11.5px">
                 ${dur(s.duration_s)} · <span class="src-badge ${m.majorSrc}">${m.majorLabel}</span> ${m.nasaCount}/${m.total} NASA</div></td>
               <td style="text-align:right"><span class="pill ${s.status}">${s.status}</span></td>
@@ -179,13 +186,231 @@ function safeMeta(s) {
   try { m = JSON.parse(s.meta_json || '{}'); } catch {}
   const assets = m.imageAssets || [];
   const nasa = assets.filter(a => a.source === 'nasa').length;
+  const ret = m.retention && Number(m.retention.avgViewPercentage);
   return {
-    thumb: `/media/projects/${s.id}/b00-hook.nasa.jpg`,
+    thumb: s.thumbnailUrl || (assets[0] && assets[0].url) || null,
     nasaCount: m.nasa_images ?? nasa, total: m.images ?? (assets.length || 1),
     majorSrc: nasa > assets.length / 2 ? 'nasa' : (assets.length ? 'ai' : 'unknown'),
     majorLabel: nasa > assets.length / 2 ? 'NASA' : (assets.length ? 'AI' : '?'),
+    retention: Number.isFinite(ret) ? ret : null,
   };
 }
+
+/* ============ CHANNELS (multi-channel automation hub) ============ */
+let channelsCache = [];
+
+const PIPELINE_META = {
+  space: { label: 'NASA space', icon: '🛰', desc: 'NASA-first imagery · Ken Burns + word-pop captions', accent: '#7dd3fc' },
+  finance: { label: 'finance data-graphics', icon: '💰', desc: 'Wikimedia/LoC/Met archive-first · film grade + date & source stamps', accent: '#86efac' },
+  history: { label: 'archival history', icon: '🏛', desc: 'archive-first imagery · film grade + date/source stamps', accent: '#f5d76e' },
+};
+PIPELINE_META.finance.desc = 'kinetic numbers · counter/bars/percent/rule graphics over AI plates';
+
+async function viewChannels() {
+  const [channelsR, jobsR, runsR] = await Promise.all([
+    api.get('/api/channels'), api.get('/api/jobs'), api.get('/api/operator/runs')]);
+  const channels = arr(obj(channelsR).channels);
+  channelsCache = channels;
+  const jobs = arr(obj(jobsR).jobs);
+  const runs = arr(obj(runsR).runs);
+
+  $('#main').innerHTML = `
+    <div class="page-head">
+      <h1>Channels</h1>
+      <span class="sub">each channel: own niche · pipeline · voice · slots · YouTube connection</span>
+      <span class="spacer"></span>
+      <button class="btn" onclick="openAddChannel()">+ add channel</button>
+    </div>
+
+    ${channels.length ? channels.map(c => {
+      const meta = PIPELINE_META[c.pipeline] || { label: c.pipeline, icon: '◈', desc: '', accent: 'var(--accent)' };
+      const st = obj(c.stats);
+      const chanJobs = jobs.filter(j => (j.channel_id || 'cosmic-archive') === c.id);
+      const activeJobs = chanJobs.filter(j => ['queued', 'running'].includes(j.status));
+      const chanRuns = runs.filter(r => (r.channel_id || 'cosmic-archive') === c.id).slice(0, 3);
+      return `
+      <div class="panel channel-panel" id="chan-${c.id}">
+        <div class="channel-head">
+          <div class="channel-icon" style="border-color:${meta.accent}55;color:${meta.accent}">${meta.icon}</div>
+          <div style="flex:1;min-width:0">
+            <div class="row">
+              <h2 style="margin:0">${esc(c.name)}</h2>
+              <span class="pill" style="border-color:${meta.accent}66;color:${meta.accent}">${meta.label}</span>
+              ${c.enabled ? '' : '<span class="pill failed">disabled</span>'}
+            </div>
+            <div class="dim" style="font-size:12px;margin-top:2px">${esc(c.niche || '')}</div>
+          </div>
+          <div class="channel-yt">
+            ${c.youtube_authorized
+              ? `<span class="pill published" title="tokens: ${esc(c.tokens_path || 'youtube_tokens.json')}">✓ YouTube connected</span>`
+              : `<button class="btn sm" onclick="connectChannel('${c.id}')">connect YouTube</button>`}
+          </div>
+          <button class="btn sm ghost" onclick="openEditChannel('${c.id}')">edit</button>
+        </div>
+
+        <div class="stats channel-stats">
+          <div class="stat"><div class="v">${obj(st.shorts).total ?? 0}</div><div class="l">Shorts</div>
+            <div class="hint">${st.producedThisWeek ?? 0}/week · cadence ${c.cadence_per_week}</div></div>
+          <div class="stat"><div class="v">${obj(st.shorts).needs_review ?? 0}</div><div class="l">In review</div></div>
+          <div class="stat"><div class="v">${obj(st.shorts).published ?? 0}</div><div class="l">Published</div></div>
+          <div class="stat"><div class="v">${obj(st.queue).scheduled + obj(st.queue).scheduled_on_youtube}</div><div class="l">Scheduled</div></div>
+          <div class="stat"><div class="v">${obj(st.jobs).running ?? 0}</div><div class="l">Rendering</div>
+            <div class="hint">${obj(st.jobs).queued ?? 0} queued</div></div>
+        </div>
+
+        <div class="row" style="margin:4px 0 10px">
+          <button class="btn sm primary" onclick="runChannel('${c.id}')">🤖 auto-research & generate</button>
+          <button class="btn sm" title="One topic, 3 different hook angles — the feed votes, winners teach the researcher" onclick="runChannelVariants('${c.id}')">🧪 A/B hook race (3)</button>
+          <span class="dim" style="font-size:11.5px">${esc(meta.desc)} · voice ${esc(c.voice || 'dynamic')} · slots ${(c.publish_slots || []).join(', ')} ET${c.duration_s ? ` · ${c.duration_s}s target` : ''}${c.auto_generate ? ' · auto-generate ON' : ''}</span>
+        </div>
+
+        ${activeJobs.length ? activeJobs.map(j => `
+          <div style="padding:6px 0">
+            <div class="row"><span class="pill ${j.status}">${j.status}</span><b>${esc(j.topic)}</b></div>
+            <div class="prog"><div style="width:${j.status === 'running' ? 45 : 8}%"></div></div>
+          </div>`).join('') : ''}
+
+        <div class="grid2" style="margin-top:6px">
+          <div>
+            <div class="dimmer" style="font-size:10.5px;text-transform:uppercase;letter-spacing:.8px;margin-bottom:6px">Latest for this channel</div>
+            <div class="chan-shorts" id="chan-shorts-${c.id}">loading…</div>
+          </div>
+          <div>
+            <div class="dimmer" style="font-size:10.5px;text-transform:uppercase;letter-spacing:.8px;margin-bottom:6px">Recent operator runs</div>
+            ${chanRuns.length ? `<table>${chanRuns.map(r => `
+              <tr><td class="mono" style="font-size:10.5px">${r.id}</td>
+              <td><span class="pill">${r.status}</span></td>
+              <td>${r.planned_count}</td><td class="dim">${when(r.created_at)}</td></tr>`).join('')}</table>`
+              : '<div class="dim" style="font-size:12px">no runs yet — hit auto-research above</div>'}
+          </div>
+        </div>
+      </div>`;
+    }).join('') : '<div class="panel dim">no channels — add one</div>'}`;
+
+  // per-channel short strips (thumbnails)
+  for (const c of channels) {
+    try {
+      const { shorts } = await api.get(`/api/channels/${c.id}/shorts`);
+      const el = $(`#chan-shorts-${c.id}`);
+      if (!el) continue;
+      const list = arr(shorts).slice(0, 6);
+      el.innerHTML = list.length ? list.map(s => {
+        const m = safeMeta(s);
+        return `<a class="chan-short" title="${esc(s.title)} (${s.status})" onclick="openShort('${s.id}');return false" href="#">
+          ${m.thumb ? `<img src="${m.thumb}" loading="lazy" onerror="this.style.visibility='hidden'">` : '<div class="dim" style="font-size:9px;display:grid;place-items:center;height:100%">no img</div>'}
+          <span class="pill ${s.status}" style="position:absolute;bottom:4px;left:4px;font-size:8.5px;padding:2px 5px">${s.status === 'published' ? '▲' : s.status[0]}</span>
+        </a>`;
+      }).join('') : '<div class="dim" style="font-size:12px">nothing yet</div>';
+    } catch { /* strip is best-effort */ }
+  }
+}
+
+window.runChannel = async (id) => {
+  try {
+    const r = await api.post(`/api/channels/${id}/start`, {});
+    toast(`[${r.channel?.name || id}] operator planned ${r.topics.length} short(s)`, 'ok');
+    viewChannels();
+  } catch (e) { toast(e.message, 'err'); }
+};
+
+window.runChannelVariants = async (id) => {
+  try {
+    const r = await api.post(`/api/channels/${id}/start`, { variants: 3 });
+    toast(`[${r.channel?.name || id}] A/B hook race started: 3 variants of "${(r.topics[0] || '').slice(0, 40)}…"`, 'ok');
+    viewChannels();
+  } catch (e) { toast(e.message, 'err'); }
+};
+
+window.connectChannel = async (id) => {
+  try {
+    const { url } = await api.get(`/api/youtube/auth?channel=${encodeURIComponent(id)}`);
+    window.open(url, '_blank');
+    toast('complete the Google consent in the new tab — it authorizes THIS channel');
+  } catch (e) { toast(e.message, 'err'); }
+};
+
+function channelFormHTML(c = {}) {
+  return `
+    <label class="f"><span class="lt">CHANNEL NAME</span><input id="cf-name" value="${esc(c.name || '')}"></label>
+    <label class="f"><span class="lt">CHANNEL ID (slug, immutable)</span><input id="cf-id" value="${esc(c.id || '')}" ${c.id ? 'disabled' : ''} placeholder="my-second-channel"></label>
+    <label class="f"><span class="lt">NICHE — DRIVES TOPIC RESEARCH</span><input id="cf-niche" value="${esc(c.niche || '')}"></label>
+    <label class="f"><span class="lt">PIPELINE (script grammar + imagery + edit format)</span>
+      <select id="cf-pipeline">
+        ${Object.entries(PIPELINE_META).map(([k, m]) => `<option value="${k}" ${c.pipeline === k ? 'selected' : ''}>${m.icon} ${k} — ${m.label}</option>`).join('')}
+      </select></label>
+    <label class="f"><span class="lt">STYLE HINT</span><input id="cf-style" value="${esc(c.style || '')}"></label>
+    <label class="f"><span class="lt">VOICE (KOKORO)</span>
+      <select id="cf-voice">${VOICES.map(v => `<option value="${v}" ${c.voice === v ? 'selected' : ''}>${v === 'dynamic' ? '✦ dynamic (auto-pick)' : v}</option>`).join('')}</select></label>
+    <label class="f"><span class="lt">CADENCE / WEEK</span><input id="cf-cadence" type="number" min="1" max="21" value="${c.cadence_per_week ?? 14}"></label>
+    <label class="f"><span class="lt">VIDEOS PER RUN</span><input id="cf-perrun" type="number" min="1" max="5" value="${c.videos_per_run ?? 2}"></label>
+    <label class="f"><span class="lt">TARGET DURATION (s, 20-58 — shorter = higher completion)</span>
+      <input id="cf-duration" type="number" min="20" max="58" value="${c.duration_s ?? 40}"></label>
+    <label class="f"><span class="lt">PUBLISH SLOTS — ET (HH:MM)</span><input id="cf-slots" value="${(c.publish_slots || []).join(', ')}" placeholder="13:00, 19:00"></label>
+    <div class="setting-row">
+      <label class="toggle"><input type="checkbox" id="cf-auto" ${c.auto_generate ? 'checked' : ''}><span class="tr"></span></label>
+      <div class="st"><b>Auto-generate</b><div class="d">scheduler researches & produces this channel's cadence with its own niche</div></div>
+    </div>
+    <div class="setting-row">
+      <label class="toggle"><input type="checkbox" id="cf-enabled" ${c.enabled ? 'checked' : ''}><span class="tr"></span></label>
+      <div class="st"><b>Enabled</b><div class="d">disabled channels are skipped by the scheduler</div></div>
+    </div>`;
+}
+
+function channelPayloadFromForm() {
+  return {
+    name: $('#cf-name').value.trim(),
+    niche: $('#cf-niche').value.trim(),
+    pipeline: $('#cf-pipeline').value,
+    style: $('#cf-style').value.trim(),
+    voice: $('#cf-voice').value,
+    cadence_per_week: parseInt($('#cf-cadence').value) || 14,
+    videos_per_run: parseInt($('#cf-perrun').value) || 2,
+    duration_s: parseInt($('#cf-duration').value) || 40,
+    publish_slots: $('#cf-slots').value.split(',').map(t => t.trim()).filter(Boolean),
+    auto_generate: $('#cf-auto').checked,
+    enabled: $('#cf-enabled').checked,
+  };
+}
+
+window.openAddChannel = () => {
+  openModal(`
+    <h2 style="font-size:16px;margin-bottom:14px">Add channel</h2>
+    ${channelFormHTML()}
+    <div class="row" style="margin-top:14px">
+      <button class="btn primary" onclick="submitAddChannel()">create channel</button>
+      <button class="btn ghost" onclick="closeModal()">cancel</button>
+    </div>`);
+};
+
+window.submitAddChannel = async () => {
+  try {
+    const payload = channelPayloadFromForm();
+    payload.id = $('#cf-id').value.trim();
+    const r = await api.post('/api/channels', payload);
+    toast(`channel created: ${r.channel.name} — connect YouTube on its card`, 'ok');
+    closeModal(); viewChannels();
+  } catch (e) { toast(e.message, 'err'); }
+};
+
+window.openEditChannel = (id) => {
+  const c = channelsCache.find(x => x.id === id);
+  if (!c) return;
+  openModal(`
+    <h2 style="font-size:16px;margin-bottom:14px">Edit — ${esc(c.name)}</h2>
+    ${channelFormHTML(c)}
+    <div class="row" style="margin-top:14px">
+      <button class="btn primary" onclick="submitEditChannel('${id}')">save</button>
+      <button class="btn ghost" onclick="closeModal()">cancel</button>
+    </div>`);
+};
+
+window.submitEditChannel = async (id) => {
+  try {
+    await api.put(`/api/channels/${id}`, channelPayloadFromForm());
+    toast('channel saved', 'ok');
+    closeModal(); viewChannels();
+  } catch (e) { toast(e.message, 'err'); }
+};
 
 /* ============ GENERATE ============ */
 async function viewGenerate() {
@@ -207,7 +432,7 @@ async function viewGenerate() {
         <label class="f"><span class="lt">STYLE / NICHE</span>
           <input id="g-style" placeholder="space documentary"></label>
         <label class="f"><span class="lt">VOICE (KOKORO)</span>
-          <select id="g-voice">${VOICES.map(v => `<option>${v}</option>`).join('')}</select></label>
+          <select id="g-voice">${VOICES.map(v => `<option value="${v}">${v === 'dynamic' ? '✦ dynamic (auto-pick)' : v}</option>`).join('')}</select></label>
         <label class="f"><span class="lt">MUSIC BED</span>
           <select id="g-music">${MUSIC.map(v => `<option value="${v}">${v || 'none'}</option>`).join('')}</select></label>
       </div>
@@ -288,11 +513,52 @@ window.showLog = async (id) => {
 };
 
 /* ============ REVIEW / LIBRARY ============ */
+function removeShortCard(id) {
+  const card = $(`#card-${id}`);
+  if (card) {
+    card.style.transition = 'opacity 0.25s ease, transform 0.25s ease';
+    card.style.opacity = '0';
+    card.style.transform = 'scale(0.95)';
+    setTimeout(() => {
+      card.remove();
+      const cards = $$('.cards .card');
+      if (cards.length === 0) {
+        const container = $('.cards');
+        if (container && tab === 'review') {
+          container.outerHTML = '<div class="panel dim">review queue is empty ✨</div>';
+        }
+      }
+      const mainEl = $('#main');
+      if (mainEl && mainEl.dataset.renderedKey) {
+        const parts = mainEl.dataset.renderedKey.split('|').filter(p => !p.includes(id));
+        mainEl.dataset.renderedKey = parts.join('|');
+      }
+    }, 250);
+  }
+}
+
 async function viewShorts(reviewOnly) {
-  const shorts = arr(obj(await api.get('/api/shorts')).shorts);
+  // channel names are cosmetic — a missing/old /api/channels route must NEVER
+  // blank the review or library views
+  const shortsR = await api.get('/api/shorts');
+  let chanName = new Map();
+  try {
+    const chansR = await api.get('/api/channels');
+    chanName = new Map(arr(obj(chansR).channels).map(c => [c.id, c.name]));
+  } catch { /* old server or transient — fall back to raw channel ids */ }
+  const shorts = arr(obj(shortsR).shorts);
   const list = reviewOnly ? shorts.filter(s => s.status === 'needs_review') : shorts;
 
-  $('#main').innerHTML = `
+  const mainEl = $('#main');
+  const viewType = reviewOnly ? 'review' : 'library';
+  const listKey = `${viewType}:${list.map(s => `${s.id}:${s.status}:${s.title}`).join('|')}`;
+  if (mainEl.dataset.renderedKey === listKey && mainEl.dataset.viewType === viewType) {
+    return; // exact same short list: do NOT re-render or reload video elements
+  }
+  mainEl.dataset.renderedKey = listKey;
+  mainEl.dataset.viewType = viewType;
+
+  mainEl.innerHTML = `
     <div class="page-head">
       <h1>${reviewOnly ? 'Review queue' : 'Library'}</h1>
       <span class="sub">${reviewOnly ? 'approval-first — you are the quality gate' : `${list.length} short(s)`}</span>
@@ -302,7 +568,7 @@ async function viewShorts(reviewOnly) {
         const m = safeMeta(s);
         const assets = (() => { try { return JSON.parse(s.meta_json).imageAssets || []; } catch { return []; } })();
         return `
-        <div class="card">
+        <div class="card" id="card-${s.id}">
           <div class="media">
             ${s.videoUrl ? `<video src="${s.videoUrl}" controls preload="metadata"></video>` : `<div class="dim" style="display:grid;place-items:center;height:100%">no file</div>`}
             <div class="src-tag">
@@ -312,7 +578,7 @@ async function viewShorts(reviewOnly) {
           </div>
           <div class="body">
             <h3>${esc(s.title)}</h3>
-            <div class="meta">${dur(s.duration_s)} · ${esc((s.voice || '').replace('kokoro:', ''))} · ${when(s.created_at)}</div>
+            <div class="meta"><span class="src-badge ai" style="border-color:var(--line)">${esc(chanName.get(s.channel_id || 'cosmic-archive') || s.channel_id || 'channel')}</span> · ${dur(s.duration_s)} · ${esc((s.voice || '').replace('kokoro:', ''))} · ${when(s.created_at)}</div>
             ${assets.length ? `<div class="asset-strip">${assets.map(a =>
               `<div class="a ${a.source}" title="${esc(a.title)} · ${a.source.toUpperCase()}" onclick="openShort('${s.id}')">
                  <img src="${a.url}" loading="lazy" onerror="this.parentElement.style.opacity=.2"></div>`).join('')}
@@ -323,6 +589,8 @@ async function viewShorts(reviewOnly) {
               ${s.status === 'needs_review' ? `
                 <button class="btn sm primary" onclick="approveShort('${s.id}')">approve</button>
                 <button class="btn sm danger" onclick="rejectShort('${s.id}')">reject</button>` : ''}
+              ${s.status === 'approved' ? `
+                <button class="btn sm danger" title="unapprove + remove from publish queue" onclick="rejectShort('${s.id}')">reject</button>` : ''}
               <button class="btn sm" onclick="openShort('${s.id}')">inspect</button>
               ${s.youtube_url ? `<a class="btn sm" href="${s.youtube_url}" target="_blank">↗</a>` : ''}
             </div>
@@ -346,6 +614,12 @@ window.openShort = async (id) => {
       <span class="dim">${dur(s.duration_s)} · ${esc(s.composition)}</span>
       <span class="dim">· voice ${esc((s.voice || '').replace('kokoro:', ''))}</span>
       ${s.views ? `<span class="dim">· ▶ ${s.views} views</span>` : ''}
+      ${s.meta?.retention ? `<span class="dim">· 📈 ${Number(s.meta.retention.avgViewPercentage).toFixed(0)}% avg viewed</span>` : ''}
+    </div>
+    <div class="dim" style="font-size:11.5px;margin:-6px 0 10px;padding:8px 12px;border:1px solid var(--line);border-radius:8px">
+      💡 After it publishes: set a <b>Related video</b> on the Short in YouTube Studio
+      (Content → the Short → Related video) pointing at your channel's best performer —
+      that's the official Shorts→long-form funnel and it compounds reach.
     </div>
 
     ${assets.length ? `
@@ -371,6 +645,8 @@ window.openShort = async (id) => {
       ${s.status === 'needs_review' ? `
         <button class="btn primary" onclick="approveShort('${s.id}', true)">approve & schedule</button>
         <button class="btn danger" onclick="rejectShort('${s.id}', true)">reject</button>` : ''}
+      ${s.status === 'approved' ? `
+        <button class="btn danger" onclick="rejectShort('${s.id}', true)">reject (removes from queue)</button>` : ''}
       <span class="spacer" style="flex:1"></span>
       <button class="btn ghost" onclick="closeModal()">close</button>
     </div>`);
@@ -390,9 +666,16 @@ window.approveShort = async (id, inModal = false) => {
   if (!confirm('Confirm you REVIEWED this short (audio · captions · factual claims · NASA imagery titles). Approve & schedule?')) return;
   try {
     const r = await api.post(`/api/shorts/${id}/approve`, { confirm_reviewed: true });
-    toast(`approved — publishes ${when(r.scheduled_at)}`, 'ok');
+    toast(r.youtube_scheduled
+      ? `approved — YouTube publishes it ${when(r.scheduled_at)} (on YouTube's clock, Mac can be off)`
+      : `approved — queued locally for ${when(r.scheduled_at)} (connect YouTube to schedule server-side)`, 'ok');
     if (inModal) closeModal();
-    refresh();
+    if (tab === 'review') {
+      removeShortCard(id);
+    } else {
+      refresh();
+    }
+    refreshBadges();
   } catch (e) { toast(e.message, 'err'); }
 };
 window.rejectShort = async (id, inModal = false) => {
@@ -401,20 +684,26 @@ window.rejectShort = async (id, inModal = false) => {
     await api.post(`/api/shorts/${id}/reject`);
     toast('rejected', 'ok');
     if (inModal) closeModal();
-    refresh();
+    if (tab === 'review') {
+      removeShortCard(id);
+    } else {
+      refresh();
+    }
+    refreshBadges();
   } catch (e) { toast(e.message, 'err'); }
 };
 
 /* ============ PUBLISH ============ */
 async function viewPublish() {
-  const [queueR, ytR] = await Promise.all([
+  const [queueR, yt] = await Promise.all([
     api.get('/api/publish-queue'), api.get('/api/youtube/status')]);
   const queue = arr(obj(queueR).queue);
-  const yt = obj(ytR);
+  const calendarDays = arr(obj(queueR).calendarDays);
+  const tz = obj(queueR).timezone || 'America/New_York';
 
   $('#main').innerHTML = `
     <div class="page-head"><h1>Publish</h1>
-      <span class="sub">YouTube upload · scheduled slots</span></div>
+      <span class="sub">USA targeting · all times US Eastern (${esc(tz)})</span></div>
 
     <div class="panel">
       <h2>YouTube connection</h2>
@@ -430,29 +719,73 @@ async function viewPublish() {
     </div>
 
     <div class="panel">
+      <h2>Weekly slot calendar — next 7 days (ET)</h2>
+      ${calendarDays.length ? `<div class="days-grid">
+        ${calendarDays.map(d => `
+          <div class="day-card ${d.is_today ? 'today' : ''}">
+            <div class="day-label">${esc(d.label)}</div>
+            ${(d.slots || []).map(s => {
+              let cls = 'open';
+              let txt = '○ open';
+              let tip = s.at_et;
+              if (s.filled) {
+                cls = s.short?.status === 'published' ? 'published' : 'filled';
+                txt = `● ${s.short?.title ? esc(s.short.title) : 'scheduled'}`;
+                tip = `${s.short?.title || 'Scheduled'} (${s.at_et})`;
+              } else if (s.is_past) {
+                cls = 'past';
+                txt = '— passed';
+              }
+              return `
+              <div class="slot ${cls}" title="${esc(tip)}">
+                <span class="slot-time">${esc(s.time_et || s.slot)}</span>
+                <span class="slot-state">${txt}</span>
+              </div>`;
+            }).join('')}
+          </div>`).join('')}
+      </div>
+      <div class="dim" style="font-size:12px;margin-top:10px">
+        Approving a short automatically schedules it into the next open slot (never collides).
+        2 slots daily (<b>1:00 PM & 7:00 PM ET</b>) = 14/week — optimized for USA nationwide lunchtime & evening prime-time.</div>`
+      : '<div class="dim">no upcoming slots — configure publish slots in Settings</div>'}
+    </div>
+
+    <div class="panel">
       <h2>Queue</h2>
       ${queue.length ? `<table>
-        <tr><th>Short</th><th style="width:150px">Scheduled</th><th style="width:110px">Status</th><th style="width:230px">Actions</th></tr>
-        ${queue.map(q => `
+        <tr><th>Short</th><th style="width:160px">Scheduled (ET)</th><th style="width:110px">Status</th><th style="width:280px">Actions</th></tr>
+      ${queue.map(q => `
           <tr>
             <td><b>${esc(q.short_title || q.short_id)}</b>
               ${q.youtube_id ? `<div><a href="https://youtu.be/${q.youtube_id}" target="_blank" class="mono">${q.youtube_id} ↗</a></div>` : ''}
               ${q.error ? `<div class="dim mono" style="color:var(--err);font-size:10.5px">${esc(q.error).slice(0, 120)}</div>` : ''}</td>
-            <td class="dim">${when(q.scheduled_at)}</td>
-            <td><span class="pill ${q.status}">${q.status}</span></td>
+            <td class="dim">${esc(q.scheduled_at_et || when(q.scheduled_at))}</td>
+            <td><span class="pill ${q.status === 'scheduled_on_youtube' ? 'approved' : q.status}">${q.status === 'scheduled_on_youtube' ? 'scheduled (YouTube)' : q.status}</span></td>
             <td>
               ${q.status === 'scheduled' ? `
                 <button class="btn sm primary" onclick="queueAction(${q.id},'publish-now')">publish now</button>
                 <button class="btn sm" onclick="queueAction(${q.id},'pause')">pause</button>` : ''}
-              ${q.status === 'paused' ? `<button class="btn sm" onclick="queueAction(${q.id},'resume')">resume</button>` : ''}
-              ${q.status === 'failed' ? `<button class="btn sm" onclick="queueAction(${q.id},'retry')">retry</button>` : ''}
+              ${q.status === 'scheduled_on_youtube' ? `
+                <button class="btn sm primary" onclick="queueAction(${q.id},'publish-now')">publish now</button>
+                <span class="dim" style="font-size:11px">on YouTube's clock — your Mac can be off</span>` : ''}
+              ${q.status === 'paused' ? `
+                <button class="btn sm" onclick="queueAction(${q.id},'resume')">resume</button>` : ''}
+              ${q.status === 'failed' ? `
+                <button class="btn sm" onclick="queueAction(${q.id},'retry')">retry</button>` : ''}
+              ${q.status !== 'publishing' && q.status !== 'published' ? `
+                <button class="btn sm danger" onclick="removeQueue(${q.id}, '${esc(q.short_title || q.short_id)}')">remove</button>` : ''}
             </td>
           </tr>`).join('')}
-      </table>` : '<div class="dim">queue empty — approve shorts in Review to schedule them</div>'}
+      </table>` : '<div class="dim">queue empty — approve shorts in Review to schedule them (uploaded to YouTube as private + publishAt, published by YouTube at the slot time)</div>'}
     </div>`;
 }
 window.queueAction = async (id, action) => {
   try { await api.post(`/api/publish-queue/${id}/${action}`); toast(action, 'ok'); viewPublish(); }
+  catch (e) { toast(e.message, 'err'); }
+};
+window.removeQueue = async (id, title) => {
+  if (!confirm(`Remove "${title}" from the publish queue?\nThe short stays approved — re-schedule or reject it from the Library.`)) return;
+  try { await api.post(`/api/publish-queue/${id}/remove`); toast('removed from queue', 'ok'); viewPublish(); refresh(); }
   catch (e) { toast(e.message, 'err'); }
 };
 window.startYouTubeAuth = async () => {
@@ -471,9 +804,18 @@ async function viewAnalytics() {
   const totalLikes = pub.reduce((a, s) => a + (s.likes || 0), 0);
   const nasaShorts = shorts.filter(s => (safeMeta(s).nasaCount || 0) > 0).length;
   const nasaAssets = shorts.reduce((a, s) => a + (safeMeta(s).nasaCount || 0), 0);
+  const winners = pub.filter(s => (safeMeta(s).retention || 0) >= 70);
+  const retCell = (s) => {
+    const r = safeMeta(s).retention;
+    if (!Number.isFinite(r)) return '<span class="dimmer">—</span>';
+    const cls = r >= 70 ? 'published' : (r >= 50 ? 'approved' : 'failed');
+    return `<span class="pill ${cls}" title="average view percentage — 70%+ feeds the research loop">${r.toFixed(0)}%</span>`;
+  };
 
   $('#main').innerHTML = `
-    <div class="page-head"><h1>Analytics</h1><span class="sub">channel performance · imagery mix</span></div>
+    <div class="page-head"><h1>Analytics</h1><span class="sub">channel performance · retention · imagery mix</span>
+      <span class="spacer"></span>
+      <button class="btn" onclick="refreshAnalyticsNow()">↻ refresh from YouTube</button></div>
 
     <div class="stats">
       <div class="stat"><div class="v">${pub.length}</div><div class="l">Published</div></div>
@@ -481,6 +823,8 @@ async function viewAnalytics() {
       <div class="stat"><div class="v">${totalLikes.toLocaleString()}</div><div class="l">Total likes</div></div>
       <div class="stat"><div class="v">${nasaAssets}</div><div class="l">NASA assets used</div>
         <div class="hint">across ${nasaShorts} short(s)</div></div>
+      <div class="stat"><div class="v">${winners.length}</div><div class="l">70%+ retention</div>
+        <div class="hint">promoted by research loop</div></div>
     </div>
 
     ${pub.length ? `
@@ -501,21 +845,29 @@ async function viewAnalytics() {
     <div class="panel">
       <h2>All shorts</h2>
       ${shorts.length ? `<table>
-        <tr><th>Title</th><th>Status</th><th>NASA / AI</th><th>Views</th><th>Likes</th><th>Published</th></tr>
+        <tr><th>Title</th><th>Status</th><th>NASA / AI</th><th>Views</th><th>Likes</th><th>Retention</th><th>Published</th></tr>
         ${shorts.map(s => {
           const m = safeMeta(s);
           return `<tr>
-            <td><b>${esc(s.title)}</b><div class="dimmer" style="font-size:10.5px">${esc(s.id)}</div></td>
+            <td><b>${esc(s.title)}</b><div class="dimmer" style="font-size:10.5px">${esc(s.id)}${s.variant_group ? ` · 🧪 ${esc(s.variant_group)}` : ''}</div></td>
             <td><span class="pill ${s.status}">${s.status}</span></td>
             <td><span class="src-badge ${m.majorSrc}">${m.nasaCount}/${m.total}</span></td>
             <td>${(s.views || 0).toLocaleString()}</td>
             <td>${(s.likes || 0).toLocaleString()}</td>
+            <td>${retCell(s)}</td>
             <td class="dim">${when(s.published_at)}</td>
           </tr>`;
         }).join('')}
       </table>` : '<div class="dim">nothing yet</div>'}
     </div>`;
 }
+window.refreshAnalyticsNow = async () => {
+  try {
+    const r = await api.post('/api/analytics/refresh');
+    toast(`refreshed: ${r.views_updated} stats, ${r.retention_updated} retention (0 retention? re-connect YouTube to grant the new analytics permission)`, 'ok');
+    viewAnalytics();
+  } catch (e) { toast(e.message, 'err'); }
+};
 
 /* ============ SETTINGS ============ */
 async function viewSettings() {
@@ -569,12 +921,20 @@ async function viewSettings() {
       <div class="grid3">
         <label class="f"><span class="lt">DEFAULT VOICE</span><input id="s-voice" value="${esc(s.default_voice)}"></label>
         <label class="f"><span class="lt">DEFAULT STYLE</span><input id="s-style" value="${esc(s.default_style)}"></label>
-        <label class="f"><span class="lt">PUBLISH SLOTS (HH:MM)</span><input id="s-slots" value="${(s.publish_slots || []).join(', ')}"></label>
+        <label class="f"><span class="lt">PUBLISH SLOTS — US EASTERN (HH:MM)</span>
+          <input id="s-slots" value="${(s.publish_slots || []).join(', ')}" placeholder="13:00, 19:00"></label>
       </div>
+      <div class="dim" style="font-size:12px;margin:-6px 0 10px">
+        USA audience targeting: slots are interpreted in <b>America/New_York</b> (ET), DST-safe.
+        2 slots daily (13:00 + 19:00 ET = 1:00 PM & 7:00 PM ET) = 14 shorts/week — set cadence to 14 to auto-fill both slots.</div>
 
       <div class="setting-row">
         <label class="toggle"><input type="checkbox" id="s-auto" ${s.auto_generate ? 'checked' : ''}><span class="tr"></span></label>
         <div class="st"><b>Auto-generate</b><div class="d">scheduler researches & produces shorts to fill the weekly cadence</div></div>
+      </div>
+      <div class="setting-row">
+        <label class="toggle"><input type="checkbox" id="s-aicheck" ${s.declare_ai_media ? 'checked' : ''}><span class="tr"></span></label>
+        <div class="st"><b>Declare altered/synthetic content</b><div class="d">YouTube AI disclosure — marks uploads as containing altered or synthetic media (containsSyntheticMedia)</div></div>
       </div>
       <div class="setting-row">
         <label class="toggle"><input type="checkbox" id="s-autopr" ${s.auto_approve ? 'checked' : ''}><span class="tr"></span></label>
@@ -596,6 +956,7 @@ async function viewSettings() {
         default_voice: $('#s-voice').value,
         default_style: $('#s-style').value,
         youtube_privacy: $('#s-privacy').value,
+        declare_ai_media: $('#s-aicheck').checked,
         publish_slots: $('#s-slots').value.split(',').map(t => t.trim()).filter(Boolean),
         auto_generate: $('#s-auto').checked,
         auto_approve: $('#s-autopr').checked,
@@ -617,6 +978,13 @@ async function viewSettings() {
 
 /* ============ router ============ */
 window.switchTab = (t) => {
+  if (tab !== t) {
+    const mainEl = $('#main');
+    if (mainEl) {
+      delete mainEl.dataset.renderedKey;
+      delete mainEl.dataset.viewType;
+    }
+  }
   tab = t;
   $$('.nav-item').forEach(b => b.classList.toggle('active', b.dataset.tab === t));
   refresh();
@@ -625,6 +993,7 @@ window.switchTab = (t) => {
 async function refresh() {
   try {
     if (tab === 'overview') await viewOverview();
+    else if (tab === 'channels') await viewChannels();
     else if (tab === 'generate') await viewGenerate();
     else if (tab === 'review') await viewShorts(true);
     else if (tab === 'library') await viewShorts(false);
@@ -653,5 +1022,9 @@ window.closeModal = closeModal;
 $$('.nav-item').forEach(b => b.onclick = () => switchTab(b.dataset.tab));
 switchTab('overview');
 pollTimer = setInterval(() => {
-  if (['overview', 'generate', 'review'].includes(tab)) refresh();
+  if (['overview', 'generate', 'channels'].includes(tab)) refresh();
+  else {
+    refreshBadges();
+    refreshStatus();
+  }
 }, 6000);

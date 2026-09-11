@@ -26,15 +26,17 @@ function loadEnvFile() {
 const env = loadEnvFile();
 
 const DEFAULT_SETTINGS = {
-  channel_name: 'Cosmic Shorts',
+  channel_name: 'Cosmic Archive',
   niche: 'space and science mysteries',
-  cadence_per_week: 5,
-  videos_per_run: 1,
-  default_voice: env.KOKORO_VOICE || 'bm_george',
+  cadence_per_week: 14,              // 2 shorts daily
+  videos_per_run: 2,
+  default_voice: env.KOKORO_VOICE || 'dynamic',
   default_style: 'space documentary',
   default_music: '',
-  publish_slots: ['17:00'],        // server-local HH:MM
-  youtube_privacy: 'public',        // public | unlisted | private
+  publish_slots: ['13:00', '19:00'], // US Eastern Time (1:00 PM & 7:00 PM ET — lunch & evening USA peak audience)
+  timezone: 'America/New_York',      // all publish-slot math runs in ET
+  youtube_privacy: 'public',        // public | unlisted | private — privacy a scheduled video flips to at publishAt
+  declare_ai_media: true,           // mark uploads as altered/synthetic content (YouTube AI disclosure)
   auto_generate: false,             // scheduler fills the weekly cadence
   auto_approve: false,              // KEEP FALSE: human review gate
   api_key: '',                      // if set, mutating routes require x-api-key

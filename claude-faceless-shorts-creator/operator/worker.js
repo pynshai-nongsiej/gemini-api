@@ -13,6 +13,11 @@ const { suggestSEO } = require('./seo');
 
 const MAX_CONCURRENT = 1;   // Kokoro + Remotion renders are heavy — serialize
 const POLL_MS = 4000;
+const DYNAMIC_VOICES = [
+  'bm_george', 'bf_emma', 'am_adam', 'af_nova', 'am_onyx',
+  'bm_daniel', 'af_sarah', 'am_eric', 'bm_lewis', 'af_river',
+  'am_michael', 'bf_isabella'
+];
 
 class Worker {
   constructor(db) {
@@ -28,7 +33,6 @@ class Worker {
 
   async tick() {
     if (this.running) return;
-    if (this.runningCount() >= MAX_CONCURRENT) return;
     const job = this.db.get(`SELECT * FROM jobs WHERE status='queued' ORDER BY created_at ASC LIMIT 1`);
     if (!job) return;
     this.runJob(job).catch(err => {
@@ -38,14 +42,15 @@ class Worker {
     });
   }
 
-  runningCount() { return this.running ? 1 : 0; }
-
   requestCancel(jobId) {
     if (this.running && this.running.job.id === jobId) {
       this.cancels.add(jobId);
-      const { child } = this.running;
-      try { process.kill(-child.pid, 'SIGTERM'); } catch { try { child.kill('SIGTERM'); } catch {} }
-      return 'killing';
+      try {
+        process.kill(-this.running.child.pid, 'SIGTERM');
+      } catch {
+        try { this.running.child.kill('SIGTERM'); } catch {}
+      }
+      return 'cancelling';
     }
     // not started yet -> just dequeue
     const job = this.db.getJob(jobId);
@@ -56,19 +61,51 @@ class Worker {
     return job ? job.status : 'not_found';
   }
 
+  resolveVoice(job, settings, channel = null) {
+    const requested = (job.voice || (channel && channel.voice) || settings.default_voice || 'dynamic').trim();
+    if (requested && requested !== 'dynamic' && requested !== 'auto') {
+      return requested;
+    }
+    // Dynamic selection: avoid repeating the most recent voices in DB
+    try {
+      const recent = this.db.all('SELECT voice FROM shorts WHERE voice IS NOT NULL ORDER BY created_at DESC LIMIT 6')
+        .map(r => (r.voice || '').replace(/^kokoro:/, '').trim())
+        .filter(Boolean);
+      const candidates = DYNAMIC_VOICES.filter(v => !recent.slice(0, 2).includes(v));
+      const pool = candidates.length ? candidates : DYNAMIC_VOICES;
+      return pool[Math.floor(Math.random() * pool.length)];
+    } catch {
+      return DYNAMIC_VOICES[Math.floor(Math.random() * DYNAMIC_VOICES.length)];
+    }
+  }
+
   buildArgs(job, settings) {
+    const channel = job.channel_id ? this.db.getChannel(job.channel_id) : null;
     const args = ['tools/make_short.py'];
+    if (channel && channel.pipeline && channel.pipeline !== 'space') {
+      args.push('--pipeline', channel.pipeline);
+    }
+    // completion-rate lever: per-channel runtime (finance runs short)
+    if (channel && channel.duration_s) {
+      args.push('--duration', String(channel.duration_s));
+    }
     if (job.proj_id && (job.status === 'failed' || job.status === 'cancelled' ||
         job.error === 'interrupted by server restart')) {
       args.push('--resume', path.join('shorts', job.proj_id));
     } else {
       args.push('--topic', job.topic);
-      if (job.style || settings.default_style) args.push('--style', job.style || settings.default_style);
+      let style = job.style || (channel && channel.style) || settings.default_style;
+      // A/B hook variants: the variant hint rides along with the style line so
+      // every script generator (space/finance/history) shapes its hook to it
+      if (job.variant_hint) {
+        style = `${style || ''} HOOK REQUIREMENT: ${job.variant_hint}`.trim();
+      }
+      if (style) args.push('--style', style);
     }
-    if (job.voice) args.push('--voice', job.voice);
-    else if (settings.default_voice) args.push('--voice', settings.default_voice);
-    if (job.music) args.push('--music', job.music);
-    else if (settings.default_music) args.push('--music', settings.default_music);
+    const voice = this.resolveVoice(job, settings, channel);
+    if (voice) args.push('--voice', voice);
+    const music = job.music || (channel && channel.music) || settings.default_music;
+    if (music) args.push('--music', music);
     return args;
   }
 
@@ -141,7 +178,14 @@ class Worker {
     try {
       const beats = JSON.parse(fs.readFileSync(info.beats, 'utf8'));
       const voText = (beats.vo || []).map(v => v.text).join(' ');
-      const seo = await suggestSEO(info.title, voText, this.db.getSettings());
+      const channel = job.channel_id ? this.db.getChannel(job.channel_id) : null;
+      // SEO sees the channel's niche/channel name, not the global defaults
+      const seoSettings = {
+        ...this.db.getSettings(),
+        niche: (channel && channel.niche) || this.db.getSettings().niche,
+        channel_name: (channel && channel.name) || this.db.getSettings().channel_name,
+      };
+      const seo = await suggestSEO(info.title, voText, seoSettings);
 
       // asset manifest: NASA-first imagery provenance per beat
       let imageAssets = [];
@@ -157,8 +201,13 @@ class Worker {
       const meta = {
         hook: beats.vo?.[0]?.text || '',
         accent: info.accent,
+        pipeline: info.pipeline || null,
         images: info.images,
         nasa_images: info.nasa_images || imageAssets.filter(a => a.source === 'nasa').length,
+        real_images: (info.real_images ?? imageAssets.filter(a => a.source !== 'ai').length),
+        image_sources: info.image_sources || null,   // e.g. {nasa: 3, wikimedia: 4, ai: 1}
+        clips: info.clips || 0,
+        qc: info.qc || null,
         imageAssets,
         srt: this.writeSrt(info.proj_id, beats),
       };
@@ -171,10 +220,16 @@ class Worker {
         duration_s: info.duration,
         composition: info.composition,
         voice: info.voice,
+        channel_id: job.channel_id || 'cosmic-archive',
+        variant_group: job.variant_group || null,
         seo_json: JSON.stringify(seo),
         meta_json: JSON.stringify(meta),
       });
-      this.db.notify('success', `Short ready for review: "${info.title}" (${info.duration}s)`);
+      if (meta.qc && meta.qc.verdict === 'flag') {
+        this.db.notify('warn', `QC flagged "${info.title}": ${(meta.qc.issues || []).slice(0, 2).join(' | ') || 'see qc-report.json'} — publish will be blocked`);
+      } else {
+        this.db.notify('success', `Short ready for review: "${info.title}" (${info.duration}s)`);
+      }
     } catch (err) {
       console.error('[worker] registerShort failed:', err);
       // short still tracked minimally
@@ -182,6 +237,8 @@ class Worker {
         id: info.proj_id, job_id: job.id, title: info.title,
         final_path: info.final, beats_path: info.beats, duration_s: info.duration,
         composition: info.composition, voice: info.voice,
+        channel_id: job.channel_id || 'cosmic-archive',
+        variant_group: job.variant_group || null,
       });
     }
   }

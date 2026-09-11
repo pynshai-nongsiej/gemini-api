@@ -12,6 +12,7 @@ const publisher = require('./publisher');
 
 const TICK_MS = 30 * 1000;
 const ANALYTICS_MS = 6 * 3600 * 1000;
+const DBNowISO = () => new Date().toISOString();
 
 class Scheduler {
   constructor(db, worker) {
@@ -38,27 +39,49 @@ class Scheduler {
     await this.processPublishQueue();
   }
 
-  /** cadence check: if produced this week < target and nothing queued/running
-   *  and auto_generate enabled → operator plans exactly what's missing */
+  /** cadence check per channel: every enabled channel with auto_generate runs
+   *  its OWN niche, voice, and publish slots; deficit is measured against that
+   *  channel's produced-this-week count, and nothing runs while the worker is
+   *  busy (Kokoro + Remotion are serialized). */
   async autoGenerate() {
-    const s = this.db.getSettings();
-    if (!s.auto_generate) return;
-    const stats = this.db.stats();
-    const pending = stats.jobs.queued + stats.jobs.running;
+    const pending = this.db.get(`SELECT COUNT(*) c FROM jobs WHERE status IN ('queued','running')`).c;
     if (pending > 0) return;
-    const deficit = (s.cadence_per_week || 0) - stats.producedThisWeek;
-    if (deficit <= 0) return;
-    try {
-      const need = Math.min(deficit, s.videos_per_run || 1);
-      await runOperatorCycle(this.db, { count: need });
-      this.worker.poke();
-    } catch (err) {
-      this.db.notify('warn', `Auto-generation failed: ${err.message}`);
+    for (const channel of this.db.listChannels()) {
+      if (!channel.enabled || !channel.auto_generate) continue;
+      const produced = this.db.get(
+        `SELECT COUNT(*) c FROM shorts WHERE channel_id=? AND created_at >= ?`,
+        channel.id, new Date(Date.now() - 7 * 86400e3).toISOString()).c;
+      const deficit = (channel.cadence_per_week || 0) - produced;
+      if (deficit <= 0) continue;
+      try {
+        const need = Math.min(deficit, channel.videos_per_run || 1);
+        await runOperatorCycle(this.db, { count: need, channelId: channel.id });
+        this.worker.poke();
+        return; // one channel per tick — the worker serializes generation anyway
+      } catch (err) {
+        this.db.notify('warn', `Auto-generation failed for ${channel.name}: ${err.message}`);
+      }
     }
   }
 
   async processPublishQueue() {
     if (this.publishing) return;
+    // state-sync: YouTube-scheduled entries whose publishAt has passed →
+    // the machine can be offline at the slot time; YouTube publishes anyway.
+    // We only reconcile the local DB when we happen to be running.
+    for (const entry of this.db.all(
+      `SELECT q.*, s.youtube_url AS s_youtube_url, s.title AS s_title FROM publish_queue q
+        JOIN shorts s ON s.id = q.short_id
+       WHERE q.status='scheduled_on_youtube' AND q.scheduled_at <= ?`, DBNowISO())) {
+      this.db.updatePublish(entry.id, { status: 'published', error: null });
+      if (entry.s_youtube_url) {
+        this.db.updateShort(entry.short_id, {
+          status: 'published', published_at: entry.scheduled_at,
+        });
+      }
+      this.db.notify('info', `YouTube published "${entry.s_title || entry.short_id}" at its scheduled time (state synced)`);
+    }
+
     const due = this.db.duePublishes();
     for (const entry of due) {
       this.publishing = true;
@@ -79,6 +102,13 @@ class Scheduler {
       if (n > 0) this.db.notify('info', `Analytics refreshed for ${n} published short(s)`);
     } catch (err) {
       console.warn('[scheduler] analytics refresh failed:', err.message);
+    }
+    // retention loop: feeds winning hooks back into topic research
+    try {
+      const r = await publisher.refreshRetention(this.db);
+      if (r > 0) this.db.notify('info', `Retention data updated for ${r} short(s) — winning hooks fed back to research`);
+    } catch (err) {
+      console.warn('[scheduler] retention refresh failed:', err.message);
     }
     this.lastAnalytics = Date.now();
   }

@@ -91,9 +91,18 @@ async function main() {
     r = await req('PUT', `/api/shorts/${short.id}/meta`, { title: origTitle });
     ok('PUT meta valid → 200', r.status === 200 && r.data.short?.title === origTitle);
 
-    // 9. publish before approve
-    r = await req('POST', `/api/publish/${short.id}`, {});
-    ok('publish non-approved short → 409', r.status === 409, `got ${r.status}`);
+    // 9. publish before approve (only for shorts not yet approved)
+    if (short.status !== 'approved') {
+      r = await req('POST', `/api/publish/${short.id}`, {});
+      ok('publish non-approved short → 409', r.status === 409, `got ${r.status}`);
+    } else {
+      r = await req('POST', `/api/publish/${short.id}`, {});
+      ok('publish approved short → 201', r.status === 201, `got ${r.status}`);
+      // clean up the extra queue entry we just created
+      const q = await req('GET', '/api/publish-queue');
+      const dup = (q.data.queue || []).filter(e => e.short_id === short.id);
+      for (const e of dup.slice(1)) await req('POST', `/api/publish-queue/${e.id}/remove`);
+    }
   } else {
     console.log('  (no shorts in library yet — skipping short-specific checks)');
   }
@@ -119,9 +128,13 @@ async function main() {
   r = await req('POST', '/api/publish-queue/999999/pause');
   ok('queue action on missing entry → 404', r.status === 404);
 
-  // 12. YouTube auth (unconfigured → helpful 400)
+  // 12. YouTube auth (400 + hint when unconfigured; 200 + URL when configured)
   r = await req('GET', '/api/youtube/auth');
-  ok('GET /api/youtube/auth unconfigured → 400 + hint', r.status === 400 && !!r.data.hint);
+  if (r.status === 200) {
+    ok('GET /api/youtube/auth configured → 200 + url', !!r.data.url);
+  } else {
+    ok('GET /api/youtube/auth unconfigured → 400 + hint', r.status === 400 && !!r.data.hint);
+  }
   r = await req('GET', '/api/youtube/status');
   ok('GET /api/youtube/status', r.status === 200 && typeof r.data.authorized === 'boolean');
 

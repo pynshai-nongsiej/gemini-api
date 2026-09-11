@@ -5,7 +5,7 @@
  */
 const { config } = require('./config');
 
-async function callLocalAI(prompt, maxTokens = 700) {
+async function callLocalAI(prompt, maxTokens = 700, timeoutMs = 60000) {
   const body = {
     model: config.LOCAL_AI_MODEL,
     messages: [{ role: 'user', content: prompt }],
@@ -16,7 +16,7 @@ async function callLocalAI(prompt, maxTokens = 700) {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(body),
-    signal: AbortSignal.timeout(60000),
+    signal: AbortSignal.timeout(timeoutMs),
   });
   if (!res.ok) throw new Error(`local AI HTTP ${res.status}`);
   const data = await res.json();
