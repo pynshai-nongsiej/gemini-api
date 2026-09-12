@@ -160,7 +160,7 @@ class DB {
         niche: 'pragmatic personal finance and wealth systems',
         style: 'pragmatic personal finance — diagnostic, numeric, systems-driven',
         pipeline: 'finance',
-        voice: 'bm_george',
+        voice: 'dynamic',
         accent: '#86efac',
       },
       {
@@ -169,7 +169,7 @@ class DB {
         niche: 'narrative historical investigation and systems documentaries',
         style: 'evidence-first historical investigation documentary',
         pipeline: 'history',
-        voice: 'am_onyx',
+        voice: 'dynamic',
         accent: '#f5d76e',
       },
     ];
@@ -180,6 +180,10 @@ class DB {
         c.id, c.name, c.niche, c.style, c.pipeline, c.voice, c.accent || null,
         c.tokens_path || null, now, now);
     }
+    // finance + history auto-generate with DYNAMIC voice rotation
+    // (voice variety across shorts reads as a bigger channel and avoids
+    // same-voice fatigue in the feed)
+    this.run(`UPDATE channels SET voice='dynamic' WHERE id IN ('wealth-engine','footnote-files') AND voice IN ('bm_george','am_onyx')`);
     // music is OPT-IN — a bed under dense voice narration muddies the speech.
     // Clear any previously auto-applied defaults; set music per channel in the
     // dashboard only if you actually want it.

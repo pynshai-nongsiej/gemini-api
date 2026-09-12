@@ -434,7 +434,9 @@ async function viewGenerate() {
       <div class="panel">
         <h2>${meta.icon} ${esc(c.name)}
           <span class="pill" style="border-color:${meta.accent}66;color:${meta.accent}">${meta.label}</span>
-          ${c.youtube_authorized ? '<span class="pill published">✓ YT</span>' : ''}
+          ${c.youtube_authorized
+            ? '<span class="pill published">✓ YT connected</span>'
+            : `<button class="btn sm" onclick="connectChannel('${c.id}')">⚠ connect YouTube</button>`}
         </h2>
         <div class="grid3">
           <label class="f"><span class="lt">TOPIC — LEAVE BLANK IF USING AUTO-RESEARCH</span>
