@@ -846,7 +846,6 @@ const TRANSITIONS = [
 const HOOK_CARD = {hook_card};
 const HOOK_END = {hook_end};
 const BAIT = {json.dumps(bait) if bait else 'null'};
-const BAIT = {json.dumps(bait) if bait else 'null'};
 
 const {comp_id}: React.FC = () => {{
   return (
@@ -963,6 +962,7 @@ const TRANSITIONS = [
 
 const HOOK_CARD = {hook_card};
 const HOOK_END = {hook_end};
+const BAIT = {json.dumps(bait) if bait else 'null'};
 
 const {comp_id}: React.FC = () => {{
   return (
