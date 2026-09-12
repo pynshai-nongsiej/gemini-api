@@ -104,6 +104,25 @@ function nextOpenSlot(slots, occupiedDates = [], minAheadMs = 15 * 60 * 1000) {
 }
 
 /** Earliest of the next occurrences of all slots (simple clock check). */
+/** Next occurrence of a WEEKLY "Ddd HH:MM" ET slot (e.g. "Sun 11:00") that is
+ *  at least minAheadMs in the future — used for long-form drops. */
+function nextETWeeklySlot(dayTime, minAheadMs = 30 * 60 * 1000) {
+  const m = /^(mon|tue|wed|thu|fri|sat|sun)\s+(\d{1,2}):(\d{2})$/i.exec(String(dayTime || '').trim());
+  if (!m) return null;
+  const dayIdx = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat']
+    .indexOf(m[1].toLowerCase());
+  const now = Date.now();
+  const nowET = etParts(new Date(now));
+  for (let addDay = 0; addDay < 8; addDay++) {
+    const t = new Date(Date.UTC(nowET.y, nowET.mo - 1, nowET.d + addDay, 12));
+    const p = etParts(t);
+    if (new Date(Date.UTC(p.y, p.mo - 1, p.d)).getUTCDay() !== dayIdx) continue;
+    const candidate = etWallToUTC(p.y, p.mo, p.d, +m[2], +m[3]);
+    if (candidate && candidate.getTime() > now + minAheadMs) return candidate;
+  }
+  return null;
+}
+
 function nextSlot(slots, minAheadMs) {
   const times = (slots || []).map(s => nextETSlot(s, minAheadMs)).filter(Boolean);
   if (!times.length) return new Date(Date.now() + 5 * 60 * 1000);
@@ -219,6 +238,7 @@ function upcomingSlots(slots, days = 7) {
 }
 
 module.exports = {
+  nextETWeeklySlot,
   ET,
   nextETSlot,
   nextSlot,

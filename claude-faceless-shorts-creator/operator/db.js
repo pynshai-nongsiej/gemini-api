@@ -134,6 +134,10 @@ class DB {
     // learning loop: auto-promoted winning hook + comment-mined topics +
     // auto-retry budget + tokenized review links
     addColumn('channels', 'default_hook_hint', 'TEXT');
+    // long-form pipeline: weekly slot (e.g. 'Sun 11:00' ET) + format column
+    addColumn('channels', 'long_slot', 'TEXT');
+    addColumn('jobs', 'format', "TEXT DEFAULT 'short'");
+    addColumn('shorts', 'format', "TEXT DEFAULT 'short'");
     addColumn('jobs', 'retries', 'INTEGER DEFAULT 0');
     addColumn('shorts', 'review_token', 'TEXT');
   }
@@ -180,6 +184,18 @@ class DB {
         c.id, c.name, c.niche, c.style, c.pipeline, c.voice, c.accent || null,
         c.tokens_path || null, now, now);
     }
+    // 3x/day USA schedule (ET): morning / lunch / prime evening — the three
+    // daily peaks for a US audience. Long-form: one weekly drop per channel,
+    // staggered so the three channels never compete on the same day.
+    const slots3 = JSON.stringify(['09:00', '15:00', '21:00']);
+    this.run(`UPDATE channels SET publish_slots=? WHERE id='cosmic-archive' AND publish_slots IN ('["13:00", "19:00"]','["13:00","19:00"]')`, slots3);
+    this.run(`UPDATE channels SET publish_slots=? WHERE id='wealth-engine' AND publish_slots IN ('["13:00", "19:00"]','["13:00","19:00"]')`, slots3);
+    this.run(`UPDATE channels SET publish_slots=? WHERE id='footnote-files' AND publish_slots IN ('["13:00", "19:00"]','["13:00","19:00"]')`, slots3);
+    this.run(`UPDATE channels SET long_slot='Sat 11:00' WHERE id='cosmic-archive' AND (long_slot IS NULL OR long_slot='')`);
+    this.run(`UPDATE channels SET long_slot='Sun 11:00' WHERE id='wealth-engine' AND (long_slot IS NULL OR long_slot='')`);
+    this.run(`UPDATE channels SET long_slot='Sat 15:00' WHERE id='footnote-files' AND (long_slot IS NULL OR long_slot='')`);
+    // cadence: 21 shorts/week (3/day) for channels still at the old 14
+    this.run(`UPDATE channels SET cadence_per_week=21 WHERE cadence_per_week=14`);
     // finance + history auto-generate with DYNAMIC voice rotation
     // (voice variety across shorts reads as a bigger channel and avoids
     // same-voice fatigue in the feed)
@@ -286,14 +302,15 @@ class DB {
 
   // --- jobs ---
   createJob({ topic, style, voice, music, source = 'manual', operatorRunId = null,
-              channelId = 'cosmic-archive', variantGroup = null, variantHint = null }) {
+              channelId = 'cosmic-archive', variantGroup = null, variantHint = null,
+              format = 'short' }) {
     const id = `job_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`;
     const now = DB.now();
     this.run(
-      `INSERT INTO jobs (id, topic, style, voice, music, source, status, operator_run_id, channel_id, variant_group, variant_hint, created_at, updated_at)
-       VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)`,
+      `INSERT INTO jobs (id, topic, style, voice, music, source, status, operator_run_id, channel_id, variant_group, variant_hint, format, created_at, updated_at)
+       VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)`,
       id, topic, style || null, voice || null, music || null, source, 'queued',
-      operatorRunId, channelId, variantGroup, variantHint, now, now);
+      operatorRunId, channelId, variantGroup, variantHint, format, now, now);
     return this.getJob(id);
   }
 
@@ -323,18 +340,19 @@ class DB {
     if (existing) {
       this.run(
         `UPDATE shorts SET title=?, final_path=?, beats_path=?, duration_s=?, composition=?,
-         voice=?, channel_id=?, variant_group=?, status='needs_review', updated_at=? WHERE id=?`,
+         voice=?, channel_id=?, variant_group=?, format=?, status='needs_review', updated_at=? WHERE id=?`,
         s.title, s.final_path, s.beats_path, s.duration_s, s.composition, s.voice,
         s.channel_id || existing.channel_id || 'cosmic-archive',
-        s.variant_group ?? existing.variant_group ?? null, now, s.id);
+        s.variant_group ?? existing.variant_group ?? null,
+        s.format || existing.format || 'short', now, s.id);
     } else {
       this.run(
         `INSERT INTO shorts (id, job_id, title, final_path, beats_path, duration_s, composition,
-         voice, channel_id, variant_group, status, seo_json, meta_json, created_at, updated_at)
-         VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`,
+         voice, channel_id, variant_group, format, status, seo_json, meta_json, created_at, updated_at)
+         VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`,
         s.id, s.job_id || null, s.title, s.final_path, s.beats_path, s.duration_s,
         s.composition, s.voice, s.channel_id || 'cosmic-archive', s.variant_group || null,
-        'needs_review', s.seo_json || '{}', s.meta_json || '{}', now, now);
+        s.format || 'short', 'needs_review', s.seo_json || '{}', s.meta_json || '{}', now, now);
     }
     return this.getShort(s.id);
   }

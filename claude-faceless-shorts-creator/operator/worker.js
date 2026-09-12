@@ -81,6 +81,24 @@ class Worker {
 
   buildArgs(job, settings) {
     const channel = job.channel_id ? this.db.getChannel(job.channel_id) : null;
+    if (job.format === 'long') {
+      const args = ['tools/make_long.py'];
+      if (channel && channel.pipeline && channel.pipeline !== 'space') {
+        args.push('--pipeline', channel.pipeline);
+      }
+      args.push('--duration', '240');
+      if (job.proj_id && (job.status === 'failed' || job.status === 'cancelled' ||
+          job.error === 'interrupted by server restart')) {
+        args.push('--resume', path.join('longs', job.proj_id));
+      } else {
+        args.push('--topic', job.topic);
+        const style = job.style || (channel && channel.style) || settings.default_style;
+        if (style) args.push('--style', style);
+      }
+      const voice = this.resolveVoice(job, settings, channel);
+      if (voice) args.push('--voice', voice);
+      return args;
+    }
     const args = ['tools/make_short.py'];
     if (channel && channel.pipeline && channel.pipeline !== 'space') {
       args.push('--pipeline', channel.pipeline);
@@ -216,6 +234,7 @@ class Worker {
         hook: beats.vo?.[0]?.text || '',
         accent: info.accent,
         pipeline: info.pipeline || null,
+        format: info.format || 'short',
         images: info.images,
         nasa_images: info.nasa_images || imageAssets.filter(a => a.source === 'nasa').length,
         real_images: (info.real_images ?? imageAssets.filter(a => a.source !== 'ai').length),
@@ -236,6 +255,7 @@ class Worker {
         voice: info.voice,
         channel_id: job.channel_id || 'cosmic-archive',
         variant_group: job.variant_group || null,
+        format: job.format || 'short',
         seo_json: JSON.stringify(seo),
         meta_json: JSON.stringify(meta),
       });
@@ -258,6 +278,7 @@ class Worker {
         composition: info.composition, voice: info.voice,
         channel_id: job.channel_id || 'cosmic-archive',
         variant_group: job.variant_group || null,
+        format: job.format || 'short',
       });
     }
   }

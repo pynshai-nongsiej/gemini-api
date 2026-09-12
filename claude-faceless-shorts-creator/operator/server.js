@@ -126,6 +126,10 @@ app.use(express.static(path.join(__dirname, 'public'), {
 app.use('/media/shorts', express.static(path.join(config.ROOT, 'shorts'), {
   setHeaders: (res, p) => { if (p.endsWith('.mp4')) res.setHeader('Content-Type', 'video/mp4'); },
 }));
+// long-form finals: /media/longs/<projId>/<file>
+app.use('/media/longs', express.static(path.join(config.ROOT, 'longs'), {
+  setHeaders: (res, p) => { if (p.endsWith('.mp4')) res.setHeader('Content-Type', 'video/mp4'); },
+}));
 // beat images: /media/projects/<projId>/<file>
 app.use('/media/projects', express.static(path.join(config.ROOT, 'media', 'projects')));
 
@@ -330,6 +334,32 @@ app.post('/api/channels/:id/start', protect, async (req, res) => {
   }
 });
 
+/** LONG-FORM: enqueue a 16:9 documentary for a channel. Topic optional —
+ *  blank = the researcher picks one from the channel's niche. */
+app.post('/api/channels/:id/long', protect, async (req, res) => {
+  const channel = db.getChannel(req.params.id);
+  if (!channel) return res.status(404).json({ error: 'channel not found' });
+  let { topic } = req.body || {};
+  try {
+    if (!topic || String(topic).trim().length < 8) {
+      const { researchTopics } = require('./topics');
+      topic = (await researchTopics(db, 1, '', channel.id))[0];
+    }
+    const job = db.createJob({
+      topic: String(topic).slice(0, 300),
+      style: channel.style || undefined,
+      source: 'long-form',
+      channelId: channel.id,
+      format: 'long',
+    });
+    worker.poke();
+    db.notify('info', `🎬 Long-form queued for ${channel.name}: "${String(topic).slice(0, 60)}…"`);
+    res.status(202).json({ job });
+  } catch (err) {
+    res.status(502).json({ error: err.message });
+  }
+});
+
 /** Manual retention refresh (the scheduler also does this every 6h). */
 app.post('/api/analytics/refresh', protect, async (_req, res) => {
   try {
@@ -377,14 +407,16 @@ function thumbnailUrlFor(s) {
 function decorateShort(s) {
   const seo = JSON.parse(s.seo_json || '{}');
   const meta = JSON.parse(s.meta_json || '{}');
-  const rel = path.relative(path.join(config.ROOT, 'shorts'), s.final_path || '');
+  const base = (meta.format === 'long' || s.format === 'long') ? 'longs' : 'shorts';
+  const rel = path.relative(path.join(config.ROOT, base), s.final_path || '');
   return {
     ...s,
     seo,
     meta,
-    videoUrl: s.final_path && fs.existsSync(s.final_path) ? `/media/shorts/${rel}` : null,
+    videoUrl: s.final_path && fs.existsSync(s.final_path) ? `/media/${base}/${rel}` : null,
     thumbnailUrl: thumbnailUrlFor(s),
     publishable: !!(s.final_path && fs.existsSync(s.final_path)),
+    format: s.format || meta.format || 'short',
   };
 }
 
@@ -429,9 +461,14 @@ async function approveAndSchedule(s, res) {
   try { publisher.assertPublishable(decorateShort(s)); }
   catch (err) { return res.status(409).json({ error: err.message }); }
 
-  // schedule into the next open publish slot FOR THIS SHORT'S CHANNEL
+  // schedule into the next open publish slot FOR THIS SHORT'S CHANNEL.
+  // Long-form drops go to the channel's WEEKLY long slot instead (e.g. Sun 11:00 ET).
   const channel = db.getChannel(s.channel_id || 'cosmic-archive');
-  const scheduledAt = nextPublishSlot(channel ? channel.publish_slots : null, s.channel_id || 'cosmic-archive');
+  const decorated = decorateShort(s);
+  const scheduledAt = decorated.format === 'long' && channel && channel.long_slot
+    ? (usa.nextETWeeklySlot(channel.long_slot) ||
+       nextPublishSlot(channel.publish_slots, s.channel_id || 'cosmic-archive'))
+    : nextPublishSlot(channel ? channel.publish_slots : null, s.channel_id || 'cosmic-archive');
 
   // Upload NOW as private + publishAt: YouTube's clock makes it public at
   // the slot time — works even when this machine is offline at that moment.
@@ -489,20 +526,35 @@ app.post('/api/shorts/:id/reject', protect, (req, res) => {
 // ---------- publish queue ----------
 app.get('/api/publish-queue', (req, res) => {
   const settings = db.getSettings();
+  const allShorts = db.listShorts();
+  const chanName = (shortId) => {
+    const s = allShorts.find(x => x.id === shortId);
+    return db.getChannel(s?.channel_id || 'cosmic-archive')?.name || '—';
+  };
   const queue = db.listPublishQueue().map(q => ({
     ...q,
+    channel: chanName(q.short_id),
     scheduled_at_et: q.scheduled_at ? usa.fmtET(new Date(q.scheduled_at)) : null,
   }));
-  // weekly slot calendar (USA/ET targeting: 7 days, 2 slots daily)
-  const slots = settings.publish_slots?.length ? settings.publish_slots : ['13:00', '19:00'];
-  const calendarDays = usa.getWeeklyCalendar(slots, 7, queue);
-  const upcoming = calendarDays.flatMap(d => d.slots);
+  // PER-CHANNEL schedule cards: each channel's own slots + weekly long drop
+  const channels = db.listChannels().map(c => {
+    const chanQueue = queue.filter(q => {
+      const s = allShorts.find(x => x.id === q.short_id);
+      return (s?.channel_id || 'cosmic-archive') === c.id;
+    });
+    const calendarDays = usa.getWeeklyCalendar(c.publish_slots, 7, chanQueue);
+    return {
+      ...decorateChannel(c),
+      calendarDays,
+      long_slot: c.long_slot,
+      next_long: c.long_slot ? usa.fmtET(usa.nextETWeeklySlot(c.long_slot)) : null,
+      scheduled_count: chanQueue.filter(q => ['scheduled', 'scheduled_on_youtube'].includes(q.status)).length,
+    };
+  });
   res.json({
     queue,
-    upcoming,
-    calendarDays,
+    channels,
     timezone: settings.timezone || usa.ET,
-    slots,
   });
 });
 

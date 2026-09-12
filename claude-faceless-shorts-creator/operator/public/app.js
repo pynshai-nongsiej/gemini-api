@@ -464,6 +464,7 @@ async function viewGenerate() {
           <button class="btn primary" onclick="genForChannel('${c.id}')">✦ Generate short</button>
           <button class="btn" onclick="autoForChannel('${c.id}')">🤖 Auto-research & generate</button>
           <button class="btn" title="One topic, 3 hook angles — the feed votes" onclick="raceForChannel('${c.id}')">🧪 A/B hook race</button>
+          <button class="btn" title="16:9 chaptered documentary (~4 min) — drops on the channel's weekly long slot (${esc(c.long_slot || '—')} ET)" onclick="longForChannel('${c.id}')">🎬 Long-form</button>
         </div>
         <div class="dim" style="font-size:12px;margin-top:2px">${esc(c.niche || '')}</div>
       </div>`;
@@ -528,6 +529,14 @@ async function viewGenerate() {
     try {
       const r = await api.post(`/api/channels/${id}/start`, { variants: 3 });
       toast(`A/B hook race: 3 variants of "${(r.topics[0] || '').slice(0, 36)}…"`, 'ok');
+      viewGenerate();
+    } catch (e) { toast(e.message, 'err'); }
+  };
+  window.longForChannel = async (id) => {
+    const topic = $(`#g-topic-${id}`).value.trim();
+    try {
+      const r = await api.post(`/api/channels/${id}/long`, topic ? { topic } : {});
+      toast(`🎬 long-form queued: "${(r.job?.topic || '').slice(0, 40)}…" — renders ~4min 16:9`, 'ok');
       viewGenerate();
     } catch (e) { toast(e.message, 'err'); }
   };
@@ -736,85 +745,95 @@ async function viewPublish() {
   const [queueR, yt] = await Promise.all([
     api.get('/api/publish-queue'), api.get('/api/youtube/status')]);
   const queue = arr(obj(queueR).queue);
-  const calendarDays = arr(obj(queueR).calendarDays);
+  const channels = arr(obj(queueR).channels);
   const tz = obj(queueR).timezone || 'America/New_York';
 
+  const ytState = obj(yt).channels || {};
   $('#main').innerHTML = `
     <div class="page-head"><h1>Publish</h1>
-      <span class="sub">USA targeting · all times US Eastern (${esc(tz)})</span></div>
+      <span class="sub">USA schedule · all slots US Eastern (${esc(tz)}) · 3 shorts/day + weekly long drop</span></div>
+
+    ${channels.map(c => {
+      const chanYT = ytState[c.id];
+      return `
+      <div class="panel channel-panel">
+        <div class="channel-head">
+          <div class="channel-icon" style="border-color:${PIPELINE_META[c.pipeline]?.accent || 'var(--line2)'}55;color:${PIPELINE_META[c.pipeline]?.accent || 'var(--text)'}">${PIPELINE_META[c.pipeline]?.icon || '◈'}</div>
+          <div style="flex:1;min-width:0">
+            <div class="row">
+              <h2 style="margin:0;font-size:14px">${esc(c.name)}</h2>
+              <span class="pill published">🇺🇸 USA</span>
+              <span class="pill">${(c.publish_slots || []).join(' · ')} ET</span>
+              ${c.long_slot ? `<span class="pill long-slot" style="background:rgba(232,198,107,0.12);color:var(--gold)">🎬 long: ${esc(c.long_slot)} ET</span>` : ''}
+            </div>
+            <div class="dim" style="font-size:11.5px;margin-top:4px">
+              ${c.scheduled_count} scheduled · next long drop ${esc(c.next_long || '—')}
+            </div>
+          </div>
+          ${chanYT
+            ? '<span class="pill published">✓ YouTube connected</span>'
+            : `<button class="btn sm" onclick="connectChannel('${c.id}')">⚠ connect YouTube</button>`}
+        </div>
+        <div class="days-grid">
+          ${(c.calendarDays || []).map(d => `
+            <div class="day-card ${d.is_today ? 'today' : ''}">
+              <div class="day-label">${esc(d.label)}</div>
+              ${(d.slots || []).map(s => {
+                let cls = 'open', txt = '○ open', tip = s.at_et;
+                if (s.filled) {
+                  cls = s.short?.status === 'published' ? 'published' : 'filled';
+                  txt = `● ${s.short?.title ? esc(String(s.short.title).slice(0, 22)) : 'scheduled'}`;
+                  tip = `${s.short?.title || 'Scheduled'} (${s.at_et})`;
+                } else if (s.is_past) {
+                  cls = 'past'; txt = '— passed';
+                }
+                return `<div class="slot ${cls}" title="${esc(tip)}">
+                  <span class="slot-time">${esc(s.time_et || s.slot)}</span>
+                  <span class="slot-state">${txt}</span>
+                </div>`;
+              }).join('')}
+              ${c.long_slot ? (() => {
+                const isLongDay = d.label.toLowerCase().startsWith(c.long_slot.split(' ')[0].toLowerCase().slice(0, 3));
+                return `<div class="slot ${isLongDay ? 'long-slot' : 'past'}" title="weekly long-form drop">
+                  <span class="slot-time">${esc(c.long_slot.split(' ')[1])}</span>
+                  <span class="slot-state">${isLongDay ? '🎬 long-form' : '—'}</span>
+                </div>`;
+              })() : ''}
+            </div>`).join('')}
+        </div>
+      </div>`;
+    }).join('')}
 
     <div class="panel">
-      <h2>YouTube connection</h2>
-      ${yt.authorized
-        ? `<div class="row"><span class="pill published">✓ authorized</span>
-             <span class="dim">uploads enabled — resumable upload, thumbnail + captions included</span></div>`
-        : `<div class="row">
-             <span class="pill failed">not connected</span>
-             <span class="dim">publishing stays fail-closed until a channel is linked</span>
-             <span class="spacer" style="flex:1"></span>
-             <button class="btn" onclick="startYouTubeAuth()">connect YouTube</button>
-           </div>`}
-    </div>
-
-    <div class="panel">
-      <h2>Weekly slot calendar — next 7 days (ET)</h2>
-      ${calendarDays.length ? `<div class="days-grid">
-        ${calendarDays.map(d => `
-          <div class="day-card ${d.is_today ? 'today' : ''}">
-            <div class="day-label">${esc(d.label)}</div>
-            ${(d.slots || []).map(s => {
-              let cls = 'open';
-              let txt = '○ open';
-              let tip = s.at_et;
-              if (s.filled) {
-                cls = s.short?.status === 'published' ? 'published' : 'filled';
-                txt = `● ${s.short?.title ? esc(s.short.title) : 'scheduled'}`;
-                tip = `${s.short?.title || 'Scheduled'} (${s.at_et})`;
-              } else if (s.is_past) {
-                cls = 'past';
-                txt = '— passed';
-              }
-              return `
-              <div class="slot ${cls}" title="${esc(tip)}">
-                <span class="slot-time">${esc(s.time_et || s.slot)}</span>
-                <span class="slot-state">${txt}</span>
-              </div>`;
-            }).join('')}
-          </div>`).join('')}
-      </div>
-      <div class="dim" style="font-size:12px;margin-top:10px">
-        Approving a short automatically schedules it into the next open slot (never collides).
-        2 slots daily (<b>1:00 PM & 7:00 PM ET</b>) = 14/week — optimized for USA nationwide lunchtime & evening prime-time.</div>`
-      : '<div class="dim">no upcoming slots — configure publish slots in Settings</div>'}
-    </div>
-
-    <div class="panel">
-      <h2>Queue</h2>
+      <h2>Queue — all channels</h2>
       ${queue.length ? `<table>
-        <tr><th>Short</th><th style="width:160px">Scheduled (ET)</th><th style="width:110px">Status</th><th style="width:280px">Actions</th></tr>
-      ${queue.map(q => `
+        <tr><th>Short</th><th style="width:120px">Channel</th><th style="width:150px">Scheduled (ET)</th><th style="width:110px">Status</th><th style="width:270px">Actions</th></tr>
+      ${queue.map(q => {
+        const fmt = q.format || 'short';
+        return `
           <tr>
             <td><b>${esc(q.short_title || q.short_id)}</b>
+              ${fmt === 'long' ? '<span class="pill" style="font-size:9px">🎬 long</span>' : ''}
               ${q.youtube_id ? `<div><a href="https://youtu.be/${q.youtube_id}" target="_blank" class="mono">${q.youtube_id} ↗</a></div>` : ''}
-              ${q.error ? `<div class="dim mono" style="color:var(--err);font-size:10.5px">${esc(q.error).slice(0, 120)}</div>` : ''}</td>
+              ${q.error ? `<div class="dim mono" style="color:var(--err);font-size:10.5px">${esc(q.error).slice(0, 110)}</div>` : ''}</td>
+            <td class="dim">${esc(q.channel || '—')}</td>
             <td class="dim">${esc(q.scheduled_at_et || when(q.scheduled_at))}</td>
-            <td><span class="pill ${q.status === 'scheduled_on_youtube' ? 'approved' : q.status}">${q.status === 'scheduled_on_youtube' ? 'scheduled (YouTube)' : q.status}</span></td>
+            <td><span class="pill ${q.status === 'scheduled_on_youtube' ? 'approved' : q.status}">${q.status === 'scheduled_on_youtube' ? 'scheduled (YT)' : q.status}</span></td>
             <td>
               ${q.status === 'scheduled' ? `
                 <button class="btn sm primary" onclick="queueAction(${q.id},'publish-now')">publish now</button>
                 <button class="btn sm" onclick="queueAction(${q.id},'pause')">pause</button>` : ''}
               ${q.status === 'scheduled_on_youtube' ? `
                 <button class="btn sm primary" onclick="queueAction(${q.id},'publish-now')">publish now</button>
-                <span class="dim" style="font-size:11px">on YouTube's clock — your Mac can be off</span>` : ''}
-              ${q.status === 'paused' ? `
-                <button class="btn sm" onclick="queueAction(${q.id},'resume')">resume</button>` : ''}
-              ${q.status === 'failed' ? `
-                <button class="btn sm" onclick="queueAction(${q.id},'retry')">retry</button>` : ''}
+                <span class="dim" style="font-size:11px">on YouTube's clock</span>` : ''}
+              ${q.status === 'paused' ? `<button class="btn sm" onclick="queueAction(${q.id},'resume')">resume</button>` : ''}
+              ${q.status === 'failed' ? `<button class="btn sm" onclick="queueAction(${q.id},'retry')">retry</button>` : ''}
               ${q.status !== 'publishing' && q.status !== 'published' ? `
                 <button class="btn sm danger" onclick="removeQueue(${q.id}, '${esc(q.short_title || q.short_id)}')">remove</button>` : ''}
             </td>
-          </tr>`).join('')}
-      </table>` : '<div class="dim">queue empty — approve shorts in Review to schedule them (uploaded to YouTube as private + publishAt, published by YouTube at the slot time)</div>'}
+          </tr>`;
+      }).join('')}
+      </table>` : '<div class="dim">queue empty — approve shorts in Review to schedule them</div>'}
     </div>`;
 }
 window.queueAction = async (id, action) => {
@@ -826,15 +845,8 @@ window.removeQueue = async (id, title) => {
   try { await api.post(`/api/publish-queue/${id}/remove`); toast('removed from queue', 'ok'); viewPublish(); refresh(); }
   catch (e) { toast(e.message, 'err'); }
 };
-window.startYouTubeAuth = async () => {
-  try {
-    const { url } = await api.get('/api/youtube/auth');
-    window.open(url, '_blank');
-    toast('complete the Google consent in the new tab');
-  } catch (e) { toast(e.message, 'err'); }
-};
 
-/* ============ ANALYTICS ============ */
+/* ============ ANALYTICS ============ *//* ============ ANALYTICS ============ */
 async function viewAnalytics() {
   const shorts = arr(obj(await api.get('/api/shorts')).shorts);
   const pub = shorts.filter(s => s.status === 'published');

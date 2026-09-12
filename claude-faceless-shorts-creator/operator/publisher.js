@@ -146,13 +146,18 @@ function assertPublishable(short) {
   }
 
   // structural probe (only bites real video files; unparseable fixtures skip)
+  const isLong = (() => { try { return JSON.parse(short.meta_json || '{}').format === 'long'; } catch { return false; } })();
   const probed = probeVideo(short.final_path);
   if (probed) {
-    if (probed.duration && (probed.duration < 14.5 || probed.duration > 61)) {
+    if (isLong) {
+      if (probed.duration && (probed.duration < 60 || probed.duration > 1800)) {
+        throw new Error(`duration ${probed.duration.toFixed(1)}s outside the 1-30min long-form window`);
+      }
+    } else if (probed.duration && (probed.duration < 14.5 || probed.duration > 61)) {
       throw new Error(`duration ${probed.duration.toFixed(1)}s outside the 15-60s Shorts window`);
     }
     if (probed.height && probed.height < 1080) {
-      throw new Error(`resolution ${probed.height}p too low for a 1080x1920 master`);
+      throw new Error(`resolution ${probed.height}p too low for a 1080p master`);
     }
   }
 }
