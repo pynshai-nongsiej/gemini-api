@@ -603,7 +603,7 @@ app.get('/api/settings', (_req, res) => {
 });
 
 app.put('/api/settings', protect, (req, res) => {
-  const allowed = ['channel_name', 'niche', 'cadence_per_week', 'videos_per_run',
+  const allowed = ['audience_country', 'channel_name', 'niche', 'cadence_per_week', 'videos_per_run',
     'default_voice', 'default_style', 'default_music', 'publish_slots',
     'youtube_privacy', 'declare_ai_media', 'auto_approve',
     'retention_min_duration', 'retention_max_duration', 'api_key',

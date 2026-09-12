@@ -236,6 +236,7 @@ async function viewChannels() {
             <div class="row">
               <h2 style="margin:0">${esc(c.name)}</h2>
               <span class="pill" style="border-color:${meta.accent}66;color:${meta.accent}">${meta.label}</span>
+              <span class="pill published">🇺🇸 USA</span>
               ${c.enabled ? '' : '<span class="pill failed">disabled</span>'}
             </div>
             <div class="dim" style="font-size:12px;margin-top:2px">${esc(c.niche || '')}</div>
@@ -940,6 +941,12 @@ async function viewSettings() {
 
     <div class="panel">
       <h2>Channel & automation</h2>
+      <label class="f"><span class="lt">AUDIENCE COUNTRY — drives tags, SEO, topic bias, and metadata ('usa' = US English, $ amounts, ET slots)</span>
+        <input id="s-audience" value="${esc(s.audience_country || 'usa')}"></label>
+      <div class="dim" style="font-size:12px;margin:-6px 0 10px">
+        USA targeting stack: US-English metadata (en-US) on every upload · USA tags from the SEO
+        generator · US-resonant topic bias · slots in Eastern Time with Fri-PM/weekend boosts.
+        One manual step: set the channel's <b>country to United States</b> in YouTube Studio → Settings → Channel (not available via API).</div>
       <div class="grid3">
         <label class="f"><span class="lt">CHANNEL NAME</span><input id="s-channel" value="${esc(s.channel_name)}"></label>
         <label class="f" style="grid-column:span 2"><span class="lt">NICHE — DRIVES AUTO TOPIC RESEARCH</span>
@@ -984,6 +991,7 @@ async function viewSettings() {
   window.saveSettings = async () => {
     try {
       await api.put('/api/settings', {
+        audience_country: $('#s-audience').value.trim().toLowerCase() || 'usa',
         channel_name: $('#s-channel').value,
         niche: $('#s-niche').value,
         cadence_per_week: parseInt($('#s-cadence').value) || 5,

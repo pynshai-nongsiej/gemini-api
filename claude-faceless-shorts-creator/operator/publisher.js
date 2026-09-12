@@ -181,6 +181,9 @@ async function publishShort(db, queueEntry) {
     description: (seo.description || short.title).slice(0, 4900),
     tags: (seo.tags || []).slice(0, 15),
     categoryId: '27', // Education
+    // USA audience signal: US English language metadata
+    defaultLanguage: 'en-US',
+    defaultAudioLanguage: 'en-US',
   };
   const status = {
     privacyStatus: settings.youtube_privacy || 'public',
@@ -228,6 +231,9 @@ async function scheduleOnYouTube(db, short, scheduledAt) {
     description: (seo.description || short.title).slice(0, 4900),
     tags: (seo.tags || []).slice(0, 15),
     categoryId: '27', // Education
+    // USA audience signal: US English language metadata
+    defaultLanguage: 'en-US',
+    defaultAudioLanguage: 'en-US',
   };
   const status = {
     privacyStatus: 'private',

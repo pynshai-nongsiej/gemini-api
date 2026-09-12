@@ -29,6 +29,12 @@ imagery strategy, and Remotion edit format (`lib/story` / `lib/finance` / `lib/a
 Real-archive-first sourcing for every pipeline — see **IMAGERY-SOURCES.md** (NASA,
 Wikimedia, LoC, Openverse, Met, archive.org footage; AI only as labeled fallback).
 
+**USA-only audience targeting**: global `audience_country: 'usa'` setting drives
+US-English upload metadata (`defaultAudioLanguage: en-US`), USA tags from the SEO
+generator, US-resonant topic bias per pipeline ($/401k finance, US incidents
+history, NASA space), and Eastern-Time slots (13:00/19:00 ET + Fri-PM/weekend
+boosts). One manual step: set the channel country to United States in Studio.
+
 **Growth loop** (2026 Shorts-algorithm driven): per-channel target durations
 (completion lever), A/B hook races (`POST /api/channels/:id/start {"variants":3}` —
 one topic, 3 hook angles, the feed votes), micro-cuts (visual change every ~2.5s

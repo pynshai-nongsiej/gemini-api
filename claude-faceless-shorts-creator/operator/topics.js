@@ -15,10 +15,13 @@ const { callLocalAI, extractJSON } = require('./seo');
 const PIPELINE_TOPIC_RULES = {
   space: `- Each topic is ONE concrete, surprising fact, mechanism, or story — not a broad theme
 - Bold claims, huge numbers, "the photo/sound/thing that..." angles win
+- Prefer NASA / US missions / US observatories when natural (the audience is American)
 - Each must be explainable in ~40 seconds with real astronomical imagery`,
   finance: `- Each topic is a DIAGNOSTIC hook about the viewer's own money: a specific numerical
   error, rule-of-thumb, milestone audit, or hidden systemic cost (dealership financing math,
   bank sweep rates, cohort net-worth medians, tax-advantaged account mechanics)
+- USA audience ONLY: all figures in DOLLARS with US institutions — 401k, Roth IRA, US banks,
+  US credit scores, US median incomes, US dealership/tax rules. No euro/pound/foreign framing
 - The topic MUST contain at least one concrete number, percentage, or dollar figure
 - No abstract economic theory, no generic budgeting tips, no "top 5" lists
 - Each must be explainable in ~40 seconds with on-screen data graphics and kinetic numbers`,
@@ -27,6 +30,9 @@ const PIPELINE_TOPIC_RULES = {
   year, place, and physical artifact (document, blueprint, border, structure)
 - Lead with the startling artifact or anomaly itself, never with background
 - No wars-overview, no "history of X" — one incident, one mechanism
+- USA audience: PREFER American incidents, places, and declassified US programs (US
+  infrastructure failures, US declassified files, US borders/land quirks) — while keeping
+  the story gripping for an American viewer
 - Each must be explainable in ~40 seconds with archival photos, maps, and documents`,
 };
 

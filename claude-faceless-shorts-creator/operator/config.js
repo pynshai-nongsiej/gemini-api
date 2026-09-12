@@ -26,6 +26,7 @@ function loadEnvFile() {
 const env = loadEnvFile();
 
 const DEFAULT_SETTINGS = {
+  audience_country: 'usa',           // USA-only audience targeting (seo/topics/metadata)
   channel_name: 'Cosmic Archive',
   niche: 'space and science mysteries',
   cadence_per_week: 14,              // 2 shorts daily
