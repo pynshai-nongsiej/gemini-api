@@ -327,6 +327,20 @@ window.connectChannel = async (id) => {
     const { url } = await api.get(`/api/youtube/auth?channel=${encodeURIComponent(id)}`);
     window.open(url, '_blank');
     toast('complete the Google consent in the new tab — it authorizes THIS channel');
+    openModal(`
+      <h2 style="font-size:16px;margin-bottom:10px">If Google says "Access blocked: … not completed the Google verification process"</h2>
+      <div style="font-size:13.5px;line-height:1.6">
+        The channel's OAuth app is in <b>Testing</b> mode. Fix (1 minute, in the app's Google Cloud Console):
+        <ol style="margin:10px 0 10px 20px">
+          <li><b>APIs & Services → OAuth consent screen</b> (may be labeled <b>Audience</b>)</li>
+          <li>Under <b>Test users</b> → <b>+ Add users</b> → add the Google account you consent with (e.g. <span class="mono">pynshainongsiej0622@gmail.com</span>) → Save</li>
+          <li>Retry the connect button — consent works immediately</li>
+        </ol>
+        <b>Recommended follow-up:</b> set Publishing status to <b>In production</b>. YouTube scopes are
+        "sensitive", so Google shows an "unverified app" warning — click <b>Advanced → Go to (app)</b> once.
+        That removes the 7-day test-token expiry so you don't re-connect every week.
+      </div>
+      <div class="row" style="margin-top:14px"><button class="btn" onclick="closeModal()">got it</button></div>`);
   } catch (e) { toast(e.message, 'err'); }
 };
 
@@ -436,7 +450,7 @@ async function viewGenerate() {
           <span class="pill" style="border-color:${meta.accent}66;color:${meta.accent}">${meta.label}</span>
           ${c.youtube_authorized
             ? '<span class="pill published">✓ YT connected</span>'
-            : `<button class="btn sm" onclick="connectChannel('${c.id}')">⚠ connect YouTube</button>`}
+            : `<button class="btn sm" title="If Google says 'Access blocked', add your Google account as a TEST USER in the cloud console of this channel's OAuth app (see Settings)" onclick="connectChannel('${c.id}')">⚠ connect YouTube</button>`}
         </h2>
         <div class="grid3">
           <label class="f"><span class="lt">TOPIC — LEAVE BLANK IF USING AUTO-RESEARCH</span>
