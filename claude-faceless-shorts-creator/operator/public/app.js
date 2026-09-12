@@ -200,9 +200,9 @@ function safeMeta(s) {
 let channelsCache = [];
 
 const PIPELINE_META = {
-  space: { label: 'NASA space', icon: '🛰', desc: 'NASA-first imagery · Ken Burns + word-pop captions', accent: '#7dd3fc' },
-  finance: { label: 'finance data-graphics', icon: '💰', desc: 'Wikimedia/LoC/Met archive-first · film grade + date & source stamps', accent: '#86efac' },
-  history: { label: 'archival history', icon: '🏛', desc: 'archive-first imagery · film grade + date/source stamps', accent: '#f5d76e' },
+  space: { label: 'NASA space', icon: '🛰', desc: 'NASA-first imagery · Ken Burns + word-pop captions', accent: '#2563eb' },
+  finance: { label: 'finance data-graphics', icon: '💰', desc: 'kinetic numbers · counter/bars/percent/rule graphics', accent: '#059669' },
+  history: { label: 'archival history', icon: '🏛', desc: 'archive-first imagery · film grade + date/source stamps', accent: '#b45309' },
 };
 PIPELINE_META.finance.desc = 'kinetic numbers · counter/bars/percent/rule graphics over AI plates';
 
@@ -764,7 +764,7 @@ async function viewPublish() {
               <h2 style="margin:0;font-size:14px">${esc(c.name)}</h2>
               <span class="pill published">🇺🇸 USA</span>
               <span class="pill">${(c.publish_slots || []).join(' · ')} ET</span>
-              ${c.long_slot ? `<span class="pill long-slot" style="background:rgba(232,198,107,0.12);color:var(--gold)">🎬 long: ${esc(c.long_slot)} ET</span>` : ''}
+              ${c.long_slot ? `<span class="pill long-slot" style="background:rgba(232,198,107,0.12);color:var(--warn)">🎬 long: ${esc(c.long_slot)} ET</span>` : ''}
             </div>
             <div class="dim" style="font-size:11.5px;margin-top:4px">
               ${c.scheduled_count} scheduled · next long drop ${esc(c.next_long || '—')}

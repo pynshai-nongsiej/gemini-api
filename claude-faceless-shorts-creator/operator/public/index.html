@@ -3,10 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Shorts Studio — Local Operator</title>
+<title>Shorts Studio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=4">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;450;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=6">
 </head>
 <body>
 
@@ -14,21 +15,27 @@
   <!-- ======================= SIDEBAR ======================= -->
   <aside class="sidebar">
     <div class="brand">
-      <div class="brand-mark">⚡</div>
       <div>
         <div class="brand-name">Shorts Studio</div>
-        <div class="brand-sub">local operator</div>
+        <div class="brand-sub">faceless media factory</div>
       </div>
     </div>
 
     <nav class="nav">
+      <div class="nav-group">Workspace</div>
       <button class="nav-item" data-tab="overview"><span class="ico">◈</span> Overview</button>
       <button class="nav-item" data-tab="channels"><span class="ico">⛁</span> Channels</button>
       <button class="nav-item" data-tab="generate"><span class="ico">✦</span> Generate<span class="nav-badge" id="badge-gen" hidden></span></button>
-      <button class="nav-item" data-tab="review"><span class="ico">◉</span> Review<span class="nav-badge warn" id="badge-review" hidden></span></button>
+
+      <div class="nav-group">Content</div>
+      <button class="nav-item" data-tab="review"><span class="ico">◉</span> Review<span class="nav-badge" id="badge-review" hidden></span></button>
       <button class="nav-item" data-tab="library"><span class="ico">▦</span> Library</button>
-      <button class="nav-item" data-tab="publish"><span class="ico">▲</span> Publish<span class="nav-badge ok" id="badge-pub" hidden></span></button>
+
+      <div class="nav-group">Ship</div>
+      <button class="nav-item" data-tab="publish"><span class="ico">▲</span> Publish<span class="nav-badge" id="badge-pub" hidden></span></button>
       <button class="nav-item" data-tab="analytics"><span class="ico">◔</span> Analytics</button>
+
+      <div class="nav-group">System</div>
       <button class="nav-item" data-tab="settings"><span class="ico">⚙</span> Settings</button>
     </nav>
 
@@ -56,6 +63,6 @@
   <div class="modal" id="modal"></div>
 </div>
 
-<script src="app.js?v=4"></script>
+<script src="app.js?v=6"></script>
 </body>
 </html>
