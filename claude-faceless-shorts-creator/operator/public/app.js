@@ -414,44 +414,55 @@ window.submitEditChannel = async (id) => {
 
 /* ============ GENERATE ============ */
 async function viewGenerate() {
-  const [jobsR, runsR] = await Promise.all([
-    api.get('/api/jobs'), api.get('/api/operator/runs')]);
+  const [jobsR, runsR, channelsR] = await Promise.all([
+    api.get('/api/jobs'), api.get('/api/operator/runs'),
+    api.get('/api/channels').catch(() => ({ channels: [] })),
+  ]);
   const jobs = arr(obj(jobsR).jobs);
   const runs = arr(obj(runsR).runs);
+  const channels = arr(obj(channelsR).channels);
 
   $('#main').innerHTML = `
     <div class="page-head">
-      <h1>Generate</h1><span class="sub">script · NASA-first images · Kokoro voice · render · SFX</span>
+      <h1>Generate</h1><span class="sub">per-channel · script · imagery · voice · render · SFX</span>
     </div>
 
-    <div class="panel">
-      <h2>New short</h2>
-      <label class="f"><span class="lt">TOPIC</span>
-        <input id="g-topic" placeholder="e.g. the moon quake that rang for an hour" autocomplete="off"></label>
-      <div class="grid3">
-        <label class="f"><span class="lt">STYLE / NICHE</span>
-          <input id="g-style" placeholder="space documentary"></label>
-        <label class="f"><span class="lt">VOICE (KOKORO)</span>
-          <select id="g-voice">${VOICES.map(v => `<option value="${v}">${v === 'dynamic' ? '✦ dynamic (auto-pick)' : v}</option>`).join('')}</select></label>
-        <label class="f"><span class="lt">MUSIC BED</span>
-          <select id="g-music">${MUSIC.map(v => `<option value="${v}">${v || 'none'}</option>`).join('')}</select></label>
-      </div>
-      <div class="row">
-        <button class="btn primary" id="g-go">✦ Generate short</button>
-        <button class="btn" id="g-auto">🤖 Auto-research & generate</button>
-        <span class="dim" style="font-size:12px">auto picks fresh topics via local AI — full production history excluded</span>
-      </div>
-    </div>
+    ${channels.length ? channels.map(c => {
+      const meta = PIPELINE_META[c.pipeline] || { label: c.pipeline, icon: '◈', accent: 'var(--accent)' };
+      return `
+      <div class="panel">
+        <h2>${meta.icon} ${esc(c.name)}
+          <span class="pill" style="border-color:${meta.accent}66;color:${meta.accent}">${meta.label}</span>
+          ${c.youtube_authorized ? '<span class="pill published">✓ YT</span>' : ''}
+        </h2>
+        <div class="grid3">
+          <label class="f"><span class="lt">TOPIC — LEAVE BLANK IF USING AUTO-RESEARCH</span>
+            <input id="g-topic-${esc(c.id)}" placeholder="e.g. ${esc(c.niche || '')}" autocomplete="off"></label>
+          <label class="f"><span class="lt">VOICE</span>
+            <select id="g-voice-${esc(c.id)}">${VOICES.map(v => `<option value="${v}" ${(c.voice || 'dynamic') === v ? 'selected' : ''}>${v === 'dynamic' ? '✦ dynamic (auto-pick)' : v}</option>`).join('')}</select></label>
+          <label class="f"><span class="lt">MUSIC (none by default)</span>
+            <select id="g-music-${esc(c.id)}">${MUSIC.map(v => `<option value="${v}" ${(c.music || '') === v ? 'selected' : ''}>${v || 'none'}</option>`).join('')}</select></label>
+        </div>
+        <div class="row">
+          <button class="btn primary" onclick="genForChannel('${c.id}')">✦ Generate short</button>
+          <button class="btn" onclick="autoForChannel('${c.id}')">🤖 Auto-research & generate</button>
+          <button class="btn" title="One topic, 3 hook angles — the feed votes" onclick="raceForChannel('${c.id}')">🧪 A/B hook race</button>
+        </div>
+        <div class="dim" style="font-size:12px;margin-top:2px">${esc(c.niche || '')}</div>
+      </div>`;
+    }).join('') : '<div class="panel dim">no channels — add one in the Channels tab</div>'}
 
     <div class="panel">
       <h2>Job queue</h2>
       ${jobs.length ? `<table>
-        <tr><th>Topic</th><th style="width:110px">Status</th><th style="width:130px">Created</th><th style="width:190px">Actions</th></tr>
+        <tr><th>Topic</th><th style="width:130px">Channel</th><th style="width:110px">Status</th><th style="width:130px">Created</th><th style="width:190px">Actions</th></tr>
         ${jobs.map(j => `
           <tr>
             <td><b>${esc(j.topic)}</b>
+              ${j.variant_group ? `<span class="pill" style="font-size:9.5px;padding:2px 6px">🧪 ${esc(j.variant_group)}</span>` : ''}
               ${j.error ? `<div class="dim mono" style="color:var(--err);font-size:10.5px;margin-top:3px">${esc(j.error).slice(0, 110)}</div>` : ''}
               ${j.status === 'running' ? `<div class="prog"><div style="width:45%"></div></div>` : ''}</td>
+            <td class="dim">${esc(channels.find(c => c.id === (j.channel_id || 'cosmic-archive'))?.name || j.channel_id || '—')}</td>
             <td><span class="pill ${j.status}">${j.status}</span></td>
             <td class="dim">${when(j.created_at)}</td>
             <td>
@@ -467,29 +478,39 @@ async function viewGenerate() {
     <div class="panel">
       <h2>Operator runs</h2>
       <table>
-        <tr><th>Run</th><th>Status</th><th>Planned</th><th>When</th></tr>
+        <tr><th>Run</th><th>Channel</th><th>Status</th><th>Planned</th><th>When</th></tr>
         ${runs.map(r => `<tr><td class="mono">${r.id}</td>
+          <td class="dim">${esc(channels.find(c => c.id === (r.channel_id || 'cosmic-archive'))?.name || r.channel_id || '—')}</td>
           <td><span class="pill">${r.status}</span></td>
           <td>${r.planned_count}</td><td class="dim">${when(r.created_at)}</td></tr>`).join('')}
       </table>
     </div>` : ''}`;
 
-  $('#g-go').onclick = async () => {
-    const topic = $('#g-topic').value.trim();
-    if (!topic) return toast('enter a topic first', 'err');
+  window.genForChannel = async (id) => {
+    const topic = $(`#g-topic-${id}`).value.trim();
+    if (!topic) return toast('enter a topic first (or use auto-research)', 'err');
     try {
       await api.post('/api/jobs', {
-        topic, style: $('#g-style').value.trim() || undefined,
-        voice: $('#g-voice').value, music: $('#g-music').value || undefined,
+        topic,
+        voice: $(`#g-voice-${id}`).value,
+        music: $(`#g-music-${id}`).value || undefined,
+        channelId: id,
       });
-      toast('job enqueued — NASA-first image hunt starting', 'ok');
+      toast('job enqueued — imagery hunt starting', 'ok');
       viewGenerate();
     } catch (e) { toast(e.message, 'err'); }
   };
-  $('#g-auto').onclick = async () => {
+  window.autoForChannel = async (id) => {
     try {
-      const r = await api.post('/api/operator/start', {});
+      const r = await api.post(`/api/channels/${id}/start`, {});
       toast(`operator planned ${r.topics.length} short(s)`, 'ok');
+      viewGenerate();
+    } catch (e) { toast(e.message, 'err'); }
+  };
+  window.raceForChannel = async (id) => {
+    try {
+      const r = await api.post(`/api/channels/${id}/start`, { variants: 3 });
+      toast(`A/B hook race: 3 variants of "${(r.topics[0] || '').slice(0, 36)}…"`, 'ok');
       viewGenerate();
     } catch (e) { toast(e.message, 'err'); }
   };
