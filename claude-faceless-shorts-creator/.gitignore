@@ -29,3 +29,5 @@ operator/data/
 
 # local run logs
 logs/
+longs/*/voice/
+longs/*/output/
