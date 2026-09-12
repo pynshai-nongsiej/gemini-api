@@ -123,6 +123,21 @@ class Worker {
       if (hookHint) {
         style = `${style || ''} HOOK REQUIREMENT: ${hookHint}`.trim();
       }
+      // anti-repetition: feed the channel's most recent hooks back as
+      // phrasings to avoid (inauthentic-content guard — no templated sameness)
+      let recentHooks = '';
+      if (channel) {
+        try {
+          const rows = this.db.all(
+            `SELECT meta_json FROM shorts WHERE channel_id=? ORDER BY created_at DESC LIMIT 6`, channel.id);
+          const hooks = rows.map(r => { try { return JSON.parse(r.meta_json || '{}').hook || ''; } catch { return ''; } })
+            .filter(Boolean).slice(0, 5);
+          if (hooks.length) {
+            recentHooks = ` RECENT OPENING HOOKS ALREADY USED (vary the phrasing and angle — never reuse these): ${hooks.map(h => `"${h}"`).join('; ')}`;
+          }
+        } catch {}
+      }
+      if (recentHooks) style = `${style || ''}${recentHooks}`.trim();
       if (style) args.push('--style', style);
     }
     const voice = this.resolveVoice(job, settings, channel);

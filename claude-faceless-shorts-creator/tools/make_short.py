@@ -42,6 +42,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
 
 from gen_script import CAMERA_MOVES, slugify  # noqa: E402
+from variation import derive as variation_derive, allowed_transition_beats  # noqa: E402
 
 def transition_for(next_beat, i, pipeline):
     """Mirror of remotion/lib/transitions.tsx `transitionFor` (kept in sync).
@@ -645,7 +646,7 @@ def _srcs_b(beats, media_dir):
     return out
 
 
-def gen_composition(beats, srcs, clips, comp_id, shot_dir, accent, pipeline="space"):
+def gen_composition(beats, srcs, clips, comp_id, shot_dir, accent, pipeline="space", seed=None):
     """Write the AutoN.tsx Remotion composition from ACTUAL voice timings —
     in the pipeline's edit format. Visual grid may hold micro-cuts (2 shots
     per long line); overlays key off the VO line grid."""
@@ -657,10 +658,10 @@ def gen_composition(beats, srcs, clips, comp_id, shot_dir, accent, pipeline="spa
     vo_frames = _vo_frames(beats, fps)
 
     if pipeline == "finance":
-        return gen_composition_finance(beats, spans, vo_frames, comp_id, shot_dir, accent, fps, total)
+        return gen_composition_finance(beats, spans, vo_frames, comp_id, shot_dir, accent, fps, total, seed)
     if pipeline == "history":
-        return gen_composition_history(beats, spans, vo_frames, comp_id, shot_dir, accent, fps, total)
-    return gen_composition_space(beats, spans, vo_frames, comp_id, shot_dir, accent, fps, total)
+        return gen_composition_history(beats, spans, vo_frames, comp_id, shot_dir, accent, fps, total, seed)
+    return gen_composition_space(beats, spans, vo_frames, comp_id, shot_dir, accent, fps, total, seed)
 
 
 def _spans_lit(spans):
@@ -671,11 +672,12 @@ def _spans_lit(spans):
         f"fadeIn: {s['fadeIn']} }}," for s in spans)
 
 
-def gen_composition_space(beats, spans, vo_frames, comp_id, shot_dir, accent, fps, total):
+def gen_composition_space(beats, spans, vo_frames, comp_id, shot_dir, accent, fps, total, seed=None):
     """SPACE edit format: Ken Burns photos + word-pop captions + a light-leak
     flare on the reveal, whip-pan on the twist; calm beats keep crossfades."""
     beats_lit = _spans_lit(spans)
-    trans_lit = _transitions_lit(vo_frames, "space")
+    trans_lit = _transitions_lit(vo_frames, "space", (seed or {}).get("transition_density"))
+    cap_json = json.dumps((seed or {}).get("caption_style", "plate"))
     bait = _quiz_bait(vo_frames, "space", fps)
     hook_end = vo_frames[0]["end"] if vo_frames else round(3 * fps)
 
@@ -743,7 +745,7 @@ const {comp_id}: React.FC = () => {{
           <CommentBait text={{BAIT.text}} accent={{ACCENT}} />
         </Sequence>
       )}}
-      <Captions lines={{VO}} y={{1330}} size={{54}} accent={{ACCENT}} maxWords={{5}} plate highlight />
+      <Captions lines={{VO}} y={{1330}} size={{54}} accent={{ACCENT}} maxWords={{5}} plate highlight variant={cap_json} />
       <ProgressBar color={{ACCENT}} />
     </AbsoluteFill>
   );
@@ -774,21 +776,26 @@ def _quiz_bait(vo_frames, pipeline, fps):
     }
 
 
-def _transitions_lit(vo_frames, pipeline):
+def _transitions_lit(vo_frames, pipeline, density=None):
     """One overlay per beat change (i>0), kind picked from the incoming beat.
-    Space returns None on calm beats — those keep their gentle crossfades."""
+    Space returns None on calm beats. density (anti-template rotation) narrows
+    which beats may carry an overlay."""
+    allowed = allowed_transition_beats(density) if density else None
     lines = []
     for i, f in enumerate(vo_frames):
         if i == 0:
             continue
-        kind = transition_for(f["vo"].get("beat", ""), i, pipeline)
+        beat = f["vo"].get("beat", "")
+        kind = transition_for(beat, i, pipeline)
         if kind is None:
+            continue
+        if allowed is not None and beat not in allowed:
             continue
         lines.append(f"  {{ kind: '{kind}', at: {f['start']}, dur: 8 }},")
     return "\n".join(lines)
 
 
-def gen_composition_finance(beats, spans, vo_frames, comp_id, shot_dir, accent, fps, total):
+def gen_composition_finance(beats, spans, vo_frames, comp_id, shot_dir, accent, fps, total, seed=None):
     """FINANCE edit format: dark AI background plates + a kinetic data-graphic
     layer (counter / comparison bars / percent dial / rule card) + hook card +
     hard transitions + number-highlighted captions."""
@@ -801,7 +808,9 @@ def gen_composition_finance(beats, spans, vo_frames, comp_id, shot_dir, accent, 
         f"onScreen: {json.dumps(str(f['vo'].get('onScreen', '')))}, "
         f"from: {f['start']}, end: {f['end']} }},"
         for f in vo_frames)
-    trans_lit = _transitions_lit(vo_frames, "finance")
+    trans_lit = _transitions_lit(vo_frames, "finance", (seed or {}).get("transition_density"))
+    hp_json = json.dumps((seed or {}).get("hook_placement", "top"))
+    cap_json = json.dumps((seed or {}).get("caption_style", "plate"))
     bait = _quiz_bait(vo_frames, "finance", fps)
     hook_card = json.dumps(str(beats.get("hookCard") or beats.get("title") or ""))
     hook_end = vo_frames[0]["end"] if vo_frames else round(3 * fps)
@@ -844,6 +853,8 @@ const TRANSITIONS = [
 ] as const;
 
 const HOOK_CARD = {hook_card};
+const HOOK_PLACEMENT = {hp_json};
+const CAPTION_VARIANT = {cap_json};
 const HOOK_END = {hook_end};
 const BAIT = {json.dumps(bait) if bait else 'null'};
 
@@ -867,7 +878,7 @@ const {comp_id}: React.FC = () => {{
       }})}}
       <AbsoluteFill style={{{{ background: 'rgba(8, 10, 14, 0.5)' }}}} />
       <Sequence from={{0}} durationInFrames={{HOOK_END + 20}}>
-        <HookCard text={{HOOK_CARD}} accent={{ACCENT}} />
+        <HookCard text={{HOOK_CARD}} accent={{ACCENT}} placement={{HOOK_PLACEMENT}} />
       </Sequence>
       {{STATS.map((s, i) => (
         <Sequence key={{'s' + i}} from={{s.from + 6}} durationInFrames={{s.end - s.from - 6}}>
@@ -885,7 +896,7 @@ const {comp_id}: React.FC = () => {{
           <CommentBait text={{BAIT.text}} accent={{ACCENT}} />
         </Sequence>
       )}}
-      <Captions lines={{VO}} y={{1330}} size={{54}} accent={{ACCENT}} maxWords={{5}} plate highlight />
+      <Captions lines={{VO}} y={{1330}} size={{54}} accent={{ACCENT}} maxWords={{5}} plate highlight variant={cap_json} />
       <ProgressBar color={{ACCENT}} />
     </AbsoluteFill>
   );
@@ -896,7 +907,7 @@ export default {comp_id};
     return _write_comp(shot_dir, comp_id, tsx)
 
 
-def gen_composition_history(beats, spans, vo_frames, comp_id, shot_dir, accent, fps, total):
+def gen_composition_history(beats, spans, vo_frames, comp_id, shot_dir, accent, fps, total, seed=None):
     """HISTORY edit format: archival imagery with film grade + grain, on-screen
     date/place stamps, per-beat source tag (archive + creator + year), wipe/
     rewind transitions carrying the next stamp, highlighted captions."""
@@ -916,12 +927,16 @@ def gen_composition_history(beats, spans, vo_frames, comp_id, shot_dir, accent, 
         kind = transition_for(f["vo"].get("beat", ""), i, "history")
         if kind is None:
             continue
+        if seed and f["vo"].get("beat", "") not in allowed_transition_beats(seed.get("transition_density")):
+            continue
         label = str(f["vo"].get("onScreen", "")) if kind == "wipe" else ""
         wipe_labels.append(f"  {{ kind: '{kind}', at: {f['start']}, dur: 8, label: {json.dumps(label)} }},")
     trans_lit = "\n".join(wipe_labels)
     hook_card = json.dumps(str(beats.get("hookCard") or beats.get("title") or ""))
     hook_end = vo_frames[0]["end"] if vo_frames else round(3 * fps)
     bait = _quiz_bait(vo_frames, "history", fps)
+    hp_json = json.dumps((seed or {}).get("hook_placement", "top"))
+    cap_json = json.dumps((seed or {}).get("caption_style", "plate"))
 
     tsx = f"""import React from 'react';
 import {{ AbsoluteFill, OffthreadVideo, Sequence, staticFile }} from 'remotion';
@@ -961,6 +976,8 @@ const TRANSITIONS = [
 ] as const;
 
 const HOOK_CARD = {hook_card};
+const HOOK_PLACEMENT = {hp_json};
+const CAPTION_VARIANT = {cap_json};
 const HOOK_END = {hook_end};
 const BAIT = {json.dumps(bait) if bait else 'null'};
 
@@ -986,7 +1003,7 @@ const {comp_id}: React.FC = () => {{
         );
       }})}}
       <Sequence from={{0}} durationInFrames={{HOOK_END + 20}}>
-        <HookCard text={{HOOK_CARD}} accent={{ACCENT}} />
+        <HookCard text={{HOOK_CARD}} accent={{ACCENT}} placement={{HOOK_PLACEMENT}} />
       </Sequence>
       {{TRANSITIONS.map((t, i) => (
         <Sequence key={{'t' + i}} from={{Math.max(0, t.at - 4)}} durationInFrames={{t.dur}}>
@@ -998,7 +1015,7 @@ const {comp_id}: React.FC = () => {{
           <CommentBait text={{BAIT.text}} accent={{ACCENT}} />
         </Sequence>
       )}}
-      <Captions lines={{VO}} y={{1330}} size={{54}} accent={{ACCENT}} maxWords={{5}} plate highlight />
+      <Captions lines={{VO}} y={{1330}} size={{54}} accent={{ACCENT}} maxWords={{5}} plate highlight variant={cap_json} />
       <ProgressBar color={{ACCENT}} />
     </AbsoluteFill>
   );
@@ -1121,8 +1138,10 @@ def main():
             "history": "tools/gen_script_history.py",
         }[pipeline]
         print(f"\n[1/8] {pipeline} script (local AI) for: {args.topic!r}")
+        seed = variation_derive(proj_id)
         sh([sys.executable, script_tool, "--topic", args.topic,
-            "--out", proj_dir, "--duration", str(args.duration)]
+            "--out", proj_dir, "--duration", str(args.duration),
+            "--engagement", seed["engagement"]]
            + (["--style", args.style] if args.style else []))
     beats = json.load(open(beats_path, encoding="utf-8"))
     pipeline = beats.get("pipeline", pipeline)  # beats.json knows best on resume
@@ -1167,9 +1186,12 @@ def main():
         pass
 
     # 5. composition + render
-    accent = args.accent or ACCENTS[(next_index() - 1) % len(ACCENTS)]
-    print(f"\n[5/8] composition + render (accent {accent})")
-    gen_composition(beats, srcs, clips, comp_id, shot_dir, accent, pipeline)
+    seed = variation_derive(proj_id)  # anti-template fingerprint
+    accent = args.accent or seed["accent"]
+    print(f"\n[5/8] composition + render (accent {accent}, "
+          f"caption={seed['caption_style']}, hook={seed['hook_placement']}, "
+          f"transitions={seed['transition_density']}, engagement={seed['engagement']})")
+    gen_composition(beats, srcs, clips, comp_id, shot_dir, accent, pipeline, seed)
     if args.skip_render:
         print("      --skip-render: stopping before render")
         return

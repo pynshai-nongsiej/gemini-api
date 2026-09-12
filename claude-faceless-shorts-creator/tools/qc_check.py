@@ -61,6 +61,41 @@ def run_qc(short_dir, video=None):
             report["issues"].append(f"duration {dur:.1f}s outside the {window} window")
     report["checks"]["duration"] = round(dur, 2) if dur else None
 
+    # TEMPLATE-FINGERPRINT guard (inauthentic-content policy): compare this
+    # project's shape against the channel's recent siblings. Similarity here
+    # is a WARNING (never a publish block) — it surfaces in the operator log
+    # so humans can rotate angles before the channel starts looking templated.
+    try:
+        import glob as _glob
+        siblings = []
+        base = os.path.dirname(proj_dir)
+        for other in sorted(_glob.glob(os.path.join(base, "*", "beats.json")), reverse=True)[:12]:
+            op = os.path.dirname(other)
+            if op == proj_dir:
+                continue
+            try:
+                ob = json.load(open(other, encoding="utf-8"))
+                siblings.append({
+                    "id": os.path.basename(op),
+                    "lines": len(ob.get("vo", [])),
+                    "hook3": " ".join(ob["vo"][0]["text"].lower().split()[:3]),
+                    "accent": ob.get("accent") or (json.load(open(os.path.join(op, "qc-report.json"))) or {}).get("accent"),
+                })
+            except Exception:
+                continue
+        if siblings:
+            same_lines = sum(1 for s in siblings if s["lines"] == len(beats.get("vo", [])))
+            same_hook = sum(1 for s in siblings if s["hook3"] == " ".join(beats["vo"][0]["text"].lower().split()[:3]))
+            report["warnings"] = []
+            if same_lines >= 4:
+                report["warnings"].append(f"line count matches {same_lines}/{len(siblings)} recent siblings — vary script length")
+            if same_hook >= 2:
+                report["warnings"].append(f"{same_hook} recent siblings open with the same three words — rotate the hook angle")
+            if report["warnings"]:
+                print(f"    repetitive-content warnings: {' | '.join(report['warnings'])}")
+    except Exception:
+        pass
+
     # voice track
     if beats.get("voiceStatus", "").startswith("pending"):
         report["verdict"] = "flag"

@@ -42,9 +42,14 @@ inside a voice line), comment-bait quiz beats, weighted slots (Fri PM / weekend 
 bonus slots), and a retention feedback loop — `refreshRetention` pulls
 averageViewPercentage per published short (needs one re-auth per channel for the
 new analytics scope) and `winningHooks` feeds 70%+ retention hooks back into
-topic research. Monetization guard: the July 2025 "inauthentic content" policy
-targets templated mass-production — keep the human review gate ON and the three
-channels' formats distinct.
+topic research. Monetization guard (July 2025 "inauthentic content" policy): keep the human
+review gate ON, the three channels' formats distinct, and the anti-template
+engine ON — `tools/variation.py` derives a per-project fingerprint (12-color
+accent, caption treatment plate/bare/bar, hook placement, transition density,
+engagement device, chapter card style) so no two productions share a template
+look; topic research drops token-overlap near-duplicates; the worker feeds
+recent hooks back as phrasings-to-avoid; qc_check emits repetitive-content
+warnings when a channel's recent outputs look like clones.
 
 ## Layout
 

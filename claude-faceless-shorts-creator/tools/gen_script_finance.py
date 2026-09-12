@@ -119,11 +119,14 @@ Rules: 8-12 vo lines. beats covers hook/setup/quiz/reveal/twist/loop in order.
 The loop's visual and statValue must mirror the hook's."""
 
 
-def generate_script(topic, style, duration, word_budget):
+def generate_script(topic, style, duration, word_budget, engagement=None):
     prompt = f"TOPIC: {topic}\n"
     if style:
         prompt += f"STYLE / NICHE: {style}\n"
     prompt += SYSTEM_PROMPT.format(word_budget=word_budget, duration=duration)
+    if engagement:
+        from variation import ENGAGEMENT_INSTRUCTIONS
+        prompt += "\n" + ENGAGEMENT_INSTRUCTIONS.get(engagement, "") + "\n"
     prompt += "\nReturn ONLY the JSON."
 
     for attempt in range(1, 4):
@@ -182,12 +185,15 @@ def main():
     ap.add_argument("--style", default=None)
     ap.add_argument("--duration", type=float, default=40.0)
     ap.add_argument("--word-budget", type=int, default=105)
+    ap.add_argument("--engagement", default=None,
+                    help="comment-driving device for the quiz (anti-template rotation)")
     args = ap.parse_args()
 
     out_dir = os.path.abspath(args.out)
     os.makedirs(out_dir, exist_ok=True)
     print(f"generating FINANCE script for: {args.topic!r}")
-    data = generate_script(args.topic, args.style, args.duration, args.word_budget)
+    data = generate_script(args.topic, args.style, args.duration, args.word_budget,
+                           engagement=args.engagement)
     beats = normalize_finance(data, out_dir, args.duration)
 
     beats_path = os.path.join(out_dir, "beats.json")

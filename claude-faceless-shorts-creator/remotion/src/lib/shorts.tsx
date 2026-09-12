@@ -119,7 +119,9 @@ export const Captions: React.FC<{
   maxWords?: number;
   plate?: boolean; // dark pill behind the words — for compositions with light scenes
   highlight?: boolean; // numbers/dollars/percents always burn in accent (finance/history)
-}> = ({ lines, y = 1280, size = 58, accent = '#f5d76e', maxWords = 4, plate = false, highlight = false }) => {
+  variant?: 'plate' | 'bare' | 'bar'; // anti-template caption treatments
+}> = ({ lines, y = 1280, size = 58, accent = '#f5d76e', maxWords = 4, plate = false, highlight = false, variant }) => {
+  const plateOn = plate && variant !== 'bare' && variant !== 'bar';
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const t = frame / fps;
@@ -149,14 +151,21 @@ export const Captions: React.FC<{
           columnGap: size * 0.28,
           rowGap: size * 0.14,
           maxWidth: '100%',
-          ...(plate
+          ...((plate && !variant) || variant === 'plate'
             ? {
                 background: 'rgba(13,17,23,0.86)',
                 borderRadius: 22,
                 padding: `${size * 0.28}px ${size * 0.5}px`,
                 boxShadow: '0 12px 48px rgba(0,0,0,0.35)',
               }
-            : {}),
+            : variant === 'bar'
+              ? {
+                  background: 'rgba(13,17,23,0.86)',
+                  borderRadius: 6,
+                  borderLeft: `5px solid ${accent}`,
+                  padding: `${size * 0.26}px ${size * 0.42}px`,
+                }
+              : {}),
         }}
       >
       {active.words.map((word, i) => {

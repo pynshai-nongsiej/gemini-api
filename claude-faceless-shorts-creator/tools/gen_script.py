@@ -172,11 +172,14 @@ Rules: 8-14 vo lines total. beats covers hook/setup/quiz/reveal/twist/loop in or
 The loop beat's visual must mirror the hook's visual."""
 
 
-def generate_script(topic, style, duration, word_budget):
+def generate_script(topic, style, duration, word_budget, engagement=None):
     prompt = f"TOPIC: {topic}\n"
     if style:
         prompt += f"STYLE / NICHE: {style}\n"
     prompt += SYSTEM_PROMPT.format(word_budget=word_budget, duration=duration)
+    if engagement:
+        from variation import ENGAGEMENT_INSTRUCTIONS
+        prompt += "\n" + ENGAGEMENT_INSTRUCTIONS.get(engagement, "") + "\n"
     prompt += "\nReturn ONLY the JSON."
 
     for attempt in range(1, 4):
@@ -314,6 +317,8 @@ def main():
     ap.add_argument("--style", default=None, help='niche/style hint, e.g. "space documentary"')
     ap.add_argument("--duration", type=float, default=40.0)
     ap.add_argument("--word-budget", type=int, default=105)
+    ap.add_argument("--engagement", default=None,
+                    help="comment-driving device for the quiz (anti-template rotation)")
     args = ap.parse_args()
 
     out_dir = os.path.abspath(args.out)
@@ -322,7 +327,8 @@ def main():
     print(f"generating script for: {args.topic!r}")
     if args.style:
         print(f"style: {args.style}")
-    data = generate_script(args.topic, args.style, args.duration, args.word_budget)
+    data = generate_script(args.topic, args.style, args.duration, args.word_budget,
+                           engagement=args.engagement)
     beats = normalize(data, out_dir, args.duration)
 
     beats_path = os.path.join(out_dir, "beats.json")

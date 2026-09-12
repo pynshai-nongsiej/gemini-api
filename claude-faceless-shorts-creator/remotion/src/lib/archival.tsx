@@ -98,14 +98,17 @@ export const SourceTag: React.FC<{ text: string }> = ({ text }) => {
   );
 };
 
-/** ALL-CAPS banner over frame 0 (shares the finance hook-card convention:
- *  _underscored_ words render in the accent color). */
-export const HookCard: React.FC<{ text: string; accent: string }> = ({ text, accent }) => {
+/** ALL-CAPS banner over frame 0. placement rotates per video (anti-template). */
+export const HookCard: React.FC<{ text: string; accent: string; placement?: 'top' | 'center' }> = ({ text, accent, placement = 'top' }) => {
   const frame = useCurrentFrame();
   const rise = interpolate(frame, [0, 12], [40, 0], { extrapolateRight: 'clamp', easing: easeOut });
   const fade = interpolate(frame, [0, 8], [0, 1], { extrapolateRight: 'clamp' });
+  const centered = placement === 'center';
   return (
-    <AbsoluteFill style={{ justifyContent: 'flex-start', alignItems: 'center', paddingTop: 320, opacity: fade }}>
+    <AbsoluteFill style={{
+      justifyContent: centered ? 'center' : 'flex-start',
+      alignItems: 'center', paddingTop: centered ? 0 : 320, opacity: fade,
+    }}>
       <div style={{
         transform: `translateY(${rise}px)`,
         background: 'rgba(12, 9, 5, 0.62)',

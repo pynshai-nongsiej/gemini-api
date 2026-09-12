@@ -100,11 +100,23 @@ Return ONLY valid JSON: {"topics": ["...", "..."]}`;
         .map(t => String(t).trim())
         .filter(t => t.length > 10 && t.length < 200);
       if (topics.length) {
-        // hard dedup against history (case-insensitive substring both ways)
-        const lower = new Set(produced.map(t => t.toLowerCase()));
+        // hard dedup against history (substring both ways + token overlap —
+        // "the 401k fee trap" must not sail through because "the 401(k) trap" differs)
+        const lower = produced.map(t => t.toLowerCase());
+        const toks = (s) => new Set(String(s).toLowerCase().replace(/[^a-z0-9 ]/g, ' ').split(/\s+/).filter(w => w.length > 3));
+        const overlap = (a, b) => {
+          const A = toks(a), B = toks(b);
+          if (!A.size || !B.size) return 0;
+          let inter = 0;
+          for (const w of A) if (B.has(w)) inter++;
+          return inter / Math.min(A.size, B.size);
+        };
+        const recent = lower.slice(-40);
         const fresh = topics.filter(t => {
           const tl = t.toLowerCase();
-          return ![...lower].some(p => p.includes(tl) || tl.includes(p));
+          if (lower.some(p => p.includes(tl) || tl.includes(p))) return false;
+          if (recent.some(p => overlap(tl, p) > 0.6)) return false;
+          return true;
         });
         return fresh.length ? fresh : topics; // if all dups, still return (AI tried)
       }
