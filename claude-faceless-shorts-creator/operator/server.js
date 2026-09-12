@@ -69,6 +69,30 @@ db.notify = (level, message, meta = {}) => {
 /** Weighted slots (growth tuning): Buffer's 1.8M-video dataset shows Friday
  *  4-7 PM and weekend mornings over-index for Shorts — one dynamic bonus slot
  *  on those days, per channel, on top of the configured daily slots. */
+/** minutes-since-midnight from an ET "h:mm AM/PM" string (chronological sort) */
+function etTimeKey(formatted) {
+  const [t, ap] = String(formatted).split(' ');
+  if (!t || !ap) return 0;
+  const [h, m] = t.split(':').map(Number);
+  return ((h % 12) + (ap === 'PM' ? 12 : 0)) * 60 + (m || 0);
+}
+
+/** UTC instant for an ET wall-clock slot (h:m) on the given UTC-noon-anchored day. */
+function etDaySlotUTC(dayUtcNoon, h, m) {
+  const d = new Intl.DateTimeFormat('en-US', {
+    timeZone: 'America/New_York', year: 'numeric', month: '2-digit', day: '2-digit',
+  }).format(dayUtcNoon).split('/');
+  const [mo, dd, yy] = d.map(Number);
+  for (const off of [4, 5, 3]) {
+    const t = new Date(Date.UTC(yy, mo - 1, dd, h - off, m, 0));
+    const back = new Intl.DateTimeFormat('en-US', {
+      timeZone: 'America/New_York', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hour12: false,
+    }).formatToParts(t).reduce((acc, x) => (acc[x.type] = x.value, acc), {});
+    if (+back.month === mo && +back.day === dd && +back.hour % 24 === h && +back.minute === m) return t;
+  }
+  return new Date(Date.UTC(yy, mo - 1, dd, h + 4, m, 0));
+}
+
 function weightedSlots(base) {
   try {
     const wd = new Intl.DateTimeFormat('en-US', { timeZone: 'America/New_York', weekday: 'short' })
@@ -543,9 +567,78 @@ app.get('/api/publish-queue', (req, res) => {
       return (s?.channel_id || 'cosmic-archive') === c.id;
     });
     const calendarDays = usa.getWeeklyCalendar(c.publish_slots, 7, chanQueue);
+    // REALITY-FIRST day build: every queued item appears on its ET day (even
+    // legacy off-slot times), then configured-but-open slots fill the gaps.
+    const days = [];
+    const nowET = new Date();
+    const dayKey = (iso) => new Intl.DateTimeFormat('en-US', { timeZone: 'America/New_York', month: 'short', day: 'numeric' }).format(new Date(iso));
+    const upcoming = chanQueue
+      .filter(q => new Date(q.scheduled_at).getTime() > Date.now() - 5 * 60 * 1000)
+      .sort((a, b) => new Date(a.scheduled_at) - new Date(b.scheduled_at));
+    for (let addDay = 0; addDay < 7; addDay++) {
+      const d = new Date(Date.UTC(nowET.getUTCFullYear(), nowET.getUTCMonth(), nowET.getUTCDate() + addDay, 12));
+      const label = usa.fmtETDayLabel(d, addDay === 0);
+      const key = dayKey(d.toISOString());
+      const entries = chanQueue
+        .filter(q => dayKey(q.scheduled_at) === key)
+        .sort((a, b) => new Date(a.scheduled_at) - new Date(b.scheduled_at))
+        .map(q => {
+          const time = usa.fmtETTime(new Date(q.scheduled_at));
+          return {
+            time,
+            sortMin: etTimeKey(time),
+            title: q.short_title || q.short_id,
+            status: q.status,
+            youtube_id: q.youtube_id || null,
+            format: (allShorts.find(x => x.id === q.short_id) || {}).format || 'short',
+            is_past: new Date(q.scheduled_at).getTime() < Date.now() - 5 * 60 * 1000,
+          };
+        });
+      if (addDay === 0) {
+        // today's already-published drops stay visible with a check
+        for (const q of chanQueue) {
+          if (q.status !== 'published') continue;
+          if (dayKey(q.scheduled_at) !== key) continue;
+          if (entries.some(e => e.time === usa.fmtETTime(new Date(q.scheduled_at)) && e.title === (q.short_title || q.short_id))) continue;
+          const pTime = usa.fmtETTime(new Date(q.scheduled_at));
+          entries.push({
+            time: pTime, sortMin: etTimeKey(pTime),
+            title: q.short_title || q.short_id,
+            status: 'published', youtube_id: q.youtube_id || null,
+            format: (allShorts.find(x => x.id === q.short_id) || {}).format || 'short',
+            is_past: true,
+          });
+        }
+        entries.sort((a, b) => (a.sortMin || 0) - (b.sortMin || 0));
+      }
+      // open configured slots (not covered by a queued entry within 15 min)
+      for (const s of (c.publish_slots || [])) {
+        const [h, m] = s.split(':').map(Number);
+        const atTime = etDaySlotUTC(d, h, m);
+        if (atTime < Date.now() - 5 * 60 * 1000) continue; // don't show passed slots as "open"
+        const covered2 = entries.some(e => {
+          const [t, ap] = e.time.split(' ');
+          const [eh, em] = t.split(':').map(Number);
+          const eh24 = (eh % 12) + (ap === 'PM' ? 12 : 0);
+          return Math.abs((eh24 * 60 + em) - (h * 60 + m)) < 15;
+        });
+        if (!covered2) {
+          entries.push({ time: usa.fmtETTime(etDaySlotUTC(d, h, m)) + '', sortMin: h * 60 + m, title: null, open: true, is_past: false });
+        }
+      }
+      entries.sort((a, b) => (a.sortMin || 0) - (b.sortMin || 0));
+      days.push({ label, entries });
+    }
     return {
       ...decorateChannel(c),
       calendarDays,
+      days,
+      upcoming: upcoming.slice(0, 5).map(q => ({
+        title: q.short_title || q.short_id,
+        time: q.scheduled_at_et,
+        status: q.status,
+        format: (allShorts.find(x => x.id === q.short_id) || {}).format || 'short',
+      })),
       long_slot: c.long_slot,
       next_long: c.long_slot ? usa.fmtET(usa.nextETWeeklySlot(c.long_slot)) : null,
       scheduled_count: chanQueue.filter(q => ['scheduled', 'scheduled_on_youtube'].includes(q.status)).length,

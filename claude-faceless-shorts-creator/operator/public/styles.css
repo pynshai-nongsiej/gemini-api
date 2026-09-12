@@ -367,3 +367,27 @@ tr:hover td { background: rgba(25, 26, 28, 0.022); }
   .main { padding: 24px 20px 80px; }
   .grid2, .grid3, .days-grid { grid-template-columns: 1fr; }
 }
+
+/* ---------------- schedule entries (v2) ---------------- */
+:root { --accent-signal: #2563eb; }
+.sched-entry {
+  display: flex; align-items: center; gap: 6px;
+  padding: 4px 0; font-size: 11px; min-height: 20px;
+  border-bottom: 1px dashed var(--hair);
+}
+.sched-entry:last-child { border-bottom: none; }
+.sched-entry.open { color: var(--faint); }
+.sched-entry.past { opacity: 0.45; }
+.sched-entry.past .st-title { text-decoration: line-through; text-decoration-color: rgba(24,25,28,0.3); }
+.st-time { font: 500 10px var(--mono); color: var(--dim); flex-shrink: 0; }
+.st-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
+.st-title { flex: 1; color: var(--ink); font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.sched-entry.open .st-title { color: var(--faint); font-weight: 400; }
+.day-card.today .sched-entry { border-bottom-color: rgba(250, 250, 247, 0.14); }
+.day-card.today .st-time { color: rgba(250, 250, 247, 0.6); }
+.day-card.today .st-title { color: var(--paper); }
+.day-card.today .sched-entry.open .st-title { color: rgba(250, 250, 247, 0.4); }
+.day-card.today .sched-entry.past { opacity: 0.5; }
+.day-card.today .sched-entry.past .st-title { text-decoration-color: rgba(250, 250, 247, 0.35); }
+.panel { overflow-x: auto; }
+.panel .days-grid { min-width: 640px; }

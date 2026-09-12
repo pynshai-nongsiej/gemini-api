@@ -741,64 +741,65 @@ window.rejectShort = async (id, inModal = false) => {
 };
 
 /* ============ PUBLISH ============ */
+const STATUS_DOT = {
+  published: 'var(--ok)', scheduled_on_youtube: 'var(--accent-signal)',
+  scheduled: 'var(--accent-signal)', publishing: 'var(--accent-signal)',
+  failed: 'var(--err)', paused: 'var(--warn)',
+};
+function dayEntry(e) {
+  if (e.open) return `<div class="sched-entry open"><span class="st-time">${esc(e.time)}</span><span class="st-title">— open</span></div>`;
+  const dot = STATUS_DOT[e.status] || 'var(--faint)';
+  const st = e.status === 'published' ? '✓' : (e.status === 'scheduled_on_youtube' ? '▸' : '·');
+  const long = e.format === 'long' ? ' 🎬' : '';
+  return `<div class="sched-entry ${e.is_past ? 'past' : ''}">
+    <span class="st-time">${esc(e.time)}</span>
+    <span class="st-dot" style="background:${dot}"></span>
+    <span class="st-title" title="${esc(e.title)}">${st} ${esc(String(e.title).slice(0, 24))}${long}</span>
+  </div>`;
+}
 async function viewPublish() {
   const [queueR, yt] = await Promise.all([
     api.get('/api/publish-queue'), api.get('/api/youtube/status')]);
   const queue = arr(obj(queueR).queue);
   const channels = arr(obj(queueR).channels);
   const tz = obj(queueR).timezone || 'America/New_York';
-
   const ytState = obj(yt).channels || {};
+
   $('#main').innerHTML = `
     <div class="page-head"><h1>Publish</h1>
-      <span class="sub">USA schedule · all slots US Eastern (${esc(tz)}) · 3 shorts/day + weekly long drop</span></div>
+      <span class="sub">USA schedule · all times US Eastern (${esc(tz)})</span></div>
 
     ${channels.map(c => {
-      const chanYT = ytState[c.id];
+      const next = arr(c.upcoming)[0];
       return `
       <div class="panel channel-panel">
         <div class="channel-head">
-          <div class="channel-icon" style="border-color:${PIPELINE_META[c.pipeline]?.accent || 'var(--line2)'}55;color:${PIPELINE_META[c.pipeline]?.accent || 'var(--text)'}">${PIPELINE_META[c.pipeline]?.icon || '◈'}</div>
+          <div class="channel-icon" style="color:${PIPELINE_META[c.pipeline]?.accent || 'var(--ink)'}">${PIPELINE_META[c.pipeline]?.icon || '◈'}</div>
           <div style="flex:1;min-width:0">
             <div class="row">
               <h2 style="margin:0;font-size:14px">${esc(c.name)}</h2>
               <span class="pill published">🇺🇸 USA</span>
               <span class="pill">${(c.publish_slots || []).join(' · ')} ET</span>
-              ${c.long_slot ? `<span class="pill long-slot" style="background:rgba(232,198,107,0.12);color:var(--warn)">🎬 long: ${esc(c.long_slot)} ET</span>` : ''}
+              ${c.long_slot ? `<span class="pill" style="background:var(--tint-warn);color:var(--warn)">🎬 long: ${esc(c.long_slot)} ET</span>` : ''}
             </div>
-            <div class="dim" style="font-size:11.5px;margin-top:4px">
-              ${c.scheduled_count} scheduled · next long drop ${esc(c.next_long || '—')}
+            <div class="dim" style="font-size:12px;margin-top:5px">
+              ${next
+                ? `Next up: <b>${esc(String(next.title).slice(0, 44))}</b> — ${esc(next.time)} ${next.format === 'long' ? '🎬' : ''}`
+                : 'Nothing scheduled — approve shorts to fill the calendar'}
             </div>
           </div>
-          ${chanYT
+          ${ytState[c.id]
             ? '<span class="pill published">✓ YouTube connected</span>'
             : `<button class="btn sm" onclick="connectChannel('${c.id}')">⚠ connect YouTube</button>`}
         </div>
+
         <div class="days-grid">
-          ${(c.calendarDays || []).map(d => `
-            <div class="day-card ${d.is_today ? 'today' : ''}">
+          ${(c.days || []).map(d => `
+            <div class="day-card ${d.label.startsWith('Today') ? 'today' : ''}">
               <div class="day-label">${esc(d.label)}</div>
-              ${(d.slots || []).map(s => {
-                let cls = 'open', txt = '○ open', tip = s.at_et;
-                if (s.filled) {
-                  cls = s.short?.status === 'published' ? 'published' : 'filled';
-                  txt = `● ${s.short?.title ? esc(String(s.short.title).slice(0, 22)) : 'scheduled'}`;
-                  tip = `${s.short?.title || 'Scheduled'} (${s.at_et})`;
-                } else if (s.is_past) {
-                  cls = 'past'; txt = '— passed';
-                }
-                return `<div class="slot ${cls}" title="${esc(tip)}">
-                  <span class="slot-time">${esc(s.time_et || s.slot)}</span>
-                  <span class="slot-state">${txt}</span>
-                </div>`;
-              }).join('')}
-              ${c.long_slot ? (() => {
-                const isLongDay = d.label.toLowerCase().startsWith(c.long_slot.split(' ')[0].toLowerCase().slice(0, 3));
-                return `<div class="slot ${isLongDay ? 'long-slot' : 'past'}" title="weekly long-form drop">
-                  <span class="slot-time">${esc(c.long_slot.split(' ')[1])}</span>
-                  <span class="slot-state">${isLongDay ? '🎬 long-form' : '—'}</span>
-                </div>`;
-              })() : ''}
+              ${(d.entries || []).length
+                ? d.entries.map(dayEntry).join('')
+                : '<div class="sched-entry open"><span class="st-title">—</span></div>'}
             </div>`).join('')}
         </div>
       </div>`;
@@ -807,13 +808,11 @@ async function viewPublish() {
     <div class="panel">
       <h2>Queue — all channels</h2>
       ${queue.length ? `<table>
-        <tr><th>Short</th><th style="width:120px">Channel</th><th style="width:150px">Scheduled (ET)</th><th style="width:110px">Status</th><th style="width:270px">Actions</th></tr>
-      ${queue.map(q => {
-        const fmt = q.format || 'short';
-        return `
+        <tr><th>Short</th><th style="width:130px">Channel</th><th style="width:150px">Goes live (ET)</th><th style="width:120px">Status</th><th style="width:260px">Actions</th></tr>
+      ${queue.map(q => `
           <tr>
             <td><b>${esc(q.short_title || q.short_id)}</b>
-              ${fmt === 'long' ? '<span class="pill" style="font-size:9px">🎬 long</span>' : ''}
+              ${(q.format || 'short') === 'long' ? '<span class="pill" style="font-size:9px">🎬 long</span>' : ''}
               ${q.youtube_id ? `<div><a href="https://youtu.be/${q.youtube_id}" target="_blank" class="mono">${q.youtube_id} ↗</a></div>` : ''}
               ${q.error ? `<div class="dim mono" style="color:var(--err);font-size:10.5px">${esc(q.error).slice(0, 110)}</div>` : ''}</td>
             <td class="dim">${esc(q.channel || '—')}</td>
@@ -831,8 +830,7 @@ async function viewPublish() {
               ${q.status !== 'publishing' && q.status !== 'published' ? `
                 <button class="btn sm danger" onclick="removeQueue(${q.id}, '${esc(q.short_title || q.short_id)}')">remove</button>` : ''}
             </td>
-          </tr>`;
-      }).join('')}
+          </tr>`).join('')}
       </table>` : '<div class="dim">queue empty — approve shorts in Review to schedule them</div>'}
     </div>`;
 }
@@ -846,7 +844,7 @@ window.removeQueue = async (id, title) => {
   catch (e) { toast(e.message, 'err'); }
 };
 
-/* ============ ANALYTICS ============ *//* ============ ANALYTICS ============ */
+/* ============ ANALYTICS ============ *//* ============ ANALYTICS ============ *//* ============ ANALYTICS ============ */
 async function viewAnalytics() {
   const shorts = arr(obj(await api.get('/api/shorts')).shorts);
   const pub = shorts.filter(s => s.status === 'published');
