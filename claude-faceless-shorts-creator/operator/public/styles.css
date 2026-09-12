@@ -391,3 +391,22 @@ tr:hover td { background: rgba(25, 26, 28, 0.022); }
 .day-card.today .sched-entry.past .st-title { text-decoration-color: rgba(250, 250, 247, 0.35); }
 .panel { overflow-x: auto; }
 .panel .days-grid { min-width: 640px; }
+
+/* ---------------- next drops strip ---------------- */
+.next-drops {
+  display: flex; gap: 26px; align-items: stretch;
+  border: 1px solid var(--hair); border-radius: var(--r-lg);
+  background: var(--paper-2); padding: 14px 20px; margin-bottom: 26px;
+  flex-wrap: wrap;
+}
+.nd-label {
+  font: 600 9.5px 'Inter', sans-serif; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--faint);
+  display: flex; align-items: center;
+}
+.nd-item { display: flex; gap: 10px; align-items: center; }
+.nd-accent { width: 3px; height: 30px; border-radius: 2px; flex-shrink: 0; }
+.nd-title { font: 600 12.5px 'Inter', sans-serif; }
+.nd-sub { font-size: 10.5px; color: var(--dim); }
+.days-grid { grid-template-columns: repeat(7, minmax(0, 1fr)); }
+.sched-entry .st-title { min-width: 0; }

@@ -42,6 +42,98 @@ function etWallToUTC(y, mo, d, h, mi) {
 }
 
 /**
+ * WEEKLY SLOT TABLE — the audience-timed publish windows, per weekday (ET).
+ * Each day gets its five best windows; every window carries the behavioral
+ * rationale it was chosen for (surfaced as tooltips in the dashboard).
+ */
+const WEEKLY_SLOTS = {
+  mon: ['12:00', '15:00', '17:00', '19:00', '21:00'],
+  tue: ['12:00', '15:00', '16:00', '18:00', '20:00'],
+  wed: ['11:00', '12:00', '15:00', '17:00', '19:00'],
+  thu: ['12:00', '16:00', '18:00', '19:00', '21:00'],
+  fri: ['12:00', '15:00', '16:00', '18:00', '19:00'],
+  sat: ['10:00', '11:00', '12:00', '13:00', '17:00'],
+  sun: ['09:00', '10:00', '12:00', '16:00', '20:00'],
+};
+
+const SLOT_NOTES = {
+  mon: {
+    '12:00': 'Monday lunch break scroll',
+    '15:00': 'Mid-afternoon energy dip / break',
+    '17:00': 'Post-work commute home',
+    '19:00': 'Post-dinner casual browsing',
+    '21:00': 'Late-night phone relaxation before bed',
+  },
+  tue: {
+    '12:00': 'Mid-day lunch traffic',
+    '15:00': 'Early afternoon algorithmic upload window',
+    '16:00': 'Late afternoon wind-down',
+    '18:00': 'Peak early evening mobile activity',
+    '20:00': 'Prime-time scrolling hour',
+  },
+  wed: {
+    '11:00': 'Early mid-day rush',
+    '12:00': 'Standard lunch hour peak',
+    '15:00': '"Hump Day" afternoon slump',
+    '17:00': 'End of the traditional workday',
+    '19:00': 'Heavy mid-week evening traffic',
+  },
+  thu: {
+    '12:00': 'Reliable daily lunch traffic',
+    '16:00': 'Pre-evening wind-down window',
+    '18:00': 'Commute and early dinner scrolling',
+    '19:00': 'High-engagement weekday slot',
+    '21:00': 'Peak late-night weekday scrolling',
+  },
+  fri: {
+    '12:00': 'Pre-weekend Friday lunch break',
+    '15:00': 'Early weekend log-offs begin',
+    '16:00': 'The single best weekday slot for Shorts',
+    '18:00': 'High casual-entertainment peak',
+    '19:00': 'Sustained early Friday night mobile use',
+  },
+  sat: {
+    '10:00': 'Late morning weekend awakening',
+    '11:00': 'Mid-morning casual scrolling',
+    '12:00': 'Prime weekend afternoon window',
+    '13:00': 'Midday relaxation block',
+    '17:00': 'Pre-evening casual check-ins',
+  },
+  sun: {
+    '09:00': 'Early morning weekend browsing',
+    '10:00': 'Peak Sunday morning lifestyle viewing',
+    '12:00': 'Midday relaxation block',
+    '16:00': 'Evening prep wind-down',
+    '20:00': 'Late-night pre-workweek scrolling',
+  },
+};
+
+/** Slots for an ET weekday index (0=Sun .. 6=Sat). */
+function slotsForWeekday(dayIdx) {
+  const names = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
+  return WEEKLY_SLOTS[names[dayIdx]] || ['12:00', '19:00'];
+}
+
+/** Next open window from the WEEKLY table, skipping occupied times. */
+function nextOpenWeeklySlot(occupiedDates = [], minAheadMs = 15 * 60 * 1000) {
+  const now = Date.now();
+  const nowET = etParts(new Date(now));
+  for (let addDay = 0; addDay < 14; addDay++) {
+    const anchor = etParts(new Date(Date.UTC(nowET.y, nowET.mo - 1, nowET.d + addDay, 12)));
+    const dayIdx = new Date(Date.UTC(anchor.y, anchor.mo - 1, anchor.d)).getUTCDay();
+    for (const s of slotsForWeekday(dayIdx)) {
+      const [h, m] = s.split(':').map(Number);
+      const at = etWallToUTC(anchor.y, anchor.mo, anchor.d, h, m);
+      if (!at || at.getTime() < now + minAheadMs) continue;
+      const taken = (occupiedDates || []).some(o =>
+        Math.abs(new Date(o).getTime() - at.getTime()) < 15 * 60 * 1000);
+      if (!taken) return at;
+    }
+  }
+  return null;
+}
+
+/**
  * Next occurrence of an "HH:MM" ET slot that is at least `minAheadMs` in the
  * future. Returns a Date (UTC instant).
  */
@@ -159,13 +251,14 @@ function fmtETDayLabel(date, isToday = false) {
  * Includes details of scheduled shorts for each slot.
  */
 function getWeeklyCalendar(slots, days = 7, queueEntries = []) {
-  const valid = (slots || []).filter(s => /^\d{1,2}:\d{2}$/.test(String(s)))
+  let valid = (slots || []).filter(s => /^\d{1,2}:\d{2}$/.test(String(s)))
     .sort((a, b) => {
       const [ha, ma] = a.split(':').map(Number);
       const [hb, mb] = b.split(':').map(Number);
       return (ha * 60 + ma) - (hb * 60 + mb);
     });
-  if (!valid.length) valid.push('13:00', '19:00');
+  const useTable = !(slots || []).length;
+  if (!valid.length) valid = ['09:00', '15:00', '21:00'];
 
   const now = Date.now();
   const nowET = etParts(new Date(now));
@@ -177,7 +270,9 @@ function getWeeklyCalendar(slots, days = 7, queueEntries = []) {
     const dayLabel = fmtETDayLabel(dayDate, addDay === 0);
 
     const daySlots = [];
-    for (const s of valid) {
+    const dayIdx = new Date(Date.UTC(anchor.y, anchor.mo - 1, anchor.d)).getUTCDay();
+    const daySlotsList = useTable ? slotsForWeekday(dayIdx) : valid;
+    for (const s of daySlotsList) {
       const [h, m] = s.split(':').map(Number);
       const at = etWallToUTC(anchor.y, anchor.mo, anchor.d, h, m);
       if (!at) continue;
@@ -199,6 +294,7 @@ function getWeeklyCalendar(slots, days = 7, queueEntries = []) {
         at: at.toISOString(),
         at_et: fmtET(at),
         time_et: fmtETTime(at),
+        note: useTable ? (SLOT_NOTES[['sun','mon','tue','wed','thu','fri','sat'][dayIdx]] || {})[s] || '' : '',
         is_past: isPast,
         filled,
         short: matchingEntry ? {
@@ -238,7 +334,7 @@ function upcomingSlots(slots, days = 7) {
 }
 
 module.exports = {
-  nextETWeeklySlot,
+  nextETWeeklySlot, WEEKLY_SLOTS, SLOT_NOTES, slotsForWeekday, nextOpenWeeklySlot,
   ET,
   nextETSlot,
   nextSlot,

@@ -69,12 +69,37 @@ db.notify = (level, message, meta = {}) => {
 /** Weighted slots (growth tuning): Buffer's 1.8M-video dataset shows Friday
  *  4-7 PM and weekend mornings over-index for Shorts — one dynamic bonus slot
  *  on those days, per channel, on top of the configured daily slots. */
+/** rationale note for a queued item, matched to the weekly table by ET time */
+function noteForETTime(formatted, dayIdx) {
+  const [t, ap] = String(formatted).split(' ');
+  if (!t || !ap) return '';
+  const [h, m] = t.split(':').map(Number);
+  const hh24 = String(((h % 12) + (ap === 'PM' ? 12 : 0))).padStart(2, '0');
+  const key = `${hh24}:${String(m || 0).padStart(2, '0')}`;
+  return (usa.SLOT_NOTES[['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'][dayIdx]] || {})[key] || '';
+}
+
 /** minutes-since-midnight from an ET "h:mm AM/PM" string (chronological sort) */
 function etTimeKey(formatted) {
   const [t, ap] = String(formatted).split(' ');
   if (!t || !ap) return 0;
   const [h, m] = t.split(':').map(Number);
   return ((h % 12) + (ap === 'PM' ? 12 : 0)) * 60 + (m || 0);
+}
+
+// ---------- auth middleware ----------
+function requireAPIKey(req, res, next) {
+  const key = db.getSettings().api_key;
+  if (!key) return next(); // unset = open (warned on boot)
+  if (req.header('x-api-key') === key) return next();
+  return res.status(401).json({ error: 'invalid or missing x-api-key header' });
+}
+
+/** Channel filter from ?channel= — validates against the channels table. */
+function channelFilter(req) {
+  const id = req.query.channel || req.body?.channelId;
+  if (!id) return null;
+  return db.getChannel(id) || null;
 }
 
 /** UTC instant for an ET wall-clock slot (h:m) on the given UTC-noon-anchored day. */
@@ -93,42 +118,16 @@ function etDaySlotUTC(dayUtcNoon, h, m) {
   return new Date(Date.UTC(yy, mo - 1, dd, h + 4, m, 0));
 }
 
-function weightedSlots(base) {
-  try {
-    const wd = new Intl.DateTimeFormat('en-US', { timeZone: 'America/New_York', weekday: 'short' })
-      .format(new Date());
-    if (wd === 'Fri' && !base.includes('17:30')) return [...base, '17:30'];
-    if ((wd === 'Sat' || wd === 'Sun') && !base.includes('10:30')) return [...base, '10:30'];
-  } catch { /* timezone hiccup — fall through to base slots */ }
-  return base;
-}
-
-/** Next open publish slot — USA targeting per CHANNEL: finds the next
- *  unoccupied slot among that channel's slots. Two channels may publish at
- *  the same clock time (different audiences, different channels). */
-function nextPublishSlot(slots, channelId = null) {
-  const settings = db.getSettings();
-  const channel = channelId ? db.getChannel(channelId) : null;
-  const currentSlots = weightedSlots(
-    slots && slots.length
-      ? slots
-      : (channel ? channel.publish_slots : null) || settings.publish_slots || ['13:00', '19:00']);
+/** Next open publish window for a channel — from the WEEKLY SLOT TABLE
+ *  (five audience-timed windows per weekday, ET), skipping that channel's
+ *  occupied times. Long-form uses the channel's weekly long slot instead. */
+function nextPublishSlot(channelId = null) {
   const occupied = channelId
     ? db.occupiedSlotTimes(channelId)
-    : db.all(
-      `SELECT q.scheduled_at FROM publish_queue q JOIN shorts s ON s.id=q.short_id
-       WHERE q.status IN ('scheduled', 'scheduled_on_youtube', 'publishing')
-         AND s.channel_id=? AND q.scheduled_at IS NOT NULL`, 'cosmic-archive').map(r => r.scheduled_at);
-  return usa.nextOpenSlot(currentSlots, occupied);
+    : db.occupiedSlotTimes('cosmic-archive');
+  return usa.nextOpenWeeklySlot(occupied);
 }
 
-// ---------- auth middleware ----------
-function requireAPIKey(req, res, next) {
-  const key = db.getSettings().api_key;
-  if (!key) return next(); // unset = open (warned on boot)
-  if (req.header('x-api-key') === key) return next();
-  return res.status(401).json({ error: 'invalid or missing x-api-key header' });
-}
 const protect = requireAPIKey;
 
 /** Channel filter from ?channel= — validates against the channels table and
@@ -490,9 +489,8 @@ async function approveAndSchedule(s, res) {
   const channel = db.getChannel(s.channel_id || 'cosmic-archive');
   const decorated = decorateShort(s);
   const scheduledAt = decorated.format === 'long' && channel && channel.long_slot
-    ? (usa.nextETWeeklySlot(channel.long_slot) ||
-       nextPublishSlot(channel.publish_slots, s.channel_id || 'cosmic-archive'))
-    : nextPublishSlot(channel ? channel.publish_slots : null, s.channel_id || 'cosmic-archive');
+    ? (usa.nextETWeeklySlot(channel.long_slot) || nextPublishSlot(s.channel_id || 'cosmic-archive'))
+    : nextPublishSlot(s.channel_id || 'cosmic-archive');
 
   // Upload NOW as private + publishAt: YouTube's clock makes it public at
   // the slot time — works even when this machine is offline at that moment.
@@ -591,6 +589,7 @@ app.get('/api/publish-queue', (req, res) => {
             status: q.status,
             youtube_id: q.youtube_id || null,
             format: (allShorts.find(x => x.id === q.short_id) || {}).format || 'short',
+            note: noteForETTime(time, d.getUTCDay()),
             is_past: new Date(q.scheduled_at).getTime() < Date.now() - 5 * 60 * 1000,
           };
         });
@@ -612,7 +611,7 @@ app.get('/api/publish-queue', (req, res) => {
         entries.sort((a, b) => (a.sortMin || 0) - (b.sortMin || 0));
       }
       // open configured slots (not covered by a queued entry within 15 min)
-      for (const s of (c.publish_slots || [])) {
+      for (const s of usa.slotsForWeekday(d.getUTCDay())) {
         const [h, m] = s.split(':').map(Number);
         const atTime = etDaySlotUTC(d, h, m);
         if (atTime < Date.now() - 5 * 60 * 1000) continue; // don't show passed slots as "open"
@@ -623,7 +622,12 @@ app.get('/api/publish-queue', (req, res) => {
           return Math.abs((eh24 * 60 + em) - (h * 60 + m)) < 15;
         });
         if (!covered2) {
-          entries.push({ time: usa.fmtETTime(etDaySlotUTC(d, h, m)) + '', sortMin: h * 60 + m, title: null, open: true, is_past: false });
+          const dIdx = d.getUTCDay();
+          entries.push({
+            time: usa.fmtETTime(etDaySlotUTC(d, h, m)) + '', sortMin: h * 60 + m,
+            title: null, open: true, is_past: false,
+            note: (usa.SLOT_NOTES[['sun','mon','tue','wed','thu','fri','sat'][dIdx]] || {})[s] || '',
+          });
         }
       }
       entries.sort((a, b) => (a.sortMin || 0) - (b.sortMin || 0));
@@ -641,6 +645,9 @@ app.get('/api/publish-queue', (req, res) => {
       })),
       long_slot: c.long_slot,
       next_long: c.long_slot ? usa.fmtET(usa.nextETWeeklySlot(c.long_slot)) : null,
+      slots_label: (c.publish_slots && c.publish_slots.length)
+        ? c.publish_slots.join(' · ') + ' ET'
+        : 'weekly table · 5 windows/day',
       scheduled_count: chanQueue.filter(q => ['scheduled', 'scheduled_on_youtube'].includes(q.status)).length,
     };
   });
@@ -700,7 +707,7 @@ app.post('/api/publish-queue/:id/:action', protect, async (req, res) => {
     const s = db.getShort(entry.short_id);
     if (!s) return res.status(404).json({ error: 'short not found' });
     const channel = db.getChannel(s.channel_id || 'cosmic-archive');
-    const scheduledAt = nextPublishSlot(channel ? channel.publish_slots : null, s.channel_id || 'cosmic-archive');
+    const scheduledAt = nextPublishSlot(s.channel_id || 'cosmic-archive');
     try {
       const result = await publisher.scheduleOnYouTube(db, decorateShort(s), scheduledAt);
       db.addYouTubeScheduled(s.id, scheduledAt, result.videoId);

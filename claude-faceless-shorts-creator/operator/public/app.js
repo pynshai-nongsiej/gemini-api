@@ -109,10 +109,14 @@ async function refreshBadges() {
 
 /* ============ OVERVIEW ============ */
 async function viewOverview() {
-  const [statsR, shortsR, jobsR, notifR] = await Promise.all([
+  const [statsR, shortsR, jobsR, notifR, queueR] = await Promise.all([
     api.get('/api/stats'), api.get('/api/shorts'), api.get('/api/jobs'),
-    api.get('/api/notifications'),
+    api.get('/api/notifications'), api.get('/api/publish-queue').catch(() => ({})),
   ]);
+  const nextDrops = arr(obj(queueR).channels)
+    .flatMap(c => arr(c.upcoming).slice(0, 2).map(u => ({ ...u, channel: c.name, accent: (PIPELINE_META[c.pipeline] || {}).accent })))
+    .sort((a, b) => String(a.time).localeCompare(String(b.time)))
+    .slice(0, 4);
   const stats = obj(statsR);
   const shorts = arr(obj(shortsR).shorts);
   const jobs = arr(obj(jobsR).jobs);
@@ -127,6 +131,17 @@ async function viewOverview() {
       <span class="spacer"></span>
       <button class="btn primary" onclick="switchTab('generate')">✦ New short</button>
     </div>
+
+    ${nextDrops.length ? `
+    <div class="next-drops">
+      <div class="nd-label">Next drops · ET</div>
+      ${nextDrops.map(d => `
+        <div class="nd-item">
+          <span class="nd-accent" style="background:${d.accent || 'var(--ink)'}"></span>
+          <div><div class="nd-title">${esc(String(d.title).slice(0, 40))}</div>
+          <div class="nd-sub">${esc(d.channel)} · ${esc(d.time)}${d.format === 'long' ? ' 🎬' : ''}</div></div>
+        </div>`).join('')}
+    </div>` : ''}
 
     <div class="stats">
       <div class="stat"><div class="v">${obj(stats.shorts).total ?? 0}</div><div class="l">Shorts</div>
@@ -262,7 +277,7 @@ async function viewChannels() {
         <div class="row" style="margin:4px 0 10px">
           <button class="btn sm primary" onclick="runChannel('${c.id}')">🤖 auto-research & generate</button>
           <button class="btn sm" title="One topic, 3 different hook angles — the feed votes, winners teach the researcher" onclick="runChannelVariants('${c.id}')">🧪 A/B hook race (3)</button>
-          <span class="dim" style="font-size:11.5px">${esc(meta.desc)} · voice ${esc(c.voice || 'dynamic')} · slots ${(c.publish_slots || []).join(', ')} ET${c.duration_s ? ` · ${c.duration_s}s target` : ''}${c.auto_generate ? ' · auto-generate ON' : ''}</span>
+          <span class="dim" style="font-size:11.5px">${esc(meta.desc)} · voice ${esc(c.voice || 'dynamic')} · slots ${esc(c.slots_label || 'weekly table')}${c.duration_s ? ` · ${c.duration_s}s target` : ''}${c.auto_generate ? ' · auto-generate ON' : ''}</span>
         </div>
 
         ${activeJobs.length ? activeJobs.map(j => `
@@ -747,14 +762,15 @@ const STATUS_DOT = {
   failed: 'var(--err)', paused: 'var(--warn)',
 };
 function dayEntry(e) {
-  if (e.open) return `<div class="sched-entry open"><span class="st-time">${esc(e.time)}</span><span class="st-title">— open</span></div>`;
+  const tip = e.note ? ` — ${e.note}` : '';
+  if (e.open) return `<div class="sched-entry open" title="${esc(e.time + tip)}"><span class="st-time">${esc(e.time)}</span><span class="st-title">— open</span></div>`;
   const dot = STATUS_DOT[e.status] || 'var(--faint)';
   const st = e.status === 'published' ? '✓' : (e.status === 'scheduled_on_youtube' ? '▸' : '·');
   const long = e.format === 'long' ? ' 🎬' : '';
-  return `<div class="sched-entry ${e.is_past ? 'past' : ''}">
+  return `<div class="sched-entry ${e.is_past ? 'past' : ''}" title="${esc(e.time + ' · ' + e.status + tip)}">
     <span class="st-time">${esc(e.time)}</span>
     <span class="st-dot" style="background:${dot}"></span>
-    <span class="st-title" title="${esc(e.title)}">${st} ${esc(String(e.title).slice(0, 24))}${long}</span>
+    <span class="st-title">${st} ${esc(String(e.title).slice(0, 24))}${long}</span>
   </div>`;
 }
 async function viewPublish() {
@@ -772,14 +788,14 @@ async function viewPublish() {
     ${channels.map(c => {
       const next = arr(c.upcoming)[0];
       return `
-      <div class="panel channel-panel">
+      <div class="panel channel-panel" style="border-top:2px solid ${PIPELINE_META[c.pipeline]?.accent || 'var(--hair)'}33">
         <div class="channel-head">
           <div class="channel-icon" style="color:${PIPELINE_META[c.pipeline]?.accent || 'var(--ink)'}">${PIPELINE_META[c.pipeline]?.icon || '◈'}</div>
           <div style="flex:1;min-width:0">
             <div class="row">
               <h2 style="margin:0;font-size:14px">${esc(c.name)}</h2>
               <span class="pill published">🇺🇸 USA</span>
-              <span class="pill">${(c.publish_slots || []).join(' · ')} ET</span>
+              <span class="pill">${esc(c.slots_label || 'weekly table')}</span>
               ${c.long_slot ? `<span class="pill" style="background:var(--tint-warn);color:var(--warn)">🎬 long: ${esc(c.long_slot)} ET</span>` : ''}
             </div>
             <div class="dim" style="font-size:12px;margin-top:5px">

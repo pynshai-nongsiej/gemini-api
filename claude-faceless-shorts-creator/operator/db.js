@@ -187,10 +187,9 @@ class DB {
     // 3x/day USA schedule (ET): morning / lunch / prime evening — the three
     // daily peaks for a US audience. Long-form: one weekly drop per channel,
     // staggered so the three channels never compete on the same day.
-    const slots3 = JSON.stringify(['09:00', '15:00', '21:00']);
-    this.run(`UPDATE channels SET publish_slots=? WHERE id='cosmic-archive' AND publish_slots IN ('["13:00", "19:00"]','["13:00","19:00"]')`, slots3);
-    this.run(`UPDATE channels SET publish_slots=? WHERE id='wealth-engine' AND publish_slots IN ('["13:00", "19:00"]','["13:00","19:00"]')`, slots3);
-    this.run(`UPDATE channels SET publish_slots=? WHERE id='footnote-files' AND publish_slots IN ('["13:00", "19:00"]','["13:00","19:00"]')`, slots3);
+    // channels use the WEEKLY SLOT TABLE by default (publish_slots NULL);
+    // a custom JSON list here would override the table for that channel
+    this.run(`UPDATE channels SET publish_slots=NULL WHERE publish_slots IS NOT NULL`);
     this.run(`UPDATE channels SET long_slot='Sat 11:00' WHERE id='cosmic-archive' AND (long_slot IS NULL OR long_slot='')`);
     this.run(`UPDATE channels SET long_slot='Sun 11:00' WHERE id='wealth-engine' AND (long_slot IS NULL OR long_slot='')`);
     this.run(`UPDATE channels SET long_slot='Sat 15:00' WHERE id='footnote-files' AND (long_slot IS NULL OR long_slot='')`);
