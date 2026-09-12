@@ -51,14 +51,14 @@ def run_qc(short_dir, video=None):
     if dur is None:
         report["verdict"] = "flag"
         report["issues"].append("final video missing or not a playable mp4")
-    elif not 14.5 <= dur <= 61.0:
-        report["verdict"] = "flag"
-        if beats.get("format", {}).get("width", 1080) > beats.get("format", {}).get("height", 1920):
-            # LONG-FORM (16:9): 1-30min window instead of the shorts window
-            if not (60 <= dur <= 1800):
-                report["issues"].append(f"duration {dur:.1f}s outside the 1-30min long-form window")
-        elif not (14.5 <= dur <= 61):
-            report["issues"].append(f"duration {dur:.1f}s outside the 15-60s Shorts window")
+    else:
+        # LONG-FORM (16:9 landscape): 1-30min window; shorts (9:16): 15-60s
+        is_long = beats.get("format", {}).get("width", 1080) > beats.get("format", {}).get("height", 1920)
+        in_window = (60 <= dur <= 1800) if is_long else (14.5 <= dur <= 61)
+        if not in_window:
+            report["verdict"] = "flag"
+            window = "1-30min long-form" if is_long else "15-60s Shorts"
+            report["issues"].append(f"duration {dur:.1f}s outside the {window} window")
     report["checks"]["duration"] = round(dur, 2) if dur else None
 
     # voice track

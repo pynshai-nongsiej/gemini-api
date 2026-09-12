@@ -1,0 +1,13 @@
+{
+  "prompt": "Atmospheric moody financial corporate boardroom with dramatic moody shadows and slick modern glass elements., dark moody cinematic lighting, no text, no numbers",
+  "engine": "pollinations",
+  "model": "flux",
+  "aspect_ratio": "9:16",
+  "image_size": "1K",
+  "width": 1080,
+  "height": 1920,
+  "seed": null,
+  "delivered_width": 1123,
+  "delivered_height": 1997,
+  "created": "2026-09-12T16:56:52"
+}
