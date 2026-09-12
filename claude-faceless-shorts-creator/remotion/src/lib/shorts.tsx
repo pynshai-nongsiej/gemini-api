@@ -2,7 +2,7 @@
 // Word-pop captions driven by a VO line map (estimated timings now; swap for real
 // transcript timings later — components retime, nothing rebuilds).
 import React from 'react';
-import { AbsoluteFill, Easing, useCurrentFrame, useVideoConfig } from 'remotion';
+import { AbsoluteFill, Easing, interpolate, useCurrentFrame, useVideoConfig } from 'remotion';
 import { FONT_BODY, FONT_DISPLAY } from '../fonts';
 
 export const SHORT = { W: 1080, H: 1920, FPS: 30 } as const;
@@ -536,3 +536,30 @@ export const SafeAreaGuides: React.FC = () => (
     <div style={{ position: 'absolute', top: 0, bottom: 0, right: 0, width: SAFE.right, background: 'rgba(255,165,0,0.12)' }} />
   </AbsoluteFill>
 );
+
+// =============================================================================
+// COMMENT BAIT — a bouncing pill on the quiz beat that asks the viewer to
+// drop their answer in the comments (engagement trick: comment velocity
+// widens the feed test audience). Pure overlay; the hook beat stays clean.
+// =============================================================================
+export const CommentBait: React.FC<{ text: string; accent?: string }> = ({ text, accent = '#f5d76e' }) => {
+  const frame = useCurrentFrame();
+  const pop = interpolate(frame, [0, 10], [0.5, 1], { extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic) });
+  const wobble = Math.sin(frame / 5) * 2.5;
+  if (!text) return null;
+  return (
+    <AbsoluteFill style={{ justifyContent: 'flex-end', alignItems: 'center', paddingBottom: 545 }}>
+      <div style={{
+        transform: `scale(${pop}) translateY(${wobble}px)`,
+        background: 'rgba(13,17,23,0.88)', border: `2px solid ${accent}`,
+        borderRadius: 999, padding: '13px 30px',
+        fontFamily: 'Inter, sans-serif', fontWeight: 800, fontSize: 33,
+        color: '#ffffff', letterSpacing: 1,
+        textShadow: '0 2px 14px rgba(0,0,0,0.6)',
+        whiteSpace: 'nowrap',
+      }}>
+        💬 <span style={{ color: accent }}>{text}</span>
+      </div>
+    </AbsoluteFill>
+  );
+};

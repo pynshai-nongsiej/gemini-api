@@ -597,12 +597,18 @@ def _spans(beats, srcs, clips, fps=None, srcs_b=None):
     hit / AI alternate angle when one was fetched, else the same image under a
     counter-move camera) with a hard cut so the eye re-engages mid-line."""
     fps = fps or beats["format"].get("fps", FPS)
+    n_vo = max(1, len(beats["vo"]))
     spans = []
     for i, f in enumerate(_vo_frames(beats, fps)):
         v = f["vo"]
-        move, inten = camera_for(v, i, len(beats["vo"]))
+        move, inten = camera_for(v, i, n_vo)
         dur_f = f["end"] - f["start"]
-        if dur_f > MICRO_CUT_SECS * fps:
+        # escalating build-up: cuts ACCELERATE toward the payoff (2.6s early
+        # -> 1.9s near the reveal), then the payoff beat breathes whole
+        thr = MICRO_CUT_SECS - (0.7 * i / n_vo)
+        if v.get("beat") == "reveal":
+            thr += 1.2   # the payoff plays whole — no cut inside the drop
+        if dur_f > thr * fps:
             mid = f["start"] + round(dur_f * 0.45)
             spans.append({"src": srcs[min(i, len(srcs) - 1)],
                           "start": f["start"], "end": mid,
@@ -670,11 +676,12 @@ def gen_composition_space(beats, spans, vo_frames, comp_id, shot_dir, accent, fp
     flare on the reveal, whip-pan on the twist; calm beats keep crossfades."""
     beats_lit = _spans_lit(spans)
     trans_lit = _transitions_lit(vo_frames, "space")
+    bait = _quiz_bait(vo_frames, "space", fps)
     hook_end = vo_frames[0]["end"] if vo_frames else round(3 * fps)
 
     tsx = f"""import React from 'react';
 import {{ AbsoluteFill, OffthreadVideo, Sequence, staticFile }} from 'remotion';
-import {{ Captions, ProgressBar }} from '../../lib/shorts';
+import {{ Captions, CommentBait, ProgressBar }} from '../../lib/shorts';
 import {{ KenBurnsImage, StoryVignette }} from '../../lib/story';
 import {{ Transition }} from '../../lib/transitions';
 import {{ VO }} from './vo.gen';
@@ -705,6 +712,8 @@ const TRANSITIONS = [
 {trans_lit}
 ] as const;
 
+const BAIT = {json.dumps(bait) if bait else 'null'};
+
 const {comp_id}: React.FC = () => {{
   return (
     <AbsoluteFill style={{{{ background: '#0b0d12' }}}}>
@@ -729,6 +738,11 @@ const {comp_id}: React.FC = () => {{
           <Transition kind={{t.kind}} dur={{t.dur}} accent={{ACCENT}} />
         </Sequence>
       ))}}
+      {{BAIT && (
+        <Sequence from={{BAIT.from}} durationInFrames={{BAIT.end - BAIT.from}}>
+          <CommentBait text={{BAIT.text}} accent={{ACCENT}} />
+        </Sequence>
+      )}}
       <Captions lines={{VO}} y={{1330}} size={{54}} accent={{ACCENT}} maxWords={{5}} plate highlight />
       <ProgressBar color={{ACCENT}} />
     </AbsoluteFill>
@@ -738,6 +752,26 @@ const {comp_id}: React.FC = () => {{
 export default {comp_id};
 """
     return _write_comp(shot_dir, comp_id, tsx)
+
+
+BAIT_TEXT = {
+    "space": "WHAT IS IT? COMMENT IT",
+    "finance": "YOUR NUMBER — COMMENT IT",
+    "history": "WHAT BROKE FIRST? COMMENT IT",
+}
+
+
+def _quiz_bait(vo_frames, pipeline, fps):
+    """Comment-bait overlay data for the quiz beat: {text, from, end} or None.
+    Shows the pill shortly after the quiz line starts, hides before it ends."""
+    quiz = next((f for f in vo_frames if f["vo"].get("beat") == "quiz"), None)
+    if not quiz:
+        return None
+    return {
+        "text": BAIT_TEXT.get(pipeline, "COMMENT YOUR ANSWER"),
+        "from": quiz["start"] + round(0.6 * fps),
+        "end": max(quiz["start"] + round(0.6 * fps) + 8, quiz["end"] - round(0.3 * fps)),
+    }
 
 
 def _transitions_lit(vo_frames, pipeline):
@@ -768,6 +802,7 @@ def gen_composition_finance(beats, spans, vo_frames, comp_id, shot_dir, accent, 
         f"from: {f['start']}, end: {f['end']} }},"
         for f in vo_frames)
     trans_lit = _transitions_lit(vo_frames, "finance")
+    bait = _quiz_bait(vo_frames, "finance", fps)
     hook_card = json.dumps(str(beats.get("hookCard") or beats.get("title") or ""))
     hook_end = vo_frames[0]["end"] if vo_frames else round(3 * fps)
 
@@ -776,6 +811,7 @@ import {{ AbsoluteFill, OffthreadVideo, Sequence, staticFile }} from 'remotion';
 import {{ Captions, ProgressBar }} from '../../lib/shorts';
 import {{ KenBurnsImage }} from '../../lib/story';
 import {{ StatLayer, HookCard }} from '../../lib/finance';
+import {{ CommentBait }} from '../../lib/shorts';
 import {{ Transition }} from '../../lib/transitions';
 import {{ VO }} from './vo.gen';
 
@@ -809,6 +845,8 @@ const TRANSITIONS = [
 
 const HOOK_CARD = {hook_card};
 const HOOK_END = {hook_end};
+const BAIT = {json.dumps(bait) if bait else 'null'};
+const BAIT = {json.dumps(bait) if bait else 'null'};
 
 const {comp_id}: React.FC = () => {{
   return (
@@ -843,6 +881,11 @@ const {comp_id}: React.FC = () => {{
           <Transition kind={{t.kind}} dur={{t.dur}} accent={{ACCENT}} />
         </Sequence>
       ))}}
+      {{BAIT && (
+        <Sequence from={{BAIT.from}} durationInFrames={{BAIT.end - BAIT.from}}>
+          <CommentBait text={{BAIT.text}} accent={{ACCENT}} />
+        </Sequence>
+      )}}
       <Captions lines={{VO}} y={{1330}} size={{54}} accent={{ACCENT}} maxWords={{5}} plate highlight />
       <ProgressBar color={{ACCENT}} />
     </AbsoluteFill>
@@ -879,11 +922,13 @@ def gen_composition_history(beats, spans, vo_frames, comp_id, shot_dir, accent, 
     trans_lit = "\n".join(wipe_labels)
     hook_card = json.dumps(str(beats.get("hookCard") or beats.get("title") or ""))
     hook_end = vo_frames[0]["end"] if vo_frames else round(3 * fps)
+    bait = _quiz_bait(vo_frames, "history", fps)
 
     tsx = f"""import React from 'react';
 import {{ AbsoluteFill, OffthreadVideo, Sequence, staticFile }} from 'remotion';
 import {{ Captions, ProgressBar }} from '../../lib/shorts';
 import {{ ArchivalImage, HookCard }} from '../../lib/archival';
+import {{ CommentBait }} from '../../lib/shorts';
 import {{ Transition }} from '../../lib/transitions';
 import {{ VO }} from './vo.gen';
 
@@ -948,6 +993,11 @@ const {comp_id}: React.FC = () => {{
           <Transition kind={{t.kind}} dur={{t.dur}} accent={{ACCENT}} label={{t.label}} />
         </Sequence>
       ))}}
+      {{BAIT && (
+        <Sequence from={{BAIT.from}} durationInFrames={{BAIT.end - BAIT.from}}>
+          <CommentBait text={{BAIT.text}} accent={{ACCENT}} />
+        </Sequence>
+      )}}
       <Captions lines={{VO}} y={{1330}} size={{54}} accent={{ACCENT}} maxWords={{5}} plate highlight />
       <ProgressBar color={{ACCENT}} />
     </AbsoluteFill>

@@ -87,23 +87,43 @@ def call_local_ai(prompt, max_tokens=2000, temperature=0.8):
 
 SYSTEM_PROMPT = """You are a viral short-form video writer. You write scripts for
 faceless YouTube Shorts (vertical 9:16, ~30-45s) that follow a strict six-beat
-retention grammar:
+retention grammar AND the winning formula: STRONG BUILD-UP -> POWERFUL PAYOFF ->
+NEVER REVEAL EARLY -> ENGAGEMENT TRICKS.
 
+THE FORMULA (non-negotiable):
+- NEVER REVEAL EARLY: the hook states the contradiction/mystery, the setup adds
+  context, the quiz dares the viewer — but the ANSWER may not appear in the
+  hook, setup, or quiz lines in any form (no naming the cause, no giving the
+  threshold, no showing the mechanism). The viewer can only learn the answer
+  when the reveal beat lands. A hook that spoils the reveal is a broken video.
+- STRONG BUILD-UP: every line before the reveal must ESCALATE — each one raises
+  the stakes, adds a worse detail, narrows the mystery, or makes the tension
+  physical. No flat exposition, no filler facts. The viewer should feel the
+  walls closing in.
+- POWERFUL PAYOFF: the reveal is the biggest moment of the video — ONE
+  devastating line that names the answer in plain words, followed by the
+  twist that makes it worse. Deliver it like a verdict, not a lecture.
+- ENGAGEMENT TRICKS: the quiz pauses the video and demands a comment answer
+  ("wrong answers only", "comment yours"); the twist opens an unresolved loop;
+  the final line loops seamlessly back into the hook so the rewatch is invisible.
+
+The six beats:
 - hook    (0-3s): the single boldest visual + a verbal hook that states a
-          shocking fact, bold claim, or curiosity gap. NO questions like "have
-          you ever wondered", NO "in this video", NO greetings. The hook VISUAL
-          must instantly dramatize or CONTRADICT the title (title says a star
-          "died in broad daylight" -> frame 0 is an ordinary bright blue daytime
-          sky with an impossible star in it). The viewer must feel the
-          contradiction before a single word of explanation.
-- setup   (3-10s): the minimum context needed to understand the payoff. Tight.
-- quiz    (10-15s): a challenge to the viewer ("pause — can you spot it?").
-          Make it COMMENT BAIT: end the line with an invitation to answer in
-          the comments ("wrong answers only", "comment what you think it is")
-          — comment velocity widens the test audience.
-- reveal  (15-25s): the payoff, delivered with energy. This is the share moment.
-- twist   (25-35s): the unexpected consequence / deeper fact that recontextualizes
-          the reveal.
+          shocking fact, bold claim, or curiosity gap — the CONTRADICTION, not
+          the answer. NO questions like "have you ever wondered", NO "in this
+          video", NO greetings. The hook VISUAL must instantly dramatize or
+          CONTRADICT the title (title says a star "died in broad daylight" ->
+          frame 0 is an ordinary bright blue daytime sky with an impossible
+          star in it).
+- setup   (3-10s): BUILD-UP — the minimum context that makes the mystery
+          sharper, not softer. Tight, escalating.
+- quiz    (10-15s): pause the viewer and weaponize them: "pause — can you spot
+          it?" plus a comment-bait invitation ("wrong answers only in the
+          comments"). The answer stays hidden.
+- reveal  (15-25s): THE PAYOFF — one devastating line that finally names the
+          answer with energy. This is the share moment.
+- twist   (25-35s): the unexpected consequence / deeper fact that
+          recontextualizes the payoff and keeps the loop unresolved.
 - loop    (last 2-3s): a final line that flows seamlessly back into the hook line
           so the video loops. NEVER a CTA, never "like and subscribe", never
           "thanks for watching".
@@ -202,14 +222,32 @@ def normalize(data, out_dir, duration, fps=30):
     if total > duration - 0.5:  # compress pacing to fit the requested duration
         scale = (duration - 0.5) / total
         total = duration - 0.5
+
+    # WINNING FORMULA, structurally enforced in the timing:
+    #   strong build-up  — pre-reveal lines run ~6% faster (tension accelerates)
+    #   never reveal early — a beat of silence lands right BEFORE the reveal
+    #   (anticipation), pushing the payoff late in the runtime
+    #   powerful payoff  — the reveal line itself breathes (+12%) so it lands
+    reveal_idx = next((i for i, v in enumerate(vo) if v.get("beat") == "reveal"), None)
+    PRE_PACE = 0.94
+    REVEAL_LAND = 1.12
+
     t = 0.25
     for i, (v, w) in enumerate(zip(vo, words)):
         sanitize_camera(v, i)
         d = max(1.0, (w / wps) * scale)
+        if reveal_idx is not None:
+            if i < reveal_idx:
+                d *= PRE_PACE               # strong build-up: accelerating
+            elif i == reveal_idx:
+                d *= REVEAL_LAND            # powerful payoff: let it land
         v.setdefault("beat", "setup")
         v["start"] = round(t, 2)
         v["end"] = round(t + d, 2)
-        t += d + 0.35 * scale
+        gap = 0.35 * scale
+        if reveal_idx is not None and i == reveal_idx - 1:
+            gap = 0.75 * scale              # the silence before the drop
+        t += d + gap
 
     beat_bounds = []
     beats = data.get("beats") or []
