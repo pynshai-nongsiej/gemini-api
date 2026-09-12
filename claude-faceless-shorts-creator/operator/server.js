@@ -637,7 +637,7 @@ app.get('/api/youtube/callback', async (req, res) => {
   const channelId = state && db.getChannel(state) ? state : 'cosmic-archive';
   const channel = db.getChannel(channelId);
   try {
-    await publisher.exchangeCode(code, publisher.tokensPathFor(channelId));
+    await publisher.exchangeCode(code, channelId);
     if (channel) db.saveChannel(channelId, { youtube_channel_title: null });
     res.send(`<h2>YouTube authorized ✓</h2><p>Channel: <b>${channel ? channel.name : channelId}</b>. You can close this tab and return to the dashboard.</p>`);
   } catch (err) {

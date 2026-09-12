@@ -27,7 +27,16 @@ function tokensPathForShort(db, short) {
   return tokensPathFor(channel ? channel.id : (short && short.channel_id));
 }
 
-function clientSecrets() {
+function clientSecrets(channelId) {
+  // PER-CHANNEL clients first (operator/data/google_client_<channel>.json —
+  // each YouTube channel can live in its own Google Cloud project), then the
+  // global client from .env / operator/data/google_client.json
+  if (channelId) {
+    const chanFile = path.join(path.dirname(config.TOKENS_PATH), `google_client_${channelId}.json`);
+    if (fs.existsSync(chanFile)) {
+      return JSON.parse(fs.readFileSync(chanFile, 'utf8'));
+    }
+  }
   if (config.GOOGLE_CLIENT_ID && config.GOOGLE_CLIENT_SECRET) {
     return { installed: { client_id: config.GOOGLE_CLIENT_ID,
                           client_secret: config.GOOGLE_CLIENT_SECRET,
@@ -40,8 +49,8 @@ function clientSecrets() {
   return null;
 }
 
-function getOAuthClient(tokensPath) {
-  const secrets = clientSecrets();
+function getOAuthClient(tokensPath, channelId) {
+  const secrets = clientSecrets(channelId);
   if (!secrets) return null;
   const installed = secrets.installed || secrets.web;
   const oauth = new google.auth.OAuth2(
@@ -59,7 +68,7 @@ function hasTokens(channelId) {
 }
 
 function authUrl(channelId = null) {
-  const oauth = getOAuthClient();
+  const oauth = getOAuthClient(tokensPathFor(channelId), channelId);
   if (!oauth) return null;
   return oauth.generateAuthUrl({
     access_type: 'offline',
@@ -71,19 +80,24 @@ function authUrl(channelId = null) {
   });
 }
 
-/** exchangeCode(code, tokensPath) — tokensPath decides which channel this
- *  consent authorizes. */
-async function exchangeCode(code, tokensPath) {
-  const oauth = getOAuthClient(tokensPath);
+/** exchangeCode(code, channelId) — the consent must complete against the SAME
+ *  client that generated the auth URL, so the channel decides both client and
+ *  token file. */
+async function exchangeCode(code, channelId) {
+  const tokensPath = tokensPathFor(channelId);
+  const oauth = getOAuthClient(tokensPath, channelId || null);
+  if (!oauth) throw new Error(`no Google OAuth client configured for channel "${channelId || 'default'}"`);
   const { tokens } = await oauth.getToken(code);
-  fs.mkdirSync(path.dirname(tokensPath || config.TOKENS_PATH), { recursive: true });
-  fs.writeFileSync(tokensPath || config.TOKENS_PATH, JSON.stringify(tokens, null, 2));
+  fs.mkdirSync(path.dirname(tokensPath), { recursive: true });
+  fs.writeFileSync(tokensPath, JSON.stringify(tokens, null, 2));
   return tokens;
 }
 
-async function getYouTube(tokensPath) {
-  const oauth = getOAuthClient(tokensPath);
-  const tp = tokensPath || config.TOKENS_PATH;
+/** getYouTube(channelId) — channel-aware: uses the channel's own OAuth client
+ *  (so refreshes match the client that issued the tokens) and its token file. */
+async function getYouTube(channelId) {
+  const tp = tokensPathFor(channelId);
+  const oauth = getOAuthClient(tp, channelId || null);
   if (!oauth || !fs.existsSync(tp)) return null;
   oauth.on('tokens', (t) => {
     // persist refreshed tokens
@@ -168,7 +182,7 @@ async function publishShort(db, queueEntry) {
   if (!short) throw new Error(`short ${queueEntry.short_id} not found`);
   assertPublishable(short);
 
-  const yt = await getYouTube(tokensPathForShort(db, short));
+  const yt = await getYouTube(short.channel_id || 'cosmic-archive');
   if (!yt) throw new Error(`YouTube not authorized for channel "${short.channel_id || 'cosmic-archive'}" — complete /api/youtube/auth?channel= first`);
 
   const settings = db.getSettings();
@@ -219,7 +233,7 @@ async function publishShort(db, queueEntry) {
 async function scheduleOnYouTube(db, short, scheduledAt) {
   assertPublishable(short);
 
-  const yt = await getYouTube(tokensPathForShort(db, short));
+  const yt = await getYouTube(short.channel_id || 'cosmic-archive');
   if (!yt) throw new Error(`YouTube not authorized for channel "${short.channel_id || 'cosmic-archive'}" — complete /api/youtube/auth?channel= first`);
 
   const settings = db.getSettings();
@@ -282,7 +296,7 @@ async function setThumbnailAndCaptions(yt, short, meta, videoId) {
 async function makePublicNow(db, queueEntry) {
   const short = db.getShort(queueEntry.short_id);
   if (!short || !short.youtube_id) throw new Error('video not on YouTube (no youtube_id)');
-  const yt = await getYouTube(tokensPathForShort(db, short));
+  const yt = await getYouTube(short.channel_id || 'cosmic-archive');
   if (!yt) throw new Error(`YouTube not authorized for channel "${short.channel_id || 'cosmic-archive'}"`);
   const settings = db.getSettings();
   const privacy = settings.youtube_privacy || 'public';
@@ -320,7 +334,7 @@ async function refreshAnalytics(db) {
   for (const channel of db.listChannels()) {
     const tp = tokensPathFor(channel.id);
     if (!fs.existsSync(tp)) continue;
-    const yt = await getYouTube(tp);
+    const yt = await getYouTube(channel.id);
     if (!yt) continue;
     const published = db.listShorts('published', channel.id).filter(s => s.youtube_id);
     if (!published.length) continue;
@@ -346,7 +360,7 @@ async function refreshAnalytics(db) {
 async function mineComments(db, channelId) {
   const tp = tokensPathFor(channelId);
   if (!fs.existsSync(tp)) return 0;
-  const yt = await getYouTube(tp);
+  const yt = await getYouTube(channelId);
   if (!yt) return 0;
   const published = db.listShorts('published', channelId).filter(s => s.youtube_id);
   if (!published.length) return 0;
@@ -434,7 +448,7 @@ async function refreshRetention(db) {
     const tp = tokensPathFor(channel.id);
     if (!fs.existsSync(tp)) continue;
     let oauth;
-    try { oauth = getOAuthClient(tp); } catch { continue; }
+    try { oauth = getOAuthClient(tp, channel.id); } catch { continue; }
     if (!oauth) continue;
     const yta = google.youtubeAnalytics({ version: 'v2', auth: oauth });
     const published = db.listShorts('published', channel.id)
