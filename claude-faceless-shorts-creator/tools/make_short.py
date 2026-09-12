@@ -289,6 +289,9 @@ def gen_images_history(beats, proj_dir, media_dir, size):
     os.makedirs(media_dir, exist_ok=True)
     sys.path.insert(0, os.path.join(ROOT, "tools"))
     from archive_media import fetch_archival_image  # local import: heavy only when used
+    from image_registry import used_urls, mark as registry_mark
+
+    proj_label = os.path.basename(media_dir)
     from enhance_image import enhance_for_cover
 
     manifest_path, manifest = _manifest_init(media_dir)
@@ -309,7 +312,7 @@ def gen_images_history(beats, proj_dir, media_dir, size):
             if needs_b and not (i < len(manifest) and manifest[i].get("src_b")):
                 entry = manifest[i] if i < len(manifest) else {"stem": stem}
                 _fetch_second_image("history", v, media_dir, stem, entry,
-                                    exclude_urls, beats, size)
+                                    exclude_urls | used_urls(), beats, size)
             print(f"    image {i}: cached ({cached})")
             continue
 
@@ -323,9 +326,17 @@ def gen_images_history(beats, proj_dir, media_dir, size):
         # --- 1. real archives first ---
         query = v.get("archiveQuery") or v.get("imagePrompt") or beats["title"]
         out = os.path.join(media_dir, stem + ".arch.jpg")
+        registry_exclude = used_urls()
         try:
-            hit = fetch_archival_image(query, out, exclude_urls=exclude_urls,
+            hit = fetch_archival_image(query, out, exclude_urls=exclude_urls | registry_exclude,
                                        fallback_title=beats["title"])
+            reused = False
+            if not hit:
+                hit = fetch_archival_image(query, out, exclude_urls=exclude_urls,
+                                           fallback_title=beats["title"])
+                reused = bool(hit)
+                if reused:
+                    print(f"    image {i}: archive exhausted for this query — reusing a prior asset")
         except Exception as e:  # noqa: BLE001 — archives down -> AI fallback
             print(f"    image {i}: archive fetch error ({e}); falling back to AI")
             hit = None
@@ -343,8 +354,9 @@ def gen_images_history(beats, proj_dir, media_dir, size):
             manifest.append(entry)
             srcs.append(f"projects/{os.path.basename(media_dir)}/{os.path.basename(out)}")
             print(f"    image {i}: ARCHIVE ✓ [{hit['source']}] {hit.get('title', '')[:60]}")
+            registry_mark(hit.get('url'), proj_label, hit.get('title'))
             if needs_b:
-                _fetch_second_image("history", v, media_dir, stem, entry, exclude_urls, beats, size)
+                _fetch_second_image("history", v, media_dir, stem, entry, exclude_urls | used_urls(), beats, size)
             continue
 
         # --- 2. era-consistent AI fallback (all archives missed) ---
@@ -367,7 +379,7 @@ def gen_images_history(beats, proj_dir, media_dir, size):
         manifest.append(entry)
         srcs.append(f"projects/{os.path.basename(media_dir)}/{actual}")
         if needs_b:
-            _fetch_second_image("history", v, media_dir, stem, entry, exclude_urls, beats, size)
+            _fetch_second_image("history", v, media_dir, stem, entry, exclude_urls | used_urls(), beats, size)
 
     counts, real = _manifest_finish(manifest_path, manifest, beats, srcs)
     return srcs
@@ -432,6 +444,9 @@ def gen_images_space(beats, proj_dir, media_dir, size):
     os.makedirs(media_dir, exist_ok=True)
     sys.path.insert(0, os.path.join(ROOT, "tools"))
     from nasa_media import fetch_nasa_image  # local import: heavy only when used
+    from image_registry import used_urls, mark as registry_mark
+
+    proj_label = os.path.basename(media_dir)
     from enhance_image import enhance_for_cover  # rescue low-res sources, never discard
 
     manifest_path, manifest = _manifest_init(media_dir)
@@ -450,7 +465,7 @@ def gen_images_space(beats, proj_dir, media_dir, size):
             if needs_b and not (i < len(manifest) and manifest[i].get("src_b")):
                 entry = manifest[i] if i < len(manifest) else {"stem": stem}
                 _fetch_second_image("space", v, media_dir, stem, entry,
-                                    exclude_urls, beats, size)
+                                    exclude_urls | used_urls(), beats, size)
             print(f"    image {i}: cached ({cached})")
             continue
 
@@ -460,9 +475,17 @@ def gen_images_space(beats, proj_dir, media_dir, size):
         # --- 1. NASA first: real imagery when the archive has a match ---
         nasa_query = v.get("nasaQuery") or v.get("imagePrompt") or beats["title"]
         out = os.path.join(media_dir, stem + ".nasa.jpg")
+        registry_exclude = used_urls()
         try:
-            hit = fetch_nasa_image(nasa_query, out, exclude_urls=exclude_urls,
+            hit = fetch_nasa_image(nasa_query, out, exclude_urls=exclude_urls | registry_exclude,
                                    fallback_title=beats["title"])
+            reused = False
+            if not hit:
+                hit = fetch_nasa_image(nasa_query, out, exclude_urls=exclude_urls,
+                                       fallback_title=beats["title"])
+                reused = bool(hit)
+                if reused:
+                    print(f"    image {i}: archive exhausted for this query — reusing a prior asset")
         except Exception as e:  # noqa: BLE001 — NASA down -> AI fallback
             print(f"    image {i}: NASA fetch error ({e}); falling back to AI")
             hit = None
@@ -483,8 +506,9 @@ def gen_images_space(beats, proj_dir, media_dir, size):
             manifest.append(entry)
             srcs.append(f"projects/{os.path.basename(media_dir)}/{os.path.basename(out)}")
             print(f"    image {i}: NASA ✓ {hit.get('title', '')[:60]} ({hit['bytes'] // 1024}KB)")
+            registry_mark(hit.get('url'), proj_label, hit.get('title'))
             if needs_b:
-                _fetch_second_image("space", v, media_dir, stem, entry, exclude_urls, beats, size)
+                _fetch_second_image("space", v, media_dir, stem, entry, exclude_urls | used_urls(), beats, size)
             continue
 
         # --- 2. AI fallback: NASA had no authentic match ---

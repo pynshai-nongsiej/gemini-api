@@ -61,6 +61,49 @@ def run_qc(short_dir, video=None):
             report["issues"].append(f"duration {dur:.1f}s outside the {window} window")
     report["checks"]["duration"] = round(dur, 2) if dur else None
 
+    # CROSS-PROJECT DUPLICATE IMAGE guard: hash this project's beat images and
+    # compare against every other project. Repeated photographs across shorts
+    # are exactly what makes a channel read as mass-produced.
+    try:
+        import hashlib as _hl
+        import glob as _glob
+        def _md5(path):
+            h = _hl.md5()
+            with open(path, "rb") as f:
+                for chunk in iter(lambda: f.read(1 << 16), b""):
+                    h.update(chunk)
+            return h.hexdigest()
+        global_hashes = {}
+        for mf in _glob.glob(os.path.join(os.path.dirname(proj_dir), "*", "images.json")):
+            op = os.path.dirname(mf)
+            if op == proj_dir:
+                continue
+            try:
+                for e in json.load(open(mf, encoding="utf-8")):
+                    if e.get("src"):
+                        fp = os.path.join(op, e["src"])
+                        if os.path.exists(fp):
+                            global_hashes.setdefault(_md5(fp), op)
+            except Exception:
+                continue
+        dup = 0
+        checked = 0
+        for e in (json.load(open(os.path.join(proj_dir, "images.json"), encoding="utf-8"))
+                  if os.path.exists(os.path.join(proj_dir, "images.json")) else []):
+            if e.get("src"):
+                fp = os.path.join(proj_dir, e["src"])
+                if os.path.exists(fp):
+                    checked += 1
+                    if _md5(fp) in global_hashes:
+                        dup += 1
+        if checked and dup / checked > 0.25:
+            report.setdefault("warnings", []).append(
+                f"{dup}/{checked} beat images are byte-identical to other shorts — the "
+                "image registry should have prevented this; reset it with tools/image_registry.py --backfill")
+            print(f"    duplicate-image warning: {dup}/{checked} reused across projects")
+    except Exception:
+        pass
+
     # TEMPLATE-FINGERPRINT guard (inauthentic-content policy): compare this
     # project's shape against the channel's recent siblings. Similarity here
     # is a WARNING (never a publish block) — it surfaces in the operator log
