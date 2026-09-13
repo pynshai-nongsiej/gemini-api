@@ -14,25 +14,41 @@ const { callLocalAI, extractJSON } = require('./seo');
 
 const PIPELINE_TOPIC_RULES = {
   space: `- Each topic is ONE concrete, surprising fact, mechanism, or story — not a broad theme
-- Bold claims, huge numbers, "the photo/sound/thing that..." angles win
-- Prefer NASA / US missions / US observatories when natural (the audience is American)
+- BAIT FIRST: the topic must open a curiosity gap the viewer NEEDS closed — lead with the
+  impossible-seeming contradiction, the jaw-dropping scale, or the mystery ("A star that
+  shattered physics", "The planet where it rains glass", "There is a sound that...").
+  NEVER open with an institution: no "NASA's...", no "Scientists...", no "Astronomers..." —
+  the agency is a detail for inside the video, not the hook
+- The topic IS the title: punchy, front-loaded, under ~70 chars, with the shocking thing in
+  the first five words and the explanation withheld
+- Huge concrete numbers make it real (100,000 MPH, 9 billion years, 10 billion tons)
+- Any real space story qualifies — NASA, ESA, deep-sky phenomena, cosmic events, missions —
+  whichever baits the click hardest
+- No two candidates may begin with the same first two words
 - Each must be explainable in ~40 seconds with real astronomical imagery`,
   finance: `- Each topic is a DIAGNOSTIC hook about the viewer's own money: a specific numerical
   error, rule-of-thumb, milestone audit, or hidden systemic cost (dealership financing math,
   bank sweep rates, cohort net-worth medians, tax-advantaged account mechanics)
+- BAIT FIRST: the topic must sting — the viewer should feel accused or exposed in the first
+  five words ("Your bank is...", "The fee that...", "You are losing $X to..."). Never open
+  with an institution or a neutral phrase like "Understanding..." or "The basics of..."
 - USA audience ONLY: all figures in DOLLARS with US institutions — 401k, Roth IRA, US banks,
   US credit scores, US median incomes, US dealership/tax rules. No euro/pound/foreign framing
 - The topic MUST contain at least one concrete number, percentage, or dollar figure
 - No abstract economic theory, no generic budgeting tips, no "top 5" lists
+- No two candidates may begin with the same first two words
 - Each must be explainable in ~40 seconds with on-screen data graphics and kinetic numbers`,
   history: `- Each topic is an EVIDENCE-FIRST investigation: a declassified incident, a forensic
   engineering failure, a geographical/legal anomaly, a sealed report — anchored to a specific
   year, place, and physical artifact (document, blueprint, border, structure)
-- Lead with the startling artifact or anomaly itself, never with background
+- BAIT FIRST: lead with the most chilling or absurd detail, not the setup ("A hotel that
+  hid Congress", "The switch that failed", "The border drawn through a kitchen"). Never
+  open with "The history of...", "How X was built", or an institution name
 - No wars-overview, no "history of X" — one incident, one mechanism
 - USA audience: PREFER American incidents, places, and declassified US programs (US
   infrastructure failures, US declassified files, US borders/land quirks) — while keeping
   the story gripping for an American viewer
+- No two candidates may begin with the same first two words
 - Each must be explainable in ~40 seconds with archival photos, maps, and documents`,
 };
 
@@ -118,7 +134,8 @@ Return ONLY valid JSON: {"topics": ["...", "..."]}`;
           if (recent.some(p => overlap(tl, p) > 0.6)) return false;
           return true;
         });
-        return fresh.length ? fresh : topics; // if all dups, still return (AI tried)
+        // subject-level dedup: catch paraphrase repeats the token filter misses
+        return await semanticDedup(fresh, produced.slice(-30), callLocalAI, extractJSON);
       }
     } catch (err) {
       if (attempt === 2) throw new Error(`topic research failed: ${err.message}`);
@@ -157,6 +174,43 @@ Return ONLY valid JSON: {"scores": [{"index": 1, "curiosity": 0, "specificity": 
   } catch (err) {
     console.warn('[topics] curiosity scoring unavailable, keeping order:', err.message);
     return topics;
+  }
+}
+
+/** SEMANTIC anti-duplication pass — the token filter catches paraphrases
+ *  with shared words, but "A Solar Monster Bigger Than Five Earths" and "A
+ *  Probe Flew Through a Solar Explosion" share only "solar". This asks the
+ *  local AI to judge SUBJECT-level overlap: same object, same event, or same
+ *  mechanism = duplicate, even across different phrasings. */
+async function semanticDedup(candidates, recentTitles, callLocalAI, extractJSON) {
+  if (!candidates.length || !recentTitles.length) return candidates;
+  const prompt = `You are the anti-duplication editor for a faceless YouTube channel.
+RECENT VIDEOS (already produced, newest first):
+${recentTitles.slice(0, 25).map((t, i) => `${i + 1}. ${t}`).join('\n')}
+
+NEW CANDIDATES:
+${candidates.map((t, i) => `${i + 1}. ${t}`).join('\n')}
+
+Mark every candidate whose SUBJECT substantially overlaps a recent video:
+same object, same event, same phenomenon, or same mechanism counts as a
+duplicate — EVEN IF the phrasing, angle, or wording is completely different.
+Only candidates about a genuinely different object/event/mechanism are unique.
+
+Return ONLY valid JSON: {"duplicate": [candidate numbers, e.g. 1,3]}`;
+  try {
+    const raw = await callLocalAI(prompt, 300, 90000);
+    const data = extractJSON(raw);
+    const dup = new Set((data.duplicate || []).map(Number));
+    const kept = candidates.filter((_, i) => !dup.has(i + 1));
+    if (kept.length) {
+      console.log(`[topics] semantic dedup: ${candidates.length - kept.length} of ${candidates.length} candidates rejected as subject duplicates`);
+      return kept;
+    }
+    console.warn('[topics] semantic dedup rejected everything — keeping originals (AI tried)');
+    return candidates;
+  } catch (err) {
+    console.warn('[topics] semantic dedup unavailable, keeping token filter result:', err.message);
+    return candidates;
   }
 }
 

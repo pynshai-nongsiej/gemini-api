@@ -557,7 +557,7 @@ export const CommentBait: React.FC<{ text: string; accent?: string }> = ({ text,
   const wobble = Math.sin(frame / 5) * 2.5;
   if (!text) return null;
   return (
-    <AbsoluteFill style={{ justifyContent: 'flex-end', alignItems: 'center', paddingBottom: 545 }}>
+    <AbsoluteFill style={{ justifyContent: 'flex-start', alignItems: 'center', paddingTop: 300 }}>
       <div style={{
         transform: `scale(${pop}) translateY(${wobble}px)`,
         background: 'rgba(13,17,23,0.88)', border: `2px solid ${accent}`,
