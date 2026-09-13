@@ -35,6 +35,8 @@ import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 KOKORO_BRIDGE = os.path.join(ROOT, "tools", "kokoro_tts.py")
+sys.path.insert(0, os.path.join(ROOT, "tools"))
+from numwords import expand_numbers  # noqa: E402
 
 # Kokoro voices this pipeline knows. --voice accepts any Kokoro id (af_/am_/bf_/bm_…);
 # legacy ElevenLabs ids/names map onto the closest Kokoro narrator.
@@ -200,7 +202,9 @@ def main():
         start = float(line["start"])
         next_start = float(vo[i + 1]["start"]) if i + 1 < len(vo) else total - 0.3
         window = next_start - start - 0.05
-        tts_text = strip_audio_tags(line.get("tts", line["text"]))
+        # numbers -> spoken words BEFORE synthesis (Kokoro reads digit runs
+        # one-by-one); captions re-sync from the spoken tokens
+        tts_text = strip_audio_tags(line.get("tts") or expand_numbers(line["text"]))
         h = hashlib.sha1(f"{voice}|{MODEL_TAG}|{tts_text}".encode()).hexdigest()[:8]
         raw = os.path.join(vdir, f"line-{i:02d}-{h}.wav")
         fit = os.path.join(vdir, f"line-{i:02d}-{h}-fit.wav")

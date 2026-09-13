@@ -473,8 +473,13 @@ async function refreshRetention(db) {
         });
         rows = res.data.rows || [];
       } catch (err) {
-        // 403 = the channel's tokens predate the analytics scope — needs re-auth
-        console.warn(`[publisher] retention query failed for ${channel.id}: ${err.message}`);
+        // 403 = tokens predate the analytics scope — tell the human loudly
+        // (once per cycle) instead of silently skipping the retention loop
+        if (/403|Forbidden|denied/i.test(err.message)) {
+          db.notify('warn', `${channel.name}: retention data blocked — reconnect the channel (Generate or Channels tab) to grant the new analytics permission`);
+        } else {
+          console.warn(`[publisher] retention query failed for ${channel.id}: ${err.message}`);
+        }
         break;
       }
       const byVideo = new Map(rows.map(r => [r[0], { dur: r[1], pct: r[2] }]));

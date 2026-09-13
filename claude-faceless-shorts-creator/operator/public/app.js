@@ -888,7 +888,7 @@ async function viewAnalytics() {
       <div class="stat"><div class="v">${nasaAssets}</div><div class="l">NASA assets used</div>
         <div class="hint">across ${nasaShorts} short(s)</div></div>
       <div class="stat"><div class="v">${winners.length}</div><div class="l">70%+ retention</div>
-        <div class="hint">promoted by research loop</div></div>
+        <div class="hint">${winners.length ? 'fed to the research loop' : 'needs published shorts with views + re-connected channels'}</div></div>
     </div>
 
     ${pub.length ? `
