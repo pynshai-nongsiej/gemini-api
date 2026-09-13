@@ -129,6 +129,16 @@ def normalize_long(data, out_dir, duration, fps=30):
         t += d + 0.42  # documentary pacing: room to breathe between lines
     total = round(t + 1.0, 2)
 
+    # DURATION FILL: the AI often returns fewer lines than asked — stretch the
+    # pacing so the runtime lands on the requested length (slow documentary
+    # delivery absorbs the stretch naturally)
+    if duration and total < duration * 0.97:
+        factor = (duration * 0.97) / total
+        for v in vo:
+            v["start"] = round(v["start"] * factor, 2)
+            v["end"] = round(v["end"] * factor, 2)
+        total = round(total * factor, 2)
+
     comp_id = "Long" + slugify(data.get("title", out_dir), 24).replace("-", "").title()
     return {
         "id": os.path.basename(out_dir.rstrip("/")),
