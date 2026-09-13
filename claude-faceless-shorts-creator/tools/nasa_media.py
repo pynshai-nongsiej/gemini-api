@@ -159,9 +159,11 @@ def search_nasa(query, exclude_urls=None, year_start=None, year_end=None):
         if not isinstance(files, list):
             continue
 
-        best = (next((f for f in files if "~large.jpg" in f), None)
+        # full-resolution first: ~orig is the archive's master (large/medium
+        # are downscaled renditions — using them is what made longs pixelated)
+        best = (next((f for f in files if "~orig.jpg" in f and not f.endswith(".tif")), None)
+                or next((f for f in files if "~large.jpg" in f), None)
                 or next((f for f in files if "~medium.jpg" in f), None)
-                or next((f for f in files if "~orig.jpg" in f and not f.endswith(".tif")), None)
                 or next((f for f in files if "~small.jpg" in f), None)
                 or next((f for f in files if f.endswith(".jpg") or f.endswith(".png")), None)
                 or thumb)

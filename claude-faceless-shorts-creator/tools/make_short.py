@@ -269,7 +269,7 @@ def _fetch_second_image(pipeline, v, media_dir, stem, entry, exclude_urls, beats
     ai_out = os.path.join(media_dir, b_stem + ".png")
     try:
         sh([sys.executable, "tools/gen_image.py", "--prompt", prompt,
-            "--aspect", "9:16", "--size", size, "--out", ai_out])
+            "--aspect", aspect, "--size", size, "--out", ai_out])
     except SystemExit:
         return None
     actual = next((f for f in os.listdir(media_dir)
@@ -287,6 +287,9 @@ def gen_images_history(beats, proj_dir, media_dir, size):
     per beat, with license + creator + year metadata for the on-screen source
     tag. AI fallback is era-consistent (period photograph styling)."""
     os.makedirs(media_dir, exist_ok=True)
+    aspect = "16:9" if beats["format"].get("width", 1080) > beats["format"].get("height", 1920) else "9:16"
+    enh_w = beats["format"].get("width", 1080)
+    enh_h = beats["format"].get("height", 1920)
     sys.path.insert(0, os.path.join(ROOT, "tools"))
     from archive_media import fetch_archival_image  # local import: heavy only when used
     from image_registry import used_urls, mark as registry_mark
@@ -346,7 +349,7 @@ def gen_images_history(beats, proj_dir, media_dir, size):
                          details_url=hit.get("details_url"), query=hit.get("query"),
                          creator=hit.get("creator"), year=hit.get("year"),
                          license=hit.get("license"))
-            enh = enhance_for_cover(out, target_w=1080, target_h=1920)
+            enh = enhance_for_cover(out, target_w=enh_w, target_h=enh_h)
             if enh.get("enhanced"):
                 entry["enhanced"] = {"from": enh.get("original"), "factor": enh.get("factor"),
                                      "final": enh.get("final")}
@@ -369,7 +372,7 @@ def gen_images_history(beats, proj_dir, media_dir, size):
         ai_out = os.path.join(media_dir, stem + ".png")
         print(f"    image {i}: archives ✗ — AI era-fallback: {prompt[:60]}…")
         sh([sys.executable, "tools/gen_image.py", "--prompt", prompt,
-            "--aspect", "9:16", "--size", size, "--out", ai_out])
+            "--aspect", aspect, "--size", size, "--out", ai_out])
         actual = next((f for f in os.listdir(media_dir)
                        if f.startswith(stem + ".") and not f.endswith(".json")
                        and not f.endswith("-clip.mp4")), None)
@@ -415,7 +418,7 @@ def gen_images_finance(beats, proj_dir, media_dir, size):
         ai_out = os.path.join(media_dir, stem + ".png")
         print(f"    plate {i}: AI background — {prompt[:60]}…")
         sh([sys.executable, "tools/gen_image.py", "--prompt", prompt,
-            "--aspect", "9:16", "--size", size, "--out", ai_out])
+            "--aspect", aspect, "--size", size, "--out", ai_out])
         actual = next((f for f in os.listdir(media_dir)
                        if f.startswith(stem + ".") and not f.endswith(".json")
                        and not f.endswith("-clip.mp4")), None)
@@ -442,6 +445,11 @@ def gen_images_space(beats, proj_dir, media_dir, size):
     UI reads to badge each beat as NASA or AI.
     """
     os.makedirs(media_dir, exist_ok=True)
+    # generation aspect + enhancement target follow the PROJECT's format
+    # (9:16 shorts vs 16:9 longs — hardcoding portrait is what pixelated longs)
+    aspect = "16:9" if beats["format"].get("width", 1080) > beats["format"].get("height", 1920) else "9:16"
+    enh_w = beats["format"].get("width", 1080)
+    enh_h = beats["format"].get("height", 1920)
     sys.path.insert(0, os.path.join(ROOT, "tools"))
     from nasa_media import fetch_nasa_image  # local import: heavy only when used
     from image_registry import used_urls, mark as registry_mark
@@ -496,7 +504,7 @@ def gen_images_space(beats, proj_dir, media_dir, size):
                          src=os.path.basename(out))
             # NASA assets arrive at any size (some 637x361) — bring them up to
             # the composition target instead of letting the render upscale
-            enh = enhance_for_cover(out, target_w=1080, target_h=1920)
+            enh = enhance_for_cover(out, target_w=enh_w, target_h=enh_h)
             if enh.get("enhanced"):
                 entry["enhanced"] = {"from": enh.get("original"),
                                      "factor": enh.get("factor"),
@@ -516,7 +524,7 @@ def gen_images_space(beats, proj_dir, media_dir, size):
         ai_out = os.path.join(media_dir, stem + ".png")
         print(f"    image {i}: NASA ✗ — AI fallback: {prompt[:60]}…")
         sh([sys.executable, "tools/gen_image.py", "--prompt", prompt,
-            "--aspect", "9:16", "--size", size, "--out", ai_out])
+            "--aspect", aspect, "--size", size, "--out", ai_out])
         actual = next((f for f in os.listdir(media_dir)
                        if f.startswith(stem + ".") and not f.endswith(".json")), None)
         if not actual:

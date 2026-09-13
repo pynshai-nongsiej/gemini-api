@@ -86,7 +86,7 @@ class Worker {
       if (channel && channel.pipeline && channel.pipeline !== 'space') {
         args.push('--pipeline', channel.pipeline);
       }
-      args.push('--duration', '240');
+      args.push('--duration', '440'); // 7+ minute documentaries
       if (job.proj_id && (job.status === 'failed' || job.status === 'cancelled' ||
           job.error === 'interrupted by server restart')) {
         args.push('--resume', path.join('longs', job.proj_id));

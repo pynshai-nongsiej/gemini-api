@@ -71,8 +71,10 @@ vo line "beat" values: "hook", then "{chapter_ids}", then "outro" — in that or
 
 
 def generate_script(topic, style, duration, pipeline):
-    chapters = 4 if duration >= 240 else 3
-    lines = max(14, min(int(duration / 4.2), 40))
+    # 7+ minute target: 6 chapters, ~5.4s per line (13 words + gap) so the
+    # runtime lands ON the requested duration instead of falling short
+    chapters = 6 if duration >= 360 else (4 if duration >= 240 else 3)
+    lines = max(14, min(int(duration / 5.4), 110))
     words = int(duration * 2.5)
     chapter_ids = [f"ch{i+1}" for i in range(chapters)]
     field_key = {"space": "nasaQuery", "finance": "bgPrompt", "history": "archiveQuery"}.get(pipeline, "visual")
@@ -111,7 +113,7 @@ def normalize_long(data, out_dir, duration, fps=30):
         v["camera"] = cam
 
     words = [len(v["text"].split()) for v in vo]
-    wps = 2.55
+    wps = 2.4
     t = 1.0
     reveal_idx = max(0, len(vo) - 3)  # the final chapter carries the payoff
     for i, (v, w) in enumerate(zip(vo, words)):
@@ -124,7 +126,7 @@ def normalize_long(data, out_dir, duration, fps=30):
         v.setdefault("beat", "ch1")
         v["start"] = round(t, 2)
         v["end"] = round(t + d, 2)
-        t += d + 0.3
+        t += d + 0.42  # documentary pacing: room to breathe between lines
     total = round(t + 1.0, 2)
 
     comp_id = "Long" + slugify(data.get("title", out_dir), 24).replace("-", "").title()
