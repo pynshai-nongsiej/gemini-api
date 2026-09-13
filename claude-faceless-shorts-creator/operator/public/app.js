@@ -861,14 +861,21 @@ window.removeQueue = async (id, title) => {
 };
 
 /* ============ ANALYTICS ============ *//* ============ ANALYTICS ============ *//* ============ ANALYTICS ============ */
+let analyticsChan = 'cosmic-archive';
 async function viewAnalytics() {
-  const shorts = arr(obj(await api.get('/api/shorts')).shorts);
+  const chansR = await api.get('/api/channels').catch(() => ({ channels: [] }));
+  const channels = arr(obj(chansR).channels);
+  const shorts = arr(obj(await api.get(`/api/shorts?channel=${encodeURIComponent(analyticsChan)}`)).shorts);
+  const chan = channels.find(c => c.id === analyticsChan) || channels[0] || { name: 'All', pipeline: 'space' };
+  const meta = PIPELINE_META[chan.pipeline] || { accent: 'var(--ink)', icon: '◈', label: chan.pipeline };
   const pub = shorts.filter(s => s.status === 'published');
   const totalViews = pub.reduce((a, s) => a + (s.views || 0), 0);
   const totalLikes = pub.reduce((a, s) => a + (s.likes || 0), 0);
   const nasaShorts = shorts.filter(s => (safeMeta(s).nasaCount || 0) > 0).length;
   const nasaAssets = shorts.reduce((a, s) => a + (safeMeta(s).nasaCount || 0), 0);
   const winners = pub.filter(s => (safeMeta(s).retention || 0) >= 70);
+  const rets = pub.map(s => safeMeta(s).retention).filter(Number.isFinite);
+  const avgRet = rets.length ? rets.reduce((a, b) => a + b, 0) / rets.length : null;
   const retCell = (s) => {
     const r = safeMeta(s).retention;
     if (!Number.isFinite(r)) return '<span class="dimmer">—</span>';
@@ -881,19 +888,26 @@ async function viewAnalytics() {
       <span class="spacer"></span>
       <button class="btn" onclick="refreshAnalyticsNow()">↻ refresh from YouTube</button></div>
 
+    <div class="row" style="margin-bottom:22px">
+      ${channels.map(c => `
+        <button class="btn ${c.id === analyticsChan ? 'primary' : 'ghost'}" onclick="setAnalyticsChan('${c.id}')">${esc(c.name)}</button>`).join('')}
+    </div>
+
     <div class="stats">
       <div class="stat"><div class="v">${pub.length}</div><div class="l">Published</div></div>
       <div class="stat"><div class="v">${totalViews.toLocaleString()}</div><div class="l">Total views</div></div>
       <div class="stat"><div class="v">${totalLikes.toLocaleString()}</div><div class="l">Total likes</div></div>
-      <div class="stat"><div class="v">${nasaAssets}</div><div class="l">NASA assets used</div>
+      <div class="stat"><div class="v">${nasaAssets}</div><div class="l">Real archive assets</div>
         <div class="hint">across ${nasaShorts} short(s)</div></div>
+      <div class="stat"><div class="v">${avgRet ? avgRet.toFixed(0) + '%' : '—'}</div><div class="l">Avg retention</div>
+        <div class="hint">measured shorts only</div></div>
       <div class="stat"><div class="v">${winners.length}</div><div class="l">70%+ retention</div>
         <div class="hint">${winners.length ? 'fed to the research loop' : 'needs published shorts with views + re-connected channels'}</div></div>
     </div>
 
     ${pub.length ? `
     <div class="panel">
-      <h2>Views per short</h2>
+      <h2>${meta.icon || ''} ${esc(chan.name)} — views per short</h2>
       <div class="bars">
         ${pub.slice(0, 12).map(s => {
           const max = Math.max(...pub.map(x => x.views || 1), 1);
@@ -907,7 +921,7 @@ async function viewAnalytics() {
     </div>` : ''}
 
     <div class="panel">
-      <h2>All shorts</h2>
+      <h2>All ${esc(chan.name)} shorts</h2>
       ${shorts.length ? `<table>
         <tr><th>Title</th><th>Status</th><th>NASA / AI</th><th>Views</th><th>Likes</th><th>Retention</th><th>Published</th></tr>
         ${shorts.map(s => {
@@ -925,6 +939,10 @@ async function viewAnalytics() {
       </table>` : '<div class="dim">nothing yet</div>'}
     </div>`;
 }
+window.setAnalyticsChan = (id) => {
+  analyticsChan = id;
+  viewAnalytics();
+};
 window.refreshAnalyticsNow = async () => {
   try {
     const r = await api.post('/api/analytics/refresh');
