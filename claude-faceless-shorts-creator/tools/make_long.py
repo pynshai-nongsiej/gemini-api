@@ -379,3 +379,109 @@ const REVEAL_F = CPROG.length ? CPROG[CPROG.length - 1].from : 0;
 export default LongComp;
 """
 
+
+
+def main():
+    ap = argparse.ArgumentParser(description="Long-form (16:9) documentary factory")
+    ap.add_argument("--topic")
+    ap.add_argument("--resume")
+    ap.add_argument("--pipeline", default="space", choices=["space", "finance", "history"])
+    ap.add_argument("--style", default=None)
+    ap.add_argument("--voice", default="dynamic")
+    ap.add_argument("--duration", type=float, default=240.0)
+    ap.add_argument("--keep-intermediates", action="store_true")
+    args = ap.parse_args()
+
+    if not args.topic and not args.resume:
+        sys.exit("need --topic or --resume longs/<id>")
+
+    if args.resume:
+        proj_dir = os.path.abspath(args.resume)
+        proj_id = os.path.basename(proj_dir.rstrip("/"))
+    else:
+        proj_id = f"long-{next_index()}-{slugify(args.topic, 36)}"
+        proj_dir = os.path.join(ROOT, "longs", proj_id)
+        os.makedirs(proj_dir, exist_ok=True)
+
+    beats_path = os.path.join(proj_dir, "beats.json")
+    media_dir = os.path.join(ROOT, "media", "projects", proj_id)
+
+    # 1. script
+    if not os.path.exists(beats_path):
+        print(f"\n[1/6] long-form script for: {args.topic!r}")
+        sh([sys.executable, "tools/gen_script_long.py", "--topic", args.topic,
+            "--out", proj_dir, "--pipeline", args.pipeline,
+            "--duration", str(args.duration)]
+           + (["--style", args.style] if args.style else []))
+    beats = json.load(open(beats_path, encoding="utf-8"))
+    pipeline = beats.get("pipeline", args.pipeline)
+    comp_id = beats.get("composition")
+    total = float(beats["format"]["durationSec"])
+    print(f"      '{beats['title']}'  ({len(beats['vo'])} lines, {total:.0f}s, {len(beats.get('chapters', []))} chapters)")
+
+    # 2. imagery — reuse the shorts factory's pipeline strategy
+    print(f"\n[2/6] chapter imagery ({pipeline}, 2K)")
+    os.makedirs(media_dir, exist_ok=True)
+    import make_short
+    srcs = make_short.gen_images(pipeline, beats, proj_dir, media_dir, "2K")
+
+    # 3. voice
+    shot_dir = os.path.join(ROOT, "remotion", "src", "shots", comp_id.lower())
+    print("\n[3/6] voice (local Kokoro TTS)")
+    sh([sys.executable, "tools/gen_voice.py", "--beats", beats_path,
+        "--voice", args.voice, "--emit-ts", os.path.join(shot_dir, "vo.gen.ts")])
+    beats = json.load(open(beats_path, encoding="utf-8"))
+    total = float(beats["format"]["durationSec"])
+
+    # 4. composition + render
+    seed = variation_derive(proj_id)  # anti-template fingerprint
+    accent = seed["accent"]
+    print(f"\n[4/6] composition + render (accent {accent}, chapters={seed['chapter_style']})")
+    gen_composition_long(beats, srcs, comp_id, shot_dir, accent, seed)
+    sh(["npm", "run", "gen"], cwd=os.path.join(ROOT, "remotion"))
+    sh(["node", "scripts/render-all.mjs", comp_id, "--scale=1"], cwd=os.path.join(ROOT, "remotion"))
+    rendered = os.path.join(ROOT, "remotion", "out", f"{comp_id}.mp4")
+    if not os.path.exists(rendered):
+        sys.exit(f"render did not produce {rendered}")
+
+    # 5. mux voice
+    print("\n[5/6] voice mux")
+    voiced = os.path.join(ROOT, "remotion", "out", f"{comp_id}-voiced.mp4")
+    sh(["ffmpeg", "-y", "-v", "error", "-i", rendered, "-i", os.path.join(proj_dir, "voice", "voice.wav"),
+        "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-t", str(total), voiced])
+
+    # 6. final only
+    print("\n[6/6] final")
+    out_dir = os.path.join(proj_dir, "output")
+    os.makedirs(out_dir, exist_ok=True)
+    final_copy = os.path.join(out_dir, f"{proj_id}-final.mp4")
+    shutil.copy2(voiced, final_copy)
+    if not args.keep_intermediates:
+        for pth in (rendered, voiced):
+            if os.path.exists(pth):
+                os.remove(pth)
+
+    qc = None
+    try:
+        sh([sys.executable, "tools/qc_check.py", "--short-dir", proj_dir], check=False)
+        qc_path = os.path.join(proj_dir, "qc-report.json")
+        qc = json.load(open(qc_path, encoding="utf-8")) if os.path.exists(qc_path) else None
+    except Exception:
+        pass
+
+    print("\n" + "=" * 60)
+    print(f"DONE  {beats['title']}")
+    print(f"      {final_copy}")
+    print(f"      {total:.0f}s  format=long  qc={qc['verdict'] if qc else 'skipped'}")
+    print("=" * 60)
+    print("FINAL:" + json.dumps({
+        "proj_id": proj_id, "title": beats["title"], "final": final_copy,
+        "beats": beats_path, "duration": round(total, 2), "composition": comp_id,
+        "voice": beats.get("voiceStatus"), "pipeline": pipeline, "format": "long",
+        "images": len(srcs), "accent": accent,
+        "qc": ({"verdict": qc.get("verdict")} if qc else None),
+    }, ensure_ascii=False))
+
+
+if __name__ == "__main__":
+    main()
