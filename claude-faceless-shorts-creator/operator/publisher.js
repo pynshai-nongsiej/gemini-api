@@ -473,12 +473,16 @@ async function refreshRetention(db) {
         });
         rows = res.data.rows || [];
       } catch (err) {
-        // 403 = tokens predate the analytics scope — tell the human loudly
-        // (once per cycle) instead of silently skipping the retention loop
-        if (/403|Forbidden|denied/i.test(err.message)) {
-          db.notify('warn', `${channel.name}: retention data blocked — reconnect the channel (Generate or Channels tab) to grant the new analytics permission`);
+        const msg = String(err.message || '');
+        // Two known blockers, both fixable in the channel's Google Cloud project:
+        //  - YouTube Analytics API not enabled   -> "Insufficient Permission"
+        //  - tokens predate the analytics scope  -> "access_denied" at consent
+        if (/insufficient permission/i.test(msg)) {
+          db.notify('warn', `${channel.name}: enable the "YouTube Analytics API" in this channel's Google Cloud project (APIs & Services -> Library), then refresh`);
+        } else if (/403|denied/i.test(msg)) {
+          db.notify('warn', `${channel.name}: retention data blocked — reconnect the channel to grant the analytics permission`);
         } else {
-          console.warn(`[publisher] retention query failed for ${channel.id}: ${err.message}`);
+          console.warn(`[publisher] retention query failed for ${channel.id}: ${msg}`);
         }
         break;
       }
